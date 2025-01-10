@@ -2,17 +2,17 @@ import React from 'react';
 
 import './styles.scss';
 
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 function StoryStory() {
+    const navigate = useNavigate();
     return (
         <section className="story">
             <div className="container">
                 <div className="story__wrapper">
-                    <Link
-                        to="/"
+                    <button
                         className="story__back-link back-arrow"
-                        href="#"
+                        onClick={() => navigate(-1)}
                     >
                         <svg
                             width="21"
@@ -27,7 +27,7 @@ function StoryStory() {
                             />
                         </svg>
                         <span className="underline">Torna indietro</span>
-                    </Link>
+                    </button>
                     <h1 className="story__title title-1">
                         UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA
                     </h1>
