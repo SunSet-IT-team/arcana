@@ -4,8 +4,8 @@ import './styles.scss';
 
 import {Link} from 'react-router-dom';
 
-import LinkTo from '../Link/Link';
 import SelectLabel from '../../components/Select/Select';
+import LinkTo from '../Link/Link';
 
 function StorysStory() {
     const [selectedStoryFilter, setSelectedStoryFilter] =
@@ -125,6 +125,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -159,6 +160,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black link--black"
                                 />
                             </div>
@@ -193,6 +195,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -227,6 +230,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -265,6 +269,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -299,6 +304,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -333,6 +339,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -367,6 +374,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -405,6 +413,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -439,6 +448,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -473,6 +483,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -507,6 +518,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -545,6 +557,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -579,6 +592,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -613,6 +627,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -647,6 +662,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -685,6 +701,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -719,6 +736,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -753,6 +771,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -787,6 +806,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -825,6 +845,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -859,6 +880,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -893,6 +915,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
@@ -927,6 +950,7 @@ function StorysStory() {
 
                                 <LinkTo
                                     text="LEGGERE"
+                                    path={'storys/1'}
                                     className="storys__item-link link--black"
                                 />
                             </div>
