@@ -95,6 +95,9 @@
     &__button-box {
         display: flex;
         justify-content: space-between;
+        padding-bottom: size-desktop(80px);
+
+        border-bottom: $contour-grey;
     }
     &__info-btn {
         max-width: size-desktop(515px);
@@ -105,5 +108,8 @@
         .button__text {
             font-size: clamp(9px, size-desktop(18px), 18px);
         }
+    }
+    &__sub-text {
+        margin-top: size-desktop(80px);
     }
 }
