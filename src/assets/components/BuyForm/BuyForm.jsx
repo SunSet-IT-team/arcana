@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {useDispatch, useSelector} from 'react-redux';
-import {setOpenBuyForm, buyForm} from '../../../redux/slices/buyFormSlice';
+import {buyForm, setOpenBuyForm} from '../../../redux/slices/buyFormSlice';
 
 import './styles.scss';
 
@@ -52,7 +52,7 @@ function BuyForm() {
                     opacity: 1,
                 }
             );
-            tl.from(['.buy-form__logo', 'buy-form__close'], {
+            tl.to(['.buy-form__logo', '.buy-form__close'], {
                 duration: 0.5,
                 opacity: 1,
             });
@@ -93,7 +93,7 @@ function BuyForm() {
                     <div className="buy-form__top">
                         <Link className="buy-form__logo" to="/">
                             <img
-                                src="./images/icons/logo-black.svg"
+                                src="/images/icons/logo-black.svg"
                                 alt="logo"
                             />
                         </Link>
@@ -128,7 +128,7 @@ function BuyForm() {
                                 trasferimento di denaro e allegare una copia
                                 dell'ordine di pagamento della tua banca o uno
                                 screenshot del pagamento della banca mobile alla
-                                lettera
+                                lettera,
                             </p>
                         </div>
                         <div className="buy-form__form-box">
@@ -138,7 +138,7 @@ function BuyForm() {
                                 </h2>
                                 <img
                                     className="buy-form__title-img"
-                                    src="./images/icons/owl.svg"
+                                    src="/images/icons/owl.svg"
                                     alt="owl"
                                 />
                             </div>

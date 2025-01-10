@@ -4,6 +4,7 @@ import './styles.scss';
 
 import {useDispatch} from 'react-redux';
 import {useNavigate, useParams} from 'react-router-dom';
+import {setOpenBuyForm} from '../../../redux/slices/buyFormSlice';
 import {setOpenContactForm} from '../../../redux/slices/contactFormSlice';
 import Button from '../../components/Button/Button';
 
@@ -1573,6 +1574,9 @@ function ArchetypeArchetype() {
                                 <Button
                                     text="ACQUISTA LA DESCRIZIONE COMPLETA DEGLI ARCHETIPI"
                                     className="archetype__info-btn button--black"
+                                    onClick={() =>
+                                        dispatch(setOpenBuyForm(true))
+                                    }
                                 />
                             </div>
                             <div className="archetype__sub-text">
