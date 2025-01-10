@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
@@ -7,79 +7,119 @@ import Button from '../../components/Button/Button';
 import BlogList from '../BlogList/BlogList';
 import SelectLabel from '../Select/Select';
 
+const blogOptions = [
+    {value: 'TUTTI', label: 'TUTTI'},
+    {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
+    {value: 'ARHCETIPI', label: 'ARHCETIPI'},
+    {value: 'PERSONE', label: 'PERSONE'},
+    {value: 'VITA', label: 'VITA'},
+    {value: 'PREVISIONI', label: 'PREVISIONI'},
+    {value: 'EVENTI', label: 'EVENTI'},
+    {value: 'MITI E FIABE', label: 'MITI E FIABE'},
+];
+
+const blogData = [
+    {
+        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
+        tags: ['ENERGIE BASE', 'PREVISIONI'],
+        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+        imgSrc: './images/storys/1.jpg',
+        date: '05.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '05.04.2024',
+    },
+    {
+        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
+        tags: ['ENERGIE BASE', 'ARHCETIPI'],
+        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+        imgSrc: './images/storys/1.jpg',
+        date: '04.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '04.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'VITA'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '04.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '03.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '03.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '02.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '02.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '01.04.2024',
+    },
+    {
+        name: "UN'ALTRA STORIA DI SUCCESSO",
+        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+        imgSrc: './images/storys/2.jpg',
+        date: '01.04.2024',
+    },
+];
+
 function BlogBlog() {
     const [selectedBlogFilter, setSelectedBlogFilter] = useState('TUTTI');
-
-    const blogOptions = [
-        {value: 'TUTTI', label: 'TUTTI'},
-        {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
-        {value: 'ARHCETIPI', label: 'ARHCETIPI'},
-        {value: 'PERSONE', label: 'PERSONE'},
-        {value: 'VITA', label: 'VITA'},
-        {value: 'PREVISIONI', label: 'PREVISIONI'},
-        {value: 'EVENTI', label: 'EVENTI'},
-        {value: 'MITI E FIABE', label: 'MITI E FIABE'},
-    ];
-
-    const blogData = [
-        {
-            name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-            tags: ['ENERGIE BASE', 'PREVISIONI'],
-            text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-            imgSrc: './images/storys/1.jpg',
-            date: '01.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'SVILUPPO'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-        {
-            name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-            tags: ['ENERGIE BASE', 'ARHCETIPI'],
-            text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-            imgSrc: './images/storys/1.jpg',
-            date: '01.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'SVILUPPO'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'VITA'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'SVILUPPO'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'SVILUPPO'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-    ];
+    const [showCountArticles, setShowCountArticles] = useState(6);
+    const [articles, setArticles] = useState(
+        blogData.slice(0, showCountArticles)
+    );
+    useEffect(() => {
+        setArticles(blogData.slice(0, showCountArticles));
+    }, [showCountArticles]);
+    const handleShowMore = () => {
+        setShowCountArticles((prev) => (prev += 2));
+    };
 
     const handleBlogFilterChange = (selectedBlogFilter) => {
         setSelectedBlogFilter(selectedBlogFilter);
     };
     const filteredBlogData = (selectedBlogFilter) => {
         return selectedBlogFilter === 'TUTTI'
-            ? blogData
-            : blogData.filter((item) => item.tags.includes(selectedBlogFilter));
+            ? articles
+            : setArticles((prev) =>
+                  prev.filter((item) => item.tags.includes(selectedBlogFilter))
+              );
     };
     const BlogFilterItem = ({option, onClick}) => {
         return (
@@ -134,12 +174,14 @@ function BlogBlog() {
                         />
                     </div>
                     <BlogList data={filteredBlogData(selectedBlogFilter)} />
-                    <div className="blog__bottom">
-                        <Button
-                            text="VEDI ARTICOLI PRECEDENTI"
-                            className="blog__button button--black blog__bottom-button"
-                        ></Button>
-                    </div>
+                    {showCountArticles < blogData.length && (
+                        <div className="blog__bottom" onClick={handleShowMore}>
+                            <Button
+                                text="VEDI ARTICOLI PRECEDENTI"
+                                className="blog__button button--black blog__bottom-button"
+                            ></Button>
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
