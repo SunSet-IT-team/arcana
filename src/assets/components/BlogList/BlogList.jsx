@@ -42,6 +42,38 @@ function BlogList({data}) {
 
         return () => clearTimeout(timeoutId);
     }, []);
+
+    // Обрезка заголовка
+    React.useEffect(() => {
+        const lineToShowEllipsis = 3;
+
+        const timeoutId = setTimeout(() => {
+            const textSplitElements =
+                document.querySelectorAll('.text-cut-title');
+            textSplitElements.forEach((element) => {
+                const lineWrapperElements =
+                    element.querySelectorAll('.line-wrapper');
+                const lineCount = lineWrapperElements.length;
+                if (lineCount > lineToShowEllipsis) {
+                    for (let i = lineToShowEllipsis; i < lineCount; i++) {
+                        lineWrapperElements[i].classList.add(
+                            'line-wrapper--hidden'
+                        );
+                    }
+                    const lastHiddenLine =
+                        lineWrapperElements[lineToShowEllipsis - 1];
+                    const line = lastHiddenLine.querySelector('.line');
+
+                    const textNode = document.createElement('span');
+                    textNode.textContent = '...';
+                    textNode.classList.add('ellipsis');
+                    line.appendChild(textNode);
+                }
+            });
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
     // АНИМАЦИЯ
     React.useEffect(() => {
         const gsapItems = document.querySelectorAll('.blog-list__item');
@@ -103,7 +135,7 @@ function BlogList({data}) {
                     <li className="blog-list__item" key={index}>
                         <div className="blog-list__item-wrapper">
                             <div className="blog-list__main-info">
-                                <h3 className="blog-list__name text-1 text-split">
+                                <h3 className="blog-list__name text-1 text-split text-cut-title">
                                     {blog.name}
                                 </h3>
                                 <ul className="blog-list__tags">
