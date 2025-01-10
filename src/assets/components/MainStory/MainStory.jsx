@@ -243,7 +243,7 @@ function MainStory() {
                                     <LinkTo
                                         text="LEGGERE"
                                         className="storys-demo__item-link link--black"
-                                        path={'story/1'}
+                                        path={'storys/1'}
                                     />
                                 </div>
                             </div>
@@ -293,7 +293,7 @@ function MainStory() {
                                     </div>
                                     <LinkTo
                                         text="LEGGERE"
-                                        path={'story/1'}
+                                        path={'storys/1'}
                                         className="storys-demo__item-link link--black"
                                     />
                                 </div>
@@ -349,7 +349,7 @@ function MainStory() {
 
                                     <LinkTo
                                         text="LEGGERE"
-                                        path={'story/1'}
+                                        path={'storys/1'}
                                         className="storys-demo__item-link link--black"
                                     />
                                 </div>
@@ -401,7 +401,7 @@ function MainStory() {
 
                                     <LinkTo
                                         text="LEGGERE"
-                                        path={'story/1'}
+                                        path={'storys/1'}
                                         className="storys-demo__item-link link--black"
                                     />
                                 </div>
@@ -453,7 +453,7 @@ function MainStory() {
 
                                     <LinkTo
                                         text="LEGGERE"
-                                        path={'story/1'}
+                                        path={'storys/1'}
                                         className="storys-demo__item-link link--black"
                                     />
                                 </div>
