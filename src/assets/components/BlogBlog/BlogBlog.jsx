@@ -3,9 +3,9 @@ import './styles.scss';
 
 import {Link} from 'react-router-dom';
 
+import Button from '../../components/Button/Button';
 import BlogList from '../BlogList/BlogList';
 import SelectLabel from '../Select/Select';
-import Button from '../../components/Button/Button';
 
 function BlogBlog() {
     const [selectedBlogFilter, setSelectedBlogFilter] = useState('TUTTI');
