@@ -1,0 +1,15 @@
+.GUI {
+  &__row {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

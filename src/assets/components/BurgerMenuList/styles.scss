@@ -1,0 +1,27 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/functions";
+
+.burger-menu {
+  .menu-list {
+    &__link {
+      color: $grey;
+    }
+    &__item {
+      &:hover {
+        z-index: 100;
+        .menu-list__link {
+          color: $white;
+        }
+        &:after,
+        &:before {
+          width: 100%;
+        }
+      }
+      &:after,
+      &:before {
+        background-color: white;
+      }
+    }
+  }
+}

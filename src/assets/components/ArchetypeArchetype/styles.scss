@@ -1,0 +1,109 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/functions";
+
+.archetype {
+  padding-top: 171px;
+  padding-bottom: 250px;
+  &__back-button {
+    margin-bottom: clamp(10px, size-desktop(120px), 120px);
+    color: $light-grey;
+  }
+  &__title {
+    margin-bottom: clamp(10px, size-desktop(200px), 200px);
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text-box {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: size-desktop(80px);
+  }
+  &__text {
+    &:nth-child(1) {
+      max-width: 30%;
+      width: 100%;
+      margin-right: clamp(15px, size-desktop(185px), 185px);
+    }
+
+    &:nth-child(2) {
+      max-width: size-desktop(1030px);
+      width: 100%;
+      padding-bottom: size-desktop(80px);
+
+      border-bottom: $contour-grey;
+    }
+  }
+  &__subtext {
+    margin-top: size-desktop(40px);
+  }
+  &__content-box {
+    display: flex;
+  }
+  &__image-box {
+    max-width: 30%;
+    width: 100%;
+    margin-right: clamp(15px, size-desktop(185px), 185px);
+  }
+  &__image-span {
+    display: inline-block;
+
+    margin-bottom: size-desktop(40px);
+  }
+  &__image {
+    max-width: 515px;
+    width: size-desktop(515px);
+  }
+
+  &__info-title {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    display: inline-block;
+
+    margin-bottom: size-desktop(40px);
+  }
+  &__positive-list {
+    margin-bottom: size-desktop(40px);
+  }
+  &__negative-list {
+    margin-bottom: size-desktop(40px);
+  }
+  &__positive-item {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    &:not(:last-child) {
+      margin-bottom: size-desktop(20px);
+    }
+  }
+  &__negative-item {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    &:not(:last-child) {
+      margin-bottom: size-desktop(20px);
+    }
+  }
+  &__info-text {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    margin-bottom: size-desktop(40px);
+  }
+  &__button-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-btn {
+    max-width: size-desktop(515px);
+    padding: 8px size-desktop(10px);
+    &:not(:last-child) {
+      margin-right: size-desktop(10px);
+    }
+    .button__text {
+      font-size: clamp(9px, size-desktop(18px), 18px);
+    }
+  }
+}

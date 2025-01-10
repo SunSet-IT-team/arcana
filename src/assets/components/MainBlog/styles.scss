@@ -1,0 +1,11 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/functions";
+.blog-demo {
+  padding-bottom: clamp(10px, size-desktop(250px), 250px);
+  &__link {
+    max-width: 290px;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+}

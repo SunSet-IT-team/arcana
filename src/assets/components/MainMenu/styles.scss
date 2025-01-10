@@ -1,0 +1,6 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/functions";
+.menu {
+  padding-top: clamp(10px, size-desktop(140px), 140px);
+}

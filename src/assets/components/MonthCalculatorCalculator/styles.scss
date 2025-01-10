@@ -1,0 +1,60 @@
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/abstracts/functions';
+
+.month-calculator {
+	padding-top: 171px;
+	padding-bottom: clamp(10px, size-desktop(250px), 250px);
+	&__back-link {
+		display: block;
+
+		margin-bottom: clamp(10px, size-desktop(120px), 120px);
+
+		color: $light-grey;
+	}
+	&__title {
+		margin-bottom: clamp(10px, size-desktop(200px), 200px);
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__span {
+		font-size: clamp(13px, size-desktop(18px), 18px);
+
+		display: block;
+
+		width: 100%;
+		padding-right: 20px;
+		max-width: 330px;
+		padding-top: 10px;
+	}
+	&__body {
+		max-width: 60%;
+		width: 100%;
+	}
+
+	&__select-wrapper {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__link-wrapper {
+		position: relative;
+
+		&--disabled {
+			&:after {
+				position: absolute;
+				content: '';
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 5;
+			}
+		}
+	}
+	&__body-link {
+		margin-top: 30px;
+	}
+}

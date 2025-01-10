@@ -1,0 +1,525 @@
+import React from 'react'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import gsap from 'gsap'
+import { FreeMode, Navigation } from 'swiper/modules'
+
+import { Link } from 'react-router-dom'
+import TitleAnimation from '../../hooks/titleAnimation'
+import { TextLinesReveal } from '../../js/textLinesReveal'
+
+import './styles.scss'
+
+export default function App() {
+	const swiperRef = React.useRef(null)
+
+	// РАЗБИВКА ТЕКСТА НА СЛОВА
+	React.useEffect(() => {
+		const textSplitElements = document.querySelectorAll('.text-split')
+		const textAnimation = new TextLinesReveal(Array.from(textSplitElements))
+		playAnimation()
+	}, [])
+	// ПРИВЯЗКА К КНОПКАМ
+	const goToNextSlide = () => {
+		if (swiperRef.current && swiperRef.current.swiper) {
+			rightSwipe()
+			// Задержка, чтобы успела закончится анимация, а потом уже переключение слайда
+			setTimeout(() => swiperRef.current.swiper.slideNext(), 1000)
+		}
+	}
+
+	const goToPrevSlide = () => {
+		if (swiperRef.current && swiperRef.current.swiper) {
+			leftSwipe()
+			// Задержка, чтобы успела закончится анимация, а потом уже переключение слайда
+			setTimeout(() => swiperRef.current.swiper.slidePrev(), 1000)
+		}
+	}
+
+	// АНИМАЦИЯ ЛЕВОГО СДВИГА
+	const leftSwipe = () => {
+		reverseChangeSlide()
+	}
+
+	// АНИМАЦИЯ ПРАВОГО СДВИГА
+	const rightSwipe = () => {
+		reverseChangeSlide()
+	}
+
+	// АНИМАЦИЯ ПЕРЕКЛЮЧЕНИЯ
+	const changeSlide = () => {
+		let tl = gsap.timeline({})
+		tl.to('.archetypes-demo__stub', {
+			height: '130% ',
+		})
+		tl.to('.archetypes-demo__swiper', {
+			opacity: 1,
+			duration: 1,
+		})
+
+		tl.to('.archetypes-demo__item-number', {
+			x: '0',
+			duration: 1,
+		})
+			.to(
+				'.archetypes-demo__item-title .line',
+				{
+					y: '0',
+					rotate: '0',
+					duration: 1,
+				},
+				'-=1'
+			)
+			.to(
+				'.archetypes-demo__item-imgBox',
+				{
+					x: '0',
+					duration: 1,
+				},
+				'-=1'
+			)
+			.to(
+				'.archetypes-demo__item-text .line',
+				{
+					y: '0%',
+					rotate: '0deg',
+					duration: 1,
+				},
+				'-=1'
+			)
+			.to('.archetypes-demo__item-imgBl', {
+				x: '0%',
+				duration: 1,
+			})
+			.fromTo(
+				'.archetypes-demo__item-img',
+				{ scale: 1.5, filter: 'blur(15px)' }, // Start
+				{ scale: 1, filter: 'blur(0px)', duration: 0.4 }, // End
+				'-=1'
+			)
+			.to(
+				'.archetypes-demo__item-link',
+				{
+					opacity: 1,
+					duration: 1,
+				},
+				'-=1'
+			)
+		tl.to('.archetypes-demo__stub', {
+			height: '0% ',
+		})
+	}
+	// Обратная анимация
+	const reverseChangeSlide = () => {
+		let tl = gsap.timeline({})
+		tl.to(
+			'.archetypes-demo__stub',
+			{
+				height: '130% ',
+			},
+			'start'
+		)
+		tl.to(
+			' .archetypes-demo__item-number',
+			{
+				x: '-100%',
+				duration: 1,
+			},
+			'start'
+		)
+			.to(
+				'.archetypes-demo__item-title .line',
+				{
+					y: '300%',
+					rotate: '10deg',
+					duration: 1,
+				},
+				'start'
+			)
+			.to(
+				'.archetypes-demo__item-imgBox',
+				{
+					x: '-120%',
+					duration: 1,
+				},
+				'start'
+			)
+			.to(
+				'.archetypes-demo__item-text .line',
+				{
+					y: '300%',
+					rotate: '10deg',
+					duration: 1,
+				},
+				'start'
+			)
+			.to(
+				'.archetypes-demo__item-imgBl',
+				{
+					x: '-120%',
+					duration: 1,
+				},
+				'start'
+			)
+			.fromTo(
+				'.archetypes-demo__item-img',
+				{ scale: 1, filter: 'blur(0px)', duration: 0.4 },
+				{ scale: 1.5, filter: 'blur(15px)' },
+				'start'
+			)
+			.to(
+				'.archetypes-demo__item-link',
+				{
+					opacity: 0,
+					duration: 1,
+				},
+				'start'
+			)
+		tl.to(
+			'.archetypes-demo__swiper',
+			{
+				opacity: 0,
+				duration: 1,
+			},
+			'start'
+		)
+		tl.to(
+			'.archetypes-demo__stub',
+			{
+				height: '0% ',
+			},
+			'start'
+		)
+		setTimeout(() => {
+			changeSlide()
+		}, 300)
+	}
+
+	// АНИМАЦИЯ ПОЯВЛЕНИЯ
+	const playAnimation = () => {
+		let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.archetypes-demo__wrapper',
+				start: 'top 70%',
+				toggleActions: 'play none none none',
+			},
+		})
+		const delay = setTimeout(() => {
+			tl.to('.archetypes-demo__stub', {
+				height: '130% ',
+			})
+			tl.from('.archetypes-demo__swiper', {
+				opacity: 0,
+				duration: 1,
+			})
+			tl.from(
+				'.archetypes-demo__item-number',
+				{
+					x: '-100%',
+					duration: 1,
+				},
+				'-=1'
+			)
+				.from(
+					'.archetypes-demo__item-title .line',
+					{
+						y: '300%',
+						rotate: '10deg',
+						duration: 1,
+					},
+					'-=1'
+				)
+				.from(
+					'.archetypes-demo__item-imgBg',
+					{
+						x: '-120%',
+						duration: 1,
+					},
+					'-=1'
+				)
+				.from(
+					'.archetypes-demo__item-text .line',
+					{
+						y: '300%',
+						rotate: '10deg',
+						duration: 1,
+					},
+					'-=1'
+				)
+				.from('.archetypes-demo__item-imgBl', {
+					x: '-120%',
+					duration: 1,
+				})
+				.fromTo(
+					'.archetypes-demo__item-img',
+					{ filter: 'blur(15px)', scale: 1.5 }, // Start
+					{ filter: 'blur(0px)', scale: 1, duration: 0.4 }, // End
+					'-=1'
+				)
+				.from(
+					'.archetypes-demo__item-link',
+					{
+						opacity: 0,
+						duration: 1,
+					},
+					'-=1'
+				)
+			tl.from('.archetypes-demo__stub', {
+				height: '130% ',
+			})
+		}, 300)
+	}
+
+	// ДАННЫЕ ДЛЯ СЛАЙДЕРА
+	const archetypesData = [
+		{
+			title: 'IL MAGO',
+			number: 'I',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/1.jpg',
+			linkTo: '/archetypes/I',
+		},
+		{
+			title: 'LA PAPESSA',
+			number: 'II',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/2.jpg',
+			linkTo: '/archetypes/II',
+		},
+		{
+			title: "L'IMPERATRICE",
+			number: 'III',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/3.jpg',
+			linkTo: '/archetypes/III',
+		},
+		{
+			title: "L'IMPERATORE",
+			number: 'IV',
+			text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/4.jpg',
+			linkTo: '/archetypes/IV',
+		},
+		{
+			title: 'IL PAPA',
+			number: 'V',
+			text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/5.jpg',
+			linkTo: '/archetypes/V',
+		},
+		{
+			title: "L'INNAMORATO",
+			number: 'VI',
+			text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+			imgSrc: './images/archetypes/6.jpg',
+			linkTo: '/archetypes/VI',
+		},
+		{
+			title: 'IL CARRO',
+			number: 'VII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/7.jpg',
+			linkTo: '/archetypes/VII',
+		},
+		{
+			title: 'LA GIUSTIZIA',
+			number: 'VIII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/8.jpg',
+			linkTo: '/archetypes/VIII',
+		},
+		{
+			title: "L'EREMITA",
+			number: 'IX',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/9.jpg',
+			linkTo: '/archetypes/IX',
+		},
+		{
+			title: 'LA RUOTA DELLA FORTUNA',
+			number: 'X',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/10.jpg',
+			linkTo: '/archetypes/X',
+		},
+		{
+			title: 'LA FORZA',
+			number: 'XI',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/11.jpg',
+			linkTo: '/archetypes/XI',
+		},
+		{
+			title: "L'APPESO",
+			number: 'XII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/12.jpg',
+			linkTo: '/archetypes/XII',
+		},
+		{
+			title: 'LA MORTE',
+			number: 'XIII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/13.jpg',
+			linkTo: '/archetypes/XIII',
+		},
+		{
+			title: 'LA TEMPERANZA',
+			number: 'XIV',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/14.jpg',
+			linkTo: '/archetypes/XIV',
+		},
+		{
+			title: 'IL DIAVOLO',
+			number: 'XV',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/15.jpg',
+			linkTo: '/archetypes/XV',
+		},
+		{
+			title: 'LA TORRE',
+			number: 'XVI',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/16.jpg',
+			linkTo: '/archetypes/XVI',
+		},
+		{
+			title: 'LA STELLA',
+			number: 'XVII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/17.jpg',
+			linkTo: '/archetypes/XVII',
+		},
+		{
+			title: 'LA LUNA',
+			number: 'XVIII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/18.jpg',
+			linkTo: '/archetypes/XVIII',
+		},
+		{
+			title: 'IL SOLE',
+			number: 'XIX',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/19.jpg',
+			linkTo: '/archetypes/XIX',
+		},
+		{
+			title: 'IL GIUDIZIO',
+			number: 'XX',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/20.jpg',
+			linkTo: '/archetypes/XX',
+		},
+		{
+			title: 'IL MONDO',
+			number: 'XXI',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/21.jpg',
+			linkTo: '/archetypes/XXI',
+		},
+		{
+			title: 'IL MATTO',
+			number: 'XXII',
+			text: 'Se avete trovato',
+			imgSrc: './images/archetypes/22.jpg',
+			linkTo: '/archetypes/XXII',
+		},
+	]
+	return (
+		<>
+			<div className='archetypes-demo__slider-wrapper slider-animation'>
+				<div className='archetypes-demo__stub'></div>
+				<div className='archetypes-demo__buttons'>
+					<TitleAnimation
+						tag='h3'
+						className='archetypes-demo__buttons-title title-animation'
+					>
+						<span>(SCORRIMENTO)</span>
+					</TitleAnimation>
+					<button
+						className='archetypes-demo__button archetypes-demo__button--prev'
+						onClick={() => {
+							goToPrevSlide()
+						}}
+					></button>
+					<button
+						className='archetypes-demo__button archetypes-demo__button--next'
+						onClick={() => {
+							goToNextSlide()
+						}}
+					></button>
+				</div>
+
+				<Swiper
+					navigation={{
+						prevEl: '.swiper-button-prev',
+						nextEl: '.swiper-button-next',
+					}}
+					className='archetypes-demo__swiper'
+					modules={[FreeMode, Navigation]}
+					loop={true}
+					slidesPerView={4}
+					spaceBetween={20}
+					centeredSlides={false}
+					slideToClickedSlide={true}
+					ref={swiperRef}
+				>
+					{archetypesData.map((data, index) => (
+						<SwiperSlide key={index}>
+							<div className='archetypes-demo__item-wrapper'>
+								<div className='archetypes-demo__item-body'>
+									<span className='archetypes-demo__item-number'>
+										{data.number}
+									</span>
+									<h3 className={`archetypes-demo__item-title text-split `}>
+										{data.title}
+									</h3>
+									<div className='archetypes-demo__item-imgBox'>
+										<div className='archetypes-demo__item-imgBg'>
+											<div className='archetypes-demo__item-imgBl'>
+												<img
+													className='archetypes-demo__item-img'
+													src={`./images/archetypes/${data.number}.webp`}
+													alt='archetype photo'
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div className='archetypes-demo__item-info'>
+									<p className={`archetypes-demo__item-text text-split`}>
+										{data.text}
+									</p>
+									<Link
+										to={data.linkTo}
+										className='archetypes-demo__item-link arrow'
+									>
+										<span className='underline'>Per saperne di più</span>{' '}
+										<svg
+											width='21'
+											height='21'
+											viewBox='0 0 21 21'
+											fill='none'
+											xmlns='http://www.w3.org/2000/svg'
+										>
+											<path
+												d='M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z'
+												fill='currentColor'
+											/>
+										</svg>
+									</Link>
+								</div>
+							</div>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</div>
+		</>
+	)
+}

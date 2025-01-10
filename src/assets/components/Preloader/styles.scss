@@ -1,0 +1,41 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+
+#preloader-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180vh;
+  z-index: 180;
+  background-color: #ffffff;
+  background-image: url("../../../../public/images/bg.png");
+  flex-direction: column;
+}
+#preloader {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 180;
+  background-color: $dark-grey;
+  background-image: url("../../../../public/images/bg2.png");
+  flex-direction: column;
+}
+#percent {
+  color: rgb(255, 255, 255);
+}
+#bar {
+  width: 60%;
+  margin-top: 20px;
+}
+#barconfirm {
+  width: 1%;
+  padding: 1px 0;
+  background-color: rgb(255, 255, 255);
+}

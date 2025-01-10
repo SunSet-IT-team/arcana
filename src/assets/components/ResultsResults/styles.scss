@@ -1,0 +1,85 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/functions";
+
+.results {
+  padding-top: 171px;
+  padding-bottom: clamp(10px, size-desktop(250px), 250px);
+  &__back-link {
+    display: block;
+
+    margin-bottom: clamp(10px, size-desktop(120px), 120px);
+
+    color: $light-grey;
+  }
+  &__title {
+    margin-bottom: clamp(10px, size-desktop(200px), 200px);
+  }
+  &__content {
+    display: flex;
+  }
+  &__body {
+    max-width: clamp(10px, size-desktop(500px), 500px);
+    width: 100%;
+    margin-right: clamp(10px, size-desktop(185px), 185px);
+  }
+  &__body-text {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    margin-bottom: clamp(10px, size-desktop(100px), 100px);
+  }
+  &__info {
+    width: 60%;
+  }
+  &__info-list {
+    margin-bottom: 50px;
+  }
+  &__info-item {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:first-child {
+      margin-bottom: 30px;
+
+      .results__info-archetype {
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__info-number {
+    max-width: 74px;
+
+    width: 100%;
+    margin-right: 30px;
+
+    text-align: center;
+  }
+  &__info-name {
+    max-width: 574px;
+    margin-right: 20px;
+  }
+  &__info-archetype {
+    max-width: clamp(10px, size-desktop(330px), 330px);
+    min-width: 245px;
+    width: 100%;
+    margin-left: auto;
+
+    transition: color 0.3s;
+    &:hover {
+      color: $light-grey;
+    }
+  }
+  &__info-text {
+    font-size: clamp(13px, size-desktop(18px), 18px);
+
+    margin-bottom: 50px;
+  }
+}

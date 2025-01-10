@@ -1,0 +1,53 @@
+/**
+* Colors
+
+*/
+// Пример указания цветов
+$white: #ffffff;
+$dark-grey: #0e0e0e;
+$grey: #111111;
+$light-grey: #717171;
+$super-light-grey: #dbdbdb;
+
+//РАЗМЕР ШРИФТА
+
+$fz-default: 18px;
+
+$screen-huge: 1920px;
+$screen-: "(min-width: 768px)";
+
+/**
+* Layout
+*/
+$width-container: 1280px;
+$gap-container: 20px;
+/**
+* Sizes
+*/
+$height-header-desktop: 92px;
+$height-header-mobile: 105px;
+/**
+* Transitions and Animations
+*/
+
+/**
+* Radius
+*/
+
+/**
+* Radius
+*/
+$contour-white: 1px solid #fff;
+$contour-black: 1px solid #000;
+$contour-grey: 1px solid #717171;
+$contour-dark-grey: 1px solid #0e0e0e;
+
+/**
+* Box-shadows
+*/
+
+/**
+* Z-indexes
+*/
+// $z-index-header: 50;
+// $z-index-popup: 60;

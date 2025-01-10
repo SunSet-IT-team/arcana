@@ -1,0 +1,70 @@
+@import "../../scss/abstracts/variables";
+
+.header {
+  position: fixed;
+  z-index: 150;
+
+  height: 95px;
+  width: 100%;
+
+  transition: transform 0.3s;
+  backdrop-filter: blur(10px);
+
+  &--hidden {
+    transform: translateY(-100%);
+    .burger-menu {
+      top: 95px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding: 32px 0;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__link {
+    font-size: 18px;
+
+    margin-right: 50px;
+
+    color: $white;
+    transition: color 0.3s;
+    &:hover {
+      color: $light-grey;
+    }
+  }
+
+  &__button {
+    padding: 0;
+
+    &:hover {
+      .header__button-span {
+        background-color: $light-grey;
+      }
+    }
+  }
+
+  &__button-span {
+    display: block;
+
+    height: 1px;
+
+    transition: background-color 0.3s;
+
+    background-color: $white;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      width: 45px;
+    }
+
+    &:last-child {
+      width: 25px;
+    }
+  }
+}
