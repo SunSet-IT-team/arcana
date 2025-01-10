@@ -25,6 +25,7 @@ import Services from './assets/pages/Services/Services';
 
 import gsap from 'gsap';
 import FooterWithWaterEffect from './assets/components/Footer/FooterWithWaterEffect';
+import BlogArticle from './assets/pages/BlogArticle/BlogArticle';
 
 function App() {
     const location = useLocation();
@@ -137,6 +138,7 @@ function App() {
                     ></Route>
                     <Route path="/archetypes/:id" element={<Archetype />} />
                     <Route path="/story/:id" element={<Story />}></Route>
+                    <Route path="/blog/:id" element={<BlogArticle />}></Route>
                 </Routes>
             </main>
 
