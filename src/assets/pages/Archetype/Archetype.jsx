@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.scss';
 
-// import ArchetypeArchetype from '../../components/ArchetypeArchetype/ArchetypeArchetype';
+import ArchetypeArchetype from '../../components/ArchetypeArchetype/ArchetypeArchetype';
 import GoToPage from '../../components/GoToPage/GoToPage';
 
 const Archetype = () => {
@@ -13,7 +13,7 @@ const Archetype = () => {
     return (
         <>
             <GoToPage></GoToPage>
-            {/* <ArchetypeArchetype /> */}
+            <ArchetypeArchetype />
         </>
     );
 };
