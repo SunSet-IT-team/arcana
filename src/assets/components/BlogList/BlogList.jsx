@@ -1,12 +1,9 @@
-import React, {useEffect, useRef} from 'react';
-
-import BlogAnimation from '../../hooks/blogAnimation';
+import React from 'react';
 
 import {TextLinesReveal} from '../../js/textLinesReveal';
-import ElementAnimation from '../../hooks/elementAnimation';
 
-import './styles.scss';
 import gsap from 'gsap';
+import {Link} from 'react-router-dom';
 import './styles.scss';
 
 function BlogList({data}) {
@@ -141,7 +138,10 @@ function BlogList({data}) {
                                 <span className="blog-list__date text-split">
                                     {blog.date}
                                 </span>
-                                <a className="blog-list__link arrow" href="#">
+                                <Link
+                                    to={`${index + 1}`}
+                                    className="blog-list__link arrow"
+                                >
                                     <span className="underline">
                                         Per saperne di più
                                     </span>
@@ -157,7 +157,7 @@ function BlogList({data}) {
                                             fill="currentColor"
                                         />
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </li>
