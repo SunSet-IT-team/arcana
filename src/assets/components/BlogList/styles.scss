@@ -128,8 +128,6 @@
     &__date {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
-        margin-top: size-desktop(-15px);
-
         transition: color 0.3s;
 
         color: $light-grey;
