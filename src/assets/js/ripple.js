@@ -1,13 +1,13 @@
 // ripple.js
 
 import {
-  Curtains,
-  Vec2,
-  PingPongPlane,
-  ShaderPass,
-} from "https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs";
+    Curtains,
+    Vec2,
+    PingPongPlane,
+    ShaderPass,
+} from 'https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs';
 function ripple() {
-  const ripplesVs = `
+    const ripplesVs = `
         #ifdef GL_FRAGMENT_PRECISION_HIGH
         precision highp float;
         #else
@@ -30,7 +30,7 @@ function ripple() {
         }
     `;
 
-  const ripplesFs = `
+    const ripplesFs = `
         #ifdef GL_FRAGMENT_PRECISION_HIGH
         precision highp float;
         #else
@@ -95,212 +95,221 @@ function ripple() {
         }
     `;
 
-  const renderFs = `
+    const renderFs = `
         // Fragment shader code for render pass
     `;
 
-  window.addEventListener("load", () => {
-    // create curtains instance
-    const curtains = new Curtains({
-      container: "canvas",
-      pixelRatio: Math.min(1.5, window.devicePixelRatio),
-    });
-
-    // on success
-    curtains.onSuccess(() => {
-      // track the mouse position
-      const mouse = {
-        last: new Vec2(),
-        current: new Vec2(),
-        velocity: new Vec2(),
-        updateVelocity: false,
-        lastTime: null,
-      };
-
-      // used for resolution uniform
-      const curtainsBBox = curtains.getBoundingRect();
-
-      // our ripples ping pong fbo
-      const ripples = new PingPongPlane(
-        curtains,
-        document.getElementById("canvas"),
-        {
-          vertexShader: ripplesVs,
-          fragmentShader: ripplesFs,
-          autoloadSources: false,
-          watchScroll: false,
-          sampler: "uRipples",
-          texturesOptions: {
-            floatingPoint: "half-float",
-          },
-          uniforms: {
-            mousePosition: {
-              name: "uMousePosition",
-              type: "2f",
-              value: mouse.current,
-            },
-            // our velocity
-            velocity: {
-              name: "uVelocity",
-              type: "2f",
-              value: mouse.velocity,
-            },
-            // window aspect ratio to draw a circle
-            resolution: {
-              name: "uResolution",
-              type: "2f",
-              value: new Vec2(curtainsBBox.width, curtainsBBox.height),
-            },
-            pixelRatio: {
-              name: "uPixelRatio",
-              type: "1f",
-              value: curtains.pixelRatio,
-            },
-            time: {
-              name: "uTime",
-              type: "1i",
-              value: -1,
-            },
-
-            viscosity: {
-              name: "uViscosity",
-              type: "1f",
-              value: 10.75,
-            },
-            speed: {
-              name: "uSpeed",
-              type: "1f",
-              value: 6.75,
-            },
-            size: {
-              name: "uSize",
-              type: "1f",
-              value: 2,
-            },
-            dissipation: {
-              name: "uDissipation",
-              type: "1f",
-              value: 0.9875,
-            },
-          },
-        }
-      );
-
-      ripples
-        .onRender(() => {
-          mouse.velocity.set(
-            curtains.lerp(mouse.velocity.x, 0, 0.05),
-            curtains.lerp(mouse.velocity.y, 0, 0.1)
-          );
-
-          ripples.uniforms.velocity.value = mouse.velocity.clone();
-
-          ripples.uniforms.time.value++;
-        })
-        .onAfterResize(() => {
-          // update our window aspect ratio uniform
-          const boundingRect = ripples.getBoundingRect();
-          ripples.uniforms.resolution.value.set(
-            boundingRect.width,
-            boundingRect.height
-          );
+    window.addEventListener('load', () => {
+        // create curtains instance
+        const curtains = new Curtains({
+            container: 'canvas',
+            pixelRatio: Math.min(1.5, window.devicePixelRatio),
         });
 
-      // handle mouse move
-      const onMouseMove = (e) => {
-        if (ripples) {
-          const mousePos = {
-            x: e.targetTouches ? e.targetTouches[0].clientX : e.clientX,
-            y: e.targetTouches ? e.targetTouches[0].clientY : e.clientY,
-          };
+        // on success
+        curtains.onSuccess(() => {
+            // track the mouse position
+            const mouse = {
+                last: new Vec2(),
+                current: new Vec2(),
+                velocity: new Vec2(),
+                updateVelocity: false,
+                lastTime: null,
+            };
 
-          mouse.last.copy(mouse.current);
+            // used for resolution uniform
+            const curtainsBBox = curtains.getBoundingRect();
 
-          mouse.updateVelocity = true;
+            // our ripples ping pong fbo
+            const ripples = new PingPongPlane(
+                curtains,
+                document.getElementById('canvas'),
+                {
+                    vertexShader: ripplesVs,
+                    fragmentShader: ripplesFs,
+                    autoloadSources: false,
+                    watchScroll: false,
+                    sampler: 'uRipples',
+                    texturesOptions: {
+                        floatingPoint: 'half-float',
+                    },
+                    uniforms: {
+                        mousePosition: {
+                            name: 'uMousePosition',
+                            type: '2f',
+                            value: mouse.current,
+                        },
+                        // our velocity
+                        velocity: {
+                            name: 'uVelocity',
+                            type: '2f',
+                            value: mouse.velocity,
+                        },
+                        // window aspect ratio to draw a circle
+                        resolution: {
+                            name: 'uResolution',
+                            type: '2f',
+                            value: new Vec2(
+                                curtainsBBox.width,
+                                curtainsBBox.height
+                            ),
+                        },
+                        pixelRatio: {
+                            name: 'uPixelRatio',
+                            type: '1f',
+                            value: curtains.pixelRatio,
+                        },
+                        time: {
+                            name: 'uTime',
+                            type: '1i',
+                            value: -1,
+                        },
 
-          if (!mouse.lastTime) {
-            mouse.lastTime = (performance || Date).now();
-          }
-
-          if (
-            mouse.last.x === 0 &&
-            mouse.current.x === 0 &&
-            mouse.current.y === 0
-          ) {
-            mouse.updateVelocity = false;
-          }
-
-          mouse.current.set(mousePos.x, mousePos.y);
-
-          const webglCoords = ripples.mouseToPlaneCoords(mouse.current);
-          ripples.uniforms.mousePosition.value = webglCoords;
-
-          // divided by a frame duration (roughly)
-          if (mouse.updateVelocity) {
-            const time = (performance || Date).now();
-            const delta = Math.max(14, time - mouse.lastTime);
-            mouse.lastTime = time;
-
-            mouse.velocity.set(
-              (mouse.current.x - mouse.last.x) / delta,
-              (mouse.current.y - mouse.last.y) / delta
+                        viscosity: {
+                            name: 'uViscosity',
+                            type: '1f',
+                            value: 10.75,
+                        },
+                        speed: {
+                            name: 'uSpeed',
+                            type: '1f',
+                            value: 6.75,
+                        },
+                        size: {
+                            name: 'uSize',
+                            type: '1f',
+                            value: 2,
+                        },
+                        dissipation: {
+                            name: 'uDissipation',
+                            type: '1f',
+                            value: 0.9875,
+                        },
+                    },
+                }
             );
-          }
-        }
-      };
 
-      // handle mouse move
-      window.addEventListener("mousemove", onMouseMove);
-      window.addEventListener("touchmove", onMouseMove);
+            ripples
+                .onRender(() => {
+                    mouse.velocity.set(
+                        curtains.lerp(mouse.velocity.x, 0, 0.05),
+                        curtains.lerp(mouse.velocity.y, 0, 0.1)
+                    );
 
-      // render pass (display the effect)
-      const renderPassUniforms = {
-        resolution: {
-          name: "uResolution",
-          type: "2f",
-          value: new Vec2(curtainsBBox.width, curtainsBBox.height),
-        },
-        hue: {
-          name: "uHue",
-          type: "1f",
-          value: 4.28,
-        },
-        saturation: {
-          name: "uSaturation",
-          type: "1f",
-          value: 1.5,
-        },
-        bgColor: {
-          name: "uBgColor",
-          type: "3f",
-          value: [255, 255, 255],
-        },
-      };
+                    ripples.uniforms.velocity.value = mouse.velocity.clone();
 
-      const params = {
-        fragmentShader: renderFs,
-        depth: false,
-        uniforms: renderPassUniforms,
-      };
+                    ripples.uniforms.time.value++;
+                })
+                .onAfterResize(() => {
+                    // update our window aspect ratio uniform
+                    const boundingRect = ripples.getBoundingRect();
+                    ripples.uniforms.resolution.value.set(
+                        boundingRect.width,
+                        boundingRect.height
+                    );
+                });
 
-      // post pro
-      const renderPass = new ShaderPass(curtains, params);
+            // handle mouse move
+            const onMouseMove = (e) => {
+                if (ripples) {
+                    const mousePos = {
+                        x: e.targetTouches
+                            ? e.targetTouches[0].clientX
+                            : e.clientX,
+                        y: e.targetTouches
+                            ? e.targetTouches[0].clientY
+                            : e.clientY,
+                    };
 
-      renderPass.onAfterResize(() => {
-        // update our window aspect ratio uniform
-        const boundingRect = renderPass.getBoundingRect();
-        renderPass.uniforms.resolution.value.set(
-          boundingRect.width,
-          boundingRect.height
-        );
-      });
+                    mouse.last.copy(mouse.current);
 
-      // add our ripple texture to the render pass
-      renderPass.createTexture({
-        sampler: "uRipplesTexture",
-        fromTexture: ripples.getTexture(),
-      });
+                    mouse.updateVelocity = true;
+
+                    if (!mouse.lastTime) {
+                        mouse.lastTime = (performance || Date).now();
+                    }
+
+                    if (
+                        mouse.last.x === 0 &&
+                        mouse.current.x === 0 &&
+                        mouse.current.y === 0
+                    ) {
+                        mouse.updateVelocity = false;
+                    }
+
+                    mouse.current.set(mousePos.x, mousePos.y);
+
+                    const webglCoords = ripples.mouseToPlaneCoords(
+                        mouse.current
+                    );
+                    ripples.uniforms.mousePosition.value = webglCoords;
+
+                    // divided by a frame duration (roughly)
+                    if (mouse.updateVelocity) {
+                        const time = (performance || Date).now();
+                        const delta = Math.max(14, time - mouse.lastTime);
+                        mouse.lastTime = time;
+
+                        mouse.velocity.set(
+                            (mouse.current.x - mouse.last.x) / delta,
+                            (mouse.current.y - mouse.last.y) / delta
+                        );
+                    }
+                }
+            };
+
+            // handle mouse move
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('touchmove', onMouseMove);
+
+            // render pass (display the effect)
+            const renderPassUniforms = {
+                resolution: {
+                    name: 'uResolution',
+                    type: '2f',
+                    value: new Vec2(curtainsBBox.width, curtainsBBox.height),
+                },
+                hue: {
+                    name: 'uHue',
+                    type: '1f',
+                    value: 4.28,
+                },
+                saturation: {
+                    name: 'uSaturation',
+                    type: '1f',
+                    value: 1.5,
+                },
+                bgColor: {
+                    name: 'uBgColor',
+                    type: '3f',
+                    value: [255, 255, 255],
+                },
+            };
+
+            const params = {
+                fragmentShader: renderFs,
+                depth: false,
+                uniforms: renderPassUniforms,
+            };
+
+            // post pro
+            const renderPass = new ShaderPass(curtains, params);
+
+            renderPass.onAfterResize(() => {
+                // update our window aspect ratio uniform
+                const boundingRect = renderPass.getBoundingRect();
+                renderPass.uniforms.resolution.value.set(
+                    boundingRect.width,
+                    boundingRect.height
+                );
+            });
+
+            // add our ripple texture to the render pass
+            renderPass.createTexture({
+                sampler: 'uRipplesTexture',
+                fromTexture: ripples.getTexture(),
+            });
+        });
     });
-  });
 }
 export default ripple;

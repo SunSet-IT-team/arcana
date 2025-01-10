@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
-import "./styles.scss";
+import './styles.scss';
 
-import ArchetypesArchetypes from "../../components/ArchetypesArchetypes/ArchetypesArchetypes";
+import ArchetypesArchetypes from '../../components/ArchetypesArchetypes/ArchetypesArchetypes';
 
-import GoToPage from "../../components/GoToPage/GoToPage";
+import GoToPage from '../../components/GoToPage/GoToPage';
 
 const Archetypes = () => {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-  return (
-    <>
-      <GoToPage></GoToPage>
+    return (
+        <>
+            <GoToPage></GoToPage>
 
-      <ArchetypesArchetypes />
-    </>
-  );
+            <ArchetypesArchetypes />
+        </>
+    );
 };
 export default Archetypes;

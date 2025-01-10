@@ -7,24 +7,24 @@
 /**
 * Abstracts
 */
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/functions";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
 
 /**
 * Base
 */
-@import "base/fonts";
-@import "base/generic";
-@import "base/reset";
+@import 'base/fonts';
+@import 'base/generic';
+@import 'base/reset';
 
 /*
 * Components
 */
 //  Пример подключения стилей блоков
 // @import "components/my-block";
-@import "blocks/block";
+@import 'blocks/block';
 
-@import "blocks/app";
-@import "blocks/main";
-@import "blocks/container";
+@import 'blocks/app';
+@import 'blocks/main';
+@import 'blocks/container';

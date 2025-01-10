@@ -10,8 +10,6 @@ import './assets/scss/style.scss';
 
 import {store} from './redux/store';
 
-// для теста
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>

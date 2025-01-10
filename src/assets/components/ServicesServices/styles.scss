@@ -1,17 +1,17 @@
-@import "../../scss/abstracts/variables";
-@import "../../scss/abstracts/mixins";
-@import "../../scss/abstracts/functions";
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/abstracts/functions';
 .services {
-  padding-top: 171px;
-  padding-bottom: clamp(10px, size-desktop(250px), 250px);
-  &__back-link {
-    display: block;
+    padding-top: 171px;
+    padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    &__back-link {
+        display: block;
 
-    margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        margin-bottom: clamp(10px, size-desktop(120px), 120px);
 
-    color: $light-grey;
-  }
-  &__title {
-    margin-bottom: clamp(10px, size-desktop(200px), 200px);
-  }
+        color: $light-grey;
+    }
+    &__title {
+        margin-bottom: clamp(10px, size-desktop(200px), 200px);
+    }
 }

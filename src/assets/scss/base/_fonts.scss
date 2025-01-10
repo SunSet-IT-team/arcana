@@ -1,19 +1,21 @@
 @font-face {
-  font-family: "NeueHaasDisplayLight";
-  font-weight: 300;
-  font-style: normal;
-  src: local("NeueHaasDisplayLight"),
-    url("../../fonts/NeueHaasDisplayLight.woff2") format("woff2"),
-    url("../../fonts/NeueHaasDisplayLight.woff") format("woff");
-  font-display: swap;
+    font-family: 'NeueHaasDisplayLight';
+    font-weight: 300;
+    font-style: normal;
+    src:
+        local('NeueHaasDisplayLight'),
+        url('../../fonts/NeueHaasDisplayLight.woff2') format('woff2'),
+        url('../../fonts/NeueHaasDisplayLight.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "NeueHaasDisplayRoman";
-  font-weight: 400;
-  font-style: normal;
-  src: local("NeueHaasDisplayRoman"),
-    url("../../fonts/NeueHaasDisplayRoman.woff2") format("woff2"),
-    url("../../fonts/NeueHaasDisplayRoman.woff") format("woff");
-  font-display: swap;
+    font-family: 'NeueHaasDisplayRoman';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local('NeueHaasDisplayRoman'),
+        url('../../fonts/NeueHaasDisplayRoman.woff2') format('woff2'),
+        url('../../fonts/NeueHaasDisplayRoman.woff') format('woff');
+    font-display: swap;
 }

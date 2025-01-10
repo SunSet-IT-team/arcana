@@ -1,42 +1,42 @@
-@import "../../scss/abstracts/functions";
-@import "../../scss/abstracts/variables";
+@import '../../scss/abstracts/functions';
+@import '../../scss/abstracts/variables';
 
 .info {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100vh;
-  .canvas {
-    width: 1000px;
-    height: 1000px;
-  }
-  .container {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  &__wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 40%;
-    margin-top: auto;
-  }
-  &__title {
-    line-height: 1.2;
-    margin-bottom: 50px;
-    max-width: 50vw;
-  }
-  &__text {
-    font-size: 18px;
 
-    line-height: 1.4;
+    min-height: 100vh;
+    .canvas {
+        width: 1000px;
+        height: 1000px;
+    }
+    .container {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+        margin-top: auto;
+    }
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 50px;
+        max-width: 50vw;
+    }
+    &__text {
+        font-size: 18px;
 
-    max-width: 66%;
-    margin-bottom: 50px;
-    min-width: 510px;
-  }
-  &__link {
-    font-size: 18px;
+        line-height: 1.4;
 
-    max-width: 150px;
-  }
+        max-width: 66%;
+        margin-bottom: 50px;
+        min-width: 510px;
+    }
+    &__link {
+        font-size: 18px;
+
+        max-width: 150px;
+    }
 }

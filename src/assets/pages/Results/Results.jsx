@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import "./styles.scss";
+import './styles.scss';
 
-import ResultsResults from "../../components/ResultsResults/ResultsResults";
-import GoToPage from "../../components/GoToPage/GoToPage";
+import ResultsResults from '../../components/ResultsResults/ResultsResults';
+import GoToPage from '../../components/GoToPage/GoToPage';
 
 const Results = () => {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-  return (
-    <>
-      <GoToPage></GoToPage>
-      <ResultsResults />
-    </>
-  );
+    return (
+        <>
+            <GoToPage></GoToPage>
+            <ResultsResults />
+        </>
+    );
 };
 export default Results;

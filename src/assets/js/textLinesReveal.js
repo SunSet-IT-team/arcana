@@ -1,52 +1,52 @@
-import SplitType from "split-type";
+import SplitType from 'split-type';
 
 export class TextLinesReveal {
-  constructor(animationElems) {
-    this.DOM = {
-      animationElems: Array.from(animationElems),
-    };
+    constructor(animationElems) {
+        this.DOM = {
+            animationElems: Array.from(animationElems),
+        };
 
-    this.SplitTypeInstances = [];
+        this.SplitTypeInstances = [];
 
-    this.DOM.animationElems.forEach((el) => {
-      const SplitTypeInstance = new SplitType(el, { types: "lines" });
-      this.SplitTypeInstances.push({ instance: SplitTypeInstance, el });
-    });
+        this.DOM.animationElems.forEach((el) => {
+            const SplitTypeInstance = new SplitType(el, {types: 'lines'});
+            this.SplitTypeInstances.push({instance: SplitTypeInstance, el});
+        });
 
-    this.handleResize = this.handleResize.bind(this);
+        this.handleResize = this.handleResize.bind(this);
 
-    window.addEventListener("resize", this.handleResize);
+        window.addEventListener('resize', this.handleResize);
 
-    this.wrapLinesAndWords();
+        this.wrapLinesAndWords();
 
-    setTimeout(() => {
-      this.handleResize();
-    }, 0);
-  }
+        setTimeout(() => {
+            this.handleResize();
+        }, 0);
+    }
 
-  wrapLinesAndWords() {
-    this.SplitTypeInstances.forEach(({ instance }) => {
-      instance.lines.forEach((line) => {
-        const lineWrapper = document.createElement("div");
-        lineWrapper.classList.add("line-wrapper");
+    wrapLinesAndWords() {
+        this.SplitTypeInstances.forEach(({instance}) => {
+            instance.lines.forEach((line) => {
+                const lineWrapper = document.createElement('div');
+                lineWrapper.classList.add('line-wrapper');
 
-        line.parentNode.insertBefore(lineWrapper, line);
-        lineWrapper.appendChild(line);
+                line.parentNode.insertBefore(lineWrapper, line);
+                lineWrapper.appendChild(line);
 
-        const words = line.textContent.split(/\s+/);
-        line.innerHTML = words
-          .map((word) => `<span class="word">${word}</span>`)
-          .join(" ");
-      });
-    });
-  }
+                const words = line.textContent.split(/\s+/);
+                line.innerHTML = words
+                    .map((word) => `<span class="word">${word}</span>`)
+                    .join(' ');
+            });
+        });
+    }
 
-  handleResize() {
-    this.SplitTypeInstances.forEach(({ instance }) => {
-      instance.split();
-    });
-    this.wrapLinesAndWords();
-  }
+    handleResize() {
+        this.SplitTypeInstances.forEach(({instance}) => {
+            instance.split();
+        });
+        this.wrapLinesAndWords();
+    }
 }
 // gsapItems.forEach((gsIt) => {
 //   const imgInner = gsIt.querySelector(".about__author-imgBg");

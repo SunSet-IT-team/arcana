@@ -56,56 +56,60 @@
 // };
 
 // export default BlogAnimation;
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollMagic from "scrollmagic";
+import React, {useEffect, useRef} from 'react';
+import gsap from 'gsap';
+import ScrollMagic from 'scrollmagic';
 
 const BlogAnimation = () => {
-  const tl = useRef(null);
-  const controller = useRef(null);
+    const tl = useRef(null);
+    const controller = useRef(null);
 
-  useEffect(() => {
-    const delay = setTimeout(() => {
-      controller.current = new ScrollMagic.Controller();
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            controller.current = new ScrollMagic.Controller();
 
-      tl.current = gsap.timeline({ paused: true });
-      tl.current.from(".blog-list__item", {
-        duration: 1,
-        stagger: {
-          amount: 0.5,
-        },
-        x: "-100%",
-      });
-      tl.current.from(
-        [".blog-list__tag", ".blog-list__item .line", ".blog-list__link"],
-        {
-          duration: 1,
-          stagger: {
-            amount: 0.5,
-          },
-          y: "500%",
-          rotate: "10deg",
-        }
-      );
+            tl.current = gsap.timeline({paused: true});
+            tl.current.from('.blog-list__item', {
+                duration: 1,
+                stagger: {
+                    amount: 0.5,
+                },
+                x: '-100%',
+            });
+            tl.current.from(
+                [
+                    '.blog-list__tag',
+                    '.blog-list__item .line',
+                    '.blog-list__link',
+                ],
+                {
+                    duration: 1,
+                    stagger: {
+                        amount: 0.5,
+                    },
+                    y: '500%',
+                    rotate: '10deg',
+                }
+            );
 
-      new ScrollMagic.Scene({
-        triggerElement: ".blog-animation",
-        triggerHook: 0.8,
-        reverse: false,
-      })
-        .on("enter", () => {
-          tl.current.play();
-        })
-        .addTo(controller.current);
-    }, 500);
+            new ScrollMagic.Scene({
+                triggerElement: '.blog-animation',
+                triggerHook: 0.8,
+                reverse: false,
+            })
+                .on('enter', () => {
+                    tl.current.play();
+                })
+                .addTo(controller.current);
+        }, 500);
 
-    return () => {
-      clearTimeout(delay);
-      controller.current.destroy();
-    };
-  }, []);
+        return () => {
+            clearTimeout(delay);
+            controller.current.destroy();
+        };
+    }, []);
 
-  return null;
+    return null;
 };
 
 export default BlogAnimation;

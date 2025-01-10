@@ -1,6 +1,6 @@
-@import "../../scss/abstracts/variables";
-@import "../../scss/abstracts/mixins";
-@import "../../scss/abstracts/functions";
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/abstracts/functions';
 .archetypes-demo {
-  padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    padding-bottom: clamp(10px, size-desktop(250px), 250px);
 }

@@ -2,54 +2,54 @@
 @import '../../scss/abstracts/mixins';
 @import '../../scss/abstracts/functions';
 .calculator {
-	padding-top: 171px;
-	padding-bottom: 250px;
-	min-height: 100vh;
-	&__back-link {
-		display: block;
+    padding-top: 171px;
+    padding-bottom: 250px;
+    min-height: 100vh;
+    &__back-link {
+        display: block;
 
-		margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        margin-bottom: clamp(10px, size-desktop(120px), 120px);
 
-		color: $light-grey;
-	}
-	&__title {
-		margin-bottom: clamp(10px, size-desktop(200px), 200px);
-	}
-	&__content {
-		display: flex;
-		align-items: baseline;
-	}
-	&__span {
-		font-size: clamp(13px, size-desktop(18px), 18px);
-		max-width: 40%;
-		width: 100%;
-		padding-right: 20px;
-		padding-top: 20px;
-	}
-	&__body {
-		width: 100%;
-	}
-	&__body-title {
-		font-size: clamp(24px, size-desktop(36px), 36px);
+        color: $light-grey;
+    }
+    &__title {
+        margin-bottom: clamp(10px, size-desktop(200px), 200px);
+    }
+    &__content {
+        display: flex;
+        align-items: baseline;
+    }
+    &__span {
+        font-size: clamp(13px, size-desktop(18px), 18px);
+        max-width: 40%;
+        width: 100%;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    &__body {
+        width: 100%;
+    }
+    &__body-title {
+        font-size: clamp(24px, size-desktop(36px), 36px);
 
-		margin-bottom: 30px;
-	}
-	&__link-wrapper {
-		position: relative;
+        margin-bottom: 30px;
+    }
+    &__link-wrapper {
+        position: relative;
 
-		&--disabled {
-			&:after {
-				position: absolute;
-				content: '';
-				top: 0;
-				right: 0;
-				left: 0;
-				bottom: 0;
-				z-index: 5;
-			}
-		}
-	}
-	&__body-link {
-		margin-top: 30px;
-	}
+        &--disabled {
+            &:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 5;
+            }
+        }
+    }
+    &__body-link {
+        margin-top: 30px;
+    }
 }

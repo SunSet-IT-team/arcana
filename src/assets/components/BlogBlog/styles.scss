@@ -1,95 +1,95 @@
-@import "../../scss/abstracts/variables";
-@import "../../scss/abstracts/mixins";
-@import "../../scss/abstracts/functions";
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/abstracts/functions';
 .blog {
-  padding-top: 171px;
-  padding-bottom: 250px;
-  &__back-link {
-    display: block;
+    padding-top: 171px;
+    padding-bottom: 250px;
+    &__back-link {
+        display: block;
 
-    margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        margin-bottom: clamp(10px, size-desktop(120px), 120px);
 
-    color: $light-grey;
-  }
-  &__title {
-    margin-bottom: clamp(10px, size-desktop(200px), 200px);
-  }
-  &__filter {
-    position: relative;
-    
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 15px;
-    grid-auto-flow: column;
-    // justify-content: space-between;
-    width: 100%;
-
-    padding: clamp(10px, size-desktop(50px), 50px) 0;
-    margin-bottom: clamp(10px, size-desktop(80px), 80px);
-
-    &:before,
-    &:after {
-      position: absolute;
-      left: 0;
-
-      height: 1px;
-      width: 100%;
-
-      content: "";
-
-      background-color: $light-grey;
+        color: $light-grey;
     }
-    &:before {
-      top: 0;
+    &__title {
+        margin-bottom: clamp(10px, size-desktop(200px), 200px);
     }
-    &:after {
-      bottom: 0;
+    &__filter {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+        grid-auto-flow: column;
+        // justify-content: space-between;
+        width: 100%;
+
+        padding: clamp(10px, size-desktop(50px), 50px) 0;
+        margin-bottom: clamp(10px, size-desktop(80px), 80px);
+
+        &:before,
+        &:after {
+            position: absolute;
+            left: 0;
+
+            height: 1px;
+            width: 100%;
+
+            content: '';
+
+            background-color: $light-grey;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
     }
-  }
 
-  &__filter-list {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    grid-column: 1 / 5 ;
-    // width: 4fr;
-    // margin-right: 50px;
-  }
-  &__filter-item {
-    font-size: clamp(13px, size-desktop(18px), 18px);
-
-    //    // cursor: pointer;;
-    transition: color 0.3s;
-
-    color: $light-grey;
-
-    &:not(:last-child) {
-      margin-right: 20px;
+    &__filter-list {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        grid-column: 1 / 5;
+        // width: 4fr;
+        // margin-right: 50px;
     }
-    &:hover {
-      color: $white;
+    &__filter-item {
+        font-size: clamp(13px, size-desktop(18px), 18px);
+
+        //    // cursor: pointer;;
+        transition: color 0.3s;
+
+        color: $light-grey;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        &:hover {
+            color: $white;
+        }
     }
-  }
-  &__filter-select {
-    font-size: clamp(13px, size-desktop(18px), 18px);
+    &__filter-select {
+        font-size: clamp(13px, size-desktop(18px), 18px);
 
-    // max-width: 330px;
-    // width: 1fr;
-  }
-  &__bottom {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
-  }
-  &__bottom-button {
-    grid-column: 5;
-  }
-  &__button {
-    display: block;
+        // max-width: 330px;
+        // width: 1fr;
+    }
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+    &__bottom-button {
+        grid-column: 5;
+    }
+    &__button {
+        display: block;
 
-    margin-top: 50px;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: 50px;
-  }
+        margin-top: 50px;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
 }
