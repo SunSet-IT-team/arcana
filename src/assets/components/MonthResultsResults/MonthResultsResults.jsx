@@ -1,13 +1,12 @@
 import React from 'react';
 import {useDispatch} from 'react-redux';
-import {toRim, fixYear, fixDay, fixNegative} from '../../js/numberRim';
 import {setOpenContactForm} from '../../../redux/slices/contactFormSlice';
+import {fixDay, fixYear, toRim} from '../../js/numberRim';
 
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
 
-import LinkTo from '../Link/Link';
 import Button from '../../components/Button/Button';
 
 function MonthResultsResults() {
@@ -78,7 +77,7 @@ function MonthResultsResults() {
                             principali energie di questo Archetipo.
                         </span>
                         <div className="month-results__body">
-                            <ul className="month-results__tables">
+                            <ul className="month-results__tables month-results__tables">
                                 <li className="month-results__table">
                                     <ul className="month-results__table-contents month-results__table-contents--2">
                                         <li className="month-results__table-content month-results__table-content--is">
@@ -92,6 +91,60 @@ function MonthResultsResults() {
                                         </li>
                                         <li className="month-results__table-content">
                                             {pos2}
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className="month-results__table ">
+                                    <ul className="month-results__table-contents month-results__table-contents--4">
+                                        <li className="month-results__table-content month-results__table-content--s">
+                                            Zona di stress per anno (S)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos3}
+                                        </li>
+                                        <li className="month-results__table-content month-results__table-content--r">
+                                            Zona risorsa per anno (R)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos5}
+                                        </li>
+                                        <li className="month-results__table-content month-results__table-content--s2">
+                                            Scuola dell'anno (S)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos4}
+                                        </li>
+                                        <li className="month-results__table-content month-results__table-content--e">
+                                            Esame anni (E)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos6}
+                                        </li>
+
+                                        <li className="month-results__table-content month-results__table-content--s3">
+                                            Scuola dell'anno (S)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos4}
+                                        </li>
+                                        <li className="month-results__table-content month-results__table-content--e2">
+                                            Esame anni (E)
+                                        </li>
+                                        <li className="month-results__table-content">
+                                            {pos6}
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul className="month-results__tables month-results__tables--2">
+                                <li className="month-results__table">
+                                    <ul className="month-results__table-contents month-results__table-contents--2">
+                                        <li className="month-results__table-content month-results__table-content--is">
+                                            Assistente del` anno
+                                        </li>
+
+                                        <li className="month-results__table-content month-results__table-content--ee">
+                                            XVIII
                                         </li>
                                     </ul>
                                 </li>
@@ -137,10 +190,7 @@ function MonthResultsResults() {
                                 trovare le risposte alle tue domande chiedi una
                                 consultazione, cliccando bottone sotto.
                             </p>
-                            {/* <LinkTo
-                text="CONSULTAZIONE"
-                className="month-results__body-link"
-              ></LinkTo> */}
+
                             <Button
                                 text="CONSULTAZIONE"
                                 className="month-results__body-link"
