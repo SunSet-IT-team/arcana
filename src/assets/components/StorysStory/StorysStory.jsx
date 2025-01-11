@@ -252,7 +252,7 @@ function StorysStory() {
                             {storyOptions.map((option) => {
                                 return (
                                     <li
-                                        className="storys__filter-item underline"
+                                        className={`storys__filter-item underline ${selectedStoryFilter === option.value && 'storys__filter-item--active'}`}
                                         onClick={() =>
                                             handleStoryFilterChange(
                                                 option.value
