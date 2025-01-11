@@ -75,8 +75,8 @@
     &__filter-select {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
-        max-width: 330px;
-        width: 100%;
+        // max-width: 330px;
+        width: 20%;
     }
     &__list {
         display: grid;
