@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 
 import './styles.scss';
 
@@ -7,15 +7,209 @@ import {Link} from 'react-router-dom';
 import SelectLabel from '../../components/Select/Select';
 import LinkTo from '../Link/Link';
 
+const storysData = [
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'RELAZIONI',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'RELAZIONI',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'RELAZIONI',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'LAVORO E PROFESSIONE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'LAVORO E PROFESSIONE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'LAVORO E PROFESSIONE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'FINANZE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'FINANZE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'FINANZE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'FINANZE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'SALUTE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'SALUTE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'SALUTE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'SALUTE',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+    {
+        title: 'RICETTA EDIFICANTE',
+        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
+        tag: 'Crescita personale',
+        link: 'storys/1',
+        img: './images/storys/1.jpg',
+    },
+];
+
+const storyOptions = [
+    {value: 'TUTTI', label: 'TUTTI'},
+    {value: 'CRESCITA PERSONALE', label: 'CRESCITA PERSONALE'},
+    {value: 'RELAZIONI', label: 'RELAZIONI'},
+    {value: 'LAVORO E PROFESSIONE', label: 'LAVORO E PROFESSIONE'},
+    {value: 'FINANZE', label: 'FINANZE'},
+    {value: 'SALUTE', label: 'SALUTE'},
+];
+
 function StorysStory() {
-    const [selectedStoryFilter, setSelectedStoryFilter] =
-        React.useState('TUTTI');
+    const [selectedStoryFilter, setSelectedStoryFilter] = useState('TUTTI');
+    const [filteredStorys, setFilteredStorys] = useState(storysData);
+
+    const handleFilterStorys = () => {
+        setFilteredStorys(
+            storysData.filter(
+                (story) =>
+                    story.tag.toUpperCase() === selectedStoryFilter ||
+                    selectedStoryFilter === 'TUTTI'
+            )
+        );
+    };
 
     const handleStoryFilterChange = (selectedStoryFilter) => {
         setSelectedStoryFilter(selectedStoryFilter);
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
+        handleFilterStorys();
+    }, [selectedStoryFilter]);
+
+    useEffect(() => {
         const timeoutId = setTimeout(() => {
             const storyItems = document.querySelectorAll('.storys__item');
             storyItems.forEach((item) => {
@@ -30,14 +224,6 @@ function StorysStory() {
         return () => clearTimeout(timeoutId);
     }, []);
 
-    const storyOptions = [
-        {value: 'TUTTI', label: 'TUTTI'},
-        {value: 'CRESCITA PERSONALE', label: 'CRESCITA PERSONALE'},
-        {value: 'RELAZIONI', label: 'RELAZIONI'},
-        {value: 'LAVORO E PROFESSIONE', label: 'LAVORO E PROFESSIONE'},
-        {value: 'FINANZE', label: 'FINANZE'},
-        {value: 'SALUTESALUTE', label: 'SALUTE'},
-    ];
     return (
         <section className="storys">
             <div className="container">
@@ -63,24 +249,21 @@ function StorysStory() {
 
                     <div className="storys__filter">
                         <ul className="storys__filter-list">
-                            <li className="storys__filter-item underline">
-                                TUTTI
-                            </li>
-                            <li className="storys__filter-item underline">
-                                CRESCITA PERSONALE
-                            </li>
-                            <li className="storys__filter-item underline">
-                                RELAZIONI
-                            </li>
-                            <li className="storys__filter-item underline">
-                                LAVORO E PROFESSIONE{' '}
-                            </li>
-                            <li className="storys__filter-item underline">
-                                FINANZE
-                            </li>
-                            <li className="storys__filter-item underline">
-                                SALUTE
-                            </li>
+                            {storyOptions.map((option) => {
+                                return (
+                                    <li
+                                        className="storys__filter-item underline"
+                                        onClick={() =>
+                                            handleStoryFilterChange(
+                                                option.value
+                                            )
+                                        }
+                                        key={option.value}
+                                    >
+                                        {option.label}
+                                    </li>
+                                );
+                            })}
                         </ul>
                         <SelectLabel
                             className="storys__filter-select"
@@ -91,870 +274,44 @@ function StorysStory() {
                         />
                     </div>
                     <ul className="storys__list">
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="story"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
+                        {filteredStorys.map((story, index) => {
+                            return (
+                                <li
+                                    className="storys__item"
+                                    key={story.title + index}
+                                >
+                                    <img
+                                        className="storys__item-img"
+                                        src={story.img}
+                                        alt={`Story ${story.title}`}
+                                    />
+                                    <div className="storys__item-content">
+                                        <span className="storys__item-linkbox">
+                                            <a
+                                                className="storys__item-tag underline"
+                                                href="#"
+                                            >
+                                                {story.tag}
+                                            </a>
+                                        </span>
+                                        <div className="storys__item-body">
+                                            <h3 className="storys__item-title">
+                                                {story.title}
+                                            </h3>
+                                            <p className="storys__item-text">
+                                                {story.text}
+                                            </p>
+                                        </div>
 
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>{' '}
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>{' '}
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>{' '}
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>{' '}
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico. Nella sua essenza, il
-                                        testo ittico è un'alternativa al
-                                        tradizionale lorem ipsum, che in alcuni
-                                        casi provoca sconcerto quando si cerca
-                                        di leggere il testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
-                        <li className="storys__item">
-                            <img
-                                className="storys__item-img"
-                                src="./images/storys/1.jpg"
-                                alt="#"
-                            />
-                            <div className="storys__item-content">
-                                <span className="storys__item-linkbox">
-                                    <a
-                                        className="storys__item-tag underline"
-                                        href="#"
-                                    >
-                                        Crescita personale
-                                    </a>
-                                </span>
-                                <div className="storys__item-body">
-                                    <h3 className="storys__item-title">
-                                        RICETTA EDIFICANTE
-                                    </h3>
-                                    <p className="storys__item-text">
-                                        Nella sua essenza, il testo ittico è
-                                        un'alternativa al tradizionale lorem
-                                        ipsum, che in alcuni casi provoca
-                                        sconcerto quando si cerca di leggere il
-                                        testo ittico.
-                                    </p>
-                                </div>
-
-                                <LinkTo
-                                    text="LEGGERE"
-                                    path={'storys/1'}
-                                    className="storys__item-link link--black"
-                                />
-                            </div>
-                        </li>
+                                        <LinkTo
+                                            text="LEGGERE"
+                                            path={story.link}
+                                            className="storys__item-link link--black"
+                                        />
+                                    </div>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             </div>
