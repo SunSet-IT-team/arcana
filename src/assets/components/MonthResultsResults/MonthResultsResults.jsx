@@ -24,18 +24,28 @@ function MonthResultsResults() {
         return <p>Loading...</p>;
     }
 
-    const newDay = Number(results.day);
-    const newMonth = Number(results.month);
-    const newYear = fixYear(Number(results.year));
-    const newMonth2 = Number(results.month2);
-    const newYear2 = fixYear(Number(results.year2));
+    const birthDay = Number(results.day);
+    const birthMonth = Number(results.month);
+    const birthYear = fixYear(Number(results.year));
+    const newMonth = Number(results.month2);
+    const newYear = fixYear(Number(results.year2));
 
-    const pos1 = toRim(fixDay(newMonth + newMonth2));
-    const pos2 = toRim(fixDay(newMonth + newMonth2 + newYear + newYear2));
-    const pos3 = toRim(fixDay((newDay + 2) * (newYear2 + newMonth)));
-    const pos4 = toRim(fixDay(newMonth + newYear2));
-    const pos5 = toRim(fixDay((newMonth + 2) * (newYear2 + newYear)));
-    const pos6 = toRim(fixDay(newYear + newYear2));
+    const pos1 = fixDay(birthDay + newYear);
+    const pos2 = fixDay(birthMonth + newYear);
+    const pos3 = fixDay(birthYear + newYear);
+    const pos4 = fixDay(pos1 + pos2);
+    const pos5 = fixDay(pos2 + pos3);
+    const pos6 = fixDay(
+        birthDay + birthMonth + (birthMonth + birthYear) + newYear
+    );
+    const pos7 = fixDay(birthDay + birthMonth + newYear);
+
+    const pos8 = fixDay(pos7 + pos4);
+    const pos9 = fixDay(birthMonth + birthYear + newYear);
+    const pos10 = fixDay(pos9 + pos5);
+    const pos11 = fixDay(pos6 + pos2);
+    const pos12 = fixDay(birthMonth + newMonth);
+    const pos13 = fixDay(pos12 + pos3);
 
     return (
         <section className="month-results">
@@ -60,9 +70,6 @@ function MonthResultsResults() {
                         </svg>
                         <span className="underline">Torna indietro</span>
                     </Link>
-                    <span>
-                        {newDay}, {newMonth}, {newYear}, {newMonth2}, {newYear2}
-                    </span>
                     <h1 className="month-results__title title-1">
                         IL RISULTATO DEL CALCOLO DELL'ARCHETIPO
                     </h1>
@@ -84,13 +91,13 @@ function MonthResultsResults() {
                                             Interno sentimento del mese (IS)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos1}
+                                            {toRim(pos12)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--ee">
                                             Esterno eventi esterni (EE)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos2}
+                                            {toRim(pos13)}
                                         </li>
                                     </ul>
                                 </li>
@@ -100,38 +107,38 @@ function MonthResultsResults() {
                                             Zona di stress per anno (S)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos3}
+                                            {toRim(pos1)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--r">
                                             Zona risorsa per anno (R)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos5}
+                                            {toRim(pos4)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--s2">
                                             Scuola dell'anno (S)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos4}
+                                            {toRim(pos2)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e">
                                             Esame anni (E)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos6}
+                                            {toRim(pos5)}
                                         </li>
 
                                         <li className="month-results__table-content month-results__table-content--s3">
                                             Scuola dell'anno (S)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos4}
+                                            {toRim(pos3)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e2">
                                             Esame anni (E)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos6}
+                                            {toRim(pos6)}
                                         </li>
                                     </ul>
                                 </li>
@@ -144,7 +151,7 @@ function MonthResultsResults() {
                                         </li>
 
                                         <li className="month-results__table-content month-results__table-content--ee">
-                                            XVIII
+                                            {toRim(pos11)}
                                         </li>
                                     </ul>
                                 </li>
@@ -154,25 +161,25 @@ function MonthResultsResults() {
                                             Zona di stress per anno (S)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos3}
+                                            {toRim(pos7)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--r">
                                             Zona risorsa per anno (R)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos5}
+                                            {toRim(pos9)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--s2">
                                             Scuola dell'anno (S)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos4}
+                                            {toRim(pos8)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e">
                                             Esame anni (E)
                                         </li>
                                         <li className="month-results__table-content">
-                                            {pos6}
+                                            {toRim(pos10)}
                                         </li>
                                     </ul>
                                 </li>
