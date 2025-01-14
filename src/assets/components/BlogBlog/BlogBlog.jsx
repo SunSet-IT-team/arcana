@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useMemo, useState} from 'react';
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
@@ -104,9 +104,16 @@ function BlogBlog() {
     const [articles, setArticles] = useState(
         blogData.slice(0, showCountArticles)
     );
+    const filteredArticles = useMemo(() => {
+        return selectedBlogFilter === 'TUTTI'
+            ? blogData
+            : blogData.filter((item) => item.tags.includes(selectedBlogFilter));
+    }, [selectedBlogFilter]);
+
     useEffect(() => {
-        setArticles(blogData.slice(0, showCountArticles));
-    }, [showCountArticles]);
+        setArticles(filteredArticles.slice(0, showCountArticles));
+    }, [filteredArticles, showCountArticles]);
+
     const handleShowMore = () => {
         setShowCountArticles((prev) => (prev += 2));
     };
@@ -114,13 +121,9 @@ function BlogBlog() {
     const handleBlogFilterChange = (selectedBlogFilter) => {
         setSelectedBlogFilter(selectedBlogFilter);
     };
-    const filteredBlogData = (selectedBlogFilter) => {
-        return selectedBlogFilter === 'TUTTI'
-            ? articles
-            : setArticles((prev) =>
-                  prev.filter((item) => item.tags.includes(selectedBlogFilter))
-              );
-    };
+
+    const hasMoreArticles = showCountArticles < filteredArticles.length;
+
     const BlogFilterItem = ({option, onClick}) => {
         return (
             <li
@@ -173,8 +176,8 @@ function BlogBlog() {
                             value={selectedBlogFilter}
                         />
                     </div>
-                    <BlogList data={filteredBlogData(selectedBlogFilter)} />
-                    {showCountArticles < blogData.length && (
+                    <BlogList data={articles} />
+                    {hasMoreArticles && (
                         <div className="blog__bottom" onClick={handleShowMore}>
                             <Button
                                 text="VEDI ARTICOLI PRECEDENTI"
