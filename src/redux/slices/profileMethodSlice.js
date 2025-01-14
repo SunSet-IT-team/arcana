@@ -11,7 +11,6 @@ const profileMethodSlice = createSlice({
     initialState,
     reducers: {
         setOpenProfileMethod(state, action) {
-            console.log('ProfileMethod открывается:', action.payload);
             state.openProfileMethod = action.payload;
         },
     },

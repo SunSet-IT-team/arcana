@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {setResults, selectResults} from '../../../redux/slices/resultsSlice';
+import {selectResults, setResults} from '../../../redux/slices/resultsSlice';
 
 import './styles.scss';
 
@@ -33,7 +33,6 @@ function CalculatorCalculator() {
                 year: selectedYear,
             })
         );
-        console.log('данные переданы');
     };
 
     useEffect(() => {

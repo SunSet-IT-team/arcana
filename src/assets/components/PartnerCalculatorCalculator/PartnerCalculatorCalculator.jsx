@@ -49,7 +49,6 @@ function PartnerCalculatorCalculator() {
                 year2: selectedYear2,
             })
         );
-        console.log('данные переданы');
     };
 
     useEffect(() => {
