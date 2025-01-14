@@ -11,8 +11,6 @@ function BurgerMenu({tl}) {
     const location = useLocation();
 
     React.useEffect(() => {
-        console.log('reset');
-
         tl.current = gsap.timeline({paused: true});
 
         tl.current.fromTo(
