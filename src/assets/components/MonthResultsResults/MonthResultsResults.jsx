@@ -88,13 +88,13 @@ function MonthResultsResults() {
                                 <li className="month-results__table">
                                     <ul className="month-results__table-contents month-results__table-contents--2">
                                         <li className="month-results__table-content month-results__table-content--is">
-                                            Interno sentimento del mese (IS)
+                                            SENTIMENTO INTERIORE DEL MESE
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos12)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--ee">
-                                            Esterno eventi esterni (EE)
+                                            FОCUS PERSONALEDEL MESE
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos13)}
@@ -104,38 +104,38 @@ function MonthResultsResults() {
                                 <li className="month-results__table ">
                                     <ul className="month-results__table-contents month-results__table-contents--4">
                                         <li className="month-results__table-content month-results__table-content--s">
-                                            Zona di stress per anno (S)
+                                            ENERGIA DI CRESCITA
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos1)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--r">
-                                            Zona risorsa per anno (R)
+                                            TENSIONEEMOTIVA
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos4)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--s2">
-                                            Scuola dell'anno (S)
+                                            LEZIONI DELL’ANNO
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos2)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e">
-                                            Esame anni (E)
+                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos5)}
                                         </li>
 
                                         <li className="month-results__table-content month-results__table-content--s3">
-                                            Scuola dell'anno (S)
+                                            ESAME DELL’ANNO
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos3)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e2">
-                                            Esame anni (E)
+                                            ТЕМАPRINCIPALE
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos6)}
@@ -147,7 +147,7 @@ function MonthResultsResults() {
                                 <li className="month-results__table">
                                     <ul className="month-results__table-contents month-results__table-contents--2">
                                         <li className="month-results__table-content month-results__table-content--is">
-                                            Assistente del` anno
+                                            GUIDA PERSONALE
                                         </li>
 
                                         <li className="month-results__table-content month-results__table-content--ee">
@@ -158,25 +158,26 @@ function MonthResultsResults() {
                                 <li className="month-results__table">
                                     <ul className="month-results__table-contents month-results__table-contents--4">
                                         <li className="month-results__table-content month-results__table-content--s">
-                                            Zona di stress per anno (S)
+                                            ENERGIA DI INSTABILITA’ EMOTIVA
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos7)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--r">
-                                            Zona risorsa per anno (R)
+                                            ENERGIA DI ESPANSIONE DELLA
+                                            COSCIENZA
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos9)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--s2">
-                                            Scuola dell'anno (S)
+                                            RISCHI
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos8)}
                                         </li>
                                         <li className="month-results__table-content month-results__table-content--e">
-                                            Esame anni (E)
+                                            OPPORTUNITA’
                                         </li>
                                         <li className="month-results__table-content">
                                             {toRim(pos10)}
