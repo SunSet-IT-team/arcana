@@ -1,5 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
 import gsap from 'gsap';
+import React, {useEffect, useRef, useState} from 'react';
 
 import './styles.scss';
 
@@ -10,7 +10,6 @@ function Preloader() {
 
     useEffect(() => {
         tll.current = gsap.timeline({paused: true});
-        // document.body.classList.add("menu-open");
         tll.current.to('#percent, #bar', {
             duration: 0.15,
             opacity: 0,
@@ -18,29 +17,25 @@ function Preloader() {
         });
         tll.current.to('#preloader', {
             duration: 1.5,
-            // height: "0%",
             y: '-100%',
         });
         tll.current.to('#preloader-wrapper', {
             duration: 2,
             x: '100%',
-            // onComplete: () => {
-            //   document.body.classList.remove("menu-open");
-            // },
         });
     }, []);
 
     useEffect(() => {
-        let width = 1;
+        let width = 0;
         let id = setInterval(() => {
             if (width >= 100) {
                 clearInterval(id);
                 tll.current.play();
             } else {
-                width++;
+                width += 5;
                 setPercent(width);
                 if (barRef.current) {
-                    barRef.current.style.width = width + '%';
+                    barRef.current.style.width = Math.min(width, 100) + '%';
                 }
             }
         }, 10);
