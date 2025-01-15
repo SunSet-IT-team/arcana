@@ -2,6 +2,7 @@ import React from 'react';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {buyForm, setOpenBuyForm} from '../../../redux/slices/buyFormSlice';
+import {setOpenPrivacy} from '../../../redux/slices/privacySlice';
 
 import './styles.scss';
 
@@ -178,7 +179,12 @@ function BuyForm() {
                                     <p className="buy-form__form-text">
                                         Le vostre informazioni personali saranno
                                         mantenute {''}
-                                        <span className="underline">
+                                        <span
+                                            className="underline"
+                                            onClick={() =>
+                                                dispatch(setOpenPrivacy(true))
+                                            }
+                                        >
                                             private
                                         </span>{' '}
                                         e sicure*.
