@@ -41,7 +41,7 @@ function StoryStory() {
                     <div className="story__content">
                         <img
                             className="story__content-img"
-                            src="./../images/storys/1.jpg"
+                            src="./../images/articles/1.jpg"
                             alt="content"
                         />
                         <div className="story__body">
