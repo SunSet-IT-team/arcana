@@ -127,7 +127,7 @@ function BlogBlog() {
     const BlogFilterItem = ({option, onClick}) => {
         return (
             <li
-                className="blog__filter-item underline"
+                className={`blog__filter-item underline ${selectedBlogFilter === option.value && 'blog__filter-item--active'}`}
                 onClick={() => onClick(option.value)}
             >
                 {option.label}
