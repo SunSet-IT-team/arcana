@@ -4,6 +4,13 @@
     width: 100%;
     padding: 0 size-desktop(92px);
 
-    // max-width: size(1920px);
-    //  background-color: purple;
+    @media screen and (max-width: 1024px) {
+        max-width: unset;
+        padding: 0 82px;
+    }
+
+    @media screen and (max-width: 375px) {
+        max-width: unset;
+        padding: 0 42px;
+    }
 }

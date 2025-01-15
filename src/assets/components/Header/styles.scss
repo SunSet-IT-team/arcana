@@ -67,4 +67,16 @@
             width: 25px;
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        &__wrapper {
+            padding: 24px 0;
+        }
+        &__link {
+            font-size: 17.5px;
+            margin-right: 52px;
+            padding: 0;
+            padding-top: 3px;
+        }
+    }
 }

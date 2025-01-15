@@ -105,7 +105,7 @@ function MainAbout() {
                         <div className="about__author-wrapper">
                             <ElementAnimation
                                 tag="p"
-                                className="about__author-text text-split "
+                                className="about__author-text1 text-split"
                             >
                                 <span>
                                     Studia la Mappa Archetipica natale, basata
@@ -116,7 +116,14 @@ function MainAbout() {
                                     crittografato per il percorso di vita tipico
                                     dell'anima sulla terra.
                                 </span>
-                                <span> </span>
+                            </ElementAnimation>
+
+                            <span> </span>
+
+                            <ElementAnimation
+                                tag="p"
+                                className="about__author-text2 text-split"
+                            >
                                 <span>
                                     Attraverso la diffusione del metodo e le
                                     consulenze private, aiuta tutti coloro che

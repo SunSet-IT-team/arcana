@@ -39,4 +39,17 @@
 
         max-width: 150px;
     }
+
+    @media screen and (max-width: 1024px) {
+        // min-height: unset;
+        // margin-top: 400px;
+
+        &__wrapper {
+            margin-left: calc(40% + 6px);
+        }
+
+        &__text {
+            margin-bottom: 48px;
+        }
+    }
 }

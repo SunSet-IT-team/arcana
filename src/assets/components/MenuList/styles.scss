@@ -70,4 +70,12 @@
     &__link-svg {
         transition: color 0.3s;
     }
+
+    @media screen and (max-width: 1024px) {
+        padding-left: 7px;
+
+        &__link {
+            padding: 25px 0px;
+        }
+    }
 }

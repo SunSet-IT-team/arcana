@@ -1,6 +1,19 @@
 @import '../../scss/abstracts/variables';
 @import '../../scss/abstracts/mixins';
 @import '../../scss/abstracts/functions';
+
 .menu {
     padding-top: clamp(10px, size-desktop(140px), 140px);
+
+    @media screen and (max-width: 1024px) {
+        min-height: 100vh;
+
+        &__wrapper {
+            // Некоторые стили для wrapper
+            
+            .menu__title {
+                margin-bottom: 73px; // Стили для заголовка
+            }
+        }
+    }
 }
