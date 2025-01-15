@@ -63,7 +63,8 @@
         grid-area: 1 / 5 / 3 / 6;
         margin-left: clamp(10px, size-desktop(0px), 0px);
     }
-    &__author-text1, &__author-text2 {
+    &__author-text1,
+    &__author-text2 {
         font-size: clamp(8px, size-desktop(18px), 18px);
 
         color: $white;
@@ -114,7 +115,7 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(2, 1fr);
         }
-        
+
         &__info-text {
             font-size: clamp(36px, size-desktop(94px), 100px);
             line-height: 1.4;
