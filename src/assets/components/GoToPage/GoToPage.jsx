@@ -1,5 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
 import gsap from 'gsap';
+import React, {useEffect, useRef} from 'react';
 
 import './styles.scss';
 
@@ -10,7 +10,7 @@ function GoToPage() {
         tll.current = gsap.timeline({paused: true});
 
         tll.current.to('#loading', {
-            duration: 2,
+            duration: 0.9,
             y: '-100%',
         });
 
