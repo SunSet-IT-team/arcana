@@ -48,7 +48,7 @@
     &__body {
         display: flex;
         flex-direction: column;
-
+        line-height: 25.2px;
         height: 100%;
 
         background-color: $grey;
@@ -75,7 +75,7 @@
         width: 100%;
     }
     &__item-tagbox {
-        margin-bottom: size-desktop(20px);
+        margin-bottom: size-desktop(10px);
     }
     &__item-tag {
         font-size: clamp(13px, size-desktop(18px), 18px);
@@ -100,21 +100,18 @@
     }
     &__item-text {
         font-size: clamp(13px, size-desktop(18px), 18px);
-        margin-bottom: clamp(10px, size-desktop(20px), 20px);
+        margin-bottom: clamp(10px, size-desktop(17px), 17px);
     }
     &__item-link {
         min-width: 120px;
         margin-left: auto;
     }
     &__link {
-        position: absolute;
-        right: 5%;
-        bottom: 1px;
-
+        grid-area: 2 / 5 / 3 / 6;
+        margin-bottom: 33px;
+        margin-top: auto;
         font-size: clamp(13px, size-desktop(18px), 18px);
         line-height: 21px;
-
-        margin-left: auto;
 
         transition: color 0.3s;
         &:hover {

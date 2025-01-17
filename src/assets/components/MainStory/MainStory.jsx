@@ -225,18 +225,14 @@ function MainStory() {
                                     </div>
                                     <div className="storys-demo__item-body">
                                         <h3 className="storys-demo__item-title text-split">
-                                            RICETTA EDIFICANTE
+                                            LA STORIA DI UN UOMO <br /> CONFUSO
                                         </h3>
                                         <p className="storys-demo__item-text text-split text-cut">
                                             Nella sua essenza, il testo ittico è
                                             un'alternativa al tradizionale lorem
                                             ipsum, che in alcuni casi provoca
                                             sconcerto quando si cerca di leggere
-                                            il testo ittico. Nella sua essenza,
-                                            il testo ittico è un'alternativa al
-                                            tradizionale lorem ipsum, che in
-                                            alcuni casi provoca sconcerto quando
-                                            si cerca di leggere il testo ittico.
+                                            il testo ittico.
                                         </p>
                                     </div>
 
@@ -275,13 +271,14 @@ function MainStory() {
                                 <div className="storys-demo__item-content">
                                     <div className="storys-demo__item-tagbox">
                                         <span className="storys-demo__item-tag underline text-split">
-                                            Crescita personale
+                                            Lavoro e professione
                                         </span>
                                     </div>
 
                                     <div className="storys-demo__item-body">
                                         <h3 className="storys-demo__item-title text-split">
-                                            RICETTA EDIFICANTE
+                                            UNA STORIA D'AMORE CHE HA SUPERATO
+                                            LA PROVA DEL TEMPO
                                         </h3>
                                         <p className="storys-demo__item-text text-split text-cut">
                                             Nella sua essenza, il testo ittico è
@@ -326,7 +323,7 @@ function MainStory() {
                                 <div className="storys-demo__item-content">
                                     <div className="storys-demo__item-tagbox">
                                         <span className="storys-demo__item-tag underline text-split">
-                                            Crescita personale
+                                            Salute
                                         </span>
                                     </div>
 
@@ -339,11 +336,7 @@ function MainStory() {
                                             un'alternativa al tradizionale lorem
                                             ipsum, che in alcuni casi provoca
                                             sconcerto quando si cerca di leggere
-                                            il testo ittico. Nella sua essenza,
-                                            il testo ittico è un'alternativa al
-                                            tradizionale lorem ipsum, che in
-                                            alcuni casi provoca sconcerto quando
-                                            si cerca di leggere il testo ittico.
+                                            il testo ittico.
                                         </p>
                                     </div>
 
@@ -459,27 +452,29 @@ function MainStory() {
                                 </div>
                             </div>
                         </li>
-                    </ul>
 
-                    <Link
-                        to="/storys"
-                        className="storys-demo__link arrow"
-                        href="#"
-                    >
-                        <span className="underline">Leggi tutte le storie</span>
-                        <svg
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                        <Link
+                            to="/storys"
+                            className="storys-demo__link arrow"
+                            href="#"
                         >
-                            <path
-                                d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </Link>
+                            <span className="underline">
+                                Leggi tutte le storie
+                            </span>
+                            <svg
+                                width="21"
+                                height="21"
+                                viewBox="0 0 21 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </Link>
+                    </ul>
                 </div>
             </div>
             {/* <StorysAnimation></StorysAnimation> */}
