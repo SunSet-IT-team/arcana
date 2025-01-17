@@ -99,14 +99,14 @@
     }
     &__box-text {
         font-size: clamp(13px, size-desktop(32px), 32px);
-
+        line-height: 44.8px;
         max-width: 60%;
 
         &:nth-child(2) {
             margin-left: 20%;
         }
         &:nth-child(3) {
-            margin-left: 40%;
+            margin-left: 40.4%;
         }
         &:not(:last-child) {
             margin-bottom: 20px;

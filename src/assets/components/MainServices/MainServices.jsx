@@ -1,11 +1,11 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 
 import TitleAnimation from '../../hooks/titleAnimation';
 
 import './styles.scss';
 
-import ServicesList from '../ServicesList/ServicesList';
 import Link from '../../components/Link/Link';
+import ServicesList from '../ServicesList/ServicesList';
 
 function MainServices() {
     const servicesData = [

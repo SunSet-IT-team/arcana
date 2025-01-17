@@ -225,18 +225,14 @@ function MainStory() {
                                     </div>
                                     <div className="storys-demo__item-body">
                                         <h3 className="storys-demo__item-title text-split">
-                                            RICETTA EDIFICANTE
+                                            LA STORIA DI UN UOMO <br /> CONFUSO
                                         </h3>
                                         <p className="storys-demo__item-text text-split text-cut">
                                             Nella sua essenza, il testo ittico è
                                             un'alternativa al tradizionale lorem
                                             ipsum, che in alcuni casi provoca
                                             sconcerto quando si cerca di leggere
-                                            il testo ittico. Nella sua essenza,
-                                            il testo ittico è un'alternativa al
-                                            tradizionale lorem ipsum, che in
-                                            alcuni casi provoca sconcerto quando
-                                            si cerca di leggere il testo ittico.
+                                            il testo ittico.
                                         </p>
                                     </div>
 
@@ -275,13 +271,14 @@ function MainStory() {
                                 <div className="storys-demo__item-content">
                                     <div className="storys-demo__item-tagbox">
                                         <span className="storys-demo__item-tag underline text-split">
-                                            Crescita personale
+                                            Lavoro e professione
                                         </span>
                                     </div>
 
                                     <div className="storys-demo__item-body">
                                         <h3 className="storys-demo__item-title text-split">
-                                            RICETTA EDIFICANTE
+                                            UNA STORIA D'AMORE CHE HA SUPERATO
+                                            LA PROVA DEL TEMPO
                                         </h3>
                                         <p className="storys-demo__item-text text-split text-cut">
                                             Nella sua essenza, il testo ittico è
@@ -326,7 +323,7 @@ function MainStory() {
                                 <div className="storys-demo__item-content">
                                     <div className="storys-demo__item-tagbox">
                                         <span className="storys-demo__item-tag underline text-split">
-                                            Crescita personale
+                                            Salute
                                         </span>
                                     </div>
 
@@ -339,11 +336,7 @@ function MainStory() {
                                             un'alternativa al tradizionale lorem
                                             ipsum, che in alcuni casi provoca
                                             sconcerto quando si cerca di leggere
-                                            il testo ittico. Nella sua essenza,
-                                            il testo ittico è un'alternativa al
-                                            tradizionale lorem ipsum, che in
-                                            alcuni casi provoca sconcerto quando
-                                            si cerca di leggere il testo ittico.
+                                            il testo ittico.
                                         </p>
                                     </div>
 
