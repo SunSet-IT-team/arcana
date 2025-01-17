@@ -452,27 +452,29 @@ function MainStory() {
                                 </div>
                             </div>
                         </li>
-                    </ul>
 
-                    <Link
-                        to="/storys"
-                        className="storys-demo__link arrow"
-                        href="#"
-                    >
-                        <span className="underline">Leggi tutte le storie</span>
-                        <svg
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                        <Link
+                            to="/storys"
+                            className="storys-demo__link arrow"
+                            href="#"
                         >
-                            <path
-                                d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </Link>
+                            <span className="underline">
+                                Leggi tutte le storie
+                            </span>
+                            <svg
+                                width="21"
+                                height="21"
+                                viewBox="0 0 21 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </Link>
+                    </ul>
                 </div>
             </div>
             {/* <StorysAnimation></StorysAnimation> */}
