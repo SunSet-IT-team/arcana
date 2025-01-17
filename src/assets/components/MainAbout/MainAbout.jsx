@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom';
 import './styles.scss';
 
 import ElementAnimation from '../../hooks/elementAnimation';
-import TitleAnimation from '../../hooks/titleAnimation';
 import {useTextAnimation} from '../../hooks/textWhiteAnimation';
+import TitleAnimation from '../../hooks/titleAnimation';
 
 import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import {TextLinesReveal} from '../../js/textLinesReveal';
@@ -118,7 +118,7 @@ function MainAbout() {
                                 </span>
                             </ElementAnimation>
 
-                            <span> </span>
+                            {/* <span> </span> */}
 
                             <ElementAnimation
                                 tag="p"

@@ -3,7 +3,7 @@
 @import '../../scss/abstracts/functions';
 
 .about {
-    padding-top: clamp(10px, size-desktop(250px), 250px);
+    padding-top: clamp(10px, size-desktop(244px), 244px);
     &__content {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -22,16 +22,21 @@
 
         .line-wrapper {
             &:nth-child(1) {
-                margin-left: clamp(150px, size-desktop(330px), 330px);
+                margin-left: clamp(150px, size-desktop(360px), 360px);
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: -5px;
             }
         }
     }
 
     &__info-subtext {
+        padding-top: 64px;
         margin-top: auto;
         margin-bottom: auto;
         max-width: size-desktop(330px);
-
+        font-size: clamp(8px, size-desktop(18px), 18px);
         color: $light-grey;
     }
 
@@ -40,8 +45,9 @@
         grid-area: 1 / 4 / 3 / 5;
         max-width: 330px;
 
-        // height: size-desktop(467px) !important; // issue #4
-        max-height: 467px;
+        margin-left: 11px;
+        // margin-top: 5px;
+        height: 467px;
     }
     &__author-imgBg {
         background-color: $white;
@@ -61,7 +67,11 @@
         flex-direction: column;
         justify-content: space-between;
         grid-area: 1 / 5 / 3 / 6;
-        margin-left: clamp(10px, size-desktop(0px), 0px);
+        margin-left: 17px;
+        line-height: 25.2px;
+    }
+    &__author-text2 {
+        margin-top: -10px;
     }
     &__author-text1,
     &__author-text2 {
@@ -85,18 +95,18 @@
     &__box {
         grid-area: 3 / 1 / 4 / 6;
 
-        margin-top: clamp(10px, size-desktop(250px), 250px);
+        margin-top: clamp(10px, size-desktop(248px), 248px);
     }
     &__box-text {
         font-size: clamp(13px, size-desktop(32px), 32px);
-
+        line-height: 44.8px;
         max-width: 60%;
 
         &:nth-child(2) {
             margin-left: 20%;
         }
         &:nth-child(3) {
-            margin-left: 40%;
+            margin-left: 40.4%;
         }
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -168,13 +178,13 @@
             margin-top: auto;
             margin-bottom: auto;
             margin-left: 0;
-            margin-right: 5px;
+            // margin-right: 5px;
             line-height: 1.4;
         }
         &__author-text2 {
             grid-area: 1 / 4 / 2 / 6;
             font-size: 18px;
-            margin-top: 5px;
+            // margin-top: 5px;
             margin-left: 10px;
             margin-right: 5px;
             line-height: 1.4;
