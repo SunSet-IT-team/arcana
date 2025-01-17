@@ -3,7 +3,7 @@
 @import '../../scss/abstracts/functions';
 
 .menu-list {
-    @include margin-left40;
+    margin-left: 40.5%;
     &__list {
         box-shadow: inset 0 size-desktop(1px) 0 rgba(113, 113, 113);
     }
@@ -52,7 +52,7 @@
         font-size: clamp(20px, size-desktop(36px), 36px);
 
         width: 100%;
-        padding: clamp(10px, size-desktop(25px), 25px) 0;
+        padding: clamp(10px, size-desktop(24px), 24px) 0;
 
         color: $light-grey;
 
