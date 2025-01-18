@@ -45,20 +45,18 @@ function StoryStory() {
                             alt="content"
                         />
                         <div className="story__body">
-                            <div className="">
-                                <h2>
-                                    MOLTI IMPRENDITORI DI SUCCESSO HANNO
-                                    INIZIATO UN PERCORSO PROFESSIONALE SENZA
-                                    MOLTI SOLDI PER INIZIARE E SCEGLIENDO
-                                    DESTINAZIONI APPARENTEMENTE IMPOPOLARI.
-                                    EPPURE SONO RIUSCITI A RAGGIUNGERE IL
-                                    SUCCESSO E AD OCCUPARE LA LORO NICCHIA
-                                </h2>
-                                <p>
-                                    Come i sogni dei bambini sui missili sono
-                                    diventati realtà
-                                </p>
-                            </div>
+                            <h2>
+                                MOLTI IMPRENDITORI DI SUCCESSO HANNO INIZIATO UN
+                                PERCORSO PROFESSIONALE SENZA MOLTI SOLDI PER
+                                INIZIARE E SCEGLIENDO DESTINAZIONI
+                                APPARENTEMENTE IMPOPOLARI. EPPURE SONO RIUSCITI
+                                A RAGGIUNGERE IL SUCCESSO E AD OCCUPARE LA LORO
+                                NICCHIA
+                            </h2>
+                            <p>
+                                Come i sogni dei bambini sui missili sono
+                                diventati realtà
+                            </p>
                             <p>
                                 Da bambino, Peter Beck sognava di lanciare razzi
                                 nello spazio. Suo padre progettò telescopi e
@@ -125,18 +123,18 @@ function StoryStory() {
                             </p>
                             <p>
                                 "Dove giacciono le rovine, c'è speranza di
-                                trovare il tesoro» Nel 2005, immigrato turco
-                                Hamdi Ulukaya ha notato un volantino
-                                pubblicitario in una cassetta postale sulla
-                                vendita di una fabbrica di yogurt a Kraft. Il
-                                volantino è andato all'urna. A quel tempo,
-                                l'uomo viveva negli Stati Uniti da 11 anni e
-                                stava cercando di sviluppare una piccola
-                                attività di produzione di formaggio — conosceva
-                                questa attività fin dall'Infanzia, e tuttavia è
-                                stata data a Hamdi duramente. Dopo un po ' di
-                                riflessione, Ulukaya si interessò ancora alla
-                                pubblicità.
+                                trovare il tesoro» <br />
+                                Nel 2005, immigrato turco Hamdi Ulukaya ha
+                                notato un volantino pubblicitario in una
+                                cassetta postale sulla vendita di una fabbrica
+                                di yogurt a Kraft. Il volantino è andato
+                                all'urna. A quel tempo, l'uomo viveva negli
+                                Stati Uniti da 11 anni e stava cercando di
+                                sviluppare una piccola attività di produzione di
+                                formaggio — conosceva questa attività fin
+                                dall'Infanzia, e tuttavia è stata data a Hamdi
+                                duramente. Dopo un po ' di riflessione, Ulukaya
+                                si interessò ancora alla pubblicità.
                             </p>
                             <p>
                                 L'edificio è stato costruito quasi un secolo fa
