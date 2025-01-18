@@ -1,11 +1,11 @@
-import React from 'react';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import {Swiper, SwiperSlide} from 'swiper/react';
+import React, {useState} from 'react';
 
 import gsap from 'gsap';
+import Marquee from 'react-fast-marquee';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import {FreeMode, Navigation} from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 import {Link} from 'react-router-dom';
 import TitleAnimation from '../../hooks/titleAnimation';
@@ -14,6 +14,7 @@ import {TextLinesReveal} from '../../js/textLinesReveal';
 import './styles.scss';
 
 export default function App() {
+    const [onTitle, setOnTitle] = useState(false);
     const swiperRef = React.useRef(null);
 
     // РАЗБИВКА ТЕКСТА НА СЛОВА
@@ -480,8 +481,15 @@ export default function App() {
                                     </span>
                                     <h3
                                         className={`archetypes-demo__item-title text-split `}
+                                        onMouseEnter={() => setOnTitle(true)}
+                                        onMouseLeave={() => setOnTitle(false)}
                                     >
-                                        {data.title}
+                                        <Marquee
+                                            play={index + 1 === 10 && onTitle}
+                                            className="marguee"
+                                        >
+                                            {data.title}
+                                        </Marquee>
                                     </h3>
                                     <div className="archetypes-demo__item-imgBox">
                                         <div className="archetypes-demo__item-imgBg">
