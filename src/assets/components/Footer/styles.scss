@@ -15,7 +15,7 @@
 
         display: flex;
 
-        padding: size-desktop(60px) 0 size-desktop(70px) 0;
+        padding: size-desktop(60px) 0 size-desktop(67px) 0;
 
         border-top: 1px solid $light-grey;
         border-bottom: 1px solid $light-grey;
@@ -82,7 +82,7 @@
         overflow: hidden;
 
         &:not(:last-child) {
-            margin-bottom: size-desktop(20px);
+            margin-bottom: size-desktop(21px);
         }
 
         &:nth-child(1) {
@@ -157,7 +157,7 @@
         overflow: hidden;
 
         &:not(:last-child) {
-            margin-bottom: size-desktop(20px);
+            margin-bottom: size-desktop(21px);
         }
     }
 

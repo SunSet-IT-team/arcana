@@ -7,7 +7,7 @@
     &__back-link {
         display: block;
 
-        margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        margin-bottom: clamp(10px, size-desktop(110px), 110px);
 
         color: $light-grey;
     }
@@ -23,7 +23,7 @@
         grid-auto-flow: column;
         width: 100%;
 
-        padding: clamp(10px, size-desktop(50px), 50px) 0;
+        padding: clamp(10px, size-desktop(38px), 38px) 0;
         margin-bottom: clamp(10px, size-desktop(80px), 80px);
 
         &:before,
@@ -67,6 +67,8 @@
         }
     }
     &__filter-select {
+        margin-top: -9px;
+        margin-bottom: 9px;
         font-size: clamp(13px, size-desktop(18px), 18px);
     }
     &__bottom {
@@ -78,11 +80,11 @@
         grid-column: 5;
     }
     &__button {
-        display: block;
-        margin-top: 50px;
-        max-width: 320px;
+        padding: 9px 20px;
+        max-width: 263px;
         margin-left: auto;
-        margin-right: 50px;
-        padding: 10px 20px;
+        margin-top: 50px;
+        margin-right: 67px;
+        line-height: 21.6px;
     }
 }

@@ -72,7 +72,7 @@
     }
     &__tag {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
+        max-height: 42px;
         padding: size-desktop(10px) size-desktop(20px);
 
         text-transform: uppercase;
@@ -142,7 +142,7 @@
     &__link {
         font-size: clamp(13px, size-desktop(18px), 18px);
         line-height: 21px;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
         margin-right: -5px;
         transition: color 0.3s;
 
