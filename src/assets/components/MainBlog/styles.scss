@@ -4,8 +4,11 @@
 .blog-demo {
     padding-bottom: clamp(10px, size-desktop(250px), 250px);
     &__link {
-        max-width: 290px;
+        padding: 10px 20px;
+        max-width: 285px;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 45px;
+        margin-right: 50px;
+        line-height: 21.6px;
     }
 }
