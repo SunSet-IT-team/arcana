@@ -15,7 +15,7 @@
 
         display: flex;
 
-        padding: size-desktop(50px) 0 size-desktop(40px);
+        padding: size-desktop(60px) 0 size-desktop(70px) 0;
 
         border-top: 1px solid $light-grey;
         border-bottom: 1px solid $light-grey;
@@ -36,7 +36,7 @@
     }
 
     &__privacy {
-        margin-bottom: size-desktop(90px);
+        margin-bottom: size-desktop(45px);
         margin-left: -5px; // issue #9
 
         overflow: hidden;
@@ -60,19 +60,21 @@
         margin-left: auto;
         max-width: size-desktop(680px);
         width: 100%;
+        margin-right: 20px;
+        margin-top: -10px;
     }
 
     &__menu-title {
         font-size: clamp(24px, size-desktop(32px), 32px);
 
-        margin-bottom: size-desktop(50px);
+        margin-bottom: size-desktop(40px);
     }
 
     &__menu-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: row;
-
+        gap: 20px;
         overflow: hidden;
     }
 
@@ -80,7 +82,7 @@
         overflow: hidden;
 
         &:not(:last-child) {
-            margin-bottom: size-desktop(30px);
+            margin-bottom: size-desktop(20px);
         }
 
         &:nth-child(1) {
@@ -142,6 +144,7 @@
     &__contact-block {
         max-width: size-desktop(330px);
         width: 100%;
+        margin-top: -10px;
     }
 
     &__contact-title {
@@ -154,7 +157,7 @@
         overflow: hidden;
 
         &:not(:last-child) {
-            margin-bottom: size-desktop(30px);
+            margin-bottom: size-desktop(20px);
         }
     }
 
