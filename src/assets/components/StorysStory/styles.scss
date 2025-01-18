@@ -7,7 +7,7 @@
     &__back-link {
         display: block;
 
-        margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        margin-bottom: clamp(10px, size-desktop(110px), 110px);
 
         transition: color 0.3s;
 
@@ -26,7 +26,7 @@
         display: flex;
         justify-content: space-between;
 
-        padding: clamp(10px, size-desktop(50px), 50px) 0;
+        padding: clamp(10px, size-desktop(39px), 39px) 0;
         margin-bottom: clamp(10px, size-desktop(80px), 80px);
 
         &:before,
@@ -59,7 +59,6 @@
     &__filter-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
-        // cursor: pointer;;
         transition: color 0.3s;
 
         color: $light-grey;
@@ -75,8 +74,9 @@
     }
     &__filter-select {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
-        // max-width: 330px;
+        margin-top: -9px;
+        margin-bottom: 9px;
+        max-width: 330px;
         width: 20%;
     }
     &__list {
@@ -191,7 +191,7 @@
     &__item-tag {
         display: inline-block;
 
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
         color: $light-grey;
     }
@@ -209,7 +209,7 @@
         overflow: hidden;
     }
     &__item-text {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
 
         display: -webkit-box;
         -webkit-line-clamp: 4;
