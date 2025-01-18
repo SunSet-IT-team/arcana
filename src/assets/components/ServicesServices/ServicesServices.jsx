@@ -56,6 +56,12 @@ function ServicesServices() {
             info: 'Analisi del prossimo periodo basata sulle tue energie archetipiche e sulle energie archetipiche di questo periodo. Identificare punti di forza e aree di rischio, lezioni che dovrebbero essere apprese da questo periodo e gli esami che dovranno essere sostenuti. Capire a cosa dare la priorità per sfruttare al meglio il potenziale che si apre davanti a te in un dato periodo di tempo',
             img: '1',
         },
+        {
+            name: 'FINANZA PERSONALE',
+            time: '[45 – 90 min]',
+            info: 'Analisi del prossimo periodo basata sulle tue energie archetipiche e sulle energie archetipiche di questo periodo. Identificare punti di forza e aree di rischio, lezioni che dovrebbero essere apprese da questo periodo e gli esami che dovranno essere sostenuti. Capire a cosa dare la priorità per sfruttare al meglio il potenziale che si apre davanti a te in un dato periodo di tempo',
+            img: '1',
+        },
     ];
     return (
         <section className="services">
@@ -78,6 +84,44 @@ function ServicesServices() {
                     </Link>
                     <h1 className="services__title title-1">CONSULENZE</h1>
                     <ServicesList services={servicesData} />
+                </div>
+                <div className="services__subtext">
+                    <p className="services__text">
+                        COME SI SVOLGE LA CONSULENZA
+                    </p>
+
+                    <p className="services__text">
+                        Dopo il nostro primo contatto mi serveranno la tua data
+                        di nascita e la tua richiesta (anche le date di nascita
+                        di alcune altre persone che saranno ritenute
+                        importanti). Ti chiederò altre informazioni secondo la
+                        tua richiesta o situazione.
+                    </p>
+                    <p className="services__text">
+                        Nel giorno della consulenza avrai bisogno di una buona
+                        connessione Internet e di un posto tranquillo dove
+                        potrai rimanere da solo per non essere disturbato e
+                        distratto da un lavoro profondo con il profilo
+                        archetipico.
+                    </p>
+                    <p className="services__text">
+                        Il formato della consulenza è online in un canale
+                        Telegram chiuso, dove solo io e te. Grazie al video
+                        formato potrai vedere i file che ti mostrerò che
+                        accompagnano la consulenza.
+                    </p>
+                    <p className="services__text">
+                        La consulenza si svolge sotto forma di un dialogo
+                        attivo, che aiuta a ottenere i massimi risultati e
+                        benefici dalla consulenza.
+                    </p>
+                    <p className="services__text">
+                        Come risultato della consulenza, avrai una comprensione
+                        approfondita secondo alla tua richiesta, una
+                        registrazione della nostra consulenza e una settimana di
+                        supporto e risposte alle tue domande da parte mia
+                        secondo della richiesta del consulto svolto
+                    </p>
                 </div>
             </div>
         </section>
