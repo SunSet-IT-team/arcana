@@ -7,8 +7,10 @@
     height: 100%;
 
     margin-right: 0;
+    // margin-top: -10px;
 }
 .archetypes-demo {
+    margin-top: -10px;
     .container {
         padding-right: 0;
     }
@@ -23,11 +25,13 @@
         position: relative;
         display: flex;
     }
+    &__buttons {
+        margin-right: clamp(20px, size-desktop(217px), 217px);
+    }
     &__buttons-title {
         font-size: clamp(12px, size-desktop(18px), 18px);
-
+        margin-top: 15px;
         margin-bottom: size-desktop(60px);
-
         color: $light-grey;
     }
     &__button {
@@ -71,8 +75,8 @@
         }
     }
     &__item-imgBox {
-        width: clamp(10px, size-desktop(330px), 330px);
-        height: clamp(10px, size-desktop(330px), 330px);
+        width: 100%;
+        height: 100%;
     }
     &__item-imgBg {
         background-color: $white;
@@ -91,6 +95,15 @@
 }
 .swiper-slide {
     width: 100%;
+    // width: 680px;
+    // width: auto !important;
+    // &:not(:has(.swiper-slide-active)) {
+    //     .archetypes-demo {
+    //         &__item-number {
+    //             width: clamp(10px, size-desktop(330px), 330px);
+    //         }
+    //     }
+    // }
 
     opacity: 0.6;
 
@@ -106,7 +119,7 @@
             border-bottom: $contour-white;
         }
         &__item-title {
-            font-size: clamp(12px, size-desktop(18px), 28px);
+            font-size: clamp(12px, size-desktop(32px), 32px);
             margin-bottom: size-desktop(30px);
         }
 
@@ -136,10 +149,13 @@
         }
         &__item-text {
             font-size: clamp(13px, size-desktop(18px), 18px);
-            margin-bottom: size-desktop(20px);
+            line-height: 25.2px;
+            margin-bottom: 46px;
             width: clamp(10px, size-desktop(680px), 680px);
         }
         &__item-imgBox {
+            // width: 100%;
+            // height: 100%;
             position: relative;
 
             &::before {
@@ -174,12 +190,17 @@
         }
     }
 }
+
 .swiper-slide-active {
+    // padding-right: 35px;
+    // margin-top: 24px;
     width: size-desktop(680px) !important;
     max-width: 680px !important;
     opacity: 1;
+    // transform: scale(1) !important;
     .archetypes-demo {
         &__item-imgBox {
+            // margin-top: -11px;
             width: clamp(10px, size-desktop(680px), 680px);
             height: clamp(10px, size-desktop(680px), 680px);
             &::before {
