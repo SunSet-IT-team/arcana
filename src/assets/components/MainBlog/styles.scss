@@ -3,11 +3,13 @@
 @import '../../scss/abstracts/functions';
 .blog-demo {
     padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    margin-top: -8px;
+    margin-bottom: 0px;
     &__link {
         padding: 10px 20px;
         max-width: 285px;
         margin-left: auto;
-        margin-top: 45px;
+        margin-top: 50px;
         margin-right: 50px;
         line-height: 21.6px;
     }
