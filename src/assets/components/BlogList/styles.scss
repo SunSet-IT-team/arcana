@@ -72,7 +72,7 @@
     }
     &__tag {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
+        max-height: 42px;
         padding: size-desktop(10px) size-desktop(20px);
 
         text-transform: uppercase;
