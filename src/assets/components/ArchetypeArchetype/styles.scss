@@ -11,6 +11,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(200px), 200px);
+        line-height: 76.8px;
     }
     &__wrapper {
         display: flex;
@@ -25,6 +26,13 @@
         margin-bottom: size-desktop(80px);
     }
     &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        line-height: 25.2px;
+        & > p:not([class]) {
+            margin-bottom: 0px;
+        }
         &:nth-child(1) {
             max-width: 30%;
             width: 100%;
@@ -48,7 +56,7 @@
     &__image-box {
         max-width: 30%;
         width: 100%;
-        margin-right: clamp(15px, size-desktop(185px), 185px);
+        margin-right: clamp(15px, size-desktop(181px), 181px);
     }
     &__image-span {
         display: inline-block;
@@ -65,13 +73,15 @@
 
         display: inline-block;
 
-        margin-bottom: size-desktop(40px);
+        margin-bottom: size-desktop(37px);
     }
     &__positive-list {
-        margin-bottom: size-desktop(40px);
+        margin-bottom: size-desktop(80px);
+        line-height: 25.2px;
     }
     &__negative-list {
-        margin-bottom: size-desktop(40px);
+        line-height: 25.2px;
+        margin-bottom: size-desktop(45px);
     }
     &__positive-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
@@ -90,7 +100,7 @@
     &__info-text {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
-        margin-bottom: size-desktop(40px);
+        margin-bottom: size-desktop(48px);
     }
     &__button-box {
         display: flex;
