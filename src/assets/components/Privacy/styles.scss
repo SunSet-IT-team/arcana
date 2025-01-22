@@ -40,7 +40,7 @@
         justify-content: space-between;
         align-items: center;
 
-        padding: 32px 0;
+        padding: 20px 0;
     }
 
     &__content {
@@ -49,9 +49,10 @@
         overflow: hidden;
         margin-top: auto;
         margin-bottom: auto;
-        max-width: 60%;
+        max-width: 59.5%;
         width: 100%;
         margin-left: auto;
+        padding-top: 100px;
     }
     &__close {
         display: flex;
@@ -151,14 +152,20 @@
         opacity: 0;
     }
     &__title {
-        margin-bottom: size-desktop(70px);
+        line-height: 76.8px;
+        margin-bottom: size-desktop(90px);
         border-bottom: $contour-grey;
 
         transform: translateX(-100%);
     }
+    &__text-box {
+        overflow: auto;
+    }
     &__text {
         font-size: clamp(18px, size-desktop(32px), 32px);
+        line-height: 44.8px;
         color: $grey;
+
         &:not(:last-child) {
             margin-bottom: size-desktop(30px);
         }
