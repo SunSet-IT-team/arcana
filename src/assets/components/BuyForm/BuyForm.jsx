@@ -164,17 +164,19 @@ function BuyForm() {
                                     className="buy-form__input"
                                     placeholder="Telefono"
                                 />
-                                <textarea
-                                    type="text"
-                                    className="buy-form__input buy-form__input--text"
-                                    placeholder="Il tuo messaggio"
-                                ></textarea>
-                                <label className="buy-form__label">
-                                    <input
-                                        type="file"
-                                        className="buy-form__file sr-only"
-                                    />
-                                </label>
+                                <div className="buy-form__message-box">
+                                    <textarea
+                                        type="text"
+                                        className="buy-form__input buy-form__input--text"
+                                        placeholder="Il tuo messaggio"
+                                    ></textarea>
+                                    <label className="buy-form__label">
+                                        <input
+                                            type="file"
+                                            className="buy-form__file sr-only"
+                                        />
+                                    </label>
+                                </div>
                                 <div className="buy-form__form-bottom">
                                     <p className="buy-form__form-text">
                                         Le vostre informazioni personali saranno
