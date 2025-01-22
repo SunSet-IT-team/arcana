@@ -44,6 +44,9 @@
         color: $light-grey;
         border-top: 1px solid $light-grey;
         border-bottom: 1px solid $light-grey;
+        &:has(.services-list__info--open) {
+            height: auto;
+        }
     }
     &__name {
         font-size: clamp(24px, size-desktop(32px), 32px);
