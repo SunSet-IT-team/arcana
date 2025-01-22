@@ -170,7 +170,7 @@
     &__title {
         margin-right: 20px;
         line-height: 76.8px;
-        @media screen and (max-width: 1320px) {
+        @media screen and (max-width: 1440px) {
             display: flex;
             & span {
                 font-size: 32px;
@@ -202,7 +202,7 @@
     &__form {
         position: relative;
 
-        font-size: 32px;
+        font-size: clamp(18px, size-desktop(32px), 32px);
         min-height: 550px;
         display: flex;
         flex-direction: column;
@@ -293,6 +293,6 @@
     }
 
     .line {
-        // transform: translateY(300%) rotate(10deg);
+        transform: translateY(300%) rotate(10deg);
     }
 }
