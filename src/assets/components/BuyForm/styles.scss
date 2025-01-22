@@ -41,7 +41,7 @@
         justify-content: space-between;
         align-items: center;
 
-        padding: 32px 0;
+        padding: 20px 0;
     }
 
     &__close {
@@ -147,10 +147,11 @@
         align-items: center;
         margin-top: auto;
         margin-bottom: auto;
+        padding-top: 100px;
     }
     &__text {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
+        line-height: 44.8px;
         max-width: 20%;
 
         color: $light-grey;
@@ -184,7 +185,7 @@
         transform: translateX(-100%);
     }
     &__form-box {
-        max-width: 60%;
+        max-width: 59.5%;
         width: 100%;
 
         overflow: hidden;
