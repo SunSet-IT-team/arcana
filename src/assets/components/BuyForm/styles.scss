@@ -151,14 +151,16 @@
     }
     &__text {
         font-size: clamp(13px, size-desktop(18px), 18px);
-        line-height: 44.8px;
+        line-height: 25.2px;
         max-width: 20%;
-
+        min-height: 550px;
+        margin-top: auto;
+        padding-top: 30px;
         color: $light-grey;
         opacity: 0;
         p {
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         }
         span {
@@ -167,11 +169,18 @@
     }
     &__title {
         margin-right: 20px;
+        line-height: 76.8px;
+        @media screen and (max-width: 1320px) {
+            display: flex;
+            & span {
+                font-size: 32px;
+            }
+        }
     }
     &__title-wrapper {
         margin-bottom: 10px;
         display: flex;
-        justify-content: space-between;
+        gap: 7px;
     }
     &__title-img {
         opacity: 0;
@@ -194,9 +203,13 @@
         position: relative;
 
         font-size: 32px;
-
+        min-height: 550px;
         display: flex;
         flex-direction: column;
+    }
+    &__message-box {
+        position: relative;
+        margin-top: -6px;
     }
     &__input {
         padding: 10px 0;
@@ -209,7 +222,7 @@
         &--text {
             resize: none;
             overflow-y: auto;
-
+            width: 100%;
             max-height: 250px;
             padding-right: 40px;
 
@@ -241,14 +254,12 @@
     }
     &__label {
         position: absolute;
-        right: 40px;
-        // bottom: size-desktop(135px);
-        bottom: 135px;
+        right: 0;
+        top: 30%;
 
         width: 28px;
         height: 25px;
 
-        // cursor: pointer;
         opacity: 0;
 
         background-repeat: no-repeat;
@@ -282,6 +293,6 @@
     }
 
     .line {
-        transform: translateY(300%) rotate(10deg);
+        // transform: translateY(300%) rotate(10deg);
     }
 }
