@@ -131,7 +131,7 @@
         &__item-wrapper {
             padding: clamp(10px, size-desktop(90px), 100px) 0;
             height: 259px;
-        }       
+        }
     }
 
     @media screen and (max-width: 375px) {
@@ -164,6 +164,5 @@
             padding: unset;
             align-self: flex-end;
         }
-        
     }
 }
