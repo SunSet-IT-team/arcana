@@ -117,7 +117,7 @@
         &__content {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(6, 1fr);
         }
         &__info-wrapper {
             display: grid;
@@ -206,14 +206,24 @@
             margin-left: 2px;
         }
 
+        // &__box-text {
+        //     &:nth-child(1) {
+        //         margin-left: calc(40% + 5px);
+        //         max-width: calc(60% - 5px);
+        //         display: inline;
+        //     }
+        // }
+
         &__box-text {
             font-size: 32px;
             max-width: unset;
             line-height: 1.4;
 
             .line-wrapper:nth-child(1) {
-                text-indent: calc(40% + 5px);
-                display: inline;
+                margin-left: calc(40% + 5px);
+                max-width: calc(60% - 5px);
+                // display: inline;
+                overflow: hidden;
             }
 
             &:nth-child(2) {
