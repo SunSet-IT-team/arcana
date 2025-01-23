@@ -3,7 +3,7 @@
 @import '../../scss/abstracts/functions';
 .partner-calculator {
     padding-top: 171px;
-    padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    padding-bottom: clamp(10px, size-desktop(340px), 340px);
     &__back-link {
         display: block;
 
@@ -12,7 +12,8 @@
         color: $light-grey;
     }
     &__title {
-        margin-bottom: clamp(10px, size-desktop(200px), 200px);
+        margin-bottom: clamp(10px, size-desktop(185px), 185px);
+        line-height: 75.8px;
     }
     &__content {
         display: flex;
@@ -41,7 +42,7 @@
     &__body-title {
         font-size: clamp(24px, size-desktop(36px), 36px);
 
-        margin-bottom: 30px;
+        margin-bottom: 11px;
     }
     &__link-wrapper {
         position: relative;
@@ -60,6 +61,8 @@
     }
     &__body-link {
         margin-top: 30px;
+        min-height: 42px;
+        padding: 0;
     }
 
     @media screen and (max-width: 375px) {
