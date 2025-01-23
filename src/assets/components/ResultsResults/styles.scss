@@ -4,7 +4,7 @@
 
 .results {
     padding-top: 171px;
-    padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    padding-bottom: clamp(10px, size-desktop(185px), 185px);
     &__back-link {
         display: block;
 
@@ -13,6 +13,7 @@
         color: $light-grey;
     }
     &__title {
+        line-height: 76.8px;
         margin-bottom: clamp(10px, size-desktop(200px), 200px);
     }
     &__content {
@@ -21,15 +22,16 @@
     &__body {
         max-width: clamp(10px, size-desktop(500px), 500px);
         width: 100%;
-        margin-right: clamp(10px, size-desktop(185px), 185px);
+        margin-right: clamp(10px, size-desktop(200px), 200px);
     }
     &__body-text {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
-        margin-bottom: clamp(10px, size-desktop(100px), 100px);
+        line-height: 25.2px;
+        margin-bottom: clamp(10px, size-desktop(110px), 110px);
     }
     &__info {
         width: 60%;
+        line-height: 25.2px;
     }
     &__info-list {
         margin-bottom: 50px;
@@ -61,10 +63,12 @@
         margin-right: 30px;
 
         text-align: center;
+        line-height: 16.9px;
     }
     &__info-name {
         max-width: 574px;
         margin-right: 20px;
+        line-height: 18.2px;
     }
     &__info-archetype {
         max-width: clamp(10px, size-desktop(330px), 330px);
