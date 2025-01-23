@@ -1,20 +1,17 @@
 import React from 'react';
 
 import {useDispatch} from 'react-redux';
-import {useSelector} from 'react-redux';
-import {selectResults} from '../../../redux/slices/resultsPartnerSlice';
 import {setOpenContactForm} from '../../../redux/slices/contactFormSlice';
 
-import {toRim, fixYear, fixDay, fixNegative} from '../../js/numberRim';
+import {fixDay, fixNegative, fixYear, toRim} from '../../js/numberRim';
 
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
 
-import LinkTo from '../Link/Link';
 import Button from '../../components/Button/Button';
-import ResultsList from '../ResultsList/ResultsList';
 import PartnerResultsList from '../PartnerResultsList/PartnerResultsList';
+import ResultsList from '../ResultsList/ResultsList';
 
 function PartnerResultsResults() {
     const [results, setResults] = React.useState(null);
