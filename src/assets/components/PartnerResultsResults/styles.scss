@@ -14,6 +14,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(200px), 200px);
+        line-height: 76.8px;
     }
     &__content {
         display: flex;
@@ -30,12 +31,12 @@
         width: 100%;
         margin-bottom: 92px;
         &:nth-child(1) {
-            margin-right: clamp(10px, size-desktop(185px), 185px);
+            margin-right: clamp(10px, size-desktop(200px), 200px);
         }
     }
     &__body-date {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
+        line-height: 25.2px;
         display: inline-block;
 
         margin: 0 auto 20px;
@@ -43,11 +44,13 @@
     }
 
     &__text-wrapper {
+        padding-left: 15px;
         margin-left: auto;
         max-width: 20%;
         height: clamp(10px, size-desktop(900px), 900px);
     }
     &__text {
+        line-height: 25.2px;
         font-size: clamp(13px, size-desktop(18px), 18px);
         &:not(:last-child) {
             margin-bottom: clamp(15px, size-desktop(50px), 50px);
@@ -63,8 +66,8 @@
         flex-direction: column;
 
         width: 100%;
-        margin-bottom: 88px;
-
+        margin-bottom: 80px;
+        margin-top: -10px;
         margin-left: clamp(10px, size-desktop(1050px), 1050px);
     }
     &__name-item {
@@ -148,7 +151,7 @@
     &__info-item {
         display: flex;
         align-items: center;
-
+        line-height: 25.2px;
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -165,7 +168,7 @@
         min-width: 74px;
         width: 100%;
         margin-right: 30px;
-
+        line-height: 16.9px;
         text-align: center;
     }
     &__info-name {
@@ -173,6 +176,7 @@
         display: inline-block;
         min-width: 300px;
         margin-right: 20px;
+        line-height: 18.2px;
     }
     &__info-archetype {
         max-width: clamp(10px, size-desktop(330px), 330px);
