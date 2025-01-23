@@ -252,13 +252,13 @@ function ResultsResults() {
                             <ul className="results__info-list">
                                 <li className="results__info-item">
                                     <span className="results__info-number underline">
-                                        NUMERO
+                                        Numero
                                     </span>
                                     <p className="results__info-name underline">
-                                        VALORE DELLA POSIZIONE
+                                        Valore della posizione
                                     </p>
                                     <span className="results__info-archetype underline">
-                                        IL VOSTRO ARCHETIPO (premere il numero)
+                                        Il vostro archetipo (premere il numero)
                                     </span>
                                 </li>
                                 {resultsData.map((result, index) => (

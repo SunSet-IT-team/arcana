@@ -10,4 +10,34 @@
         max-width: 680px;
         line-height: 21.6px;
     }
+    @media screen and (max-width: 1024px) {
+        &__title {
+            margin-bottom: 62px !important;
+        }
+        &__link {
+            margin-top: 50px;
+            max-width: 510px !important;
+            padding: 4px;
+            line-height: 30px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        &__title {
+            font-size: 24px !important;
+            margin-bottom: 40px !important;
+        }
+        &__link {
+            font-size: 8px !important;
+            margin-top: 20px;
+            line-height: 24px;
+            margin-right: auto;
+            width: 100%;
+            margin-left: 3px;
+        }
+
+        .link__text {
+            font-size: 13px !important;
+        }
+    }
 }

@@ -97,4 +97,48 @@
         margin-left: auto;
         margin-right: -8px;
     }
+    @media screen and (max-width: 375px) {
+        padding: 100px 0;
+        &__title {
+            font-size: 24px !important;
+            line-height: 1.3;
+        }
+        &__tag-item {
+            border: none;
+        }
+        &__content {
+            flex-direction: column;
+            &-img {
+                max-width: unset !important;
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+            }
+        }
+        &__body {
+            h2 {
+                margin-top: 15px;
+                font-size: 18px !important;
+                line-height: 1.3;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        &__up {
+            span {
+                font-size: 12px;
+            }
+            svg {
+                width: 15px !important;
+                height: 15px !important;
+                margin-top: 3px;
+                margin-left: 10px !important;
+            }
+        }
+        &__first-p {
+            font-size: 13px !important;
+            margin: 20px 0 !important;
+        }
+    }
 }

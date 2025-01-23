@@ -49,7 +49,7 @@ function Footer() {
 
                             <nav className="footer__menu">
                                 <ul className="footer__menu-list">
-                                    <div className="">
+                                    <div className="footer__menu-column">
                                         <li className="footer__menu-item">
                                             <Link
                                                 to="/calculator"
@@ -89,7 +89,7 @@ function Footer() {
                                         </li>
                                     </div>
 
-                                    <div className="">
+                                    <div className="footer__menu-column">
                                         <li className="footer__menu-item">
                                             <Link
                                                 to="/services"
