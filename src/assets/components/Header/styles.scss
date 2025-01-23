@@ -79,4 +79,33 @@
             padding-top: 3px;
         }
     }
+
+    @media screen and (max-width: 375px) {
+        height: unset;
+        &__wrapper {
+            padding: 24px 0;
+        }
+        &__link {
+            font-size: 13px;
+            margin-right: 42px;
+            padding: 0;
+        }
+        &__button {
+            margin-right: -1px;
+            margin-top: 4.5px;
+            &-span:first-child {
+                width: 30px !important;
+                margin-bottom: 7px;
+            }
+            &-span:last-child {
+                width: 17px !important;
+            }
+        }
+        &__logo {
+            margin-top: 6px;
+            img {
+                height: 10.4px;
+            }
+        }
+    }
 }

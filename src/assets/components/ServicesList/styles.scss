@@ -129,4 +129,43 @@
     &__info-button {
         display: none;
     }
+
+    @media screen and (max-width: 1024px) {
+        &__item-wrapper {
+            padding: clamp(10px, size-desktop(90px), 100px) 0;
+            height: 259px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        &__name {
+            font-size: 18px !important;
+            max-width: unset;
+        }
+
+        &__item-wrapper {
+            flex-direction: column;
+            height: unset;
+        }
+        &__time {
+            margin-left: 0;
+            max-width: unset;
+            margin-top: 27.5px;
+            font-size: 15px !important;
+        }
+        &__info {
+            max-width: unset;
+            margin-top: unset;
+        }
+        &__text {
+            font-size: 13px !important;
+            padding-top: 7.5px;
+            line-height: 1.35;
+        }
+        &__button {
+            font-size: 13px !important;
+            padding: unset;
+            align-self: flex-end;
+        }
+    }
 }

@@ -12,10 +12,13 @@ import TitleAnimation from '../../hooks/titleAnimation';
 import {TextLinesReveal} from '../../js/textLinesReveal';
 
 import './styles.scss';
+import SliderMobile from './SliderMobile';
 
 export default function App() {
     const [onTitle, setOnTitle] = useState(false);
     const swiperRef = React.useRef(null);
+    const [spaceBetween, setSpaceBetween] = React.useState(0);
+    const [isMobile, setIsMobile] = React.useState(false);
 
     // РАЗБИВКА ТЕКСТА НА СЛОВА
     React.useEffect(() => {
@@ -24,6 +27,34 @@ export default function App() {
             Array.from(textSplitElements)
         );
         playAnimation();
+
+        const handleResize = () => {
+            const width = window.innerWidth;
+
+            if (width > 1024) {
+                setSpaceBetween(20);
+            } else if (width > 375 && width <= 1024) {
+                setSpaceBetween(15);
+            } else {
+                setSpaceBetween(0);
+            }
+            const handleResize = () => {
+                setIsMobile(window.innerWidth <= 375);
+            };
+            handleResize();
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
     // ПРИВЯЗКА К КНОПКАМ
     const goToNextSlide = () => {
@@ -457,84 +488,93 @@ export default function App() {
                         }}
                     ></button>
                 </div>
-
-                <Swiper
-                    navigation={{
-                        prevEl: '.swiper-button-prev',
-                        nextEl: '.swiper-button-next',
-                    }}
-                    className="archetypes-demo__swiper"
-                    modules={[FreeMode, Navigation]}
-                    loop={true}
-                    slidesPerView={4}
-                    spaceBetween={20}
-                    centeredSlides={false}
-                    slideToClickedSlide={true}
-                    ref={swiperRef}
-                >
-                    {archetypesData.map((data, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="archetypes-demo__item-wrapper">
-                                <div className="archetypes-demo__item-body">
-                                    <span className="archetypes-demo__item-number">
-                                        {data.number}
-                                    </span>
-                                    <h3
-                                        className={`archetypes-demo__item-title text-split `}
-                                        onMouseEnter={() => setOnTitle(true)}
-                                        onMouseLeave={() => setOnTitle(false)}
-                                    >
-                                        <Marquee
-                                            play={index + 1 === 10 && onTitle}
-                                            className="marguee"
+                {isMobile ? (
+                    <SliderMobile />
+                ) : (
+                    <Swiper
+                        navigation={{
+                            prevEl: '.swiper-button-prev',
+                            nextEl: '.swiper-button-next',
+                        }}
+                        className="archetypes-demo__swiper"
+                        modules={[FreeMode, Navigation]}
+                        loop={true}
+                        slidesPerView={4}
+                        spaceBetween={spaceBetween}
+                        centeredSlides={false}
+                        slideToClickedSlide={true}
+                        ref={swiperRef}
+                    >
+                        {archetypesData.map((data, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="archetypes-demo__item-wrapper">
+                                    <div className="archetypes-demo__item-body">
+                                        <span className="archetypes-demo__item-number">
+                                            {data.number}
+                                        </span>
+                                        <h3
+                                            className={`archetypes-demo__item-title text-split `}
+                                            onMouseEnter={() =>
+                                                setOnTitle(true)
+                                            }
+                                            onMouseLeave={() =>
+                                                setOnTitle(false)
+                                            }
                                         >
-                                            {data.title}
-                                        </Marquee>
-                                    </h3>
-                                    <div className="archetypes-demo__item-imgBox">
-                                        <div className="archetypes-demo__item-imgBg">
-                                            <div className="archetypes-demo__item-imgBl">
-                                                <img
-                                                    className="archetypes-demo__item-img"
-                                                    src={`./images/archetypes/${data.number}.webp`}
-                                                    alt="archetype photo"
-                                                />
+                                            <Marquee
+                                                play={
+                                                    index + 1 === 10 && onTitle
+                                                }
+                                                className="marguee"
+                                            >
+                                                {data.title}
+                                            </Marquee>
+                                        </h3>
+                                        <div className="archetypes-demo__item-imgBox">
+                                            <div className="archetypes-demo__item-imgBg">
+                                                <div className="archetypes-demo__item-imgBl">
+                                                    <img
+                                                        className="archetypes-demo__item-img"
+                                                        src={`./images/archetypes/${data.number}.webp`}
+                                                        alt="archetype photo"
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="archetypes-demo__item-info">
-                                    <p
-                                        className={`archetypes-demo__item-text text-split`}
-                                    >
-                                        {data.text}
-                                    </p>
-                                    <Link
-                                        to={data.linkTo}
-                                        className="archetypes-demo__item-link arrow"
-                                    >
-                                        <span className="underline">
-                                            Per saperne di più
-                                        </span>{' '}
-                                        <svg
-                                            width="21"
-                                            height="21"
-                                            viewBox="0 0 21 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                    <div className="archetypes-demo__item-info">
+                                        <p
+                                            className={`archetypes-demo__item-text text-split`}
                                         >
-                                            <path
-                                                d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    </Link>
+                                            {data.text}
+                                        </p>
+                                        <Link
+                                            to={data.linkTo}
+                                            className="archetypes-demo__item-link arrow"
+                                        >
+                                            <span className="underline">
+                                                Per saperne di più
+                                            </span>{' '}
+                                            <svg
+                                                width="21"
+                                                height="21"
+                                                viewBox="0 0 21 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                                    fill="currentColor"
+                                                />
+                                            </svg>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                )}
             </div>
         </>
     );

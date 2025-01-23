@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
 
 import SelectLabel from '../../components/Select/Select';
+import SliderMobile from '../Slider/SliderMobile';
 
 function ArchetypesArchetypes() {
     const [selectedArchetypesFilter, setSelectedArchetypesFilter] =
@@ -13,6 +14,7 @@ function ArchetypesArchetypes() {
     const handleArchetypesFilterChange = (selectedArchetypesFilter) => {
         setSelectedArchetypesFilter(selectedArchetypesFilter);
     };
+    const [isMobile, setIsMobile] = useState(false);
 
     React.useEffect(() => {
         const handleResize = () => {
@@ -24,6 +26,15 @@ function ArchetypesArchetypes() {
                     item.classList.remove('storys__item--big');
                 }
             });
+            const handleResize = () => {
+                setIsMobile(window.innerWidth <= 375);
+            };
+            handleResize();
+            console.log(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
         };
 
         handleResize();
@@ -238,61 +249,65 @@ function ArchetypesArchetypes() {
                             value={selectedArchetypesFilter}
                         />
                     </div>
-                    <ul className="archetypes__list">
-                        {archetypesData.map((archetype, index) => (
-                            <li className="archetypes__item" key={index}>
-                                <h2 className="archetypes__item-title">
-                                    {archetype.title}
-                                </h2>
-                                <div className="archetypes__item-content">
-                                    <img
-                                        className="archetypes__item-img"
-                                        src={`../images/archetypes/${archetype.number}.webp`}
-                                        alt="#"
-                                    />
-                                    <div className="archetypes__item-info">
-                                        <span className="archetypes__item-number">
-                                            {archetype.number}
-                                        </span>
-                                        <p className="archetypes__item-positive">
-                                            Manifestazione positiva:
-                                            <span className="archetypes__item-span">
-                                                {archetype.positive}
+                    {isMobile ? (
+                        <SliderMobile archetypesProp={archetypesData} />
+                    ) : (
+                        <ul className="archetypes__list">
+                            {archetypesData.map((archetype, index) => (
+                                <li className="archetypes__item" key={index}>
+                                    <h2 className="archetypes__item-title">
+                                        {archetype.title}
+                                    </h2>
+                                    <div className="archetypes__item-content">
+                                        <img
+                                            className="archetypes__item-img"
+                                            src={`../images/archetypes/${archetype.number}.webp`}
+                                            alt="#"
+                                        />
+                                        <div className="archetypes__item-info">
+                                            <span className="archetypes__item-number">
+                                                {archetype.number}
                                             </span>
-                                        </p>
-                                        <p className="archetypes__item-negative">
-                                            Manifestazione negativa:
-                                            <span className="archetypes__item-span">
-                                                {archetype.negative}
-                                            </span>
-                                        </p>
+                                            <p className="archetypes__item-positive">
+                                                Manifestazione positiva:
+                                                <span className="archetypes__item-span">
+                                                    {archetype.positive}
+                                                </span>
+                                            </p>
+                                            <p className="archetypes__item-negative">
+                                                Manifestazione negativa:
+                                                <span className="archetypes__item-span">
+                                                    {archetype.negative}
+                                                </span>
+                                            </p>
 
-                                        <Link
-                                            to={`/archetypes/${archetype.number}`}
-                                            className="archetypes__item-link arrow"
-                                            href="#"
-                                        >
-                                            <span className="underline">
-                                                Più dettagli
-                                            </span>
-                                            <svg
-                                                width="21"
-                                                height="21"
-                                                viewBox="0 0 21 21"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
+                                            <Link
+                                                to={`/archetypes/${archetype.number}`}
+                                                className="archetypes__item-link arrow"
+                                                href="#"
                                             >
-                                                <path
-                                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                                    fill="currentColor"
-                                                />
-                                            </svg>
-                                        </Link>
+                                                <span className="underline">
+                                                    Più dettagli
+                                                </span>
+                                                <svg
+                                                    width="21"
+                                                    height="21"
+                                                    viewBox="0 0 21 21"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             </div>
         </section>

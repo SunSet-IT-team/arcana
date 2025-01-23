@@ -113,7 +113,6 @@ function BlogBlog() {
     useEffect(() => {
         setArticles(filteredArticles.slice(0, showCountArticles));
     }, [filteredArticles, showCountArticles]);
-
     const handleShowMore = () => {
         setShowCountArticles((prev) => (prev += 2));
     };

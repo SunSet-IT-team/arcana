@@ -3,4 +3,10 @@
 @import '../../scss/abstracts/functions';
 .archetypes-demo {
     padding-bottom: clamp(10px, size-desktop(250px), 250px);
+    @media screen and (max-width: 375px) {
+        &__title {
+            font-size: 24px !important;
+            margin-bottom: 40px !important;
+        }
+    }
 }

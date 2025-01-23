@@ -23,4 +23,36 @@
             line-height: 25.2px;
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        &__subtext {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        padding: 100px 0;
+        &__title {
+            font-size: 24px !important;
+            margin-bottom: 40px !important;
+        }
+        &__subtext {
+            margin-top: 40px;
+            & > p:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__subtext {
+            font-size: 13px !important;
+        }
+
+        &__text {
+            margin-bottom: unset !important;
+            &:first-child {
+                margin-bottom: 30px !important;
+                font-size: 14px !important;
+            }
+        }
+    }
 }

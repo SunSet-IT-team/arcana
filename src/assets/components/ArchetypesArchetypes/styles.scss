@@ -230,4 +230,25 @@
             color: $light-grey;
         }
     }
+
+    @media screen and (max-width: 375px) {
+        padding: 100px 0;
+        &__title {
+            font-size: 24px !important;
+        }
+        &__wrapper {
+            overflow: hidden;
+        }
+        &__filter {
+            &::after {
+                display: none !important;
+            }
+        }
+        &__filter-list {
+            display: none;
+        }
+        &__filter-select {
+            max-width: 100%;
+        }
+    }
 }

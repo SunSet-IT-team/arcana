@@ -61,4 +61,58 @@
     &__body-link {
         margin-top: 30px;
     }
+
+    @media screen and (max-width: 375px) {
+        padding: 82px 0;
+        &__back-link {
+            span {
+                margin-left: -10px;
+                font-size: 13px;
+            }
+            svg {
+                width: 15px !important;
+                height: 15px !important;
+                margin-top: auto;
+                margin-left: 2px;
+            }
+        }
+        &__title {
+            margin-top: 45px;
+            line-height: 1.3;
+            font-size: 30px !important;
+            margin-bottom: 40px !important;
+        }
+        &__span {
+            font-size: 13px !important;
+            max-width: unset;
+            width: unset;
+            padding-right: 0px;
+            padding-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        &__content {
+            margin-top: 56px;
+            flex-direction: column;
+        }
+        &__body {
+            max-width: unset;
+        }
+        &__body-title {
+            margin-top: 8px;
+            font-size: 18px !important;
+            margin-bottom: 10px;
+        }
+
+        &__body-link {
+            margin-top: 30px;
+            max-width: calc(100% + 4px) !important;
+            padding: 7.5px;
+        }
+        .link {
+            &__text {
+                font-size: 13px !important;
+            }
+        }
+    }
 }

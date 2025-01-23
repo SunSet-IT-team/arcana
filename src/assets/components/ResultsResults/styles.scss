@@ -82,4 +82,46 @@
 
         margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 375px) {
+        padding: 100px 0;
+        &__title {
+            font-size: 24px !important;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__body,
+        &__info {
+            max-width: unset;
+            width: 100%;
+        }
+        &__info-item {
+            font-size: 12px !important;
+            &:first-child {
+                align-items: flex-end;
+            }
+            .underline {
+                border: none;
+            }
+        }
+        &__info-number {
+            max-width: 50px !important;
+        }
+        &__info-name {
+            max-width: 220px;
+        }
+        &__info-archetype {
+            min-width: 120px;
+        }
+        &__info-list {
+            margin-top: 40px;
+        }
+        &__info-text {
+            margin-bottom: 30px;
+        }
+        &__info-link {
+            font-size: 14px;
+        }
+    }
 }

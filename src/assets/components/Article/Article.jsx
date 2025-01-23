@@ -53,7 +53,7 @@ function Article() {
                                 A RAGGIUNGERE IL SUCCESSO E AD OCCUPARE LA LORO
                                 NICCHIA
                             </h2>
-                            <p className="">
+                            <p className="article__first-p">
                                 Come i sogni dei bambini sui missili sono
                                 diventati realtà
                             </p>

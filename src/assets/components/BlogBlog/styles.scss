@@ -87,4 +87,54 @@
         margin-right: 67px;
         line-height: 21.6px;
     }
+
+    @media screen and (max-width: 375px) {
+        padding: 100px 0;
+        &__title {
+            font-size: 24px !important;
+            margin-bottom: 40px !important;
+        }
+        &__button {
+            margin-top: 50px;
+            max-width: 510px !important;
+            padding: 4px;
+            line-height: 30px;
+            margin-right: 0;
+        }
+
+        &__filter {
+            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            &:after {
+                display: none;
+            }
+        }
+        &__filter-list {
+            display: none;
+        }
+        &__filter-select {
+            width: 100%;
+        }
+        &__bottom {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__bottom-button {
+            grid-column: 3;
+        }
+        &-list {
+            &__list {
+                margin-top: -35px;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            .button {
+                margin-top: 20px;
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
