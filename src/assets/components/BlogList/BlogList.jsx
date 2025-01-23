@@ -171,7 +171,7 @@ function BlogList({data}) {
                                     {blog.date}
                                 </span>
                                 <Link
-                                    to={`${index + 1}`}
+                                    to={`/blog/${index + 1}`}
                                     className="blog-list__link arrow"
                                 >
                                     <span className="underline">
