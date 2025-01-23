@@ -135,9 +135,14 @@ function ServicesList({services}) {
                             {service.name}
                         </h2>
 
-                        <span className="services-list__time text-split">
-                            {service.time}
-                        </span>
+                        <div className="services-list__box">
+                            <span className="services-list__time text-split">
+                                {service.time}
+                            </span>
+                            <span className="services-list__price text-split">
+                                {service.price} euro
+                            </span>
+                        </div>
                         <div
                             className={`services-list__info ${
                                 openCard === index
