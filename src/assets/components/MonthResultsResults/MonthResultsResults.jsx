@@ -84,107 +84,98 @@ function MonthResultsResults() {
                             principali energie di questo Archetipo.
                         </span>
                         <div className="month-results__body">
-                            <ul className="month-results__tables month-results__tables">
-                                <li className="month-results__table">
-                                    <ul className="month-results__table-contents month-results__table-contents--2">
-                                        <li className="month-results__table-content month-results__table-content--is">
-                                            SENTIMENTO INTERIORE DEL MESE
-                                        </li>
-                                        <li className="month-results__table-content">
+                            <div class="month-results__tables">
+                                <div class="month-results__table month-results__table-top">
+                                    <div class="month-results__table-left">
+                                        <div className="month-results__table-item">
+                                            SENTIMENTO INTERIORE DEL MESE{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos12)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--ee">
+                                        </div>
+                                        <div className="month-results__table-item">
                                             FОCUS PERSONALEDEL MESE
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos13)}
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="month-results__table ">
-                                    <ul className="month-results__table-contents month-results__table-contents--4">
-                                        <li className="month-results__table-content month-results__table-content--s">
-                                            ENERGIA DI CRESCITA
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                    </div>
+                                    <div class="month-results__table-right">
+                                        <div className="month-results__table-item">
+                                            ENERGIA DI CRESCITA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos1)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--r">
-                                            TENSIONEEMOTIVA
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            TENSIONEEMOTIVA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos4)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--s2">
-                                            LEZIONI DELL’ANNO
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            LEZIONI DELL’ANNO{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos2)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--e">
-                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos5)}
-                                        </li>
-
-                                        <li className="month-results__table-content month-results__table-content--s3">
-                                            ESAME DELL’ANNO
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            ESAME DELL’ANNO{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos3)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--e2">
-                                            ТЕМАPRINCIPALE
-                                        </li>
-                                        <li className="month-results__table-content">
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            ТЕМАPRINCIPALE{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
                                             {toRim(pos6)}
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul className="month-results__tables month-results__tables--2">
-                                <li className="month-results__table">
-                                    <ul className="month-results__table-contents month-results__table-contents--2">
-                                        <li className="month-results__table-content month-results__table-content--is">
-                                            GUIDA PERSONALE
-                                        </li>
-
-                                        <li className="month-results__table-content month-results__table-content--ee">
-                                            {toRim(pos11)}
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="month-results__table">
-                                    <ul className="month-results__table-contents month-results__table-contents--4">
-                                        <li className="month-results__table-content month-results__table-content--s">
-                                            ENERGIA DI INSTABILITA’ EMOTIVA
-                                        </li>
-                                        <li className="month-results__table-content">
-                                            {toRim(pos7)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--r">
-                                            ENERGIA DI ESPANSIONE DELLA
-                                            COSCIENZA
-                                        </li>
-                                        <li className="month-results__table-content">
-                                            {toRim(pos9)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--s2">
-                                            RISCHI
-                                        </li>
-                                        <li className="month-results__table-content">
-                                            {toRim(pos8)}
-                                        </li>
-                                        <li className="month-results__table-content month-results__table-content--e">
-                                            OPPORTUNITA’
-                                        </li>
-                                        <li className="month-results__table-content">
-                                            {toRim(pos10)}
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="month-results__table month-results__table-bottom">
+                                    <div class="month-results__table-left">
+                                        <div className="month-results__table-item">
+                                            SENTIMENTO INTERIORE DEL MESE{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            {toRim(pos12)}
+                                        </div>
+                                    </div>
+                                    <div class="month-results__table-right">
+                                        <div className="month-results__table-item">
+                                            ENERGIA DI CRESCITA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            {toRim(pos1)}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            TENSIONEEMOTIVA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            {toRim(pos4)}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            LEZIONI DELL’ANNO{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            {toRim(pos2)}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA{' '}
+                                        </div>
+                                        <div className="month-results__table-item">
+                                            {toRim(pos5)}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p className="month-results__body-text">
                                 Tuttavia, in ogni singola posizione, lo stesso
                                 Archetipo si comporta in modo diverso,
