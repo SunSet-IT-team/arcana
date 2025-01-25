@@ -142,36 +142,37 @@ function MonthResultsResults() {
                                 <div class="month-results__table month-results__table-bottom">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            SENTIMENTO INTERIORE DEL MESE{' '}
+                                            GUIDA PERSONALE
                                         </div>
                                         <div className="month-results__table-item">
-                                            {toRim(pos12)}
+                                            {toRim(pos11)}
                                         </div>
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            ENERGIA DI CRESCITA{' '}
+                                            ENERGIA DI INSTABILITA’ EMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
-                                            {toRim(pos1)}
+                                            {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONEEMOTIVA{' '}
+                                            ENERGIA DI ESPANSIONE DELLA
+                                            COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
-                                            {toRim(pos4)}
+                                            {toRim(pos9)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            LEZIONI DELL’ANNO{' '}
+                                            RISCHI
                                         </div>
                                         <div className="month-results__table-item">
-                                            {toRim(pos2)}
+                                            {toRim(pos8)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA{' '}
+                                            OPPORTUNITA’
                                         </div>
                                         <div className="month-results__table-item">
-                                            {toRim(pos5)}
+                                            {toRim(pos10)}
                                         </div>
                                     </div>
                                 </div>
