@@ -158,6 +158,9 @@
     &__title {
         margin-right: 20px;
         line-height: 76.8px;
+        @media screen and (max-width: 1280px) {
+            font-size: 32px !important;
+        }
     }
     &__title-wrapper {
         margin-bottom: 10px;
@@ -186,7 +189,6 @@
         }
     }
     &__form-box {
-        // max-width: 1030px;
         max-width: 59.5%;
         width: 100%;
         overflow: hidden;
