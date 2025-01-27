@@ -88,6 +88,34 @@
         line-height: 21.6px;
     }
 
+    @media screen and (max-width: 1024px) {
+        // padding-bottom: 235px;
+        &__wrapper {
+            padding-top: 10px;
+        }
+        &__title {
+            margin-bottom: 110px;
+        }
+        &__filter {
+            margin-bottom: 50px;
+        }
+        &__back-link {
+            margin-bottom: 190px;
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+        &__button {
+            margin-top: 40px;
+            font-size: 14px;
+            max-width: unset;
+            width: 335px;
+            margin-right: 2px;
+            padding: 6.5px;
+        }
+    }
+
     @media screen and (max-width: 375px) {
         padding: 100px 0;
         &__title {
