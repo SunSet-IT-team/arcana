@@ -98,7 +98,18 @@
         margin-right: -8px;
     }
     @media screen and (max-width: 375px) {
-        padding: 100px 0;
+        padding: 80px 0;
+        &__back-link {
+            margin-bottom: 40px !important;
+            span {
+                margin-left: -10px;
+                line-height: 18px;
+            }
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
         &__title {
             font-size: 24px !important;
             line-height: 1.3;
