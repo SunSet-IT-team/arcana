@@ -3,8 +3,6 @@
 @import '../../scss/abstracts/functions';
 
 .menu {
-    // padding-top: clamp(10px, size-desktop(140px), 140px);
-
     &__wrapper {
         margin-top: 395px;
     }
@@ -12,6 +10,7 @@
         min-height: 100vh;
 
         &__wrapper {
+            margin-top: 574px;
             .menu__title {
                 margin-bottom: 73px;
             }

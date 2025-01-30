@@ -250,5 +250,10 @@
         &__filter-select {
             max-width: 100%;
         }
+        &-demo {
+            &__item-imgBl {
+                width: 100% !important;
+            }
+        }
     }
 }
