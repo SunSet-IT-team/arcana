@@ -97,6 +97,27 @@
         }
         &__filter {
             margin-bottom: 50px;
+            &-item {
+                margin-right: 15.75px !important;
+                line-height: 16px;
+            }
+        }
+        &__filter-select {
+            width: 160px;
+            min-width: 160px;
+            .select {
+                &__value-container {
+                    padding: 0px;
+                }
+                &__control {
+                    height: 34px;
+                    min-height: unset !important;
+                    margin-top: 8px;
+                }
+                &__indicator {
+                    padding: 10px 5px !important;
+                }
+            }
         }
         &__back-link {
             margin-bottom: 190px;

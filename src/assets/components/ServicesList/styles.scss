@@ -143,6 +143,16 @@
             padding: clamp(10px, size-desktop(90px), 100px) 0;
             height: 259px;
         }
+        &__text {
+            padding: 5px 0;
+        }
+        &__box {
+            margin: 0;
+            padding: 7px 3px;
+        }
+        &__info {
+            padding-left: 5px;
+        }
     }
 
     @media screen and (max-width: 375px) {

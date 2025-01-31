@@ -129,7 +129,7 @@
         &__info-text {
             font-size: clamp(36px, size-desktop(93.7px), 100px);
             margin-right: 0;
-            line-height: 1.47;
+            line-height: 1.5;
             grid-area: 1 / 1 / 2 / 6;
             .line-wrapper {
                 &:nth-child(1) {

@@ -53,8 +53,6 @@
         font-size: clamp(13px, size-desktop(18px), 18px);
 
         padding: 0 5px;
-
-        // cursor: pointer;
         transition: color 0.3s;
 
         color: $light-grey;
@@ -227,6 +225,88 @@
 
         &:hover {
             color: $light-grey;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 180px;
+        padding-bottom: 250px;
+        &__back-link {
+            line-height: 18px;
+            margin-bottom: 190px;
+            .underline {
+                margin-left: -5px;
+            }
+        }
+        &__list {
+            grid-gap: 13.75px;
+        }
+        &__item-link {
+            line-height: 18px;
+            margin-top: 5px;
+            .underline {
+                margin-left: -5px;
+            }
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+        &__title {
+            margin-bottom: 112px;
+        }
+        &__filter {
+            padding: 19px 0;
+            margin-bottom: 50px;
+        }
+        &__filter-list {
+            padding: 0 2px !important;
+            width: 100%;
+            margin-right: 27px;
+            justify-content: space-between;
+            li {
+                padding: 0;
+                line-height: 16px;
+            }
+        }
+        &__filter-select {
+            width: 160px;
+            min-width: 160px;
+            .select {
+                &__value-container {
+                    padding: 0px;
+                }
+                &__control {
+                    height: 34px;
+                    min-height: unset !important;
+                    margin-top: 8px;
+                }
+                &__indicator {
+                    padding: 10px 5px !important;
+                }
+            }
+        }
+        &__item {
+            padding: 9px 11px;
+            padding-right: 8px;
+            width: 336px;
+        }
+        &__item-number {
+            font-size: 18px;
+            padding: 0;
+        }
+        &__item-title {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        &__item-content {
+            padding: 0px;
+        }
+        &__item-img {
+            width: 150px;
+        }
+        &__item-info {
+            padding-left: 5px;
         }
     }
 
