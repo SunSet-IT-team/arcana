@@ -170,6 +170,19 @@
         }
         &__filter-select {
             width: 100%;
+            .select {
+                &__value-container {
+                    padding: 11px 17px !important;
+                }
+                &__control {
+                    height: 40px;
+                    min-height: unset !important;
+                    margin-top: unset;
+                }
+                &__indicator {
+                    padding: 10px 5px !important;
+                }
+            }
         }
         &__bottom {
             grid-template-columns: repeat(3, 1fr);
