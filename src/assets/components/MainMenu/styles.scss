@@ -7,8 +7,6 @@
         margin-top: 395px;
     }
     @media screen and (max-width: 1024px) {
-        min-height: 100vh;
-
         &__wrapper {
             margin-top: 574px;
             .menu__title {
@@ -18,6 +16,9 @@
     }
 
     @media screen and (max-width: 375px) {
+        &__wrapper {
+            margin-top: 193px;
+        }
         &__title {
             font-size: 24px !important;
             margin-bottom: 40px !important;

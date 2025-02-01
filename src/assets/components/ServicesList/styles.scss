@@ -153,25 +153,45 @@
         &__item-wrapper {
             flex-direction: column;
             height: unset;
+            padding: 19.5px 0;
+        }
+        &__box {
+            margin-left: 0;
+            max-width: unset;
+            width: 100%;
+            font-size: 15px !important;
+            display: flex;
+            padding: unset;
+            justify-content: space-between;
+            margin-top: 29.5px;
         }
         &__time {
             margin-left: 0;
             max-width: unset;
-            margin-top: 27.5px;
-            font-size: 15px !important;
+            font-size: 13px !important;
+            margin-top: unset;
+        }
+        &__price {
+            margin-left: 0;
+            margin-top: unset;
+            font-size: 13px !important;
         }
         &__info {
             max-width: unset;
             margin-top: unset;
+            padding: unset;
         }
         &__text {
             font-size: 13px !important;
-            padding-top: 7.5px;
+            padding-top: 9px;
             line-height: 1.35;
+            margin-bottom: 0px;
+            padding-bottom: 2px;
         }
         &__button {
             font-size: 13px !important;
             padding: unset;
+            line-height: 18px;
             align-self: flex-end;
         }
     }

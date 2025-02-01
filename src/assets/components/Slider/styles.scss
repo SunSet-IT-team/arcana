@@ -104,16 +104,10 @@
         transition: filter 1s ease;
     }
     @media screen and (max-width: 1024px) and (min-width: 376px) {
-        &__title {
-            // margin-bottom: 66px !important;
-        }
         &__buttons-title {
             font-size: 13px !important;
             margin-top: 0;
             margin-bottom: 50px;
-        }
-        &__buttons {
-            // margin-top: 15px;
         }
         &__button {
             width: 30px;
@@ -187,7 +181,7 @@
             opacity: unset !important;
             visibility: unset !important;
             padding: 5px !important;
-            margin-top: 7px;
+            margin-top: 3px;
             padding-bottom: 0 !important;
             justify-content: flex-end !important;
         }
@@ -217,6 +211,9 @@
                 aspect-ratio: 1;
                 margin-right: 8px;
             }
+        }
+        &__item-imgBox {
+            max-height: 186px;
         }
     }
 }

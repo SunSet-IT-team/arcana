@@ -229,6 +229,7 @@
     }
 
     @media screen and (max-width: 375px) {
+        padding-top: 102px;
         &__info-wrapper {
             grid-template-rows: repeat(5, 1fr);
             grid-area: 1 / 1 / 4 / 6;

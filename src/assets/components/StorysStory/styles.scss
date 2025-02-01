@@ -364,22 +364,48 @@
         max-width: 100%;
         overflow: hidden;
         padding: 100px 0;
-        @media screen and (max-width: 375px) {
-            &__title {
-                font-size: 24px !important;
+        &__back-link {
+            margin-bottom: 43px !important;
+
+            padding: unset;
+            span {
+                margin-left: -10px;
+                line-height: 18px;
             }
-            &__filter {
-                &::after {
-                    display: none;
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+        &__title {
+            font-size: 30px !important;
+            margin-bottom: 94px;
+        }
+        &__filter {
+            padding: 12px 0;
+            margin-bottom: 0px;
+            &::after {
+                // display: none !important;
+            }
+        }
+        &__filter-select {
+            width: 100%;
+            .select {
+                &__value-container {
+                    padding: 11px 17px !important;
+                }
+                &__control {
+                    height: 40px;
+                    min-height: unset !important;
+                    margin-top: unset;
+                }
+                &__indicator {
+                    padding: 10px 5px !important;
                 }
             }
-            &__filter-list {
-                display: none;
-            }
-            &__filter-select {
-                width: 100%;
-                max-width: 100%;
-            }
+        }
+        &__filter-list {
+            display: none;
         }
     }
 }

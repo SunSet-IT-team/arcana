@@ -193,18 +193,20 @@
             min-height: unset !important;
             height: unset;
             grid-template-rows: 20px 58px 58px 330px 45px 40px;
+            padding-bottom: 4.5px;
             &:nth-child(1) {
                 min-height: unset !important;
                 height: unset;
                 padding: size-desktop(100px) 0 size-desktop(46px) 0 !important;
+                padding-bottom: 4.5px !important;
             }
         }
         &__main-info {
             grid-area: 2 / 1 / 6 / 6 !important;
-            margin-top: 5px;
+            margin-top: -5px !important;
         }
         &__tags {
-            margin: 5px 0;
+            margin: 10.5px 0;
         }
         &__tag {
             padding: 7.5px 20px;
@@ -216,9 +218,12 @@
         &__info {
             grid-area: 1 / 4 / 7 / 6;
             max-width: unset !important;
+            margin-top: -4.5px;
         }
         &__name {
-            line-height: 1.4;
+            line-height: 1.35 !important;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
         &__text {
             line-height: 1.4;
@@ -226,15 +231,16 @@
         &__text-wrapper {
             grid-area: 3 / 1 / 4 / 6;
             max-width: unset;
-            // margin-top: -10px;
+            margin-top: 0px;
         }
         &__imgBox {
             grid-area: 4 / 1 / 5 / 6;
-            margin-top: 20px;
+            margin-top: 15px;
+            max-height: 310px;
         }
         &__link {
             font-size: 13px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             margin-right: 1px;
             svg {
                 width: 15px !important;
