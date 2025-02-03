@@ -224,7 +224,7 @@ function StorysStory() {
             });
         }, 500);
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 375);
+            setIsMobile(window.innerWidth <= 425);
         };
         handleResize();
         console.log(window.innerWidth);

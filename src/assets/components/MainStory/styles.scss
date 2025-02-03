@@ -118,6 +118,9 @@
             color: $light-grey;
         }
     }
+    &__item-imgBg {
+        width: 100% !important;
+    }
     @media screen and (max-width: 1024px) {
         &__title {
             margin-bottom: 63px !important;
@@ -134,9 +137,6 @@
         }
         &__item-text {
             font-size: clamp(13px, size-desktop(30px), 30px);
-        }
-        &__item-img {
-            // min-height: clamp(10px, 280px, 280px) !important;
         }
         &__item {
             &:nth-child(1) {
@@ -158,10 +158,21 @@
             // Для нечетных
         }
         &__item-link {
-            margin-top: 33px;
+            // margin-top: 33px;
         }
         &__link {
             grid-area: 3 / 4 / 4 / 6;
+        }
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 376px) {
+        padding-top: 100px;
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__body {
+            height: 375px;
         }
     }
 

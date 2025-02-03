@@ -20,7 +20,7 @@ function MainStory() {
             Array.from(textSplitElements)
         );
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 375);
+            setIsMobile(window.innerWidth <= 425);
         };
         handleResize();
         window.addEventListener('resize', handleResize);

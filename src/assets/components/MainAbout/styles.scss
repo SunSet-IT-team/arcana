@@ -239,7 +239,47 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    // @media screen and (max-width: 767px) {
+    //     &__content {
+    //         grid-template-rows: 70px repeat(7, 1fr);
+    //     }
+    //     &__info-text {
+    //         font-size: 22px !important;
+    //         line-height: 1.6;
+    //         .line-wrapper {
+    //             &:nth-child(1) {
+    //                 margin-left: 42% !important;
+    //             }
+    //         }
+    //     }
+    //     &__info-subtext {
+    //         margin-top: -160px;
+    //     }
+    // }
+
+    @media screen and (max-width: 767px) and (min-width: 425px) {
+        &__info-wrapper {
+            grid-template-rows: repeat(5, 84px) !important;
+        }
+        &__box {
+            margin-top: -30px !important;
+        }
+        &__content {
+            grid-template-rows: repeat(6, 1fr) !important;
+        }
+        &__author-linkbox {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__author-imgbox {
+            overflow: hidden;
+        }
+        &__author-text2 {
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
         padding-top: 102px;
         &__info-wrapper {
             grid-template-rows: repeat(5, 1fr);
@@ -252,6 +292,10 @@
             font-size: 24px !important;
             margin-bottom: 37px !important;
         }
+        &__info-subtext {
+            font-size: 12.5px !important;
+            grid-area: 2 / 1 / 3 / 4 !important;
+        }
         &__info-text {
             font-size: 22px !important;
             line-height: 1.6;
@@ -261,11 +305,6 @@
                 }
             }
         }
-        &__info-subtext {
-            font-size: 12.5px !important;
-            grid-area: 2 / 1 / 3 / 4 !important;
-        }
-
         &__author-imgbox {
             height: 180px !important;
             grid-area: 2 / 4 / 3 / 6 !important;
@@ -293,6 +332,7 @@
         &__author-link {
             font-size: 12.5px !important;
             margin-bottom: 0px !important;
+            float: right;
             svg {
                 margin-top: 5px;
                 margin-left: 15px !important;

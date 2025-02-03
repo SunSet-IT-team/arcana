@@ -177,7 +177,7 @@ function MainAbout() {
 
                         <div className="about__box" ref={textWhiteRef}>
                             <p className="about__box-text text-split text-white">
-                                {width <= 375 ? (
+                                {/* {width <= 375 ? (
                                     <>
                                         <span className="about__box-span">
                                             IL METODO, PUR NELLA SUA {''}
@@ -193,15 +193,15 @@ function MainAbout() {
                                         <br />
                                         RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL
                                     </>
-                                ) : (
-                                    <>
-                                        <span className="about__box-span">
-                                            IL METODO, PUR NELLA SUA RELATIVA
-                                            SEMPLICITÀ, PUÒ SOSTITUIRE IL
-                                            {''}
-                                        </span>
-                                    </>
-                                )}
+                                ) : ( */}
+                                <>
+                                    <span className="about__box-span">
+                                        IL METODO, PUR NELLA SUA RELATIVA
+                                        SEMPLICITÀ, PUÒ SOSTITUIRE IL
+                                        {''}
+                                    </span>
+                                </>
+                                {/* )} */}
                                 LAVORO CON UNO PSICOLOGO, DANDO RISULTATI PIÙ
                                 RAPIDI ED EFFICACI PROPRIO PERCHÉ È RADICATO
                                 NELL'ESSENZA DELLA PERSONA, NELLA SUA INNATA
@@ -211,7 +211,7 @@ function MainAbout() {
                             </p>
 
                             <p className="about__box-text text-split text-white">
-                                {width <= 375 ? (
+                                {/* {width <= 375 ? (
                                     <>
                                         <span className="about__box-span">
                                             POTETE IMMAGINARE A {''}
@@ -227,20 +227,20 @@ function MainAbout() {
                                         <br />
                                         LE "ISTRUZIONI D'USO" PER VOI
                                     </>
-                                ) : (
-                                    <>
-                                        <span className="about__box-span">
-                                            POTETE IMMAGINARE A TROVARE LE
-                                            "ISTRUZIONI D'USO" PER VOI
-                                            {''}
-                                        </span>
-                                    </>
-                                )}
+                                ) : ( */}
+                                <>
+                                    <span className="about__box-span">
+                                        POTETE IMMAGINARE A TROVARE LE
+                                        "ISTRUZIONI D'USO" PER VOI
+                                        {''}
+                                    </span>
+                                </>
+                                {/* )} */}
                                 STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA
                                 ARCHETIPICA NATALE.
                             </p>
                             <p className="about__box-text text-split text-white">
-                                {width <= 375 ? (
+                                {/* {width <= 375 ? (
                                     <>
                                         <span className="about__box-span">
                                             PORTERÒ AVANTI I MIEI {''}
@@ -257,15 +257,14 @@ function MainAbout() {
                                         <br />
                                         QUESTO METODO CON L'OBIETTIVO DI
                                     </>
-                                ) : (
-                                    <>
-                                        <span className="about__box-span">
-                                            PORTERÒ AVANTI I MIEI STUDI DI
-                                            QUESTO METODO CON L'OBIETTIVO DI{' '}
-                                            {''}
-                                        </span>
-                                    </>
-                                )}
+                                ) : ( */}
+                                <>
+                                    <span className="about__box-span">
+                                        PORTERÒ AVANTI I MIEI STUDI DI QUESTO
+                                        METODO CON L'OBIETTIVO DI {''}
+                                    </span>
+                                </>
+                                {/* )} */}
                                 RENDERLO UNO STRUMENTO RICONOSCIUTO. QUESTO
                                 METODO HA UN POTERE ENORME ED È IMPORTANTE CHE
                                 SIA MIRATO ALLA GUARIGIONE E ALLA TRASFORMAZIONE

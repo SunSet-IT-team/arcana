@@ -11,7 +11,7 @@
         @media screen and (max-width: 1024px) {
             margin-left: 79px;
         }
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             margin-left: 0;
             width: 100%;
         }
@@ -103,7 +103,7 @@
         width: 100%;
         transition: filter 1s ease;
     }
-    @media screen and (max-width: 1024px) and (min-width: 376px) {
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
         &__buttons-title {
             font-size: 13px !important;
             margin-top: 0;
@@ -132,6 +132,8 @@
         }
         &__item-text {
             line-height: 1.4 !important;
+            overflow: hidden;
+            max-height: 90px;
         }
         &__item-link {
             font-size: 13px !important;
@@ -144,7 +146,7 @@
             }
         }
     }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         &__buttons {
             display: none;
         }
@@ -212,8 +214,15 @@
                 margin-right: 8px;
             }
         }
+        &__item-imgBl {
+            width: 100%;
+        }
         &__item-imgBox {
             max-height: 186px;
+        }
+        &__link {
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }
@@ -311,7 +320,7 @@
 .archetypes-demo__slider-wrapper {
     .swiper-slide-active {
         opacity: 1;
-        @media screen and (min-width: 376px) {
+        @media screen and (min-width: 768px) {
             width: size-desktop(680px) !important;
             max-width: 680px !important;
             .archetypes-demo {
@@ -333,7 +342,7 @@
                 }
             }
         }
-        @media screen and (max-width: 1024px) and (min-width: 376px) {
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
             max-width: 335px !important;
             width: 335px !important;
             .archetypes-demo {
@@ -351,7 +360,7 @@
             }
         }
     }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         width: 100% !important;
         .swiper::before,
         .swiper::after {
