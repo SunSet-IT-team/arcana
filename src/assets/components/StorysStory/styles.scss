@@ -360,7 +360,7 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 767px) {
         max-width: 100%;
         overflow: hidden;
         padding: 100px 0;
@@ -390,6 +390,7 @@
         }
         &__filter-select {
             width: 100%;
+            max-width: unset;
             .select {
                 &__value-container {
                     padding: 11px 17px !important;

@@ -187,7 +187,7 @@
             margin-right: 13.5px !important;
         }
     }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         &__item-wrapper {
             padding: size-desktop(100px) 0 size-desktop(46px) 0;
             min-height: unset !important;
@@ -251,6 +251,9 @@
                 margin-right: 0px;
                 margin-top: 6px;
             }
+        }
+        &__img {
+            width: 100%;
         }
     }
 }

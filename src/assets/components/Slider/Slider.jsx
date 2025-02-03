@@ -33,13 +33,13 @@ export default function App() {
 
             if (width > 1024) {
                 setSpaceBetween(20);
-            } else if (width > 375 && width <= 1024) {
+            } else if (width > 768 && width <= 1024) {
                 setSpaceBetween(15);
             } else {
                 setSpaceBetween(0);
             }
             const handleResize = () => {
-                setIsMobile(window.innerWidth <= 375);
+                setIsMobile(window.innerWidth <= 768);
             };
             handleResize();
             window.addEventListener('resize', handleResize);
