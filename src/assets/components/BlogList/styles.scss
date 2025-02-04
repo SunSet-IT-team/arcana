@@ -169,7 +169,7 @@
         }
 
         &__link {
-            font-size: 13px;
+            font-size: clamp(10px, size-desktop(18px), 18px);
             svg {
                 width: 15px !important;
                 height: 15px !important;
@@ -181,7 +181,7 @@
             }
         }
         &__tag {
-            font-size: clamp(13px, size-desktop(18px), 18px);
+            font-size: clamp(10px, size-desktop(18px), 18px);
             max-height: 42px;
             padding: size-desktop(15px) size-desktop(37px);
             margin-right: 13.5px !important;
