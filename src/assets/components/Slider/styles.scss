@@ -9,7 +9,7 @@
 
         margin-right: 0;
         @media screen and (max-width: 1024px) {
-            margin-left: 79px;
+            margin-left: clamp(0px, size-desktop(79px), 79px);
         }
         @media screen and (max-width: 768px) {
             margin-left: 0;
@@ -129,15 +129,19 @@
         }
         &__item-info {
             padding-left: 7.5px !important;
+            max-width: clamp(50px, size-laptop(300px), 350px) !important;
+            margin-left: 80px;
         }
         &__item-text {
             line-height: 1.4 !important;
             overflow: hidden;
             max-height: 90px;
+            width: 100% !important;
         }
         &__item-link {
             font-size: 13px !important;
-            margin-left: 151px !important;
+            margin-left: auto !important;
+            justify-content: flex-end !important;
             svg {
                 margin-left: 15px !important;
                 width: 18px !important;
@@ -188,28 +192,30 @@
             justify-content: flex-end !important;
         }
         &__item-text {
+            display: unset;
             line-height: 1.46 !important;
             margin-bottom: 5px !important;
         }
         &__item-text-1 {
             line-height: 1.3 !important;
-            font-size: 10px !important;
+            font-size: 13px !important;
+            color: $light-grey;
         }
         &__item-text-2 {
             line-height: 1.3 !important;
-            font-size: 10px !important;
+            font-size: 13px !important;
         }
         &__item-link {
             margin-left: unset !important;
             width: unset !important;
             font-size: 12px !important;
-            margin-right: unset !important;
+            margin-right: 5px !important;
             margin-left: auto !important;
-            margin-top: 5px;
+            margin-top: 7.5px !important;
             svg {
                 margin-left: 15px !important;
-                width: 18px !important;
-                height: unset;
+                width: 16px !important;
+                height: 16px !important;
                 aspect-ratio: 1;
                 margin-right: 8px;
             }
@@ -298,7 +304,7 @@
             }
             &__item-link {
                 font-size: 18px;
-                margin-right: -40px;
+                // margin-right: -40px;
                 line-height: 21px;
                 width: clamp(10px, size-desktop(330px), 330px);
                 display: flex;

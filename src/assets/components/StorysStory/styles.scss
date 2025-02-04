@@ -215,6 +215,7 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        color: $light-grey;
     }
     &__item-link {
         min-width: 120px;
@@ -250,7 +251,7 @@
                     height: 34px;
                     min-height: unset !important;
                     margin-top: 8px;
-                    margin-left: 10px !important;
+                    // margin-left: 10px !important;
                 }
                 &__indicator {
                     padding: 10px 5px !important;
@@ -357,6 +358,13 @@
         }
         &__link {
             grid-area: 3 / 4 / 4 / 6;
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        &__filter-list {
+            max-width: 50%;
+            flex-wrap: wrap;
         }
     }
 
