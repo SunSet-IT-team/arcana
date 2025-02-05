@@ -22,6 +22,10 @@ const WaterEffectWrapper = ({children}) => {
         } else {
             ripple(elemRef.current, 'show');
         }
+
+        return () => {
+            ripple(elemRef.current, 'destroy');
+        };
     }, [elemRef.current, inView]);
 
     return (

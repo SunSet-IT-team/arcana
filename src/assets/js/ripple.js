@@ -368,48 +368,57 @@ class Ripples {
     }
 
     setupPointerEvents() {
-        const that = this;
-
-        function pointerEventsEnabled() {
-            return that.visible && that.running && that.interactive;
-        }
-
-        function dropAtPointer(pointer, big) {
-            if (pointerEventsEnabled()) {
-                that.dropAtPointer(
-                    pointer,
-                    that.dropRadius * (big ? 1.5 : 1),
-                    big ? 0.14 : 0.01
-                );
-            }
-        }
-
-        console.log('Вешаю обработчики');
-        console.log(this.el);
+        this.touchStartEventListener = this.touchStartEventListener.bind(this);
+        this.mouseDownEventListener = this.mouseDownEventListener.bind(this);
+        this.touchMoveEventListener = this.touchMoveEventListener.bind(this);
+        this.mouseMoveEventListener = this.mouseMoveEventListener.bind(this);
 
         // Начинаем слушать события указателя
-        this.el.addEventListener('mousemove', (e) => {
-            dropAtPointer(e);
-        });
+        this.el.addEventListener('mousemove', this.mouseMoveEventListener);
 
-        this.el.addEventListener('touchmove', (e) => {
-            const touches = e.changedTouches;
-            for (let i = 0; i < touches.length; i++) {
-                dropAtPointer(touches[i]);
-            }
-        });
+        this.el.addEventListener('touchmove', this.touchMoveEventListener);
 
-        this.el.addEventListener('touchstart', (e) => {
-            const touches = e.changedTouches;
-            for (let i = 0; i < touches.length; i++) {
-                dropAtPointer(touches[i]);
-            }
-        });
+        this.el.addEventListener('touchstart', this.touchStartEventListener);
 
         // Добавляем большой рябь только при нажатии мыши
-        this.el.addEventListener('mousedown', (e) => {
-            dropAtPointer(e, true);
-        });
+        this.el.addEventListener('mousedown', this.mouseDownEventListener);
+    }
+
+    dropAtPointerHandle(pointer, big) {
+        if (this.pointerEventsEnabled()) {
+            this.dropAtPointer(
+                pointer,
+                this.dropRadius * (big ? 1.5 : 1),
+                big ? 0.14 : 0.01
+            );
+        }
+    }
+
+    pointerEventsEnabled() {
+        return this.visible && this.running && this.interactive;
+    }
+
+    mouseMoveEventListener(e) {
+        this.dropAtPointerHandle(e);
+    }
+
+    mouseDownEventListener(e) {
+        this.dropAtPointerHandle(e, true);
+    }
+
+    touchMoveEventListener(e) {
+        const touches = e.changedTouches;
+        for (let i = 0; i < touches.length; i++) {
+            this.dropAtPointerHandle(touches[i]);
+        }
+    }
+
+    touchStartEventListener(e) {
+        const touches = e.changedTouches;
+
+        for (let i = 0; i < touches.length; i++) {
+            this.dropAtPointerHandle(touches[i]);
+        }
     }
 
     // Load the image either from the options or the element's CSS rules.
@@ -919,16 +928,11 @@ class Ripples {
     }
 
     destroy() {
-        this.el.replaceWith(this.el.cloneNode(true));
-
         this.el.classList.remove('ripples');
 
-        delete this.el.ripplesData;
+        delete this.el.ripplesInstance;
 
         gl = null;
-
-        console.log('удаляю обработчики');
-        console.log(this.el);
 
         window.removeEventListener('resize', this.updateSize);
 
@@ -937,6 +941,15 @@ class Ripples {
         this.restoreCssBackground();
 
         this.destroyed = true;
+
+        this.el.removeEventListener('mousemove', this.mouseMoveEventListener);
+
+        this.el.removeEventListener('touchmove', this.touchMoveEventListener);
+
+        this.el.removeEventListener('touchstart', this.touchStartEventListener);
+
+        // Добавляем большой рябь только при нажатии мыши
+        this.el.removeEventListener('mousedown', this.mouseDownEventListener);
     }
 
     show() {
@@ -978,7 +991,7 @@ class Ripples {
 }
 
 Ripples.DEFAULTS = {
-    imageUrl: null,
+    imageUrl: '',
     resolution: 256,
     dropRadius: 20,
     perturbance: 0.03,
@@ -995,18 +1008,18 @@ class RipplesPlugin {
         }
 
         element.forEach((el) => {
-            let data = el.ripplesInstance;
-            let options = Object.assign(
-                {},
-                Ripples.DEFAULTS,
-                el.dataset,
-                typeof option === 'object' ? option : {}
-            );
+            let data = el?.ripplesInstance;
 
             if (!data && typeof option === 'string') {
                 return;
             }
             if (!data) {
+                let options = Object.assign(
+                    {},
+                    Ripples.DEFAULTS,
+                    el.dataset,
+                    typeof option === 'object' ? option : {}
+                );
                 el.ripplesInstance = new Ripples(el, options);
             } else if (typeof option === 'string') {
                 Ripples.prototype[option].apply(data, args);
