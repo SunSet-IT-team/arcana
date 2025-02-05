@@ -160,7 +160,8 @@
         &__item-wrapper {
             border: 1px solid $white;
             padding: 5px;
-            height: 360px;
+            padding-bottom: 10px;
+            // height: 360px;
         }
         &__item-title {
             padding: 2.5px 5px;
@@ -180,6 +181,7 @@
             margin-top: -5px;
         }
         &__item-info {
+            display: unset !important;
             position: unset !important;
             max-width: unset !important;
             padding: unset !important;
@@ -212,6 +214,9 @@
             margin-right: 5px !important;
             margin-left: auto !important;
             margin-top: 7.5px !important;
+            float: unset !important;
+            align-items: flex-end;
+            justify-content: flex-end !important;
             svg {
                 margin-left: 15px !important;
                 width: 16px !important;
