@@ -355,11 +355,7 @@ class Ripples {
         // Init animation
         function step() {
             if (!that.destroyed) {
-                // if (that.frameCount % 2 === 0) {
-                //     // Выполняем только каждый второй кадр
-                // }
                 that.step();
-                // that.frameCount++;
                 requestAnimationFrame(step);
             }
         }

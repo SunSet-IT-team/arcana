@@ -9,9 +9,9 @@ const WaterEffectWrapper = ({children}) => {
     const elemRef = useRef(null);
 
     // Оптимизированные параметры для мобильных устройств
-    const resolution = 256;
-    const dropRadius = 20;
-    const perturbance = 0.04;
+    const resolution = isMobile ? 128 : 256;
+    const dropRadius = isMobile ? 10 : 20;
+    const perturbance = isMobile ? 0.02 : 0.04;
 
     useEffect(() => {
         if (!elemRef || !elemRef.current) return;
