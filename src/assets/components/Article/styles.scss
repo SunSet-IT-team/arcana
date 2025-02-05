@@ -97,7 +97,54 @@
         margin-left: auto;
         margin-right: -8px;
     }
-    @media screen and (max-width: 375px) {
+
+    @media screen and (max-width: 1024px) {
+        &__wrapper {
+            padding-top: 10px;
+        }
+        &__title {
+            margin-bottom: 110px;
+        }
+        &__filter {
+            margin-bottom: 50px;
+            &-item {
+                margin-right: 15.75px !important;
+                line-height: 16px;
+            }
+        }
+        &__back-link {
+            margin-bottom: 190px;
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+        &__button {
+            margin-top: 40px;
+            font-size: 14px;
+            max-width: unset;
+            width: 335px;
+            margin-right: 2px;
+            padding: 6.5px;
+        }
+        &__body {
+            h2 {
+                font-size: 24px !important;
+                line-height: 1.3925;
+            }
+            p {
+                font-size: clamp(13px, size-laptop(18px), 18px);
+            }
+        }
+
+        &__up {
+            span {
+                font-size: clamp(13px, size-laptop(18px), 18px);
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
         padding: 88px 0;
         &__back-link {
             margin-bottom: 46.5px !important;
