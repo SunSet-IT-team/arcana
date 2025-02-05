@@ -366,12 +366,12 @@ class Ripples {
 
         requestAnimationFrame(step);
 
-        if (!localStorage.getItem('aboba')) {
-            alert(`Resolution: ${this.resolution}`);
-            alert(`Device Pixel Ratio: ${window.devicePixelRatio}`);
-            alert(`Linear Support: ${config.linearSupport}`);
-            localStorage.setItem('aboba', true);
-        }
+        // if (!localStorage.getItem('aboba')) {
+        //     alert(`Resolution: ${this.resolution}`);
+        //     alert(`Device Pixel Ratio: ${window.devicePixelRatio}`);
+        //     alert(`Linear Support: ${config.linearSupport}`);
+        //     localStorage.setItem('aboba', true);
+        // }
     }
 
     setupPointerEvents() {
@@ -726,7 +726,7 @@ class Ripples {
         this.dropProgram = createProgram(
             vertexShader,
             [
-                'precision lowp float;',
+                'precision highp float;',
 
                 'const float PI = 3.141592653589793;',
                 'uniform sampler2D texture;',
@@ -752,7 +752,7 @@ class Ripples {
         this.updateProgram = createProgram(
             vertexShader,
             [
-                'precision lowp float;',
+                'precision highp float;',
 
                 'uniform sampler2D texture;',
                 'uniform vec2 delta;',
@@ -784,7 +784,7 @@ class Ripples {
 
         this.renderProgram = createProgram(
             [
-                'precision lowp float;',
+                'precision highp float;',
 
                 'attribute vec2 vertex;',
                 'uniform vec2 topLeft;',
@@ -800,7 +800,7 @@ class Ripples {
                 '}',
             ].join('\n'),
             [
-                'precision lowp float;',
+                'precision highp float;',
 
                 'uniform sampler2D samplerBackground;',
                 'uniform sampler2D samplerRipples;',
