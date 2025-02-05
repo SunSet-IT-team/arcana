@@ -389,6 +389,15 @@
             font-size: 30px !important;
             margin-bottom: 94px;
         }
+        &__item-tag,
+        &__item-title {
+            font-size: clamp(13px, size-laptop(18px), 18px);
+        }
+        &__item-text {
+            font-size: clamp(13px, size-laptop(18px), 18px);
+            color: #717171;
+            line-height: clamp(20px, size-laptop(25.2px), 25.2px);
+        }
         &__filter {
             padding: 12px 0;
             margin-bottom: 0px;
