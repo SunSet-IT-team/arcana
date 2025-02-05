@@ -215,6 +215,7 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        color: $light-grey;
     }
     &__item-link {
         min-width: 120px;
@@ -250,7 +251,7 @@
                     height: 34px;
                     min-height: unset !important;
                     margin-top: 8px;
-                    margin-left: 10px !important;
+                    // margin-left: 10px !important;
                 }
                 &__indicator {
                     padding: 10px 5px !important;
@@ -360,7 +361,14 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 920px) {
+        &__filter-list {
+            max-width: 50%;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
         max-width: 100%;
         overflow: hidden;
         padding: 100px 0;
@@ -390,6 +398,7 @@
         }
         &__filter-select {
             width: 100%;
+            max-width: unset;
             .select {
                 &__value-container {
                     padding: 11px 17px !important;

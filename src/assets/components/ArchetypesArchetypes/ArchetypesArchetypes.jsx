@@ -201,7 +201,7 @@ function ArchetypesArchetypes() {
                 }
             });
             const handleResize = () => {
-                setIsMobile(window.innerWidth <= 375);
+                setIsMobile(window.innerWidth <= 768);
             };
             handleResize();
             console.log(window.innerWidth);
@@ -291,12 +291,14 @@ function ArchetypesArchetypes() {
                                             <span className="archetypes__item-number">
                                                 {archetype.number}
                                             </span>
+                                            <br />
                                             <p className="archetypes__item-positive">
                                                 Manifestazione positiva:
                                                 <span className="archetypes__item-span">
                                                     {archetype.positive}
                                                 </span>
                                             </p>
+                                            <br />
                                             <p className="archetypes__item-negative">
                                                 Manifestazione negativa:
                                                 <span className="archetypes__item-span">

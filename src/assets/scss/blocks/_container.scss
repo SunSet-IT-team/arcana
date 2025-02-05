@@ -3,16 +3,16 @@
     max-width: 1920px;
     width: 100%;
 
-    @media screen and (min-width: 1024px) {
-        padding: 0 95px;
-    }
+    // @media screen and (min-width: 1024px) {
+    //     padding: 0 95px;
+    // }
 
     @media screen and (max-width: 1024px) {
         max-width: unset;
         padding: 0 80px;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 767px) {
         max-width: unset;
         padding: 0 16px;
     }

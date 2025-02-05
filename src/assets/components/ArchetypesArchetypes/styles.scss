@@ -310,7 +310,7 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 767px) {
         padding: 88px 0;
         padding-bottom: 122px;
         &__back-link {
@@ -367,7 +367,7 @@
         }
         &-demo {
             &__item-text {
-                display: flex;
+                // display: flex;
                 flex-direction: column;
                 height: 30px;
             }
