@@ -200,6 +200,11 @@
             &__text-wrapper {
                 margin-top: -5px;
             }
+            &__item-wrapper {
+                &:nth-child(1) {
+                    border-top: unset;
+                }
+            }
         }
 
         &__bottom {
