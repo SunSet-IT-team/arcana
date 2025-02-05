@@ -47,3 +47,21 @@
 .cursor.hidden {
     transform: scale(0.001);
 }
+
+.ripples {
+    position: relative;
+}
+
+.ripples .ripples-child {
+    position: relative;
+    z-index: 10;
+}
+
+.ripples canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

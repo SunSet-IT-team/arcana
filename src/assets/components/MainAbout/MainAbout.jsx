@@ -24,7 +24,6 @@ function MainAbout() {
 
         const handleResize = () => {
             setWidth(window.innerWidth);
-            console.log(width);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
