@@ -224,4 +224,38 @@
     &__body-link {
         margin-top: 50px;
     }
+
+    @media screen and (max-width: 1024px) {
+        &__table-content {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 100px 0;
+        overflow: hidden;
+        &__body {
+            max-width: unset;
+        }
+        &__title {
+            font-size: 24px !important;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__tables {
+            flex-direction: column;
+        }
+        &__table-content {
+            font-size: 12px;
+            padding: 10px;
+        }
+        &__table-contents--4 {
+            grid-template-columns: repeat(4, clamp(80px, 7.5vw, 200px));
+        }
+        .button__text {
+            font-size: clamp(13px, size-laptop(18px), 18px) !important;
+        }
+    }
 }

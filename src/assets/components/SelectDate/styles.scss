@@ -16,17 +16,16 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
         flex-direction: column;
 
         &__item {
             &:not(:last-child) {
-                margin-right: 0;
                 margin-bottom: 16px;
             }
         }
         .select__indicators {
-            margin-right: -16px !important;
+            // margin-right: -16px !important;
         }
     }
 }

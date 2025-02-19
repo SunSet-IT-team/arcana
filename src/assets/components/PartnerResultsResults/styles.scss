@@ -195,7 +195,23 @@
         font-size: 18px;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 1024px) {
+        &__info-name {
+            min-width: unset;
+        }
+        &__info-archetype {
+            min-width: unset;
+        }
+        &__info-number {
+            min-width: unset;
+        }
+        &__text {
+            font-size: clamp(11.5px, size-desktop(16px), 16px);
+            margin-bottom: clamp(5px, size-desktop(20px), 50px) !important;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
         padding: 100px 0;
         overflow: hidden;
         &__title {
@@ -259,15 +275,15 @@
         &__name-list {
             display: none;
         }
-        .results-list__item:nth-child(14):before {
-            width: 200px;
-            height: 100px;
-            margin-top: -75px;
-        }
-        .results-list__item:nth-child(14):after {
-            width: 200px;
-            height: 100px;
-            margin-bottom: -75px;
-        }
+        // .results-list__item:nth-child(14):before {
+        //     width: 200px;
+        //     height: 100px;
+        //     margin-top: -75px;
+        // }
+        // .results-list__item:nth-child(14):after {
+        //     width: 200px;
+        //     height: 100px;
+        //     margin-bottom: -75px;
+        // }
     }
 }
