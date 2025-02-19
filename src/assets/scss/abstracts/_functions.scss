@@ -5,11 +5,3 @@
 @function size-desktop($size-in-px) {
     @return $size-in-px / $screen-huge * 100vw;
 }
-
-@function size-laptop($size-in-px) {
-    @return $size-in-px / $screen-laptop * 100vw;
-}
-
-@function size-mobile($size-in-px) {
-    @return $size-in-px / $screen-mobile * 100vw;
-}

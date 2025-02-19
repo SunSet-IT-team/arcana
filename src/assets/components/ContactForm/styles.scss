@@ -248,14 +248,16 @@
         align-items: center;
     }
 
-    &__form-text,
-    &__text-mobile {
+    &__form-text {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
         margin-right: 50px;
 
         color: $light-grey;
         opacity: 0;
+        span {
+            // cursor: pointer;;
+        }
     }
     &__form-button {
         max-width: clamp(160px, size-desktop(330px), 330px);
@@ -319,33 +321,6 @@
         }
         &__form-button {
             max-width: 160px;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        &__content {
-            margin-top: unset;
-            flex-direction: column;
-        }
-        &__text {
-            display: none;
-        }
-        &__text-mobile {
-            display: unset;
-            opacity: 1;
-        }
-        &__form-box {
-            max-width: 100%;
-        }
-        &__title {
-            font-size: clamp(18px, size-mobile(30px), 30px) !important;
-        }
-        &__subtitle {
-            font-size: clamp(12px, size-mobile(18px), 18px) !important;
-            padding-left: 0;
-        }
-        &__form {
-            padding-top: 10px;
         }
     }
 }

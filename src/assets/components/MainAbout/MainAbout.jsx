@@ -176,41 +176,98 @@ function MainAbout() {
 
                         <div className="about__box" ref={textWhiteRef}>
                             <p className="about__box-text text-split text-white">
+                                {/* {width <= 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            IL METODO, PUR NELLA SUA {''}
+                                        </span>
+                                        <br />
+                                        RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL
+                                    </>
+                                ) : width <= 1024 && width > 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            IL METODO, PUR NELLA SUA {''}
+                                        </span>
+                                        <br />
+                                        RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL
+                                    </>
+                                ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        IL METODO, PUR NELLA SUA |
+                                        IL METODO, PUR NELLA SUA RELATIVA
+                                        SEMPLICITÀ, PUÒ SOSTITUIRE IL
+                                        {''}
                                     </span>
                                 </>
-                                RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL LAVORO
-                                CON UNO PSICOLOGO, DANDO RISULTATI PIÙ RAPIDI ED
-                                EFFICACI PROPRIO PERCHÉ È RADICATO NELL'ESSENZA
-                                DELLA PERSONA, NELLA SUA INNATA COSTITUZIONE
-                                PSICOLOGICA ED È IN GRADO DI FAR LUCE SUI TRAUMI
-                                DELLA PERSONA, CHE POTREBBE NON ESSERNE AFFATTO
-                                CONSAPEVOLE.
+                                {/* )} */}
+                                LAVORO CON UNO PSICOLOGO, DANDO RISULTATI PIÙ
+                                RAPIDI ED EFFICACI PROPRIO PERCHÉ È RADICATO
+                                NELL'ESSENZA DELLA PERSONA, NELLA SUA INNATA
+                                COSTITUZIONE PSICOLOGICA ED È IN GRADO DI FAR
+                                LUCE SUI TRAUMI DELLA PERSONA, CHE POTREBBE NON
+                                ESSERNE AFFATTO CONSAPEVOLE.
                             </p>
 
                             <p className="about__box-text text-split text-white">
+                                {/* {width <= 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            POTETE IMMAGINARE A {''}
+                                        </span>
+                                        <br />
+                                        TROVARE LE "ISTRUZIONI D'USO" PER VOI
+                                    </>
+                                ) : width <= 1024 && width > 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            POTETE IMMAGINARE A TROVARE {''}
+                                        </span>
+                                        <br />
+                                        LE "ISTRUZIONI D'USO" PER VOI
+                                    </>
+                                ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        POTETE IMMAGINARE A TROVARE |
+                                        POTETE IMMAGINARE A TROVARE LE
+                                        "ISTRUZIONI D'USO" PER VOI
+                                        {''}
                                     </span>
-                                    <br />
                                 </>
-                                LE "ISTRUZIONI D'USO" PER VOI STESSI E LA VOSTRA
-                                VITA? QUESTO È LA MAPPA ARCHETIPICA NATALE.
+                                {/* )} */}
+                                STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA
+                                ARCHETIPICA NATALE.
                             </p>
                             <p className="about__box-text text-split text-white">
+                                {/* {width <= 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            PORTERÒ AVANTI I MIEI {''}
+                                        </span>
+                                        <br />
+                                        STUDI DI QUESTO METODO CON L'OBIETTIVO
+                                        DI
+                                    </>
+                                ) : width <= 1024 && width > 375 ? (
+                                    <>
+                                        <span className="about__box-span">
+                                            PORTERÒ AVANTI I MIEI STUDI DI {''}
+                                        </span>
+                                        <br />
+                                        QUESTO METODO CON L'OBIETTIVO DI
+                                    </>
+                                ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        PORTERÒ AVANTI I MIEI STUDI DI |
+                                        PORTERÒ AVANTI I MIEI STUDI DI QUESTO
+                                        METODO CON L'OBIETTIVO DI {''}
                                     </span>
                                 </>
-                                QUESTO METODO CON L'OBIETTIVO DI RENDERLO UNO
-                                STRUMENTO RICONOSCIUTO. QUESTO METODO HA UN
-                                POTERE ENORME ED È IMPORTANTE CHE SIA MIRATO
-                                ALLA GUARIGIONE E ALLA TRASFORMAZIONE POSITIVA
-                                DEL DESTINO UMANO.
+                                {/* )} */}
+                                RENDERLO UNO STRUMENTO RICONOSCIUTO. QUESTO
+                                METODO HA UN POTERE ENORME ED È IMPORTANTE CHE
+                                SIA MIRATO ALLA GUARIGIONE E ALLA TRASFORMAZIONE
+                                POSITIVA DEL DESTINO UMANO.
                             </p>
                         </div>
                     </div>
