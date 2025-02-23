@@ -50,17 +50,20 @@
         height: 467px;
     }
     &__author-imgBg {
-        background-color: $white;
+        background-color: #131313;
         height: 100%;
     }
     &__author-imgBl {
         height: 100%;
         overflow: hidden;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     }
     &__author-img {
         object-fit: cover;
         height: 100%;
         width: 100%;
+        will-change: transform;
+        display: block;
     }
     &__author-wrapper {
         display: flex;

@@ -108,20 +108,24 @@
     &__imgBox {
         // max-width: clamp(10px, size-desktop(330px), 330px);
         width: 100%;
+
         // height: clamp(10px, size-desktop(210px), 210px);
     }
     &__imgBg {
-        background-color: $white;
+        background-color: #131313;
         height: 100%;
     }
     &__imgBl {
         height: 100%;
         overflow: hidden;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     }
     &__img {
         object-fit: cover;
         height: 100%;
-        // width: 100%;
+        width: 100%;
+        will-change: transform;
+        display: block;
     }
     &__info {
         display: flex;

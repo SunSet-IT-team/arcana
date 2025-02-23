@@ -81,6 +81,7 @@ function BlogList({data}) {
             const imgBg = element.querySelector('.blog-list__imgBg');
             const imgBl = element.querySelector('.blog-list__imgBl');
             const imgImg = element.querySelector('.blog-list__img');
+            const imgBox = element.querySelector('.blog-list__imgBox');
             const delay = setTimeout(() => {
                 let tl = gsap.timeline({
                     scrollTrigger: {
@@ -101,28 +102,59 @@ function BlogList({data}) {
                             element.querySelectorAll('.blog-list__link'),
                         ],
                         {
-                            duration: 1,
+                            duration: 1.5,
                             y: '500%',
                             rotate: '10deg',
-                        }
+                            delay: 1,
+                        },
+                        0
                     )
                     .from(
+                        imgBox,
+                        {
+                            width: 0,
+                            duration: 1.5,
+                            delay: 1,
+                        },
+                        0
+                    )
+                    .fromTo(
                         imgBg,
                         {
-                            // width: 0,
-                            duration: 1,
+                            width: 0,
                         },
-                        '-=0.5'
+                        {
+                            ease: 'expo.out',
+                            width: '100%',
+                            duration: 0.5,
+                            delay: 1.5,
+                        },
+                        0
                     )
-                    .from(imgBl, {
-                        // width: 0,
-                        duration: 1,
-                    })
-                    .from(imgImg, {
-                        scale: 1,
-                        filter: 'blur(15px)',
-                        duration: 1,
-                    });
+                    .to(
+                        imgBl,
+
+                        {
+                            clipPath:
+                                'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                            ease: 'expo.out',
+                            duration: 1.5,
+                            delay: 2,
+                        },
+                        0
+                    )
+                    .from(
+                        imgImg,
+
+                        {
+                            scale: 1.5,
+                            filter: 'blur(15px)',
+                            ease: 'expo.out',
+                            duration: 5,
+                            delay: 2,
+                        },
+                        0
+                    );
             }, 500);
             return () => clearTimeout(delay);
         });

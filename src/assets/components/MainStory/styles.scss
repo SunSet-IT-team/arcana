@@ -62,17 +62,20 @@
     }
 
     &__item-imgBg {
-        background-color: $white;
+        background-color: #131313;
         height: 100%;
     }
     &__item-imgBl {
         height: 100%;
         overflow: hidden;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     }
     &__item-img {
         object-fit: cover;
-        min-height: clamp(10px, size-desktop(200px), 200px);
+        height: 100%;
         width: 100%;
+        will-change: transform;
+        display: block;
     }
     &__item-tagbox {
         margin-bottom: size-desktop(10px);

@@ -11,8 +11,8 @@ import {Link} from 'react-router-dom';
 import TitleAnimation from '../../hooks/titleAnimation';
 import {TextLinesReveal} from '../../js/textLinesReveal';
 
-import './styles.scss';
 import SliderMobile from './SliderMobile';
+import './styles.scss';
 
 export default function App() {
     const [onTitle, setOnTitle] = useState(false);
@@ -131,7 +131,7 @@ export default function App() {
             .fromTo(
                 '.archetypes-demo__item-img',
                 {scale: 1.5, filter: 'blur(15px)'}, // Start
-                {scale: 1, filter: 'blur(0px)', duration: 0.4}, // End
+                {scale: 1, filter: 'blur(0px)', duration: 2}, // End
                 '-=1'
             )
             .to(
@@ -266,13 +266,16 @@ export default function App() {
                     },
                     '-=1'
                 )
-                .from(
+                .fromTo(
                     '.archetypes-demo__item-imgBg',
                     {
-                        x: '-120%',
-                        duration: 1,
+                        width: 0,
                     },
-                    '-=1'
+                    {
+                        ease: 'expo.out',
+                        width: '100%',
+                        duration: 1,
+                    }
                 )
                 .from(
                     '.archetypes-demo__item-text .line',
@@ -283,15 +286,24 @@ export default function App() {
                     },
                     '-=1'
                 )
-                .from('.archetypes-demo__item-imgBl', {
-                    x: '-120%',
-                    duration: 1,
-                })
-                .fromTo(
+                .to(
+                    '.archetypes-demo__item-imgBl',
+                    {
+                        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                        ease: 'expo.out',
+                        duration: 1.5,
+                    },
+                    '-=0.5'
+                )
+                .from(
                     '.archetypes-demo__item-img',
-                    {filter: 'blur(15px)', scale: 1.5}, // Start
-                    {filter: 'blur(0px)', scale: 1, duration: 0.4}, // End
-                    '-=1'
+                    {
+                        scale: 1.5,
+                        filter: 'blur(15px)',
+                        ease: 'expo.out',
+                        duration: 4,
+                    },
+                    '-=1.7'
                 )
                 .from(
                     '.archetypes-demo__item-link',
