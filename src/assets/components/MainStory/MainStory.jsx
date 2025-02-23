@@ -7,8 +7,8 @@ import TitleAnimation from '../../hooks/titleAnimation';
 import {TextLinesReveal} from '../../js/textLinesReveal';
 
 import gsap from 'gsap';
-import './styles.scss';
 import MainStoryMobile from './MainStoryMobile';
+import './styles.scss';
 
 function MainStory() {
     const dispatch = useDispatch();
@@ -146,22 +146,42 @@ function MainStory() {
                     duration: 1,
                     x: '-150% ',
                     opacity: '0',
-                })
-                    .from(imgBg, {
+                });
+                tl.fromTo(
+                    imgBg,
+                    {
                         width: 0,
-                        duration: 1,
-                    })
-                    .from(imgImg, {
-                        scale: 1,
-                        filter: 'blur(15px)',
-                        duration: 1,
-                    })
+                    },
+                    {
+                        ease: 'expo.out',
+                        width: '100%',
+                        duration: 0.5,
+                    }
+                )
                     .to(
-                        {},
+                        imgBl,
+
                         {
-                            duration: 3,
-                        }
+                            clipPath:
+                                'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                            ease: 'expo.out',
+                            duration: 1.5,
+                            delay: 0.5,
+                        },
+                        '-=0.5'
                     )
+                    .from(
+                        imgImg,
+
+                        {
+                            scale: 1.5,
+                            filter: 'blur(15px)',
+                            ease: 'expo.out',
+                            duration: 5,
+                        },
+                        '-=1.7'
+                    )
+
                     .from(
                         element.querySelectorAll('.storys-demo__item-tag'),
                         {

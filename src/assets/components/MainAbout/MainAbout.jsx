@@ -54,21 +54,79 @@ function MainAbout() {
                     markers: false,
                 },
             });
-            tl.from(imgBg, {
-                width: 0,
-                duration: 0.5,
-            });
-            tl.from(imgBl, {
-                width: 0,
-                duration: 0.4,
-            });
-            tl.from(imgImg, {
-                scale: 1.5,
-                filter: 'blur(15px)',
-                duration: 1,
-            });
+
+            tl.fromTo(
+                imgBg,
+                {
+                    width: 0,
+                },
+                {
+                    ease: 'expo.out',
+                    width: '100%',
+                    duration: 0.5,
+                }
+            )
+                .to(
+                    imgBl,
+
+                    {
+                        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                        ease: 'expo.out',
+                        duration: 1.5,
+                        delay: 0.5,
+                    },
+                    '-=0.5'
+                )
+                .from(
+                    imgImg,
+
+                    {
+                        scale: 1.5,
+                        filter: 'blur(15px)',
+                        ease: 'expo.out',
+                        duration: 5,
+                    },
+                    '-=1.7'
+                );
+
+            // tl.from(imgBg, {
+            //     width: 0,
+            //     duration: 1,
+            //     ease: 'power4.out',
+            // });
+
+            // tl.from(
+            //     imgBl,
+            //     {
+            //         width: 0,
+            //         duration: 1.5,
+            //         ease: 'power4.out',
+            //     },
+            //     'start'
+            // );
+
+            // tl.from(
+            //     imgImg,
+            //     {
+            //         filter: 'blur(20px)',
+            //         duration: 2,
+            //         ease: 'power4.out',
+            //     },
+            //     'start'
+            // );
+
+            // tl.from(
+            //     imgImg,
+            //     {
+            //         scale: 1.5,
+            //         duration: 2,
+            //         ease: 'power4.out',
+            //     },
+            //     'start'
+            // );
         });
     }, []);
+
     return (
         <section className="about" id="about">
             <div className="container">
