@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
+import {setOpenContactForm} from '../../../redux/slices/contactFormSlice';
 import {
     profileMethod,
     setOpenProfileMethod,
@@ -69,13 +70,17 @@ function ProfileMethod() {
             );
 
             tl.play();
-
-            document.body.classList.add('menu-open');
+            const isNested = document.body.classList.contains('menu-open');
+            if (!isNested) {
+                document.body.classList.add('menu-open');
+            }
 
             return () => {
                 tl.reverse();
                 setTimeout(() => {
-                    document.body.classList.remove('menu-open');
+                    if (!isNested) {
+                        document.body.classList.remove('menu-open');
+                    }
                 }, 2000);
             };
         }
@@ -203,6 +208,9 @@ function ProfileMethod() {
                                 <Button
                                     text="CONTATTAMI"
                                     className="profile-method__form-button button--black"
+                                    onClick={() =>
+                                        dispatch(setOpenContactForm(true))
+                                    }
                                 ></Button>
                             </div>
                         </div>

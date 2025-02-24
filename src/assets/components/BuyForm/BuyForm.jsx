@@ -58,12 +58,17 @@ function BuyForm() {
                 opacity: 1,
             });
             tl.play();
-            document.body.classList.add('menu-open');
+            const isNested = document.body.classList.contains('menu-open');
+            if (!isNested) {
+                document.body.classList.add('menu-open');
+            }
 
             return () => {
                 tl.reverse();
                 setTimeout(() => {
-                    document.body.classList.remove('menu-open');
+                    if (!isNested) {
+                        document.body.classList.remove('menu-open');
+                    }
                 }, 2500);
             };
         }
