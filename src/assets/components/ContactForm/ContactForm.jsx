@@ -187,15 +187,6 @@ function ContactForm() {
                                 LASCIA I TUOI DATI E TI CONTATTEREMO
                                 SICURAMENTE!
                             </h3>
-                            <p className="contact-form__text-mobile text-split">
-                                Se si desidera prenotare una consultazione, si
-                                prega di indicare i propri dati (nome, posta e
-                                in quale momento conveniente sarà conveniente
-                                per voi). <br />
-                                Nel prossimo futuro sarai contattato e
-                                concorderà l'ora e la data esatte della tua
-                                consultazione con uno specialista.
-                            </p>
                             <form className="contact-form__form">
                                 <input
                                     type="text"

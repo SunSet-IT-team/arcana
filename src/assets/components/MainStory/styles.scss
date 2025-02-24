@@ -132,14 +132,14 @@
             padding: size-desktop(34px);
             padding-bottom: size-desktop(44px);
         }
-        &__item-tag,
+        &__item-tag {
+            font-size: clamp(13px, size-desktop(36px), 30px);
+        }
         &__item-title {
-            font-size: clamp(13px, size-laptop(18px), 18px);
+            font-size: clamp(13px, size-desktop(30px), 30px);
         }
         &__item-text {
-            font-size: clamp(13px, size-laptop(18px), 18px);
-            color: #717171;
-            line-height: clamp(20px, size-laptop(25.2px), 25.2px);
+            font-size: clamp(13px, size-desktop(30px), 30px);
         }
         &__item {
             &:nth-child(1) {
@@ -160,17 +160,11 @@
 
             // Для нечетных
         }
+        &__item-link {
+            // margin-top: 33px;
+        }
         &__link {
             grid-area: 3 / 4 / 4 / 6;
-        }
-        &__item-imgBox {
-            min-height: clamp(120px, size-desktop(275px), 275px);
-        }
-        &__item-img {
-            min-height: clamp(120px, size-desktop(275px), 275px);
-        }
-        &__item-link {
-            font-size: clamp(13px, size-laptop(18px), 18px);
         }
     }
 
@@ -181,17 +175,11 @@
             justify-content: flex-end;
         }
         &__body {
-            max-height: 400px;
-        }
-        &__item-imgBox {
-            min-height: clamp(70px, size-desktop(275px), 275px);
-        }
-        &__item-img {
-            min-height: clamp(70px, size-desktop(275px), 275px);
+            height: 375px;
         }
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         padding-top: 100px;
         .swiper::before,
         .swiper::after {
@@ -248,7 +236,7 @@
             max-width: unset !important;
         }
         &__body {
-            height: 390px;
+            height: 375px;
         }
         .link__text {
             font-size: 14px !important;

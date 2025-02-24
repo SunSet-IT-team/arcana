@@ -254,7 +254,6 @@ function SliderMobile({archetypesProp = []}) {
 
                         <div className="archetypes-demo__item-info">
                             <p className="archetypes-demo__item-text text-split text-cut">
-                                <br />
                                 <span className="archetypes-demo__item-text-1">
                                     Manifestazione positiva:{' '}
                                 </span>{' '}
@@ -263,7 +262,6 @@ function SliderMobile({archetypesProp = []}) {
                                     {archetype.positive}
                                 </span>
                             </p>
-                            <br />
                             <p className="archetypes-demo__item-text text-split text-cut">
                                 <span className="archetypes-demo__item-text-1">
                                     Manifestazione positiva:{' '}
@@ -273,27 +271,27 @@ function SliderMobile({archetypesProp = []}) {
                                     {archetype.negative}
                                 </span>
                             </p>
-                        </div>
-                        <Link
-                            to={archetype.linkTo}
-                            className="archetypes-demo__item-link arrow"
-                        >
-                            <span className="underline">
-                                Per saperne di più
-                            </span>{' '}
-                            <svg
-                                width="21"
-                                height="21"
-                                viewBox="0 0 21 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <Link
+                                to={archetype.linkTo}
+                                className="archetypes-demo__item-link arrow"
                             >
-                                <path
-                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                    fill="currentColor"
-                                />
-                            </svg>
-                        </Link>
+                                <span className="underline">
+                                    Per saperne di più
+                                </span>{' '}
+                                <svg
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </Link>
+                        </div>
                     </div>
                 </SwiperSlide>
             ))}
