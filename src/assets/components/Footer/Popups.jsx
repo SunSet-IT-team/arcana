@@ -9,9 +9,9 @@ const Popups = () => {
     return (
         <>
             <Privacy></Privacy>
-            <ContactForm></ContactForm>
             <BuyForm></BuyForm>
             <ProfileMethod></ProfileMethod>
+            <ContactForm></ContactForm>
         </>
     );
 };

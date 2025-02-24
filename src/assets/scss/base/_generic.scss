@@ -22,16 +22,11 @@ body {
         border-radius: 10px;
         background-image: url('../../../../public/images/bg2.png');
     }
-    &::-webkit-scrollbar-track {
-        // border-radius: 2px;
-    }
+
     &::-webkit-scrollbar-thumb {
         background-color: $light-grey;
         border: 10px solid $dark-grey;
         border-radius: 20px;
-
-        // border-left: 10px solid $dark-grey;
-        // border-right: 10px solid $dark-grey;
     }
     &::-webkit-scrollbar-button {
         background-color: $dark-grey;
@@ -50,6 +45,9 @@ body.menu-open {
             background-color: rgba(#0e0e0e, 0.5);
             border: 1.2px solid rgba(#0e0e0e, 0.5);
         }
+    }
+    header {
+        visibility: hidden;
     }
 }
 
