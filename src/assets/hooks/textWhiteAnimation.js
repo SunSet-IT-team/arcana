@@ -5,7 +5,7 @@ export function useTextAnimation(textElement) {
     setTimeout(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo(
-            '.about__box .about__box-text .line-wrapper .word',
+            '.about__box .about__box-text .word',
             {color: '#717171'},
             {
                 color: '#ffffff',

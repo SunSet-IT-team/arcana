@@ -109,7 +109,7 @@
             margin-left: 20%;
         }
         &:nth-child(3) {
-            margin-left: 40.4%;
+            margin-left: 40%;
         }
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -223,25 +223,13 @@
             margin-left: 2px;
         }
 
-        // &__box-text {
-        //     &:nth-child(1) {
-        //         margin-left: calc(40% + 5px);
-        //         max-width: calc(60% - 5px);
-        //         display: inline;
-        //     }
-        // }
-
         &__box-text {
             font-size: clamp(16px, size-laptop(32px), 32px);
             max-width: unset;
             line-height: 1.4;
 
-            .line-wrapper:nth-child(1) {
-                .line {
-                    .word:nth-child(1) {
-                        margin-left: calc(40% + 5px);
-                    }
-                }
+            & span:first-child {
+                margin-left: calc(40% + 5px);
             }
 
             &:nth-child(2) {

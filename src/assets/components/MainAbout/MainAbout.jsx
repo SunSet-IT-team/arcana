@@ -4,24 +4,23 @@ import {Link} from 'react-router-dom';
 
 import './styles.scss';
 
+import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import ElementAnimation from '../../hooks/elementAnimation';
 import {useTextAnimation} from '../../hooks/textWhiteAnimation';
 import TitleAnimation from '../../hooks/titleAnimation';
 
-import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
-import {TextLinesReveal} from '../../js/textLinesReveal';
-
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+const text = [
+    `IL METODO, PUR NELLA SUA RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL LAVORO CON UNO PSICOLOGO, DANDO RISULTATI PIÙ RAPIDI ED EFFICACI PROPRIO PERCHÉ È RADICATO NELL'ESSENZA DELLA PERSONA, NELLA SUA INNATA COSTITUZIONE PSICOLOGICA ED È IN GRADO DI FAR LUCE SUI TRAUMI DELLA PERSONA, CHE POTREBBE NON ESSERNE AFFATTO CONSAPEVOLE.`,
+    `POTETE IMMAGINARE A TROVARE LE "ISTRUZIONI D'USO" PER VOI STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA ARCHETIPICA NATALE.`,
+    `PORTERÒ AVANTI I MIEI STUDI DI QUESTO METODO CON L'OBIETTIVO DI RENDERLO UNO STRUMENTO RICONOSCIUTO. QUESTO METODO HA UN POTERE ENORME ED È IMPORTANTE CHE SIA MIRATO ALLA GUARIGIONE E ALLA TRASFORMAZIONE POSITIVA DEL DESTINO UMANO.`,
+];
 
 function MainAbout() {
     const [width, setWidth] = React.useState(window.innerWidth);
     useEffect(() => {
-        const textSplitElements = document.querySelectorAll('.text-white');
-        const textAnimation = new TextLinesReveal(
-            Array.from(textSplitElements)
-        );
-
         const handleResize = () => {
             setWidth(window.innerWidth);
         };
@@ -88,42 +87,6 @@ function MainAbout() {
                     },
                     '-=1.7'
                 );
-
-            // tl.from(imgBg, {
-            //     width: 0,
-            //     duration: 1,
-            //     ease: 'power4.out',
-            // });
-
-            // tl.from(
-            //     imgBl,
-            //     {
-            //         width: 0,
-            //         duration: 1.5,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
-
-            // tl.from(
-            //     imgImg,
-            //     {
-            //         filter: 'blur(20px)',
-            //         duration: 2,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
-
-            // tl.from(
-            //     imgImg,
-            //     {
-            //         scale: 1.5,
-            //         duration: 2,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
         });
     }, []);
 
@@ -186,8 +149,6 @@ function MainAbout() {
                                 </span>
                             </ElementAnimation>
 
-                            {/* <span> </span> */}
-
                             <ElementAnimation
                                 tag="p"
                                 className="about__author-text2 text-split"
@@ -233,43 +194,20 @@ function MainAbout() {
                         </div>
 
                         <div className="about__box" ref={textWhiteRef}>
-                            <p className="about__box-text text-split text-white">
-                                <>
-                                    <span className="about__box-span">
-                                        IL METODO, PUR NELLA SUA |
-                                    </span>
-                                </>
-                                RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL LAVORO
-                                CON UNO PSICOLOGO, DANDO RISULTATI PIÙ RAPIDI ED
-                                EFFICACI PROPRIO PERCHÉ È RADICATO NELL'ESSENZA
-                                DELLA PERSONA, NELLA SUA INNATA COSTITUZIONE
-                                PSICOLOGICA ED È IN GRADO DI FAR LUCE SUI TRAUMI
-                                DELLA PERSONA, CHE POTREBBE NON ESSERNE AFFATTO
-                                CONSAPEVOLE.
-                            </p>
-
-                            <p className="about__box-text text-split text-white">
-                                <>
-                                    <span className="about__box-span">
-                                        POTETE IMMAGINARE A TROVARE |
-                                    </span>
-                                    <br />
-                                </>
-                                LE "ISTRUZIONI D'USO" PER VOI STESSI E LA VOSTRA
-                                VITA? QUESTO È LA MAPPA ARCHETIPICA NATALE.
-                            </p>
-                            <p className="about__box-text text-split text-white">
-                                <>
-                                    <span className="about__box-span">
-                                        PORTERÒ AVANTI I MIEI STUDI DI |
-                                    </span>
-                                </>
-                                QUESTO METODO CON L'OBIETTIVO DI RENDERLO UNO
-                                STRUMENTO RICONOSCIUTO. QUESTO METODO HA UN
-                                POTERE ENORME ED È IMPORTANTE CHE SIA MIRATO
-                                ALLA GUARIGIONE E ALLA TRASFORMAZIONE POSITIVA
-                                DEL DESTINO UMANO.
-                            </p>
+                            {text.map((item) => {
+                                const words = item.split('');
+                                return (
+                                    <p className="about__box-text  text-white">
+                                        {words.map((word) => {
+                                            return (
+                                                <span className="word">
+                                                    {word}
+                                                </span>
+                                            );
+                                        })}
+                                    </p>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
