@@ -152,62 +152,62 @@ function PartnerResultsResults() {
     const resultsData = [
         {
             num: '1',
-            name: 'Talenti e modelli comportamentali di base',
+            name: 'Incontro',
             archetypeNum: toRim(jointResults.jointPos1),
         },
         {
             num: '2',
-            name: "L'archetipo delle lezioni e la maturazione psicologica",
+            name: 'Trama',
             archetypeNum: toRim(jointResults.jointPos2),
         },
         {
             num: '3',
-            name: "Un'abilità che deve essere acquisita e migliorata",
+            name: 'Campo del rapporto maturo o della rottura del rapporto',
             archetypeNum: toRim(jointResults.jointPos3),
         },
         {
             num: '4',
-            name: 'Paure, complessi',
+            name: 'Crisi',
             archetypeNum: toRim(jointResults.jointPos4),
         },
         {
             num: '5',
-            name: 'Aree di autorealizzazione',
+            name: 'Aspettative',
             archetypeNum: toRim(jointResults.jointPos5),
         },
         {
             num: '6',
-            name: 'Superpoteri',
+            name: 'Tema principale',
             archetypeNum: toRim(jointResults.jointPos6),
         },
         {
             num: '7',
-            name: 'Scopo previsto',
+            name: 'Sfida',
             archetypeNum: toRim(jointResults.jointPos7),
         },
         {
             num: '8',
-            name: "Abilità che facilitano l'ingresso nel piano degli obiettivi",
+            name: 'Superpotenziale',
             archetypeNum: toRim(jointResults.jointPos8),
         },
         {
             num: '9',
-            name: 'Abilità genetica (karmica)',
+            name: 'Conforto psicologico',
             archetypeNum: toRim(jointResults.jointPos9),
         },
         {
             num: '10',
-            name: 'Abilità genetica (karmica) negativa',
+            name: 'Disagio psicologico',
             archetypeNum: toRim(jointResults.jointPos10),
         },
         {
             num: '11',
-            name: 'Destino karmico',
+            name: 'Percezione di “noi”',
             archetypeNum: toRim(jointResults.jointPos11),
         },
         {
             num: '12',
-            name: "L'archetipo del comfort psicologico",
+            name: 'Percezione “noi” dagli altri',
             archetypeNum: toRim(jointResults.jointPos12),
         },
         {
@@ -227,49 +227,49 @@ function PartnerResultsResults() {
         },
         {
             num: 'A',
-            name: 'Il bambino interiore',
+            name: 'Causa dei conflitti',
             archetypeNum: toRim(jointResults.jointPosA),
         },
         {
             num: 'B',
-            name: 'Parte sjointResults.jointPostata', //???
+            name: 'Distruzione', //???
             archetypeNum: toRim(jointResults.jointPosB),
         },
         {
             num: 'C',
-            name: "L'anelito dell'anima",
+            name: 'Bisogno di stare insieme',
             archetypeNum: toRim(jointResults.jointPosC),
         },
         {
             num: 'D',
-            name: 'jointResults.jointPosizione di stress', //???
+            name: 'Stress', //???
             archetypeNum: toRim(jointResults.jointPosD),
         },
         {
             num: 'E',
-            name: 'Adulto interno ("protettore")',
+            name: 'Difesa',
             archetypeNum: toRim(jointResults.jointPosE),
         },
         {
             num: 'F',
-            name: 'Fonte di forza',
+            name: 'Forza',
             archetypeNum: toRim(jointResults.jointPosF),
         },
-        {
-            num: 'H',
-            name: 'Il regno della distruzione personale',
-            archetypeNum: toRim(jointResults.jointPosH),
-        },
-        {
-            num: 'G1',
-            name: 'Trasmissione di segnali',
-            archetypeNum: toRim(jointResults.jointPosG1),
-        },
-        {
-            num: 'G2',
-            name: 'Assistenza alla realizzazione sociale',
-            archetypeNum: toRim(jointResults.jointPosG2),
-        },
+        // {
+        //     num: 'H',
+        //     name: 'Il regno della distruzione personale',
+        //     archetypeNum: toRim(jointResults.jointPosH),
+        // },
+        // {
+        //     num: 'G1',
+        //     name: 'Trasmissione di segnali',
+        //     archetypeNum: toRim(jointResults.jointPosG1),
+        // },
+        // {
+        //     num: 'G2',
+        //     name: 'Assistenza alla realizzazione sociale',
+        //     archetypeNum: toRim(jointResults.jointPosG2),
+        // },
     ];
 
     return (
@@ -328,7 +328,7 @@ function PartnerResultsResults() {
                                 RELAZIONI È CONSIDERATA LA POSIZIONE 2 -
                                 NARRAZIONE DELLA RELAZIONE.
                             </p>
-                            <p className="partner-results__text">
+                            {/* <p className="partner-results__text">
                                 Quando si vive la seconda posizione, ogni
                                 partner passa la lezione personale della propria
                                 scuola di maturazione psicologica e la lezione
@@ -337,47 +337,43 @@ function PartnerResultsResults() {
                                 lezione personale è unica per tutta la vita, la
                                 lezione congiunta è di solito diversa in ogni
                                 relazione.
-                            </p>
+                            </p> */}
                             <p className="partner-results__text">
-                                Nella compatibilità archetipica dei partner nati
-                                il{' '}
-                                <span>
-                                    {results.day} / {results.month} /{' '}
-                                    {results.year}
-                                </span>{' '}
-                                e l'{' '}
-                                <span>
-                                    {results.day2} / {results.month2} /{' '}
-                                    {results.year2}
-                                </span>{' '}
-                                sulla posizione del Soggetto delle relazioni sia
-                                positive che negative compare l'archetipo Morte
-                                XIII. L'unione di trasformazione reciproca
-                                attraverso un forte cambiamento. Cambiamento sia
-                                esterno che interno. La trama sotto il controllo
-                                dell'archetipo Morte cambierà entrambi
-                                irrevocabilmente, e li cambierà costantemente.
-                                Bisogna imparare ad accettare questi
-                                cambiamenti. Non ci deve essere stagnazione
-                                nella relazione. Uno scenario negativo è il
-                                desiderio di cambiare l'altro, mentre si resiste
-                                a qualsiasi cambiamento. C'è una crescente
-                                irritazione reciproca, scandali e processi. E
-                                poi ci sono molti malesseri in campo. La coppia
-                                è in crisi".
+                                Nell’analisi del rapporto di coppia, un ruolo
+                                centrale è svolto dalla Posizione "Trama del
+                                rapporto". All'interno di una relazione, ogni
+                                partner segue la propria lezione personale, che
+                                è determinata dalla propria mappa archetipica, e
+                                una lezione congiunta, che rappresenta il
+                                percorso di crescita psicologica della coppia.
+                                Mentre la lezione personale rimane costante
+                                durante tutta la vita, quella congiunta può
+                                variare da una relazione all’altra. L’archetipo
+                                che occupa la posizione della “Trama del
+                                rapporto” attiva sempre sia scenari positivi che
+                                negativi. I partner si trovano ad affrontare
+                                sfide specifiche che richiedono di imparare ciò
+                                che risulta particolarmente difficile proprio in
+                                quella relazione. Se queste lezioni non vengono
+                                comprese e integrate, si innesca uno scenario
+                                negativo nel percorso del rapporto, che può
+                                portare a conflitti profondi, difficoltà nelle
+                                dinamiche relazionali e, nei casi più estremi,
+                                alla rottura della relazione o alla sua
+                                conclusione tragica.
                             </p>
                         </div>
 
                         <ul className="partner-results__name-list">
                             <li className="partner-results__name-item">
-                                IL GRAFICO DELL'ARCHETIPO DEL VOSTRO PARTNER
+                                LA MAPPA ARCHETIPICA DEL SECONDO PARTNER
                             </li>
                             <li className="partner-results__name-item">
-                                UN GRAFICO DEL VOSTRO ARCHETIPO
+                                LA MAPPA ARCHETIPICA DEL PRIMO PARTNER
                             </li>
 
                             <li className="partner-results__name-item">
-                                IL VOSTRO ARCHETIPO (premere il numero)
+                                LA MAPPA ARCHETIPICA DEL RAPPORTO
                             </li>
                         </ul>
                         <div className="partner-results__body-list">
@@ -397,13 +393,14 @@ function PartnerResultsResults() {
                             <ul className="partner-results__info-list">
                                 <li className="partner-results__info-item">
                                     <span className="partner-results__info-number underline">
-                                        NUMERO
+                                        Numero di posizione della mappa
+                                        archetipica del rapporto
                                     </span>
                                     <p className="partner-results__info-name underline">
-                                        VALORE DELLA POSIZIONE
+                                        POSIZIONE
                                     </p>
                                     <span className="partner-results__info-archetype underline">
-                                        IL VOSTRO ARCHETIPO (premere il numero)
+                                        ARCHETIPO (premere il numero)
                                     </span>
                                 </li>
                                 {resultsData.map((result, index) => (
@@ -435,7 +432,7 @@ function PartnerResultsResults() {
                 className="partner-results__info-link"
               ></LinkTo> */}
                             <Button
-                                text="CONSULTAZIONE"
+                                text="RICHIEDI UNA CONSULENZA"
                                 className="partner-results__info-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

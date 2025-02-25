@@ -64,7 +64,7 @@ function CalculatorCalculator() {
                     </Link>
 
                     <h1 className="calculator__title title-1">
-                        CALCOLATRICE PERSONALE
+                        CALCOLA LA MAPPA ARCHETIPICA
                     </h1>
                     <div className="calculator__content">
                         <span className="calculator__span">
