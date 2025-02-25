@@ -4,24 +4,23 @@ import {Link} from 'react-router-dom';
 
 import './styles.scss';
 
+import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import ElementAnimation from '../../hooks/elementAnimation';
 import {useTextAnimation} from '../../hooks/textWhiteAnimation';
 import TitleAnimation from '../../hooks/titleAnimation';
 
-import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
-import {TextLinesReveal} from '../../js/textLinesReveal';
-
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+const text = [
+    `IL METODO, PUR NELLA SUA RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL LAVORO CON UNO PSICOLOGO, DANDO RISULTATI PIÙ RAPIDI ED EFFICACI PROPRIO PERCHÉ È RADICATO NELL'ESSENZA DELLA PERSONA, NELLA SUA INNATA COSTITUZIONE PSICOLOGICA ED È IN GRADO DI FAR LUCE SUI TRAUMI DELLA PERSONA, CHE POTREBBE NON ESSERNE AFFATTO CONSAPEVOLE.`,
+    `POTETE IMMAGINARE A TROVARE LE "ISTRUZIONI D'USO" PER VOI STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA ARCHETIPICA NATALE.`,
+    `PORTERÒ AVANTI I MIEI STUDI DI QUESTO METODO CON L'OBIETTIVO DI RENDERLO UNO STRUMENTO RICONOSCIUTO. QUESTO METODO HA UN POTERE ENORME ED È IMPORTANTE CHE SIA MIRATO ALLA GUARIGIONE E ALLA TRASFORMAZIONE POSITIVA DEL DESTINO UMANO.`,
+];
 
 function MainAbout() {
     const [width, setWidth] = React.useState(window.innerWidth);
     useEffect(() => {
-        const textSplitElements = document.querySelectorAll('.text-white');
-        const textAnimation = new TextLinesReveal(
-            Array.from(textSplitElements)
-        );
-
         const handleResize = () => {
             setWidth(window.innerWidth);
         };
@@ -88,42 +87,6 @@ function MainAbout() {
                     },
                     '-=1.7'
                 );
-
-            // tl.from(imgBg, {
-            //     width: 0,
-            //     duration: 1,
-            //     ease: 'power4.out',
-            // });
-
-            // tl.from(
-            //     imgBl,
-            //     {
-            //         width: 0,
-            //         duration: 1.5,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
-
-            // tl.from(
-            //     imgImg,
-            //     {
-            //         filter: 'blur(20px)',
-            //         duration: 2,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
-
-            // tl.from(
-            //     imgImg,
-            //     {
-            //         scale: 1.5,
-            //         duration: 2,
-            //         ease: 'power4.out',
-            //     },
-            //     'start'
-            // );
         });
     }, []);
 
@@ -154,8 +117,8 @@ function MainAbout() {
 
                             <p className="about__info-subtext">
                                 DOTT.SSA OLGA VEDA, ANTROPOLOGA CULTURALE,
-                                ANALISTA DI PATTERN ARCHETIPICI, PSICOLOGA DELLA
-                                DATA DI NASCITA
+                                ANALISTA DI PATTERN ARCHETIPICI, RICERCATRICE DI
+                                MAPPA ARCHETIPICA NATALE
                             </p>
                         </div>
 
@@ -176,18 +139,17 @@ function MainAbout() {
                                 className="about__author-text1 text-split"
                             >
                                 <span>
-                                    Laureata in antropologia culturale, studiosa
-                                    e ricercatrice del Metodo del Profilo
-                                    Archetipico come strumento completo per la
-                                    conoscenza di sé, la diagnosi e l'assistenza
-                                    nella risoluzione di problemi psicologici ed
-                                    esistenziali.
+                                    Studia la Mappa Archetipica natale, basata
+                                    sulle energie archetipiche degli Arcani
+                                    Maggiori dei Tarocchi e sulle loro
+                                    caratteristiche psichiche, calcolata per
+                                    data di nascita, che è un codice
+                                    crittografato per il percorso di vita tipico
+                                    dell'anima sulla terra.
                                 </span>
                             </ElementAnimation>
 
-                            {/* <span> </span> */}
-
-                            {/* <ElementAnimation
+                            <ElementAnimation
                                 tag="p"
                                 className="about__author-text2 text-split"
                             >
@@ -203,7 +165,7 @@ function MainAbout() {
                                     sviluppo delle energie archetipiche per la
                                     loro manifestazione più armoniosa.
                                 </span>
-                            </ElementAnimation> */}
+                            </ElementAnimation>
                             <div className="about__author-linkbox">
                                 <Link
                                     to="/"
@@ -232,108 +194,20 @@ function MainAbout() {
                         </div>
 
                         <div className="about__box" ref={textWhiteRef}>
-                            <p className="about__box-text text-split text-white">
-                                {/* {width <= 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            IL METODO, PUR NELLA SUA {''}
-                                        </span>
-                                        <br />
-                                        RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL
-                                    </>
-                                ) : width <= 1024 && width > 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            IL METODO, PUR NELLA SUA {''}
-                                        </span>
-                                        <br />
-                                        RELATIVA SEMPLICITÀ, PUÒ SOSTITUIRE IL
-                                    </>
-                                ) : ( */}
-                                <>
-                                    <span className="about__box-span">
-                                        IL METODO DEL PROFILO ARCHETIPICO, PUR
-                                        NELLA SUA APPARENTE
-                                        {''}
-                                    </span>
-                                </>
-                                {/* )} */}
-                                SEMPLICITÀ, PUÒ OFFRIRE RISULTATI PIÙ RAPIDI ED
-                                EFFICACI RISPETTO ALLA TERAPIA TRADIZIONALE.
-                                QUESTO PERCHÉ SI BASA SULLA STRUTTURA
-                                ARCHETIPICA DELLA PERSONALITÀ E SULLA NOSTRA
-                                COSTITUZIONE PSICHICA INNATA, PERMETTENDO DI
-                                PORTARE ALLA LUCE TRAUMI, PARTI INCONSCE E
-                                TALENTI ORIGINARI DI CUI POTREMMO NON ESSERE
-                                AFFATTO CONSAPEVOLI.
-                            </p>
-
-                            <p className="about__box-text text-split text-white">
-                                {/* {width <= 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            POTETE IMMAGINARE A {''}
-                                        </span>
-                                        <br />
-                                        TROVARE LE "ISTRUZIONI D'USO" PER VOI
-                                    </>
-                                ) : width <= 1024 && width > 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            POTETE IMMAGINARE A TROVARE {''}
-                                        </span>
-                                        <br />
-                                        LE "ISTRUZIONI D'USO" PER VOI
-                                    </>
-                                ) : ( */}
-                                <>
-                                    <span className="about__box-span">
-                                        AVETE MAI IMMAGINATO A TROVARE LE
-                                        "ISTRUZIONI D'USO" PER VOI
-                                        {''}
-                                    </span>
-                                </>
-                                {/* )} */}
-                                STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA
-                                ARCHETIPICA NATALE.
-                            </p>
-                            <p className="about__box-text text-split text-white">
-                                {/* {width <= 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            PORTERÒ AVANTI I MIEI {''}
-                                        </span>
-                                        <br />
-                                        STUDI DI QUESTO METODO CON L'OBIETTIVO
-                                        DI
-                                    </>
-                                ) : width <= 1024 && width > 375 ? (
-                                    <>
-                                        <span className="about__box-span">
-                                            PORTERÒ AVANTI I MIEI STUDI DI {''}
-                                        </span>
-                                        <br />
-                                        QUESTO METODO CON L'OBIETTIVO DI
-                                    </>
-                                ) : ( */}
-                                <>
-                                    <span className="about__box-span">
-                                        STUDIO E APPLICO COSTANTEMENTE IL METODO
-                                        CON L’OBIETTIVO {''}
-                                    </span>
-                                </>
-                                {/* )} */}
-                                DI FARLO RICONOSCERE COME UNO STRUMENTO
-                                DIAGNOSTICO PRATICO, VELOCE ED ESTREMAMENTE
-                                EFFICACE. IL SUO POTENZIALE È ENORME, E IL MIO
-                                SCOPO È FAR SÌ CHE SEMPRE PIÙ PROBLEMI POSSANO
-                                ESSERE RISOLTI GRAZIE AL SUO UTILIZZO. PER
-                                QUESTO MOTIVO, SONO APERTA A COLLABORAZIONI CON
-                                ESPERTI NEI SETTORI LEGATI ALLA PSICOLOGIA. CIÒ
-                                CHE CONTA DAVVERO È INDIRIZZARLO VERSO IL
-                                BENESSERE PSICOLOGICO, LA TRASFORMAZIONE
-                                POSITIVA E LA GUARIGIONE.
-                            </p>
+                            {text.map((item) => {
+                                const words = item.split('');
+                                return (
+                                    <p className="about__box-text  text-white">
+                                        {words.map((word) => {
+                                            return (
+                                                <span className="word">
+                                                    {word}
+                                                </span>
+                                            );
+                                        })}
+                                    </p>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
