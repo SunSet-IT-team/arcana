@@ -154,8 +154,8 @@ function MainAbout() {
 
                             <p className="about__info-subtext">
                                 DOTT.SSA OLGA VEDA, ANTROPOLOGA CULTURALE,
-                                ANALISTA DI PATTERN ARCHETIPICI, RICERCATRICE DI
-                                MAPPA ARCHETIPICA NATALE
+                                ANALISTA DI PATTERN ARCHETIPICI, PSICOLOGA DELLA
+                                DATA DI NASCITA
                             </p>
                         </div>
 
@@ -176,19 +176,18 @@ function MainAbout() {
                                 className="about__author-text1 text-split"
                             >
                                 <span>
-                                    Studia la Mappa Archetipica natale, basata
-                                    sulle energie archetipiche degli Arcani
-                                    Maggiori dei Tarocchi e sulle loro
-                                    caratteristiche psichiche, calcolata per
-                                    data di nascita, che è un codice
-                                    crittografato per il percorso di vita tipico
-                                    dell'anima sulla terra.
+                                    Laureata in antropologia culturale, studiosa
+                                    e ricercatrice del Metodo del Profilo
+                                    Archetipico come strumento completo per la
+                                    conoscenza di sé, la diagnosi e l'assistenza
+                                    nella risoluzione di problemi psicologici ed
+                                    esistenziali.
                                 </span>
                             </ElementAnimation>
 
                             {/* <span> </span> */}
 
-                            <ElementAnimation
+                            {/* <ElementAnimation
                                 tag="p"
                                 className="about__author-text2 text-split"
                             >
@@ -204,7 +203,7 @@ function MainAbout() {
                                     sviluppo delle energie archetipiche per la
                                     loro manifestazione più armoniosa.
                                 </span>
-                            </ElementAnimation>
+                            </ElementAnimation> */}
                             <div className="about__author-linkbox">
                                 <Link
                                     to="/"
@@ -253,18 +252,20 @@ function MainAbout() {
                                 ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        IL METODO, PUR NELLA SUA RELATIVA
-                                        SEMPLICITÀ, PUÒ SOSTITUIRE IL
+                                        IL METODO DEL PROFILO ARCHETIPICO, PUR
+                                        NELLA SUA APPARENTE
                                         {''}
                                     </span>
                                 </>
                                 {/* )} */}
-                                LAVORO CON UNO PSICOLOGO, DANDO RISULTATI PIÙ
-                                RAPIDI ED EFFICACI PROPRIO PERCHÉ È RADICATO
-                                NELL'ESSENZA DELLA PERSONA, NELLA SUA INNATA
-                                COSTITUZIONE PSICOLOGICA ED È IN GRADO DI FAR
-                                LUCE SUI TRAUMI DELLA PERSONA, CHE POTREBBE NON
-                                ESSERNE AFFATTO CONSAPEVOLE.
+                                SEMPLICITÀ, PUÒ OFFRIRE RISULTATI PIÙ RAPIDI ED
+                                EFFICACI RISPETTO ALLA TERAPIA TRADIZIONALE.
+                                QUESTO PERCHÉ SI BASA SULLA STRUTTURA
+                                ARCHETIPICA DELLA PERSONALITÀ E SULLA NOSTRA
+                                COSTITUZIONE PSICHICA INNATA, PERMETTENDO DI
+                                PORTARE ALLA LUCE TRAUMI, PARTI INCONSCE E
+                                TALENTI ORIGINARI DI CUI POTREMMO NON ESSERE
+                                AFFATTO CONSAPEVOLI.
                             </p>
 
                             <p className="about__box-text text-split text-white">
@@ -287,7 +288,7 @@ function MainAbout() {
                                 ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        POTETE IMMAGINARE A TROVARE LE
+                                        AVETE MAI IMMAGINATO A TROVARE LE
                                         "ISTRUZIONI D'USO" PER VOI
                                         {''}
                                     </span>
@@ -317,15 +318,21 @@ function MainAbout() {
                                 ) : ( */}
                                 <>
                                     <span className="about__box-span">
-                                        PORTERÒ AVANTI I MIEI STUDI DI QUESTO
-                                        METODO CON L'OBIETTIVO DI {''}
+                                        STUDIO E APPLICO COSTANTEMENTE IL METODO
+                                        CON L’OBIETTIVO {''}
                                     </span>
                                 </>
                                 {/* )} */}
-                                RENDERLO UNO STRUMENTO RICONOSCIUTO. QUESTO
-                                METODO HA UN POTERE ENORME ED È IMPORTANTE CHE
-                                SIA MIRATO ALLA GUARIGIONE E ALLA TRASFORMAZIONE
-                                POSITIVA DEL DESTINO UMANO.
+                                DI FARLO RICONOSCERE COME UNO STRUMENTO
+                                DIAGNOSTICO PRATICO, VELOCE ED ESTREMAMENTE
+                                EFFICACE. IL SUO POTENZIALE È ENORME, E IL MIO
+                                SCOPO È FAR SÌ CHE SEMPRE PIÙ PROBLEMI POSSANO
+                                ESSERE RISOLTI GRAZIE AL SUO UTILIZZO. PER
+                                QUESTO MOTIVO, SONO APERTA A COLLABORAZIONI CON
+                                ESPERTI NEI SETTORI LEGATI ALLA PSICOLOGIA. CIÒ
+                                CHE CONTA DAVVERO È INDIRIZZARLO VERSO IL
+                                BENESSERE PSICOLOGICO, LA TRASFORMAZIONE
+                                POSITIVA E LA GUARIGIONE.
                             </p>
                         </div>
                     </div>

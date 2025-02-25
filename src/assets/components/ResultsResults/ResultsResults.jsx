@@ -58,125 +58,248 @@ function ResultsResults() {
     const posG1 = fixDay(posC + posD);
     const posG2 = fixDay(posB + posF);
 
+    // const resultsData = [
+    //     {
+    //         num: '1',
+    //         name: 'Talenti e modelli comportamentali di base',
+    //         archetypeNum: toRim(pos1),
+    //     },
+    //     {
+    //         num: '2',
+    //         name: "L'archetipo delle lezioni e la maturazione psicologica",
+    //         archetypeNum: toRim(pos2),
+    //     },
+    //     {
+    //         num: '3',
+    //         name: "Un'abilità che deve essere acquisita e migliorata",
+    //         archetypeNum: toRim(pos3),
+    //     },
+    //     {
+    //         num: '4',
+    //         name: 'Paure, complessi',
+    //         archetypeNum: toRim(pos4),
+    //     },
+    //     {
+    //         num: '5',
+    //         name: 'Aree di autorealizzazione',
+    //         archetypeNum: toRim(pos5),
+    //     },
+    //     {
+    //         num: '6',
+    //         name: 'Superpoteri',
+    //         archetypeNum: toRim(pos6),
+    //     },
+    //     {
+    //         num: '7',
+    //         name: 'Scopo previsto',
+    //         archetypeNum: toRim(pos7),
+    //     },
+    //     {
+    //         num: '8',
+    //         name: "Abilità che facilitano l'ingresso nel piano degli obiettivi",
+    //         archetypeNum: toRim(pos8),
+    //     },
+    //     {
+    //         num: '9',
+    //         name: 'Abilità genetica (karmica)',
+    //         archetypeNum: toRim(pos9),
+    //     },
+    //     {
+    //         num: '10',
+    //         name: 'Abilità genetica (karmica) negativa',
+    //         archetypeNum: toRim(pos10),
+    //     },
+    //     {
+    //         num: '11',
+    //         name: 'Destino karmico',
+    //         archetypeNum: toRim(pos11),
+    //     },
+    //     {
+    //         num: '12',
+    //         name: "L'archetipo del comfort psicologico",
+    //         archetypeNum: toRim(pos12),
+    //     },
+    //     {
+    //         num: '13',
+    //         name: 'Cosa pensi di te stesso',
+    //         archetypeNum: toRim(pos13),
+    //     },
+    //     {
+    //         num: '14',
+    //         name: 'Cosa pensano gli altri di voi',
+    //         archetypeNum: toRim(pos14),
+    //     },
+    //     {
+    //         num: '15',
+    //         name: "L'archetipo del disagio psicologico",
+    //         archetypeNum: toRim(pos15),
+    //     },
+    //     {
+    //         num: 'A',
+    //         name: 'Il bambino interiore',
+    //         archetypeNum: toRim(posA),
+    //     },
+    //     {
+    //         num: 'B',
+    //         name: 'Parte spostata',
+    //         archetypeNum: toRim(posB),
+    //     },
+    //     {
+    //         num: 'C',
+    //         name: "L'anelito dell'anima",
+    //         archetypeNum: toRim(posC),
+    //     },
+    //     {
+    //         num: 'D',
+    //         name: 'Posizione di stress',
+    //         archetypeNum: toRim(posD),
+    //     },
+    //     {
+    //         num: 'E',
+    //         name: 'Adulto interno ("protettore")',
+    //         archetypeNum: toRim(posE),
+    //     },
+    //     {
+    //         num: 'F',
+    //         name: 'Fonte di forza',
+    //         archetypeNum: toRim(posF),
+    //     },
+    //     {
+    //         num: 'H',
+    //         name: 'Il regno della distruzione personale',
+    //         archetypeNum: toRim(posH),
+    //     },
+    //     {
+    //         num: 'G1',
+    //         name: 'Trasmissione di segnali',
+    //         archetypeNum: toRim(posG1),
+    //     },
+    //     {
+    //         num: 'G2',
+    //         name: 'Assistenza alla realizzazione sociale',
+    //         archetypeNum: toRim(posG2),
+    //     },
+    // ];
+
     const resultsData = [
         {
             num: '1',
-            name: 'Talenti e modelli comportamentali di base',
+            name: 'Energia di base',
             archetypeNum: toRim(pos1),
         },
         {
             num: '2',
-            name: "L'archetipo delle lezioni e la maturazione psicologica",
+            name: 'Lezioni',
             archetypeNum: toRim(pos2),
         },
         {
             num: '3',
-            name: "Un'abilità che deve essere acquisita e migliorata",
+            name: 'Esame',
             archetypeNum: toRim(pos3),
         },
         {
             num: '4',
-            name: 'Paure, complessi',
+            name: 'Complesso emotivo',
             archetypeNum: toRim(pos4),
         },
         {
             num: '5',
-            name: 'Aree di autorealizzazione',
+            name: 'Complesso mentale',
             archetypeNum: toRim(pos5),
         },
         {
             num: '6',
-            name: 'Superpoteri',
+            name: 'Tema principale',
             archetypeNum: toRim(pos6),
         },
         {
             num: '7',
-            name: 'Scopo previsto',
+            name: 'Сompito della vita',
             archetypeNum: toRim(pos7),
         },
         {
             num: '8',
-            name: "Abilità che facilitano l'ingresso nel piano degli obiettivi",
+            name: 'Сapacità potenziali',
             archetypeNum: toRim(pos8),
         },
         {
             num: '9',
-            name: 'Abilità genetica (karmica)',
+            name: 'Potenziale genetico',
             archetypeNum: toRim(pos9),
         },
         {
             num: '10',
-            name: 'Abilità genetica (karmica) negativa',
+            name: 'Abilità genetica negativa',
             archetypeNum: toRim(pos10),
         },
         {
             num: '11',
-            name: 'Destino karmico',
+            name: 'Destino karmicoEsame karmico',
             archetypeNum: toRim(pos11),
         },
         {
             num: '12',
-            name: "L'archetipo del comfort psicologico",
+            name: 'Conforto psicologico',
             archetypeNum: toRim(pos12),
         },
         {
             num: '13',
-            name: 'Cosa pensi di te stesso',
+            name: 'Percezione di sé',
             archetypeNum: toRim(pos13),
         },
         {
             num: '14',
-            name: 'Cosa pensano gli altri di voi',
+            name: 'Percezione dagli altri',
             archetypeNum: toRim(pos14),
         },
         {
-            num: '15',
-            name: "L'archetipo del disagio psicologico",
+            num: '30',
+            name: "L'archetipo del disagio psicologicoDisagio psicologico",
             archetypeNum: toRim(pos15),
         },
         {
             num: 'A',
-            name: 'Il bambino interiore',
+            name: 'Bisogno infantile',
             archetypeNum: toRim(posA),
         },
         {
             num: 'B',
-            name: 'Parte spostata',
+            name: 'Trauma infantile',
             archetypeNum: toRim(posB),
         },
         {
             num: 'C',
-            name: "L'anelito dell'anima",
+            name: "Prova dell'ego",
             archetypeNum: toRim(posC),
         },
         {
             num: 'D',
-            name: 'Posizione di stress',
+            name: 'Posizione di stressPosizione di stress',
             archetypeNum: toRim(posD),
         },
         {
             num: 'E',
-            name: 'Adulto interno ("protettore")',
+            name: 'Protezione',
             archetypeNum: toRim(posE),
         },
         {
             num: 'F',
-            name: 'Fonte di forza',
+            name: 'Fonte Divina',
             archetypeNum: toRim(posF),
         },
         {
             num: 'H',
-            name: 'Il regno della distruzione personale',
+            name: 'Distruzione della personalità',
             archetypeNum: toRim(posH),
         },
         {
             num: 'G1',
-            name: 'Trasmissione di segnali',
+            name: 'Madre archetipica',
             archetypeNum: toRim(posG1),
         },
         {
             num: 'G2',
-            name: 'Assistenza alla realizzazione sociale',
+            name: 'Padre archetipico',
             archetypeNum: toRim(posG2),
         },
     ];
@@ -204,21 +327,25 @@ function ResultsResults() {
                         <span className="underline">Torna indietro</span>
                     </Link>
                     <h1 className="results__title title-1">
-                        IL RISULTATO DEL CALCOLO DELL'ARCHETIPO
+                        {/* IL RISULTATO DEL CALCOLO DELL'ARCHETIPO */}
+                        LA MAPPA ARCHETIPICA NATALE
                     </h1>
                     <div className="results__content">
                         <div className="results__body">
                             <p className="results__body-text">
-                                Congratulazioni! Ora sai quali Archetipi si
-                                mostrano in te. Queste sono le «lettere» che
-                                compongono le parole e le frasi con quali stai
-                                scrivendo la storia della tua vita. Cliccando su
-                                un numero romano che indica l’Archetipo
-                                corrispondente ad ogni posizione del tuo
-                                Profilo, troverai una descrizione delle
-                                principali energie di questo Archetipo.
+                                Congratulazioni! Sotto si trova la mappa
+                                archetipica natale calcolata dalla data di
+                                nascita inserita. Cliccando sul numero romano
+                                che indica archetipo corrispondente ad ogni
+                                posizione della mappa, troverai la descrizione
+                                di alcune delle principali caratteristiche
+                                dell'archetipo.
                             </p>
                             <div className="results__body-list">
+                                <span className="results__body-date">
+                                    {results.day} / {results.month} /{' '}
+                                    {results.year}
+                                </span>
                                 <ResultsList
                                     pos1={pos1}
                                     pos2={pos2}
@@ -252,13 +379,16 @@ function ResultsResults() {
                             <ul className="results__info-list">
                                 <li className="results__info-item">
                                     <span className="results__info-number underline">
-                                        Numero
+                                        {/* Numero */}
+                                        NUMERO
                                     </span>
                                     <p className="results__info-name underline">
-                                        Valore della posizione
+                                        {/* Valore della posizione */}
+                                        POSIZIONE
                                     </p>
                                     <span className="results__info-archetype underline">
-                                        Il vostro archetipo (premere il numero)
+                                        {/* Il vostro archetipo (premere il numero) */}
+                                        ARCHETIPO
                                     </span>
                                 </li>
                                 {resultsData.map((result, index) => (
@@ -282,23 +412,28 @@ function ResultsResults() {
                                 ))}
                             </ul>
                             <p className="results__info-text">
-                                Tuttavia, in ogni singola posizione, lo stesso
-                                Archetipo si comporta in modo diverso,
-                                influenzando gli Archetipi nelle posizioni
-                                circostanti in un modo specifico e questo crea
-                                il disegno della personalità unico per ciascuno
-                                di noi. Per collegare gli Archetipi tutti
-                                insieme per una comprensione profonda e olistica
-                                della tua vita che ti aiuterà a comprendere
-                                meglio sé stesso, il proprio carattere, a
-                                trovare le risposte alle tue domande chiedi una
-                                consultazione, cliccando bottone sotto.
+                                È importante notare che ogni archetipo si
+                                manifesta in modo diverso in ogni posizione. Nel
+                                corso della vita, le sue caratteristiche e la
+                                sua influenza possono cambiare radicalmente,
+                                contribuendo così alla formazione del disegno
+                                della personalità unico per ciascuno di noi. Per
+                                comprendere più a fondo la propria vita, è
+                                necessario analizzare le energie archetipiche
+                                nel loro insieme, esplorandone la complessità,
+                                la complementarietà e la tensione reciproca.
+                                Questa analisi è fondamentale per comprendere
+                                meglio te stesso e gli eventi della tua vita,
+                                trovare risposte alle tue domande e procedere
+                                consapevolmente verso cambiamenti positivi. Puoi
+                                iniziare questo percorso con una consulenza
+                                cliccando sul pulsante qui sotto.
                             </p>
                             {/* <LinkTo text="CONSULTAZIONE"
                 className="results__info-link"
               /> */}
                             <Button
-                                text="CONSULTAZIONE"
+                                text="RICHIEDI UNA CONSULENZA"
                                 className="results__info-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

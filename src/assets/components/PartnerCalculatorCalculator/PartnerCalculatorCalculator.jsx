@@ -93,7 +93,8 @@ function PartnerCalculatorCalculator() {
                         <span className="underline">Torna indietro</span>
                     </Link>
                     <h1 className="partner-calculator__title title-1">
-                        CALCOLARE LA COMPATIBILITÀ DEL PARTNER
+                        CALCOLA LA MAPPA ARCHETIPICA DEL RAPPORTO TRA DUE
+                        PARTNER
                     </h1>
                     <div className="partner-calculator__content">
                         <span className="partner-calculator__span">
@@ -102,8 +103,7 @@ function PartnerCalculatorCalculator() {
                         </span>
                         <div className="partner-calculator__body">
                             <h2 className="partner-calculator__body-title">
-                                CALCOLARE LA COMPATIBILITÀ DELLE RELAZIONI DI
-                                COPPIA IN BASE AGLI ARCHETIPI
+                                CALCOLA LA MAPPA ARCHETIPICA DEL RAPPORTO
                             </h2>
                             <div className="partner-calculator__select-wrapper">
                                 <SelectDate

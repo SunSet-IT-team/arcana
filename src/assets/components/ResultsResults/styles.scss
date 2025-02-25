@@ -86,6 +86,13 @@
         margin-bottom: 50px;
     }
 
+    &__body-date {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: clamp(13px, 0.9375vw, 18px);
+    }
+
     @media screen and (max-width: 1024px) {
         .button__text {
             font-size: clamp(13px, size-laptop(18px), 18px) !important;
