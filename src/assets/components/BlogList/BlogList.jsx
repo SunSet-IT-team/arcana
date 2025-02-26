@@ -102,10 +102,10 @@ function BlogList({data}) {
                             element.querySelectorAll('.blog-list__link'),
                         ],
                         {
-                            duration: 1.5,
+                            duration: 2,
                             y: '500%',
                             rotate: '10deg',
-                            delay: 1,
+                            delay: 0.5,
                         },
                         0
                     )

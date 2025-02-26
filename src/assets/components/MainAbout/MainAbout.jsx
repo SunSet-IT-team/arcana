@@ -138,33 +138,27 @@ function MainAbout() {
                                 tag="p"
                                 className="about__author-text1 text-split"
                             >
-                                <span>
-                                    Studia la Mappa Archetipica natale, basata
-                                    sulle energie archetipiche degli Arcani
-                                    Maggiori dei Tarocchi e sulle loro
-                                    caratteristiche psichiche, calcolata per
-                                    data di nascita, che è un codice
-                                    crittografato per il percorso di vita tipico
-                                    dell'anima sulla terra.
-                                </span>
+                                Studia la Mappa Archetipica natale, basata sulle
+                                energie archetipiche degli Arcani Maggiori dei
+                                Tarocchi e sulle loro caratteristiche psichiche,
+                                calcolata per data di nascita, che è un codice
+                                crittografato per il percorso di vita tipico
+                                dell'anima sulla terra.
                             </ElementAnimation>
 
                             <ElementAnimation
                                 tag="p"
                                 className="about__author-text2 text-split"
                             >
-                                <span>
-                                    Attraverso la diffusione del metodo e le
-                                    consulenze private, aiuta tutti coloro che
-                                    ricercano consapevolezza e un vettore
-                                    positivo nella propria vita a comprendere
-                                    profondamente se stessi, la propria alterità
-                                    e il percorso di maturazione psicologica e
-                                    sociale, nel rispetto delle forme archetipe
-                                    a seconda della data di nascita e lo
-                                    sviluppo delle energie archetipiche per la
-                                    loro manifestazione più armoniosa.
-                                </span>
+                                Attraverso la diffusione del metodo e le
+                                consulenze private, aiuta tutti coloro che
+                                ricercano consapevolezza e un vettore positivo
+                                nella propria vita a comprendere profondamente
+                                se stessi, la propria alterità e il percorso di
+                                maturazione psicologica e sociale, nel rispetto
+                                delle forme archetipe a seconda della data di
+                                nascita e lo sviluppo delle energie archetipiche
+                                per la loro manifestazione più armoniosa.
                             </ElementAnimation>
                             <div className="about__author-linkbox">
                                 <Link
