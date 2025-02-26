@@ -2,9 +2,10 @@ import React from 'react';
 
 import './styles.scss';
 
+import gsap from 'gsap';
 import {Link} from 'react-router-dom';
 import {Link as ScrollLink, animateScroll as scroll} from 'react-scroll';
-import gsap from 'gsap';
+import ElementAnimation from '../../hooks/elementAnimation';
 
 function MenuList() {
     const scrollToAbout = () => {
@@ -75,9 +76,12 @@ function MenuList() {
                             to="/calculator"
                             className="menu-list__link arrow"
                         >
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 CALCOLATRICE PERSONALE
-                            </span>
+                            </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"
@@ -100,9 +104,12 @@ function MenuList() {
                             to="/partner-calculator"
                             className="menu-list__link arrow"
                         >
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 CALCOLATRICE DEL RAPPORTO TRA DUE PARTNER
-                            </span>
+                            </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"
@@ -125,9 +132,12 @@ function MenuList() {
                             to="/month-calculator"
                             className="menu-list__link arrow"
                         >
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 CALCOLATRICE DI PREVISIONI ANNO/MESE
-                            </span>
+                            </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"
@@ -153,9 +163,12 @@ function MenuList() {
                             smooth={true}
                             duration={500}
                         >
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 SU DI ME
-                            </span>
+                            </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"
@@ -175,9 +188,12 @@ function MenuList() {
                 <li className="menu-list__item">
                     <div className="menu-list__link-wrapper">
                         <Link to="/services" className="menu-list__link arrow">
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 CONSULENZE
-                            </span>
+                            </ElementAnimation>
 
                             <svg
                                 className="menu-list__link-svg"
@@ -199,9 +215,41 @@ function MenuList() {
                     <div className="menu-list__link-wrapper">
                         {' '}
                         <Link to="/storys" className="menu-list__link arrow">
-                            <span className="menu-list__link-span">
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
                                 STORIE DEI CLIENTI
-                            </span>
+                            </ElementAnimation>
+
+                            <svg
+                                className="menu-list__link-svg"
+                                width="21"
+                                height="21"
+                                viewBox="0 0 21 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </Link>
+                    </div>
+                </li>
+                <li className="menu-list__item">
+                    <div className="menu-list__link-wrapper">
+                        <Link
+                            to="/archetypes"
+                            className="menu-list__link arrow"
+                        >
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
+                                22 ARCHETYPES
+                            </ElementAnimation>
 
                             <svg
                                 className="menu-list__link-svg"
@@ -222,34 +270,13 @@ function MenuList() {
                 <li className="menu-list__item">
                     <div className="menu-list__link-wrapper">
                         {' '}
-                        <Link
-                            to="/archetypes"
-                            className="menu-list__link arrow"
-                        >
-                            <span className="menu-list__link-span">
-                                22 ARCHETYPES
-                            </span>
-                            <svg
-                                className="menu-list__link-svg"
-                                width="21"
-                                height="21"
-                                viewBox="0 0 21 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                    fill="currentColor"
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                </li>
-                <li className="menu-list__item">
-                    <div className="menu-list__link-wrapper">
-                        {' '}
                         <Link to="/blog" className="menu-list__link arrow">
-                            <span className="menu-list__link-span">BLOG</span>
+                            <ElementAnimation
+                                tag="span"
+                                className="menu-list__link-span text-split"
+                            >
+                                BLOG
+                            </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"
