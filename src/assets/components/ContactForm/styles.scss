@@ -35,7 +35,7 @@
         background-color: $super-light-grey;
         background-image: url('../../../../public/images/bg.png');
 
-        overflow: auto;
+        overflow: hidden;
     }
     &__close {
         display: flex;
@@ -145,7 +145,8 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-top: size-desktop(105px);
+        margin-top: 5vh;
+        padding-bottom: 190px;
     }
     &__text {
         font-size: clamp(13px, size-desktop(18px), 18px);
@@ -158,6 +159,7 @@
     &__title {
         margin-right: 20px;
         line-height: 76.8px;
+        font-size: clamp(32px, size-desktop(64px), 64px) !important;
         @media screen and (max-width: 1280px) {
             font-size: 32px !important;
         }
@@ -171,7 +173,7 @@
     }
     &__subtitle {
         padding-top: 10px;
-        margin-bottom: size-desktop(50px);
+        margin-bottom: size-desktop(25px);
         --x-offset-line: -100%;
         &::before {
             content: '';
@@ -200,7 +202,7 @@
         padding-top: 10px;
     }
     &__input {
-        font-size: 32px;
+        font-size: clamp(18px, size-desktop(32px), 32px);
         min-height: 55px;
         padding: 10px 0;
         background-color: transparent !important;
@@ -255,10 +257,8 @@
 
         color: $light-grey;
         opacity: 0;
-        span {
-            // cursor: pointer;;
-        }
     }
+
     &__form-button {
         max-width: clamp(160px, size-desktop(330px), 330px);
         opacity: 0;

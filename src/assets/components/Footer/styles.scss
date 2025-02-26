@@ -13,8 +13,9 @@
     &__top {
         position: relative;
 
-        display: flex;
-
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 20px;
         padding: size-desktop(60px) 0 size-desktop(67px) 0;
 
         border-top: 1px solid $light-grey;
@@ -62,6 +63,7 @@
         width: 100%;
         margin-right: 20px;
         margin-top: -10px;
+        grid-column: 3/5;
     }
 
     &__menu-title {
