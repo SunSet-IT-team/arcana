@@ -75,20 +75,24 @@ function MonthResultsResults() {
                     </h1>
                     <div className="month-results__content">
                         <span className="month-results__span">
-                            Congratulazioni! Ora sai quali Archetipi si mostrano
-                            in te. Queste sono le «lettere» che compongono le
-                            parole e le frasi con quali stai scrivendo la storia
-                            della tua vita. Cliccando su un numero romano che
-                            indica l’Archetipo corrispondente ad ogni posizione
-                            del tuo Profilo, troverai una descrizione delle
-                            principali energie di questo Archetipo.
+                            Congratulazioni! Ecco la tabella dettagliata delle
+                            energie archetipiche per il periodo richiesto.
+                            Essere consapevoli delle energie su cui concentrarsi
+                            ci offre l’opportunità di vivere ogni fase della
+                            nostra vita nel modo più armonioso ed efficace
+                            possibile. Utilizzando le energie archetipiche come
+                            vele spinte da un vento favorevole, possiamo
+                            ottenere ciò che desideriamo con maggiore facilità,
+                            evitando le insidie di scogli pericolosi e acque
+                            poco profonde, dove potremmo non solo ferirci, ma
+                            anche rimanere bloccati per anni.
                         </span>
                         <div className="month-results__body">
                             <div class="month-results__tables">
                                 <div class="month-results__table month-results__table-top">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            SENTIMENTO INTERIORE DEL MESE{' '}
+                                            ESAME DELL’ANNO{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos12)}
@@ -102,25 +106,26 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            ENERGIA DI CRESCITA{' '}
+                                            INSTABILITA’ EMOTIVA{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos1)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONEEMOTIVA{' '}
+                                            CRESCITA DELL’ANNO{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos4)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            LEZIONI DELL’ANNO{' '}
+                                            ТЕМА PRINCIPALE{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA{' '}
+                                            TENSIONE NEL CAMBIAMENTO DI
+                                            COSCIENZA{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos5)}
@@ -132,7 +137,7 @@ function MonthResultsResults() {
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ТЕМАPRINCIPALE{' '}
+                                            LEZIONI DELL’ANNO{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
@@ -156,8 +161,7 @@ function MonthResultsResults() {
                                             {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ENERGIA DI ESPANSIONE DELLA
-                                            COSCIENZA
+                                            SENTIMENTO INTERIORE DEL MESE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos9)}
@@ -169,7 +173,7 @@ function MonthResultsResults() {
                                             {toRim(pos8)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            OPPORTUNITA’
+                                            TENSIONE EMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos10)}
@@ -178,21 +182,15 @@ function MonthResultsResults() {
                                 </div>
                             </div>
                             <p className="month-results__body-text">
-                                Tuttavia, in ogni singola posizione, lo stesso
-                                Archetipo si comporta in modo diverso,
-                                influenzando gli Archetipi nelle posizioni
-                                circostanti in un modo specifico e questo crea
-                                il disegno della personalità unico per ciascuno
-                                di noi. Per collegare gli Archetipi tutti
-                                insieme per una comprensione profonda e olistica
-                                della tua vita che ti aiuterà a comprendere
-                                meglio sé stesso, il proprio carattere, a
-                                trovare le risposte alle tue domande chiedi una
-                                consultazione, cliccando bottone sotto.
+                                Se vuoi applicare questa previsione alla tua
+                                vita per comprendere quale periodo si sta
+                                avvicinando, quale percorso intraprendere e come
+                                pianificare al meglio i tuoi obiettivi, richiedi
+                                una consulenza cliccando sul pulsante qui sotto.
                             </p>
 
                             <Button
-                                text="CONSULTAZIONE"
+                                text="RICHIEDI UNA CONSULENZA"
                                 className="month-results__body-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

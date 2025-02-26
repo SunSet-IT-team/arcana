@@ -8,6 +8,7 @@ function SelectMonth({
     selectedYear2,
     setSelectedMonth2,
     setSelectedYear2,
+    minDate = 1990,
 }) {
     const monthOptions = [
         {value: '1', label: 'GENNAIO'},
@@ -24,7 +25,7 @@ function SelectMonth({
         {value: '12', label: 'DICEMBRE'},
     ];
     const yearOptions = Array.from({length: 61}, (_, index) => {
-        const year = 1990 + index;
+        const year = minDate + index;
         return {
             value: year.toString(),
             label: year.toString(),
@@ -41,7 +42,7 @@ function SelectMonth({
 
     return (
         <ul className="select-month">
-            <span className="select-month__item">selezionare il mese/anno</span>
+            <span className="select-month__item">selezionare mese e anno</span>
             <li className="select-month__item">
                 <SelectLabel
                     options={monthOptions}

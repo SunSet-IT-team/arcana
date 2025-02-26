@@ -22,7 +22,7 @@ function MonthCalculatorCalculator() {
     const [selectedMonth, setSelectedMonth] = useState('');
     const [selectedYear, setSelectedYear] = useState('');
     const [selectedMonth2, setSelectedMonth2] = useState('');
-    const [selectedYear2, setSelectedYear2] = useState('');
+    const [selectedYear2, setSelectedYear2] = useState('2025');
     const [isAllSelected, setIsAllSelected] = useState(false);
 
     const handleCalculateClick = () => {
@@ -86,13 +86,13 @@ function MonthCalculatorCalculator() {
                         <span className="underline">Torna indietro</span>
                     </Link>
                     <h1 className="month-calculator__title title-1">
-                        CALCOLARE LE PREVISIONI PER L'ANNO E IL MESE
+                        CALCOLARE LE PREVISIONI PER ANNO E PER MESE
                     </h1>
                     <div className="month-calculator__content">
                         <span className="month-calculator__span">
-                            Scoprite quali Archetipi si manifestano/si sono
-                            manifestati nel periodo da voi indicato, inserendo
-                            la vostra data di nascita:
+                            Scopri quali Energie Archetipiche influenzano la tua
+                            vita inserendo la tua data di nascita e il periodo
+                            interessato.
                         </span>
                         <div className="month-calculator__body">
                             <div className="month-calculator__select-wrapper">
@@ -111,6 +111,7 @@ function MonthCalculatorCalculator() {
                                     selectedYear2={selectedYear2}
                                     setSelectedMonth2={setSelectedMonth2}
                                     setSelectedYear2={setSelectedYear2}
+                                    minDate={2025}
                                 ></SelectMonth>
                             </div>
 

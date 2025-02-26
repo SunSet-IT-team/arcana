@@ -6,6 +6,12 @@ import {useNavigate} from 'react-router-dom';
 
 function Article() {
     const navigate = useNavigate();
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
     return (
         <section className="article">
             <div className="container">
@@ -272,7 +278,7 @@ function Article() {
                             </p>
                         </div>
                     </div>
-                    <button className="article__up arrow">
+                    <button className="article__up arrow" onClick={scrollToTop}>
                         <span className="underline">Sopra</span>
                         <svg
                             width="21"
