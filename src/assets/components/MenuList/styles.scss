@@ -52,7 +52,7 @@
         font-size: clamp(20px, size-desktop(36px), 36px);
 
         width: 100%;
-        padding: clamp(10px, size-desktop(24px), 24px) 0;
+        padding: clamp(10px, size-desktop(20px), 20px) 0;
 
         color: $light-grey;
 
@@ -73,7 +73,13 @@
 
     @media screen and (max-width: 1024px) {
         &__link {
-            padding: 25px 0px;
+            padding: 15px 0px;
+        }
+    }
+
+    @media screen and (max-height: 800px) {
+        &__link {
+            padding: clamp(10px, 1.5vh, 24px) 0px;
         }
     }
 

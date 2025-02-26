@@ -10,6 +10,7 @@
     height: 100vh;
     z-index: 100;
     background-color: $dark-grey;
+    visibility: visible;
 
     background-image: url('../../../../public/images/bg2.png');
     flex-direction: column;
@@ -41,7 +42,7 @@
     &__content {
         margin-top: auto;
         margin-bottom: auto;
-        padding-top: 50px;
+        // padding-top: 50px;
     }
     .menu-list__list {
         overflow: hidden;
