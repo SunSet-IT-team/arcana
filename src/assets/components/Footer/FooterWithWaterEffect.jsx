@@ -63,21 +63,19 @@ function FooterWithWaterEffect() {
 
                                             <li className="footer__menu-item">
                                                 <Link
-                                                    to="/month-calculator"
-                                                    className="footer__menu-link"
-                                                >
-                                                    CALC. LE PREVISIONI PER
-                                                    L'ANNO E IL MESE
-                                                </Link>
-                                            </li>
-
-                                            <li className="footer__menu-item">
-                                                <Link
                                                     to="/partner-calculator"
                                                     className="footer__menu-link"
                                                 >
-                                                    CALC. LA COMPATIBILITÀ DEL
+                                                    CALC. DELRAPPORTO TRA DUE
                                                     PARTNER
+                                                </Link>
+                                            </li>
+                                            <li className="footer__menu-item">
+                                                <Link
+                                                    to="/month-calculator"
+                                                    className="footer__menu-link"
+                                                >
+                                                    CALC. DIPREVISIONI ANNO/MESE
                                                 </Link>
                                             </li>
 
@@ -96,7 +94,7 @@ function FooterWithWaterEffect() {
                                                     to="/services"
                                                     className="footer__menu-link"
                                                 >
-                                                    SERVIZI
+                                                    CONSULENZE
                                                 </Link>
                                             </li>
 
@@ -114,7 +112,7 @@ function FooterWithWaterEffect() {
                                                     to="/archetypes"
                                                     className="footer__menu-link"
                                                 >
-                                                    22 ARCHETYPE
+                                                    22 ARCHETYPES
                                                 </Link>
                                             </li>
 
@@ -166,6 +164,16 @@ function FooterWithWaterEffect() {
                                             target="_blank"
                                         >
                                             YOUTUBE
+                                        </a>
+                                    </li>
+
+                                    <li className="footer__contact-item">
+                                        <a
+                                            className="footer__contact-link line"
+                                            href="https://www.tiktok.com/"
+                                            target="_blank"
+                                        >
+                                            TIKTOK
                                         </a>
                                     </li>
 

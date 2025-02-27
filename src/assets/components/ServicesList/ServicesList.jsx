@@ -150,14 +150,14 @@ function ServicesList({services}) {
                                     : ''
                             }`}
                         >
-                            <p className="services-list__text text-split text-cut">
+                            <p className="services-list__text  text-cut">
                                 {service.info}
                             </p>
                             <button
                                 className="services-list__button underline"
                                 onClick={() => handleOpenCard(index)}
                             >
-                                Per saperne di più
+                                Leggitutto
                             </button>
                             <img
                                 className="services-list__info-img"
@@ -165,7 +165,7 @@ function ServicesList({services}) {
                                 alt="services-photo"
                             />
                             <Button
-                                text="ISCRIVITI"
+                                text="RICHIEDIUNACONSULENZA"
                                 className="services-list__info-button"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

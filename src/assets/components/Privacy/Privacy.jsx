@@ -103,30 +103,142 @@ function Privacy() {
                         </h2>
                         <div className="privacy__text-box">
                             <p className="privacy__text text-split">
-                                22ARCHETIPI di Olga Kuzmenko, C.F.:
-                                KZMLGO79C49Z154Y - garantisce che il trattamento
-                                dei dati - siano essi acquisiti via posta
-                                elettronica o moduli elettronici, o con altra
-                                modalità - è conforme a quanto previsto dalla
-                                normativa in materia di protezione dei dati
-                                personali. Si veda al riguardo
-                                www.22archetypes.com
+                                Titolare del Trattamento
                             </p>
                             <p className="privacy__text text-split">
-                                L'invio facoltativo, esplicito e volontario di
-                                posta elettronica agli indirizzi indicati su
-                                questo sito comporta la successiva acquisizione
-                                dell'indirizzo e del numero di telefono del
-                                mittente, necessario per rispondere alle
-                                richieste, nonché degli eventuali altri dati
-                                personali inseriti nella missiva. Le
-                                informazioni fornite non saranno comunicate a
-                                soggetti estranei alla sua elaborazione.
+                                La presente informativa sulla privacy si
+                                riferisce al trattamento dei dati personali
+                                raccolti attraverso il sito web di 22Archetypes,
+                                di proprietà di Olga Kuzmenko (di seguito
+                                "Titolare"), con sede operativa in Corso degli
+                                Inglesi 462, 18038, Sanremo (IM).
                             </p>
                             <p className="privacy__text text-split">
-                                Titolare del trattamento dei dati personali è:
-                                22ARCHETIPI di Olga Kuzmenko – Corso degli
-                                Inglesi 462, 18038 – Sanremo – Italy
+                                Finalità del Trattamento
+                            </p>
+                            <p className="privacy__text text-split">
+                                I dati personali raccolti tramite il modulo di
+                                richiesta consulenza verranno trattati per le
+                                seguenti finalità:
+                            </p>
+                            <p className="privacy__text text-split">
+                                Fornire riscontro alle richieste di consulenza;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Contattare l'utente per fissare appuntamenti e
+                                fornire informazioni sui servizi richiesti;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Adempiere ad eventuali obblighi di legge;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Migliorare l'esperienza utente sul sito web.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Base Giuridica del Trattamento
+                            </p>
+                            <p className="privacy__text text-split">
+                                Il trattamento dei dati si basa sul consenso
+                                esplicito dell'utente, fornito mediante la
+                                compilazione e l'invio del modulo di richiesta
+                                consulenza.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Tipologia di Dati Raccolti
+                            </p>
+                            <p className="privacy__text text-split">
+                                I dati personali raccolti includono, a titolo
+                                esemplificativo ma non esaustivo:
+                            </p>
+                            <p className="privacy__text text-split">
+                                Nome e cognome;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Indirizzo email;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Numero di telefono;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Qualsiasi ulteriore informazione inserita
+                                volontariamente nel modulo di richiesta.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Modalità di Trattamento e Conservazione dei Dati
+                            </p>
+                            <p className="privacy__text text-split">
+                                I dati saranno trattati in conformità alle
+                                normative vigenti in materia di protezione dei
+                                dati personali, adottando misure tecniche e
+                                organizzative adeguate per garantirne la
+                                sicurezza e la riservatezza. I dati saranno
+                                conservati per il tempo necessario a soddisfare
+                                le finalità per cui sono stati raccolti e,
+                                comunque, non oltre i termini di legge
+                                applicabili.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Comunicazione e Diffusione dei Dati
+                            </p>
+                            <p className="privacy__text text-split">
+                                I dati personali non saranno diffusi a terzi
+                                senza il consenso esplicito dell'utente, salvo
+                                obblighi di legge o necessità legate alla
+                                gestione della richiesta.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Diritti dell'Interessato
+                            </p>
+                            <p className="privacy__text text-split">
+                                Gli utenti hanno il diritto di:
+                            </p>
+                            <p className="privacy__text text-split">
+                                Accedere ai propri dati personali e richiederne
+                                copia;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Chiedere la rettifica o l'aggiornamento dei dati
+                                inesatti;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Richiedere la cancellazione dei propri dati nei
+                                limiti previsti dalla legge;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Revocare il consenso prestato in qualsiasi
+                                momento;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Opporsi al trattamento per motivi legittimi;
+                            </p>
+                            <p className="privacy__text text-split">
+                                Chiedere la limitazione del trattamento.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Per esercitare tali diritti, l'utente può
+                                contattare il Titolare all'indirizzo email:
+                                22archetypes@gmail.com.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Modifiche all'Informativa sulla Privacy
+                            </p>
+                            <p className="privacy__text text-split">
+                                Il Titolare si riserva il diritto di modificare
+                                la presente informativa per adeguarla a
+                                eventuali aggiornamenti normativi o alle proprie
+                                esigenze operative. In caso di modifiche
+                                sostanziali, l'utente verrà informato attraverso
+                                il sito web.
+                            </p>
+                            <p className="privacy__text text-split">Contatti</p>
+                            <p className="privacy__text text-split">
+                                Per qualsiasi domanda relativa alla presente
+                                informativa o al trattamento dei dati personali,
+                                è possibile contattare Olga Kuzmenko
+                                all'indirizzo email 22archetypes@gmail.com.
+                            </p>
+                            <p className="privacy__text text-split">
+                                Ultimo aggiornamento: 10.02.2025.
                             </p>
                         </div>
                     </div>

@@ -52,7 +52,7 @@ function Header() {
                         className="header__link underline"
                         onClick={() => dispatch(setOpenContactForm(true))}
                     >
-                        Contatto
+                        Contatti
                     </button>
                     <button
                         className="header__button"
