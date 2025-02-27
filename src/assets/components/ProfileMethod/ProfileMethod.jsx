@@ -121,89 +121,121 @@ function ProfileMethod() {
                         </h2>
                         <div className="profile-method__text-box">
                             <p className="profile-method__text text-split">
-                                Archetypal Psy Profile Method si basa su calcoli
-                                matematici che, usando gli Archetipi di
-                                Tarocchi, insieme costituiscono la mappa
-                                archetipica, che permette di vedere qualcosa di
-                                simile al codice genetico con cui una persona
-                                viene al mondo. Questo codice parlerà del motivo
-                                più importante che si ripete per tutta la vita,
-                                delle predisposizioni e capacità, nonché degli
-                                eventi che influenzano in modo significativo lo
-                                sviluppo della personalità della persona, e,
-                                ovviamente, tutto questo viene interpretato e
-                                spiegato attraverso la psicologia. Grazie
-                                all'analisi di questo codice, possiamo conoscere
-                                meglio una persona, spiegare le ragioni del suo
-                                comportamento, riuscire a capire bene cosa la
-                                spinge, facilitare il movimento verso il suo
-                                scopo in questa vita e massimizzare lo sviluppo
-                                del suo potenziale.
+                                Il Metodo di Profilo Archetipico è un sistema
+                                complesso e integrato che combina diverse
+                                tecniche di conoscenza di sé. Grazie alla sua
+                                struttura relativamente semplice, si distingue
+                                per essere uno degli strumenti più
+                                trasformativi, rapidi ed efficaci nel percorso
+                                di crescita personale.
                             </p>
+                            <br />
                             <p className="profile-method__text text-split">
-                                Gli Archetipi esistono in una persona,
-                                indipendente dal fatto che li studi o meno,
-                                esistono al di fuori del tempo e dello spazio e
-                                vengono trasmessi di generazione in generazione.
-                                Il Profilo Archetipico, basato sulla mappa
-                                archetipica natale, calcolata a partire dalla
-                                data di nascita, è la più importante fonte di
-                                informazioni su una persona. Se manca qualcosa
-                                nella mappa archetipica natale, allora non si
-                                manifesterà né anche nella persona. Gli
-                                Archetipi, che troviamo nella mappa archetipica
-                                individuale, riflettono le qualità psicologiche
-                                acquisite su base genetica, che insieme
-                                costituiscono le caratteristiche qualitative
-                                psicologiche, contenenti una descrizione della
-                                composizione interna individuale di una persona
-                                e delle sue possibili azioni in determinate
-                                circostanze.
+                                IlMetodo si basa sullo studio degli algoritmi
+                                della mappa archetipica natale, costruita sulla
+                                data di nascita della persona. Molte scuole
+                                psicologiche, esoteriche e spirituali utilizzano
+                                la data di nascita in modi diversi, ma il
+                                Profilo Archetipico va oltre la semplice
+                                decodifica: permette di modellare e migliorare
+                                la vita dell’individuo analizzando le dinamiche
+                                delle energie archetipiche presenti nella sua
+                                mappa archetipica natale.
                             </p>
+                            <br />
                             <p className="profile-method__text text-split">
-                                Ogni Archetipo ha molte sfaccettature ed è la
-                                totalità degli Archetipi che fornisce un quadro
-                                completo delle caratteristiche di una persona
-                                nel Profilo Archetipico della personalità. E in
-                                ciascuna posizione della mappa archetipica gli
-                                Archetipi hanno sfumature diverse.
+                                La data di nascita è il nostro biglietto da
+                                visita, che ci permette di identificare
+                                chiaramente tutte le caratteristiche e gli
+                                scenari individuali della nostra vita e
+                                scegliere la migliore direzione possibile.
                             </p>
+                            <br />
                             <p className="profile-method__text text-split">
-                                Durante la interpretazione della mappa
-                                archetipica, il significato di ciascun Archetipo
-                                viene considerato in base alla sua Posizione, e
-                                vengono prese in considerazione anche
-                                l'influenza e l'interazione degli Archetipi
-                                dalle posizioni vicine e le loro combinazioni.
+                                Il Metodo di Profilo Archetipico si articola in
+                                due componenti fondamentali:
                             </p>
+                            <br />
                             <p className="profile-method__text text-split">
-                                Possono esserci molte mappe archetipiche uguale,
-                                ad esempio, li avranno tutte le persone nate
-                                nello stesso giorno, anno e mese. Ma,
-                                indipendentemente da ciò, siamo tutti diversi e
-                                la lettura e la decodifica del Profilo
-                                Archetipico individuale avviene in base alle
-                                caratteristiche dell'ambiente e di educazione,
-                                dell'attività umana, degli eventi della vita che
-                                hanno influenzato il destino e la visione del
-                                mondo della persona.
+                                Diagnostica: analizza l’interazione tra i
+                                pattern archetipici nella loro complessità,
+                                rivelando le strutture profonde della psiche che
+                                influenzano il carattere, le aspirazioni, le
+                                paure e i blocchi interiori.
                             </p>
+                            <br />
                             <p className="profile-method__text text-split">
-                                Archetypal Psy Profile Method è molto profondo
-                                ed è pratico grazie alla sua semplicità,
-                                accuratezza ed efficacia. È uno strumento molto
-                                valido nella psicologia pratica, nel lavoro
-                                degli educatori, allenatori, mentori e di tutti
-                                coloro che in un modo o nell'altro lavorano con
-                                le persone ed i loro problemi. Ma, naturalmente,
-                                questo è, prima di tutto, uno strumento efficace
-                                per la conoscenza di sé e la crescita personale,
-                                motivo per cui è molto richiesto tra tutti
-                                coloro che lottano per la consapevolezza, lo
-                                sviluppo intellettuale e spirituale la
-                                maturazione psicologica e sociale e anche per
-                                l'autorealizzazione di successo.
+                                Prognostica: offre uno strumento prezioso per
+                                comprendere l’ambiente circostante egli eventi
+                                in arco della vita, facilitando un percorso
+                                consapevole e mirato verso un cambiamento
+                                positivo.
                             </p>
+                            <br />
+                            <p className="profile-method__text text-split">
+                                Come strumento di comunicazione, vengono
+                                utilizzate 22 immagini degli Arcani Maggiori,
+                                non nel loro sistema originale, ma come un vero
+                                e proprio alfabeto archetipico capace di
+                                rappresentare qualsiasi fenomeno o situazione.
+                                Attraverso questa diagnostica basata su immagini
+                                archetipiche e pattern universali, il consulente
+                                esplora complessi, subpersonalità e parti
+                                profonde della psiche di chi cerca aiuto,
+                                instaurando un dialogo con il suo inconscio.
+                            </p>
+                            <br />
+                            <p className="profile-method__text text-split">
+                                Il consulente agisce come guida, accompagnando
+                                il cliente nell’esplorazione dei labirinti della
+                                propria anima. Grazie alla mappa archetipica
+                                natale, questo percorso simbolico consente di
+                                illuminare dinamiche interiori e favorire una
+                                maggiore consapevolezza di sé.
+                            </p>
+                            <br />
+                            <p className="profile-method__text text-split">
+                                Il Metodo di Profilo Archetipico è molto
+                                profondo ed è pratico grazie alla sua
+                                semplicità, accuratezza ed efficacia. Ci
+                                permette di approfondire quelli correnti e
+                                processi inconsci che ci impediscono di superare
+                                in modo più “ecologico” le nostre lezioni di
+                                maturazione d'anima in questo mondo materiale e
+                                adempiere ai compiti con i quali siamo venuti
+                                per raggere l’individuazione.
+                            </p>
+                            <br />
+                            <p className="profile-method__text text-split">
+                                Grazie alla sua versatilità, il Metodo è
+                                estremamente utile in diversi ambiti, dalla
+                                psicologia pratica all’educazione, dal coaching
+                                al mentoring, supportando professionisti che
+                                lavorano con le persone e i loro percorsi di
+                                trasformazione. Tuttavia, il suo valore
+                                principale risiede nella conoscenza di sé e
+                                nella crescita personale, rendendolo uno
+                                strumento prezioso per chiunque aspiri a una
+                                maggiore consapevolezza e a un’evoluzione, sia
+                                individuale che sociale.
+                            </p>
+                            <br />
+                            <p className="profile-method__text text-split">
+                                Il Profilo Archetipico offre una chiave di
+                                conoscenza profonda del proprio percorso di
+                                vita, aiutando a riconoscere e accettare le
+                                esperienze come tappe essenziali nella
+                                maturazione psicologica dell’anima. Attraverso
+                                questo metodo, è possibile rimodellare la
+                                propria esistenza, trasformando le sfide in
+                                opportunità di crescita e utilizzando le proprie
+                                risorse interiori per raggiungere il successo e
+                                lo status desiderato. Le energie archetipiche
+                                personali diventano così una guida preziosa per
+                                realizzare il proprio potenziale e vivere in
+                                armonia con il proprio scopo.
+                            </p>
+
                             <div className="profile-method__form-bottom">
                                 <Button
                                     text="CONTATTAMI"

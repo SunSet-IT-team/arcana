@@ -168,13 +168,9 @@ function ContactForm() {
                     </div>
                     <div className="contact-form__content">
                         <p className="contact-form__text text-split">
-                            Se si desidera prenotare una consultazione, si prega
-                            di indicare i propri dati (nome, posta e in quale
-                            momento conveniente sarà conveniente per voi).{' '}
-                            <br />
-                            Nel prossimo futuro sarai contattato e concorderà
-                            l'ora e la data esatte della tua consultazione con
-                            uno specialista.
+                            Se desidera prenotare una consulenza, lasci i suoi
+                            dati e la contatterò al più presto per un
+                            approfondimento.
                         </p>
                         <div className="contact-form__form-box">
                             <div className="contact-form__title-wrapper">
@@ -189,8 +185,8 @@ function ContactForm() {
                             </div>
 
                             <h3 className="contact-form__subtitle form-subtitle text-split">
-                                LASCIA I TUOI DATI E TI CONTATTEREMO
-                                SICURAMENTE!
+                                Inserisci i tuoi dati e ti contatterò al più
+                                presto!
                             </h3>
                             <form className="contact-form__form">
                                 <input
