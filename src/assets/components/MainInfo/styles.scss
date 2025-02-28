@@ -46,15 +46,21 @@
         &__wrapper {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
             margin-left: 40.5%;
-            margin-top: 315px;
+            margin-top: 86px;
+            padding-bottom: 60px;
         }
     }
 
     @media screen and (max-width: 1024px) {
         &__wrapper {
             margin-left: calc(40% + 6px);
-            margin-top: 400px;
+            margin-top: 100px;
+            justify-content: center;
+            min-height: 100vh;
+            padding-bottom: 60px;
         }
 
         &__text {
