@@ -249,22 +249,22 @@ export default function App() {
         const delay = setTimeout(() => {
             tl.to('.archetypes-demo__stub', {
                 height: '130% ',
-            });
-            tl.from('.archetypes-demo__swiper', {
-                opacity: 0,
-                duration: 1,
-            });
-            tl.from(
-                [
-                    '.archetypes-demo__item-number',
-                    '.archetypes-demo__item-title .line',
-                ],
-                {
-                    x: '-100%',
+            })
+                .from('.archetypes-demo__swiper', {
+                    opacity: 0,
                     duration: 1,
-                },
-                '-=1'
-            )
+                })
+                .from(
+                    [
+                        '.archetypes-demo__item-number',
+                        '.archetypes-demo__item-title .line',
+                    ],
+                    {
+                        x: '-100%',
+                        duration: 1,
+                    },
+                    '-=1'
+                )
                 .from(
                     '.archetypes-demo__item-title .line',
                     {
@@ -285,15 +285,7 @@ export default function App() {
                         duration: 1,
                     }
                 )
-                .from(
-                    '.archetypes-demo__item-text .line',
-                    {
-                        y: '300%',
-                        rotate: '10deg',
-                        duration: 1,
-                    },
-                    '-=1'
-                )
+
                 .to(
                     '.archetypes-demo__item-imgBl',
                     {
@@ -314,13 +306,24 @@ export default function App() {
                     '-=1.7'
                 )
                 .from(
+                    '.archetypes-demo__item-text .line',
+                    {
+                        y: '300%',
+                        rotate: '10deg',
+                        duration: 1,
+                    },
+                    '-=4'
+                )
+                .from(
                     '.archetypes-demo__item-link',
                     {
                         opacity: 0,
+                        delay: 1,
                         duration: 1,
                     },
-                    '-=1'
+                    '-=4'
                 );
+
             tl.from('.archetypes-demo__stub', {
                 height: '130% ',
             });
@@ -488,7 +491,7 @@ export default function App() {
     return (
         <>
             <div className="archetypes-demo__slider-wrapper slider-animation">
-                {/* <div className="archetypes-demo__stub"></div> */}
+                <div className="archetypes-demo__stub"></div>
                 <div className="archetypes-demo__buttons">
                     <TitleAnimation
                         tag="h3"
@@ -524,17 +527,6 @@ export default function App() {
                         centeredSlides={false}
                         slideToClickedSlide={true}
                         ref={swiperRef}
-                        onSlideChangeTransitionStart={(swiper) => {
-                            console.log(swiper.activeIndex);
-                            console.log(swiper.getTranslate());
-                        }}
-                        // onBeforeSlideChangeStart={(swiper) => {
-                        //     console.log(
-                        //         swiper.activeIndex,
-                        //         swiper.
-
-                        //     );
-                        // }}
                         onSetTranslate={() => {
                             const w = document.querySelector('.swiper-wrapper');
                             w.style.transitionDuration = '300ms';
@@ -562,12 +554,6 @@ export default function App() {
                                 newTranslate += slideWidth;
                             }
                             setRealTr(translate);
-                            // console.log(
-                            //     translate,
-                            //     newTranslate,
-                            //     slideWidth,
-                            //     wrapper
-                            // );
                             swiper.setTranslate(-count * slideWidth);
                         }}
                     >
