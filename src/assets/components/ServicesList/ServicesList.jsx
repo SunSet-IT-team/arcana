@@ -165,7 +165,7 @@ function ServicesList({services}) {
                                 alt="services-photo"
                             />
                             <Button
-                                text="RICHIEDIUNACONSULENZA"
+                                text="Iscriviti"
                                 className="services-list__info-button"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))
