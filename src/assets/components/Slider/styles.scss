@@ -2,6 +2,24 @@
 @import '../../scss/abstracts/mixins';
 @import '../../scss/abstracts/functions';
 
+.swiper-wrapper {
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(
+            23,
+            calc((100vw - 95px - 95px - 80px) / 5)
+        );
+        column-gap: 20px;
+        .swiper-slide {
+            width: auto !important;
+        }
+        .swiper-slide-active {
+            grid-column: span 2;
+            width: calc(auto - 10px) !important;
+        }
+    }
+}
+
 .archetypes-demo__slider-wrapper {
     .swiper {
         width: 85%;
@@ -35,8 +53,10 @@
         display: flex;
     }
     &__buttons {
-        @media screen and (min-width: 1700px) {
-            margin-right: clamp(20px, size-desktop(217px), 217px);
+        width: calc((100vw - 95px - 95px - 80px) / 5);
+        margin-right: 20px;
+        @media screen and (max-width: 1500px) {
+            margin-right: 40px;
         }
     }
     &__buttons-title {
@@ -302,11 +322,11 @@
             }
             &__item-link {
                 font-size: 18px;
-                margin-right: -40px;
+                // margin-right: -40px;
                 line-height: 21px;
-                width: clamp(10px, size-desktop(330px), 330px);
+                width: calc((100vw - 95px - 95px - 80px) / 5);
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 margin-left: auto;
 
                 transition: color 0.3s;
@@ -325,7 +345,7 @@
     .swiper-slide-active {
         opacity: 1;
         @media screen and (min-width: 768px) {
-            width: size-desktop(680px) !important;
+            // width: size-desktop(680px) !important;
             max-width: 680px !important;
             .archetypes-demo {
                 &__item-imgBox {

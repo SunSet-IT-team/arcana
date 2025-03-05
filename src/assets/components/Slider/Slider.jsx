@@ -16,6 +16,7 @@ import './styles.scss';
 
 export default function App() {
     const [onTitle, setOnTitle] = useState(false);
+    const [realTr, setRealTr] = useState(0);
     const swiperRef = React.useRef(null);
     const [spaceBetween, setSpaceBetween] = React.useState(0);
     const [isMobile, setIsMobile] = React.useState(false);
@@ -60,7 +61,6 @@ export default function App() {
     const goToNextSlide = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
             rightSwipe();
-            // Задержка, чтобы успела закончится анимация, а потом уже переключение слайда
             setTimeout(() => swiperRef.current.swiper.slideNext(), 1000);
         }
     };
@@ -68,8 +68,10 @@ export default function App() {
     const goToPrevSlide = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
             leftSwipe();
-            // Задержка, чтобы успела закончится анимация, а потом уже переключение слайда
-            setTimeout(() => swiperRef.current.swiper.slidePrev(), 1000);
+            setTimeout(() => {
+                swiperRef.current.swiper.setTranslate(realTr);
+                swiperRef.current.swiper.slidePrev();
+            }, 1000);
         }
     };
 
@@ -94,10 +96,13 @@ export default function App() {
             duration: 1,
         });
 
-        tl.to('.archetypes-demo__item-number', {
-            x: '0',
-            duration: 1,
-        })
+        tl.to(
+            ['.archetypes-demo__item-number', '.archetypes-demo__item-title'],
+            {
+                x: '0',
+                duration: 1,
+            }
+        )
             .to(
                 '.archetypes-demo__item-title .line',
                 {
@@ -157,7 +162,7 @@ export default function App() {
             'start'
         );
         tl.to(
-            ' .archetypes-demo__item-number',
+            ['.archetypes-demo__item-number', '.archetypes-demo__item-title'],
             {
                 x: '-100%',
                 duration: 1,
@@ -250,7 +255,10 @@ export default function App() {
                 duration: 1,
             });
             tl.from(
-                '.archetypes-demo__item-number',
+                [
+                    '.archetypes-demo__item-number',
+                    '.archetypes-demo__item-title .line',
+                ],
                 {
                     x: '-100%',
                     duration: 1,
@@ -476,10 +484,11 @@ export default function App() {
             linkTo: '/archetypes/XXII',
         },
     ];
+
     return (
         <>
             <div className="archetypes-demo__slider-wrapper slider-animation">
-                <div className="archetypes-demo__stub"></div>
+                {/* <div className="archetypes-demo__stub"></div> */}
                 <div className="archetypes-demo__buttons">
                     <TitleAnimation
                         tag="h3"
@@ -512,10 +521,55 @@ export default function App() {
                         modules={[FreeMode, Navigation]}
                         loop={true}
                         slidesPerView={4}
-                        spaceBetween={spaceBetween}
                         centeredSlides={false}
                         slideToClickedSlide={true}
                         ref={swiperRef}
+                        onSlideChangeTransitionStart={(swiper) => {
+                            console.log(swiper.activeIndex);
+                            console.log(swiper.getTranslate());
+                        }}
+                        // onBeforeSlideChangeStart={(swiper) => {
+                        //     console.log(
+                        //         swiper.activeIndex,
+                        //         swiper.
+
+                        //     );
+                        // }}
+                        onSetTranslate={() => {
+                            const w = document.querySelector('.swiper-wrapper');
+                            w.style.transitionDuration = '300ms';
+                        }}
+                        onTransitionEnd={(swiper) => {
+                            const pageWidth = window.innerWidth;
+                            const slideGap = 20;
+                            let slideWidth =
+                                (pageWidth - 95 * 2 - 20 * 4) / 5 + slideGap;
+                            const translate = swiper.getTranslate();
+                            const wrapper =
+                                document.querySelector('.swiper-wrapper');
+                            const uncorrectSlideWidth =
+                                document.querySelector('.swiper-slide').style
+                                    .width;
+                            let count =
+                                -translate / uncorrectSlideWidth.slice(0, -2);
+
+                            let newTranslate = 0;
+
+                            while (newTranslate > translate) {
+                                newTranslate -= slideWidth;
+                            }
+                            if (newTranslate !== 0) {
+                                newTranslate += slideWidth;
+                            }
+                            setRealTr(translate);
+                            // console.log(
+                            //     translate,
+                            //     newTranslate,
+                            //     slideWidth,
+                            //     wrapper
+                            // );
+                            swiper.setTranslate(-count * slideWidth);
+                        }}
                     >
                         {archetypesData.map((data, index) => (
                             <SwiperSlide key={index}>
