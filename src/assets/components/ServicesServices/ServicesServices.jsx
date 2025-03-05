@@ -424,7 +424,7 @@ function ServicesServices() {
         },
 
         {
-            name: 'Finanza Personale ',
+            name: 'Finanza Personali',
             time: '60 – 90 min',
             info: (
                 <>
