@@ -65,21 +65,17 @@ function ContactForm() {
             });
 
             // В) Название блока попапа
-            tl.to(
-                [
-                    '.contact-form__title', // title
-                    '.contact-form__title-img', // owl image
-                    '.contact-form__subtitle .line-wrapper',
-                    '.contact-form__form-box .line',
-                ],
-                {
-                    duration: 1.5,
-                    opacity: 1,
-                    rotate: '0',
-                    x: '0',
-                    y: '0',
-                }
-            );
+            tl.to(['.contact-form__form-box .line'], {
+                duration: 1.5,
+                rotate: '0',
+                x: '0',
+                y: '0',
+            });
+            // Сова
+            tl.to(['.contact-form__title-img'], {
+                duration: 0.5,
+                opacity: 1,
+            });
 
             // Г) Название текстов для ввода данных и текст слева
             tl.to(['.contact-form__input', '.contact-form__text .line'], {
@@ -116,22 +112,22 @@ function ContactForm() {
     }, [isFormOpen]);
 
     // АВТОВЫСОТА К TEXT-AREA
-    function autoResizeTextarea(element) {
-        element.style.height = '78px';
-        element.style.height = Math.min(element.scrollHeight, 350) + 'px';
-    }
+    // function autoResizeTextarea(element) {
+    //     element.style.height = '78px';
+    //     element.style.height = Math.min(element.scrollHeight, 350) + 'px';
+    // }
 
     const textareas = document.querySelectorAll('.contact-form__input--text');
 
-    textareas.forEach((textarea) => {
-        textarea.addEventListener('input', () => {
-            autoResizeTextarea(textarea);
-        });
-    });
+    // textareas.forEach((textarea) => {
+    //     textarea.addEventListener('input', () => {
+    //         autoResizeTextarea(textarea);
+    //     });
+    // });
 
-    textareas.forEach((textarea) => {
-        autoResizeTextarea(textarea);
-    });
+    // textareas.forEach((textarea) => {
+    //     autoResizeTextarea(textarea);
+    // });
 
     const onSubmit = (data) => {
         dispatch(setOpenContactForm(false));
