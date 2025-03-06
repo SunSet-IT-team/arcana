@@ -23,11 +23,8 @@
     }
 
     &__logo-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        // margin-right: clamp(200px, size-desktop(330px), 330px);
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
         max-width: size-desktop(330px);
         width: 100%;
     }
@@ -37,9 +34,8 @@
     }
 
     &__privacy {
-        margin-bottom: size-desktop(45px);
-        margin-left: -5px; // issue #9
-
+        margin-left: -5px;
+        grid-row: 4 / 5;
         overflow: hidden;
     }
 
@@ -179,11 +175,10 @@
     }
 
     &__bottom {
-        display: flex;
-        justify-content: space-between;
-
+        display: grid;
         padding: size-desktop(50px) 0 size-desktop(95px);
-
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 20px;
         color: $light-grey;
     }
 
@@ -193,9 +188,8 @@
 
     &__ingria {
         display: flex;
-        // margin-right: 30px; // issue #9
-        max-width: size-desktop(330px);
         width: 100%;
+        grid-column: 5/6;
     }
 
     &__ingria-text {

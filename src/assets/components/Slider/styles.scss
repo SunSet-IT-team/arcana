@@ -125,6 +125,11 @@
         will-change: transform;
         display: block;
     }
+    @media screen and (max-width: 1150px) {
+        &__item-link {
+            font-size: 13px !important;
+        }
+    }
     @media screen and (max-width: 1024px) and (min-width: 769px) {
         &__buttons-title {
             font-size: 13px !important;

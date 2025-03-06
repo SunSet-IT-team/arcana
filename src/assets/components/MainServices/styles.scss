@@ -10,6 +10,16 @@
         max-width: 680px;
         line-height: 21.6px;
     }
+    @media screen and (min-width: 1150px) {
+        &__link {
+            margin-left: 60%;
+        }
+    }
+    @media screen and (max-width: 1150px) {
+        &__link {
+            margin-left: calc(40% + 10px);
+        }
+    }
     @media screen and (max-width: 1024px) {
         &__title {
             margin-bottom: 62px !important;

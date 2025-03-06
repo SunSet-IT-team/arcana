@@ -25,6 +25,7 @@ import Services from './assets/pages/Services/Services';
 
 import gsap from 'gsap';
 import FooterWithWaterEffect from './assets/components/Footer/FooterWithWaterEffect';
+import SuccessSend from './assets/components/SuccessSend/SuccessSend';
 import BlogArticle from './assets/pages/BlogArticle/BlogArticle';
 
 function App() {
@@ -139,6 +140,10 @@ function App() {
                     <Route path="/archetypes/:id" element={<Archetype />} />
                     <Route path="/storys/:id" element={<Story />}></Route>
                     <Route path="/blog/:id" element={<BlogArticle />}></Route>
+                    <Route
+                        path="/success-send"
+                        element={<SuccessSend />}
+                    ></Route>
                 </Routes>
             </main>
 
