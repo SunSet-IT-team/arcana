@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {
@@ -9,22 +9,18 @@ import {
 import {setOpenPrivacy} from '../../../redux/slices/privacySlice';
 
 import gsap from 'gsap';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {TextLinesReveal} from '../../js/textLinesReveal';
 
 import Button from '../../components/Button/Button';
 
+import {useForm} from 'react-hook-form';
 import './styles.scss';
 
 function ContactForm() {
     const dispatch = useDispatch();
     const isFormOpen = useSelector(contactForm);
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [emailRequired, setEmailRequired] = useState(true);
-    const [phoneRequired, setPhoneRequired] = useState(false);
-
+    const navigate = useNavigate();
     React.useEffect(() => {
         const textSplitElements = document.querySelectorAll('.text-split');
         const textAnimation = new TextLinesReveal(
@@ -137,6 +133,22 @@ function ContactForm() {
         autoResizeTextarea(textarea);
     });
 
+    const onSubmit = (data) => {
+        dispatch(setOpenContactForm(false));
+        setTimeout(() => {
+            navigate('/success-send');
+        }, 8600);
+    };
+
+    const {register, handleSubmit, watch} = useForm({
+        defaultValues: {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+        },
+    });
+
     return (
         <div className="contact-form">
             <div className="contact-form__wrapper">
@@ -188,35 +200,33 @@ function ContactForm() {
                                 Inserisci i tuoi dati e ti contatterò al più
                                 presto!
                             </h3>
-                            <form className="contact-form__form">
+                            <form
+                                className="contact-form__form"
+                                onSubmit={handleSubmit(onSubmit)}
+                            >
                                 <input
                                     type="text"
                                     className="contact-form__input"
                                     placeholder="Nome"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    required
+                                    {...register('name', {required: true})}
                                 />
                                 <input
                                     type="email"
                                     className="contact-form__input"
                                     placeholder="Email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    required={emailRequired && !phone}
+                                    {...register('email', {required: true})}
                                 />
                                 <input
                                     type="text"
                                     className="contact-form__input"
                                     placeholder="Telefono"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    required={phoneRequired && !email}
+                                    {...register('phone', {required: true})}
                                 />
                                 <textarea
                                     type="text"
                                     className="contact-form__input contact-form__input--text"
                                     placeholder="Il tuo messaggio"
+                                    {...register('message', {required: true})}
                                 />
                                 <div className="contact-form__form-bottom">
                                     <p className="contact-form__form-text">

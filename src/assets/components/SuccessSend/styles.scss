@@ -1,0 +1,19 @@
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/abstracts/functions';
+.success-send {
+    padding-top: 171px;
+    padding-bottom: 455px;
+    min-height: 100vh;
+    &__back-link {
+        display: block;
+        margin-bottom: clamp(10px, size-desktop(120px), 120px);
+        color: $light-grey;
+    }
+    &__title {
+        margin-bottom: clamp(10px, size-desktop(185px), 185px);
+        line-height: 76.8px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
