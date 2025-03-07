@@ -376,10 +376,14 @@
             }
             &__item-img {
                 max-height: 186px;
+                aspect-ratio: 1;
             }
             &__item-link {
-                margin-top: -2px;
-                float: right;
+                float: unset;
+                display: flex !important;
+                justify-content: flex-end;
+                width: 100% !important;
+                margin-top: 14px;
                 svg {
                     margin: 0;
                     width: 18px !important;

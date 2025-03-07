@@ -191,6 +191,7 @@
             font-size: 18px !important;
             margin-bottom: 0 !important;
             white-space: nowrap;
+            font-weight: 400;
         }
         &__item-tagbox {
             padding: 0;
@@ -354,6 +355,7 @@
 
 .archetypes-demo__slider-wrapper {
     .swiper-slide-active {
+        z-index: 100;
         opacity: 1;
         @media screen and (min-width: 768px) {
             // width: size-desktop(680px) !important;

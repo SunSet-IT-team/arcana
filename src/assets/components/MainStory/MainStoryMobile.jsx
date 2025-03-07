@@ -76,7 +76,7 @@ function MainStoryMobile({storiesProp = []}) {
                 }}
             >
                 {data.map((story, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className="storys-demo__slide">
                         <li className="storys-demo__item">
                             <div className="storys-demo__body">
                                 <div className="storys-demo__item-imgBox">

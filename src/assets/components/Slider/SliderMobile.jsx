@@ -244,7 +244,7 @@ function SliderMobile({archetypesProp = []}) {
                                     <div className="archetypes-demo__item-imgBl">
                                         <img
                                             className="archetypes-demo__item-img"
-                                            src={`./images/archetypes/${archetype.number}.webp`}
+                                            src={`/images/archetypes/${archetype.number}.webp`}
                                             alt={archetype.title}
                                         />
                                     </div>

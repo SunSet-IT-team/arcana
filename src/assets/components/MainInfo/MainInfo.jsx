@@ -4,7 +4,7 @@ import './styles.scss';
 
 function MainInfo() {
     return (
-        <section className="info">
+        <section className="info info_main">
             <div className="container">
                 <div className="info__wrapper">
                     <h1 className="info__title title-1">

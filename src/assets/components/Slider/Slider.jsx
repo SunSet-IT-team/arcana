@@ -610,7 +610,7 @@ export default function App() {
                                                 <div className="archetypes-demo__item-imgBl">
                                                     <img
                                                         className="archetypes-demo__item-img"
-                                                        src={`./images/archetypes/${data.number}.webp`}
+                                                        src={`/images/archetypes/${data.number}.webp`}
                                                         alt="archetype photo"
                                                     />
                                                 </div>
