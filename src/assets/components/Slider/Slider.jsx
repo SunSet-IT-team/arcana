@@ -14,6 +14,164 @@ import {TextLinesReveal} from '../../js/textLinesReveal';
 import SliderMobile from './SliderMobile';
 import './styles.scss';
 
+// ДАННЫЕ ДЛЯ СЛАЙДЕРА
+const archetypesData = [
+    {
+        title: 'IL MAGO',
+        number: 'I',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/1.jpg',
+        linkTo: '/archetypes/I',
+    },
+    {
+        title: 'LA PAPESSA',
+        number: 'II',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/2.jpg',
+        linkTo: '/archetypes/II',
+    },
+    {
+        title: "L'IMPERATRICE",
+        number: 'III',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/3.jpg',
+        linkTo: '/archetypes/III',
+    },
+    {
+        title: "L'IMPERATORE",
+        number: 'IV',
+        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/4.jpg',
+        linkTo: '/archetypes/IV',
+    },
+    {
+        title: 'IL PAPA',
+        number: 'V',
+        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/5.jpg',
+        linkTo: '/archetypes/V',
+    },
+    {
+        title: "L'INNAMORATO",
+        number: 'VI',
+        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        imgSrc: './images/archetypes/6.jpg',
+        linkTo: '/archetypes/VI',
+    },
+    {
+        title: 'IL CARRO',
+        number: 'VII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/7.jpg',
+        linkTo: '/archetypes/VII',
+    },
+    {
+        title: 'LA GIUSTIZIA',
+        number: 'VIII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/8.jpg',
+        linkTo: '/archetypes/VIII',
+    },
+    {
+        title: "L'EREMITA",
+        number: 'IX',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/9.jpg',
+        linkTo: '/archetypes/IX',
+    },
+    {
+        title: 'LA RUOTA DELLA FORTUNA',
+        number: 'X',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/10.jpg',
+        linkTo: '/archetypes/X',
+    },
+    {
+        title: 'LA FORZA',
+        number: 'XI',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/11.jpg',
+        linkTo: '/archetypes/XI',
+    },
+    {
+        title: "L'APPESO",
+        number: 'XII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/12.jpg',
+        linkTo: '/archetypes/XII',
+    },
+    {
+        title: 'LA MORTE',
+        number: 'XIII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/13.jpg',
+        linkTo: '/archetypes/XIII',
+    },
+    {
+        title: 'LA TEMPERANZA',
+        number: 'XIV',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/14.jpg',
+        linkTo: '/archetypes/XIV',
+    },
+    {
+        title: 'IL DIAVOLO',
+        number: 'XV',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/15.jpg',
+        linkTo: '/archetypes/XV',
+    },
+    {
+        title: 'LA TORRE',
+        number: 'XVI',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/16.jpg',
+        linkTo: '/archetypes/XVI',
+    },
+    {
+        title: 'LA STELLA',
+        number: 'XVII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/17.jpg',
+        linkTo: '/archetypes/XVII',
+    },
+    {
+        title: 'LA LUNA',
+        number: 'XVIII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/18.jpg',
+        linkTo: '/archetypes/XVIII',
+    },
+    {
+        title: 'IL SOLE',
+        number: 'XIX',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/19.jpg',
+        linkTo: '/archetypes/XIX',
+    },
+    {
+        title: 'IL GIUDIZIO',
+        number: 'XX',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/20.jpg',
+        linkTo: '/archetypes/XX',
+    },
+    {
+        title: 'IL MONDO',
+        number: 'XXI',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/21.jpg',
+        linkTo: '/archetypes/XXI',
+    },
+    {
+        title: 'IL MATTO',
+        number: 'XXII',
+        text: 'Se avete trovato',
+        imgSrc: './images/archetypes/22.jpg',
+        linkTo: '/archetypes/XXII',
+    },
+];
+
 export default function App() {
     const [onTitle, setOnTitle] = useState(false);
     const [realTr, setRealTr] = useState(0);
@@ -330,163 +488,21 @@ export default function App() {
         }, 300);
     };
 
-    // ДАННЫЕ ДЛЯ СЛАЙДЕРА
-    const archetypesData = [
-        {
-            title: 'IL MAGO',
-            number: 'I',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/1.jpg',
-            linkTo: '/archetypes/I',
-        },
-        {
-            title: 'LA PAPESSA',
-            number: 'II',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/2.jpg',
-            linkTo: '/archetypes/II',
-        },
-        {
-            title: "L'IMPERATRICE",
-            number: 'III',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/3.jpg',
-            linkTo: '/archetypes/III',
-        },
-        {
-            title: "L'IMPERATORE",
-            number: 'IV',
-            text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/4.jpg',
-            linkTo: '/archetypes/IV',
-        },
-        {
-            title: 'IL PAPA',
-            number: 'V',
-            text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/5.jpg',
-            linkTo: '/archetypes/V',
-        },
-        {
-            title: "L'INNAMORATO",
-            number: 'VI',
-            text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-            imgSrc: './images/archetypes/6.jpg',
-            linkTo: '/archetypes/VI',
-        },
-        {
-            title: 'IL CARRO',
-            number: 'VII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/7.jpg',
-            linkTo: '/archetypes/VII',
-        },
-        {
-            title: 'LA GIUSTIZIA',
-            number: 'VIII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/8.jpg',
-            linkTo: '/archetypes/VIII',
-        },
-        {
-            title: "L'EREMITA",
-            number: 'IX',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/9.jpg',
-            linkTo: '/archetypes/IX',
-        },
-        {
-            title: 'LA RUOTA DELLA FORTUNA',
-            number: 'X',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/10.jpg',
-            linkTo: '/archetypes/X',
-        },
-        {
-            title: 'LA FORZA',
-            number: 'XI',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/11.jpg',
-            linkTo: '/archetypes/XI',
-        },
-        {
-            title: "L'APPESO",
-            number: 'XII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/12.jpg',
-            linkTo: '/archetypes/XII',
-        },
-        {
-            title: 'LA MORTE',
-            number: 'XIII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/13.jpg',
-            linkTo: '/archetypes/XIII',
-        },
-        {
-            title: 'LA TEMPERANZA',
-            number: 'XIV',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/14.jpg',
-            linkTo: '/archetypes/XIV',
-        },
-        {
-            title: 'IL DIAVOLO',
-            number: 'XV',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/15.jpg',
-            linkTo: '/archetypes/XV',
-        },
-        {
-            title: 'LA TORRE',
-            number: 'XVI',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/16.jpg',
-            linkTo: '/archetypes/XVI',
-        },
-        {
-            title: 'LA STELLA',
-            number: 'XVII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/17.jpg',
-            linkTo: '/archetypes/XVII',
-        },
-        {
-            title: 'LA LUNA',
-            number: 'XVIII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/18.jpg',
-            linkTo: '/archetypes/XVIII',
-        },
-        {
-            title: 'IL SOLE',
-            number: 'XIX',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/19.jpg',
-            linkTo: '/archetypes/XIX',
-        },
-        {
-            title: 'IL GIUDIZIO',
-            number: 'XX',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/20.jpg',
-            linkTo: '/archetypes/XX',
-        },
-        {
-            title: 'IL MONDO',
-            number: 'XXI',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/21.jpg',
-            linkTo: '/archetypes/XXI',
-        },
-        {
-            title: 'IL MATTO',
-            number: 'XXII',
-            text: 'Se avete trovato',
-            imgSrc: './images/archetypes/22.jpg',
-            linkTo: '/archetypes/XXII',
-        },
-    ];
+    // Обработчик клика по карточке
+    const handleClickSlide = (to) => {
+        if (!swiperRef.current) return;
+
+        const swiper = swiperRef.current.swiper;
+        const currentRealIndex = swiper.realIndex;
+
+        // Если уже активный, не делаем ничего
+        if (currentRealIndex === to) return;
+
+        rightSwipe();
+        setTimeout(() => {
+            swiper.slideToLoop(to);
+        }, 1000);
+    };
 
     return (
         <>
@@ -525,7 +541,7 @@ export default function App() {
                         loop={true}
                         slidesPerView={4}
                         centeredSlides={false}
-                        slideToClickedSlide={true}
+                        slideToClickedSlide={false}
                         ref={swiperRef}
                         onSetTranslate={() => {
                             const w = document.querySelector('.swiper-wrapper');
@@ -558,8 +574,15 @@ export default function App() {
                         }}
                     >
                         {archetypesData.map((data, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="archetypes-demo__item-wrapper">
+                            <SwiperSlide
+                                key={index}
+                                onClick={() => {
+                                    handleClickSlide(index);
+                                }}
+                            >
+                                <div
+                                    className={`archetypes-demo__item-wrapper`}
+                                >
                                     <div className="archetypes-demo__item-body">
                                         <span className="archetypes-demo__item-number">
                                             {data.number}

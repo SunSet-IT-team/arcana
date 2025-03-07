@@ -24,6 +24,7 @@
     .swiper {
         width: 85%;
         height: 100%;
+        max-width: 1475px;
 
         margin-right: 0;
         @media screen and (max-width: 1024px) {
@@ -182,8 +183,7 @@
         }
         &__item-wrapper {
             border: 1px solid $white;
-            padding: 5px;
-            padding-bottom: 10px;
+            padding: 10px;
             // height: 360px;
         }
         &__item-title {
@@ -204,25 +204,27 @@
             margin-top: -5px;
         }
         &__item-info {
-            display: unset !important;
+            display: block !important;
             position: unset !important;
             max-width: unset !important;
             padding: unset !important;
             transform: unset !important;
             opacity: unset !important;
             visibility: unset !important;
-            padding: 5px !important;
-            margin-top: 3px;
+            padding: 0px !important;
+            margin-top: 10px;
             padding-bottom: 0 !important;
             justify-content: flex-end !important;
         }
         &__item-text {
             line-height: 1.46 !important;
-            margin-bottom: 5px !important;
+            margin-bottom: 10px !important;
         }
         &__item-text-1 {
-            line-height: 1.3 !important;
+            line-height: 1.4 !important;
             font-size: 10px !important;
+            color: #717171;
+            margin-bottom: 5px;
         }
         &__item-text-2 {
             line-height: 1.3 !important;
@@ -327,15 +329,19 @@
             }
             &__item-link {
                 font-size: 18px;
-                // margin-right: -40px;
                 line-height: 21px;
                 width: calc((100vw - 95px - 95px - 80px) / 5);
-                display: flex;
-                justify-content: start;
-                margin-left: auto;
 
                 transition: color 0.3s;
-
+                margin-top: 14px;
+                display: flex;
+                justify-content: flex-end;
+                float: unset;
+                svg {
+                    margin: 0;
+                    width: 18px !important;
+                    height: 18px !important;
+                }
                 &:hover {
                     color: $light-grey;
                 }

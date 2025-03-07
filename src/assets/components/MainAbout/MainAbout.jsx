@@ -173,13 +173,19 @@ function MainAbout() {
                         </div>
 
                         <div className="about__box" ref={textWhiteRef}>
-                            {text.map((item) => {
+                            {text.map((item, index) => {
                                 const words = item.split('');
                                 return (
-                                    <p className="about__box-text  text-white">
-                                        {words.map((word) => {
+                                    <p
+                                        className="about__box-text  text-white"
+                                        key={`${item}-${index}`}
+                                    >
+                                        {words.map((word, index) => {
                                             return (
-                                                <span className="word">
+                                                <span
+                                                    className="word"
+                                                    key={`${word}-${index}`}
+                                                >
                                                     {word}
                                                 </span>
                                             );
