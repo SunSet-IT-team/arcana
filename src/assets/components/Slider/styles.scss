@@ -336,10 +336,11 @@
                 transition: color 0.3s;
                 margin-top: 14px;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-start;
                 float: unset;
+                margin-left: auto;
                 svg {
-                    margin: 0;
+                    margin-left: 20px;
                     width: 18px !important;
                     height: 18px !important;
                 }
