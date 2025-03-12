@@ -19,154 +19,428 @@ const archetypesData = [
     {
         title: 'IL MAGO',
         number: 'I',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/1.jpg',
+        text: (
+            <>
+                <p className="text-split">I IL MAGO</p>
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">PAROLA</p>
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">CHIACCHERE INUTILI</p>
+            </>
+        ),
         linkTo: '/archetypes/I',
     },
     {
         title: 'LA PAPESSA',
         number: 'II',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/2.jpg',
+        text: (
+            <>
+                <p className="text-split">II LA PAPESSA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">TUTELA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">IPERPROTEZIONE</p>
+            </>
+        ),
         linkTo: '/archetypes/II',
     },
     {
         title: "L'IMPERATRICE",
         number: 'III',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/3.jpg',
+        text: (
+            <>
+                <p className="text-split">III L’IMPERATRICE</p>
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">BELLEZZA</p>
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">INFERTILITA’</p>
+            </>
+        ),
         linkTo: '/archetypes/III',
     },
     {
         title: "L'IMPERATORE",
         number: 'IV',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/4.jpg',
+        text: (
+            <>
+                <p className="text-split">IV L’IMPERTORE</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">POTERE</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">DISPOTISMO</p>
+            </>
+        ),
         linkTo: '/archetypes/IV',
     },
     {
         title: 'IL PAPA',
         number: 'V',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/5.jpg',
+        text: (
+            <>
+                <p className="text-split">V IL PAPA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">AUTORITA’ </p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">STUPIDITA’</p>
+            </>
+        ),
         linkTo: '/archetypes/V',
     },
     {
         title: "L'INNAMORATO",
         number: 'VI',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
-        imgSrc: './images/archetypes/6.jpg',
+        text: (
+            <>
+                <p className="text-split">VI L’INNAMORATO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">SCELTA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">DISTRUZIONE DELLA RELAZIONE</p>
+            </>
+        ),
         linkTo: '/archetypes/VI',
     },
     {
         title: 'IL CARRO',
         number: 'VII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">VII IL CARRO</p>
+
+                <p className="text-split">energia: </p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">BERSAGLIO</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">ASSENZA DI SCOPO</p>
+            </>
+        ),
         imgSrc: './images/archetypes/7.jpg',
         linkTo: '/archetypes/VII',
     },
     {
         title: 'LA GIUSTIZIA',
         number: 'VIII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">VIII LA GIUSTIZIA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">REGOLE</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">INIQUITA’</p>
+            </>
+        ),
         imgSrc: './images/archetypes/8.jpg',
         linkTo: '/archetypes/VIII',
     },
     {
         title: "L'EREMITA",
         number: 'IX',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">IX L’EREMITA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">SAGGEZZA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">IL CAMMINO DI QUALCUN ALTRO</p>
+            </>
+        ),
         imgSrc: './images/archetypes/9.jpg',
         linkTo: '/archetypes/IX',
     },
     {
         title: 'LA RUOTA DELLA FORTUNA',
         number: 'X',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">X LA RUOTA DELLA FORTUNA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">PROPRI BISOGNI</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">DEBITI</p>
+            </>
+        ),
         imgSrc: './images/archetypes/10.jpg',
         linkTo: '/archetypes/X',
     },
     {
         title: 'LA FORZA',
         number: 'XI',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XI LA FORZA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">GESTA EROICHE</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">VIOLENZA</p>
+            </>
+        ),
         imgSrc: './images/archetypes/11.jpg',
         linkTo: '/archetypes/XI',
     },
     {
         title: "L'APPESO",
         number: 'XII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XII L’APPESO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">SACRIFICIO VOLONTARIO</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">VITTIMA</p>
+            </>
+        ),
         imgSrc: './images/archetypes/12.jpg',
         linkTo: '/archetypes/XII',
     },
     {
         title: 'LA MORTE',
         number: 'XIII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XIII LA MORTE</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">CAMBIAMENTI</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">STAGNAZIONE</p>
+            </>
+        ),
         imgSrc: './images/archetypes/13.jpg',
         linkTo: '/archetypes/XIII',
     },
     {
         title: 'LA TEMPERANZA',
         number: 'XIV',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XIV LA TEMPERANZA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">EQUILIBRIO</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">ESTREMI</p>
+            </>
+        ),
         imgSrc: './images/archetypes/14.jpg',
         linkTo: '/archetypes/XIV',
     },
     {
         title: 'IL DIAVOLO',
         number: 'XV',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XV IL DIAVOLO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">PIACERE</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">DIPENDENZE</p>
+            </>
+        ),
         imgSrc: './images/archetypes/15.jpg',
         linkTo: '/archetypes/XV',
     },
     {
         title: 'LA TORRE',
         number: 'XVI',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XVI LA TORRE</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">COSTRUZIONE</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">DISTRUZIONE</p>
+            </>
+        ),
         imgSrc: './images/archetypes/16.jpg',
         linkTo: '/archetypes/XVI',
     },
     {
         title: 'LA STELLA',
         number: 'XVII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XVII LA STELLA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">AMICIZIA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">TRADIMENTO</p>
+            </>
+        ),
         imgSrc: './images/archetypes/17.jpg',
         linkTo: '/archetypes/XVII',
     },
     {
         title: 'LA LUNA',
         number: 'XVIII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XVIII LA LUNA</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">FEMMINILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">INCONSCIO</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">PAURE</p>
+            </>
+        ),
         imgSrc: './images/archetypes/18.jpg',
         linkTo: '/archetypes/XVIII',
     },
     {
         title: 'IL SOLE',
         number: 'XIX',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XIX IL SOLE</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">MASCHILE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">COSCENZA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">INCENERIMENTO</p>
+            </>
+        ),
         imgSrc: './images/archetypes/19.jpg',
         linkTo: '/archetypes/XIX',
     },
     {
         title: 'IL GIUDIZIO',
         number: 'XX',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XX IL GIUDIZIO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">UNIONE SU VALORI COMUNI</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">MANCANZA DI VALORI PROPRI</p>
+            </>
+        ),
         imgSrc: './images/archetypes/20.jpg',
         linkTo: '/archetypes/XX',
     },
     {
         title: 'IL MONDO',
         number: 'XXI',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XXI IL MONDO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">ILLIMITATEZZA</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">INVASIONE DEI CONFINI</p>
+            </>
+        ),
         imgSrc: './images/archetypes/21.jpg',
         linkTo: '/archetypes/XXI',
     },
     {
         title: 'IL MATTO',
         number: 'XXII',
-        text: 'Se avete trovato',
+        text: (
+            <>
+                <p className="text-split">XXII IL MATTO</p>
+
+                <p className="text-split">energia:</p>
+                <p className="text-split">NEUTRALE</p>
+
+                <p className="text-split">manifestazione positiva:</p>
+                <p className="text-split">GIOCO</p>
+
+                <p className="text-split">manifestazione negativa:</p>
+                <p className="text-split">IRRESPONSABILITA’</p>
+            </>
+        ),
         imgSrc: './images/archetypes/22.jpg',
         linkTo: '/archetypes/XXII',
     },
@@ -620,7 +894,7 @@ export default function App() {
 
                                     <div className="archetypes-demo__item-info">
                                         <p
-                                            className={`archetypes-demo__item-text text-split`}
+                                            className={`archetypes-demo__item-text`}
                                         >
                                             {data.text}
                                         </p>
