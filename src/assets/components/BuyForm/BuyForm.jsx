@@ -28,36 +28,67 @@ function BuyForm() {
                 duration: 1,
                 x: '0',
             });
-            tl.to(['.buy-form__subtitle', '.buy-form__input'], {
+
+            tl.to('.buy-form__form-text', {
                 duration: 1,
-                stagger: {
-                    amount: 0.5,
-                },
-                x: '0',
+                opacity: 1,
+                y: '0',
             });
-            tl.to(['.buy-form__title .line', '.buy-form__subtitle .line'], {
+
+            // А) Логотип и Кнопка "закрыть"
+            tl.to(['.buy-form__logo', '.buy-form__close'], {
+                duration: 0.6,
+                opacity: 1,
+                y: '0',
+            });
+
+            // Б) Линии
+            tl.to(['.buy-form__subtitle', '.buy-form__input'], {
+                '--x-offset-line': '0%',
                 duration: 0.5,
                 y: '0',
-                rotate: '0',
+
+                x: '0',
             });
-            tl.to(
-                [
-                    '.buy-form__text',
-                    '.buy-form__form-text',
-                    '.buy-form__form-button',
-                    '.buy-form__title-img',
-                    '.buy-form__label',
-                ],
-                {
-                    duration: 0.5,
-                    opacity: 1,
-                }
-            );
-            tl.to(['.buy-form__logo', '.buy-form__close'], {
+
+            // В) Название блока попапа
+            tl.to(['.buy-form__form-box .line'], {
+                duration: 1.5,
+                rotate: '0',
+                x: '0',
+                y: '0',
+            });
+            // Сова
+            tl.to(['.buy-form__title-img'], {
                 duration: 0.5,
                 opacity: 1,
             });
+
+            // Г) Название текстов для ввода данных и текст слева
+            tl.to(
+                [
+                    '.buy-form__input',
+                    '.buy-form__text .line',
+                    '.buy-form__label',
+                ],
+                {
+                    duration: 1,
+                    '--placeholder-offset': '0',
+                    y: '0',
+                    autoAlpha: 1,
+                    rotate: '0',
+                }
+            );
+            //Кнопка
+            tl.to(['.buy-form__form-button'], {
+                duration: 3,
+                y: '0',
+                autoAlpha: 1,
+                rotate: '0',
+            });
+
             tl.play();
+
             const isNested = document.body.classList.contains('menu-open');
             if (!isNested) {
                 document.body.classList.add('menu-open');
@@ -69,7 +100,7 @@ function BuyForm() {
                     if (!isNested) {
                         document.body.classList.remove('menu-open');
                     }
-                }, 2500);
+                }, 2000);
             };
         }
     }, [isFormOpen]);
@@ -121,15 +152,15 @@ function BuyForm() {
                     </div>
                     <div className="buy-form__content">
                         <div className="buy-form__text">
-                            <p>
+                            <p className="text-split">
                                 Per acquistare una descrizione dettagliata degli
                                 archetipi, è necessario effettuare un
                                 trasferimento di denaro di <span>100 euro</span>
                             </p>
-                            <p>
+                            <p className="text-split">
                                 sulla carta: <span>1234 5678 8910 1112 </span>
                             </p>
-                            <p>
+                            <p className="text-split">
                                 e scrivici un messaggio che hai effettuato un
                                 trasferimento di denaro e allegare una copia
                                 dell'ordine di pagamento della tua banca o uno
