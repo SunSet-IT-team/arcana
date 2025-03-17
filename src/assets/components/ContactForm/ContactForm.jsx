@@ -15,6 +15,7 @@ import {TextLinesReveal} from '../../js/textLinesReveal';
 import Button from '../../components/Button/Button';
 
 import {useForm} from 'react-hook-form';
+import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import './styles.scss';
 
 function ContactForm() {
@@ -111,29 +112,12 @@ function ContactForm() {
         }
     }, [isFormOpen]);
 
-    // АВТОВЫСОТА К TEXT-AREA
-    // function autoResizeTextarea(element) {
-    //     element.style.height = '78px';
-    //     element.style.height = Math.min(element.scrollHeight, 350) + 'px';
-    // }
-
     const textareas = document.querySelectorAll('.contact-form__input--text');
 
-    // textareas.forEach((textarea) => {
-    //     textarea.addEventListener('input', () => {
-    //         autoResizeTextarea(textarea);
-    //     });
-    // });
-
-    // textareas.forEach((textarea) => {
-    //     autoResizeTextarea(textarea);
-    // });
-
     const onSubmit = (data) => {
+        navigate('/success-send');
+        dispatch(setOpenProfileMethod(false));
         dispatch(setOpenContactForm(false));
-        setTimeout(() => {
-            navigate('/success-send');
-        }, 8600);
     };
 
     const {register, handleSubmit, watch} = useForm({
