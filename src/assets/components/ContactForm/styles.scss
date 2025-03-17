@@ -157,6 +157,9 @@
         margin-top: auto;
         color: $light-grey;
         padding-top: 30px;
+        @media screen and (min-width: 1800px) {
+            padding-top: 35px;
+        }
     }
     &__title {
         margin-right: 20px;
