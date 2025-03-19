@@ -15,7 +15,6 @@ import {TextLinesReveal} from '../../js/textLinesReveal';
 import Button from '../../components/Button/Button';
 
 import {useForm} from 'react-hook-form';
-import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import './styles.scss';
 
 function ContactForm() {
@@ -116,8 +115,9 @@ function ContactForm() {
 
     const onSubmit = (data) => {
         navigate('/success-send');
-        dispatch(setOpenProfileMethod(false));
-        dispatch(setOpenContactForm(false));
+        navigate(0);
+        // dispatch(setOpenProfileMethod(false));
+        // dispatch(setOpenContactForm(false));
     };
 
     const {register, handleSubmit, watch} = useForm({
