@@ -42,12 +42,14 @@ function MainBlog() {
                         <span>BLOG</span>
                     </TitleAnimation>
 
-                    <BlogList data={blogData} />
-                    <Link
-                        text="TUTTI GLI ARTICOLI DEL BLOG"
-                        className="blog-demo__link link--black"
-                        path="blog"
-                    />
+                    <BlogList data={blogData} isShowMore={false} />
+                    <div className="blog-demo__link-wrapper">
+                        <Link
+                            text="TUTTI GLI ARTICOLI DEL BLOG"
+                            className="blog-demo__link link--black"
+                            path="blog"
+                        />
+                    </div>
                 </div>
             </div>
         </section>

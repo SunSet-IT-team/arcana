@@ -99,6 +99,7 @@ const blogData = [
 ];
 
 function BlogBlog() {
+    const [isShowClipPath, setIsShowClipPath] = useState(false);
     const [selectedBlogFilter, setSelectedBlogFilter] = useState('TUTTI');
     const [showCountArticles, setShowCountArticles] = useState(6);
     const [articles, setArticles] = useState(
@@ -115,10 +116,16 @@ function BlogBlog() {
     }, [filteredArticles, showCountArticles]);
     const handleShowMore = () => {
         setShowCountArticles((prev) => (prev += 2));
+        if (!isShowClipPath) {
+            setIsShowClipPath(true);
+        }
     };
 
     const handleBlogFilterChange = (selectedBlogFilter) => {
         setSelectedBlogFilter(selectedBlogFilter);
+        if (!isShowClipPath) {
+            setIsShowClipPath(true);
+        }
     };
 
     const hasMoreArticles = showCountArticles < filteredArticles.length;
@@ -175,7 +182,7 @@ function BlogBlog() {
                             value={selectedBlogFilter}
                         />
                     </div>
-                    <BlogList data={articles} />
+                    <BlogList data={articles} isShowClipPath={isShowClipPath} />
                     {hasMoreArticles && (
                         <div className="blog__bottom" onClick={handleShowMore}>
                             <Button
