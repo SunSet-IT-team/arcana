@@ -107,7 +107,7 @@ function App() {
 
     return (
         <div className="App">
-            <Preloader />
+            {location.pathname !== '/success-send' && <Preloader />}
             <div className="cursor"></div>
             <div className="aura"></div>
             <Header />

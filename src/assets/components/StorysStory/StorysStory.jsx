@@ -227,7 +227,6 @@ function StorysStory() {
             setIsMobile(window.innerWidth <= 425);
         };
         handleResize();
-        console.log(window.innerWidth);
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);

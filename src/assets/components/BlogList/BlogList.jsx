@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import {Link} from 'react-router-dom';
 import './styles.scss';
 
-function BlogList({data}) {
+function BlogList({data, isShowClipPath}) {
     // РАЗДЕЛЕНИЕ ТЕКСТА НА СЛОВА
     React.useEffect(() => {
         const textSplitElements = document.querySelectorAll('.text-split');
@@ -188,7 +188,12 @@ function BlogList({data}) {
                             </div>
                             <div className="blog-list__imgBox">
                                 <div className="blog-list__imgBg">
-                                    <div className="blog-list__imgBl">
+                                    <div
+                                        className="blog-list__imgBl"
+                                        style={{
+                                            clipPath: isShowClipPath && 'none',
+                                        }}
+                                    >
                                         <img
                                             className="blog-list__img"
                                             src={blog.imgSrc}
