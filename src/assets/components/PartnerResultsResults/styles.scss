@@ -100,13 +100,13 @@
         &:nth-child(1) {
             &:before {
                 bottom: 50%;
-                left: clamp(-146px, size-desktop(-146px), 10px);
+                left: clamp(-130px, size-desktop(-130px), 10px);
                 width: 1px;
                 height: 80px;
             }
             &:after {
                 top: 50%;
-                left: clamp(-146px, size-desktop(-146px), 10px);
+                left: clamp(-130px, size-desktop(-130px), 10px);
                 width: clamp(10px, size-desktop(146px), 146px);
                 height: 1px;
             }
