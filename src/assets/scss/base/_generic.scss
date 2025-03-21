@@ -37,8 +37,10 @@ body.menu-open {
     overflow-y: hidden;
     .cursor {
         background-color: #0e0e0e;
+        z-index: 9999;
     }
     .aura {
+        z-index: 9999;
         border: 1px solid rgba(#0e0e0e, 0.2);
         background-color: rgba(#0e0e0e, 0.027);
         &.active {
