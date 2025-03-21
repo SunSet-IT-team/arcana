@@ -118,7 +118,7 @@ function MonthResultsResults() {
                                             {toRim(pos4)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ТЕМА PRINCIPALE{' '}
+                                            PRINCIPALE{' '}
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos2)}

@@ -393,8 +393,7 @@ function PartnerResultsResults() {
                             <ul className="partner-results__info-list">
                                 <li className="partner-results__info-item">
                                     <span className="partner-results__info-number underline">
-                                        Numero di posizione della mappa
-                                        archetipica del rapporto
+                                        NUMERO
                                     </span>
                                     <p className="partner-results__info-name underline">
                                         POSIZIONE

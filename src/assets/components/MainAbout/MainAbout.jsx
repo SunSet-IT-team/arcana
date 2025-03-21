@@ -118,7 +118,8 @@ function MainAbout() {
                             <p className="about__info-subtext">
                                 DOTT.SSAOLGAVEDA, ANTROPOLOGA CULTURALE,
                                 ANALISTA DI PATTERN ARCHETIPICI, PSICOLOGA DELLA
-                                DATA DI NASCITA
+                                DATA <br />
+                                DI NASCITA
                             </p>
                         </div>
 
