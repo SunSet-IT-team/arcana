@@ -203,6 +203,7 @@ function ArchetypesArchetypes() {
             const handleResize = () => {
                 setIsMobile(window.innerWidth <= 768);
             };
+
             handleResize();
             window.addEventListener('resize', handleResize);
             return () => {
