@@ -1,15 +1,17 @@
 .container {
     margin: 0 auto;
     max-width: 1920px;
-    width: 100%;
+    width: 100vw;
+    padding-left: calc(4.95vw); // Боковые отступы
+    padding-right: calc(4.95vw);
 
-    @media screen and (min-width: 1024px) {
-        padding: 0 95px;
-    }
+    // @media screen and (min-width: 1024px) {
+    //     padding: 0 95px;
+    // }
 
     @media screen and (max-width: 1024px) {
         max-width: unset;
-        padding: 0 80px;
+        // padding: 0 80px;
     }
 
     @media screen and (max-width: 767px) {

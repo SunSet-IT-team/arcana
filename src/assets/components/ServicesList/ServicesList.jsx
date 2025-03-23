@@ -139,6 +139,12 @@ function ServicesList({services}) {
                             <span className="services-list__time text-split">
                                 {service.time}
                             </span>
+                            <span className="services-list__line text-split services-list__line--empty">
+                                ⠀
+                            </span>
+                            <span className="services-list__line text-split services-list__line--empty">
+                                ⠀
+                            </span>
                             <span className="services-list__price text-split">
                                 {service.price} euro
                             </span>
