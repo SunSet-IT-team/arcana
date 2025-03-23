@@ -456,7 +456,7 @@
     }
     &__title {
         margin-right: 20px;
-        line-height: 76.8px;
+        line-height: 1.2;
         font-size: clamp(32px, size-desktop(64px), 64px) !important;
         @media screen and (max-width: 1280px) {
             font-size: 32px !important;

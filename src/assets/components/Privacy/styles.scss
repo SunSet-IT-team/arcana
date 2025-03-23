@@ -152,7 +152,7 @@
         opacity: 0;
     }
     &__title {
-        line-height: 76.8px;
+        line-height: 1.2;
         margin-bottom: size-desktop(90px);
         border-bottom: $contour-grey;
 
@@ -177,7 +177,7 @@
     }
     &__text {
         font-size: clamp(18px, size-desktop(32px), 32px);
-        line-height: 44.8px;
+        line-height: 1.4;
         color: $grey;
 
         &:not(:last-child) {
@@ -197,7 +197,7 @@
         &__title {
             font-size: 32px !important;
 
-            line-height: 64px;
+            line-height: 2;
         }
         &__text-box {
             margin-top: 20px;

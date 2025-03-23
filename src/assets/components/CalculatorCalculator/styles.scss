@@ -14,7 +14,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(185px), 185px);
-        line-height: 76.8px;
+        line-height: 1.2;
     }
     &__content {
         display: flex;
@@ -66,7 +66,7 @@
             }
             span {
                 margin-left: -2px;
-                line-height: 18px;
+                line-height: 1.4;
             }
         }
         &__title {
@@ -88,7 +88,7 @@
             }
         }
         &__body-link {
-            line-height: 24.5px !important;
+            line-height: 1.4 !important;
         }
     }
 

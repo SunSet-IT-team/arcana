@@ -303,7 +303,7 @@
                 overflow: hidden;
             }
             &__item-text {
-                line-height: 25.2px;
+                line-height: 1.4;
                 font-size: clamp(13px, size-desktop(18px), 18px);
                 @media screen and (min-width: 1440px) {
                     margin-bottom: 46px;
@@ -330,7 +330,7 @@
             }
             &__item-link {
                 font-size: 18px;
-                line-height: 21px;
+                line-height: 1.2;
                 width: calc((100vw - 95px - 95px - 80px) / 5);
 
                 transition: color 0.3s;

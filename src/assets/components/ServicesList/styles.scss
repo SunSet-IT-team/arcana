@@ -79,7 +79,7 @@
         max-width: 40%;
         width: 100%;
         overflow: hidden;
-        line-height: 25.2px;
+        line-height: 1.4;
         margin-top: 4px;
         display: flex;
         flex-direction: column;
@@ -203,7 +203,7 @@
         &__button {
             font-size: 13px !important;
             padding: unset;
-            line-height: 18px;
+            line-height: 1.4;
             align-self: flex-end;
         }
     }

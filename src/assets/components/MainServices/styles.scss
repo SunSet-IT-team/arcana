@@ -8,7 +8,7 @@
         margin-left: auto;
         margin-top: 48px;
         max-width: 680px;
-        line-height: 21.6px;
+        line-height: 1.4;
     }
     @media screen and (min-width: 1150px) {
         &__link {
@@ -28,7 +28,6 @@
             margin-top: 50px;
             max-width: 510px !important;
             padding: 4px;
-            line-height: 30px;
             margin-right: 5px;
         }
     }
@@ -42,7 +41,6 @@
         &__link {
             font-size: 8px !important;
             margin-top: 20px;
-            line-height: 24px;
             margin-right: auto;
             width: 100%;
             margin-left: 3px;

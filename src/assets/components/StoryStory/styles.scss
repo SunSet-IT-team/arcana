@@ -14,7 +14,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(127px), 127px);
-        line-height: 76.8px;
+        line-height: 1.2;
     }
     &__wrapper {
         display: flex;
@@ -55,15 +55,16 @@
 
     &__body {
         & h2 {
-            line-height: 44.8px;
+            line-height: 1.4;
         }
+
+        line-height: 1.4;
 
         & p:nth-child(2) {
             margin: 47px 0;
         }
         p:nth-child(10) {
             margin-top: 47px;
-            line-height: 25.2px;
         }
     }
 
@@ -105,7 +106,7 @@
             padding-left: 0;
             span {
                 margin-left: -10px;
-                line-height: 18px;
+                line-height: 1.4;
             }
             svg {
                 width: 16px !important;

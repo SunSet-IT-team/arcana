@@ -13,7 +13,7 @@
         color: $light-grey;
     }
     &__title {
-        line-height: 76.8px;
+        line-height: 1.2;
         margin-bottom: clamp(10px, size-desktop(200px), 200px);
     }
     &__content {
@@ -26,12 +26,12 @@
     }
     &__body-text {
         font-size: clamp(13px, size-desktop(18px), 18px);
-        line-height: 25.2px;
+        line-height: 1.4;
         margin-bottom: clamp(10px, size-desktop(110px), 110px);
     }
     &__info {
         width: 60%;
-        line-height: 25.2px;
+        line-height: 1.4;
     }
     &__info-list {
         margin-bottom: 50px;

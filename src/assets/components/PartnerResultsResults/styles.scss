@@ -14,7 +14,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(200px), 200px);
-        line-height: 76.8px;
+        line-height: 1.2;
     }
     &__content {
         display: flex;
@@ -36,7 +36,7 @@
     }
     &__body-date {
         font-size: clamp(13px, size-desktop(18px), 18px);
-        line-height: 25.2px;
+        line-height: 1.4;
         display: inline-block;
 
         margin: 0 auto 20px;
@@ -50,7 +50,7 @@
         height: clamp(10px, size-desktop(900px), 900px);
     }
     &__text {
-        line-height: 25.2px;
+        line-height: 1.4;
         font-size: clamp(13px, size-desktop(18px), 18px);
         &:not(:last-child) {
             margin-bottom: clamp(15px, size-desktop(50px), 50px);
@@ -151,7 +151,7 @@
     &__info-item {
         display: flex;
         align-items: center;
-        line-height: 25.2px;
+        line-height: 1.4;
         &:not(:last-child) {
             margin-bottom: 20px;
         }
