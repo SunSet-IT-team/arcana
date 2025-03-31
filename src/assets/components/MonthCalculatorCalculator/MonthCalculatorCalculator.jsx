@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {
-    setResults,
     selectResults,
+    setResults,
 } from '../../../redux/slices/resultsMonthSlice';
 
 import './styles.scss';
@@ -21,8 +21,12 @@ function MonthCalculatorCalculator() {
     const [selectedDay, setSelectedDay] = useState('');
     const [selectedMonth, setSelectedMonth] = useState('');
     const [selectedYear, setSelectedYear] = useState('');
-    const [selectedMonth2, setSelectedMonth2] = useState('');
-    const [selectedYear2, setSelectedYear2] = useState('2025');
+    const [selectedMonth2, setSelectedMonth2] = useState(
+        (new Date().getMonth() + 1).toString()
+    );
+    const [selectedYear2, setSelectedYear2] = useState(
+        (new Date().getFullYear() + 1).toString()
+    );
     const [isAllSelected, setIsAllSelected] = useState(false);
 
     const handleCalculateClick = () => {
