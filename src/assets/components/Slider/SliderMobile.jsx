@@ -1,10 +1,10 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
+import {Link} from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {FreeMode, Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Link} from 'react-router-dom';
-import Marquee from 'react-fast-marquee';
 const archetypesData = [
     {
         title: 'IL MAGO',
@@ -13,6 +13,7 @@ const archetypesData = [
         negative: 'PROMESSE VUOTE',
         imgSrc: './images/archetypes/1.jpg',
         linkTo: '/archetypes/I',
+        energy: 'MASCHILE',
     },
     {
         title: 'LA PAPESSA',
@@ -21,6 +22,7 @@ const archetypesData = [
         negative: 'SUPER TUTELA',
         imgSrc: './images/archetypes/2.jpg',
         linkTo: '/archetypes/II',
+        energy: 'FEMMINILE',
     },
     {
         title: "L'IMPERATRICE",
@@ -29,6 +31,7 @@ const archetypesData = [
         negative: 'BRUTTEZZA',
         imgSrc: './images/archetypes/3.jpg',
         linkTo: '/archetypes/III',
+        energy: 'FEMMINILE',
     },
     {
         title: "L'IMPERATORE",
@@ -37,6 +40,7 @@ const archetypesData = [
         negative: 'DISPOTISMO',
         imgSrc: './images/archetypes/4.jpg',
         linkTo: '/archetypes/IV',
+        energy: 'MASCHILE',
     },
     {
         title: 'IL PAPA',
@@ -45,6 +49,7 @@ const archetypesData = [
         negative: 'STUPIDITÀ',
         imgSrc: './images/archetypes/5.jpg',
         linkTo: '/archetypes/V',
+        energy: 'MASCHILE',
     },
     {
         title: "L'INNAMORATO",
@@ -53,6 +58,7 @@ const archetypesData = [
         negative: 'ROMPERE LE RELAZIONI',
         imgSrc: './images/archetypes/6.jpg',
         linkTo: '/archetypes/VI',
+        energy: 'NEUTRALE',
     },
     {
         title: 'IL CARRO',
@@ -61,6 +67,7 @@ const archetypesData = [
         negative: 'INUTILITÀ',
         imgSrc: './images/archetypes/7.jpg',
         linkTo: '/archetypes/VII',
+        energy: 'MASCHILE',
     },
     {
         title: 'LA GIUSTIZIA',
@@ -69,6 +76,7 @@ const archetypesData = [
         negative: 'INIQUITÀ',
         imgSrc: './images/archetypes/8.jpg',
         linkTo: '/archetypes/VIII',
+        energy: 'FEMMINILE',
     },
     {
         title: "L'EREMITA",
@@ -77,6 +85,7 @@ const archetypesData = [
         negative: 'MODO STRANIERO',
         imgSrc: './images/archetypes/9.jpg',
         linkTo: '/archetypes/IX',
+        energy: 'NEUTRALE',
     },
     {
         title: 'LA RUOTA DELLA FORTUNA',
@@ -85,6 +94,7 @@ const archetypesData = [
         negative: 'DEBITI',
         imgSrc: './images/archetypes/10.jpg',
         linkTo: '/archetypes/X',
+        energy: 'NEUTRALE',
     },
     {
         title: 'LA FORZA',
@@ -93,6 +103,7 @@ const archetypesData = [
         negative: 'VIOLENZA',
         imgSrc: './images/archetypes/11.jpg',
         linkTo: '/archetypes/XI',
+        energy: 'FEMMINILE',
     },
     {
         title: "L'APPESO",
@@ -101,6 +112,7 @@ const archetypesData = [
         negative: 'SACRIFICIO INESTIMABILE',
         imgSrc: './images/archetypes/12.jpg',
         linkTo: '/archetypes/XII',
+        energy: 'NEUTRALE',
     },
     {
         title: 'LA MORTE',
@@ -109,6 +121,7 @@ const archetypesData = [
         negative: 'STAGNAZIONE',
         imgSrc: './images/archetypes/13.jpg',
         linkTo: '/archetypes/XIII',
+        energy: 'FEMMINILE',
     },
     {
         title: 'LA TEMPERANZA',
@@ -117,6 +130,7 @@ const archetypesData = [
         negative: 'ESTREMO',
         imgSrc: './images/archetypes/14.jpg',
         linkTo: '/archetypes/XIV',
+        energy: 'NEUTRALE',
     },
     {
         title: 'IL DIAVOLO',
@@ -125,6 +139,7 @@ const archetypesData = [
         negative: 'DIPENDENZE',
         imgSrc: './images/archetypes/15.jpg',
         linkTo: '/archetypes/XV',
+        energy: 'MASCHILE',
     },
     {
         title: 'LA TORRE',
@@ -133,6 +148,7 @@ const archetypesData = [
         negative: 'DISTRUZIONE',
         imgSrc: './images/archetypes/16.jpg',
         linkTo: '/archetypes/XVI',
+        energy: 'MASCHILE',
     },
     {
         title: 'LA STELLA',
@@ -141,6 +157,7 @@ const archetypesData = [
         negative: 'TRADIMENTO',
         imgSrc: './images/archetypes/17.jpg',
         linkTo: '/archetypes/XVII',
+        energy: 'FEMMINILE',
     },
     {
         title: 'LA LUNA',
@@ -149,6 +166,7 @@ const archetypesData = [
         negative: 'PAURE',
         imgSrc: './images/archetypes/18.jpg',
         linkTo: '/archetypes/XVIII',
+        energy: 'FEMMINILE',
     },
     {
         title: 'IL SOLE',
@@ -157,6 +175,7 @@ const archetypesData = [
         negative: 'INCENERIMENTO',
         imgSrc: './images/archetypes/19.jpg',
         linkTo: '/archetypes/XIX',
+        energy: 'FEMMINILE',
     },
     {
         title: 'IL GIUDIZIO',
@@ -165,6 +184,7 @@ const archetypesData = [
         negative: 'DIPENDENZA DAI VALORI ALTRUI',
         imgSrc: './images/archetypes/20.jpg',
         linkTo: '/archetypes/XX',
+        energy: 'NEUTRALE',
     },
     {
         title: 'IL MONDO',
@@ -173,6 +193,7 @@ const archetypesData = [
         negative: 'VIOLAZIONE DEI CONFINI',
         imgSrc: './images/archetypes/21.jpg',
         linkTo: '/archetypes/XXI',
+        energy: 'NEUTRALE',
     },
     {
         title: 'IL MATTO',
@@ -181,6 +202,7 @@ const archetypesData = [
         negative: 'IRRESPONSABILITÀ',
         imgSrc: './images/archetypes/22.jpg',
         linkTo: '/archetypes/XXII',
+        energy: 'NEUTRALE',
     },
 ];
 
@@ -253,6 +275,14 @@ function SliderMobile({archetypesProp = []}) {
                         </div>
 
                         <div className="archetypes-demo__item-info">
+                            <p className="archetypes-demo__item-text text-split text-cut">
+                                <span className="archetypes-demo__item-text-1">
+                                    Energia:
+                                </span>
+                                <span className="archetypes-demo__item-text-2">
+                                    {archetype.energy}
+                                </span>
+                            </p>
                             <p className="archetypes-demo__item-text text-split text-cut">
                                 <span className="archetypes-demo__item-text-1">
                                     Manifestazione positiva:
