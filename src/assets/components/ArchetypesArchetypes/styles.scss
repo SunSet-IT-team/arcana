@@ -233,7 +233,7 @@
         padding-top: 180px;
         padding-bottom: 250px;
         &__back-link {
-            line-height: 18px;
+            line-height: 1.4;
             margin-bottom: 190px;
             .underline {
                 margin-left: -5px;
@@ -243,7 +243,7 @@
             grid-gap: 13.75px;
         }
         &__item-link {
-            line-height: 18px;
+            line-height: 1.4;
             margin-top: 5px;
             .underline {
                 margin-left: -5px;
@@ -267,7 +267,7 @@
             justify-content: space-between;
             li {
                 padding: 0;
-                line-height: 16px;
+                line-height: 1.4;
             }
         }
         &__filter-select {
@@ -320,7 +320,7 @@
             padding: unset;
             span {
                 margin-left: -10px;
-                line-height: 18px;
+                line-height: 1.4;
             }
             svg {
                 width: 16px !important;

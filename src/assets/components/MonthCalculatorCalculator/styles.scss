@@ -14,7 +14,7 @@
     }
     &__title {
         margin-bottom: clamp(10px, size-desktop(190px), 190px);
-        line-height: 76.8px;
+        line-height: 1.2;
     }
     &__content {
         display: flex;
@@ -22,7 +22,7 @@
     }
     &__span {
         font-size: clamp(13px, size-desktop(18px), 18px);
-        line-height: 25.2px;
+        line-height: 1.4;
         display: block;
 
         width: 100%;
@@ -70,7 +70,7 @@
             }
             span {
                 margin-left: -2px;
-                line-height: 18px;
+                line-height: 1.4;
             }
         }
         &__title {
@@ -92,7 +92,7 @@
             }
         }
         &__body-link {
-            line-height: 24.5px !important;
+            line-height: 1.4 !important;
             max-width: unset !important;
         }
     }

@@ -55,6 +55,7 @@
     &__filter-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
         transition: color 0.3s;
+        line-height: 1.4;
 
         color: $light-grey;
 
@@ -85,7 +86,7 @@
         margin-left: auto;
         margin-top: 50px;
         margin-right: 67px;
-        line-height: 21.6px;
+        line-height: 1;
     }
 
     @media screen and (max-width: 1024px) {
@@ -99,7 +100,6 @@
             margin-bottom: 50px;
             &-item {
                 margin-right: 15.75px !important;
-                line-height: 16px;
             }
         }
         &__filter-select {
@@ -146,14 +146,13 @@
             margin-bottom: 40px !important;
             span {
                 margin-left: -10px;
-                line-height: 18px;
+                line-height: 1.4;
             }
         }
         &__button {
             margin-top: 50px;
             max-width: 510px !important;
             padding: 4px;
-            line-height: 30px;
             margin-right: 0;
         }
 
