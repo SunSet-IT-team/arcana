@@ -25,7 +25,7 @@ function MonthCalculatorCalculator() {
         (new Date().getMonth() + 1).toString()
     );
     const [selectedYear2, setSelectedYear2] = useState(
-        (new Date().getFullYear() + 1).toString()
+        new Date().getFullYear().toString()
     );
     const [isAllSelected, setIsAllSelected] = useState(false);
 

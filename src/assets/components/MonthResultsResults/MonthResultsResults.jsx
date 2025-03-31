@@ -75,24 +75,32 @@ function MonthResultsResults() {
                     </h1>
                     <div className="month-results__content">
                         <span className="month-results__span">
-                            Congratulazioni! Ecco la tabella dettagliata delle
-                            energie archetipiche per il periodo richiesto.
-                            Essere consapevoli delle energie su cui concentrarsi
-                            ci offre l’opportunità di vivere ogni fase della
-                            nostra vita nel modo più armonioso ed efficace
-                            possibile. Utilizzando le energie archetipiche come
-                            vele spinte da un vento favorevole, possiamo
-                            ottenere ciò che desideriamo con maggiore facilità,
-                            evitando le insidie di scogli pericolosi e acque
-                            poco profonde, dove potremmo non solo ferirci, ma
-                            anche rimanere bloccati per anni.
+                            <p>
+                                Congratulazioni! Ecco la tabella dettagliata
+                                delle energie archetipiche per il periodo
+                                richiesto.
+                            </p>
+                            <p>
+                                Essere consapevoli delle energie su cui
+                                concentrarsi ci offre l’opportunità di vivere
+                                ogni fase della nostra vita nel modo più
+                                armonioso ed efficace possibile.
+                            </p>
+                            <p>
+                                Utilizzando le energie archetipiche come vele
+                                spinte da un vento favorevole, possiamo ottenere
+                                ciò che desideriamo con maggiore facilità,
+                                evitando le insidie di scogli pericolosi e acque
+                                poco profonde, dove potremmo non solo ferirci,
+                                ma anche rimanere bloccati per anni.
+                            </p>
                         </span>
                         <div className="month-results__body">
                             <div class="month-results__tables">
                                 <div class="month-results__table month-results__table-top">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            ESAME DELL’ANNO{' '}
+                                            SENTIMENTO INTERIORE DEL MESE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos12)}
@@ -106,38 +114,37 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            INSTABILITA’ EMOTIVA{' '}
+                                            CRESCITA DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos1)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            CRESCITA DELL’ANNO{' '}
+                                            TENSIONEEMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos4)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            PRINCIPALE{' '}
+                                            LEZIONI DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONE NEL CAMBIAMENTO DI
-                                            COSCIENZA{' '}
+                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos5)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ESAME DELL’ANNO{' '}
+                                            ESAME DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            LEZIONI DELL’ANNO{' '}
+                                            ТЕМАPRINCIPALE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
@@ -155,13 +162,13 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            ENERGIA DI INSTABILITA’ EMOTIVA
+                                            INSTABILITA’ EMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            SENTIMENTO INTERIORE DEL MESE
+                                            ESPANSIONE DELLA COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos9)}
@@ -173,7 +180,7 @@ function MonthResultsResults() {
                                             {toRim(pos8)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONE EMOTIVA
+                                            OPPORTUNITA’
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos10)}
