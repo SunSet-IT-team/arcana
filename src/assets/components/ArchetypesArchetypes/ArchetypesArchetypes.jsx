@@ -11,132 +11,154 @@ const archetypesData = [
     {
         title: 'IL MAGO',
         number: 'I',
+        energy: 'MASCHILE',
         positive: 'PAROLA',
         negative: 'CHIACCHERE INUTILI',
     },
     {
         title: 'LA PAPESSA',
         number: 'II',
+        energy: 'FEMMINILE',
         positive: 'TUTELA',
         negative: 'IPERPROTEZIONE',
     },
     {
         title: "L'IMPERATRICE",
         number: 'III',
+        energy: 'FEMMINILE',
         positive: 'BELLEZZA',
         negative: 'INFERTILITA’',
     },
     {
         title: "L'IMPERATORE",
         number: 'IV',
+        energy: 'MASCHILE',
         positive: 'POTERE',
         negative: 'DISPOTISMO',
     },
     {
         title: 'IL PAPA',
         number: 'V',
+        energy: 'MASCHILE',
         positive: 'AUTORITA’',
         negative: 'STUPIDITÀ',
     },
     {
         title: "L'INNAMORATO",
         number: 'VI',
+        energy: 'NEUTRALE',
         positive: 'SCELTA',
         negative: 'DISTRUZIONE DELLA RELAZIONE',
     },
     {
         title: 'IL CARRO',
         number: 'VII',
+        energy: 'MASCHILE',
         positive: 'BERSAGLIO',
         negative: 'ASSENZA DI SCOPO',
     },
     {
         title: 'LA GIUSTIZIA',
         number: 'VIII',
+        energy: 'FEMMINILE',
         positive: 'REGOLE',
         negative: 'INIQUITÀ',
     },
     {
         title: "L'EREMITA",
         number: 'IX',
+        energy: 'NEUTRALE',
         positive: 'SAGGEZZA',
         negative: 'IL CAMMINO DI QUALCUN ALTRO',
     },
     {
         title: 'LA RUOTA DELLA FORTUNA',
         number: 'X',
+        energy: 'NEUTRALE',
         positive: 'PROPRI BISOGNI',
         negative: 'DEBITI',
     },
     {
         title: 'LA FORZA',
         number: 'XI',
+        energy: 'FEMMINILE',
         positive: 'GESTA EROICHE',
         negative: 'VIOLENZA',
     },
     {
         title: "L'APPESO",
         number: 'XII',
+        energy: 'NEUTRALE',
         positive: 'SACRIFICIO VOLONTARIO',
         negative: 'VITTIMA',
     },
     {
         title: 'LA MORTE',
         number: 'XIII',
+        energy: 'FEMMINILE',
         positive: 'CAMBIAMENTI',
         negative: 'STAGNAZIONE',
     },
     {
         title: 'LA TEMPERANZA',
         number: 'XIV',
+        energy: 'NEUTRALE',
         positive: 'EQUILIBRIO',
         negative: 'ESTREMI',
     },
     {
         title: 'IL DIAVOLO',
         number: 'XV',
+        energy: 'MASCHILE',
         positive: 'PIACERE',
         negative: 'DIPENDENZE',
     },
     {
         title: 'LA TORRE',
         number: 'XVI',
+        energy: 'MASCHILE',
         positive: 'COSTRUZIONE',
         negative: 'DISTRUZIONE',
     },
     {
         title: 'LA STELLA',
         number: 'XVII',
+        energy: 'FEMMINILE',
         positive: 'AMICIZIA',
         negative: 'TRADIMENTO',
     },
     {
         title: 'LA LUNA',
         number: 'XVIII',
+        energy: 'FEMMINILE',
         positive: 'INCONSCIO',
         negative: 'PAURE',
     },
     {
         title: 'IL SOLE',
         number: 'XIX',
+        energy: 'FEMMINILE',
         positive: 'COSCENZA',
         negative: 'INCENERIMENTO',
     },
     {
         title: 'IL GIUDIZIO',
         number: 'XX',
+        energy: 'NEUTRALE',
         positive: 'UNIONE SU VALORI COMUNI',
         negative: 'MANCANZA DI VALORI PROPRI',
     },
     {
         title: 'IL MONDO',
         number: 'XXI',
+        energy: 'NEUTRALE',
         positive: 'ILLIMITATEZZA',
         negative: 'INVASIONE DEI CONFINI',
     },
     {
         title: 'IL MATTO',
         number: 'XXII',
+        energy: 'NEUTRALE',
         positive: 'GIOCO',
         negative: 'IRRESPONSABILITÀ',
     },
@@ -290,6 +312,12 @@ function ArchetypesArchetypes() {
                                             <span className="archetypes__item-number">
                                                 {archetype.number}
                                             </span>
+                                            <p className="archetypes__item-energy">
+                                                Energia:
+                                                <span className="archetypes__item-span">
+                                                    {archetype.energy}
+                                                </span>
+                                            </p>
                                             <p className="archetypes__item-positive">
                                                 Manifestazione positiva:
                                                 <span className="archetypes__item-span">
