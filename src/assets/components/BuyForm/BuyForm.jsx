@@ -153,19 +153,35 @@ function BuyForm() {
                     <div className="buy-form__content">
                         <div className="buy-form__text">
                             <p className="text-split">
-                                Per acquistare una descrizione dettagliata degli
-                                archetipi, è necessario effettuare un
-                                trasferimento di denaro di <span>100 euro</span>
+                                Per ottenere una descrizione dettagliata
+                                dell’archetipo, è necessario effettuare un
+                                pagamento di 22 euro.
                             </p>
                             <p className="text-split">
-                                sulla carta: <span>1234 5678 8910 1112 </span>
+                                Puoi effettuare il versamento tramite uno dei
+                                seguenti metodi:
                             </p>
                             <p className="text-split">
-                                e scrivici un messaggio che hai effettuato un
-                                trasferimento di denaro e allegare una copia
-                                dell'ordine di pagamento della tua banca o uno
-                                screenshot del pagamento della banca mobile alla
-                                lettera,
+                                Carta HYPE: 4021 7002 7941 1187 (Titolare: Olga
+                                Kuzmenko)
+                            </p>
+                            <p className="text-split">
+                                IBAN: IT78F36772223000EM002431825
+                            </p>
+                            <p className="text-split">BIC: HYEEIT22XXX</p>
+                            <p className="text-split">
+                                PayPal: 22archetypes@gmail.com
+                            </p>
+
+                            <p className="text-split">
+                                Dopo aver completato il pagamento, ti invito a
+                                inviarmi un messaggio di conferma con una copia
+                                della ricevuta bancaria o uno screenshot della
+                                transazione effettuata tramite mobile banking.
+                            </p>
+                            <p className="text-split">
+                                Per qualsiasi domanda o assistenza, non esitare
+                                a contattarmi
                             </p>
                         </div>
                         <div className="buy-form__form-box">
@@ -181,8 +197,8 @@ function BuyForm() {
                             </div>
 
                             <h3 className="buy-form__subtitle form-subtitle text-split">
-                                LASCIA I TUOI DATI E TI CONTATTEREMO
-                                SICURAMENTE!
+                                Inserisci i tuoi dati e ti contatterò al più
+                                presto!
                             </h3>
                             <form className="buy-form__form">
                                 <input
