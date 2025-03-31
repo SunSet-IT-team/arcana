@@ -1556,7 +1556,7 @@ function ArchetypeArchetype() {
                         <span className="underline">Torna indietro</span>
                     </button>
                     <h1 className="archetype__title title-1">
-                        {id}. {currentArchetype.title.toUpperCase()}
+                        {id} {currentArchetype.title.toUpperCase()}
                     </h1>
                     <div className="archetype__text-box">
                         <p className="archetype__text">
