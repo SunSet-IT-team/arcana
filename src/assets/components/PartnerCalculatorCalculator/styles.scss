@@ -22,7 +22,7 @@
     }
     &__span {
         font-size: clamp(13px, size-desktop(18px), 18px);
-
+        text-transform: uppercase;
         display: block;
 
         width: 100%;

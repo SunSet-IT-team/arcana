@@ -98,8 +98,7 @@ function PartnerCalculatorCalculator() {
                     </h1>
                     <div className="partner-calculator__content">
                         <span className="partner-calculator__span">
-                            Inserite la data di nascita vostra e del vostro
-                            partner
+                            Inserire le date di nascita dei partner
                         </span>
                         <div className="partner-calculator__body">
                             <h2 className="partner-calculator__body-title">
