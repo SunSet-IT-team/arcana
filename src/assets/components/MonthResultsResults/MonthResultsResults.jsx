@@ -144,7 +144,7 @@ function MonthResultsResults() {
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ТЕМАPRINCIPALE
+                                            TEMAPRINCIPALE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
