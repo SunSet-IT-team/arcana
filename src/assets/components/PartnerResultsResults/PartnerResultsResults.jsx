@@ -255,21 +255,6 @@ function PartnerResultsResults() {
             name: 'Forza',
             archetypeNum: toRim(jointResults.jointPosF),
         },
-        // {
-        //     num: 'H',
-        //     name: 'Il regno della distruzione personale',
-        //     archetypeNum: toRim(jointResults.jointPosH),
-        // },
-        // {
-        //     num: 'G1',
-        //     name: 'Trasmissione di segnali',
-        //     archetypeNum: toRim(jointResults.jointPosG1),
-        // },
-        // {
-        //     num: 'G2',
-        //     name: 'Assistenza alla realizzazione sociale',
-        //     archetypeNum: toRim(jointResults.jointPosG2),
-        // },
     ];
 
     return (
@@ -295,9 +280,7 @@ function PartnerResultsResults() {
                         </svg>
                         <span className="underline">Torna indietro</span>
                     </Link>
-                    {/* <span>
-            {newDay}, {newMonth}, {newYear}, {newDay2},{newMonth2}, {newYear2}
-          </span> */}
+
                     <h1 className="partner-results__title title-1">
                         IL RISULTATO DEL CALCOLO DELL'ARCHETIPO
                     </h1>
@@ -307,9 +290,6 @@ function PartnerResultsResults() {
                                 {results.day} / {results.month} / {results.year}
                             </span>
                             <ResultsList {...results1}></ResultsList>
-                            {/* <span className="partner-results__body-name  partner-results__body-name--1">
-                UN GRAFICO DEL VOSTRO ARCHETIPO
-              </span> */}
                         </div>
                         <div className="partner-results__body-list">
                             <span className="partner-results__body-date">
@@ -317,41 +297,32 @@ function PartnerResultsResults() {
                                 {results.year2}
                             </span>
                             <ResultsList {...results2}></ResultsList>
-                            {/* <span className="partner-results__body-name partner-results__body-name--2">
-                IL GRAFICO DELL'ARCHETIPO DEL VOSTRO PARTNER
-              </span> */}
                         </div>
 
                         <div className="partner-results__text-wrapper">
                             <p className="partner-results__text">
-                                LA POSIZIONE CENTRALE NELL'ANALISI DELLE
-                                RELAZIONI È CONSIDERATA LA POSIZIONE 2 -
-                                NARRAZIONE DELLA RELAZIONE.
-                            </p>
-                            {/* <p className="partner-results__text">
-                                Quando si vive la seconda posizione, ogni
-                                partner passa la lezione personale della propria
-                                scuola di maturazione psicologica e la lezione
-                                congiunta, attraverso la quale prosegue la
-                                maturazione psicologica della coppia. E se la
-                                lezione personale è unica per tutta la vita, la
-                                lezione congiunta è di solito diversa in ogni
-                                relazione.
-                            </p> */}
-                            <p className="partner-results__text">
                                 Nell’analisi del rapporto di coppia, un ruolo
                                 centrale è svolto dalla Posizione "Trama del
-                                rapporto". All'interno di una relazione, ogni
-                                partner segue la propria lezione personale, che
-                                è determinata dalla propria mappa archetipica, e
-                                una lezione congiunta, che rappresenta il
-                                percorso di crescita psicologica della coppia.
+                                rapporto".
+                            </p>
+                            <p className="partner-results__text">
+                                All'interno di una relazione, ogni partner segue
+                                la propria lezione personale, che è determinata
+                                dalla propria mappa archetipica, e una lezione
+                                congiunta, che rappresenta il percorso di
+                                crescita psicologica della coppia.
+                            </p>
+
+                            <p className="partner-results__text">
                                 Mentre la lezione personale rimane costante
                                 durante tutta la vita, quella congiunta può
-                                variare da una relazione all’altra. L’archetipo
-                                che occupa la posizione della “Trama del
-                                rapporto” attiva sempre sia scenari positivi che
-                                negativi. I partner si trovano ad affrontare
+                                variare da una relazione all’altra.
+                            </p>
+
+                            <p className="partner-results__text">
+                                L’archetipo che occupa la posizione della “Trama
+                                del rapporto” attiva sempre sia scenari positivi
+                                che negativi. I partner si trovano ad affrontare
                                 sfide specifiche che richiedono di imparare ciò
                                 che risulta particolarmente difficile proprio in
                                 quella relazione. Se queste lezioni non vengono
@@ -385,9 +356,6 @@ function PartnerResultsResults() {
                             <PartnerResultsList
                                 {...jointResults}
                             ></PartnerResultsList>
-                            {/* <span className="partner-results__body-name partner-results__body-name--3">
-                COMPATIBILITÀ 24.03.1909 E 1.10.1910
-              </span> */}
                         </div>
                         <div className="partner-results__info">
                             <ul className="partner-results__info-list">
@@ -419,17 +387,10 @@ function PartnerResultsResults() {
                                         >
                                             {result.archetypeNum}
                                         </Link>
-                                        {/* <span className="partner-results__info-archetype">
-                      {result.archetypeNum}
-                    </span> */}
                                     </li>
                                 ))}
                             </ul>
 
-                            {/* <LinkTo
-                text="CONSULTAZIONE"
-                className="partner-results__info-link"
-              ></LinkTo> */}
                             <Button
                                 text="RICHIEDI UNA CONSULENZA"
                                 className="partner-results__info-link"

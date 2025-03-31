@@ -25,9 +25,6 @@ function ResultsList({
     jointPosD,
     jointPosE,
     jointPosF,
-    jointPosH,
-    jointPosG1,
-    jointPosG2,
 }) {
     return (
         <ul className="results-list">
@@ -120,22 +117,6 @@ function ResultsList({
             <li className="results-list__item">
                 <span className="results-list__name">F</span>
                 <span className="results-list__number">{toRim(jointPosF)}</span>
-            </li>
-            <li className="results-list__item">
-                <span className="results-list__name">H</span>
-                <span className="results-list__number">{toRim(jointPosH)}</span>
-            </li>
-            <li className="results-list__item">
-                <span className="results-list__name">G1</span>
-                <span className="results-list__number">
-                    {toRim(jointPosG1)}
-                </span>
-            </li>
-            <li className="results-list__item">
-                <span className="results-list__name">G2</span>
-                <span className="results-list__number">
-                    {toRim(jointPosG2)}
-                </span>
             </li>
         </ul>
     );

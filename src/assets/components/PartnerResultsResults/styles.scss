@@ -47,7 +47,10 @@
         padding-left: 15px;
         margin-left: auto;
         max-width: 20%;
-        height: clamp(10px, size-desktop(900px), 900px);
+        height: clamp(10px, size-desktop(804px), 900px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__text {
         line-height: 25.2px;
