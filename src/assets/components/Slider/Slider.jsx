@@ -19,154 +19,182 @@ const archetypesData = [
     {
         title: 'IL MAGO',
         number: 'I',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `L'Archetipo I il Mago incarna il potere della parola, dello studio e della comunicazione. 
+È l'energia giovanile che spinge a esplorare, imparare e sperimentare, ma spesso senza una chiara direzione o consapevolezza del "perché".
+`,
         imgSrc: './images/archetypes/1.jpg',
         linkTo: '/archetypes/I',
     },
     {
         title: 'LA PAPESSA',
         number: 'II',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `II La Papessa è una delle personificazioni della femminilità e dei segreti, di tutto ciò di cui non si parla nella società. II La Papessa protegge tutto ciò che ha bisogno di cure, ciò che è nascosto, ciò che non è stato ancora rivelato.
+`,
         imgSrc: './images/archetypes/2.jpg',
         linkTo: '/archetypes/II',
     },
     {
         title: "L'IMPERATRICE",
         number: 'III',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `È la personificazione della materia, della sessualità e della padronanza del mondo materiale. 
+III L’Imperatrice è l'incarnazione del desiderio inconscio di fecondazione, dell'energia della bellezza, della creazione e dell'abbondanza.
+
+`,
         imgSrc: './images/archetypes/3.jpg',
         linkTo: '/archetypes/III',
     },
     {
         title: "L'IMPERATORE",
         number: 'IV',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `L'Archetipo IV l’Imperatore è la personificazione del Re, del padrone, di un professionista. 
+È il Padre archetipico in termini di potere e controllo.
+`,
         imgSrc: './images/archetypes/4.jpg',
         linkTo: '/archetypes/IV',
     },
     {
         title: 'IL PAPA',
         number: 'V',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `V Il Papa è il Padre archetipico in termini di tutoraggio, potere genitoriale e autorità.
+l'Archetipo V il Papa è la personificazione di un insegnante, di un mentore, delle tradizioni, della conoscenza tradizionale e dell’autorità della conoscenza. 
+`,
         imgSrc: './images/archetypes/5.jpg',
         linkTo: '/archetypes/V',
     },
     {
         title: "L'INNAMORATO",
         number: 'VI',
-        text: 'Se avete trovatoLorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, temporibus, quaerat quasi ducimus et, deserunt repudiandae eligendi reiciendis earum odit architecto pariatur laboriosam mollitia voluptate illo! Eos, numquam vitae.',
+        text: `L'Archetipo VI l'Innamorato è la personificazione della scelta, della partnership e del triangolo della scelta.
+L’essenza di questo Archetipo è proprio la Scelta. 
+`,
         imgSrc: './images/archetypes/6.jpg',
         linkTo: '/archetypes/VI',
     },
     {
         title: 'IL CARRO',
         number: 'VII',
-        text: 'Se avete trovato',
+        text: `L’Archetipo VII il Carro rappresenta l'energia pionieristica. È la personificazione del bersaglio, dell’impostazione degli obiettivi, della concorrenza, del leader e dell'attività.
+`,
         imgSrc: './images/archetypes/7.jpg',
         linkTo: '/archetypes/VII',
     },
     {
         title: 'LA GIUSTIZIA',
         number: 'VIII',
-        text: 'Se avete trovato',
+        text: `L’Archetipo VIII la Giustizia, è la personificazione di società, regole, istruzioni, algoritmi e legge.
+L'essenza dell'Archetipo VIII è l'equilibrio. Si tratta dell’equilibrio tra il mondo interiore e le regole sociali.
+
+`,
         imgSrc: './images/archetypes/8.jpg',
         linkTo: '/archetypes/VIII',
     },
     {
         title: "L'EREMITA",
         number: 'IX',
-        text: 'Se avete trovato',
+        text: `L'Archetipo IX l'Eremita, è la personificazione di concetti come saggezza, esperienza, solitudine, connessioni tra generazioni e il cammino personale. IX l'Eremita è la Guida, il più alto livello di conoscenza.
+
+`,
         imgSrc: './images/archetypes/9.jpg',
         linkTo: '/archetypes/IX',
     },
     {
         title: 'LA RUOTA DELLA FORTUNA',
         number: 'X',
-        text: 'Se avete trovato',
+        text: `L’Archetipo X la Ruota della Fortuna, è la personificazione dei propri bisogni, delle occasioni, delle finanze che circolano tra le persone e tra persone ed enti finanziari.
+`,
         imgSrc: './images/archetypes/10.jpg',
         linkTo: '/archetypes/X',
     },
     {
         title: 'LA FORZA',
         number: 'XI',
-        text: 'Se avete trovato',
+        text: `L’Archetipo XI la Forza, rappresenta la personificazione della Forza in tutte le sue manifestazioni, simboleggiando il dominio sull'Ego regale attraverso la forza di volontà.
+`,
         imgSrc: './images/archetypes/11.jpg',
         linkTo: '/archetypes/XI',
     },
     {
         title: "L'APPESO",
         number: 'XII',
-        text: 'Se avete trovato',
+        text: `L’Archetipo XII l’Appeso, rappresenta la personificazione del sacrificio volontario in nome di un grande obiettivo. XII L’Appeso è il simbolo di transizione.
+
+`,
         imgSrc: './images/archetypes/12.jpg',
         linkTo: '/archetypes/XII',
     },
     {
         title: 'LA MORTE',
         number: 'XIII',
-        text: 'Se avete trovato',
+        text: `L’Archetipo XIII La Morte è la personificazione della Trasformazione e del cambiamento irrevocabile. La Morte trasforma in modo irreversibile: una volta che il cambiamento è avvenuto, non è possibile tornare indietro.
+`,
         imgSrc: './images/archetypes/13.jpg',
         linkTo: '/archetypes/XIII',
     },
     {
         title: 'LA TEMPERANZA',
         number: 'XIV',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XIV La Temperanza, è la personificazione della “sezione aurea” di Michelangelo, simboleggiando l'equilibrio e l'armonia tra il mondo terreno e quello spirituale.`,
         imgSrc: './images/archetypes/14.jpg',
         linkTo: '/archetypes/XIV',
     },
     {
         title: 'IL DIAVOLO',
         number: 'XV',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XV, Il Diavolo, rappresenta la personificazione del piacere e simboleggia la libido. Qui, il piacere può facilmente trasformarsi in perversione.
+`,
         imgSrc: './images/archetypes/15.jpg',
         linkTo: '/archetypes/XV',
     },
     {
         title: 'LA TORRE',
         number: 'XVI',
-        text: 'Se avete trovato',
+        text: `L’Archetipo XVI La Torre rappresenta la personificazione della struttura, della costruzione e della distruzione.
+È uno stato in cui qualcosa di stabile diventa instabile.
+`,
         imgSrc: './images/archetypes/16.jpg',
         linkTo: '/archetypes/XVI',
     },
     {
         title: 'LA STELLA',
         number: 'XVII',
-        text: 'Se avete trovato',
+        text: `L’Archetipo XVII La Stella rappresenta la personificazione dell'unicità, della creatività, della speranza e dei sogni. È l'Archetipo più complesso perché spesso viene divinizzato.`,
         imgSrc: './images/archetypes/17.jpg',
         linkTo: '/archetypes/XVII',
     },
     {
         title: 'LA LUNA',
         number: 'XVIII',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XVIII La Luna rappresenta la personificazione dell'Anima, della psicologia e delle connessioni con l'inconscio. Questo è il dominio della psiche, un campo misterioso e ancora poco esplorato.`,
         imgSrc: './images/archetypes/18.jpg',
         linkTo: '/archetypes/XVIII',
     },
     {
         title: 'IL SOLE',
         number: 'XIX',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XIX Il Sole rappresenta la personificazione dell'Ego e della coscienza, che si rafforzano grazie alla conoscenza. XIX Il Sole illumina ciò che prima era nascosto e le conoscenze acquisite espandono la coscienza umana.
+`,
         imgSrc: './images/archetypes/19.jpg',
         linkTo: '/archetypes/XIX',
     },
     {
         title: 'IL GIUDIZIO',
         number: 'XX',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XX Il Giudizio rappresenta la personificazione di un Egregor, cioè di un'entità collettiva che riflette i valori di un gruppo o di un sistema. L'Archetipo XX ci invita a riflettere sulla coerenza tra i propri valori personali e quelli del gruppo.`,
         imgSrc: './images/archetypes/20.jpg',
         linkTo: '/archetypes/XX',
     },
     {
         title: 'IL MONDO',
         number: 'XXI',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XXI Il Mondo rappresenta la personificazione dei confini e della capacità di costruirli. Questo archetipo riguarda l'espansione e l'evoluzione dei propri limiti, sia fisici che mentali, e il modo in cui una persona si relaziona con il mondo e la propria consapevolezza.
+`,
         imgSrc: './images/archetypes/21.jpg',
         linkTo: '/archetypes/XXI',
     },
     {
         title: 'IL MATTO',
         number: 'XXII',
-        text: 'Se avete trovato',
+        text: `L'Archetipo XXII, Il Matto, rappresenta l'improvvisazione, la purezza dell'inizio e l'energia del bambino curioso. È l’essenza di una creatura che sta iniziando il proprio cammino, come Pinocchio, completamente ignara di ciò che lo aspetta.`,
         imgSrc: './images/archetypes/22.jpg',
         linkTo: '/archetypes/XXII',
     },
@@ -619,6 +647,11 @@ export default function App() {
                                     </div>
 
                                     <div className="archetypes-demo__item-info">
+                                        <p
+                                            className={`archetypes-demo__item-text text-split`}
+                                        >
+                                            {data.number + ' ' + data.title}
+                                        </p>
                                         <p
                                             className={`archetypes-demo__item-text text-split`}
                                         >
