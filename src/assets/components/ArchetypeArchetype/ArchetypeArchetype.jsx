@@ -1560,8 +1560,9 @@ function ArchetypeArchetype() {
                     </h1>
                     <div className="archetype__text-box">
                         <p className="archetype__text">
-                            Se avete trovato il numero {id} nella vostra carta
-                            degli archetipi, queste informazioni sono per voi:
+                            Se hai trovato il numero {id} nella tua mappa
+                            archetipica, allora queste informazioni sono
+                            dedicate a te.
                         </p>
                         <p className="archetype__text">
                             {currentArchetype.content}
@@ -1580,7 +1581,7 @@ function ArchetypeArchetype() {
                         </div>
                         <div className="archetype__info-box">
                             <h2 className="archetype__info-title underline">
-                                IL LATO POSITIVO È CHE:
+                                10 vantaggi:
                             </h2>
                             <ul className="archetype__positive-list">
                                 {currentArchetype.advantages.map(
@@ -1595,7 +1596,7 @@ function ArchetypeArchetype() {
                                 )}
                             </ul>
                             <h2 className="archetype__info-title underline">
-                                IN SVANTAGGIO:
+                                10 svantaggi:
                             </h2>
                             <ul className="archetype__negative-list">
                                 {currentArchetype.disadvantages.map(
@@ -1617,14 +1618,14 @@ function ArchetypeArchetype() {
                             </p>
                             <div className="archetype__button-box">
                                 <Button
-                                    text="CONSULENZA"
+                                    text="RICHIEDI UNA CONSULENZA"
                                     className="archetype__info-btn "
                                     onClick={() =>
                                         dispatch(setOpenContactForm(true))
                                     }
                                 />
                                 <Button
-                                    text="ACQUISTA LA DESCRIZIONE COMPLETA DEGLI ARCHETIPI"
+                                    text="ACQUISTA LA DISCREZIONE COMPLETA DELL’ARCHETIPO"
                                     className="archetype__info-btn button--black"
                                     onClick={() =>
                                         dispatch(setOpenBuyForm(true))
