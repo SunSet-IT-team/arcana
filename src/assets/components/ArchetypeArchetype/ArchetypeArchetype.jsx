@@ -16,6 +16,9 @@ function ArchetypeArchetype() {
     const archetypesContent = {
         I: {
             title: 'Il Mago',
+            energy: 'MASCHILE',
+            positive: 'PAROLA',
+            negative: 'CHIACCHERE INUTILI',
             content: (
                 <>
                     <p>
@@ -86,6 +89,9 @@ function ArchetypeArchetype() {
         },
         II: {
             title: 'La Papessa',
+            energy: 'FEMMINILE',
+            positive: 'TUTELA',
+            negative: 'IPERPROTEZIONE',
             content: (
                 <>
                     <p>
@@ -148,6 +154,9 @@ function ArchetypeArchetype() {
         },
         III: {
             title: "L'Imperatrice",
+            energy: 'FEMMINILE',
+            positive: 'BELLEZZA',
+            negative: 'INFERTILITA’',
             content: (
                 <>
                     <p>
@@ -211,6 +220,9 @@ function ArchetypeArchetype() {
 
         IV: {
             title: "L'Imperatore",
+            energy: 'MASCHILE',
+            positive: 'POTERE',
+            negative: 'DISPOTISMO',
             content: (
                 <>
                     <p>
@@ -292,6 +304,9 @@ function ArchetypeArchetype() {
 
         V: {
             title: 'Il Papa',
+            energy: 'MASCHILE',
+            positive: 'AUTORITA’',
+            negative: 'STUPIDITÀ',
             content: (
                 <>
                     <p>
@@ -353,6 +368,9 @@ function ArchetypeArchetype() {
 
         VI: {
             title: "L'Innamorato",
+            energy: 'NEUTRALE',
+            positive: 'SCELTA',
+            negative: 'DISTRUZIONE DELLA RELAZIONE',
             content: (
                 <>
                     <p>
@@ -425,6 +443,9 @@ function ArchetypeArchetype() {
 
         VII: {
             title: 'Il Carro',
+            energy: 'MASCHILE',
+            positive: 'BERSAGLIO',
+            negative: 'ASSENZA DI SCOPO',
             content: (
                 <>
                     <p>
@@ -488,6 +509,9 @@ function ArchetypeArchetype() {
 
         VIII: {
             title: 'La Giustizia',
+            energy: 'FEMMINILE',
+            positive: 'REGOLE',
+            negative: 'INIQUITÀ',
             content: (
                 <>
                     <p>
@@ -562,6 +586,9 @@ function ArchetypeArchetype() {
 
         IX: {
             title: 'L’Eremita',
+            energy: 'NEUTRALE',
+            positive: 'SAGGEZZA',
+            negative: 'IL CAMMINO DI QUALCUN ALTRO',
             content: (
                 <>
                     <p>
@@ -624,6 +651,9 @@ function ArchetypeArchetype() {
 
         X: {
             title: 'La Ruota della Fortuna',
+            energy: 'NEUTRALE',
+            positive: 'PROPRI BISOGNI',
+            negative: 'DEBITI',
             content: (
                 <>
                     <p>
@@ -681,6 +711,9 @@ function ArchetypeArchetype() {
 
         XI: {
             title: 'La Forza',
+            energy: 'FEMMINILE',
+            positive: 'GESTA EROICHE',
+            negative: 'VIOLENZA',
             content: (
                 <>
                     <p>
@@ -745,6 +778,9 @@ function ArchetypeArchetype() {
 
         XII: {
             title: 'L’Appeso',
+            energy: 'NEUTRALE',
+            positive: 'SACRIFICIO VOLONTARIO',
+            negative: 'VITTIMA',
             content: (
                 <>
                     <p>
@@ -809,6 +845,9 @@ function ArchetypeArchetype() {
 
         XIII: {
             title: 'La Morte',
+            energy: 'FEMMINILE',
+            positive: 'CAMBIAMENTI',
+            negative: 'STAGNAZIONE',
             content: (
                 <>
                     <p>
@@ -883,6 +922,9 @@ function ArchetypeArchetype() {
 
         XIV: {
             title: 'La Temperanza',
+            energy: 'NEUTRALE',
+            positive: 'EQUILIBRIO',
+            negative: 'ESTREMI',
             content: (
                 <>
                     <p>
@@ -958,6 +1000,9 @@ function ArchetypeArchetype() {
 
         XV: {
             title: 'Il Diavolo',
+            energy: 'MASCHILE',
+            positive: 'PIACERE',
+            negative: 'DIPENDENZE',
             content: (
                 <>
                     <p>
@@ -1022,6 +1067,9 @@ function ArchetypeArchetype() {
 
         XVI: {
             title: 'La Torre',
+            energy: 'MASCHILE',
+            positive: 'COSTRUZIONE',
+            negative: 'DISTRUZIONE',
             content: (
                 <>
                     <p>
@@ -1093,6 +1141,9 @@ function ArchetypeArchetype() {
 
         XVII: {
             title: 'La Stella',
+            energy: 'FEMMINILE',
+            positive: 'AMICIZIA',
+            negative: 'TRADIMENTO',
             content: (
                 <>
                     <p>
@@ -1162,6 +1213,9 @@ function ArchetypeArchetype() {
 
         XVIII: {
             title: 'La Luna',
+            energy: 'FEMMINILE',
+            positive: 'INCONSCIO',
+            negative: 'PAURE',
             content: (
                 <>
                     <p>
@@ -1229,6 +1283,9 @@ function ArchetypeArchetype() {
 
         XIX: {
             title: 'Il Sole',
+            energy: 'FEMMINILE',
+            positive: 'COSCENZA',
+            negative: 'INCENERIMENTO',
             content: (
                 <>
                     <p>
@@ -1295,6 +1352,9 @@ function ArchetypeArchetype() {
 
         XX: {
             title: 'Il Giudizio',
+            energy: 'NEUTRALE',
+            positive: 'UNIONE SU VALORI COMUNI',
+            negative: 'MANCANZA DI VALORI PROPRI',
             content: (
                 <>
                     <p>
@@ -1366,6 +1426,9 @@ function ArchetypeArchetype() {
 
         XXI: {
             title: 'Il Mondo',
+            energy: 'NEUTRALE',
+            positive: 'ILLIMITATEZZA',
+            negative: 'INVASIONE DEI CONFINI',
             content: (
                 <>
                     <p>
@@ -1461,6 +1524,9 @@ function ArchetypeArchetype() {
 
         XXII: {
             title: 'Il Matto',
+            energy: 'NEUTRALE',
+            positive: 'GIOCO',
+            negative: 'IRRESPONSABILITÀ',
             content: (
                 <>
                     <p>
@@ -1528,6 +1594,7 @@ function ArchetypeArchetype() {
             ],
         },
     };
+
     const currentArchetype = archetypesContent[id];
 
     if (!currentArchetype) {
@@ -1559,11 +1626,27 @@ function ArchetypeArchetype() {
                         {id} {currentArchetype.title.toUpperCase()}
                     </h1>
                     <div className="archetype__text-box">
-                        <p className="archetype__text">
-                            Se hai trovato il numero {id} nella tua mappa
-                            archetipica, allora queste informazioni sono
-                            dedicate a te.
-                        </p>
+                        <div className="archetype__text">
+                            <p className="">
+                                Se hai trovato il numero {id} nella tua mappa
+                                archetipica, allora queste informazioni sono
+                                dedicate a te.
+                            </p>
+                            <ul className="archetype__short-description">
+                                <li>
+                                    <span>Energia:</span>
+                                    <span>{currentArchetype.energy}</span>
+                                </li>
+                                <li>
+                                    <span>Manifestazione positiva:</span>
+                                    <span>{currentArchetype.positive}</span>
+                                </li>
+                                <li>
+                                    <span>Manifestazione negativa:</span>
+                                    <span>{currentArchetype.negative}</span>
+                                </li>
+                            </ul>
+                        </div>
                         <p className="archetype__text">
                             {currentArchetype.content}
                         </p>
