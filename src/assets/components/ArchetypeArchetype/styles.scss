@@ -10,7 +10,7 @@
         color: $light-grey;
     }
     &__title {
-        margin-bottom: clamp(10px, size-desktop(200px), 200px);
+        margin-bottom: clamp(10px, size-desktop(100px), 200px);
         line-height: 1.2;
     }
     &__wrapper {
@@ -24,6 +24,19 @@
         justify-content: space-between;
 
         margin-bottom: size-desktop(80px);
+    }
+    &__short-description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            span:first-child {
+                font-weight: bold;
+            }
+        }
     }
     &__text {
         display: flex;
