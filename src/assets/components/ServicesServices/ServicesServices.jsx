@@ -25,14 +25,19 @@ export const servicesData = [
                     <li className="text-split">
                         - qualità caratteriali inerenti alla nascita;
                     </li>
+                    <br />
                     <li className="text-split">
                         - lezioni di vita e esamida superare;
                     </li>
+                    <br />
                     <li className="text-split">
                         - potenziale da rilevare nei diversi periodi della vita;
                     </li>
+                    <br />
                     <li className="text-split">- paure e complessi;</li>
+                    <br />
                     <li className="text-split">- il compito della vita.</li>
+                    <br />
                 </ul>
 
                 <p className="text-split">
@@ -72,41 +77,51 @@ export const servicesData = [
                     <li className="text-split">
                         - significato dell’energia archetipica;
                     </li>
+                    <br />
                     <li className="text-split">
                         - descrizione dell'energia in armonia;
                     </li>
+                    <br />
                     <li className="text-split">
                         - descrizione dell’energia in carenza;
                     </li>
+                    <br />
                     <li className="text-split">
                         - descrizione dell'energia in eccesso;
                     </li>
+                    <br />
                     <li className="text-split">
                         - comportamento nella relazione di coppia;
                     </li>
+                    <br />
                     <li className="text-split">
                         - aree di sviluppo professionale;
                     </li>
+                    <br />
                     <li className="text-split">- entrate finanziarie;</li>
                     <li className="text-split">
                         - problemi di salute psicosomatici;
                     </li>
+                    <br />
                     <li className="text-split">
                         - domande per aiutare a determinare come si sta vivendo
                         l'energia (in armonia, in carenza, in eccesso);
                     </li>
+                    <br />
                     <li className="text-split">
                         - citazioni che riflettono l’energiaarchetipica;
                     </li>
+                    <br />
                     <li className="text-split">
                         - personaggi famosi con l'energia base di questo
                         Archetipo.
                     </li>
+                    <br />
                 </ul>
             </>
         ),
         img: '2. guida',
-        price: 12,
+        price: 20,
     },
     {
         name: 'Relazioni di coppia',
@@ -128,23 +143,30 @@ export const servicesData = [
                     <li className="text-split">
                         - trama principale del rapporto;
                     </li>
+                    <br />
                     <li className="text-split">- possibili scenari;</li>
+                    <br />
                     <li className="text-split">
                         - punti di forza e di debolezza;
                     </li>
+                    <br />
                     <li className="text-split">
                         - conflitti e incomprensioni e come evitarli;
                     </li>
+                    <br />
                     <li className="text-split">
                         - obiettivie intenzioni comuni che rafforzeranno il
                         rapporto;
                     </li>
+                    <br />
                     <li className="text-split">
                         - aspettative reciproche (anche se sono inconsce);
                     </li>
+                    <br />
                     <li className="text-split">
                         - lezione personale in questa relazione.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Ealtri momenti importanti secondo la tua richiesta per
@@ -178,25 +200,33 @@ export const servicesData = [
                     <li className="text-split">
                         - caratteristicheindividuali di persona interessata;
                     </li>
+                    <br />
                     <li className="text-split">
                         - trama principale del rapporto;
                     </li>
+                    <br />
                     <li className="text-split">- possibili scenari;</li>
+                    <br />
                     <li className="text-split">
                         - punti di forza e di debolezza;
                     </li>
+                    <br />
                     <li className="text-split">
                         - insidie e le situazioni di crisi, come superarle;
                     </li>
+                    <br />
                     <li className="text-split">
                         - obiettivi e approccio che rafforzeranno il rapporto;
                     </li>
+                    <br />
                     <li className="text-split">
                         - aspettative reciproche (anche se sono inconsce);
                     </li>
+                    <br />
                     <li className="text-split">
                         - lezioneper entrambi i partner di questo rapporto.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Ealtri momenti importanti secondo la tua richiesta per
@@ -232,23 +262,30 @@ export const servicesData = [
                     <li className="text-split">
                         - qualità caratteriali inerenti alla nascita;
                     </li>
+                    <br />
                     <li className="text-split">
                         - lezioni di vita e esami da superare;
                     </li>
+                    <br />
                     <li className="text-split">
                         - potenziale da rivelare in diversi periodi della vita;
                     </li>
+                    <br />
                     <li className="text-split">- paure e complessi;</li>
+                    <br />
                     <li className="text-split">
                         - “bagaglio” familiare negativo;
                     </li>
+                    <br />
                     <li className="text-split">
                         - schemi limitanti e come superarli;
                     </li>
+                    <br />
                     <li className="text-split">
                         - percorso personale verso lo sviluppo sociale come
                         individuo maturo e indipendente.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Ealtri momenti importanti secondo la tua richiesta per
@@ -286,20 +323,26 @@ export const servicesData = [
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">- traumi infantili;</li>
+                    <br />
                     <li className="text-split">
                         - risorse interne soppressi inconsciamente;
                     </li>
+                    <br />
                     <li className="text-split">- reazioni subconsce;</li>
+                    <br />
                     <li className="text-split">
                         - comportamento sotto stress e come trasformare lo
                         stress in una risorsa;
                     </li>
+                    <br />
                     <li className="text-split">
                         - potenziale che la psiche nega;
                     </li>
+                    <br />
                     <li className="text-split">
                         - distruzionedella personalità.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Dopo la consulenza riceverai una scheda con informazioni
@@ -336,16 +379,20 @@ export const servicesData = [
                     <li className="text-split">
                         - bambino come individuocon sue caratteristiche innate;
                     </li>
+                    <br />
                     <li className="text-split">
                         - comportamento nella norma e quando necessarioprestare
                         attenzione ai suoi bisogni;
                     </li>
+                    <br />
                     <li className="text-split">
                         - diverse crisi d’età e come comportarsi;
                     </li>
+                    <br />
                     <li className="text-split">
                         - strategia per una crescita armoniosa.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Ealtri momenti importanti secondo la tua richiesta per
@@ -381,20 +428,26 @@ export const servicesData = [
                     <li className="text-split">
                         - capacità nellavita professionale;
                     </li>
+                    <br />
                     <li className="text-split">
                         - opportunità nel campo professionale;
                     </li>
+                    <br />
                     <li className="text-split">
                         - ambiti per diventare maestro, specialista, esperto;
                     </li>
+                    <br />
                     <li className="text-split">
                         - insidie e limitazioni in ambito professionale;
                     </li>
+                    <br />
                     <li className="text-split">- aspirazioni nel lavoro;</li>
+                    <br />
                     <li className="text-split">
                         - scopo della attività professionale in un contesto
                         globale e spirituale.
                     </li>
+                    <br />
                 </ul>
                 <p className="text-split">
                     Ealtri momenti importanti secondo la tua richiesta per
@@ -411,53 +464,53 @@ export const servicesData = [
         price: 90,
     },
 
-    {
-        name: 'Finanza Personali',
-        time: '60 – 90 min',
-        info: (
-            <>
-                <p className="text-split">
-                    {' '}
-                    Analisi della tua mappa archetipica in relazione a quelle
-                    componenti che favoriscono la migliore crescita finanziaria
-                    e il raggiungimento di un benessere economico duraturo.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
-                </p>
-                <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - modo principale per generare reddito;
-                    </li>
-                    <li className="text-split">
-                        - forza nel settore finanziario;
-                    </li>
-                    <li className="text-split">
-                        - aree per raggiungere la stabilità economica;
-                    </li>
-                    <li className="text-split">
-                        - paure e blocchi nella sfera finanziaria;
-                    </li>
-                    <li className="text-split">
-                        - come aumentare flusso finanziario.
-                    </li>
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Durante la consulenza riceverai un calcolo del tuo programma
-                    finanziario unico, che diventerà istruzioni affidabili per
-                    aumentare i tuoi guadagni.
-                </p>
-            </>
-        ),
-        img: '9. Finanza',
-        price: 90,
-    },
+    // {
+    //     name: 'Finanza Personali',
+    //     time: '60 – 90 min',
+    //     info: (
+    //         <>
+    //             <p className="text-split">
+    //                 {' '}
+    //                 Analisi della tua mappa archetipica in relazione a quelle
+    //                 componenti che favoriscono la migliore crescita finanziaria
+    //                 e il raggiungimento di un benessere economico duraturo.
+    //             </p>
+    //             <p className="text-split">
+    //                 È possibile lavorare sia con una richiesta specifica che con
+    //                 un interesse generale per questo argomento.
+    //             </p>
+    //             <h3 className="text-split">Analizzeremo:</h3>
+    //             <ul className="text-split">
+    //                 <li className="text-split">
+    //                     - modo principale per generare reddito;
+    //                 </li><br />
+    //                 <li className="text-split">
+    //                     - forza nel settore finanziario;
+    //                 </li><br />
+    //                 <li className="text-split">
+    //                     - aree per raggiungere la stabilità economica;
+    //                 </li><br />
+    //                 <li className="text-split">
+    //                     - paure e blocchi nella sfera finanziaria;
+    //                 </li><br />
+    //                 <li className="text-split">
+    //                     - come aumentare flusso finanziario.
+    //                 </li><br />
+    //             </ul>
+    //             <p className="text-split">
+    //                 Ealtri momenti importanti secondo la tua richiesta per
+    //                 questa sessione.
+    //             </p>
+    //             <p className="text-split">
+    //                 Durante la consulenza riceverai un calcolo del tuo programma
+    //                 finanziario unico, che diventerà istruzioni affidabili per
+    //                 aumentare i tuoi guadagni.
+    //             </p>
+    //         </>
+    //     ),
+    //     img: '9. Finanza',
+    //     price: 90,
+    // },
 ];
 function ServicesServices() {
     return (

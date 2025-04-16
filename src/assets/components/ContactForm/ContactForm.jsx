@@ -160,8 +160,8 @@ function ContactForm() {
                     </div>
                     <div className="contact-form__content">
                         <p className="contact-form__text text-split">
-                            Se desidera prenotare una consulenza, lasci i suoi
-                            dati e la contatterò al più presto per un
+                            Se desideri prenotare una consulenza, lascia i tuoi
+                            dati e ti contatterò al più presto per un
                             approfondimento.
                         </p>
                         <div className="contact-form__form-box">

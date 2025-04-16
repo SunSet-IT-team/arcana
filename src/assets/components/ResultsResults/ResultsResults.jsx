@@ -234,7 +234,7 @@ function ResultsResults() {
         },
         {
             num: '11',
-            name: 'Destino karmicoEsame karmico',
+            name: 'Esame Karmico',
             archetypeNum: toRim(pos11),
         },
         {
@@ -253,11 +253,6 @@ function ResultsResults() {
             archetypeNum: toRim(pos14),
         },
         {
-            num: '30',
-            name: "L'archetipo del disagio psicologicoDisagio psicologico",
-            archetypeNum: toRim(pos15),
-        },
-        {
             num: 'A',
             name: 'Bisogno infantile',
             archetypeNum: toRim(posA),
@@ -274,12 +269,12 @@ function ResultsResults() {
         },
         {
             num: 'D',
-            name: 'Posizione di stressPosizione di stress',
+            name: 'STRESS',
             archetypeNum: toRim(posD),
         },
         {
             num: 'E',
-            name: 'Protezione',
+            name: 'Difensore',
             archetypeNum: toRim(posE),
         },
         {
@@ -289,7 +284,7 @@ function ResultsResults() {
         },
         {
             num: 'H',
-            name: 'Distruzione della personalità',
+            name: 'Difensore',
             archetypeNum: toRim(posH),
         },
         {
@@ -378,18 +373,20 @@ function ResultsResults() {
                         <div className="results__info">
                             <ul className="results__info-list">
                                 <li className="results__info-item">
-                                    <span className="results__info-number underline">
+                                    <p className="results__info-number underline">
                                         {/* Numero */}
                                         NUMERO
-                                    </span>
+                                    </p>
                                     <p className="results__info-name underline">
                                         {/* Valore della posizione */}
                                         POSIZIONE
                                     </p>
-                                    <span className="results__info-archetype underline">
+                                    <p className="results__info-archetype">
                                         {/* Il vostro archetipo (premere il numero) */}
-                                        ARCHETIPO
-                                    </span>
+                                        <span className="underline">
+                                            ARCHETIPO
+                                        </span>
+                                    </p>
                                 </li>
                                 {resultsData.map((result, index) => (
                                     <li

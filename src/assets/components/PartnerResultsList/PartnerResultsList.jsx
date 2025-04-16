@@ -34,12 +34,12 @@ function ResultsList({
                     {toRim(jointPos11)}
                 </span>
             </li>
-            <li className="results-list__item">
+            {/* <li className="results-list__item">
                 <span className="results-list__name">13 pos.</span>
                 <span className="results-list__number">
                     {toRim(jointPos13)}
                 </span>
-            </li>
+            </li> */}
             <li className="results-list__item">
                 <span className="results-list__name">9 pos.</span>
                 <span className="results-list__number">{toRim(jointPos9)}</span>
@@ -50,12 +50,12 @@ function ResultsList({
                     {toRim(jointPos10)}
                 </span>
             </li>
-            <li className="results-list__item">
+            {/* <li className="results-list__item">
                 <span className="results-list__name">14 pos.</span>
                 <span className="results-list__number">
                     {toRim(jointPos14)}
                 </span>
-            </li>
+            </li> */}
             <li className="results-list__item">
                 <span className="results-list__name">1 pos.</span>
                 <span className="results-list__number">{toRim(jointPos1)}</span>
@@ -84,12 +84,12 @@ function ResultsList({
                 <span className="results-list__name">6 pos.</span>
                 <span className="results-list__number">{toRim(jointPos6)}</span>
             </li>
-            <li className="results-list__item">
+            {/* <li className="results-list__item">
                 <span className="results-list__name">12 pos.</span>
                 <span className="results-list__number">
                     {toRim(jointPos12)}
                 </span>
-            </li>
+            </li> */}
             <li className="results-list__item">
                 <span className="results-list__name">8 pos.</span>
                 <span className="results-list__number">{toRim(jointPos8)}</span>
