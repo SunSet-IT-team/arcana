@@ -84,7 +84,7 @@ function ArchetypeArchetype() {
                 'Problematico nei rapporti con fratelli/sorelle.',
                 'Difficoltà di formulare i pensieri ed esprimerli.',
                 'Amore per le scaramucce, chiacchere ed i pettegolezzi. ',
-                'Linguaggio volgare.',
+                // 'Linguaggio volgare.',
             ],
         },
         II: {
@@ -95,28 +95,35 @@ function ArchetypeArchetype() {
             content: (
                 <>
                     <p>
-                        II La Papessa rappresenta il primo Archetipo femminile
-                        chiave. È una delle personificazioni della femminilità e
-                        dei segreti, di tutto ciò di cui non si parla nella
-                        società.
+                        II La{' '}
+                        <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                        Papessa rappresenta il primo Archetipo femminile chiave.
+                        È una delle personificazioni della femminilità e dei
+                        segreti, di tutto ciò di cui non si parla nella società.
                     </p>
                     <p>
-                        II La Papessa riceve la conoscenza attraverso
-                        l'intuizione e a volte non le può spiegare neanche a sé
-                        stessa. Se una persona si fida delle proprie sensazioni,
-                        allora II La Papessa è in grado di guidarla attraverso
-                        tutte le difficoltà, le follie e le paure.
+                        II La{' '}
+                        <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                        Papessa riceve la conoscenza attraverso l'intuizione e a
+                        volte non le può spiegare neanche a sé stessa. Se una
+                        persona si fida delle proprie sensazioni, allora II La
+                        Papessa è in grado di guidarla attraverso tutte le
+                        difficoltà, le follie e le paure.
                     </p>
                     <p>
-                        II La Papessa indossa una “maschera” ed è emotivamente
-                        chiusa. Vive in due mondi allo stesso tempo,
-                        contemporaneamente si trova qui e oltre. Questa è una
-                        persona che può separare perfettamente lavoro e
-                        famiglia, famiglia e il proprio mondo interiore.
+                        II La{' '}
+                        <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                        Papessa indossa una “maschera” ed è emotivamente chiusa.
+                        Vive in due mondi allo stesso tempo, contemporaneamente
+                        si trova qui e oltre. Questa è una persona che può
+                        separare perfettamente lavoro e famiglia, famiglia e il
+                        proprio mondo interiore.
                     </p>
                     <p>
-                        II La Papessa protegge tutto ciò che ha bisogno di cure,
-                        ciò che è nascosto, ciò che non è stato ancora rivelato.
+                        II La{' '}
+                        <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                        Papessa protegge tutto ciò che ha bisogno di cure, ciò
+                        che è nascosto, ciò che non è stato ancora rivelato.
                         Questa è l'energia della madre, della natura e del
                         mistero.
                     </p>
@@ -149,7 +156,7 @@ function ArchetypeArchetype() {
                 'Paura delle relazioni amorose.',
                 'Comportamento distruttivo verso gli esseri viventi.',
                 'Madre tossica.',
-                "Magia nera (incantesimi d'amore, turnaround, ecc.).",
+                // "Magia nera (incantesimi d'amore, turnaround, ecc.).",
             ],
         },
         III: {
@@ -214,7 +221,7 @@ function ArchetypeArchetype() {
                 'Incapacità di gestire il denaro in modo adeguato.',
                 'Madre dispotica.',
                 'Business sulla bellezza del proprio corpo.',
-                'Prostituzione.',
+                // 'Prostituzione.',
             ],
         },
 
@@ -286,7 +293,7 @@ function ArchetypeArchetype() {
                 'Desiderio di potere.',
                 'Indulgenza.',
                 'Capacità di organizzare gli altri a proprio favore.',
-                "Talento genitoriale nell'insegnare attraverso la disciplina e le regole.",
+                // "Talento genitoriale nell'insegnare attraverso la disciplina e le regole.",
             ],
             disadvantages: [
                 'Violazione i confini degli altri.',
@@ -298,7 +305,7 @@ function ArchetypeArchetype() {
                 'Mancanza di un nucleo interiore.',
                 'Irresponsabilità.',
                 'Volontà debole.',
-                'Mancanza di realizzazione professionale.',
+                // 'Mancanza di realizzazione professionale.',
             ],
         },
 
@@ -362,7 +369,7 @@ function ArchetypeArchetype() {
                 'Arroganza.',
                 'Norme imponenti.',
                 'Mancanza di autorità personale.',
-                'Genitore tossico.',
+                // 'Genitore tossico.',
             ],
         },
 
@@ -437,7 +444,7 @@ function ArchetypeArchetype() {
                 'Antipatia.',
                 "Scelta consapevole che danneggia un'altra persona.",
                 'Relazione codipendente.',
-                'Amore con condizioni.',
+                // 'Amore con condizioni.',
             ],
         },
 
@@ -503,7 +510,7 @@ function ArchetypeArchetype() {
                 'Camminare sui "cadaveri" per ottenere la vittoria ad ogni costo.',
                 'Critica di coloro che si stanno muovendo verso i propri obiettivi.',
                 'Carrierismo.',
-                'Alto rischio di lesioni e dei problemi con il veicolo.',
+                // 'Alto rischio di lesioni e dei problemi con il veicolo.',
             ],
         },
 
@@ -580,7 +587,7 @@ function ArchetypeArchetype() {
                 'Mancanza di flessibilità di pensiero.',
                 'Grandi idealizzazioni.',
                 'Conflittualità.',
-                'Formalità nelle relazioni.',
+                // 'Formalità nelle relazioni.',
             ],
         },
 
@@ -645,7 +652,7 @@ function ArchetypeArchetype() {
                 'Conservatorismo rigido (quando si nega ogni cosa nuova).',
                 'Uno stile di vita non sano.',
                 'Ascetismo eccessivo.',
-                'Povertà.',
+                // 'Povertà.',
             ],
         },
 
@@ -705,13 +712,13 @@ function ArchetypeArchetype() {
                 'Il denaro è l’unica misura.',
                 "Dipendenza dal gioco d'azzardo.",
                 'Bancarotta.',
-                'Sfortuna patologica.',
+                // 'Sfortuna patologica.',
             ],
         },
 
         XI: {
             title: 'La Forza',
-            energy: 'FEMMINILE',
+            energy: 'MASCHILE',
             positive: 'GESTA EROICHE',
             negative: 'VIOLENZA',
             content: (
@@ -772,7 +779,7 @@ function ArchetypeArchetype() {
                 'Mancanza di volontà.',
                 'Viltà.',
                 'La vita in uno stato estremo ("muoio di fame - mi abbuffo").',
-                'Blocchi nella sfera sessuale.',
+                // 'Blocchi nella sfera sessuale.',
             ],
         },
 
@@ -839,7 +846,7 @@ function ArchetypeArchetype() {
                 'Insensibilità verso le sofferenze altrui.',
                 'Emotività instabile e/o eccessiva.',
                 'Dipendenze.',
-                'Fanatismo.',
+                // 'Fanatismo.',
             ],
         },
 
@@ -916,7 +923,7 @@ function ArchetypeArchetype() {
                 'Emotività eccessiva.',
                 'Ansia dovuta alla paura di non riuscire a fare qualcosa in tempo.',
                 'Esposizione deliberata e ingiustificata al pericolo.',
-                'Desiderio maniacale di pulizia.',
+                // 'Desiderio maniacale di pulizia.',
             ],
         },
 
@@ -994,7 +1001,7 @@ function ArchetypeArchetype() {
                 'Distorsioni negli ambiti della vita.',
                 'Provocazione delle emozioni negative.',
                 'Intolleranza verso gli altri.',
-                'Impossibilità di accettare sé stesso.',
+                // 'Impossibilità di accettare sé stesso.',
             ],
         },
 
@@ -1061,13 +1068,13 @@ function ArchetypeArchetype() {
                 'Provocazione a vizi e debolezze.',
                 'Completa incapacità di godersi la vita.',
                 'Perversione.',
-                'Criminalità (filosofia di "Pecunia non olet" (i soldi non puzzano).',
+                // 'Criminalità (filosofia di "Pecunia non olet" (i soldi non puzzano).',
             ],
         },
 
         XVI: {
             title: 'La Torre',
-            energy: 'MASCHILE',
+            energy: 'NEUTRALE',
             positive: 'COSTRUZIONE',
             negative: 'DISTRUZIONE',
             content: (
@@ -1135,7 +1142,7 @@ function ArchetypeArchetype() {
                 'Chiusura dal mondo nelle proprie convinzioni.',
                 'Posizione dello “struzzo”.',
                 'Molti segreti.',
-                'Ostinazione.',
+                // 'Ostinazione.',
             ],
         },
 
@@ -1207,7 +1214,7 @@ function ArchetypeArchetype() {
                 'Arroganza.',
                 'Apparenza.',
                 'Insensibilità, freddezza.',
-                'La "febbre delle stelle".',
+                // 'La "febbre delle stelle".',
             ],
         },
 
@@ -1277,13 +1284,13 @@ function ArchetypeArchetype() {
                 'Ansia.',
                 'Sospettosità.',
                 'Paure irrazionali.',
-                'Depressione.',
+                // 'Depressione.',
             ],
         },
 
         XIX: {
             title: 'Il Sole',
-            energy: 'FEMMINILE',
+            energy: 'MASCHILE',
             positive: 'COSCENZA',
             negative: 'INCENERIMENTO',
             content: (
@@ -1346,7 +1353,7 @@ function ArchetypeArchetype() {
                 'Cinismo.',
                 'Mancanza di iniziativa.',
                 "Dipendenza dall'opinione pubblica.",
-                'Infantilismo.',
+                // 'Infantilismo.',
             ],
         },
 
@@ -1420,7 +1427,7 @@ function ArchetypeArchetype() {
                 'Mancanza di comprensione del concetto "famiglia".',
                 'Mancanza di venerazione degli antenati.',
                 'Difficoltà nel creare una famiglia.',
-                'Programmi familiari negativi.',
+                // 'Programmi familiari negativi.',
             ],
         },
 
@@ -1518,7 +1525,7 @@ function ArchetypeArchetype() {
                 'Istigazione alle guerre.',
                 'Paura del cambiamento.',
                 'Fobie.',
-                'Codipendenza.',
+                // 'Codipendenza.',
             ],
         },
 
@@ -1590,7 +1597,7 @@ function ArchetypeArchetype() {
                 'Mancanza di autenticità.',
                 'Paura di sbagliare.',
                 'Serietà eccessiva.',
-                'Mancanza di interessi e hobby.',
+                // 'Mancanza di interessi e hobby.',
             ],
         },
     };
@@ -1653,9 +1660,6 @@ function ArchetypeArchetype() {
                     </div>
                     <div className="archetype__content-box">
                         <div className="archetype__image-box">
-                            <span className="archetype__image-span">
-                                Descrizione breve:
-                            </span>
                             <img
                                 className="archetype__image"
                                 src={currentArchetype.image}

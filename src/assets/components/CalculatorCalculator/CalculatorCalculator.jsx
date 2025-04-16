@@ -72,7 +72,7 @@ function CalculatorCalculator() {
                         </span>
                         <div className="calculator__body">
                             <h2 className="calculator__body-title">
-                                DECODIFICA LA TUA CARTA ARCHETIPICA
+                                Decifra la tua mappa archetipica
                             </h2>
                             <SelectDate
                                 selectedDay={selectedDay}

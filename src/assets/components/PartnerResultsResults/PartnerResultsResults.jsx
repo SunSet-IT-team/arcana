@@ -182,7 +182,7 @@ function PartnerResultsResults() {
         },
         {
             num: '7',
-            name: 'Sfida',
+            name: 'Missione',
             archetypeNum: toRim(jointResults.jointPos7),
         },
         {
@@ -205,29 +205,29 @@ function PartnerResultsResults() {
             name: 'Percezione di “noi”',
             archetypeNum: toRim(jointResults.jointPos11),
         },
-        {
-            num: '12',
-            name: 'Percezione “noi” dagli altri',
-            archetypeNum: toRim(jointResults.jointPos12),
-        },
-        {
-            num: '13',
-            name: 'Cosa pensi di te stesso',
-            archetypeNum: toRim(jointResults.jointPos13),
-        },
-        {
-            num: '14',
-            name: 'Cosa pensano gli altri di voi',
-            archetypeNum: toRim(jointResults.jointPos14),
-        },
-        {
-            num: '15',
-            name: "L'archetipo del disagio psicologico",
-            archetypeNum: toRim(jointResults.jointPos15),
-        },
+        // {
+        //     num: '12',
+        //     name: 'Percezione “noi” dagli altri',
+        //     archetypeNum: toRim(jointResults.jointPos12),
+        // },
+        // {
+        //     num: '13',
+        //     name: 'Cosa pensi di te stesso',
+        //     archetypeNum: toRim(jointResults.jointPos13),
+        // },
+        // {
+        //     num: '14',
+        //     name: 'Cosa pensano gli altri di voi',
+        //     archetypeNum: toRim(jointResults.jointPos14),
+        // },
+        // {
+        //     num: '15',
+        //     name: "L'archetipo del disagio psicologico",
+        //     archetypeNum: toRim(jointResults.jointPos15),
+        // },
         {
             num: 'A',
-            name: 'Causa dei conflitti',
+            name: 'Conflitto',
             archetypeNum: toRim(jointResults.jointPosA),
         },
         {
@@ -237,7 +237,7 @@ function PartnerResultsResults() {
         },
         {
             num: 'C',
-            name: 'Bisogno di stare insieme',
+            name: 'Fusione',
             archetypeNum: toRim(jointResults.jointPosC),
         },
         {
@@ -247,7 +247,7 @@ function PartnerResultsResults() {
         },
         {
             num: 'E',
-            name: 'Difesa',
+            name: 'Difensore',
             archetypeNum: toRim(jointResults.jointPosE),
         },
         {
@@ -282,7 +282,7 @@ function PartnerResultsResults() {
                     </Link>
 
                     <h1 className="partner-results__title title-1">
-                        IL RISULTATO DEL CALCOLO DELL'ARCHETIPO
+                        Risultato del calcolo della mappa archetipica
                     </h1>
                     <div className="partner-results__content">
                         <div className="partner-results__body-list">
@@ -350,7 +350,7 @@ function PartnerResultsResults() {
                         <div className="partner-results__body-list">
                             <span className="partner-results__body-date">
                                 {results.day} / {results.month} / {results.year}{' '}
-                                E{results.day2} / {results.month2} /{' '}
+                                E {results.day2} / {results.month2} /{' '}
                                 {results.year2}
                             </span>
                             <PartnerResultsList
@@ -366,8 +366,13 @@ function PartnerResultsResults() {
                                     <p className="partner-results__info-name underline">
                                         POSIZIONE
                                     </p>
-                                    <span className="partner-results__info-archetype underline">
-                                        ARCHETIPO (premere il numero)
+                                    <span className="partner-results__info-archetype">
+                                        <span
+                                            className="underline"
+                                            style={{paddingBottom: 1}}
+                                        >
+                                            ARCHETIPO
+                                        </span>
                                     </span>
                                 </li>
                                 {resultsData.map((result, index) => (

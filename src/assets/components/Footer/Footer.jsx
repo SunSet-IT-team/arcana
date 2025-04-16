@@ -139,7 +139,7 @@ function Footer() {
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link"
-                                        href="https://www.instagram.com/"
+                                        href="https://www.instagram.com/22archetypes/"
                                         target="_blank"
                                     >
                                         INSTAGRAM
@@ -168,7 +168,7 @@ function Footer() {
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link line"
-                                        href="https://www.tiktok.com/"
+                                        href="https://www.tiktok.com/@22archetypes"
                                         target="_blank"
                                     >
                                         TIKTOK
@@ -179,7 +179,7 @@ function Footer() {
                                         className="footer__contact-link line"
                                         href="mailto:veda@22archetypes.com"
                                     >
-                                        VEDA@22ARCHETYPES.COM
+                                        veda@22archetypes.com
                                     </a>
                                 </li>
                             </ul>
