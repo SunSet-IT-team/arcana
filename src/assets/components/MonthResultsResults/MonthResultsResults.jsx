@@ -71,7 +71,7 @@ function MonthResultsResults() {
                         <span className="underline">Torna indietro</span>
                     </Link>
                     <h1 className="month-results__title title-1">
-                        IL RISULTATO DEL CALCOLO DELL'ARCHETIPO
+                        Risultato del calcolo per il mese selezionato
                     </h1>
                     <div className="month-results__content">
                         <span className="month-results__span">
@@ -86,27 +86,21 @@ function MonthResultsResults() {
                                 ogni fase della nostra vita nel modo più
                                 armonioso ed efficace possibile.
                             </p>
-                            <p>
-                                Utilizzando le energie archetipiche come vele
-                                spinte da un vento favorevole, possiamo ottenere
-                                ciò che desideriamo con maggiore facilità,
-                                evitando le insidie di scogli pericolosi e acque
-                                poco profonde, dove potremmo non solo ferirci,
-                                ma anche rimanere bloccati per anni.
-                            </p>
                         </span>
                         <div className="month-results__body">
                             <div class="month-results__tables">
                                 <div class="month-results__table month-results__table-top">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            SENTIMENTO INTERIORE DEL MESE
+                                            SENTIMENTO <br /> INTERIORE <br />{' '}
+                                            DEL MESE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos12)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            FОCUS PERSONALEDEL MESE
+                                            FОCUS <br /> PERSONALE <br /> DEL
+                                            MESE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos13)}
@@ -114,13 +108,13 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            CRESCITA DELL’ANNO
+                                            CRESCITA <br /> DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos1)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONEEMOTIVA
+                                            TENSIONE <br /> EMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos4)}
@@ -132,7 +126,8 @@ function MonthResultsResults() {
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONENEL CAMBIAMENTO DI COSCIENZA
+                                            TENSIONENEL <br /> CAMBIAMENTO{' '}
+                                            <br /> DI COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos5)}
@@ -144,7 +139,7 @@ function MonthResultsResults() {
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TEMAPRINCIPALE
+                                            TEMA <br /> PRINCIPALE
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
@@ -162,13 +157,14 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            INSTABILITA’ EMOTIVA
+                                            INSTABILITA’ <br /> EMOTIVA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ESPANSIONE DELLA COSCIENZA
+                                            ESPANSIONE <br /> DELLA <br />{' '}
+                                            COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos9)}

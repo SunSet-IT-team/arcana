@@ -36,6 +36,11 @@
     &__info-list {
         margin-bottom: 50px;
     }
+    &__info-archetype {
+        .underline {
+            padding-bottom: 2px;
+        }
+    }
     &__info-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
 

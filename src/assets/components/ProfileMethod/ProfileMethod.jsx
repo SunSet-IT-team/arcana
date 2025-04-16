@@ -121,7 +121,7 @@ function ProfileMethod() {
                         </h2>
                         <div className="profile-method__text-box">
                             <p className="profile-method__text text-split">
-                                Il Metodo di Profilo Archetipico è un sistema
+                                IL Metodo di Profilo Archetipico è un sistema
                                 complesso e integrato che combina diverse
                                 tecniche di conoscenza di sé. Grazie alla sua
                                 struttura relativamente semplice, si distingue
@@ -131,7 +131,7 @@ function ProfileMethod() {
                             </p>
                             <br />
                             <p className="profile-method__text text-split">
-                                IlMetodo si basa sullo studio degli algoritmi
+                                IL Metodo si basa sullo studio degli algoritmi
                                 della mappa archetipica natale, costruita sulla
                                 data di nascita della persona. Molte scuole
                                 psicologiche, esoteriche e spirituali utilizzano
@@ -152,7 +152,7 @@ function ProfileMethod() {
                             </p>
                             <br />
                             <p className="profile-method__text text-split">
-                                Il Metodo di Profilo Archetipico si articola in
+                                IL Metodo di Profilo Archetipico si articola in
                                 due componenti fondamentali:
                             </p>
                             <br />
@@ -195,7 +195,7 @@ function ProfileMethod() {
                             </p>
                             <br />
                             <p className="profile-method__text text-split">
-                                Il Metodo di Profilo Archetipico è molto
+                                IL Metodo di Profilo Archetipico è molto
                                 profondo ed è pratico grazie alla sua
                                 semplicità, accuratezza ed efficacia. Ci
                                 permette di approfondire quelli correnti e
@@ -221,7 +221,7 @@ function ProfileMethod() {
                             </p>
                             <br />
                             <p className="profile-method__text text-split">
-                                Il Profilo Archetipico offre una chiave di
+                                IL Profilo Archetipico offre una chiave di
                                 conoscenza profonda del proprio percorso di
                                 vita, aiutando a riconoscere e accettare le
                                 esperienze come tappe essenziali nella
