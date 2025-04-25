@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
 
 import Preloader from './assets/components/Preloader/Preloader';
+import AnimatedCursor from './assets/feature/AnimatedCursor';
 
 import Footer from './assets/components/Footer/Footer';
 import Header from './assets/components/Header/Header';
@@ -23,93 +24,17 @@ import PartnerResults from './assets/pages/PartnerResults/PartnerResults';
 import Results from './assets/pages/Results/Results';
 import Services from './assets/pages/Services/Services';
 
-import gsap from 'gsap';
 import FooterWithWaterEffect from './assets/components/Footer/FooterWithWaterEffect';
 import SuccessSend from './assets/components/SuccessSend/SuccessSend';
 import BlogArticle from './assets/pages/BlogArticle/BlogArticle';
 
 function App() {
     const location = useLocation();
-    // КУРСОР
-    React.useEffect(() => {
-        const cursor = document.querySelector('.cursor');
-        const follower = document.querySelector('.aura');
-        const links = document.querySelectorAll('a');
-        const buttons = document.querySelectorAll('button');
-        if (!cursor || !follower) return;
-
-        let mouseX = 0;
-        let mouseY = 0;
-        let posX = 0;
-        let posY = 0;
-
-        const mouseMoveHandler = (e) => {
-            mouseX = e.pageX;
-            mouseY = e.pageY;
-            cursor.classList.remove('hidden');
-            follower.classList.remove('hidden');
-        };
-
-        document.addEventListener('mousemove', mouseMoveHandler);
-
-        const animateCursor = gsap.to(
-            {},
-            {
-                duration: 0.01,
-                repeat: -1,
-                onRepeat: () => {
-                    posX += (mouseX - posX) / 5;
-                    posY += (mouseY - posY) / 5;
-
-                    gsap.set(cursor, {css: {left: mouseX, top: mouseY}});
-                    gsap.set(follower, {
-                        css: {left: posX - 24, top: posY - 24},
-                    });
-                },
-            }
-        );
-        for (let i = 0; i < links.length; i++) {
-            links[i].addEventListener('mouseover', () => {
-                cursor.classList.add('active');
-                follower.classList.add('active');
-            });
-
-            links[i].addEventListener('mouseout', () => {
-                cursor.classList.remove('active');
-                follower.classList.remove('active');
-            });
-        }
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener('mouseover', () => {
-                cursor.classList.add('active');
-                follower.classList.add('active');
-            });
-
-            buttons[i].addEventListener('mouseout', () => {
-                cursor.classList.remove('active');
-                follower.classList.remove('active');
-            });
-        }
-        document.addEventListener('mouseout', () => {
-            cursor.classList.add('hidden');
-            follower.classList.add('hidden');
-        });
-
-        document.addEventListener('mouseout', () => {
-            cursor.classList.add('hidden');
-            follower.classList.add('hidden');
-        });
-        return () => {
-            document.removeEventListener('mousemove', mouseMoveHandler);
-            animateCursor.kill();
-        };
-    }, []);
 
     return (
         <div className="App">
             {location.pathname !== '/success-send' && <Preloader />}
-            <div className="cursor"></div>
-            <div className="aura"></div>
+            <AnimatedCursor />
             <Header />
             <main className="main">
                 <Routes>
