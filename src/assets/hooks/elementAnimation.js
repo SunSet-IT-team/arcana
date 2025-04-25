@@ -5,15 +5,21 @@ const AnimatedElement = ({tag: Tag = 'div', children, className}) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const {top} = elementRef.current.getBoundingClientRect();
-            const isVisible = top < window.innerHeight * 1; // Проверяем, виден ли элемент на 90% экрана
-            if (isVisible) {
-                elementRef.current.classList.add('show'); // Добавляем класс при видимости элемента
-                window.removeEventListener('scroll', handleScroll); // Удаляем обработчик события прокрутки
+            // Проверка, существует ли элемент
+            if (elementRef.current) {
+                const {top} = elementRef.current.getBoundingClientRect();
+                const isVisible = top < window.innerHeight * 1; // Проверяем, виден ли элемент на 90% экрана
+                if (isVisible) {
+                    elementRef.current.classList.add('show'); // Добавляем класс при видимости элемента
+                    window.removeEventListener('scroll', handleScroll); // Удаляем обработчик события прокрутки
+                }
             }
         };
 
         window.addEventListener('scroll', handleScroll);
+
+        // Инициализация, чтобы при первом рендере сразу проверить видимость
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll); // Удаляем обработчик при размонтировании компонента
