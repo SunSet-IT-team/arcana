@@ -79,7 +79,7 @@ function Footer() {
 
                                         <li className="footer__menu-item">
                                             <Link
-                                                to="/about"
+                                                to="/#about"
                                                 className="footer__menu-link"
                                             >
                                                 SU DI ME

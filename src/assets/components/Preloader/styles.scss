@@ -3,37 +3,58 @@
 
 #preloader-wrapper {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 180vh;
+    height: 100vh; /* Убираем 180vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 180;
     background-color: #ffffff;
     background-image: url('../../../../public/images/bg.png');
-    flex-direction: column;
+    visibility: hidden; /* Скрываем прелоадер до его анимации */
+    opacity: 0;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease; /* Плавное появление */
 }
+
+#preloader-wrapper.show {
+    visibility: visible;
+    opacity: 1; /* Показываем, когда нужно */
+}
+
 #preloader {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
-    z-index: 180;
+    height: 100%;
     background-color: $dark-grey;
     background-image: url('../../../../public/images/bg2.png');
+    z-index: 180;
     flex-direction: column;
+    opacity: 0; /* Скрываем до анимации */
+    transition: opacity 0.5s ease; /* Плавное появление */
 }
+
+#preloader.show {
+    opacity: 1; /* Показываем при активации */
+}
+
 #percent {
     color: rgb(255, 255, 255);
 }
+
 #bar {
     width: 60%;
     margin-top: 20px;
 }
+
 #barconfirm {
     width: 1%;
     padding: 1px 0;

@@ -130,6 +130,7 @@ function MainAbout() {
                                         className="about__author-img"
                                         src="/images/author.jpg"
                                         alt="author photo"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

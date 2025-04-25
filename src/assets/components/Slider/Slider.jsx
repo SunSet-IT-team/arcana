@@ -640,6 +640,7 @@ export default function App() {
                                                         className="archetypes-demo__item-img"
                                                         src={`/images/archetypes/${data.number}.webp`}
                                                         alt="archetype photo"
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             </div>

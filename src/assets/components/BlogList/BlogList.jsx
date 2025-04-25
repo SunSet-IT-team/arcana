@@ -198,6 +198,7 @@ function BlogList({data, isShowClipPath}) {
                                             className="blog-list__img"
                                             src={blog.imgSrc}
                                             alt="author photo"
+                                            loading="lazy"
                                         />
                                     </div>
                                 </div>

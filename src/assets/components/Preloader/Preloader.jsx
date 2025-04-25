@@ -23,6 +23,14 @@ function Preloader() {
             duration: 2,
             x: '100%',
         });
+
+        // Показываем прелоадер
+        const timer = setTimeout(() => {
+            document.getElementById('preloader-wrapper').classList.add('show');
+            document.getElementById('preloader').classList.add('show');
+        }, 0);
+
+        return () => clearTimeout(timer);
     }, []);
 
     useEffect(() => {

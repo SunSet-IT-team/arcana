@@ -245,6 +245,7 @@ function MainStory() {
                                                     className="storys-demo__item-img"
                                                     src="/images/storys/1.jpg"
                                                     alt="author photo"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         </div>
@@ -352,6 +353,7 @@ function MainStory() {
                                                     className="storys-demo__item-img"
                                                     src="/images/storys/1.jpg"
                                                     alt="author photo"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         </div>
@@ -405,6 +407,7 @@ function MainStory() {
                                                     className="storys-demo__item-img"
                                                     src="/images/storys/1.jpg"
                                                     alt="author photo"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         </div>
@@ -458,6 +461,7 @@ function MainStory() {
                                                     className="storys-demo__item-img"
                                                     src="/images/storys/1.jpg"
                                                     alt="author photo"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         </div>

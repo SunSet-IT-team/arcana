@@ -169,6 +169,7 @@ function ServicesList({services}) {
                                 className="services-list__info-img"
                                 src={`./images/services/${service.img}.jpg`}
                                 alt="services-photo"
+                                loading="lazy"
                             />
                             <Button
                                 text="Iscriviti"
