@@ -96,6 +96,7 @@ function CalculatorCalculator() {
                                     text="CALCOLARE"
                                     path="results"
                                     className="calculator__body-link"
+                                    // className="partner-calculator__body-link"
                                 ></LinkTo>
                             </div>
                         </div>

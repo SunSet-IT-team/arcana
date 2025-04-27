@@ -120,7 +120,7 @@ function MonthResultsResults() {
                                             {toRim(pos4)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            LEZIONI DELL’ANNO
+                                            LEZIONI <br /> DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos2)}
@@ -133,7 +133,7 @@ function MonthResultsResults() {
                                             {toRim(pos5)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ESAME DELL’ANNO
+                                            ESAME <br /> DELL’ANNO
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos3)}

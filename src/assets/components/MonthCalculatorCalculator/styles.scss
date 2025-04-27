@@ -57,7 +57,7 @@
     }
     &__body-link {
         margin-top: 30px;
-        max-height: 42px;
+        min-height: 42px;
     }
 
     @media screen and (max-width: 1024px) {

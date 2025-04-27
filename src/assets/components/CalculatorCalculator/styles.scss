@@ -33,7 +33,7 @@
     }
     &__body-title {
         font-size: clamp(24px, size-desktop(36px), 36px);
-
+        text-transform: uppercase;
         margin-bottom: 14px;
     }
     &__link-wrapper {
@@ -52,7 +52,7 @@
         }
     }
     &__body-link {
-        max-height: 42px;
+        min-height: 42px;
         margin-top: 30px;
     }
 

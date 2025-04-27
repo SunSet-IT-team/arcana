@@ -121,7 +121,7 @@ export const servicesData = [
             </>
         ),
         img: '2. guida',
-        price: 20,
+        price: 22,
     },
     {
         name: 'Relazioni di coppia',
