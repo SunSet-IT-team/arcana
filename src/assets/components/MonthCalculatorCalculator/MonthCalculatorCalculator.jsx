@@ -132,7 +132,8 @@ function MonthCalculatorCalculator() {
                                 <LinkTo
                                     text="CALCOLARE"
                                     path="month-results"
-                                    className="month-calculator__body-link"
+                                    // className="month-calculator__body-link"
+                                    className="partner-calculator__body-link"
                                 ></LinkTo>
                             </div>
                         </div>
