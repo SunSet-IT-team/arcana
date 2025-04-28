@@ -323,4 +323,32 @@
             max-width: 160px;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        &__content {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__text {
+            display: none;
+        }
+        &__form-box {
+            max-width: unset;
+        }
+        &__title {
+            font-size: 18px !important;
+        }
+        &__subtitle {
+            padding-left: unset;
+        }
+        &__text-mb {
+            line-height: 1.5;
+            color: rgba(113, 113, 113, 1);
+            font-size: 13px;
+            margin-top: 50px;
+        }
+        &__input {
+            margin-bottom: 12px !important;
+        }
+    }
 }

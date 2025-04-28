@@ -642,4 +642,77 @@
             max-width: 160px;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .contact-form {
+            &__content {
+                margin-top: 120px;
+                text-align: center;
+            }
+
+            &__text {
+                padding: 0 20px;
+                max-width: 100%;
+                line-height: 1.6;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            &__title-wrapper {
+                margin-bottom: 12px;
+                text-align: center;
+            }
+
+            &__title {
+                font-size: 22px;
+                margin-bottom: 6px;
+            }
+
+            &__title-img {
+                max-width: 30px;
+                margin: 0 auto;
+                display: block;
+                margin-top: 5px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
+
+            &__form {
+                padding: 0 20px;
+            }
+
+            &__input {
+                width: 100%;
+                font-size: 16px;
+                min-height: 44px;
+                margin-bottom: 16px;
+                padding: 8px 10px;
+
+                &--text {
+                    height: 100px;
+                    padding: 8px 10px;
+                }
+            }
+
+            &__form-bottom {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 12px;
+                padding: 0 15px;
+            }
+
+            &__form-button {
+                margin-top: 20px;
+                max-width: 200px;
+                width: 100%;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 8px;
+            }
+        }
+    }
 }

@@ -20,7 +20,7 @@ function MainStory() {
             Array.from(textSplitElements)
         );
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 425);
+            setIsMobile(window.innerWidth <= 767);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
@@ -34,7 +34,7 @@ function MainStory() {
             const storyItems = document.querySelectorAll('.storys-demo__item');
             storyItems.forEach((item) => {
                 const width = item.offsetWidth;
-                if (width > 335) {
+                if (width > 767) {
                     item.classList.add('storys-demo__item--big');
                 } else {
                     item.classList.remove('storys-demo__item--big');
