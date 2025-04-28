@@ -136,7 +136,7 @@
         margin-top: size-desktop(80px);
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 767px) {
         padding: 100px 0;
         &__title {
             font-size: 24px !important;

@@ -247,6 +247,9 @@
         &__tables {
             flex-direction: column;
         }
+        &__table {
+            flex-direction: column;
+        }
         &__table-content {
             font-size: 12px;
             padding: 10px;
@@ -255,7 +258,20 @@
             grid-template-columns: repeat(4, clamp(80px, 7.5vw, 200px));
         }
         .button__text {
-            font-size: clamp(13px, size-laptop(18px), 18px) !important;
+            font-size: 13px;
+        }
+
+        &__table-left {
+            grid-template-columns: clamp(90px, 7.5vw, 144px) clamp(
+                    75px,
+                    7.5vw,
+                    144px
+                );
+        }
+        &__table-right {
+            grid-template-columns:
+                clamp(90px, 6.25vw, 120px) clamp(75px, 7.5vw, 144px)
+                clamp(100px, 7.5vw, 144px) clamp(75px, 6.25vw, 120px);
         }
     }
 }

@@ -61,7 +61,7 @@
     }
     &__body-link {
         margin-top: 30px;
-        min-height: 42px;
+        // min-height: 42px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -101,7 +101,7 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 767px) {
         padding: 82px 0;
         &__back-link {
             span {
@@ -151,6 +151,16 @@
         .link {
             &__text {
                 font-size: 13px !important;
+            }
+        }
+        .select-date {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &__select-wrapper {
+            &:not(:last-child) {
+                margin-bottom: 30px;
             }
         }
     }

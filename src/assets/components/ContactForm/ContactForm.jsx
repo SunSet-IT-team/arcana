@@ -180,6 +180,16 @@ function ContactForm() {
                                 Inserisci i tuoi dati e ti contatterò al più
                                 presto!
                             </h3>
+                            <p className="contact-form__text-mb text-split">
+                                Per acquistare una descrizione dettagliata degli
+                                archetipi, è necessario effettuare un
+                                trasferimento di denaro di 100 euro sulla carta:
+                                1234 5678 8910 1112 e scrivici un messaggio che
+                                hai effettuato un trasferimento di denaro e
+                                allegare una copia dell'ordine di pagamento
+                                della tua banca o uno screenshot del pagamento
+                                della banca mobile alla lettera
+                            </p>
                             <form
                                 className="contact-form__form"
                                 onSubmit={handleSubmit(onSubmit)}

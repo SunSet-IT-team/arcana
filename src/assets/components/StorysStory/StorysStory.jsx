@@ -216,7 +216,7 @@ function StorysStory() {
             const storyItems = document.querySelectorAll('.storys__item');
             storyItems.forEach((item) => {
                 const width = item.offsetWidth;
-                if (width > 335) {
+                if (width > 424) {
                     item.classList.add('storys__item--big');
                 } else {
                     item.classList.remove('storys__item--big');

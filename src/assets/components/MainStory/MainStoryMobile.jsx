@@ -81,7 +81,7 @@ function MainStoryMobile({storiesProp = []}) {
                             <div className="storys-demo__body">
                                 <div className="storys-demo__item-imgBox">
                                     <div className="storys-demo__item-imgBg">
-                                        <div className="storys-demo__item-imgBl">
+                                        <div className="storys-demo__item-imgBl2">
                                             <img
                                                 className="storys-demo__item-img"
                                                 src={story.imgSrc}
