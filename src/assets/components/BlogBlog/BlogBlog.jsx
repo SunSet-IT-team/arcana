@@ -96,24 +96,27 @@ function BlogBlog() {
                         <span className="underline">Torna indietro</span>
                     </Link>
                     <h1 className="blog__title title-1">BLOG</h1>
-                    <div className="blog__filter">
-                        <ul className="blog__filter-list">
-                            {[...tags].slice(0, 8).map((option) => (
-                                <BlogFilterItem
-                                    key={option.value}
-                                    option={option}
-                                    onClick={handleBlogFilterChange}
-                                />
-                            ))}
-                        </ul>
-                        <SelectLabel
-                            className="blog__filter-select"
-                            options={tags}
-                            placeholder="TUTTI"
-                            onChange={handleBlogFilterChange}
-                            value={selectedBlogFilter.value}
-                        />
-                    </div>
+
+                    {tags && tags.length && (
+                        <div className="blog__filter">
+                            <ul className="blog__filter-list">
+                                {[...tags].slice(0, 8).map((option) => (
+                                    <BlogFilterItem
+                                        key={option.value}
+                                        option={option}
+                                        onClick={handleBlogFilterChange}
+                                    />
+                                ))}
+                            </ul>
+                            <SelectLabel
+                                className="blog__filter-select"
+                                options={tags}
+                                placeholder="TUTTI"
+                                onChange={handleBlogFilterChange}
+                                value={selectedBlogFilter.value}
+                            />
+                        </div>
+                    )}
 
                     <BlogList data={allPosts} isShowClipPath={isShowClipPath} />
                     {(isPostPending || isFetchingNextPage) && (

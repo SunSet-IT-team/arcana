@@ -82,7 +82,7 @@ function App() {
                         <Route path="/archetypes/:id" element={<Archetype />} />
                         <Route path="/storys/:id" element={<Story />}></Route>
                         <Route
-                            path="/blog/:id"
+                            path="/blog/:slug"
                             element={<BlogArticle />}
                         ></Route>
                         <Route
