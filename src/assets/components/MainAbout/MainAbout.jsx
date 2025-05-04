@@ -13,9 +13,10 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const text = [
-    `IL METODO DEL PROFILO ARCHETIPICO, PUR NELLA SUA APPARENTE SEMPLICITÀ, PUÒ OFFRIRE RISULTATI PIÙ RAPIDI ED EFFICACI RISPETTO ALLA TERAPIA TRADIZIONALE. QUESTO PERCHÉ SI BASA SULLA STRUTTURA ARCHETIPICA DELLA PERSONALITÀ E SULLA NOSTRA COSTITUZIONE PSICHICA INNATA, PERMETTENDO DI PORTARE ALLA LUCE TRAUMI, PARTI INCONSCE E TALENTI ORIGINARI DI CUI POTREMMO NON ESSERE AFFATTO CONSAPEVOLI.`,
-    `AVETE MAI IMMAGINATO DI TROVARE LE "ISTRUZIONI D'USO" PER VOI STESSI E LA VOSTRA VITA? QUESTO È LA MAPPA ARCHETIPICA NATALE.`,
-    `STUDIO E APPLICO COSTANTEMENTE IL METODO CON L’OBIETTIVO DI AFFERMARLO COME UNO STRUMENTO DIAGNOSTICO PRATICO, RAPIDO ED ESTREMAMENTE EFFICACE, PERCHÉ CONSENTE DI COMPRENDERE IN PROFONDITÀ CIÒ CHE SPESSO RESTA INVISIBILE. LA MIA MISSIONE È FAR SÌ CHE SEMPRE PIÙ PROBLEMI COMPLESSI POSSANO ESSERE RISOLTI GRAZIE AL SUO UTILIZZO, FAVORENDO PROGRESSI SIGNIFICATIVI NEL BENESSERE PERSONALE, NELLE RELAZIONI E NELLA CARRIERA. SONO APERTA A COLLABORAZIONI CON ESPERTI NEI SETTORI DELLA PSICOLOGIA E DELLO SVILUPPO PERSONALE, AFFINCHÉ QUESTO STRUMENTO POSSA CONTRIBUIRE AL BENESSERE PSICHICO, ALLA CRESCITA INDIVIDUALE E ALLA REALE TRASFORMAZIONE POSITIVA.`,
+    `Il Metodo del Profilo Archetipico, pur nella sua apparente semplicità, offre risultati rapidi ed efficaci, spesso più rapidi rispetto a quelli della terapia tradizionale. Fondato sulla struttura archetipica della personalità e sulla nostra costituzione psichica innata, il Metodo consente di portare alla luce tutto ciò che nella nostra psiche rimane nascosto: traumi, blocchi inconsci, talenti originali e molti altri aspetti finora sconosciuti. Avete mai immaginato di trovare le istruzioni d'uso per voi stessi e per la vostra vita? Questa è la mappa archetipica natale.`,
+    `Il Metodo del Profilo Archetipico offre una diagnosi rapida e altamente precisa, aiutando a individuare i meccanismi nascosti che generano determinati stati e attraggono specifiche situazioni. Consente di uscire da schemi distruttivi, sbloccare il proprio potenziale, superare ostacoli invisibili e ottimizzare le risorse interne, migliorando non solo la vita personale, ma anche la performance professionale.`,
+    `Studio e applico costantemente il Metodo con l’intento di farlo riconoscere come uno strumento indispensabile per chi desidera comprendere la propria natura unica, raggiungere il massimo del proprio potenziale, affrontare le sfide interiori e le situazioni difficili, superare limiti autoimposti e gestire con successo i momenti di cambiamento.
+Non solo offro consulenze private, ma sono anche aperta a collaborazioni con esperti nei settori che spaziano dalla psicologia pratica all’educazione, dal coaching al mentoring, fino alla psicoanalisi del business. Ciò che conta davvero è orientare il processo verso una trasformazione positiva, una crescita solida e un benessere duraturo.`,
 ];
 
 function MainAbout() {
@@ -116,7 +117,7 @@ function MainAbout() {
                             </ElementAnimation>
 
                             <p className="about__info-subtext">
-                                DOTT.SSAOLGAVEDA, ANTROPOLOGA CULTURALE,
+                                DOTT.SSA OLGA VEDA, ANTROPOLOGA CULTURALE,
                                 ANALISTA DI PATTERN ARCHETIPICI, PSICOLOGA DELLA
                                 DATA <br />
                                 DI NASCITA
@@ -140,11 +141,13 @@ function MainAbout() {
                                 tag="p"
                                 className="about__author-text1 text-split"
                             >
-                                Laureata in antropologia culturale, studiosa e
-                                ricercatrice del Metodo del Profilo Archetipico
-                                come strumento completo per la conoscenza di sé,
-                                la diagnosi e l'assistenza nella risoluzione di
-                                problemi psicologici ed esistenziali.
+                                Olga Veda, antropologa culturale, è studiosa e
+                                ricercatrice del Metodo del Profilo Archetipico:
+                                un sistema integrato che favorisce una
+                                comprensione profonda di sé e accompagna i
+                                processi di trasformazione interiore ed
+                                esteriore in ambito esistenziale, personale,
+                                relazionale e professionale.
                             </ElementAnimation>
 
                             <div className="about__author-linkbox">
@@ -181,6 +184,9 @@ function MainAbout() {
                                     <p
                                         className="about__box-text  text-white"
                                         key={`${item}-${index}`}
+                                        style={{
+                                            textTransform: 'uppercase',
+                                        }}
                                     >
                                         {words.map((word, index) => {
                                             return (

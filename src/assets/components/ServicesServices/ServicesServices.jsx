@@ -13,12 +13,18 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se sei stanco di investire senza risultati in corsi di
-                    crescita personale, ma non riesci ancora a comprendere la
-                    tua unicità e a trovare una direzione positiva per la tua
-                    vita.
-                    <br />È possibile lavorare sia con una richiesta specifica
-                    che con un interesse generale per questo argomento.
+                    Se sei stanco di investire in corsi di crescita personale
+                    senza ottenere i risultati sperati, e se ti sembra di non
+                    riuscire ancora a comprendere la tua unicità o di essere
+                    intrappolato in un circolo vizioso, questa consulenza
+                    potrebbe fare la differenza. Ti aiuterò a trovare una
+                    direzione autentica per la tua vita, sbloccando il tuo
+                    potenziale e portando chiarezza su ciò che davvero conta per
+                    te.
+                    <br />
+                    Lavoreremo insieme su una richiesta specifica o su un tema
+                    più ampio, legato alla tua crescita personale e alla tua
+                    evoluzione.
                 </p>
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
@@ -61,16 +67,16 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se desideri conoscere la descrizione dell'energia
-                    archetipica di base innata (la prima posizione della mappa
-                    archetipica natale). Questa posizione riflette l’archetipo
-                    che rappresenta la forza principale, il nucleo fondamentale
-                    della tua personalità. Essa svela le caratteristiche
+                    Se desideri esplorare l'energia archetipica di base innata
+                    (la prima posizione nella mappa archetipica natale), questa
+                    ricerca è stata pensata per te. L'energia di base riflette
+                    l’archetipo che rappresenta la forza principale e il nucleo
+                    fondamentale della tua personalità. Svela le caratteristiche
                     primarie, i talenti naturali e le inclinazioni che ti
                     accompagnano fin dalla nascita. Comprendere questa energia
-                    ti permette di scoprire quale parte di te stesso agisce come
-                    la tua base, il punto di partenza da cui si sviluppano tutte
-                    le altre potenzialità e sfaccettature della tua vita.
+                    ti permette di scoprire quale parte di te stesso funge da
+                    base, il punto di partenza da cui si sviluppano tutte le
+                    altre potenzialità e sfaccettature della tua vita.
                 </p>
                 <h3 className="text-split">Troverai:</h3>
                 <ul className="text-split">
@@ -131,12 +137,15 @@ export const servicesData = [
                 <p className="text-split">
                     Se desideri comprendere meglio la tua relazione di coppia,
                     affrontare problemi che sembrano insuperabili e sogni una
-                    relazione armoniosa basata sulla comprensione reciproca, sul
-                    rispetto dei bisogni e delle aspirazioni di entrambi.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
+                    connessione armoniosa, basata sulla comprensione reciproca e
+                    sul rispetto dei bisogni e delle aspirazioni di entrambi,
+                    questa consulenza può fare la differenza. Dedichiamo
+                    particolare attenzione all'analisi della trama archetipica
+                    della tua relazione, esplorando possibili scenari e come
+                    questi influenzano la dinamica della coppia.
+                    <br />
+                    Lavoreremo su una richiesta specifica o su un tema più ampio
+                    legato a questo ambito.
                 </p>
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
@@ -188,12 +197,16 @@ export const servicesData = [
             <>
                 <p className="text-split">
                     Se desideri "leggere" gli altri come un libro aperto,
-                    comprendere se una persona è adatta a un'interazione
-                    significativa con te — che si tratti di un socio in affari,
-                    un dipendente, un collega, un amico, un compagno di viaggio
-                    o altro — o se vuoi approfondire la conoscenza di un
-                    familiare per migliorare la comunicazione e costruire un
-                    rapporto più armonioso.
+                    analizzare i punti di attenzione in un rapporto che ti
+                    sembrano problematici, oppure comprendere se una persona è
+                    adatta a un'interazione significativa con te — che si tratti
+                    di un socio in affari, un dipendente, un collega, un amico,
+                    un compagno di viaggio o altro — o se desideri approfondire
+                    la conoscenza di un familiare per migliorare la
+                    comunicazione e costruire un rapporto più armonioso, questa
+                    consulenza ti aiuterà a scoprire le dinamiche archetipiche
+                    che influenzano il tuo rapporto, proteggerti da possibili
+                    scenari negativi e creare legami più forti e autentici.
                 </p>
                 <h3 className="text-split">Analizzeremo: </h3>
                 <ul className="text-split">
@@ -249,13 +262,17 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se ti ritrovi a ripetere gli stessi errori, se hai la
-                    sensazione di essere bloccato e non riesci a trovare il tuo
-                    posto in questo mondo.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
+                    Se ti senti bloccato in schemi ripetitivi o fatichi a
+                    trovare il tuo posto nel mondo, questa consulenza ti aiuterà
+                    a riconoscere e superare i condizionamenti familiari
+                    interiorizzati. Attraverso l’analisi della tua mappa
+                    archetipica natale, esploreremo le tue qualità innate, gli
+                    scenari familiari e i blocchi emotivi. L’obiettivo è
+                    favorire la separazione dai programmi familiari limitanti e
+                    accompagnarti nella crescita verso un’identità più
+                    consapevole, autonoma e realizzata, sbloccando il tuo
+                    potenziale e orientandoti verso un futuro autentico e
+                    appagante.
                 </p>
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
@@ -307,18 +324,19 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    {' '}
-                    L'individuazione di cui parlava Jung è il processo di unire
-                    i pezzi del puzzle tra la tua luce e la tua ombra. Questa
-                    consulenza è per te se desideri esplorare il tuo subconscio,
-                    scoprire le parti represse dell'ombra della tua personalità,
-                    che custodiscono un grande potenziale pronto per essere
-                    compreso e integrato, per raggiungere una completa integrità
-                    psicologica.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
+                    Se desideri esplorare il tuo subconscio e integrare le parti
+                    represse della tua personalità, questa consulenza ti aiuterà
+                    a scoprire le risorse nascoste nel tuo lato oscuro.
+                    L’individuazione, come la definisce Jung, è il processo di
+                    unione tra luce e ombra, che consente di raggiungere una
+                    maggiore integrità psicologica. Attraverso l’analisi dei
+                    traumi infantili, delle reazioni subconscie e dei
+                    comportamenti sotto stress, esploreremo il potenziale che la
+                    tua psiche ha messo da parte.
+                    <br />
+                    L’obiettivo è trasformare questi blocchi in risorse potenti,
+                    liberarti da schemi autodistruttivi e condurti verso una
+                    consapevolezza più profonda e un’armonia interiore duratura.
                 </p>
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
@@ -362,17 +380,16 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se desideri scoprire di quale sviluppo e motivazione ha
-                    bisogno tuo figlio per costruire il suo carattere e
-                    realizzare il suo pieno potenziale innato, e se vuoi
-                    imparare come affrontare i periodi difficili delle crisi di
-                    crescita nel modo più rispettoso della sua psiche, riducendo
-                    al minimo l'impatto negativo delle lezioni di maturazione
-                    psicologica.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
+                    Se desideri comprendere come supportare lo sviluppo
+                    psicologico di tuo figlio e aiutarlo a realizzare il suo
+                    pieno potenziale, questa consulenza ti guiderà
+                    nell’affrontare le sfide della crescita con un approccio
+                    rispettoso della sua psiche. Analizzeremo le caratteristiche
+                    innate del tuo bambino, i suoi comportamenti e le sue crisi
+                    di crescita, esplorando come rispondere al meglio alle sue
+                    necessità in modo da ridurre l’impatto negativo di queste
+                    fasi. L’obiettivo è creare una strategia per favorire una
+                    crescita armoniosa e costruire un carattere forte e sano.
                 </p>
                 <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
@@ -414,14 +431,15 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    {' '}
-                    Analisi della tua mappa archetipica in relazione a quelle
-                    componenti che favoriscono la piena realizzazione del tuo
-                    potenziale nel contesto professionale.
-                </p>
-                <p className="text-split">
-                    È possibile lavorare sia con una richiesta specifica che con
-                    un interesse generale per questo argomento.
+                    Se desideri esplorare la realizzazione del tuo potenziale
+                    nel contesto professionale, questa consulenza ti aiuterà a
+                    identificare le opportunità e le risorse nascoste nella tua
+                    personalità. Analizzeremo le tue capacità e aspirazioni, i
+                    percorsi per diventare un esperto nel tuo campo, le
+                    possibili limitazioni e lo scopo più profondo della tua
+                    attività professionale, integrandolo con una visione globale
+                    e spirituale. L’obiettivo è orientarti verso una crescita
+                    professionale autentica e soddisfacente.
                 </p>
                 <h3 className="text-split">Analizzeremo: </h3>
                 <ul className="text-split">

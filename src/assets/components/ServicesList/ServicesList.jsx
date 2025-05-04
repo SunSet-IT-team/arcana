@@ -163,7 +163,7 @@ function ServicesList({services}) {
                                 className="services-list__button underline"
                                 onClick={() => handleOpenCard(index)}
                             >
-                                Leggitutto
+                                Leggi tutto
                             </button>
                             <img
                                 className="services-list__info-img"
@@ -174,9 +174,11 @@ function ServicesList({services}) {
                             <Button
                                 text="Iscriviti"
                                 className="services-list__info-button"
-                                onClick={() =>
-                                    dispatch(setOpenContactForm(true))
-                                }
+                                onClick={() => {
+                                    if (index != 1) {
+                                        dispatch(setOpenContactForm(true));
+                                    }
+                                }}
                             ></Button>
                         </div>
                     </div>

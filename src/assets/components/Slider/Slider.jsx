@@ -213,7 +213,7 @@ export default function App() {
         const textAnimation = new TextLinesReveal(
             Array.from(textSplitElements)
         );
-        playAnimation();
+        // playAnimation();
 
         const handleResize = () => {
             const width = window.innerWidth;
