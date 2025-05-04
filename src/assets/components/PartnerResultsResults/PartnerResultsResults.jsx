@@ -289,12 +289,18 @@ function PartnerResultsResults() {
                             <span className="partner-results__body-date">
                                 {results.day} / {results.month} / {results.year}
                             </span>
+                            <span className="partner-results__name-item-mobile">
+                                LA MAPPA ARCHETIPICA DEL SECONDO PARTNER
+                            </span>
                             <ResultsList {...results1}></ResultsList>
                         </div>
                         <div className="partner-results__body-list">
                             <span className="partner-results__body-date">
                                 {results.day2} / {results.month2} /{' '}
                                 {results.year2}
+                            </span>
+                            <span className="partner-results__name-item-mobile">
+                                LA MAPPA ARCHETIPICA DEL PRIMO PARTNER
                             </span>
                             <ResultsList {...results2}></ResultsList>
                         </div>
@@ -352,6 +358,9 @@ function PartnerResultsResults() {
                                 {results.day} / {results.month} / {results.year}{' '}
                                 E {results.day2} / {results.month2} /{' '}
                                 {results.year2}
+                            </span>
+                            <span className="partner-results__name-item-mobile">
+                                LA MAPPA ARCHETIPICA DEL RAPPORTO
                             </span>
                             <PartnerResultsList
                                 {...jointResults}

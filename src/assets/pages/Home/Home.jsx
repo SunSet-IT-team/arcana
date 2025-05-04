@@ -13,6 +13,17 @@ import './styles.scss';
 const Home = () => {
     React.useEffect(() => {
         window.scrollTo(0, 0);
+
+        const hash = window.location.hash;
+        if (hash) {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({behavior: 'smooth'});
+                }, 300);
+            }
+        }
     }, []);
 
     return (
