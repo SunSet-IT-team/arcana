@@ -6,31 +6,18 @@ import './styles.scss';
 
 import BlogList from '../BlogList/BlogList';
 import Link from '../Link/Link';
+import {useInfinitePosts} from '../../api/posts/usePosts';
 
 function MainBlog() {
-    const blogData = [
-        {
-            name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-            tags: ['ENERGIE BASE', 'PREVISIONI'],
-            text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-            imgSrc: './images/storys/1.jpg',
-            date: '01.04.2024',
-        },
-        {
-            name: "UN'ALTRA STORIA DI SUCCESSO",
-            tags: ['TECNOLOGIA', 'SVILUPPO'],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-            imgSrc: './images/storys/2.jpg',
-            date: '02.04.2024',
-        },
-        {
-            name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-            tags: ['ENERGIE BASE', 'PREVISIONI'],
-            text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-            imgSrc: './images/storys/1.jpg',
-            date: '01.04.2024',
-        },
-    ];
+    /**
+     * Получение записей
+     */
+    const {data: posts, isPending} = useInfinitePosts();
+
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+
+    if (isPending) return 'loading';
+
     return (
         <section className="blog-demo">
             <div className="container">
@@ -42,7 +29,7 @@ function MainBlog() {
                         <span>BLOG</span>
                     </TitleAnimation>
 
-                    <BlogList data={blogData} isShowMore={false} />
+                    <BlogList data={allPosts} isShowMore={false} />
                     <div className="blog-demo__link-wrapper">
                         <Link
                             text="TUTTI GLI ARTICOLI DEL BLOG"

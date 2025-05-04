@@ -163,8 +163,8 @@ function BlogList({data, isShowClipPath}) {
     return (
         <>
             <ul className="blog-list__list blog-animation">
-                {data.map((blog, index) => (
-                    <li className="blog-list__item" key={index}>
+                {data.map((blog) => (
+                    <li className="blog-list__item" key={blog.id}>
                         <div className="blog-list__item-wrapper">
                             <div className="blog-list__main-info">
                                 <h3 className="blog-list__name text-1 text-split text-cut-title">
@@ -209,7 +209,7 @@ function BlogList({data, isShowClipPath}) {
                                     {blog.date}
                                 </span>
                                 <Link
-                                    to={`/blog/${index + 1}`}
+                                    to={`/blog/${blog.slug}`}
                                     className="blog-list__link arrow"
                                 >
                                     <span className="underline">

@@ -1,4 +1,4 @@
-import {useEffect, useMemo, useState} from 'react';
+import {useState} from 'react';
 import './styles.scss';
 
 import {Link} from 'react-router-dom';
@@ -6,140 +6,72 @@ import {Link} from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import BlogList from '../BlogList/BlogList';
 import SelectLabel from '../Select/Select';
-
-const blogOptions = [
-    {value: 'TUTTI', label: 'TUTTI'},
-    {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
-    {value: 'ARHCETIPI', label: 'ARHCETIPI'},
-    {value: 'PERSONE', label: 'PERSONE'},
-    {value: 'VITA', label: 'VITA'},
-    {value: 'PREVISIONI', label: 'PREVISIONI'},
-    {value: 'EVENTI', label: 'EVENTI'},
-    {value: 'MITI E FIABE', label: 'MITI E FIABE'},
-];
-
-const blogData = [
-    {
-        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-        tags: ['ENERGIE BASE', 'PREVISIONI'],
-        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-        imgSrc: './images/storys/1.jpg',
-        date: '05.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '05.04.2024',
-    },
-    {
-        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-        tags: ['ENERGIE BASE', 'ARHCETIPI'],
-        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
-        imgSrc: './images/storys/1.jpg',
-        date: '04.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '04.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'VITA'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '04.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '03.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '03.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '02.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '02.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '01.04.2024',
-    },
-    {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
-        imgSrc: './images/storys/2.jpg',
-        date: '01.04.2024',
-    },
-];
+import {useTags} from '../../api/tags/useTags';
+import {useInfinitePosts} from '../../api/posts/usePosts';
+import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
 function BlogBlog() {
     const [isShowClipPath, setIsShowClipPath] = useState(false);
-    const [selectedBlogFilter, setSelectedBlogFilter] = useState('TUTTI');
-    const [showCountArticles, setShowCountArticles] = useState(6);
-    const [articles, setArticles] = useState(
-        blogData.slice(0, showCountArticles)
-    );
-    const filteredArticles = useMemo(() => {
-        return selectedBlogFilter === 'TUTTI'
-            ? blogData
-            : blogData.filter((item) => item.tags.includes(selectedBlogFilter));
-    }, [selectedBlogFilter]);
+    const [selectedBlogFilter, setSelectedBlogFilter] = useState({
+        label: 'TUTTI',
+        value: 0,
+    });
 
-    useEffect(() => {
-        setArticles(filteredArticles.slice(0, showCountArticles));
-    }, [filteredArticles, showCountArticles]);
+    /**
+     * Получение тегов
+     */
+    const {data: tags, isPending: isTagPending} = useTags();
+
+    const tagIds = [selectedBlogFilter.value].filter((el) => el > 0);
+
+    /**
+     * Получение записей
+     */
+    const {
+        data: posts,
+        isPending: isPostPending,
+        fetchNextPage,
+        hasNextPage,
+        isFetchingNextPage,
+    } = useInfinitePosts({
+        tagIds,
+    });
+
+    /**
+     * Показать больше
+     */
     const handleShowMore = () => {
-        setShowCountArticles((prev) => (prev += 2));
+        fetchNextPage();
         if (!isShowClipPath) {
             setIsShowClipPath(true);
         }
     };
 
-    const handleBlogFilterChange = (selectedBlogFilter) => {
-        setSelectedBlogFilter(selectedBlogFilter);
+    /**
+     * При изменении фильтра блога
+     */
+    const handleBlogFilterChange = (selectedBlogFilterValue) => {
+        setSelectedBlogFilter(
+            tags.find((el) => el.value == selectedBlogFilterValue) || null
+        );
         if (!isShowClipPath) {
             setIsShowClipPath(true);
         }
     };
-
-    const hasMoreArticles = showCountArticles < filteredArticles.length;
 
     const BlogFilterItem = ({option, onClick}) => {
         return (
             <li
-                className={`blog__filter-item underline ${selectedBlogFilter === option.value && 'blog__filter-item--active'}`}
+                className={`blog__filter-item underline ${selectedBlogFilter.value === option.value && 'blog__filter-item--active'}`}
                 onClick={() => onClick(option.value)}
             >
                 {option.label}
             </li>
         );
     };
+
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+
     return (
         <section className="blog">
             <div className="container">
@@ -166,7 +98,7 @@ function BlogBlog() {
                     <h1 className="blog__title title-1">BLOG</h1>
                     <div className="blog__filter">
                         <ul className="blog__filter-list">
-                            {blogOptions.map((option) => (
+                            {[...tags].slice(0, 8).map((option) => (
                                 <BlogFilterItem
                                     key={option.value}
                                     option={option}
@@ -176,14 +108,22 @@ function BlogBlog() {
                         </ul>
                         <SelectLabel
                             className="blog__filter-select"
-                            options={blogOptions}
+                            options={tags}
                             placeholder="TUTTI"
                             onChange={handleBlogFilterChange}
-                            value={selectedBlogFilter}
+                            value={selectedBlogFilter.value}
                         />
                     </div>
-                    <BlogList data={articles} isShowClipPath={isShowClipPath} />
-                    {hasMoreArticles && (
+
+                    <BlogList data={allPosts} isShowClipPath={isShowClipPath} />
+                    {(isPostPending || isFetchingNextPage) && (
+                        <LoadingSpinner />
+                    )}
+
+                    {!(isPostPending || isFetchingNextPage) &&
+                        !allPosts.length && <h3>Nessun record</h3>}
+
+                    {hasNextPage && (
                         <div className="blog__bottom" onClick={handleShowMore}>
                             <Button
                                 text="VEDI ARTICOLI PRECEDENTI"
