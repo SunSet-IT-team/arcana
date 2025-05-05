@@ -80,7 +80,7 @@ function App() {
                             element={<PartnerResults />}
                         ></Route>
                         <Route path="/archetypes/:id" element={<Archetype />} />
-                        <Route path="/storys/:id" element={<Story />}></Route>
+                        <Route path="/story/:slug" element={<Story />}></Route>
                         <Route
                             path="/blog/:slug"
                             element={<BlogArticle />}

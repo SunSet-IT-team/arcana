@@ -7,209 +7,48 @@ import {Link} from 'react-router-dom';
 import SelectLabel from '../../components/Select/Select';
 import LinkTo from '../Link/Link';
 import MainStoryMobile from '../MainStory/MainStoryMobile';
-
-const storysData = [
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'RELAZIONI',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'RELAZIONI',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'RELAZIONI',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'LAVORO E PROFESSIONE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'LAVORO E PROFESSIONE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'LAVORO E PROFESSIONE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'FINANZE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'FINANZE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'FINANZE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'FINANZE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'SALUTE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'SALUTE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'SALUTE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'SALUTE',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-    {
-        title: 'RICETTA EDIFICANTE',
-        text: `Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.`,
-        tag: 'Crescita personale',
-        link: 'storys/1',
-        imgSrc: './images/storys/1.jpg',
-    },
-];
-
-const storyOptions = [
-    {value: 'TUTTI', label: 'TUTTI'},
-    {value: 'CRESCITA PERSONALE', label: 'CRESCITA PERSONALE'},
-    {value: 'RELAZIONI', label: 'RELAZIONI'},
-    {value: 'LAVORO E PROFESSIONE', label: 'LAVORO E PROFESSIONE'},
-    {value: 'FINANZE', label: 'FINANZE'},
-    {value: 'SALUTE', label: 'SALUTE'},
-];
+import {useStoryTags} from '../../api/storyTags/useStoryTags';
+import {useInfiniteStories} from '../../api/stories/useStories';
+import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
 function StorysStory() {
-    const [selectedStoryFilter, setSelectedStoryFilter] = useState('TUTTI');
-    const [filteredStorys, setFilteredStorys] = useState(storysData);
+    const [selectedStoryFilter, setSelectedStoryFilter] = useState({
+        label: 'TUTTI',
+        value: 0,
+    });
+
+    /**
+     * Получение тегов
+     */
+    const {data: tags, isPending: isTagPending} = useStoryTags();
+
+    const tagIds = [selectedStoryFilter.value].filter((el) => el > 0);
+
     const [isMobile, setIsMobile] = useState(false);
 
-    const handleFilterStorys = () => {
-        setFilteredStorys(
-            storysData.filter(
-                (story) =>
-                    story.tag.toUpperCase() === selectedStoryFilter ||
-                    selectedStoryFilter === 'TUTTI'
-            )
+    /**
+     * Изменение тега
+     */
+    const handleStoryFilterChange = (selectedStoryFilterValue) => {
+        setSelectedStoryFilter(
+            tags.find((el) => el.value == selectedStoryFilterValue) || null
         );
     };
 
-    const handleStoryFilterChange = (selectedStoryFilter) => {
-        setSelectedStoryFilter(selectedStoryFilter);
-    };
+    /**
+     * Получение записей
+     */
+    const {
+        data: posts,
+        isPending: isPostPending,
+        fetchNextPage,
+        hasNextPage,
+        isFetchingNextPage,
+    } = useInfiniteStories({
+        tagIds,
+    });
 
-    useEffect(() => {
-        handleFilterStorys();
-    }, [selectedStoryFilter]);
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -257,76 +96,88 @@ function StorysStory() {
                         STORIE DEI CLIENTI
                     </h1>
 
-                    <div className="storys__filter">
-                        <ul className="storys__filter-list">
-                            {storyOptions.map((option) => {
-                                return (
-                                    <li
-                                        className={`storys__filter-item underline ${selectedStoryFilter === option.value && 'storys__filter-item--active'}`}
-                                        onClick={() =>
-                                            handleStoryFilterChange(
-                                                option.value
-                                            )
-                                        }
-                                        key={option.value}
-                                    >
-                                        {option.label}
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                        <SelectLabel
-                            className="storys__filter-select"
-                            options={storyOptions}
-                            placeholder="TUTTI"
-                            onChange={handleStoryFilterChange}
-                            value={selectedStoryFilter}
-                        />
-                    </div>
+                    {tags && tags.length && (
+                        <div className="storys__filter">
+                            <ul className="storys__filter-list">
+                                {tags.map((option) => {
+                                    return (
+                                        <li
+                                            className={`storys__filter-item underline ${selectedStoryFilter.value === option.value && 'storys__filter-item--active'}`}
+                                            onClick={() =>
+                                                handleStoryFilterChange(
+                                                    option.value
+                                                )
+                                            }
+                                            key={option.value}
+                                        >
+                                            {option.label}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                            <SelectLabel
+                                className="storys__filter-select"
+                                options={tags}
+                                placeholder="TUTTI"
+                                onChange={handleStoryFilterChange}
+                                value={selectedStoryFilter.value}
+                            />
+                        </div>
+                    )}
                     {isMobile ? (
-                        <MainStoryMobile storiesProp={filteredStorys} />
+                        <MainStoryMobile storiesProp={allPosts} />
                     ) : (
                         <ul className="storys__list">
-                            {filteredStorys.map((story, index) => {
-                                return (
-                                    <li
-                                        className="storys__item"
-                                        key={story.title + index}
-                                    >
-                                        <img
-                                            className="storys__item-img"
-                                            src={story.imgSrc}
-                                            alt={`Story ${story.title}`}
-                                        />
-                                        <div className="storys__item-content">
-                                            <span className="storys__item-linkbox">
-                                                <a
-                                                    className="storys__item-tag underline"
-                                                    href="#"
-                                                >
-                                                    {story.tag}
-                                                </a>
-                                            </span>
-                                            <div className="storys__item-body">
-                                                <h3 className="storys__item-title">
-                                                    {story.title}
-                                                </h3>
-                                                <p className="storys__item-text">
-                                                    {story.text}
-                                                </p>
-                                            </div>
-
-                                            <LinkTo
-                                                text="LEGGERE"
-                                                path={story.link}
-                                                className="storys__item-link link--black"
+                            {allPosts &&
+                                allPosts.length &&
+                                allPosts.map((story) => {
+                                    return (
+                                        <li
+                                            className="storys__item"
+                                            key={story.id}
+                                        >
+                                            <img
+                                                className="storys__item-img"
+                                                src={story.imgSrc}
+                                                alt={`Story ${story.title}`}
                                             />
-                                        </div>
-                                    </li>
-                                );
-                            })}
+                                            <div className="storys__item-content">
+                                                <span className="storys__item-linkbox">
+                                                    {story.tags.map((t) => (
+                                                        <a
+                                                            className="storys__item-tag underline"
+                                                            href="#"
+                                                        >
+                                                            {t}
+                                                        </a>
+                                                    ))}
+                                                </span>
+                                                <div className="storys__item-body">
+                                                    <h3 className="storys__item-title">
+                                                        {story.name}
+                                                    </h3>
+                                                    <p className="storys__item-text">
+                                                        {story.text}
+                                                    </p>
+                                                </div>
+
+                                                <LinkTo
+                                                    text="LEGGERE"
+                                                    path={`story/${story.slug}`}
+                                                    className="storys__item-link link--black"
+                                                />
+                                            </div>
+                                        </li>
+                                    );
+                                })}
                         </ul>
                     )}
+                    {(isPostPending || isFetchingNextPage) && (
+                        <LoadingSpinner />
+                    )}
+
+                    {!(isPostPending || isFetchingNextPage) &&
+                        !allPosts.length && <h3>Nessun record</h3>}
                 </div>
             </div>
         </section>

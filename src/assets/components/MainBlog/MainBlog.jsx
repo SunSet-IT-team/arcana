@@ -7,6 +7,7 @@ import './styles.scss';
 import BlogList from '../BlogList/BlogList';
 import Link from '../Link/Link';
 import {useInfinitePosts} from '../../api/posts/usePosts';
+import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
 function MainBlog() {
     /**
@@ -15,8 +16,6 @@ function MainBlog() {
     const {data: posts, isPending} = useInfinitePosts();
 
     const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
-
-    if (isPending) return 'loading';
 
     return (
         <section className="blog-demo">
@@ -29,7 +28,10 @@ function MainBlog() {
                         <span>BLOG</span>
                     </TitleAnimation>
 
-                    <BlogList data={allPosts} isShowMore={false} />
+                    {allPosts && allPosts.length && (
+                        <BlogList data={allPosts} isShowMore={false} />
+                    )}
+                    {isPending && <LoadingSpinner />}
                     <div className="blog-demo__link-wrapper">
                         <Link
                             text="TUTTI GLI ARTICOLI DEL BLOG"

@@ -9,54 +9,10 @@ import {Link} from 'react-router-dom';
 
 function MainStoryMobile({storiesProp = []}) {
     const [activeLink, setActiveLink] = useState('/');
-    const stories = [
-        {
-            id: 1,
-            imgSrc: '/images/storys/1.jpg',
-            tag: 'Crescita personale',
-            title: 'LA STORIA DI UN UOMO CONFUSO',
-            text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum, che in alcuni casi provoca sconcerto quando si cerca di leggere il testo ittico.",
-            link: 'storys/1',
-        },
-        {
-            id: 2,
-            imgSrc: '/images/storys/2.jpg',
-            tag: 'Lavoro e professione',
-            title: "UNA STORIA D'AMORE CHE HA SUPERATO LA PROVA DEL TEMPO",
-            text: 'Una storia di amore che ha superato la prova del tempo.',
-            link: 'storys/2',
-        },
-        {
-            id: 3,
-            imgSrc: '/images/storys/3.jpg',
-            tag: 'Salute',
-            title: 'RICETTA EDIFICANTE',
-            text: 'Una ricetta edificante che offre nuova prospettiva sulla vita.',
-            link: 'storys/3',
-        },
-        {
-            id: 4,
-            imgSrc: '/images/storys/4.jpg',
-            tag: 'Crescita personale',
-            title: 'MOTIVAZIONE PER LA VITA',
-            text: "Un'esperienza che cambia completamente il modo di vedere le cose.",
-            link: 'storys/4',
-        },
-        {
-            id: 5,
-            imgSrc: '/images/storys/5.jpg',
-            tag: 'Crescita personale',
-            title: 'VIAGGIO SPIRITUALE',
-            text: 'Riflessioni su un viaggio interiore verso la pace.',
-            link: 'storys/5',
-        },
-    ];
 
     useEffect(() => {
-        setActiveLink(stories[0].link);
+        storiesProp.length && setActiveLink(storiesProp[0].slug);
     }, []);
-
-    const data = storiesProp.length > 0 ? storiesProp : stories;
 
     return (
         <>
@@ -70,13 +26,13 @@ function MainStoryMobile({storiesProp = []}) {
                 centeredSlides={true}
                 className="storys-swiper"
                 onSlideChange={(swiper) => {
-                    if (stories[swiper.activeIndex]) {
-                        setActiveLink(stories[swiper.activeIndex]);
+                    if (storiesProp[swiper.activeIndex]) {
+                        setActiveLink(storiesProp[swiper.activeIndex].slug);
                     }
                 }}
             >
-                {data.map((story, index) => (
-                    <SwiperSlide key={index} className="storys-demo__slide">
+                {storiesProp.map((story) => (
+                    <SwiperSlide key={story.id} className="storys-demo__slide">
                         <li className="storys-demo__item">
                             <div className="storys-demo__body">
                                 <div className="storys-demo__item-imgBox">
@@ -85,20 +41,22 @@ function MainStoryMobile({storiesProp = []}) {
                                             <img
                                                 className="storys-demo__item-img"
                                                 src={story.imgSrc}
-                                                alt={story.title}
+                                                alt={story.name}
                                             />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="storys-demo__item-content">
                                     <div className="storys-demo__item-tagbox">
-                                        <span className="storys-demo__item-tag underline text-split">
-                                            {story.tag}
-                                        </span>
+                                        {story.tags.map((t) => (
+                                            <span className="storys-demo__item-tag underline text-split">
+                                                {t}
+                                            </span>
+                                        ))}
                                     </div>
                                     <div className="storys-demo__item-body">
                                         <h3 className="storys-demo__item-title text-split">
-                                            {story.title}
+                                            {story.name}
                                         </h3>
                                         <p className="storys-demo__item-text text-split text-cut">
                                             {story.text}
@@ -107,7 +65,7 @@ function MainStoryMobile({storiesProp = []}) {
                                     <LinkTo
                                         text="LEGGERE"
                                         className="storys-demo__item-link link--black"
-                                        path={story.link}
+                                        path={`story/${story.slug}`}
                                     />
                                 </div>
                             </div>

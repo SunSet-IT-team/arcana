@@ -44,7 +44,7 @@ function Article() {
                         </svg>
                         <span className="underline">Torna indietro</span>
                     </button>
-                    <h1 className="article__title title-1">{post.title}</h1>
+                    <h1 className="article__title title-1">{post.name}</h1>
                     <div className="article__info">
                         <ul className="article__tag-list">
                             {post.tags.map((tag) => (
