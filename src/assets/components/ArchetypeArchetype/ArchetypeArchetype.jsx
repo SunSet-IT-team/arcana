@@ -1697,12 +1697,12 @@ function ArchetypeArchetype() {
                                     )
                                 )}
                             </ul>
-                            <p className="archetype__info-text">
+                            {/* <p className="archetype__info-text">
                                 Per una persona con questo archetipo è
                                 importante essere attenti ai dettagli,
                                 sviluppare la capacità di parlare, esprimere i
                                 pensieri con competenza.
-                            </p>
+                            </p> */}
                             <div className="archetype__button-box">
                                 <Button
                                     text="RICHIEDI UNA CONSULENZA"
@@ -1714,9 +1714,9 @@ function ArchetypeArchetype() {
                                 <Button
                                     text="ACQUISTA LA DISCREZIONE COMPLETA DELL’ARCHETIPO"
                                     className="archetype__info-btn button--black"
-                                    onClick={() =>
-                                        dispatch(setOpenBuyForm(true))
-                                    }
+                                    onClick={() => {
+                                        // dispatch(setOpenBuyForm(true))
+                                    }}
                                 />
                             </div>
                             <div className="archetype__sub-text">

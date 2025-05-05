@@ -174,7 +174,7 @@
             }
         }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &__buttons {
             display: none;
         }
@@ -248,6 +248,7 @@
         }
         &__item-imgBl {
             width: 100%;
+            clip-path: unset;
         }
         &__item-imgBox {
             max-height: 186px;
@@ -255,6 +256,37 @@
         &__link {
             display: flex;
             justify-content: flex-end;
+        }
+
+        // &-demo {
+        &__item-text {
+            display: flex;
+            flex-direction: column;
+            height: 30px;
+            font-size: 10px;
+        }
+        &__item-text-1 {
+            color: #717171;
+        }
+        &__item-imgBl {
+            width: 100% !important;
+        }
+        &__item-img {
+            max-height: 186px;
+            aspect-ratio: 1;
+        }
+        &__item-link {
+            float: unset;
+            display: flex !important;
+            justify-content: flex-end !important;
+            width: 100% !important;
+            margin-top: 14px;
+            float: right;
+            svg {
+                margin: 0;
+                width: 18px !important;
+                height: 18px !important;
+            }
         }
     }
 }

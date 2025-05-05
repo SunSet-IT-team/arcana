@@ -269,12 +269,12 @@ function ResultsResults() {
         },
         {
             num: 'D',
-            name: 'STRESS',
+            name: 'Stress',
             archetypeNum: toRim(posD),
         },
         {
             num: 'E',
-            name: 'Difensore',
+            name: 'Distruzione',
             archetypeNum: toRim(posE),
         },
         {

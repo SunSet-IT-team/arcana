@@ -126,7 +126,7 @@ function MonthResultsResults() {
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONENEL <br /> CAMBIAMENTO{' '}
+                                            TENSIONE NEL <br /> CAMBIAMENTO{' '}
                                             <br /> DI COSCIENZA
                                         </div>
                                         <div className="month-results__table-item">
