@@ -296,6 +296,7 @@
     .swiper-slide {
         width: 100%;
         opacity: 0.6;
+        height: unset;
         .archetypes-demo {
             &__item-number {
                 font-size: clamp(24px, size-desktop(32px), 32px);

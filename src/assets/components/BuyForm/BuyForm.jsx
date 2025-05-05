@@ -105,6 +105,40 @@ function BuyForm() {
         }
     }, [isFormOpen]);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append('name', e.target.name.value);
+        formData.append('email', e.target.email.value);
+        formData.append('phone', e.target.phone.value);
+        formData.append('message', e.target.message.value);
+
+        // Добавляем файл, если есть
+        if (e.target.file.files[0]) {
+            formData.append('file', e.target.file.files[0]);
+        }
+
+        try {
+            const response = await fetch(
+                'https://tuo-sito.it/wp-json/custom/v1/buy',
+                {
+                    method: 'POST',
+                    body: formData,
+                }
+            );
+
+            const result = await response.json();
+            if (result.success) {
+                alert(result.message);
+            } else {
+                alert(result.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
     // АВТОВЫСОТА К TEXT-AREA
     function autoResizeTextarea(element) {
         element.style.height = '78px';
@@ -246,6 +280,7 @@ function BuyForm() {
                                     <Button
                                         text="INVIARE"
                                         className="buy-form__form-button button--black"
+                                        onClick={handleSubmit}
                                     ></Button>
                                 </div>
                             </form>

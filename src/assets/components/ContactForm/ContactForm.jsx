@@ -113,11 +113,31 @@ function ContactForm() {
 
     const textareas = document.querySelectorAll('.contact-form__input--text');
 
-    const onSubmit = (data) => {
-        navigate('/success-send');
-        navigate(0);
-        // dispatch(setOpenProfileMethod(false));
-        // dispatch(setOpenContactForm(false));
+    const onSubmit = async (data) => {
+        try {
+            const response = await fetch(
+                'https://www.22archetypes.com/wp/wp-json/custom/v1/contact',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                }
+            );
+
+            const result = await response.json();
+            console.log(result);
+
+            if (result.success) {
+                navigate('/success-send');
+                navigate(0);
+            } else {
+                alert(result.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
     };
 
     const {register, handleSubmit, watch} = useForm({
