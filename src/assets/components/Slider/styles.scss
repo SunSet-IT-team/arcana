@@ -184,14 +184,17 @@
         &__item-wrapper {
             border: 1px solid $white;
             padding: 10px;
-            // height: 360px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
         &__item-title {
             padding: 2.5px 5px;
             font-size: 18px !important;
             margin-bottom: 0 !important;
-            white-space: nowrap;
             font-weight: 400;
+            flex-grow: 1;
         }
         &__item-tagbox {
             padding: 0;
@@ -281,7 +284,6 @@
             justify-content: flex-end !important;
             width: 100% !important;
             margin-top: 14px;
-            float: right;
             svg {
                 margin: 0;
                 width: 18px !important;
@@ -333,6 +335,9 @@
             }
             &__item-body {
                 overflow: hidden;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
             }
             &__item-text {
                 line-height: 1.4;

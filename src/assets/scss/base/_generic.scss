@@ -1,7 +1,7 @@
 body {
     @include light;
     user-select: none;
-    font-size: size-desktop($fz-default);
+    font-size: clamp(10px, size-desktop($fz-default), 18px);
     line-height: 1.5;
     display: flex;
     flex-direction: column;

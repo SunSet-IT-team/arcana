@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import {FreeMode, Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import './styles.scss';
+
 const archetypesData = [
     {
         title: 'IL MAGO',
@@ -243,7 +245,7 @@ function SliderMobile({archetypesProp = []}) {
                                 <Marquee gradient={false} speed={30}>
                                     <h3
                                         ref={titleRef}
-                                        className="archetypes-demo__item-title text-split"
+                                        className="archetypes-demo__item-title"
                                     >
                                         {archetype.title}
                                     </h3>
@@ -251,13 +253,13 @@ function SliderMobile({archetypesProp = []}) {
                             ) : (
                                 <h3
                                     ref={titleRef}
-                                    className="archetypes-demo__item-title text-split"
+                                    className="archetypes-demo__item-title"
                                 >
                                     {archetype.title}
                                 </h3>
                             )}
                             <div className="archetypes-demo__item-tagbox">
-                                <span className="archetypes-demo__item-tag underline text-split">
+                                <span className="archetypes-demo__item-tag underline">
                                     {archetype.number}
                                 </span>
                             </div>
@@ -275,7 +277,7 @@ function SliderMobile({archetypesProp = []}) {
                         </div>
 
                         <div className="archetypes-demo__item-info">
-                            <p className="archetypes-demo__item-text text-split text-cut">
+                            <p className="archetypes-demo__item-text  text-cut">
                                 <span className="archetypes-demo__item-text-1">
                                     Energia:
                                 </span>
@@ -283,7 +285,7 @@ function SliderMobile({archetypesProp = []}) {
                                     {archetype.energy}
                                 </span>
                             </p>
-                            <p className="archetypes-demo__item-text text-split text-cut">
+                            <p className="archetypes-demo__item-text text-cut">
                                 <span className="archetypes-demo__item-text-1">
                                     Manifestazione positiva:
                                 </span>
@@ -291,7 +293,7 @@ function SliderMobile({archetypesProp = []}) {
                                     {archetype.positive}
                                 </span>
                             </p>
-                            <p className="archetypes-demo__item-text text-split text-cut">
+                            <p className="archetypes-demo__item-text text-cut">
                                 <span className="archetypes-demo__item-text-1">
                                     Manifestazione positiva:
                                 </span>

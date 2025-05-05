@@ -278,7 +278,10 @@ function MainStory() {
                                                         <div className="storys-demo__item-tagbox">
                                                             {story.tags.map(
                                                                 (t) => (
-                                                                    <span className="storys-demo__item-tag underline text-split">
+                                                                    <span
+                                                                        key={t}
+                                                                        className="storys-demo__item-tag underline text-split"
+                                                                    >
                                                                         {t}
                                                                     </span>
                                                                 )
