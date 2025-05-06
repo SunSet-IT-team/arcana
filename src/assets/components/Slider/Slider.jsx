@@ -205,7 +205,7 @@ export default function App() {
     const [realTr, setRealTr] = useState(0);
     const swiperRef = React.useRef(null);
     const [spaceBetween, setSpaceBetween] = React.useState(0);
-    const [isMobile, setIsMobile] = React.useState(false);
+    const [isMobile, setIsMobile] = React.useState(true);
 
     // РАЗБИВКА ТЕКСТА НА СЛОВА
     React.useEffect(() => {
@@ -213,7 +213,9 @@ export default function App() {
         const textAnimation = new TextLinesReveal(
             Array.from(textSplitElements)
         );
-        // playAnimation();
+        if (!isMobile) {
+            playAnimation();
+        }
 
         const handleResize = () => {
             const width = window.innerWidth;

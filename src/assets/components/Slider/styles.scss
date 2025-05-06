@@ -3,7 +3,7 @@
 @import '../../scss/abstracts/functions';
 
 .swiper-wrapper {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: repeat(
             23,
@@ -131,49 +131,49 @@
             font-size: 13px !important;
         }
     }
-    @media screen and (max-width: 1024px) and (min-width: 769px) {
-        &__buttons-title {
-            font-size: 13px !important;
-            margin-top: 0;
-            margin-bottom: 50px;
-        }
-        &__button {
-            width: 30px;
-            aspect-ratio: 1;
-            height: unset;
-            &:nth-child(2) {
-                margin-right: 15px;
-            }
-        }
-        &__item-number {
-            padding-bottom: 14px !important;
-            margin-bottom: 20px !important;
-        }
-        &__item-title {
-            margin-bottom: 19px !important;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        &__item-info {
-            padding-left: 7.5px !important;
-        }
-        &__item-text {
-            line-height: 1.4 !important;
-            overflow: hidden;
-            max-height: 90px;
-        }
-        &__item-link {
-            font-size: 13px !important;
-            margin-left: 151px !important;
-            svg {
-                margin-left: 15px !important;
-                width: 18px !important;
-                height: unset;
-                aspect-ratio: 1;
-            }
-        }
-    }
+    // @media screen and (max-width: 1024px) and (min-width: 769px) {
+    //     &__buttons-title {
+    //         font-size: 13px !important;
+    //         margin-top: 0;
+    //         margin-bottom: 50px;
+    //     }
+    //     &__button {
+    //         width: 30px;
+    //         aspect-ratio: 1;
+    //         height: unset;
+    //         &:nth-child(2) {
+    //             margin-right: 15px;
+    //         }
+    //     }
+    //     &__item-number {
+    //         padding-bottom: 14px !important;
+    //         margin-bottom: 20px !important;
+    //     }
+    //     &__item-title {
+    //         margin-bottom: 19px !important;
+    //         overflow: hidden;
+    //         white-space: nowrap;
+    //         text-overflow: ellipsis;
+    //     }
+    //     &__item-info {
+    //         padding-left: 7.5px !important;
+    //     }
+    //     &__item-text {
+    //         line-height: 1.4 !important;
+    //         overflow: hidden;
+    //         max-height: 90px;
+    //     }
+    //     &__item-link {
+    //         font-size: 13px !important;
+    //         margin-left: 151px !important;
+    //         svg {
+    //             margin-left: 15px !important;
+    //             width: 18px !important;
+    //             height: unset;
+    //             aspect-ratio: 1;
+    //         }
+    //     }
+    // }
     @media screen and (max-width: 767px) {
         &__buttons {
             display: none;
@@ -286,6 +286,11 @@
                 margin: 0;
                 width: 18px !important;
                 height: 18px !important;
+            }
+        }
+        &__item-text {
+            .line-wrapper:first-child {
+                color: #717171;
             }
         }
     }
@@ -410,27 +415,30 @@
                     opacity: 1;
                     visibility: visible;
                 }
-            }
-        }
-        @media screen and (max-width: 1024px) and (min-width: 768px) {
-            max-width: 335px !important;
-            width: 335px !important;
-            .archetypes-demo {
-                &__item-imgBox {
-                    height: clamp(10px, size-desktop(630px), 680px);
-                    width: 100%;
-                    &::before {
-                        display: none;
-                    }
-                }
-                &__item-number {
-                    margin-top: -7.5px;
-                    padding-bottom: 22px !important;
+                &__item-link {
+                    width: unset;
                 }
             }
         }
+        // @media screen and (max-width: 1024px) and (min-width: 768px) {
+        //     max-width: 335px !important;
+        //     width: 335px !important;
+        //     .archetypes-demo {
+        //         &__item-imgBox {
+        //             height: clamp(10px, size-desktop(630px), 680px);
+        //             width: 100%;
+        //             &::before {
+        //                 display: none;
+        //             }
+        //         }
+        //         &__item-number {
+        //             margin-top: -7.5px;
+        //             padding-bottom: 22px !important;
+        //         }
+        //     }
+        // }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         width: 100% !important;
         .swiper::before,
         .swiper::after {
