@@ -236,6 +236,10 @@
         &__span {
             width: 50%;
         }
+        &__table-item {
+            font-size: 10px;
+            text-align: left;
+        }
     }
 
     @media screen and (max-width: 1024px) {
