@@ -141,7 +141,7 @@ function MainAbout() {
                                 tag="p"
                                 className="about__author-text1 text-split"
                             >
-                                Olga Veda, antropologa culturale, è studiosa e
+                                Olga Veda, antropologa culturale, studiosa e
                                 ricercatrice del Metodo del Profilo Archetipico:
                                 un sistema integrato che favorisce una
                                 comprensione profonda di sé e accompagna i
