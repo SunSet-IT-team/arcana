@@ -225,7 +225,7 @@
         margin-top: 50px;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1280px) {
         &__table-content {
             font-size: 14px;
             padding: 10px;
@@ -242,7 +242,7 @@
         }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1280px) {
         padding: 100px 0;
         overflow: hidden;
         &__body {

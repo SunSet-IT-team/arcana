@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './styles.scss';
+import '../MainMenu/styles.scss';
 
 import {Link, useLocation} from 'react-router-dom';
 
