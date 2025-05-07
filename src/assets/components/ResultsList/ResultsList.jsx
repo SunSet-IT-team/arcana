@@ -25,9 +25,9 @@ function ResultsList({
     posD,
     posE,
     posF,
-    // posH,
-    // posG1,
-    // posG2,
+    posH,
+    posG1,
+    posG2,
 }) {
     return (
         <ul className="results-list">
@@ -111,18 +111,24 @@ function ResultsList({
                 <span className="results-list__name">F</span>
                 <span className="results-list__number">{toRim(posF)}</span>
             </li>
-            {/* <li className="results-list__item">
-                <span className="results-list__name">H</span>
-                <span className="results-list__number">{toRim(posH)}</span>
-            </li>
-            <li className="results-list__item">
-                <span className="results-list__name">G1</span>
-                <span className="results-list__number">{toRim(posG1)}</span>
-            </li>
-            <li className="results-list__item">
-                <span className="results-list__name">G2</span>
-                <span className="results-list__number">{toRim(posG2)}</span>
-            </li> */}
+            {posH && (
+                <li className="results-list__item">
+                    <span className="results-list__name">H</span>
+                    <span className="results-list__number">{toRim(posH)}</span>
+                </li>
+            )}
+            {posG1 && (
+                <li className="results-list__item">
+                    <span className="results-list__name">G1</span>
+                    <span className="results-list__number">{toRim(posG1)}</span>
+                </li>
+            )}
+            {posG2 && (
+                <li className="results-list__item">
+                    <span className="results-list__name">G2</span>
+                    <span className="results-list__number">{toRim(posG2)}</span>
+                </li>
+            )}
         </ul>
     );
 }

@@ -84,9 +84,9 @@ function PartnerResultsResults() {
             posD,
             posE,
             posF,
-            posH,
-            posG1,
-            posG2,
+            // posH,
+            // posG1,
+            // posG2,
         };
     };
 
@@ -142,9 +142,9 @@ function PartnerResultsResults() {
             jointPosD,
             jointPosE,
             jointPosF,
-            jointPosH,
-            jointPosG1,
-            jointPosG2,
+            // jointPosH,
+            // jointPosG1,
+            // jointPosG2,
         };
     };
     const jointResults = calculateJointPositions(results1, results2);
@@ -204,7 +204,7 @@ function PartnerResultsResults() {
             num: '11',
             name: 'Percezione di “noi”',
             archetypeNum: toRim(jointResults.jointPos11),
-        },
+        }, //////////////////////////////////////////////
         // {
         //     num: '12',
         //     name: 'Percezione “noi” dagli altri',
@@ -225,6 +225,27 @@ function PartnerResultsResults() {
         //     name: "L'archetipo del disagio psicologico",
         //     archetypeNum: toRim(jointResults.jointPos15),
         // },
+        //////////////////////////////////////////////
+        // {
+        //     num: ' ',
+        //     name: ' ',
+        //     archetypeNum: ' ',
+        // },
+        // {
+        //     num: ' ',
+        //     name: ' ',
+        //     archetypeNum: ' ',
+        // },
+        // {
+        //     num: ' ',
+        //     name: ' ',
+        //     archetypeNum: ' ',
+        // },
+        // {
+        //     num: ' ',
+        //     name: ' ',
+        //     archetypeNum: ' ',
+        // }, //////////
         {
             num: 'A',
             name: 'Conflitto',

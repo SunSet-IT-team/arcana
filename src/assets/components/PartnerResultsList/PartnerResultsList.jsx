@@ -40,6 +40,12 @@ function ResultsList({
                     {toRim(jointPos13)}
                 </span>
             </li> */}
+            {/* --------------------------------------------------- */}
+            <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
+            </li>
+            {/* --------------------------------------------------- */}
             <li className="results-list__item">
                 <span className="results-list__name">9 pos.</span>
                 <span className="results-list__number">{toRim(jointPos9)}</span>
@@ -56,6 +62,12 @@ function ResultsList({
                     {toRim(jointPos14)}
                 </span>
             </li> */}
+            {/* --------------------------------------------------- */}
+            <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
+            </li>
+            {/* --------------------------------------------------- */}
             <li className="results-list__item">
                 <span className="results-list__name">1 pos.</span>
                 <span className="results-list__number">{toRim(jointPos1)}</span>
@@ -90,6 +102,12 @@ function ResultsList({
                     {toRim(jointPos12)}
                 </span>
             </li> */}
+            {/* --------------------------------------------------- */}
+            <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
+            </li>
+            {/* --------------------------------------------------- */}
             <li className="results-list__item">
                 <span className="results-list__name">8 pos.</span>
                 <span className="results-list__number">{toRim(jointPos8)}</span>

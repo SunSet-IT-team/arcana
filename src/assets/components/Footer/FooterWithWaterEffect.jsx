@@ -180,9 +180,9 @@ function FooterWithWaterEffect() {
                                     <li className="footer__contact-item">
                                         <a
                                             className="footer__contact-link line"
-                                            href="mailto:veda@22archetypes.com"
+                                            href="mailto:22archetypes@gmail.com"
                                         >
-                                            VEDA@22ARCHETYPES.COM
+                                            22archetypes@gmail.com
                                         </a>
                                     </li>
                                 </ul>

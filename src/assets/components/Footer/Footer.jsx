@@ -177,9 +177,9 @@ function Footer() {
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link line"
-                                        href="mailto:veda@22archetypes.com"
+                                        href="mailto:22archetypes@gmail.com"
                                     >
-                                        veda@22archetypes.com
+                                        22archetypes@gmail.com
                                     </a>
                                 </li>
                             </ul>
