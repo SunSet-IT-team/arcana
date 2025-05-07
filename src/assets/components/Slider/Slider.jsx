@@ -213,9 +213,9 @@ export default function App() {
         const textAnimation = new TextLinesReveal(
             Array.from(textSplitElements)
         );
-        if (!isMobile) {
-            playAnimation();
-        }
+        // if (!isMobile) {
+        playAnimation();
+        // }
 
         const handleResize = () => {
             const width = window.innerWidth;

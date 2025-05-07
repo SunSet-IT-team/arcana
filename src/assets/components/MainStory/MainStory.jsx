@@ -235,289 +235,291 @@ function MainStory() {
                     {isMobile ? (
                         <MainStoryMobile />
                     ) : (
-                        <ul className="storys-demo__list storys-animation">
-                            <li className="storys-demo__item">
-                                <div className="storys-demo__body">
-                                    <div className="storys-demo__item-imgBox">
-                                        <div className="storys-demo__item-imgBg">
-                                            <div className="storys-demo__item-imgBl">
-                                                <img
-                                                    className="storys-demo__item-img"
-                                                    src="/images/storys/1.jpg"
-                                                    alt="author photo"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
+                        //     <ul className="storys-demo__list storys-animation">
+                        //         <li className="storys-demo__item">
+                        //             <div className="storys-demo__body">
+                        //                 <div className="storys-demo__item-imgBox">
+                        //                     <div className="storys-demo__item-imgBg">
+                        //                         <div className="storys-demo__item-imgBl">
+                        //                             <img
+                        //                                 className="storys-demo__item-img"
+                        //                                 src="/images/storys/1.jpg"
+                        //                                 alt="author photo"
+                        //                                 loading="lazy"
+                        //                             />
+                        //                         </div>
+                        //                     </div>
+                        //                 </div>
 
-                                    <div className="storys-demo__item-content">
-                                        <div className="storys-demo__item-tagbox">
-                                            <span className="storys-demo__item-tag underline text-split">
-                                                Crescita personale
-                                            </span>
-                                        </div>
-                                        <div className="storys-demo__item-body">
-                                            <h3 className="storys-demo__item-title text-split">
-                                                LA STORIA DI UN UOMO {'.'}
-                                                CONFUSO
-                                            </h3>
-                                            <p className="storys-demo__item-text text-split text-cut">
-                                                Nella sua essenza, il testo
-                                                ittico è un'alternativa al
-                                                tradizionale lorem ipsum, che in
-                                                alcuni casi provoca sconcerto
-                                                quando si cerca di leggere il
-                                                testo ittico.
-                                            </p>
-                                        </div>
+                        //                 <div className="storys-demo__item-content">
+                        //                     <div className="storys-demo__item-tagbox">
+                        //                         <span className="storys-demo__item-tag underline text-split">
+                        //                             Crescita personale
+                        //                         </span>
+                        //                     </div>
+                        //                     <div className="storys-demo__item-body">
+                        //                         <h3 className="storys-demo__item-title text-split">
+                        //                             LA STORIA DI UN UOMO {'.'}
+                        //                             CONFUSO
+                        //                         </h3>
+                        //                         <p className="storys-demo__item-text text-split text-cut">
+                        //                             Nella sua essenza, il testo
+                        //                             ittico è un'alternativa al
+                        //                             tradizionale lorem ipsum, che in
+                        //                             alcuni casi provoca sconcerto
+                        //                             quando si cerca di leggere il
+                        //                             testo ittico.
+                        //                         </p>
+                        //                     </div>
 
-                                        <LinkTo
-                                            text="LEGGERE"
-                                            className="storys-demo__item-link link--black"
-                                            path={'storys/1'}
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="storys-demo__item">
-                                <div className="storys-demo__body">
-                                    {/* <div className="storys-demo__item-img">
-                    <figure className="animation-image__wrapper">
-                        <div className="animation-image__box">
-                        <EmergingImage
-                            type={0}
-                            url="./images/storys/3.jpg"
-                            className="animation-image"
-                        />
-                        </div>
-                    </figure>
-                    </div> */}
-                                    <div className="storys-demo__item-imgBox">
-                                        <div className="storys-demo__item-imgBg">
-                                            <div className="storys-demo__item-imgBl">
-                                                <img
-                                                    className="storys-demo__item-img"
-                                                    src="/images/storys/1.jpg"
-                                                    alt="author photo"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="storys-demo__item-content">
-                                        <div className="storys-demo__item-tagbox">
-                                            <span className="storys-demo__item-tag underline text-split">
-                                                Lavoro e professione
-                                            </span>
-                                        </div>
+                        //                     <LinkTo
+                        //                         text="LEGGERE"
+                        //                         className="storys-demo__item-link link--black"
+                        //                         path={'storys/1'}
+                        //                     />
+                        //                 </div>
+                        //             </div>
+                        //         </li>
+                        //         <li className="storys-demo__item">
+                        //             <div className="storys-demo__body">
+                        //                 {/* <div className="storys-demo__item-img">
+                        // <figure className="animation-image__wrapper">
+                        //     <div className="animation-image__box">
+                        //     <EmergingImage
+                        //         type={0}
+                        //         url="./images/storys/3.jpg"
+                        //         className="animation-image"
+                        //     />
+                        //     </div>
+                        // </figure>
+                        // </div> */}
+                        //                 <div className="storys-demo__item-imgBox">
+                        //                     <div className="storys-demo__item-imgBg">
+                        //                         <div className="storys-demo__item-imgBl">
+                        //                             <img
+                        //                                 className="storys-demo__item-img"
+                        //                                 src="/images/storys/1.jpg"
+                        //                                 alt="author photo"
+                        //                             />
+                        //                         </div>
+                        //                     </div>
+                        //                 </div>
+                        //                 <div className="storys-demo__item-content">
+                        //                     <div className="storys-demo__item-tagbox">
+                        //                         <span className="storys-demo__item-tag underline text-split">
+                        //                             Lavoro e professione
+                        //                         </span>
+                        //                     </div>
 
-                                        <div className="storys-demo__item-body">
-                                            <h3 className="storys-demo__item-title text-split">
-                                                UNA STORIA D'AMORE CHE HA
-                                                SUPERATO LA PROVA DEL TEMPO
-                                            </h3>
-                                            <p className="storys-demo__item-text text-split text-cut">
-                                                Nella sua essenza, il testo
-                                                ittico è un'alternativa al
-                                                tradizionale lorem ipsum, che in
-                                                alcuni casi provoca sconcerto
-                                                quando si cerca di leggere il
-                                                testo ittico.
-                                            </p>
-                                        </div>
-                                        <LinkTo
-                                            text="LEGGERE"
-                                            path={'storys/1'}
-                                            className="storys-demo__item-link link--black"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="storys-demo__item">
-                                <div className="storys-demo__body">
-                                    {/* <div className="storys-demo__item-img">
-                    <figure className="animation-image__wrapper">
-                        <div className="animation-image__box">
-                        <EmergingImage
-                            type={0}
-                            url="./images/storys/2.jpg"
-                            className="animation-image"
-                        />
-                        </div>
-                    </figure>
-                    </div> */}
-                                    <div className="storys-demo__item-imgBox">
-                                        <div className="storys-demo__item-imgBg">
-                                            <div className="storys-demo__item-imgBl">
-                                                <img
-                                                    className="storys-demo__item-img"
-                                                    src="/images/storys/1.jpg"
-                                                    alt="author photo"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="storys-demo__item-content">
-                                        <div className="storys-demo__item-tagbox">
-                                            <span className="storys-demo__item-tag underline text-split">
-                                                Salute
-                                            </span>
-                                        </div>
+                        //                     <div className="storys-demo__item-body">
+                        //                         <h3 className="storys-demo__item-title text-split">
+                        //                             UNA STORIA D'AMORE CHE HA
+                        //                             SUPERATO LA PROVA DEL TEMPO
+                        //                         </h3>
+                        //                         <p className="storys-demo__item-text text-split text-cut">
+                        //                             Nella sua essenza, il testo
+                        //                             ittico è un'alternativa al
+                        //                             tradizionale lorem ipsum, che in
+                        //                             alcuni casi provoca sconcerto
+                        //                             quando si cerca di leggere il
+                        //                             testo ittico.
+                        //                         </p>
+                        //                     </div>
+                        //                     <LinkTo
+                        //                         text="LEGGERE"
+                        //                         path={'storys/1'}
+                        //                         className="storys-demo__item-link link--black"
+                        //                     />
+                        //                 </div>
+                        //             </div>
+                        //         </li>
+                        //         <li className="storys-demo__item">
+                        //             <div className="storys-demo__body">
+                        //                 {/* <div className="storys-demo__item-img">
+                        // <figure className="animation-image__wrapper">
+                        //     <div className="animation-image__box">
+                        //     <EmergingImage
+                        //         type={0}
+                        //         url="./images/storys/2.jpg"
+                        //         className="animation-image"
+                        //     />
+                        //     </div>
+                        // </figure>
+                        // </div> */}
+                        //                 <div className="storys-demo__item-imgBox">
+                        //                     <div className="storys-demo__item-imgBg">
+                        //                         <div className="storys-demo__item-imgBl">
+                        //                             <img
+                        //                                 className="storys-demo__item-img"
+                        //                                 src="/images/storys/1.jpg"
+                        //                                 alt="author photo"
+                        //                                 loading="lazy"
+                        //                             />
+                        //                         </div>
+                        //                     </div>
+                        //                 </div>
+                        //                 <div className="storys-demo__item-content">
+                        //                     <div className="storys-demo__item-tagbox">
+                        //                         <span className="storys-demo__item-tag underline text-split">
+                        //                             Salute
+                        //                         </span>
+                        //                     </div>
 
-                                        <div className="storys-demo__item-body">
-                                            <h3 className="storys-demo__item-title text-split ">
-                                                RICETTA EDIFICANTE
-                                            </h3>
-                                            <p className="storys-demo__item-text text-split text-cut">
-                                                Nella sua essenza, il testo
-                                                ittico è un'alternativa al
-                                                tradizionale lorem ipsum, che in
-                                                alcuni casi provoca sconcerto
-                                                quando si cerca di leggere il
-                                                testo ittico.
-                                            </p>
-                                        </div>
+                        //                     <div className="storys-demo__item-body">
+                        //                         <h3 className="storys-demo__item-title text-split ">
+                        //                             RICETTA EDIFICANTE
+                        //                         </h3>
+                        //                         <p className="storys-demo__item-text text-split text-cut">
+                        //                             Nella sua essenza, il testo
+                        //                             ittico è un'alternativa al
+                        //                             tradizionale lorem ipsum, che in
+                        //                             alcuni casi provoca sconcerto
+                        //                             quando si cerca di leggere il
+                        //                             testo ittico.
+                        //                         </p>
+                        //                     </div>
 
-                                        <LinkTo
-                                            text="LEGGERE"
-                                            path={'storys/1'}
-                                            className="storys-demo__item-link link--black"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="storys-demo__item">
-                                <div className="storys-demo__body">
-                                    {/* <div className="storys-demo__item-img">
-                    <figure className="animation-image__wrapper">
-                        <div className="animation-image__box">
-                        <EmergingImage
-                            type={0}
-                            url="./images/storys/4.jpg"
-                            className="animation-image"
-                        />
-                        </div>
-                    </figure>
-                    </div> */}
-                                    <div className="storys-demo__item-imgBox">
-                                        <div className="storys-demo__item-imgBg">
-                                            <div className="storys-demo__item-imgBl">
-                                                <img
-                                                    className="storys-demo__item-img"
-                                                    src="/images/storys/1.jpg"
-                                                    alt="author photo"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="storys-demo__item-content">
-                                        <div className="storys-demo__item-tagbox">
-                                            <span className="storys-demo__item-tag underline text-split">
-                                                Crescita personale
-                                            </span>
-                                        </div>
+                        //                     <LinkTo
+                        //                         text="LEGGERE"
+                        //                         path={'storys/1'}
+                        //                         className="storys-demo__item-link link--black"
+                        //                     />
+                        //                 </div>
+                        //             </div>
+                        //         </li>
+                        //         <li className="storys-demo__item">
+                        //             <div className="storys-demo__body">
+                        //                 {/* <div className="storys-demo__item-img">
+                        // <figure className="animation-image__wrapper">
+                        //     <div className="animation-image__box">
+                        //     <EmergingImage
+                        //         type={0}
+                        //         url="./images/storys/4.jpg"
+                        //         className="animation-image"
+                        //     />
+                        //     </div>
+                        // </figure>
+                        // </div> */}
+                        //                 <div className="storys-demo__item-imgBox">
+                        //                     <div className="storys-demo__item-imgBg">
+                        //                         <div className="storys-demo__item-imgBl">
+                        //                             <img
+                        //                                 className="storys-demo__item-img"
+                        //                                 src="/images/storys/1.jpg"
+                        //                                 alt="author photo"
+                        //                                 loading="lazy"
+                        //                             />
+                        //                         </div>
+                        //                     </div>
+                        //                 </div>
+                        //                 <div className="storys-demo__item-content">
+                        //                     <div className="storys-demo__item-tagbox">
+                        //                         <span className="storys-demo__item-tag underline text-split">
+                        //                             Crescita personale
+                        //                         </span>
+                        //                     </div>
 
-                                        <div className="storys-demo__item-body">
-                                            <h3 className="storys-demo__item-title text-split">
-                                                RICETTA EDIFICANTE
-                                            </h3>
-                                            <p className="storys-demo__item-text text-split text-cut">
-                                                Nella sua essenza, il testo
-                                                ittico è un'alternativa al
-                                                tradizionale lorem ipsum, che in
-                                                alcuni casi provoca sconcerto
-                                                quando si cerca di leggere il
-                                                testo ittico.
-                                            </p>
-                                        </div>
+                        //                     <div className="storys-demo__item-body">
+                        //                         <h3 className="storys-demo__item-title text-split">
+                        //                             RICETTA EDIFICANTE
+                        //                         </h3>
+                        //                         <p className="storys-demo__item-text text-split text-cut">
+                        //                             Nella sua essenza, il testo
+                        //                             ittico è un'alternativa al
+                        //                             tradizionale lorem ipsum, che in
+                        //                             alcuni casi provoca sconcerto
+                        //                             quando si cerca di leggere il
+                        //                             testo ittico.
+                        //                         </p>
+                        //                     </div>
 
-                                        <LinkTo
-                                            text="LEGGERE"
-                                            path={'storys/1'}
-                                            className="storys-demo__item-link link--black"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="storys-demo__item">
-                                <div className="storys-demo__body">
-                                    {/* <div className="storys-demo__item-img">
-                    <figure className="animation-image__wrapper">
-                        <div className="animation-image__box">
-                        <EmergingImage
-                            type={0}
-                            url="./images/storys/5.jpg"
-                            className="animation-image"
-                        />
-                        </div>
-                    </figure>
-                    </div> */}
-                                    <div className="storys-demo__item-imgBox">
-                                        <div className="storys-demo__item-imgBg">
-                                            <div className="storys-demo__item-imgBl">
-                                                <img
-                                                    className="storys-demo__item-img"
-                                                    src="/images/storys/1.jpg"
-                                                    alt="author photo"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="storys-demo__item-content">
-                                        <div className="storys-demo__item-tagbox">
-                                            <span className="storys-demo__item-tag underline text-split">
-                                                Crescita personale
-                                            </span>
-                                        </div>
+                        //                     <LinkTo
+                        //                         text="LEGGERE"
+                        //                         path={'storys/1'}
+                        //                         className="storys-demo__item-link link--black"
+                        //                     />
+                        //                 </div>
+                        //             </div>
+                        //         </li>
+                        //         <li className="storys-demo__item">
+                        //             <div className="storys-demo__body">
+                        //                 {/* <div className="storys-demo__item-img">
+                        // <figure className="animation-image__wrapper">
+                        //     <div className="animation-image__box">
+                        //     <EmergingImage
+                        //         type={0}
+                        //         url="./images/storys/5.jpg"
+                        //         className="animation-image"
+                        //     />
+                        //     </div>
+                        // </figure>
+                        // </div> */}
+                        //                 <div className="storys-demo__item-imgBox">
+                        //                     <div className="storys-demo__item-imgBg">
+                        //                         <div className="storys-demo__item-imgBl">
+                        //                             <img
+                        //                                 className="storys-demo__item-img"
+                        //                                 src="/images/storys/1.jpg"
+                        //                                 alt="author photo"
+                        //                                 loading="lazy"
+                        //                             />
+                        //                         </div>
+                        //                     </div>
+                        //                 </div>
+                        //                 <div className="storys-demo__item-content">
+                        //                     <div className="storys-demo__item-tagbox">
+                        //                         <span className="storys-demo__item-tag underline text-split">
+                        //                             Crescita personale
+                        //                         </span>
+                        //                     </div>
 
-                                        <div className="storys-demo__item-body">
-                                            <h3 className="storys-demo__item-title text-split">
-                                                RICETTA EDIFICANTE
-                                            </h3>
-                                            <p className="storys-demo__item-text text-split text-cut">
-                                                Nella sua essenza, il testo
-                                                ittico è un'alternativa al
-                                                tradizionale lorem ipsum, che in
-                                                alcuni casi provoca sconcerto
-                                                quando si cerca di leggere il
-                                                testo ittico.
-                                            </p>
-                                        </div>
+                        //                     <div className="storys-demo__item-body">
+                        //                         <h3 className="storys-demo__item-title text-split">
+                        //                             RICETTA EDIFICANTE
+                        //                         </h3>
+                        //                         <p className="storys-demo__item-text text-split text-cut">
+                        //                             Nella sua essenza, il testo
+                        //                             ittico è un'alternativa al
+                        //                             tradizionale lorem ipsum, che in
+                        //                             alcuni casi provoca sconcerto
+                        //                             quando si cerca di leggere il
+                        //                             testo ittico.
+                        //                         </p>
+                        //                     </div>
 
-                                        <LinkTo
-                                            text="LEGGERE"
-                                            path={'storys/1'}
-                                            className="storys-demo__item-link link--black"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
+                        //                     <LinkTo
+                        //                         text="LEGGERE"
+                        //                         path={'storys/1'}
+                        //                         className="storys-demo__item-link link--black"
+                        //                     />
+                        //                 </div>
+                        //             </div>
+                        //         </li>
 
-                            <Link
-                                to="/storys"
-                                className="storys-demo__link arrow"
-                                href="#"
-                            >
-                                <span className="underline">
-                                    Leggi tutte le storie
-                                </span>
-                                <svg
-                                    width="21"
-                                    height="21"
-                                    viewBox="0 0 21 21"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                        fill="currentColor"
-                                    />
-                                </svg>
-                            </Link>
-                        </ul>
+                        //         <Link
+                        //             to="/storys"
+                        //             className="storys-demo__link arrow"
+                        //             href="#"
+                        //         >
+                        //             <span className="underline">
+                        //                 Leggi tutte le storie
+                        //             </span>
+                        //             <svg
+                        //                 width="21"
+                        //                 height="21"
+                        //                 viewBox="0 0 21 21"
+                        //                 fill="none"
+                        //                 xmlns="http://www.w3.org/2000/svg"
+                        //             >
+                        //                 <path
+                        //                     d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
+                        //                     fill="currentColor"
+                        //                 />
+                        //             </svg>
+                        //         </Link>
+                        //     </ul>
+                        // )}
+                        <></>
                     )}
                 </div>
             </div>
