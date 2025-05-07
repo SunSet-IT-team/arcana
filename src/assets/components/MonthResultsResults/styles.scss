@@ -225,14 +225,24 @@
         margin-top: 50px;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1280px) {
         &__table-content {
             font-size: 14px;
             padding: 10px;
         }
+        &__content {
+            flex-direction: row !important;
+        }
+        &__span {
+            width: 50%;
+        }
+        &__table-item {
+            font-size: 10px;
+            text-align: left;
+        }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1280px) {
         padding: 100px 0;
         overflow: hidden;
         &__body {
