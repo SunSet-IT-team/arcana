@@ -1711,13 +1711,13 @@ function ArchetypeArchetype() {
                                         dispatch(setOpenContactForm(true))
                                     }
                                 />
-                                {/* <Button
+                                <Button
                                     text="ACQUISTA LA DISCREZIONE COMPLETA DELL’ARCHETIPO"
                                     className="archetype__info-btn button--black"
                                     onClick={() => {
-                                        dispatch(setOpenBuyForm(true));
+                                        // dispatch(setOpenBuyForm(true));
                                     }}
-                                /> */}
+                                />
                             </div>
                             <div className="archetype__sub-text">
                                 <p>

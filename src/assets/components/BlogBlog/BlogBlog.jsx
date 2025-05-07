@@ -6,9 +6,101 @@ import {Link} from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import BlogList from '../BlogList/BlogList';
 import SelectLabel from '../Select/Select';
+
 import {useTags} from '../../api/tags/useTags';
 import {useInfinitePosts} from '../../api/posts/usePosts';
 import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
+
+const blogOptions = [
+    {value: 'TUTTI', label: 'TUTTI'},
+    {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
+    {value: 'ARHCETIPI', label: 'ARHCETIPI'},
+    {value: 'PERSONE', label: 'PERSONE'},
+    {value: 'VITA', label: 'VITA'},
+    {value: 'PREVISIONI', label: 'PREVISIONI'},
+    {value: 'EVENTI', label: 'EVENTI'},
+    {value: 'MITI E FIABE', label: 'MITI E FIABE'},
+];
+
+const blogData = [
+    // {
+    //     name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
+    //     tags: ['ENERGIE BASE', 'PREVISIONI'],
+    //     text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+    //     imgSrc: './images/storys/1.jpg',
+    //     date: '05.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '05.04.2024',
+    // },
+    // {
+    //     name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
+    //     tags: ['ENERGIE BASE', 'ARHCETIPI'],
+    //     text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+    //     imgSrc: './images/storys/1.jpg',
+    //     date: '04.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '04.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'VITA'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '04.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '03.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '03.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '02.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '02.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '01.04.2024',
+    // },
+    // {
+    //     name: "UN'ALTRA STORIA DI SUCCESSO",
+    //     tags: ['TECNOLOGIA', 'SVILUPPO'],
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
+    //     imgSrc: './images/storys/2.jpg',
+    //     date: '01.04.2024',
+    // },
+];
 
 function BlogBlog() {
     const [isShowClipPath, setIsShowClipPath] = useState(false);
