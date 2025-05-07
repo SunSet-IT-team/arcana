@@ -158,6 +158,7 @@
     &__item-title {
         font-size: clamp(24px, size-desktop(50px), 50px);
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
     &__item-content {
         display: flex;
