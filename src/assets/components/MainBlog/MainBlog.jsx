@@ -15,7 +15,9 @@ function MainBlog() {
      */
     const {data: posts, isPending} = useInfinitePosts();
 
-    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    //Так попросила заказчица 🤷‍♂️
+    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    const allPosts = [];
 
     const blogData = [
         // {
@@ -52,17 +54,21 @@ function MainBlog() {
                         <span>BLOG</span>
                     </TitleAnimation>
 
-                    {allPosts && allPosts.length && (
-                        <BlogList data={allPosts} isShowMore={false} />
+                    {allPosts && allPosts.length > 0 && (
+                        <>
+                            <BlogList data={allPosts} isShowMore={false} />
+                            <div className="blog-demo__link-wrapper">
+                                <Link
+                                    text="TUTTI GLI ARTICOLI DEL BLOG"
+                                    className="blog-demo__link link--black"
+                                    path="blog"
+                                />
+                            </div>
+                        </>
                     )}
-                    {isPending && <LoadingSpinner />}
-                    <div className="blog-demo__link-wrapper">
-                        <Link
-                            text="TUTTI GLI ARTICOLI DEL BLOG"
-                            className="blog-demo__link link--black"
-                            path="blog"
-                        />
-                    </div>
+                    {!allPosts.length && (
+                        <h3 style={{textAlign: 'center'}}>Nessun record</h3>
+                    )}
                 </div>
             </div>
         </section>

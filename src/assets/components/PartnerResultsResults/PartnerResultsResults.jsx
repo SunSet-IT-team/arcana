@@ -190,21 +190,21 @@ function PartnerResultsResults() {
             name: 'Superpotenziale',
             archetypeNum: toRim(jointResults.jointPos8),
         },
-        {
-            num: '9',
-            name: 'Conforto psicologico',
-            archetypeNum: toRim(jointResults.jointPos9),
-        },
-        {
-            num: '10',
-            name: 'Disagio psicologico',
-            archetypeNum: toRim(jointResults.jointPos10),
-        },
-        {
-            num: '11',
-            name: 'Percezione di “noi”',
-            archetypeNum: toRim(jointResults.jointPos11),
-        }, //////////////////////////////////////////////
+        // {
+        //     num: '9',
+        //     name: 'Conforto psicologico',
+        //     archetypeNum: toRim(jointResults.jointPos9),
+        // },
+        // {
+        //     num: '10',
+        //     name: 'Disagio psicologico',
+        //     archetypeNum: toRim(jointResults.jointPos10),
+        // },
+        // {
+        //     num: '11',
+        //     name: 'Percezione di “noi”',
+        //     archetypeNum: toRim(jointResults.jointPos11),
+        // }, //////////////////////////////////////////////
         // {
         //     num: '12',
         //     name: 'Percezione “noi” dagli altri',

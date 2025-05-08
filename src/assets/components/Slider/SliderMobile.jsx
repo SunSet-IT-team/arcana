@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import {FreeMode, Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import './styles.scss';
+import {archetypesData as archetypesData22} from '../ArchetypesArchetypes/ArchetypesArchetypes';
 
 const archetypesData = [
     {
@@ -237,7 +238,7 @@ function SliderMobile({archetypesProp = []}) {
             centeredSlides={true}
             className="storys-swiper"
         >
-            {data.map((archetype, index) => (
+            {archetypesData22.map((archetype, index) => (
                 <SwiperSlide key={index}>
                     <div className="archetypes-demo__item-wrapper">
                         <div className="archetypes-demo__item-body">

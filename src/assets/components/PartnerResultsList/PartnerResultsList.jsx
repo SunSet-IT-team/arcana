@@ -27,13 +27,19 @@ function ResultsList({
     jointPosF,
 }) {
     return (
-        <ul className="results-list">
-            <li className="results-list__item">
+        <ul className="results-list" style={{marginTop: '-120px'}}>
+            {/* <li className="results-list__item">
                 <span className="results-list__name">11 pos.</span>
                 <span className="results-list__number">
                     {toRim(jointPos11)}
                 </span>
+            </li> */}
+            {/* --------------------------------------------------- */}
+            <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
             </li>
+            {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
                 <span className="results-list__name">13 pos.</span>
                 <span className="results-list__number">
@@ -46,16 +52,28 @@ function ResultsList({
                 <span className="results-list__number"></span>
             </li>
             {/* --------------------------------------------------- */}
-            <li className="results-list__item">
+            {/* <li className="results-list__item">
                 <span className="results-list__name">9 pos.</span>
                 <span className="results-list__number">{toRim(jointPos9)}</span>
-            </li>
+            </li> */}
+            {/* --------------------------------------------------- */}
             <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
+            </li>
+            {/* --------------------------------------------------- */}
+            {/* <li className="results-list__item">
                 <span className="results-list__name">10 pos.</span>
                 <span className="results-list__number">
                     {toRim(jointPos10)}
                 </span>
+            </li> */}
+            {/* --------------------------------------------------- */}
+            <li className="results-list__item">
+                <span className="results-list__name"></span>
+                <span className="results-list__number"></span>
             </li>
+            {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
                 <span className="results-list__name">14 pos.</span>
                 <span className="results-list__number">

@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 import SelectLabel from '../../components/Select/Select';
 import SliderMobile from '../Slider/SliderMobile';
 
-const archetypesData = [
+export const archetypesData = [
     {
         title: 'Il Mago',
         number: 'I',
