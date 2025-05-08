@@ -13,13 +13,15 @@ import {TextLinesReveal} from '../../js/textLinesReveal';
 
 import SliderMobile from './SliderMobile';
 import './styles.scss';
+import {archetypesData as archetypesData22} from '../ArchetypesArchetypes/ArchetypesArchetypes';
+import {archetypesContent} from '../ArchetypeArchetype/ArchetypeArchetype';
 
 // ДАННЫЕ ДЛЯ СЛАЙДЕРА
 const archetypesData = [
     {
         title: 'IL MAGO',
         number: 'I',
-        text: `L'Archetipo I il Mago incarna il potere della parola, dello studio e della comunicazione. 
+        text: `L'Archetipo I il Mago incarna il potere della parola, dello studio e della comunicazione.
 È l'energia giovanile che spinge a esplorare, imparare e sperimentare, ma spesso senza una chiara direzione o consapevolezza del "perché".
 `,
         imgSrc: './images/archetypes/1.jpg',
@@ -36,7 +38,7 @@ const archetypesData = [
     {
         title: "L'IMPERATRICE",
         number: 'III',
-        text: `È la personificazione della materia, della sessualità e della padronanza del mondo materiale. 
+        text: `È la personificazione della materia, della sessualità e della padronanza del mondo materiale.
 III L’Imperatrice è l'incarnazione del desiderio inconscio di fecondazione, dell'energia della bellezza, della creazione e dell'abbondanza.
 
 `,
@@ -46,7 +48,7 @@ III L’Imperatrice è l'incarnazione del desiderio inconscio di fecondazione, d
     {
         title: "L'IMPERATORE",
         number: 'IV',
-        text: `L'Archetipo IV l’Imperatore è la personificazione del Re, del padrone, di un professionista. 
+        text: `L'Archetipo IV l’Imperatore è la personificazione del Re, del padrone, di un professionista.
 È il Padre archetipico in termini di potere e controllo.
 `,
         imgSrc: './images/archetypes/4.jpg',
@@ -56,7 +58,7 @@ III L’Imperatrice è l'incarnazione del desiderio inconscio di fecondazione, d
         title: 'IL PAPA',
         number: 'V',
         text: `V Il Papa è il Padre archetipico in termini di tutoraggio, potere genitoriale e autorità.
-l'Archetipo V il Papa è la personificazione di un insegnante, di un mentore, delle tradizioni, della conoscenza tradizionale e dell’autorità della conoscenza. 
+l'Archetipo V il Papa è la personificazione di un insegnante, di un mentore, delle tradizioni, della conoscenza tradizionale e dell’autorità della conoscenza.
 `,
         imgSrc: './images/archetypes/5.jpg',
         linkTo: '/archetypes/V',
@@ -65,7 +67,7 @@ l'Archetipo V il Papa è la personificazione di un insegnante, di un mentore, de
         title: "L'INNAMORATO",
         number: 'VI',
         text: `L'Archetipo VI l'Innamorato è la personificazione della scelta, della partnership e del triangolo della scelta.
-L’essenza di questo Archetipo è proprio la Scelta. 
+L’essenza di questo Archetipo è proprio la Scelta.
 `,
         imgSrc: './images/archetypes/6.jpg',
         linkTo: '/archetypes/VI',
@@ -603,7 +605,7 @@ export default function App() {
                             swiper.setTranslate(-count * slideWidth);
                         }}
                     >
-                        {archetypesData.map((data, index) => (
+                        {archetypesData22.map((data, index) => (
                             <SwiperSlide
                                 key={index}
                                 onClick={() => {
@@ -653,7 +655,9 @@ export default function App() {
                                         <p
                                             className={`archetypes-demo__item-text text-split`}
                                         >
-                                            {data.number + ' ' + data.title}
+                                            {/* {data.number + ' ' + data.title}
+                                             */}
+                                            {archetypesData[index].text}
                                         </p>
                                         <p
                                             className={`archetypes-demo__item-text text-split`}

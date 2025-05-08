@@ -162,7 +162,9 @@ function BlogBlog() {
         );
     };
 
-    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    //Так попросила заказчица 🤷‍♂️
+    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    const allPosts = [];
 
     return (
         <section className="blog">

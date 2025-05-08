@@ -165,12 +165,12 @@ function ServicesList({services}) {
                             >
                                 Leggi tutto
                             </button>
-                            <img
+                            {/* <img
                                 className="services-list__info-img"
                                 src={`./images/services/${service.img}.jpg`}
                                 alt="services-photo"
                                 loading="lazy"
-                            />
+                            /> */}
                             <Button
                                 text="Iscriviti"
                                 className="services-list__info-button"

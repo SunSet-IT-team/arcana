@@ -26,7 +26,7 @@ export const servicesData = [
                     più ampio, legato alla tua crescita personale e alla tua
                     evoluzione.
                 </p>
-                <h3 className="text-split">Analizzeremo:</h3>
+                {/* <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - qualità caratteriali inerenti alla nascita;
@@ -55,7 +55,7 @@ export const servicesData = [
                     utili a seconda degli argomenti affrontati durante la
                     consulenza, suggerimenti e consigli pratici per migliorare
                     la tua vita.
-                </p>
+                </p> */}
             </>
         ),
         img: '1. personalità',
@@ -78,7 +78,7 @@ export const servicesData = [
                     base, il punto di partenza da cui si sviluppano tutte le
                     altre potenzialità e sfaccettature della tua vita.
                 </p>
-                <h3 className="text-split">Troverai:</h3>
+                {/* <h3 className="text-split">Troverai:</h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - significato dell’energia archetipica;
@@ -123,7 +123,7 @@ export const servicesData = [
                         Archetipo.
                     </li>
                     <br />
-                </ul>
+                </ul> */}
             </>
         ),
         img: '2. guida',
@@ -147,7 +147,7 @@ export const servicesData = [
                     Lavoreremo su una richiesta specifica o su un tema più ampio
                     legato a questo ambito.
                 </p>
-                <h3 className="text-split">Analizzeremo:</h3>
+                {/* <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - trama principale del rapporto;
@@ -183,7 +183,7 @@ export const servicesData = [
                     informazioni utili a seconda degli argomenti affrontati
                     durante la consulenza, suggerimenti e consigli pratici per
                     migliorare la tua vita di coppia.
-                </p>
+                </p> */}
             </>
         ),
         img: '3. relazione di coppia',
@@ -208,7 +208,7 @@ export const servicesData = [
                     che influenzano il tuo rapporto, proteggerti da possibili
                     scenari negativi e creare legami più forti e autentici.
                 </p>
-                <h3 className="text-split">Analizzeremo: </h3>
+                {/* <h3 className="text-split">Analizzeremo: </h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - caratteristicheindividuali di persona interessata;
@@ -249,7 +249,7 @@ export const servicesData = [
                     Dopo la consulenza riceverai una scheda con informazioni
                     utili a seconda degli argomenti affrontati durante la
                     consulenza, suggerimenti e consigli pratici.
-                </p>
+                </p> */}
             </>
         ),
         img: '4. rapporti sociali',
@@ -274,7 +274,7 @@ export const servicesData = [
                     potenziale e orientandoti verso un futuro autentico e
                     appagante.
                 </p>
-                <h3 className="text-split">Analizzeremo:</h3>
+                {/* <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - qualità caratteriali inerenti alla nascita;
@@ -312,7 +312,7 @@ export const servicesData = [
                     Dopo la consulenza riceverai una scheda con informazioni
                     utili a seconda degli argomenti affrontati durante la
                     consulenza, suggerimenti e consigli pratici.
-                </p>
+                </p> */}
             </>
         ),
         img: '5. maturazione1',
@@ -338,7 +338,7 @@ export const servicesData = [
                     liberarti da schemi autodistruttivi e condurti verso una
                     consapevolezza più profonda e un’armonia interiore duratura.
                 </p>
-                <h3 className="text-split">Analizzeremo:</h3>
+                {/* <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">- traumi infantili;</li>
                     <br />
@@ -367,7 +367,7 @@ export const servicesData = [
                     utili a seconda degli argomenti affrontati durante la
                     consulenza, suggerimenti e consigli praticiper lavorare
                     conil subconscio.
-                </p>
+                </p> */}
             </>
         ),
         img: '6. ombra',
@@ -391,7 +391,7 @@ export const servicesData = [
                     fasi. L’obiettivo è creare una strategia per favorire una
                     crescita armoniosa e costruire un carattere forte e sano.
                 </p>
-                <h3 className="text-split">Analizzeremo:</h3>
+                {/* <h3 className="text-split">Analizzeremo:</h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - bambino come individuocon sue caratteristiche innate;
@@ -419,7 +419,7 @@ export const servicesData = [
                     Dopo la consulenza riceverai una scheda con informazioni
                     utili a seconda degli argomenti affrontati durante la
                     consulenza, suggerimenti e consigli pratici.
-                </p>
+                </p> */}
             </>
         ),
         img: '7. mappa archetipica infantile1',
@@ -441,7 +441,7 @@ export const servicesData = [
                     e spirituale. L’obiettivo è orientarti verso una crescita
                     professionale autentica e soddisfacente.
                 </p>
-                <h3 className="text-split">Analizzeremo: </h3>
+                {/* <h3 className="text-split">Analizzeremo: </h3>
                 <ul className="text-split">
                     <li className="text-split">
                         - capacità nellavita professionale;
@@ -475,7 +475,7 @@ export const servicesData = [
                     Durante la consulenza riceverai un calcolo del tuo programma
                     professionale unico, che ti aiuterà nella scelta e gestione
                     della tua attività professionale.
-                </p>
+                </p> */}
             </>
         ),
         img: '8. attivita professionale1',
