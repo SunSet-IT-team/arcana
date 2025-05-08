@@ -49,7 +49,8 @@ function StorysStory() {
         tagIds,
     });
 
-    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    const allPosts = [];
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
