@@ -303,7 +303,8 @@ function PartnerResultsResults() {
                     </Link>
 
                     <h1 className="partner-results__title title-1">
-                        Risultato del calcolo della mappa archetipica
+                        Risultato del calcolo della mappa archetipica del
+                        rapporto
                     </h1>
                     <div className="partner-results__content">
                         <div className="partner-results__body-list">

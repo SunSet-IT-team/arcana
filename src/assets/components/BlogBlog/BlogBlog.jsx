@@ -11,16 +11,16 @@ import {useTags} from '../../api/tags/useTags';
 import {useInfinitePosts} from '../../api/posts/usePosts';
 import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
-const blogOptions = [
-    {value: 'TUTTI', label: 'TUTTI'},
-    {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
-    {value: 'ARHCETIPI', label: 'ARHCETIPI'},
-    {value: 'PERSONE', label: 'PERSONE'},
-    {value: 'VITA', label: 'VITA'},
-    {value: 'PREVISIONI', label: 'PREVISIONI'},
-    {value: 'EVENTI', label: 'EVENTI'},
-    {value: 'MITI E FIABE', label: 'MITI E FIABE'},
-];
+// const blogOptions = [
+//     {value: 'TUTTI', label: 'TUTTI'},
+//     {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
+//     {value: 'ARHCETIPI', label: 'ARHCETIPI'},
+//     {value: 'PERSONE', label: 'PERSONE'},
+//     {value: 'VITA', label: 'VITA'},
+//     {value: 'PREVISIONI', label: 'PREVISIONI'},
+//     {value: 'EVENTI', label: 'EVENTI'},
+//     {value: 'MITI E FIABE', label: 'MITI E FIABE'},
+// ];
 
 const blogData = [
     // {
@@ -162,9 +162,7 @@ function BlogBlog() {
         );
     };
 
-    //Так попросила заказчица 🤷‍♂️
-    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
-    const allPosts = [];
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
 
     return (
         <section className="blog">
@@ -194,7 +192,7 @@ function BlogBlog() {
                     {tags && tags.length && (
                         <div className="blog__filter">
                             <ul className="blog__filter-list">
-                                {[...tags].slice(0, 8).map((option) => (
+                                {[...tags].map((option) => (
                                     <BlogFilterItem
                                         key={option.value}
                                         option={option}

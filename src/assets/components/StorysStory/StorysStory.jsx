@@ -131,7 +131,7 @@ function StorysStory() {
                     ) : (
                         <ul className="storys__list">
                             {allPosts &&
-                                allPosts.length &&
+                                allPosts.length <= 0 &&
                                 allPosts.map((story) => {
                                     return (
                                         <li
@@ -179,7 +179,7 @@ function StorysStory() {
                     )}
 
                     {!(isPostPending || isFetchingNextPage) &&
-                        !allPosts.length && <h3>Nessun record</h3>}
+                        !allPosts.length > 0 && <h3>Nessun record</h3>}
                 </div>
             </div>
         </section>
