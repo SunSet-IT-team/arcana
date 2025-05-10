@@ -251,7 +251,7 @@ function MainStory() {
                         <>
                             <ul className="storys-demo__list storys-animation">
                                 {allPosts &&
-                                    allPosts.length &&
+                                    allPosts.length >= 0 &&
                                     allPosts.map((story) => {
                                         return (
                                             <li
