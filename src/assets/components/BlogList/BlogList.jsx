@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {TextLinesReveal} from '../../js/textLinesReveal';
 
@@ -6,7 +6,10 @@ import gsap from 'gsap';
 import {Link} from 'react-router-dom';
 import './styles.scss';
 
-function BlogList({data, isShowClipPath}) {
+function BlogList({data, isShowClipPath = true}) {
+    const [isShowClipPathState, setIsShowClipPathState] =
+        useState(isShowClipPath);
+
     // РАЗДЕЛЕНИЕ ТЕКСТА НА СЛОВА
     React.useEffect(() => {
         const textSplitElements = document.querySelectorAll('.text-split');
@@ -160,6 +163,16 @@ function BlogList({data, isShowClipPath}) {
         });
     }, []);
 
+    useEffect(() => {
+        const changeClipPath = setTimeout(() => {
+            setIsShowClipPathState(true);
+        }, 1000);
+
+        console.log();
+
+        return () => clearTimeout(changeClipPath);
+    }, []);
+
     return (
         <>
             <ul className="blog-list__list blog-animation">
@@ -191,7 +204,8 @@ function BlogList({data, isShowClipPath}) {
                                     <div
                                         className="blog-list__imgBl"
                                         style={{
-                                            clipPath: isShowClipPath && 'none',
+                                            clipPath:
+                                                isShowClipPathState && 'none',
                                         }}
                                     >
                                         <img
