@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 
 import SelectLabel from '../../components/Select/Select';
 import SliderMobile from '../Slider/SliderMobile';
+import {useSelector} from 'react-redux';
 
 export const archetypesData = [
     {
@@ -234,6 +235,8 @@ const archetypesOptions = [
 ];
 
 function ArchetypesArchetypes() {
+    const deviceType = useSelector((state) => state.screen.deviceType);
+
     const [archetypes, setArchetypes] = useState(archetypesData);
     const [selectedArchetypesFilter, setSelectedArchetypesFilter] =
         useState('TUTTI');

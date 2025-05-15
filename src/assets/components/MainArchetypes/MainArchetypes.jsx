@@ -5,7 +5,7 @@ import '../ArchetypesArchetypes/styles.scss';
 
 import Slider from '../Slider/Slider';
 import TitleAnimation from '../../hooks/titleAnimation';
-import SliderMobile from '../Slider/SliderMobile';
+// import SliderMobile from '../Slider/SliderMobile';
 
 function MainArchetypes() {
     return (

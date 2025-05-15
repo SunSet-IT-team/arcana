@@ -214,8 +214,9 @@
         background-color: transparent !important;
 
         border-bottom: $contour-grey;
-        transform: translateX(-100%);
-        --placeholder-offset: -100%;
+        // transform: translateX(-100%);
+        // --placeholder-offset: -100%;
+        border-radius: 0;
         &::placeholder {
             transform: translateX(var(--placeholder-offset));
         }

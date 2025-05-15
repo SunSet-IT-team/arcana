@@ -1,177 +1,174 @@
 import React, {useEffect, useState} from 'react';
 
-import {TextLinesReveal} from '../../js/textLinesReveal';
-
-import gsap from 'gsap';
 import {Link} from 'react-router-dom';
 import './styles.scss';
 
 function BlogList({data, isShowClipPath = true}) {
-    const [isShowClipPathState, setIsShowClipPathState] =
-        useState(isShowClipPath);
+    // const [isShowClipPathState, setIsShowClipPathState] =
+    //     useState(isShowClipPath);
 
     // РАЗДЕЛЕНИЕ ТЕКСТА НА СЛОВА
-    React.useEffect(() => {
-        const textSplitElements = document.querySelectorAll('.text-split');
-        const textAnimation = new TextLinesReveal(
-            Array.from(textSplitElements)
-        );
-    }, []);
+    // React.useEffect(() => {
+    //     const textSplitElements = document.querySelectorAll('.text-split');
+    //     const textAnimation = new TextLinesReveal(
+    //         Array.from(textSplitElements)
+    //     );
+    // }, []);
     // ОБРЕЗКА ТЕКСТА
-    React.useEffect(() => {
-        const lineToShowEllipsis = 7;
+    // React.useEffect(() => {
+    //     const lineToShowEllipsis = 7;
 
-        const timeoutId = setTimeout(() => {
-            const textSplitElements = document.querySelectorAll('.text-cut');
-            textSplitElements.forEach((element) => {
-                const lineWrapperElements =
-                    element.querySelectorAll('.line-wrapper');
-                const lineCount = lineWrapperElements.length;
-                if (lineCount > lineToShowEllipsis) {
-                    for (let i = lineToShowEllipsis; i < lineCount; i++) {
-                        lineWrapperElements[i].classList.add(
-                            'line-wrapper--hidden'
-                        );
-                    }
-                    const lastHiddenLine =
-                        lineWrapperElements[lineToShowEllipsis - 1];
-                    const textNode = document.createElement('span');
-                    textNode.textContent = '...';
-                    textNode.classList.add('ellipsis');
-                    lastHiddenLine.appendChild(textNode);
-                }
-            });
-        }, 1000);
+    //     const timeoutId = setTimeout(() => {
+    //         const textSplitElements = document.querySelectorAll('.text-cut');
+    //         textSplitElements.forEach((element) => {
+    //             const lineWrapperElements =
+    //                 element.querySelectorAll('.line-wrapper');
+    //             const lineCount = lineWrapperElements.length;
+    //             if (lineCount > lineToShowEllipsis) {
+    //                 for (let i = lineToShowEllipsis; i < lineCount; i++) {
+    //                     lineWrapperElements[i].classList.add(
+    //                         'line-wrapper--hidden'
+    //                     );
+    //                 }
+    //                 const lastHiddenLine =
+    //                     lineWrapperElements[lineToShowEllipsis - 1];
+    //                 const textNode = document.createElement('span');
+    //                 textNode.textContent = '...';
+    //                 textNode.classList.add('ellipsis');
+    //                 lastHiddenLine.appendChild(textNode);
+    //             }
+    //         });
+    //     }, 1000);
 
-        return () => clearTimeout(timeoutId);
-    }, []);
+    //     return () => clearTimeout(timeoutId);
+    // }, []);
 
     // Обрезка заголовка
-    React.useEffect(() => {
-        const lineToShowEllipsis = 3;
+    // React.useEffect(() => {
+    //     const lineToShowEllipsis = 3;
 
-        const timeoutId = setTimeout(() => {
-            const textSplitElements =
-                document.querySelectorAll('.text-cut-title');
-            textSplitElements.forEach((element) => {
-                const lineWrapperElements =
-                    element.querySelectorAll('.line-wrapper');
-                const lineCount = lineWrapperElements.length;
-                if (lineCount > lineToShowEllipsis) {
-                    for (let i = lineToShowEllipsis; i < lineCount; i++) {
-                        lineWrapperElements[i].classList.add(
-                            'line-wrapper--hidden'
-                        );
-                    }
-                    const lastHiddenLine =
-                        lineWrapperElements[lineToShowEllipsis - 1];
-                    const line = lastHiddenLine.querySelector('.line');
+    //     const timeoutId = setTimeout(() => {
+    //         const textSplitElements =
+    //             document.querySelectorAll('.text-cut-title');
+    //         textSplitElements.forEach((element) => {
+    //             const lineWrapperElements =
+    //                 element.querySelectorAll('.line-wrapper');
+    //             const lineCount = lineWrapperElements.length;
+    //             if (lineCount > lineToShowEllipsis) {
+    //                 for (let i = lineToShowEllipsis; i < lineCount; i++) {
+    //                     lineWrapperElements[i].classList.add(
+    //                         'line-wrapper--hidden'
+    //                     );
+    //                 }
+    //                 const lastHiddenLine =
+    //                     lineWrapperElements[lineToShowEllipsis - 1];
+    //                 const line = lastHiddenLine.querySelector('.line');
 
-                    const textNode = document.createElement('span');
-                    textNode.textContent = '...';
-                    textNode.classList.add('ellipsis');
-                    line.appendChild(textNode);
-                }
-            });
-        }, 1000);
+    //                 const textNode = document.createElement('span');
+    //                 textNode.textContent = '...';
+    //                 textNode.classList.add('ellipsis');
+    //                 line.appendChild(textNode);
+    //             }
+    //         });
+    //     }, 1000);
 
-        return () => clearTimeout(timeoutId);
-    }, []);
+    //     return () => clearTimeout(timeoutId);
+    // }, []);
     // АНИМАЦИЯ
-    React.useEffect(() => {
-        const gsapItems = document.querySelectorAll('.blog-list__item');
-        gsapItems.forEach((element) => {
-            const imgBg = element.querySelector('.blog-list__imgBg');
-            const imgBl = element.querySelector('.blog-list__imgBl');
-            const imgImg = element.querySelector('.blog-list__img');
-            const imgBox = element.querySelector('.blog-list__imgBox');
-            const delay = setTimeout(() => {
-                let tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: element,
-                        start: 'top 70%',
-                        toggleActions: 'play none none none',
-                    },
-                });
-                tl.from(element.querySelector('.blog-list__item-wrapper'), {
-                    duration: 1,
-                    x: '-100% ',
-                })
+    // React.useEffect(() => {
+    //     const gsapItems = document.querySelectorAll('.blog-list__item');
+    //     gsapItems.forEach((element) => {
+    //         const imgBg = element.querySelector('.blog-list__imgBg');
+    //         const imgBl = element.querySelector('.blog-list__imgBl');
+    //         const imgImg = element.querySelector('.blog-list__img');
+    //         const imgBox = element.querySelector('.blog-list__imgBox');
+    //         const delay = setTimeout(() => {
+    //             let tl = gsap.timeline({
+    //                 scrollTrigger: {
+    //                     trigger: element,
+    //                     start: 'top 70%',
+    //                     toggleActions: 'play none none none',
+    //                 },
+    //             });
+    //             tl.from(element.querySelector('.blog-list__item-wrapper'), {
+    //                 duration: 1,
+    //                 x: '-100% ',
+    //             })
 
-                    .from(
-                        [
-                            element.querySelectorAll('.blog-list__tag'),
-                            element.querySelectorAll('.blog-list__item .line'),
-                            element.querySelectorAll('.blog-list__link'),
-                        ],
-                        {
-                            duration: 2,
-                            y: '500%',
-                            rotate: '10deg',
-                            delay: 0.5,
-                        },
-                        0
-                    )
-                    .from(
-                        imgBox,
-                        {
-                            width: 0,
-                            duration: 1.5,
-                            delay: 1,
-                        },
-                        0
-                    )
-                    .fromTo(
-                        imgBg,
-                        {
-                            width: 0,
-                        },
-                        {
-                            ease: 'expo.out',
-                            width: '100%',
-                            duration: 0.5,
-                            delay: 1.5,
-                        },
-                        0
-                    )
-                    .to(
-                        imgBl,
+    //                 .from(
+    //                     [
+    //                         element.querySelectorAll('.blog-list__tag'),
+    //                         element.querySelectorAll('.blog-list__item .line'),
+    //                         element.querySelectorAll('.blog-list__link'),
+    //                     ],
+    //                     {
+    //                         duration: 2,
+    //                         y: '500%',
+    //                         rotate: '10deg',
+    //                         delay: 0.5,
+    //                     },
+    //                     0
+    //                 )
+    //                 .from(
+    //                     imgBox,
+    //                     {
+    //                         width: 0,
+    //                         duration: 1.5,
+    //                         delay: 1,
+    //                     },
+    //                     0
+    //                 )
+    //                 .fromTo(
+    //                     imgBg,
+    //                     {
+    //                         width: 0,
+    //                     },
+    //                     {
+    //                         ease: 'expo.out',
+    //                         width: '100%',
+    //                         duration: 0.5,
+    //                         delay: 1.5,
+    //                     },
+    //                     0
+    //                 )
+    //                 .to(
+    //                     imgBl,
 
-                        {
-                            clipPath:
-                                'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-                            ease: 'expo.out',
-                            duration: 1.5,
-                            delay: 2,
-                        },
-                        0
-                    )
-                    .from(
-                        imgImg,
+    //                     {
+    //                         clipPath:
+    //                             'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+    //                         ease: 'expo.out',
+    //                         duration: 1.5,
+    //                         delay: 2,
+    //                     },
+    //                     0
+    //                 )
+    //                 .from(
+    //                     imgImg,
 
-                        {
-                            scale: 1.5,
-                            filter: 'blur(15px)',
-                            ease: 'expo.out',
-                            duration: 5,
-                            delay: 2,
-                        },
-                        0
-                    );
-            }, 500);
-            return () => clearTimeout(delay);
-        });
-    }, []);
+    //                     {
+    //                         scale: 1.5,
+    //                         filter: 'blur(15px)',
+    //                         ease: 'expo.out',
+    //                         duration: 5,
+    //                         delay: 2,
+    //                     },
+    //                     0
+    //                 );
+    //         }, 500);
+    //         return () => clearTimeout(delay);
+    //     });
+    // }, []);
 
-    useEffect(() => {
-        const changeClipPath = setTimeout(() => {
-            setIsShowClipPathState(true);
-        }, 1000);
+    // useEffect(() => {
+    //     const changeClipPath = setTimeout(() => {
+    //         setIsShowClipPathState(true);
+    //     }, 1000);
 
-        console.log();
+    //     console.log();
 
-        return () => clearTimeout(changeClipPath);
-    }, []);
+    //     return () => clearTimeout(changeClipPath);
+    // }, []);
 
     return (
         <>
@@ -204,8 +201,7 @@ function BlogList({data, isShowClipPath = true}) {
                                     <div
                                         className="blog-list__imgBl"
                                         style={{
-                                            clipPath:
-                                                isShowClipPathState && 'none',
+                                            clipPath: 'none',
                                         }}
                                     >
                                         <img

@@ -5,8 +5,6 @@ import Menu from '../MenuList/MenuList';
 import TitleAnimation from '../../hooks/titleAnimation';
 import MenuAnimation from '../../hooks/menuAnimation';
 
-import gsap from 'gsap';
-
 import './styles.scss';
 
 function MainMenu() {
@@ -25,7 +23,7 @@ function MainMenu() {
                     </div>
                 </div>
             </div>
-            {/* <MenuAnimation /> */}
+            <MenuAnimation />
         </section>
     );
 }

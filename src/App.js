@@ -1,12 +1,13 @@
-import React, {Suspense, lazy} from 'react';
+import {Suspense, lazy} from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
 
 import Preloader from './assets/components/Preloader/Preloader';
-import AnimatedCursor from './assets/feature/AnimatedCursor';
+// import AnimatedCursor from './assets/feature/AnimatedCursor';
 
 import Header from './assets/components/Header/Header';
 import Footer from './assets/components/Footer/Footer';
 import FooterWithWaterEffect from './assets/components/Footer/FooterWithWaterEffect';
+import {useDevice} from './assets/hooks/useDevice';
 
 const Home = lazy(() => import('./assets/pages/Home/Home'));
 
@@ -45,7 +46,7 @@ function App() {
 
     return (
         <div className="App">
-            <AnimatedCursor />
+            {/* {!isNotDesktop && <AnimatedCursor />} */}
             <Header />
             <main className="main">
                 <Suspense fallback={<Preloader />}>

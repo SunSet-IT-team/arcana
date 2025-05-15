@@ -31,6 +31,9 @@ function MainStoryMobile({storiesProp = []}) {
                     }
                 }}
             >
+                {storiesProp.length <= 0 && (
+                    <h3 style={{textAlign: 'center'}}>Nessun record</h3>
+                )}
                 {storiesProp.map((story) => (
                     <SwiperSlide key={story.id} className="storys-demo__slide">
                         <li className="storys-demo__item">

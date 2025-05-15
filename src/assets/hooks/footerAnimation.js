@@ -1,37 +1,42 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import gsap from 'gsap';
+import {useDevice} from './useDevice';
 
 const FooterAnimation = () => {
-    const tl = React.useRef(null);
+    const tl = useRef(null);
+    const {isNotDesktop} = useDevice();
 
-    React.useEffect(() => {
+    useEffect(() => {
+        if (isNotDesktop) return;
+
+        const topEl = document.querySelector('.footer__wrapper .footer__top');
+        const privacy = document.querySelector('.footer__privacy-button');
+        const menu = document.querySelector('.footer__menu-link');
+        const contact = document.querySelector('.footer__contact-link');
+
+        if (!topEl || !privacy || !menu || !contact) return;
+
         tl.current = gsap.timeline({paused: true});
-        tl.current.from('.footer__wrapper .footer__top', {
+
+        tl.current.from(topEl, {
+            duration: 1,
+            x: '-100%',
+        });
+
+        tl.current.from([privacy, menu, contact], {
             duration: 1,
             stagger: {
                 amount: 0.5,
             },
-            x: '-100%',
+            y: '500%',
+            rotate: '10deg',
         });
-        tl.current.from(
-            [
-                '.footer__privacy-button',
-                '.footer__menu-link',
-                '.footer__contact-link',
-            ],
-            {
-                duration: 1,
-                stagger: {
-                    amount: 0.5,
-                },
-                y: '500%',
-                rotate: '10deg',
-            }
-        );
-    }, []);
+    }, [isNotDesktop]);
 
-    React.useEffect(() => {
-        const onServicesEntry = (entries) => {
+    useEffect(() => {
+        if (isNotDesktop || !tl.current) return;
+
+        const onEntry = (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     tl.current.play();
@@ -39,19 +44,15 @@ const FooterAnimation = () => {
             });
         };
 
-        const servicesObserver = new IntersectionObserver(onServicesEntry, {
+        const observer = new IntersectionObserver(onEntry, {
             threshold: 0.25,
         });
 
-        const servicesElements = document.querySelectorAll('.footer-animation');
-        servicesElements.forEach((element) =>
-            servicesObserver.observe(element)
-        );
+        const el = document.querySelector('.footer-animation');
+        if (el) observer.observe(el);
 
-        return () => {
-            servicesObserver.disconnect();
-        };
-    }, []);
+        return () => observer.disconnect();
+    }, [isNotDesktop]);
 
     return null;
 };

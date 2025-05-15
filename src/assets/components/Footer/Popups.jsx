@@ -1,5 +1,3 @@
-import React from 'react';
-
 import BuyForm from './../BuyForm/BuyForm';
 import ContactForm from './../ContactForm/ContactForm';
 import Privacy from './../Privacy/Privacy';

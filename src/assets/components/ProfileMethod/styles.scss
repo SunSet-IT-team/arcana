@@ -267,3 +267,11 @@
         transform: translateY(300%) rotate(10deg);
     }
 }
+
+@media screen and (max-width: 767px) {
+    .profile-method {
+        &__content {
+            max-width: 100% !important;
+        }
+    }
+}

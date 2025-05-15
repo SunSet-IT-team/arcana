@@ -6,167 +6,182 @@
     &__list {
         display: flex;
         flex-direction: column;
-
         overflow: hidden;
     }
+
     &__item {
         &:not(:first-child) {
             margin-top: -1px;
         }
+
         &:hover {
             z-index: 100;
 
-            .services-list__name .line-wrapper .line .word {
-                color: $white;
-            }
-
-            .services-list__time .line-wrapper .line .word {
-                color: $white;
-            }
-
-            .services-list__price .line-wrapper .line .word {
-                color: $white;
-            }
-
+            .services-list__name .line-wrapper .line .word,
+            .services-list__time .line-wrapper .line .word,
+            .services-list__price .line-wrapper .line .word,
             .services-list__text .line-wrapper .line .word {
                 color: $white;
             }
+
             .services-list__item-wrapper {
                 border-color: $white;
             }
         }
     }
+
     &__item-wrapper {
         display: flex;
-        height: 262px;
+        flex-direction: row;
         padding: clamp(10px, size-desktop(50px), 50px) 0;
-
         transition: border 0.3s;
-
         overflow: hidden;
-
         color: $light-grey;
         border-top: 1px solid $light-grey;
         border-bottom: 1px solid $light-grey;
-        &:has(.services-list__info--open) {
+        height: 262px;
+
+        &--open {
             height: auto;
+
+            .services-list__text {
+                display: block;
+                -webkit-line-clamp: unset;
+                max-height: none;
+                -webkit-mask-image: none;
+                mask-image: none;
+            }
+
+            .services-list__button {
+                display: none;
+            }
+
+            .services-list__info-img,
+            .services-list__info-button {
+                display: block;
+            }
         }
     }
+
     &__name {
         font-size: clamp(24px, size-desktop(32px), 32px);
-
         max-width: 40%;
         width: 100%;
-
         transition: color 0.3s;
         text-transform: uppercase;
     }
+
     &__box {
         font-size: 18px;
-
         max-width: 20%;
         width: 100%;
-
-        transition: color 0.3s;
         margin-left: 20px;
         margin-top: 15px;
         line-height: 1.4;
+        transition: color 0.3s;
     }
+
     &__price {
         display: inline-block;
     }
+
     &__info {
         max-width: 40%;
         width: 100%;
-        overflow: hidden;
-        line-height: 1.4;
         margin-top: 4px;
         display: flex;
         flex-direction: column;
+        line-height: 1.4;
     }
-    &__info--open & {
-        &__button {
-            display: none;
-        }
-        &__info-img {
-            display: block;
-        }
-        &__info-button {
-            display: block;
-        }
-    }
+
     &__text {
         font-size: 18px;
         padding-top: 11px;
         margin-bottom: 10px;
-
         transition: color 0.3s;
+
         overflow: hidden;
         text-overflow: ellipsis;
-        display: -moz-box;
-        -moz-box-orient: vertical;
         display: -webkit-box;
-        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        line-clamp: 4;
-        box-orient: vertical;
+        -webkit-line-clamp: 4;
+        max-height: 6.8em;
+
+        // Затемнение внизу
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 60%,
+            rgba(0, 0, 0, 0)
+        );
+        mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 60%,
+            rgba(0, 0, 0, 0)
+        );
     }
+
     &__button {
         margin-top: auto;
         font-size: 18px;
         width: max-content;
         padding: 0 6px;
-        transition: color 0.3s;
         margin-left: -5px;
         color: $white;
+        transition: color 0.3s;
 
         &:hover {
             color: $light-grey;
         }
     }
+
     &__info-img {
         max-width: 680px;
         width: 100%;
         height: 242px;
         margin-top: 20px;
         margin-bottom: 20px;
-
-        display: none;
-
         object-fit: cover;
+        display: none;
     }
+
     &__info-button {
         display: none;
     }
 
+    // Tablet
     @media screen and (max-width: 1024px) {
         &__item-wrapper {
             padding: clamp(10px, size-desktop(90px), 100px) 0;
             height: 259px;
         }
+
         &__text {
             padding: 5px 0;
         }
+
         &__box {
             margin: 0;
             padding: 7px 3px;
         }
+
         &__info {
             padding-left: 5px;
         }
     }
 
+    // Mobile
     @media screen and (max-width: 767px) {
-        &__name {
-            font-size: 18px !important;
-            max-width: unset;
-        }
-
         &__item-wrapper {
             flex-direction: column;
             height: unset;
             padding: 19.5px 0;
         }
+
+        &__name {
+            font-size: 18px !important;
+            max-width: unset;
+        }
+
         &__box {
             margin-left: 0;
             max-width: unset;
@@ -177,29 +192,43 @@
             justify-content: space-between;
             margin-top: 29.5px;
         }
-        &__time {
-            margin-left: 0;
-            max-width: unset;
-            font-size: 13px !important;
-            margin-top: unset;
-        }
+
+        &__time,
         &__price {
             margin-left: 0;
-            margin-top: unset;
             font-size: 13px !important;
         }
+
         &__info {
             max-width: unset;
             margin-top: unset;
             padding: unset;
         }
+
         &__text {
             font-size: 13px !important;
             padding-top: 10px;
             line-height: 1.35;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             padding-bottom: 20px;
+
+            -webkit-mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 60%,
+                rgba(0, 0, 0, 0)
+            );
+            mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 60%,
+                rgba(0, 0, 0, 0)
+            );
         }
+
+        &__item-wrapper--open &__text {
+            -webkit-mask-image: none;
+            mask-image: none;
+        }
+
         &__button {
             font-size: 13px !important;
             padding: unset;

@@ -5,8 +5,14 @@ const AnimatedElement = ({tag: Tag = 'span', children, className}) => {
     const elementRef = useRef(null);
 
     useEffect(() => {
+        const el = elementRef.current;
+
+        if (!el) return;
+
+        const target = el.querySelector('span') || el;
+
         const animation = gsap.timeline({paused: true});
-        animation.from(elementRef.current.querySelector('span'), {
+        animation.from(target, {
             duration: 1,
             y: 200,
             opacity: 0,
@@ -25,7 +31,7 @@ const AnimatedElement = ({tag: Tag = 'span', children, className}) => {
             {threshold: 0.5}
         );
 
-        observer.observe(elementRef.current);
+        observer.observe(el);
 
         return () => {
             observer.disconnect();

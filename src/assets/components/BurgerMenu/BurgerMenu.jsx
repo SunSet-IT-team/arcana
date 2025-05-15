@@ -1,41 +1,40 @@
-import React from 'react';
-
+import React, {useEffect, useRef} from 'react';
 import './styles.scss';
-import '../MainMenu/styles.scss';
+import '../MenuList/styles.scss';
 
 import {Link, useLocation} from 'react-router-dom';
-
 import gsap from 'gsap';
 import BurgerMenuList from '../BurgerMenuList/BurgerMenuList';
 
-function BurgerMenu({tl}) {
+function BurgerMenu({setTimeline}) {
     const location = useLocation();
+    const tl = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         tl.current = gsap.timeline({paused: true});
 
         tl.current.fromTo(
             '.burger-menu',
-            {y: '-100%'},
+            {y: '-110%'},
             {y: '0', duration: 0.5}
         );
 
         tl.current.fromTo(
             '.burger-menu__nav',
-            {x: '-100%'},
+            {x: '-110%'},
             {x: '0', duration: 1}
         );
 
         tl.current.fromTo(
             '.burger-menu .menu-list__list',
-            {x: '-100%', opacity: 0},
+            {x: '-110%', opacity: 0},
             {x: '0', opacity: 1, duration: 1},
             '-=0.5'
         );
 
         tl.current.fromTo(
             '.burger-menu .menu-list__link-wrapper',
-            {x: '-100%', opacity: 0},
+            {x: '-110%', opacity: 0},
             {x: '0', opacity: 1, duration: 1, stagger: {amount: 0.5}},
             '-=1'
         );
@@ -59,9 +58,18 @@ function BurgerMenu({tl}) {
             {opacity: 1, duration: 1},
             '-=1'
         );
-    }, [location.pathname]);
 
-    function menuClose() {
+        // передаём наружу
+        if (typeof setTimeline === 'function') {
+            setTimeline(tl.current);
+        }
+
+        return () => {
+            tl.current?.kill();
+        };
+    }, [location.pathname, setTimeline]);
+
+    const menuClose = () => {
         if (tl.current) {
             tl.current.reverse();
 
@@ -69,7 +77,7 @@ function BurgerMenu({tl}) {
                 document.body.classList.remove('menu-open');
             }, 2500);
         }
-    }
+    };
 
     return (
         <div className="burger-menu">
@@ -79,7 +87,7 @@ function BurgerMenu({tl}) {
                         <Link
                             className="burger-menu__logo"
                             to="/"
-                            onClick={() => menuClose()}
+                            onClick={menuClose}
                         >
                             <img
                                 src="/images/icons/logo-black.svg"
@@ -90,7 +98,7 @@ function BurgerMenu({tl}) {
                         <div className="burger-menu__close">
                             <button
                                 className="close-button"
-                                onClick={() => menuClose()}
+                                onClick={menuClose}
                             >
                                 <div className="in">
                                     <div className="close-button-block"></div>
@@ -104,7 +112,7 @@ function BurgerMenu({tl}) {
                         </div>
                     </div>
                     <div className="burger-menu__content">
-                        <BurgerMenuList menuClose={menuClose}></BurgerMenuList>
+                        <BurgerMenuList menuClose={menuClose} />
                     </div>
                 </div>
             </nav>

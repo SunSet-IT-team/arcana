@@ -4,6 +4,9 @@
 
 .about {
     padding-top: clamp(10px, size-desktop(244px), 244px);
+    &__text-span {
+        margin-left: 300px;
+    }
     &__content {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -171,10 +174,6 @@
             }
         }
 
-        &__text-span {
-            margin-left: 300px;
-        }
-
         &__author-imgbox {
             grid-area: 2 / 3 / 3 / 4;
             height: 225px;
@@ -264,6 +263,9 @@
     // }
 
     @media screen and (max-width: 767px) and (min-width: 425px) {
+        &__text-span {
+            margin-left: 200px;
+        }
         &__info-wrapper {
             grid-template-rows: repeat(5, 84px) !important;
         }
@@ -283,6 +285,9 @@
     }
 
     @media screen and (max-width: 767px) {
+        &__text-span {
+            margin-left: 150px;
+        }
         padding-top: 100px;
         &__info-wrapper {
             grid-template-rows: repeat(5, 1fr);

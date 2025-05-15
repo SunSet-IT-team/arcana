@@ -14,7 +14,9 @@
 
     background-image: url('../../../../public/images/bg2.png');
     flex-direction: column;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
+    top: 0;
+    left: 0;
 
     .container {
         height: 100%;

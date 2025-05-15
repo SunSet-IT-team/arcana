@@ -4,6 +4,7 @@
 .info {
     display: flex;
     flex-direction: column;
+
     .canvas {
         width: 1000px;
         height: 1000px;
@@ -25,17 +26,27 @@
     }
     &__text {
         font-size: 18px;
+        color: #bbb;
 
         line-height: 1.4;
 
         max-width: 66%;
-        margin-bottom: 50px;
         min-width: 510px;
+        margin-bottom: 25px;
+        &:last-of-type {
+            margin-bottom: 50;
+        }
     }
+
     &__link {
         font-size: 18px;
 
         max-width: 141px;
+    }
+
+    &__b {
+        color: #fff;
+        font-weight: 900;
     }
 
     @media screen and (min-width: 1024px) {
@@ -62,10 +73,10 @@
             justify-content: center;
             min-height: 100vh;
             padding-bottom: 60px;
-        }
-
-        &__text {
-            margin-bottom: 48px;
+            margin-bottom: 24px;
+            &:last-of-type {
+                margin-bottom: 48;
+            }
         }
     }
 
@@ -84,7 +95,10 @@
             font-size: 13px !important;
             min-width: unset;
             max-width: unset;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            &:last-of-type {
+                margin-bottom: 30px;
+            }
         }
     }
 }

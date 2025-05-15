@@ -1,4 +1,3 @@
-import React from 'react';
 import {useDispatch} from 'react-redux';
 
 import {setOpenPrivacy} from '../../../redux/slices/privacySlice';
@@ -202,7 +201,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <FooterAnimation> </FooterAnimation>
+            {/* <FooterAnimation> </FooterAnimation> */}
         </footer>
     );
 }

@@ -1,122 +1,93 @@
-import React from 'react';
-
+import React, {useEffect, useRef} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {buyForm, setOpenBuyForm} from '../../../redux/slices/buyFormSlice';
 import {setOpenPrivacy} from '../../../redux/slices/privacySlice';
 
 import './styles.scss';
-
 import {Link} from 'react-router-dom';
-
 import gsap from 'gsap';
 import Button from '../Button/Button';
 
 function BuyForm() {
     const dispatch = useDispatch();
     const isFormOpen = useSelector(buyForm);
+    const formRef = useRef(null);
+    const tl = useRef(null);
 
-    React.useEffect(() => {
-        if (isFormOpen) {
-            const tl = gsap.timeline({paused: true});
+    useEffect(() => {
+        if (!isFormOpen) return;
 
-            tl.to('.buy-form', {
-                duration: 0.5,
-                y: '0',
-            });
+        tl.current = gsap.timeline();
 
-            tl.to('.buy-form__wrapper', {
-                duration: 1,
-                x: '0',
-            });
+        tl.current.fromTo(
+            '.buy-form',
+            {y: '100%', opacity: 0},
+            {y: '0%', opacity: 1, duration: 0.4, ease: 'power2.out'}
+        );
 
-            tl.to('.buy-form__form-text', {
-                duration: 1,
-                opacity: 1,
-                y: '0',
-            });
+        tl.current.fromTo(
+            '.buy-form__wrapper',
+            {x: '100%'},
+            {x: '0%', duration: 0.4, ease: 'power2.out'}
+        );
 
-            // А) Логотип и Кнопка "закрыть"
-            tl.to(['.buy-form__logo', '.buy-form__close'], {
-                duration: 0.6,
-                opacity: 1,
-                y: '0',
-            });
+        tl.current.fromTo(
+            ['.buy-form__logo', '.buy-form__close'],
+            {opacity: 0, y: 20},
+            {opacity: 1, y: 0, duration: 0.4, stagger: 0.1}
+        );
 
-            // Б) Линии
-            tl.to(['.buy-form__subtitle', '.buy-form__input'], {
-                '--x-offset-line': '0%',
-                duration: 0.5,
-                y: '0',
+        tl.current.fromTo(
+            '.buy-form__title-img',
+            {opacity: 0},
+            {opacity: 1, duration: 0.4}
+        );
 
-                x: '0',
-            });
+        tl.current.fromTo(
+            '.buy-form__form-button',
+            {autoAlpha: 0, y: 30},
+            {autoAlpha: 1, y: 0, duration: 0.5}
+        );
 
-            // В) Название блока попапа
-            tl.to(['.buy-form__form-box .line'], {
-                duration: 1.5,
-                rotate: '0',
-                x: '0',
-                y: '0',
-            });
-            // Сова
-            tl.to(['.buy-form__title-img'], {
-                duration: 0.5,
-                opacity: 1,
-            });
+        document.body.classList.add('menu-open');
 
-            // Г) Название текстов для ввода данных и текст слева
-            tl.to(
-                [
-                    '.buy-form__input',
-                    '.buy-form__text .line',
-                    '.buy-form__label',
-                ],
-                {
-                    duration: 1,
-                    '--placeholder-offset': '0',
-                    y: '0',
-                    autoAlpha: 1,
-                    rotate: '0',
-                }
-            );
-            //Кнопка
-            tl.to(['.buy-form__form-button'], {
-                duration: 3,
-                y: '0',
-                autoAlpha: 1,
-                rotate: '0',
-            });
-
-            tl.play();
-
-            const isNested = document.body.classList.contains('menu-open');
-            if (!isNested) {
-                document.body.classList.add('menu-open');
+        return () => {
+            if (tl.current) {
+                tl.current.reverse();
+                tl.current.eventCallback('onReverseComplete', () => {
+                    document.body.classList.remove('menu-open');
+                });
             }
-
-            return () => {
-                tl.reverse();
-                setTimeout(() => {
-                    if (!isNested) {
-                        document.body.classList.remove('menu-open');
-                    }
-                }, 2000);
-            };
-        }
+        };
     }, [isFormOpen]);
+
+    useEffect(() => {
+        const textareas = document.querySelectorAll('.buy-form__input--text');
+        const autoResize = (textarea) => {
+            textarea.style.height = '78px';
+            textarea.style.height = Math.min(textarea.scrollHeight, 350) + 'px';
+        };
+
+        textareas.forEach((el) => {
+            autoResize(el);
+            el.addEventListener('input', () => autoResize(el));
+        });
+
+        return () => {
+            textareas.forEach((el) =>
+                el.removeEventListener('input', () => autoResize(el))
+            );
+        };
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const formData = new FormData();
-        formData.append('name', e.target.name.value);
-        formData.append('email', e.target.email.value);
-        formData.append('phone', e.target.phone.value);
-        formData.append('message', e.target.message.value);
+        const form = e.target;
+        const formData = new FormData(form);
 
-        // Добавляем файл, если есть
-        if (e.target.file.files[0]) {
-            formData.append('file', e.target.file.files[0]);
+        if (form.file.files[0]) {
+            formData.append('file', form.file.files[0]);
         }
 
         try {
@@ -129,33 +100,12 @@ function BuyForm() {
             );
 
             const result = await response.json();
-            if (result.success) {
-                alert(result.message);
-            } else {
-                alert(result.message);
-            }
+            alert(result.message);
         } catch (error) {
             console.error('Error:', error);
+            alert("Errore durante l'invio del modulo.");
         }
     };
-
-    // АВТОВЫСОТА К TEXT-AREA
-    function autoResizeTextarea(element) {
-        element.style.height = '78px';
-        element.style.height = Math.min(element.scrollHeight, 350) + 'px';
-    }
-
-    const textareas = document.querySelectorAll('.buy-form__input--text');
-
-    textareas.forEach((textarea) => {
-        textarea.addEventListener('input', () => {
-            autoResizeTextarea(textarea);
-        });
-    });
-
-    textareas.forEach((textarea) => {
-        autoResizeTextarea(textarea);
-    });
 
     return (
         <div className="buy-form">
@@ -186,41 +136,36 @@ function BuyForm() {
                     </div>
                     <div className="buy-form__content">
                         <div className="buy-form__text">
-                            <p className="text-split">
+                            <p>
                                 Per ottenere una descrizione dettagliata
                                 dell’archetipo, è necessario effettuare un
                                 pagamento di 22 euro.
                             </p>
-                            <p className="text-split">
+                            <p>
                                 Puoi effettuare il versamento tramite uno dei
                                 seguenti metodi:
                             </p>
-                            <p className="text-split">
+                            <p>
                                 Carta HYPE: 4021 7002 7941 1187 (Titolare: Olga
                                 Kuzmenko)
                             </p>
-                            <p className="text-split">
-                                IBAN: IT78F36772223000EM002431825
-                            </p>
-                            <p className="text-split">BIC: HYEEIT22XXX</p>
-                            <p className="text-split">
-                                PayPal: 22archetypes@gmail.com
-                            </p>
-
-                            <p className="text-split">
+                            <p>IBAN: IT78F36772223000EM002431825</p>
+                            <p>BIC: HYEEIT22XXX</p>
+                            <p>PayPal: 22archetypes@gmail.com</p>
+                            <p>
                                 Dopo aver completato il pagamento, ti invito a
                                 inviarmi un messaggio di conferma con una copia
                                 della ricevuta bancaria o uno screenshot della
                                 transazione effettuata tramite mobile banking.
                             </p>
-                            <p className="text-split">
+                            <p>
                                 Per qualsiasi domanda o assistenza, non esitare
-                                a contattarmi
+                                a contattarmi.
                             </p>
                         </div>
                         <div className="buy-form__form-box">
                             <div className="buy-form__title-wrapper">
-                                <h2 className="buy-form__title form-title text-split">
+                                <h2 className="buy-form__title form-title">
                                     CIAO, PIACERE DI CONOSCERTI
                                 </h2>
                                 <img
@@ -230,34 +175,45 @@ function BuyForm() {
                                 />
                             </div>
 
-                            <h3 className="buy-form__subtitle form-subtitle text-split">
+                            <h3 className="buy-form__subtitle form-subtitle">
                                 Inserisci i tuoi dati e ti contatterò al più
                                 presto!
                             </h3>
-                            <form className="buy-form__form">
+                            <form
+                                className="buy-form__form"
+                                onSubmit={handleSubmit}
+                            >
                                 <input
+                                    name="name"
                                     type="text"
                                     className="buy-form__input"
                                     placeholder="Nome"
+                                    required
                                 />
                                 <input
-                                    type="text"
+                                    name="email"
+                                    type="email"
                                     className="buy-form__input"
                                     placeholder="Email"
+                                    required
                                 />
                                 <input
-                                    type="text"
+                                    name="phone"
+                                    type="tel"
                                     className="buy-form__input"
                                     placeholder="Telefono"
+                                    required
                                 />
                                 <div className="buy-form__message-box">
                                     <textarea
-                                        type="text"
+                                        name="message"
                                         className="buy-form__input buy-form__input--text"
                                         placeholder="Il tuo messaggio"
+                                        required
                                     ></textarea>
                                     <label className="buy-form__label">
                                         <input
+                                            name="file"
                                             type="file"
                                             className="buy-form__file sr-only"
                                         />
@@ -266,7 +222,7 @@ function BuyForm() {
                                 <div className="buy-form__form-bottom">
                                     <p className="buy-form__form-text">
                                         Le vostre informazioni personali saranno
-                                        mantenute {''}
+                                        mantenute{' '}
                                         <span
                                             className="underline"
                                             onClick={() =>
@@ -280,8 +236,8 @@ function BuyForm() {
                                     <Button
                                         text="INVIARE"
                                         className="buy-form__form-button button--black"
-                                        onClick={handleSubmit}
-                                    ></Button>
+                                        type="submit"
+                                    />
                                 </div>
                             </form>
                         </div>

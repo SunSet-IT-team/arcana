@@ -4,6 +4,7 @@ import contactFormReducer from './slices/contactFormSlice';
 import privacyReducer from './slices/privacySlice';
 import profileMethodReducer from './slices/profileMethodSlice';
 import resultsReducer from './slices/resultsSlice';
+import screenReducer from './slices/screenSlice';
 
 export const store = configureStore({
     reducer: {
@@ -12,5 +13,6 @@ export const store = configureStore({
         buyForm: buyFormReducer,
         privacy: privacyReducer,
         profileMethod: profileMethodReducer,
+        screen: screenReducer,
     },
 });

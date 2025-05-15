@@ -6,20 +6,6 @@ const MenuAnimation = () => {
 
     React.useEffect(() => {
         tl.current = gsap.timeline({paused: true});
-        // tl.current.from(".menu-list__item", {
-        //   duration: 0.5,
-        //   stagger: {
-        //     amount: 0.5,
-        //   },
-        //   x: "-100%",
-        // });
-        // tl.current.from(".menu-list__link-wrapper", {
-        //   duration: 0.5,
-        //   stagger: {
-        //     amount: 0.5,
-        //   },
-        //   y: 100,
-        // });
     }, []);
 
     React.useEffect(() => {

@@ -3,7 +3,7 @@ import {useDispatch} from 'react-redux';
 
 import {setOpenPrivacy} from '../../../redux/slices/privacySlice';
 
-import FooterAnimation from '../../hooks/footerAnimation';
+// import FooterAnimation from '../../hooks/footerAnimation';
 
 import TitleAnimation from '../../hooks/titleAnimation';
 
@@ -205,7 +205,7 @@ function FooterWithWaterEffect() {
                         </div>
                     </div>
                 </div>
-                <FooterAnimation> </FooterAnimation>
+                {/* <FooterAnimation> </FooterAnimation> */}
             </WaterEffectWrapper>
         </footer>
     );

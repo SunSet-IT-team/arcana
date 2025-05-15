@@ -1,27 +1,39 @@
 import gsap from 'gsap';
-import React, {useEffect, useRef} from 'react';
+import {useEffect, useRef} from 'react';
+import {useDevice} from '../../hooks/useDevice'; // хук, который ты уже используешь
 
 import './styles.scss';
 
 function GoToPage() {
-    const tll = useRef(null);
+    const tl = useRef(null);
+    const timeoutRef = useRef(null);
 
     useEffect(() => {
-        tll.current = gsap.timeline({paused: true});
+        const loading = document.getElementById('loading');
+        const wrapper = document.getElementById('loading-wrapper');
 
-        tll.current.to('#loading', {
+        if (!loading || !wrapper) return; // ⛔ элемент не найден — не играем
+
+        tl.current = gsap.timeline({paused: true});
+
+        tl.current.to(loading, {
             duration: 0.9,
             y: '-100%',
         });
 
-        tll.current.to('#loading-wrapper', {
+        tl.current.to(wrapper, {
             duration: 2.5,
             x: '100%',
         });
 
-        setTimeout(() => {
-            tll.current.play();
+        timeoutRef.current = setTimeout(() => {
+            tl.current?.play();
         }, 1500);
+
+        return () => {
+            clearTimeout(timeoutRef.current);
+            tl.current?.kill();
+        };
     }, []);
 
     return (
