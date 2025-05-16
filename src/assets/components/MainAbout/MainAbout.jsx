@@ -8,16 +8,29 @@ import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import ElementAnimation from '../../hooks/elementAnimation';
 import {useTextAnimation} from '../../hooks/textWhiteAnimation';
 import TitleAnimation from '../../hooks/titleAnimation';
+import parse from 'html-react-parser';
 
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
+// const text = [
+//     `Il Metodo del Profilo Archetipico, pur nella sua apparente semplicità, offre risultati rapidi ed efficaci, spesso più rapidi rispetto a quelli della terapia tradizionale. Fondato sulla struttura archetipica della personalità e sulla nostra costituzione psichica innata, il Metodo consente di portare alla luce tutto ciò che nella nostra psiche rimane nascosto: traumi, blocchi inconsci, talenti originali e molti altri aspetti finora sconosciuti.`,
+//     ` Avete mai immaginato di trovare le istruzioni d'uso per voi stessi e per la vostra vita? Questa è la mappa archetipica natale.`,
+//     `Il Metodo del Profilo Archetipico offre una diagnosi rapida e altamente precisa, aiutando a individuare i meccanismi nascosti che generano determinati stati e attraggono specifiche situazioni. Consente di uscire da schemi distruttivi, sbloccare il proprio potenziale, superare ostacoli invisibili e ottimizzare le risorse interne, migliorando non solo la vita personale, ma anche la performance professionale.`,
+//     `Studio e applico costantemente il Metodo con l’intento di farlo riconoscere come uno strumento indispensabile per chi desidera comprendere la propria natura unica, raggiungere il massimo del proprio potenziale, affrontare le sfide interiori e le situazioni difficili, superare limiti autoimposti e gestire con successo i momenti di cambiamento.`,
+//     `Non solo offro consulenze private, ma sono anche aperta a collaborazioni con esperti nei settori che spaziano dalla psicologia pratica all’educazione, dal coaching al mentoring, fino alla psicoanalisi del business. Ciò che conta davvero è orientare il processo verso una trasformazione positiva, una crescita solida e un benessere duraturo.`,
+// ];
+
 const text = [
-    `Il Metodo del Profilo Archetipico, pur nella sua apparente semplicità, offre risultati rapidi ed efficaci, spesso più rapidi rispetto a quelli della terapia tradizionale. Fondato sulla struttura archetipica della personalità e sulla nostra costituzione psichica innata, il Metodo consente di portare alla luce tutto ciò che nella nostra psiche rimane nascosto: traumi, blocchi inconsci, talenti originali e molti altri aspetti finora sconosciuti.`,
-    ` Avete mai immaginato di trovare le istruzioni d'uso per voi stessi e per la vostra vita? Questa è la mappa archetipica natale.`,
-    `Il Metodo del Profilo Archetipico offre una diagnosi rapida e altamente precisa, aiutando a individuare i meccanismi nascosti che generano determinati stati e attraggono specifiche situazioni. Consente di uscire da schemi distruttivi, sbloccare il proprio potenziale, superare ostacoli invisibili e ottimizzare le risorse interne, migliorando non solo la vita personale, ma anche la performance professionale.`,
-    `Studio e applico costantemente il Metodo con l’intento di farlo riconoscere come uno strumento indispensabile per chi desidera comprendere la propria natura unica, raggiungere il massimo del proprio potenziale, affrontare le sfide interiori e le situazioni difficili, superare limiti autoimposti e gestire con successo i momenti di cambiamento.`,
-    `Non solo offro consulenze private, ma sono anche aperta a collaborazioni con esperti nei settori che spaziano dalla psicologia pratica all’educazione, dal coaching al mentoring, fino alla psicoanalisi del business. Ciò che conta davvero è orientare il processo verso una trasformazione positiva, una crescita solida e un benessere duraturo.`,
+    `Non siamo nati come fogli bianchi, ma già predisposti a vivere <b class="about__b">determinati ruoli, esperienze, battaglie</b> e <b class="about__b">trasformazioni</b>. Il Profilo Archetipico è uno <b class="about__b">strumento</b> che ci aiuta a comprendere <b class="about__b">chi siamo</b>, quali <b class="about__b">sfide</b> incontriamo e come <b class="about__b">affrontarle in modo consapevole</b>.`,
+
+    `La <b class="about__b">mappa archetipica</b> funziona come una <b class="about__b">bussola</b> che <b class="about__b">orienta il nostro cammino</b>.`,
+
+    `Attraverso <b class="about__b">l'analisi archetipica</b>, possiamo comprendere gli <b class="about__b">eventi che attiriamo</b>, le <b class="about__b">transazioni interiori</b> e le <b class="about__b">dinamiche che si ripetono</b> nella nostra vita, dai <b class="about__b">blocchi personali</b> a quelli <b class="about__b">professionali</b>.`,
+
+    `Ci permette di individuare i <b class="about__b">punti di forza</b>, le <b class="about__b">risorse nascoste</b>, le <b class="about__b">influenze esterne</b>, le nostre <b class="about__b">convinzioni</b> e i <b class="about__b">comportamenti che ci limitano</b>, aiutandoci a <b class="about__b">prendere decisioni consapevoli</b>, anche nei <b class="about__b">momenti di crisi</b>.`,
+
+    `Il Profilo Archetipico è uno <b class="about__b">strumento rapido ed efficace</b> per <b class="about__b">superare crisi personali e professionali, migliorare le relazioni</b>, e <b class="about__b">raggiungere obiettivi</b> con <b class="about__b">determinazione</b>, riscoprendo il <b class="about__b">senso di questo viaggio</b>.`,
 ];
 
 function MainAbout() {
@@ -179,29 +192,74 @@ function MainAbout() {
                         </div>
 
                         <div className="about__box" ref={textWhiteRef}>
-                            {text.map((item, index) => {
-                                const words = item.split('');
-                                return (
-                                    <p
-                                        className="about__box-text  text-white"
-                                        key={`${item}-${index}`}
-                                        style={{
-                                            textTransform: 'uppercase',
-                                        }}
-                                    >
-                                        {words.map((word, index) => {
-                                            return (
-                                                <span
-                                                    className="word"
-                                                    key={`${word}-${index}`}
-                                                >
-                                                    {word}
-                                                </span>
-                                            );
-                                        })}
-                                    </p>
-                                );
-                            })}
+                            {text.map((paragraph, idx) => (
+                                <p
+                                    className="about__box-text text-white"
+                                    key={idx}
+                                    style={{textTransform: 'uppercase'}}
+                                >
+                                    {parse(paragraph, {
+                                        replace: (domNode) => {
+                                            if (domNode.type === 'text') {
+                                                return [...domNode.data].map(
+                                                    (char, charIdx) => (
+                                                        <span
+                                                            key={`char-${idx}-${charIdx}`}
+                                                            className="word"
+                                                        >
+                                                            {char}
+                                                        </span>
+                                                    )
+                                                );
+                                            }
+
+                                            if (
+                                                domNode instanceof Element &&
+                                                domNode.name === 'b'
+                                            ) {
+                                                return (
+                                                    <b
+                                                        className="info__b"
+                                                        key={`b-${idx}`}
+                                                    >
+                                                        {domToReact(
+                                                            domNode.children,
+                                                            {
+                                                                replace: (
+                                                                    inner
+                                                                ) => {
+                                                                    if (
+                                                                        inner.type ===
+                                                                        'text'
+                                                                    ) {
+                                                                        return [
+                                                                            ...inner.data,
+                                                                        ].map(
+                                                                            (
+                                                                                char,
+                                                                                charIdx
+                                                                            ) => (
+                                                                                <span
+                                                                                    key={`b-${idx}-${charIdx}`}
+                                                                                    className="word"
+                                                                                >
+                                                                                    {
+                                                                                        char
+                                                                                    }
+                                                                                </span>
+                                                                            )
+                                                                        );
+                                                                    }
+                                                                },
+                                                            }
+                                                        )}
+                                                    </b>
+                                                );
+                                            }
+                                        },
+                                    })}
+                                </p>
+                            ))}
                         </div>
                     </div>
                 </div>
