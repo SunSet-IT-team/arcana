@@ -248,6 +248,7 @@
         }
         &__author-linkbox {
             display: flex;
+            flex-direction: column;
             justify-content: flex-end;
         }
         &__author-imgbox {
@@ -312,9 +313,9 @@
         }
         &__author-linkbox {
             margin: 5px;
-            margin-bottom: auto;
+            // margin-bottom: auto;
             margin-right: 0px;
-            margin-top: auto;
+            // margin-top: auto;
         }
         &__author-link {
             font-size: 12.5px !important;
