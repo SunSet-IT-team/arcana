@@ -15,7 +15,7 @@ import {useDevice} from '../../hooks/useDevice';
 export default function ArchetypesSlider() {
     const swiperRef = useRef(null);
 
-    const {isNotDesktop} = useDevice();
+    const {isNotDesktop, isMobile} = useDevice();
 
     const handleClickSlide = (to) => {
         if (!swiperRef.current) return;
@@ -39,7 +39,7 @@ export default function ArchetypesSlider() {
                 />
             </div>
 
-            {isNotDesktop ? (
+            {isMobile ? (
                 <SliderMobile archetypesProp={archetypesData} />
             ) : (
                 <Swiper

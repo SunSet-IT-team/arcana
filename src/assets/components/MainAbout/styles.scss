@@ -315,6 +315,9 @@
             margin: 5px;
             // margin-bottom: auto;
             margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             // margin-top: auto;
         }
         &__author-link {
