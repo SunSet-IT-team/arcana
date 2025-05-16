@@ -11,7 +11,7 @@ function MainInfo() {
                         ARCHETIPI
                     </h1>
 
-                    {/* <p className="info__text">
+                    <p className="info__text">
                         La Mappa Archetipica Natale rivela le energie
                         archetipiche intrinseche alla nostra psiche che
                         influenzano le esperienze che attraiamo e l’ambiente che
@@ -19,9 +19,9 @@ function MainInfo() {
                         viaggio della nostra anima, che mostra i modelli
                         archetipici personali attraverso i quali percorriamo il
                         cammino dell’individuazione.
-                    </p> */}
+                    </p>
 
-                    <p className="info__text">
+                    {/* <p className="info__text">
                         Non siamo nati come fogli bianchi, ma già predisposti a
                         vivere{' '}
                         <b className="info__b">
@@ -82,7 +82,7 @@ function MainInfo() {
                         , e <b className="info__b">raggiungere obiettivi</b> con
                         <b className="info__b">determinazione</b>, riscoprendo
                         il <b className="info__b">senso di questo viaggio</b>.
-                    </p>
+                    </p> */}
 
                     <Link
                         text="CALCOLARE"
