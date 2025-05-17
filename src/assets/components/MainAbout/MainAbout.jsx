@@ -48,8 +48,8 @@ function MainAbout() {
 
     const dispatch = useDispatch();
 
-    const textWhiteRef = useRef(null);
-    useTextAnimation(textWhiteRef.current);
+    // const textWhiteRef = useRef(null);
+    // useTextAnimation(textWhiteRef.current);
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -191,7 +191,8 @@ function MainAbout() {
                             </div>
                         </div>
 
-                        <div className="about__box" ref={textWhiteRef}>
+                        {/* <div className="about__box" ref={textWhiteRef}> */}
+                        <div className="about__box">
                             {text.map((paragraph, idx) => (
                                 <p
                                     className="about__box-text text-white"

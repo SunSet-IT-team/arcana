@@ -1031,19 +1031,6 @@ class RipplesPlugin {
     }
 }
 
-// // Добавляем метод в `HTMLElement.prototype`, чтобы можно было вызывать `element.ripples()`
-// HTMLElement.prototype.ripples = function (option, ...args) {
-//     RipplesPlugin.init([this], option, ...args);
-// };
-
-// // Добавляем метод для коллекции элементов (например, `document.querySelectorAll`)
-// NodeList.prototype.ripples = function (option, ...args) {
-//     RipplesPlugin.init(this, option, ...args);
-// };
-
-// // Экспорт конструктора
-// HTMLElement.prototype.ripples.Constructor = Ripples;
-
 export function ripple(el, option, ...args) {
     RipplesPlugin.init([el], option, ...args);
 }

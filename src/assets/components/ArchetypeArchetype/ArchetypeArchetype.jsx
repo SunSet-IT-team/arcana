@@ -88,14 +88,14 @@ export const archetypesContent = {
             <>
                 <p>
                     II La{' '}
-                    <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
                     Papessa rappresenta il primo Archetipo femminile chiave. È
                     una delle personificazioni della femminilità e dei segreti,
                     di tutto ciò di cui non si parla nella società.
                 </p>
                 <p>
                     II La{' '}
-                    <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
                     Papessa riceve la conoscenza attraverso l'intuizione e a
                     volte non le può spiegare neanche a sé stessa. Se una
                     persona si fida delle proprie sensazioni, allora II La
@@ -104,7 +104,7 @@ export const archetypesContent = {
                 </p>
                 <p>
                     II La{' '}
-                    <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
                     Papessa indossa una “maschera” ed è emotivamente chiusa.
                     Vive in due mondi allo stesso tempo, contemporaneamente si
                     trova qui e oltre. Questa è una persona che può separare
@@ -113,7 +113,7 @@ export const archetypesContent = {
                 </p>
                 <p>
                     II La{' '}
-                    <div style={{width: 1, display: 'inline-block'}}> </div>{' '}
+                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
                     Papessa protegge tutto ciò che ha bisogno di cure, ciò che è
                     nascosto, ciò che non è stato ancora rivelato. Questa è
                     l'energia della madre, della natura e del mistero.
