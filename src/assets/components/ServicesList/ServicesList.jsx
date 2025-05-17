@@ -42,9 +42,9 @@ function ServicesList({services}) {
                         </div>
 
                         <div className="services-list__info">
-                            <p className="services-list__text">
+                            <div className="services-list__text">
                                 {service.info}
-                            </p>
+                            </div>
 
                             {openCard !== index && (
                                 <button

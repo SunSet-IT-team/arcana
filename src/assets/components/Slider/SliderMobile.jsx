@@ -1,7 +1,9 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState, useLayoutEffect, useEffect} from 'react';
 import Marquee from 'react-fast-marquee';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {FreeMode, Navigation} from 'swiper/modules';
 import {Link} from 'react-router-dom';
+
 import './styles.scss';
 import {archetypesData} from '../ArchetypesArchetypes/ArchetypesArchetypes';
 
@@ -11,7 +13,13 @@ const SliderMobile = ({archetypesProp = []}) => {
     const titleRefs = useRef([]);
     const [marqueeStates, setMarqueeStates] = useState([]);
 
+    // Сбрасываем лишние refs при смене data
     useEffect(() => {
+        titleRefs.current = titleRefs.current.slice(0, data.length);
+    }, [data]);
+
+    // После рендера проверяем ширину заголовков
+    useLayoutEffect(() => {
         const newStates = titleRefs.current.map((ref) => {
             if (!ref || !ref.parentElement) return false;
             return ref.scrollWidth > ref.parentElement.offsetWidth;
@@ -21,14 +29,13 @@ const SliderMobile = ({archetypesProp = []}) => {
 
     return (
         <Swiper
-            // modules={[FreeMode, Navigation]}
+            modules={[FreeMode, Navigation]}
             spaceBetween={15}
             slidesPerView={1.65}
             slidesOffsetBefore={1}
             slidesOffsetAfter={1}
-            loop
+            loop={data.length >= 4}
             centeredSlides
-            // className="storys-swiper"
         >
             {data.map((archetype, index) => (
                 <SwiperSlide key={index}>

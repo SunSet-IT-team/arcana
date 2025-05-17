@@ -49,7 +49,7 @@ export default function ArchetypesSlider() {
                     }}
                     className="archetypes-demo__swiper"
                     modules={[FreeMode, Navigation]}
-                    loop={true}
+                    // loop={archetypesData.length >= 4}
                     slidesPerView={'auto'}
                     spaceBetween={20}
                     centeredSlides={false}
@@ -84,12 +84,12 @@ export default function ArchetypesSlider() {
                                 </div>
 
                                 <div className="archetypes-demo__item-info">
-                                    <p className="archetypes-demo__item-text">
+                                    <div className="archetypes-demo__item-text">
                                         {
                                             archetypesContent[data.number]
                                                 ?.content
                                         }
-                                    </p>
+                                    </div>
                                     <Link
                                         to={data.linkTo}
                                         className="archetypes-demo__item-link arrow"

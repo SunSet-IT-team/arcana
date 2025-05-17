@@ -14,19 +14,20 @@ const WaterEffectWrapper = ({children}) => {
     const perturbance = isMobile ? 0.02 : 0.04;
 
     useEffect(() => {
-        if (!elemRef || !elemRef.current) return;
+        const el = elemRef.current;
+        if (!el) return;
 
-        ripple(elemRef.current, {resolution, dropRadius, perturbance});
+        ripple(el, {resolution, dropRadius, perturbance});
         if (!inView) {
-            ripple(elemRef.current, 'hide');
+            ripple(el, 'hide');
         } else {
-            ripple(elemRef.current, 'show');
+            ripple(el, 'show');
         }
 
         return () => {
-            ripple(elemRef.current, 'destroy');
+            ripple(el, 'destroy');
         };
-    }, [elemRef.current, inView]);
+    }, [inView]);
 
     return (
         <div ref={elemRef} className="ripples">
