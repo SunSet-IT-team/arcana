@@ -1,7 +1,7 @@
 import {useInView} from 'react-intersection-observer';
 import {useMediaQuery} from 'react-responsive';
 import {useEffect, useRef} from 'react';
-import {ripple} from '../../js/ripple';
+import {ripple} from '../../hooks/rippleSafe';
 
 const WaterEffectWrapper = ({children}) => {
     const [ref, inView] = useInView({threshold: 0});
@@ -17,15 +17,20 @@ const WaterEffectWrapper = ({children}) => {
         const el = elemRef.current;
         if (!el) return;
 
-        ripple(el, {resolution, dropRadius, perturbance});
-        if (!inView) {
-            ripple(el, 'hide');
-        } else {
+        let initialized = false;
+
+        if (inView) {
+            ripple(el, {resolution, dropRadius, perturbance});
             ripple(el, 'show');
+            initialized = true;
+        } else {
+            ripple(el, 'hide');
         }
 
         return () => {
-            ripple(el, 'destroy');
+            if (initialized) {
+                ripple(el, 'destroy');
+            }
         };
     }, [inView]);
 
