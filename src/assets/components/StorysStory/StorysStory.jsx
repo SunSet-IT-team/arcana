@@ -49,8 +49,10 @@ function StorysStory() {
         tagIds,
     });
 
-    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
-    const allPosts = [];
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    // const allPosts = [];
+
+    console.log(allPosts);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -65,7 +67,7 @@ function StorysStory() {
             });
         }, 500);
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 425);
+            setIsMobile(window.innerWidth <= 600);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
@@ -131,7 +133,7 @@ function StorysStory() {
                     ) : (
                         <ul className="storys__list">
                             {allPosts &&
-                                allPosts.length <= 0 &&
+                                allPosts.length > 0 &&
                                 allPosts.map((story) => {
                                     return (
                                         <li

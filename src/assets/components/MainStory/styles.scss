@@ -43,6 +43,7 @@
             min-height: clamp(10px, size-desktop(275px), 275px);
             width: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
     &__body {
@@ -68,7 +69,7 @@
     &__item-imgBl {
         height: 100%;
         overflow: hidden;
-        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+        // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     }
     &__item-img {
         object-fit: cover;
@@ -222,7 +223,7 @@
         }
         &__item-img {
             height: 120px;
-            object-fit: unset !important;
+            object-fit: cover !important;
         }
         &__item-content {
             padding: 10px;

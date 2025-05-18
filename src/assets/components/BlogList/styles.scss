@@ -10,12 +10,6 @@
     &__item {
         position: relative;
         overflow: hidden;
-        &:nth-child(1) {
-            .blog-list__item-wrapper {
-                padding-top: size-desktop(25px);
-                min-height: 270px;
-            }
-        }
     }
     &__item-wrapper {
         min-height: 284px;
@@ -29,6 +23,16 @@
 
         border-top: 1px solid $light-grey;
         border-bottom: 1px solid $light-grey;
+        &:nth-child(1) {
+            padding-top: size-desktop(25px);
+            min-height: 270px;
+
+            .blog-list__imgBox {
+                min-height: calc(270px - size-desktop(55px));
+                height: calc(size-desktop(270px) - size-desktop(55px));
+            }
+        }
+
         &:not(:first-child) {
             margin-top: -1px;
         }
@@ -108,10 +112,8 @@
         color: $light-grey;
     }
     &__imgBox {
-        // max-width: clamp(10px, size-desktop(330px), 330px);
-        width: 100%;
-
-        // height: clamp(10px, size-desktop(210px), 210px);
+        min-height: calc(284px - size-desktop(69px));
+        height: calc(size-desktop(270px) - size-desktop(69px));
     }
     &__imgBg {
         background-color: #131313;
@@ -163,6 +165,11 @@
                 min-height: 100px !important;
                 height: 195px;
                 padding: size-desktop(46px) 0 size-desktop(46px) 0 !important;
+
+                .blog-list__imgBox {
+                    min-height: calc(100px - size-desktop(92px));
+                    height: calc(195px - size-desktop(92px));
+                }
             }
         }
         &__name {
@@ -170,6 +177,11 @@
         }
         &__text {
             line-height: 1.4;
+        }
+
+        &__imgBox {
+            min-height: calc(284px - size-desktop(102px));
+            height: calc(size-desktop(270px) - size-desktop(102px));
         }
 
         &__link {
@@ -203,6 +215,11 @@
                 height: unset;
                 padding: size-desktop(100px) 0 size-desktop(46px) 0 !important;
                 padding-bottom: 4.5px !important;
+
+                .blog-list__imgBox {
+                    min-height: unset !important;
+                    height: unset !important;
+                }
             }
         }
         &__main-info {

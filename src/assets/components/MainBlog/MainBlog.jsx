@@ -16,8 +16,8 @@ function MainBlog() {
     const {data: posts, isPending} = useInfinitePosts();
 
     //Так попросила заказчица 🤷‍♂️
-    // const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
-    const allPosts = [];
+    const allPosts = posts?.pages.flatMap((page) => page.posts) || [];
+    // const allPosts = [];
 
     const blogData = [
         // {
