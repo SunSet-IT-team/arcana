@@ -44,6 +44,12 @@ function ServicesList({services}) {
                         <div className="services-list__info">
                             <div className="services-list__text">
                                 {service.info}
+                                <img
+                                    className="services-list__info-img"
+                                    src={`./images/services/${service.img}.jpg`}
+                                    alt="services-photo"
+                                    loading="lazy"
+                                />
                             </div>
 
                             {openCard !== index && (
