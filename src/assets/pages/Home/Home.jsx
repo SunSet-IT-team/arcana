@@ -8,7 +8,6 @@ import MainInfo from '../../components/MainInfo/MainInfo';
 import MainMenu from '../../components/MainMenu/MainMenu';
 import MainServices from '../../components/MainServices/MainServices';
 import MainStory from '../../components/MainStory/MainStory';
-import WaterEffectWrapper from '../../components/WatterEffectWrapper/WaterEffectWrapper';
 
 import './styles.scss';
 
@@ -32,29 +31,14 @@ const Home = () => {
 
     return (
         <>
-            <WaterEffectWrapper>
-                <MainInfo />
-            </WaterEffectWrapper>
+            <MainInfo />
             <GoToPage></GoToPage>
-            <WaterEffectWrapper>
-                <MainMenu />
-            </WaterEffectWrapper>
-
-            <WaterEffectWrapper>
-                <MainAbout />
-            </WaterEffectWrapper>
-            <WaterEffectWrapper>
-                <MainServices />
-            </WaterEffectWrapper>
-            <WaterEffectWrapper>
-                <MainStory />
-            </WaterEffectWrapper>
-            <WaterEffectWrapper>
-                <MainArchetypes />
-            </WaterEffectWrapper>
-            <WaterEffectWrapper>
-                <MainBlog />
-            </WaterEffectWrapper>
+            <MainMenu />
+            <MainAbout />
+            <MainServices />
+            <MainStory />
+            <MainArchetypes />
+            <MainBlog />
         </>
     );
 };

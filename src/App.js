@@ -1,5 +1,6 @@
 import {Suspense, lazy} from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
+import FullPageRippleBackground from './assets/components/WaterEffectBG/FullPageRippleBackground';
 
 import Preloader from './assets/components/Preloader/Preloader';
 // import AnimatedCursor from './assets/feature/AnimatedCursor';
@@ -43,10 +44,13 @@ const SuccessSend = lazy(
 
 function App() {
     const location = useLocation();
+    const isHomePage = location.pathname === '/';
 
     return (
-        <div className="App">
+        <div className="App" style={{position: 'relative', zIndex: 1}}>
+            {isHomePage && <FullPageRippleBackground />}
             {/* {!isNotDesktop && <AnimatedCursor />} */}
+
             <Header />
             <main className="main">
                 <Suspense fallback={<Preloader />}>
