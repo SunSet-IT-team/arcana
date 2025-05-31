@@ -585,9 +585,9 @@ function ServicesServices() {
                         processo.
                     </p>
                     <p className="services__text">
-                        Come risultato della consulenza, avrai una comprensione
-                        approfondita in base alla tua richiesta, e una settimana
-                        di supporto da parte mia, con risposte alle tue domande
+                        Come risultato della consulenza avrai una comprensione
+                        approfondita in base alla tua richiesta e una settimana
+                        di supporto da parte mia con risposte alle tue domande
                         relative alla consulenza svolta.
                     </p>
                 </div>

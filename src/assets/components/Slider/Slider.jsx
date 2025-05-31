@@ -8,12 +8,14 @@ import 'swiper/css/navigation';
 
 import './styles.scss';
 import SliderMobile from './SliderMobile';
-import {archetypesData} from '../ArchetypesArchetypes/ArchetypesArchetypes';
+import {archetypesData as archetypesData_} from '../ArchetypesArchetypes/ArchetypesArchetypes';
 import {archetypesContent} from '../ArchetypeArchetype/ArchetypeArchetype';
 import {useDevice} from '../../hooks/useDevice';
 
 export default function ArchetypesSlider() {
     const swiperRef = useRef(null);
+
+    const archetypesData = [...archetypesData_, ...archetypesData_];
 
     const {isNotDesktop, isMobile} = useDevice();
 
@@ -49,7 +51,7 @@ export default function ArchetypesSlider() {
                     }}
                     className="archetypes-demo__swiper"
                     modules={[FreeMode, Navigation]}
-                    // loop={archetypesData.length >= 4}
+                    loop={archetypesData.length >= 4}
                     slidesPerView={'auto'}
                     spaceBetween={20}
                     centeredSlides={false}
@@ -59,7 +61,7 @@ export default function ArchetypesSlider() {
                     {archetypesData.map((data, index) => (
                         <SwiperSlide
                             key={index}
-                            // onClick={() => handleClickSlide(index)}
+                            onClick={() => handleClickSlide(index)}
                         >
                             <div className="archetypes-demo__item-wrapper">
                                 <div className="archetypes-demo__item-body">
