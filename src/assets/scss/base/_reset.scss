@@ -56,12 +56,14 @@ select {
     outline: none;
     border: none;
     // cursor: none;
+    z-index: 1;
 }
 
 a,
 button {
     outline: transparent;
     // cursor: none;
+    z-index: 1;
 }
 
 a {
