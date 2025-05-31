@@ -56,16 +56,22 @@
     &__body {
         & h2 {
             line-height: 1.4;
+            margin-bottom: 1.5em;
+        }
+
+        p {
+            min-height: 1px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: 600;
         }
 
         line-height: 1.4;
-
-        & p:nth-child(2) {
-            margin: 47px 0;
-        }
-        p:nth-child(10) {
-            margin-top: 47px;
-        }
     }
 
     &__date {
@@ -80,10 +86,6 @@
         margin-bottom: size-desktop(50px);
 
         border-bottom: $contour-grey;
-        h2 {
-            font-weight: normal;
-            margin-bottom: 0;
-        }
     }
     &__content-img {
         max-width: 680px;
@@ -97,6 +99,52 @@
         color: $white;
         margin-left: auto;
         margin-right: -8px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__wrapper {
+            padding-top: 10px;
+        }
+        &__title {
+            margin-bottom: 110px;
+        }
+        &__filter {
+            margin-bottom: 50px;
+            &-item {
+                margin-right: 15.75px !important;
+                line-height: 1.4;
+            }
+        }
+        &__back-link {
+            margin-bottom: 190px;
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+        &__button {
+            margin-top: 40px;
+            font-size: 14px;
+            max-width: unset;
+            width: 335px;
+            margin-right: 2px;
+            padding: 6.5px;
+        }
+        &__body {
+            h2 {
+                font-size: 24px !important;
+                line-height: 1.3925;
+            }
+            p {
+                font-size: clamp(13px, size-desktop(18px), 18px);
+            }
+        }
+
+        &__up {
+            span {
+                font-size: clamp(13px, size-desktop(18px), 18px);
+            }
+        }
     }
 
     @media screen and (max-width: 767px) {
@@ -143,14 +191,7 @@
             }
             p {
                 font-size: 15px;
-            }
-            p {
-                &:nth-child(2) {
-                    margin: 20px 0;
-                }
-                &:nth-child(10) {
-                    margin: 0;
-                }
+                margin-bottom: 18px !important;
             }
         }
         &__up {
