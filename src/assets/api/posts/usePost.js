@@ -2,7 +2,9 @@ import {useQuery} from '@tanstack/react-query';
 import {BASE_API} from '../constants';
 
 const fetchPostBySlug = async (slug) => {
-    const response = await fetch(`${BASE_API}/posts?slug=${slug}&_embed`);
+    const response = await fetch(
+        `${BASE_API}/posts?slug=${slug}&_embed&_t=${Date.now()}`
+    );
 
     if (!response.ok) throw new Error('Ошибка загрузки записи');
 
@@ -43,7 +45,7 @@ const fetchPostBySlug = async (slug) => {
             './images/default.jpg',
         date: formattedDate,
         slug: post.slug,
-        content: post.content?.rendered || '', // Добавляем полное содержание
+        content: post.content?.rendered.replace(/<p>\s*<\/p>/g, '<br/>') || '', // Добавляем полное содержание
     };
 };
 
