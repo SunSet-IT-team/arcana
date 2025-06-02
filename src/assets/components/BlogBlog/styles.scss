@@ -5,7 +5,7 @@
     padding-top: 171px;
     padding-bottom: 250px;
     &__back-link {
-        display: block;
+        display: flex;
 
         margin-bottom: clamp(10px, size-desktop(110px), 110px);
 
@@ -157,7 +157,7 @@
                     height: 40px;
                     min-height: unset !important;
                     margin-top: unset;
-                    padding-bottom: 50px !important;
+                    padding-bottom: 42px !important;
                 }
                 &__indicator {
                     padding: 10px 5px !important;

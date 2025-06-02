@@ -73,9 +73,9 @@ function ServicesList({services}) {
                             <Button
                                 text="Iscriviti"
                                 className="services-list__info-button"
-                                onClick={() =>
-                                    dispatch(setOpenContactForm(true))
-                                }
+                                onClick={() => {
+                                    // dispatch(setOpenContactForm(true))
+                                }}
                             />
                         </div>
                     </div>

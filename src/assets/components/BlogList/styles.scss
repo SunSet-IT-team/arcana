@@ -208,7 +208,7 @@
             padding: size-desktop(100px) 0 size-desktop(46px) 0;
             min-height: unset !important;
             height: unset;
-            grid-template-rows: 20px 58px 58px 330px 45px 40px;
+            grid-template-rows: 20px 58px auto 330px 45px 40px;
             padding-bottom: 4.5px;
             &:nth-child(1) {
                 min-height: unset !important;
