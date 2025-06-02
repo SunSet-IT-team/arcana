@@ -151,6 +151,7 @@
     &__text {
         font-size: clamp(18px, size-desktop(32px), 32px);
         color: $grey;
+        margin-bottom: 20px;
     }
     &__text-box {
         &::-webkit-scrollbar {
