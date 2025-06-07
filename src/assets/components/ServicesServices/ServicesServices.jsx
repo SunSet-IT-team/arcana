@@ -8,126 +8,65 @@ import ServicesList from '../ServicesList/ServicesList';
 
 export const servicesData = [
     {
-        name: 'PERSONALITÀ',
+        name: 'Consulenza su misura',
+        time: null,
+        info: (
+            <>
+                <p className="text-split">
+                    Non sempre un percorso inizia con una struttura predefinita.
+                    <br />
+                    A volte c’è solo una domanda da tempo attesa, un momento di
+                    crisi, un nodo che si ripresenta, un’urgenza di chiarezza.
+                    In questi casi è possibile concordare insieme un percorso
+                    personalizzato: partire da una richiesta specifica per un
+                    singolo incontro, oppure costruire passo dopo passo un ciclo
+                    di sessioni calibrato sulle tue esigenze.
+                    <br />
+                    Può trattarsi di una decisione da prendere, di un passaggio
+                    complesso nella vita o nel lavoro, di un momento in cui
+                    senti il bisogno di ritrovare una direzione.
+                    <br />
+                    Ciò che serve è uno spazio di confronto autentico, libero da
+                    formule standard, in cui dare forma a ciò che stai
+                    attraversando e orientarti con più lucidità.
+                    <br />
+                    Se senti che è il momento di guardare le cose con più
+                    profondità e chiarezza oppure di avere bisogno di un
+                    supporto, scrivimi. Insieme troviamo il formato giusto per
+                    te.
+                </p>
+            </>
+        ),
+        img: 'сonsulenza su misura',
+        price: null,
+    },
+    {
+        name: 'Personalità',
         time: '60 – 90 min',
         info: (
             <>
                 <p className="text-split">
-                    Se sei stanco di investire in corsi di crescita personale
-                    senza ottenere i risultati sperati, e se ti sembra di non
-                    riuscire ancora a comprendere la tua unicità o di essere
-                    intrappolato in un circolo vizioso, questa consulenza
-                    potrebbe fare la differenza. Ti aiuterò a trovare una
-                    direzione autentica per la tua vita, sbloccando il tuo
-                    potenziale e portando chiarezza su ciò che davvero conta per
-                    te.
+                    Se stai dando il massimo, ma dentro senti ancora una
+                    distanza da te stesso — non riesci a capirti, a sentire cosa
+                    ti guida, o ti percepisci confuso o bloccato — questa
+                    consulenza è pensata per te.
                     <br />
-                    Lavoreremo insieme su una richiesta specifica o su un tema
-                    più ampio, legato alla tua crescita personale e alla tua
-                    evoluzione.
+                    Non si tratta di cambiare chi sei, ma di riconoscere ciò che
+                    è già presente dentro di te, sotto le aspettative, i ruoli e
+                    le idee su come dovresti essere.
+                    <br />
+                    Ti aiuterò a vedere e riconoscere la tua natura unica: le
+                    qualità e le risorse che spesso non metti a fuoco, così come
+                    i limiti e il potenziale.
+                    <br />
+                    Partiamo da dove sei ora, con rispetto per il tuo percorso e
+                    per l’identità che oggi abiti, per riportare chiarezza,
+                    coerenza e senso di direzione dentro di te.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - qualità caratteriali inerenti alla nascita;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - lezioni di vita e esamida superare;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - potenziale da rilevare nei diversi periodi della vita;
-                    </li>
-                    <br />
-                    <li className="text-split">- paure e complessi;</li>
-                    <br />
-                    <li className="text-split">- il compito della vita.</li>
-                    <br />
-                </ul>
-
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Dopo la consulenza riceverai una scheda con informazioni
-                    utili a seconda degli argomenti affrontati durante la
-                    consulenza, suggerimenti e consigli pratici per migliorare
-                    la tua vita.
-                </p> */}
             </>
         ),
         img: '1. personalità',
         price: 90,
-    },
-    {
-        name: 'Guida all’Archetipo di Base ',
-        time: 'PDF - file',
-        info: (
-            <>
-                <p className="text-split">
-                    Se desideri esplorare l'energia archetipica di base innata
-                    (la prima posizione nella mappa archetipica natale), questa
-                    ricerca è stata pensata per te. L'energia di base riflette
-                    l’archetipo che rappresenta la forza principale e il nucleo
-                    fondamentale della tua personalità. Svela le caratteristiche
-                    primarie, i talenti naturali e le inclinazioni che ti
-                    accompagnano fin dalla nascita. Comprendere questa energia
-                    ti permette di scoprire quale parte di te stesso funge da
-                    base, il punto di partenza da cui si sviluppano tutte le
-                    altre potenzialità e sfaccettature della tua vita.
-                </p>
-                {/* <h3 className="text-split">Troverai:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - significato dell’energia archetipica;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - descrizione dell'energia in armonia;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - descrizione dell’energia in carenza;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - descrizione dell'energia in eccesso;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - comportamento nella relazione di coppia;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - aree di sviluppo professionale;
-                    </li>
-                    <br />
-                    <li className="text-split">- entrate finanziarie;</li>
-                    <li className="text-split">
-                        - problemi di salute psicosomatici;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - domande per aiutare a determinare come si sta vivendo
-                        l'energia (in armonia, in carenza, in eccesso);
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - citazioni che riflettono l’energiaarchetipica;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - personaggi famosi con l'energia base di questo
-                        Archetipo.
-                    </li>
-                    <br />
-                </ul> */}
-            </>
-        ),
-        img: '2. guida',
-        price: 22,
     },
     {
         name: 'Relazioni di coppia',
@@ -135,295 +74,129 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se desideri comprendere meglio la tua relazione di coppia,
-                    affrontare problemi che sembrano insuperabili e sogni una
-                    connessione armoniosa, basata sulla comprensione reciproca e
-                    sul rispetto dei bisogni e delle aspirazioni di entrambi,
-                    questa consulenza può fare la differenza. Dedichiamo
-                    particolare attenzione all'analisi della trama archetipica
-                    della tua relazione, esplorando possibili scenari e come
-                    questi influenzano la dinamica della coppia.
+                    Uno spazio sicuro per osservare da vicino ciò che accade
+                    nella tua relazione, sia essa attuale o passata.
                     <br />
-                    Lavoreremo su una richiesta specifica o su un tema più ampio
-                    legato a questo ambito.
+                    Se senti fatica a capirvi, confusione, distanza o mancanza
+                    di equilibrio, questa consulenza ti aiuta a fare ordine.
+                    <br />
+                    Approfondiamo la dinamica che muove il legame, i bisogni che
+                    cercano spazio, e i nodi ricorrenti che lo rendono faticoso
+                    o lo bloccano.
+                    <br />
+                    Esploriamo insieme gli scenari possibili e come influenzano
+                    il tuo rapporto, restituendoti centratura e lucidità anche
+                    nei momenti di crisi, per ritrovare coerenza e orientamento
+                    rispetto a ciò che è davvero importante per te in una
+                    relazione. Spesso le difficoltà nel presente sono legate a
+                    relazioni passate non risolte, che restano aperte dentro di
+                    te e influenzano il modo in cui ti rapporti oggi. Possiamo
+                    lavorare insieme per comprendere questi legami, sciogliere
+                    nodi nascosti e chiarire come il passato incida sulle tue
+                    scelte e sul tuo presente.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - trama principale del rapporto;
-                    </li>
-                    <br />
-                    <li className="text-split">- possibili scenari;</li>
-                    <br />
-                    <li className="text-split">
-                        - punti di forza e di debolezza;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - conflitti e incomprensioni e come evitarli;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - obiettivie intenzioni comuni che rafforzeranno il
-                        rapporto;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - aspettative reciproche (anche se sono inconsce);
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - lezione personale in questa relazione.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione. Dopo la consulenza riceverai una scheda con
-                    informazioni utili a seconda degli argomenti affrontati
-                    durante la consulenza, suggerimenti e consigli pratici per
-                    migliorare la tua vita di coppia.
-                </p> */}
             </>
         ),
         img: '3. relazione di coppia',
         price: 120,
     },
-
     {
-        name: 'Rapporti Sociali ',
+        name: 'Rapporti Sociali',
         time: '60 – 90 min',
         info: (
             <>
                 <p className="text-split">
-                    Se desideri "leggere" gli altri come un libro aperto,
-                    analizzare i punti di attenzione in un rapporto che ti
-                    sembrano problematici, oppure comprendere se una persona è
-                    adatta a un'interazione significativa con te — che si tratti
-                    di un socio in affari, un dipendente, un collega, un amico,
-                    un compagno di viaggio o altro — o se desideri approfondire
-                    la conoscenza di un familiare per migliorare la
-                    comunicazione e costruire un rapporto più armonioso, questa
-                    consulenza ti aiuterà a scoprire le dinamiche archetipiche
-                    che influenzano il tuo rapporto, proteggerti da possibili
-                    scenari negativi e creare legami più forti e autentici.
+                    Un percorso di chiarezza per comprendere a fondo le
+                    dinamiche che si giocano nei tuoi rapporti sociali.
+                    <br />
+                    Se fatichi a leggere l’altro, riconoscere segnali importanti
+                    o capire davvero chi hai davanti — che sia un socio, un
+                    collaboratore, un collega, un amico o un familiare — questa
+                    consulenza ti offre strumenti concreti per valutare il
+                    potenziale del rapporto, individuare la trama che guida le
+                    vostre interazioni e riconoscere le dinamiche che possono
+                    favorire prosperità o, al contrario, generare tensioni e
+                    blocchi.
+                    <br />
+                    Ti aiuta a proteggerti da scenari negativi e a prendere
+                    decisioni chiare su come gestire o trasformare questi
+                    legami. Sapere con chi stai costruendo un rapporto è la base
+                    per evitare tensioni inutili, liberarti da situazioni
+                    ricorrenti e creare relazioni autentiche, solide, fondate su
+                    rispetto e consapevolezza.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo: </h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - caratteristicheindividuali di persona interessata;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - trama principale del rapporto;
-                    </li>
-                    <br />
-                    <li className="text-split">- possibili scenari;</li>
-                    <br />
-                    <li className="text-split">
-                        - punti di forza e di debolezza;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - insidie e le situazioni di crisi, come superarle;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - obiettivi e approccio che rafforzeranno il rapporto;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - aspettative reciproche (anche se sono inconsce);
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - lezioneper entrambi i partner di questo rapporto.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Dopo la consulenza riceverai una scheda con informazioni
-                    utili a seconda degli argomenti affrontati durante la
-                    consulenza, suggerimenti e consigli pratici.
-                </p> */}
             </>
         ),
         img: '4. rapporti sociali',
         price: 110,
     },
-
     {
-        name: 'Maturazione Psicologica e Sociale ',
+        name: 'Maturazione Psicologica e Sociale',
         time: '60 – 120 min',
         info: (
             <>
                 <p className="text-split">
                     Se ti senti bloccato in schemi ripetitivi o fatichi a
-                    trovare il tuo posto nel mondo, questa consulenza ti aiuterà
-                    a riconoscere e superare i condizionamenti familiari
-                    interiorizzati. Attraverso l’analisi della tua mappa
-                    archetipica natale, esploreremo le tue qualità innate, gli
-                    scenari familiari e i blocchi emotivi. L’obiettivo è
-                    favorire la separazione dai programmi familiari limitanti e
-                    accompagnarti nella crescita verso un’identità più
-                    consapevole, autonoma e realizzata, sbloccando il tuo
-                    potenziale e orientandoti verso un futuro autentico e
-                    appagante.
+                    trovare il tuo posto nel mondo, questa consulenza ti offre
+                    uno spazio sicuro per riconoscere e superare quei
+                    condizionamenti familiari che limitano la tua libertà di
+                    scelta e la tua forza interiore.
+                    <br />
+                    Insieme esploreremo le tue qualità innate, le dinamiche
+                    familiari che ti hanno formato e i blocchi emotivi che
+                    ostacolano la tua realizzazione, per tracciare un percorso
+                    chiaro e coerente con le tue reali aspirazioni.
+                    <br />
+                    Questo percorso ti invita a prendere la responsabilità della
+                    tua vita, separandoti consapevolmente da programmi familiari
+                    e schemi che non ti servono più, per costruire un nuovo
+                    sguardo su te stesso e far emergere un’identità più
+                    autonoma, centrata e autentica.
+                    <br />
+                    Il lavoro è concreto e orientato a sbloccare il tuo
+                    potenziale, affrontare le sfide interiori e guidarti verso
+                    una realizzazione personale e sociale piena, equilibrata e
+                    significativa — qualunque sia il punto da cui parti.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - qualità caratteriali inerenti alla nascita;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - lezioni di vita e esami da superare;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - potenziale da rivelare in diversi periodi della vita;
-                    </li>
-                    <br />
-                    <li className="text-split">- paure e complessi;</li>
-                    <br />
-                    <li className="text-split">
-                        - “bagaglio” familiare negativo;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - schemi limitanti e come superarli;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - percorso personale verso lo sviluppo sociale come
-                        individuo maturo e indipendente.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Dopo la consulenza riceverai una scheda con informazioni
-                    utili a seconda degli argomenti affrontati durante la
-                    consulenza, suggerimenti e consigli pratici.
-                </p> */}
             </>
         ),
         img: '5. maturazione1',
-        price: 80,
+        price: 90,
     },
     {
-        name: `Il Profilo dell'Ombra – Subconscio `,
+        name: '“Mappa del Viaggio”',
         time: '60 – 90 min',
         info: (
             <>
                 <p className="text-split">
-                    Se desideri esplorare il tuo subconscio e integrare le parti
-                    represse della tua personalità, questa consulenza ti aiuterà
-                    a scoprire le risorse nascoste nel tuo lato oscuro.
-                    L’individuazione, come la definisce Jung, è il processo di
-                    unione tra luce e ombra, che consente di raggiungere una
-                    maggiore integrità psicologica. Attraverso l’analisi dei
-                    traumi infantili, delle reazioni subconscie e dei
-                    comportamenti sotto stress, esploreremo il potenziale che la
-                    tua psiche ha messo da parte.
+                    Un incontro pensato per chi desidera vedere la propria vita
+                    come un percorso consapevole e coerente, e non come una
+                    semplice sequenza casuale di eventi.
                     <br />
-                    L’obiettivo è trasformare questi blocchi in risorse potenti,
-                    liberarti da schemi autodistruttivi e condurti verso una
-                    consapevolezza più profonda e un’armonia interiore duratura.
+                    Se ti trovi a un bivio, hai già raggiunto molto ma non
+                    riesci a vedere il quadro generale, senti un blocco
+                    interiore, una perdita di senso o di direzione — questo
+                    strumento ti aiuterà a riconoscere con chiarezza la tua vera
+                    traiettoria, quella che forse hai solo intuito.
+                    <br />
+                    Insieme esamineremo la tua mappa archetipica come un
+                    movimento vivo: con tappe chiave, zone di rischio, risorse e
+                    l’obiettivo finale del cammino.
+                    <br />
+                    Si tratta di ritrovare il senso profondo del tuo viaggio e
+                    di poter scegliere consapevolmente dove andare, seguendo ciò
+                    che davvero ti appartiene.
+                    <br />
+                    Questa consulenza può diventare un punto di svolta: apre a
+                    una comprensione più matura della propria vita ed è pensata
+                    per chi è stanco di vagare e pronto a ricevere risposte alle
+                    domande più profonde, dotandosi di uno strumento preciso di
+                    orientamento.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">- traumi infantili;</li>
-                    <br />
-                    <li className="text-split">
-                        - risorse interne soppressi inconsciamente;
-                    </li>
-                    <br />
-                    <li className="text-split">- reazioni subconsce;</li>
-                    <br />
-                    <li className="text-split">
-                        - comportamento sotto stress e come trasformare lo
-                        stress in una risorsa;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - potenziale che la psiche nega;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - distruzionedella personalità.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Dopo la consulenza riceverai una scheda con informazioni
-                    utili a seconda degli argomenti affrontati durante la
-                    consulenza, suggerimenti e consigli praticiper lavorare
-                    conil subconscio.
-                </p> */}
             </>
         ),
-        img: '6. ombra',
-        price: 80,
-    },
-
-    {
-        name: 'Mappa Archetipica Infantile',
-        time: '60 – 120 min',
-        info: (
-            <>
-                <p className="text-split">
-                    Se desideri comprendere come supportare lo sviluppo
-                    psicologico di tuo figlio e aiutarlo a realizzare il suo
-                    pieno potenziale, questa consulenza ti guiderà
-                    nell’affrontare le sfide della crescita con un approccio
-                    rispettoso della sua psiche. Analizzeremo le caratteristiche
-                    innate del tuo bambino, i suoi comportamenti e le sue crisi
-                    di crescita, esplorando come rispondere al meglio alle sue
-                    necessità in modo da ridurre l’impatto negativo di queste
-                    fasi. L’obiettivo è creare una strategia per favorire una
-                    crescita armoniosa e costruire un carattere forte e sano.
-                </p>
-                {/* <h3 className="text-split">Analizzeremo:</h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - bambino come individuocon sue caratteristiche innate;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - comportamento nella norma e quando necessarioprestare
-                        attenzione ai suoi bisogni;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - diverse crisi d’età e come comportarsi;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - strategia per una crescita armoniosa.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Dopo la consulenza riceverai una scheda con informazioni
-                    utili a seconda degli argomenti affrontati durante la
-                    consulenza, suggerimenti e consigli pratici.
-                </p> */}
-            </>
-        ),
-        img: '7. mappa archetipica infantile1',
-        price: 100,
+        img: 'mappa del viaggio',
+        price: 90,
     },
     {
         name: 'Attività Professionale',
@@ -431,105 +204,100 @@ export const servicesData = [
         info: (
             <>
                 <p className="text-split">
-                    Se desideri esplorare la realizzazione del tuo potenziale
-                    nel contesto professionale, questa consulenza ti aiuterà a
-                    identificare le opportunità e le risorse nascoste nella tua
-                    personalità. Analizzeremo le tue capacità e aspirazioni, i
-                    percorsi per diventare un esperto nel tuo campo, le
-                    possibili limitazioni e lo scopo più profondo della tua
-                    attività professionale, integrandolo con una visione globale
-                    e spirituale. L’obiettivo è orientarti verso una crescita
-                    professionale autentica e soddisfacente.
+                    Se sei in un momento in cui il tuo lavoro non ti rappresenta
+                    più — o se non hai ancora trovato una direzione chiara —
+                    questa consulenza ti aiuta a fare ordine e ad aprirti a una
+                    visione più ampia della tua personalità nel contesto
+                    professionale.
+                    <br />
+                    <br />
+                    Che tu sia un professionista con esperienza o stia cercando
+                    il tuo primo passo solido, il punto è riconoscere cosa ti
+                    muove davvero, dove si trovano le tue vere competenze e
+                    quale direzione può trasformarsi in una costruzione solida e
+                    duratura.
+                    <br />
+                    <br />
+                    Analizzeremo le tue risorse interne, il tuo potenziale reale
+                    e i punti di forza che spesso restano nascosti dietro
+                    l’adattamento o il compromesso.
+                    <br />
+                    <br />
+                    L’obiettivo non è solo “cambiare lavoro”, ma impostare un
+                    vettore chiaro che ti permetta di scegliere con più
+                    consapevolezza e agire con coerenza. È un lavoro per chi
+                    vuole guidare il proprio percorso, non subirlo.
                 </p>
-                {/* <h3 className="text-split">Analizzeremo: </h3>
-                <ul className="text-split">
-                    <li className="text-split">
-                        - capacità nellavita professionale;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - opportunità nel campo professionale;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - ambiti per diventare maestro, specialista, esperto;
-                    </li>
-                    <br />
-                    <li className="text-split">
-                        - insidie e limitazioni in ambito professionale;
-                    </li>
-                    <br />
-                    <li className="text-split">- aspirazioni nel lavoro;</li>
-                    <br />
-                    <li className="text-split">
-                        - scopo della attività professionale in un contesto
-                        globale e spirituale.
-                    </li>
-                    <br />
-                </ul>
-                <p className="text-split">
-                    Ealtri momenti importanti secondo la tua richiesta per
-                    questa sessione.
-                </p>
-                <p className="text-split">
-                    Durante la consulenza riceverai un calcolo del tuo programma
-                    professionale unico, che ti aiuterà nella scelta e gestione
-                    della tua attività professionale.
-                </p> */}
             </>
         ),
         img: '8. attivita professionale1',
         price: 90,
     },
-
-    // {
-    //     name: 'Finanza Personali',
-    //     time: '60 – 90 min',
-    //     info: (
-    //         <>
-    //             <p className="text-split">
-    //                 {' '}
-    //                 Analisi della tua mappa archetipica in relazione a quelle
-    //                 componenti che favoriscono la migliore crescita finanziaria
-    //                 e il raggiungimento di un benessere economico duraturo.
-    //             </p>
-    //             <p className="text-split">
-    //                 È possibile lavorare sia con una richiesta specifica che con
-    //                 un interesse generale per questo argomento.
-    //             </p>
-    //             <h3 className="text-split">Analizzeremo:</h3>
-    //             <ul className="text-split">
-    //                 <li className="text-split">
-    //                     - modo principale per generare reddito;
-    //                 </li><br />
-    //                 <li className="text-split">
-    //                     - forza nel settore finanziario;
-    //                 </li><br />
-    //                 <li className="text-split">
-    //                     - aree per raggiungere la stabilità economica;
-    //                 </li><br />
-    //                 <li className="text-split">
-    //                     - paure e blocchi nella sfera finanziaria;
-    //                 </li><br />
-    //                 <li className="text-split">
-    //                     - come aumentare flusso finanziario.
-    //                 </li><br />
-    //             </ul>
-    //             <p className="text-split">
-    //                 Ealtri momenti importanti secondo la tua richiesta per
-    //                 questa sessione.
-    //             </p>
-    //             <p className="text-split">
-    //                 Durante la consulenza riceverai un calcolo del tuo programma
-    //                 finanziario unico, che diventerà istruzioni affidabili per
-    //                 aumentare i tuoi guadagni.
-    //             </p>
-    //         </>
-    //     ),
-    //     img: '9. Finanza',
-    //     price: 90,
-    // },
+    {
+        name: "Il Profilo dell'Ombra – Subconscio",
+        time: '60 – 90 min',
+        info: (
+            <>
+                <p className="text-split">
+                    Se senti che qualcosa dentro di te agisce senza il tuo
+                    consenso — reazioni che non controlli, tensioni che non si
+                    spiegano, comportamenti che ti allontanano da ciò che
+                    desideri — questa consulenza ti offre uno spazio protetto
+                    per esplorare ciò che si muove sotto la superficie.
+                    <br />
+                    Non è un’analisi fine a sé stessa: è un confronto sincero
+                    con ciò che la tua psiche ha dovuto mettere da parte per
+                    sopravvivere, adattarsi, essere accettato. Ma ciò che un
+                    tempo ti ha protetto, oggi può frenarti.
+                    <br />
+                    Attraverso l’ombra — le tue parti rimosse, istintive, negate
+                    — possiamo ritrovare integrità e stabilità interiore. Solo
+                    così puoi trasformare blocchi e reazioni automatiche in
+                    risorse vitali, in energia che <i>ti alimenta</i>.
+                    <br />È da lì che si ricostruisce un’identità solida: non
+                    quella reattiva, ma quella che finalmente puoi scegliere.
+                    <br />
+                    Per chi è pronto a trasformare la tensione in chiarezza, la
+                    rabbia in forza interiore, il caos in ordine — e riconoscere
+                    anche quella parte innocente e dimenticata di sé, che ancora
+                    attende di essere vista e accolta.
+                </p>
+            </>
+        ),
+        img: '6. ombra',
+        price: 90,
+    },
+    {
+        name: 'Guida all’Archetipo di Base',
+        time: 'PDF - file',
+        info: (
+            <>
+                <p className="text-split">
+                    Questa guida ti aiuta a riconoscere la struttura originaria
+                    della tua personalità — ciò che ti definisce fin dalla
+                    nascita, prima di ogni ruolo o scelta.
+                    <br />
+                    È come un’impronta profonda: presente e attiva anche quando
+                    non la conosci, ma solo prendendone coscienza puoi davvero
+                    usarla.
+                    <br />
+                    Non si tratta di cambiarla, ma di riconoscerla, valorizzarla
+                    e nutrirla nel tempo.
+                    <br />
+                    Ti riconnette alle qualità innate e alle inclinazioni
+                    profonde che costituiscono il tuo punto di partenza — la
+                    matrice su cui si forma tutto il resto.
+                    <br />
+                    Un passaggio chiave per muoverti con più chiarezza, coerenza
+                    e consapevolezza nella tua direzione personale.
+                </p>
+            </>
+        ),
+        img: '2. guida',
+        price: 22,
+    },
 ];
+
 function ServicesServices() {
     return (
         <section className="services">

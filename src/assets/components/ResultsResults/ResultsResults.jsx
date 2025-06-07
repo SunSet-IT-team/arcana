@@ -409,22 +409,18 @@ function ResultsResults() {
                                 ))}
                             </ul>
                             <p className="results__info-text">
-                                È importante notare che ogni archetipo si
-                                manifesta in modo diverso in ogni posizione. Nel
-                                corso della vita, le sue caratteristiche e la
-                                sua influenza possono cambiare radicalmente,
-                                contribuendo così alla formazione del disegno
-                                della personalità unico per ciascuno di noi. Per
-                                comprendere più a fondo la propria vita, è
-                                necessario analizzare le energie archetipiche
-                                nel loro insieme, esplorandone la complessità,
-                                la complementarietà e la tensione reciproca.
-                                Questa analisi è fondamentale per comprendere
-                                meglio te stesso e gli eventi della tua vita,
-                                trovare risposte alle tue domande e procedere
-                                consapevolmente verso cambiamenti positivi. Puoi
-                                iniziare questo percorso con una consulenza
-                                cliccando sul pulsante qui sotto.
+                                Ogni archetipo si manifesta in modo unico, a
+                                seconda della sua posizione nella mappa. La sua
+                                influenza cambia nel tempo e può esprimersi in
+                                forma matura o distorta, a seconda delle tue
+                                scelte e sfide. Per capire ciò che vivi serve
+                                uno sguardo d’insieme: tensioni, alleanze e
+                                conflitti tra le forze interiori mostrano dove
+                                sei, rivelano meccanismi invisibili, danno senso
+                                agli eventi e aiutano a orientarti nel
+                                cambiamento. Se è il momento di voltarti verso
+                                ciò che conta davvero, inizia da qui. Clicca sul
+                                bottone per fissare la tua consulenza.
                             </p>
                             {/* <LinkTo text="CONSULTAZIONE"
                 className="results__info-link"
