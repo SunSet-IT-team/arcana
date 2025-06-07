@@ -102,92 +102,66 @@ function ProfileMethod() {
                         <div className="profile-method__text-box">
                             {[
                                 'Il Metodo di Profilo Archetipico è un sistema \
-                                complesso e integrato che combina diverse tecniche \
-                                di conoscenza di sé e del proprio percorso di vita. \
-                                Pur nella sua struttura relativamente semplice, si \
-                                distingue come uno degli strumenti più trasformativi, \
-                                rapidi ed efficaci nel processo di crescita personale e \
-                                sociale.',
-                                'Si basa sullo studio degli algoritmi della mappa \
-                                archetipica natale, costruita a partire dalla data \
-                                di nascita di ciascuna persona. Al cuore del metodo \
-                                vi è il concetto di archetipo, introdotto da Carl \
-                                Gustav Jung, che parlava di immagini, simboli e strutture \
-                                universali presenti in ognuno di noi. Non nasciamo come \
-                                fogli bianchi, ma già predisposti a certi ruoli ed \
-                                esperienze. La nostra data di nascita diventa una chiave \
-                                per esplorare questi “programmi interiori” rappresentati \
-                                dagli archetipi.',
-                                'Il Metodo si articola in due componenti fondamentali: \
-                                diagnostica e prognostica.',
-                                'Diagnostica: questa analisi aiuta a comprendere come \
-                                gli archetipi plasmino il nostro modo di pensare, sentire, \
-                                comunicare e agire. Analizzando l’interazione tra i pattern \
-                                archetipici nella loro complessità, emergono le strutture \
-                                profonde della psiche che influenzano carattere, aspirazioni, \
-                                paure e blocchi interiori. È uno specchio che ci mostra chi \
-                                siamo e quali schemi inconsciamente ripetiamo — nelle \
-                                relazioni, nel lavoro, nelle scelte. Una volta riconosciuti, \
-                                possiamo trasformarli.',
-                                'Prognostica: consente di analizzare il passato, comprendere \
-                                il presente — il punto in cui ci troviamo — e delineare lo \
-                                scenario più favorevole per il futuro. È uno strumento \
-                                prezioso per interpretare l’ambiente circostante e gli \
-                                eventi lungo l’arco della vita, facilitando un cammino \
-                                consapevole e mirato verso un cambiamento positivo.',
-                                'Il metodo si fonda su 22 archetipi degli Arcani \
-                                Maggiori dei Tarocchi, un sistema simbolico che \
-                                Carl Gustav Jung considerava un autentico \
-                                “alfabeto archetipico”. Questi archetipi rappresentano \
-                                strutture mentali, tratti psicologici, pattern di \
-                                comportamento, ma anche dinamiche di vita e fasi \
-                                di trasformazione.',
-                                'Attraverso questa diagnostica basata su immagini \
-                                archetipiche e pattern universali, il consulente \
-                                esplora complessi, sub-personalità e parti \
-                                profonde della psiche di chi cerca aiuto, \
-                                portando alla coscienza i meccanismi nascosti \
-                                che generano stati interiori o situazioni \
-                                problematiche. Il consulente agisce come guida, \
-                                accompagnando il cliente nell’esplorazione dei \
-                                labirinti della propria interiorità. Grazie alla \
-                                mappa archetipica natale, questo percorso \
-                                simbolico permette di illuminare dinamiche \
-                                interne e favorire una maggiore consapevolezza \
-                                di sé, degli altri e del mondo circostante.',
-                                'Il Metodo di Profilo Archetipico è al tempo \
-                                stesso profondo e pratico, grazie alla sua \
-                                semplicità, precisione ed efficacia. Permette di \
-                                esplorare i processi inconsci che ci ostacolano \
-                                e affrontare in modo più “ecologico” le nostre \
-                                lezioni di maturazione psicologica e spirituale \
-                                nel mondo materiale, adempiendo ai compiti con \
-                                cui siamo venuti al mondo per realizzare \
-                                l’individuazione.',
-                                'Attraverso questo approccio, è possibile \
-                                rimodellare la propria esistenza, trasformando \
-                                le sfide in opportunità di evoluzione e \
-                                attivando le risorse interiori necessarie per \
-                                raggiungere il successo e lo status desiderato. \
-                                Le energie archetipiche personali diventano così \
-                                una guida preziosa per realizzare il proprio \
-                                potenziale e vivere in armonia con il proprio \
-                                scopo.',
-                                'Grazie alla sua versatilità, il Metodo si rivela \
-                                estremamente utile in diversi ambiti: dalla \
-                                psicologia pratica all’educazione, dal coaching',
-                                'Anche se non ne siamo consapevoli, gli archetipi \
-                                vivono dentro di noi e si manifestano nelle \
-                                circostanze della nostra vita. Solo attraverso \
-                                lo studio di questi potenti meccanismi \
-                                invisibili possiamo renderli visibili e \
-                                trasformarli in alleati strategici per \
-                                raggiungere i nostri obiettivi. Che si tratti di \
-                                realizzazione personale, successo professionale, \
-                                crescita economica o relazioni soddisfacenti, \
-                                comprendere gli archetipi è la chiave per \
-                                sbloccare il nostro vero potenziale e vivere la \
-                                vita che desideriamo.',
+                                strutturato che integra diverse tecniche di analisi \
+                                personale. Si distingue come uno degli strumenti più \
+                                trasformativi, rapidi ed efficaci nei processi di \
+                                crescita personale e professionale.',
+
+                                'Alla base del metodo c’è la mappa archetipica: uno \
+                                schema costruito a partire dalla data di nascita, che \
+                                rivela le dinamiche interiori e i pattern ricorrenti \
+                                della persona. Al centro è il concetto di archetipo, \
+                                introdotto da Carl Gustav Jung come immagine primordiale, \
+                                simbolo universale inscritto nell’inconscio collettivo. \
+                                Non nasciamo come fogli bianchi, ma con una predisposizione \
+                                verso determinati ruoli, esperienze e sfide. La data di \
+                                nascita diventa così una chiave per esplorare questi \
+                                “programmi interiori” rappresentati dagli archetipi.',
+
+                                'Il metodo è composto da due parti: diagnostica e prognostica.',
+
+                                'La parte diagnostica aiuta a comprendere come gli archetipi \
+                                influenzano il modo in cui pensiamo, comunichiamo, agiamo e \
+                                ci relazioniamo. Rileva con precisione le strutture profonde \
+                                della psiche che condizionano carattere, scelte, paure e \
+                                conflitti. Rende visibile ciò che spesso opera in automatico. \
+                                Una volta portati alla luce, questi schemi possono essere \
+                                trasformati in modo consapevole.',
+
+                                'La parte prognostica restituisce una visione chiara del \
+                                percorso fatto, del contesto presente e delle dinamiche future. \
+                                È uno strumento strategico, utile in momenti di crisi, \
+                                cambiamento o ridefinizione, ma anche solo per comprendere gli \
+                                eventi accaduti in infanzia. Aiuta a orientarti con più \
+                                coerenza, a prendere decisioni più solide, a muoverti avanti \
+                                con lucidità.',
+
+                                'Il metodo si fonda su 22 archetipi degli Arcani Maggiori dei \
+                                Tarocchi, utilizzati come sistema di rappresentazione \
+                                psichica — lo stesso Jung li definiva un linguaggio simbolico \
+                                universale. Questi archetipi rappresentano strutture mentali, \
+                                tratti di personalità, dinamiche comportamentali, fasi di \
+                                trasformazione ed eventi che riscontriamo.',
+
+                                'Il Profilo Archetipico è uno strumento chiaro, profondo, \
+                                concreto. La sua forza sta nella capacità di portare alla luce \
+                                i meccanismi invisibili che guidano le nostre decisioni, i \
+                                comportamenti e, di conseguenza, i risultati. È pensato per \
+                                chi cerca spiegazioni chiare, risposte pratiche e una \
+                                comprensione profonda di sé, dei propri punti di forza e delle \
+                                dinamiche che attraversa.',
+
+                                'Grazie alla sua flessibilità, il metodo si applica in ambiti \
+                                diversi: psicologia applicata, educazione, mentoring, coaching, \
+                                psicoanalisi del business. Gli archetipi agiscono dentro di noi, \
+                                anche quando non li vediamo. Conoscerli significa renderli visibili \
+                                e trasformarli in alleati strategici.',
+
+                                'Per prendere decisioni più mature.',
+
+                                'Per ritrovare una direzione.',
+
+                                'Per costruire una vita coerente con ciò che sei davvero.',
                             ].map((text, i) => (
                                 <p className="profile-method__text" key={i}>
                                     {text}
