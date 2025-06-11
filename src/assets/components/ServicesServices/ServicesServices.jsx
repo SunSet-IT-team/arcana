@@ -15,6 +15,7 @@ export const servicesData = [
                 <p className="text-split">
                     Non sempre un percorso inizia con una struttura predefinita.
                     <br />
+                    <br />
                     A volte c’è solo una domanda da tempo attesa, un momento di
                     crisi, un nodo che si ripresenta, un’urgenza di chiarezza.
                     In questi casi è possibile concordare insieme un percorso
@@ -22,13 +23,16 @@ export const servicesData = [
                     singolo incontro, oppure costruire passo dopo passo un ciclo
                     di sessioni calibrato sulle tue esigenze.
                     <br />
+                    <br />
                     Può trattarsi di una decisione da prendere, di un passaggio
                     complesso nella vita o nel lavoro, di un momento in cui
                     senti il bisogno di ritrovare una direzione.
                     <br />
+                    <br />
                     Ciò che serve è uno spazio di confronto autentico, libero da
                     formule standard, in cui dare forma a ciò che stai
                     attraversando e orientarti con più lucidità.
+                    <br />
                     <br />
                     Se senti che è il momento di guardare le cose con più
                     profondità e chiarezza oppure di avere bisogno di un
@@ -51,13 +55,16 @@ export const servicesData = [
                     ti guida, o ti percepisci confuso o bloccato — questa
                     consulenza è pensata per te.
                     <br />
+                    <br />
                     Non si tratta di cambiare chi sei, ma di riconoscere ciò che
                     è già presente dentro di te, sotto le aspettative, i ruoli e
                     le idee su come dovresti essere.
                     <br />
+                    <br />
                     Ti aiuterò a vedere e riconoscere la tua natura unica: le
                     qualità e le risorse che spesso non metti a fuoco, così come
                     i limiti e il potenziale.
+                    <br />
                     <br />
                     Partiamo da dove sei ora, con rispetto per il tuo percorso e
                     per l’identità che oggi abiti, per riportare chiarezza,
@@ -77,12 +84,15 @@ export const servicesData = [
                     Uno spazio sicuro per osservare da vicino ciò che accade
                     nella tua relazione, sia essa attuale o passata.
                     <br />
+                    <br />
                     Se senti fatica a capirvi, confusione, distanza o mancanza
                     di equilibrio, questa consulenza ti aiuta a fare ordine.
+                    <br />
                     <br />
                     Approfondiamo la dinamica che muove il legame, i bisogni che
                     cercano spazio, e i nodi ricorrenti che lo rendono faticoso
                     o lo bloccano.
+                    <br />
                     <br />
                     Esploriamo insieme gli scenari possibili e come influenzano
                     il tuo rapporto, restituendoti centratura e lucidità anche
@@ -109,6 +119,7 @@ export const servicesData = [
                     Un percorso di chiarezza per comprendere a fondo le
                     dinamiche che si giocano nei tuoi rapporti sociali.
                     <br />
+                    <br />
                     Se fatichi a leggere l’altro, riconoscere segnali importanti
                     o capire davvero chi hai davanti — che sia un socio, un
                     collaboratore, un collega, un amico o un familiare — questa
@@ -117,6 +128,7 @@ export const servicesData = [
                     vostre interazioni e riconoscere le dinamiche che possono
                     favorire prosperità o, al contrario, generare tensioni e
                     blocchi.
+                    <br />
                     <br />
                     Ti aiuta a proteggerti da scenari negativi e a prendere
                     decisioni chiare su come gestire o trasformare questi
@@ -142,16 +154,19 @@ export const servicesData = [
                     condizionamenti familiari che limitano la tua libertà di
                     scelta e la tua forza interiore.
                     <br />
+                    <br />
                     Insieme esploreremo le tue qualità innate, le dinamiche
                     familiari che ti hanno formato e i blocchi emotivi che
                     ostacolano la tua realizzazione, per tracciare un percorso
                     chiaro e coerente con le tue reali aspirazioni.
+                    <br />
                     <br />
                     Questo percorso ti invita a prendere la responsabilità della
                     tua vita, separandoti consapevolmente da programmi familiari
                     e schemi che non ti servono più, per costruire un nuovo
                     sguardo su te stesso e far emergere un’identità più
                     autonoma, centrata e autentica.
+                    <br />
                     <br />
                     Il lavoro è concreto e orientato a sbloccare il tuo
                     potenziale, affrontare le sfide interiori e guidarti verso
@@ -173,19 +188,23 @@ export const servicesData = [
                     come un percorso consapevole e coerente, e non come una
                     semplice sequenza casuale di eventi.
                     <br />
+                    <br />
                     Se ti trovi a un bivio, hai già raggiunto molto ma non
                     riesci a vedere il quadro generale, senti un blocco
                     interiore, una perdita di senso o di direzione — questo
                     strumento ti aiuterà a riconoscere con chiarezza la tua vera
                     traiettoria, quella che forse hai solo intuito.
                     <br />
+                    <br />
                     Insieme esamineremo la tua mappa archetipica come un
                     movimento vivo: con tappe chiave, zone di rischio, risorse e
                     l’obiettivo finale del cammino.
                     <br />
+                    <br />
                     Si tratta di ritrovare il senso profondo del tuo viaggio e
                     di poter scegliere consapevolmente dove andare, seguendo ciò
                     che davvero ti appartiene.
+                    <br />
                     <br />
                     Questa consulenza può diventare un punto di svolta: apre a
                     una comprensione più matura della propria vita ed è pensata
@@ -245,17 +264,22 @@ export const servicesData = [
                     desideri — questa consulenza ti offre uno spazio protetto
                     per esplorare ciò che si muove sotto la superficie.
                     <br />
+                    <br />
                     Non è un’analisi fine a sé stessa: è un confronto sincero
                     con ciò che la tua psiche ha dovuto mettere da parte per
                     sopravvivere, adattarsi, essere accettato. Ma ciò che un
                     tempo ti ha protetto, oggi può frenarti.
                     <br />
+                    <br />
                     Attraverso l’ombra — le tue parti rimosse, istintive, negate
                     — possiamo ritrovare integrità e stabilità interiore. Solo
                     così puoi trasformare blocchi e reazioni automatiche in
                     risorse vitali, in energia che <i>ti alimenta</i>.
-                    <br />È da lì che si ricostruisce un’identità solida: non
-                    quella reattiva, ma quella che finalmente puoi scegliere.
+                    <br />
+                    <br />
+                    È da lì che si ricostruisce un’identità solida: non quella
+                    reattiva, ma quella che finalmente puoi scegliere.
+                    <br />
                     <br />
                     Per chi è pronto a trasformare la tensione in chiarezza, la
                     rabbia in forza interiore, il caos in ordine — e riconoscere
@@ -277,16 +301,20 @@ export const servicesData = [
                     della tua personalità — ciò che ti definisce fin dalla
                     nascita, prima di ogni ruolo o scelta.
                     <br />
+                    <br />
                     È come un’impronta profonda: presente e attiva anche quando
                     non la conosci, ma solo prendendone coscienza puoi davvero
                     usarla.
                     <br />
+                    <br />
                     Non si tratta di cambiarla, ma di riconoscerla, valorizzarla
                     e nutrirla nel tempo.
+                    <br />
                     <br />
                     Ti riconnette alle qualità innate e alle inclinazioni
                     profonde che costituiscono il tuo punto di partenza — la
                     matrice su cui si forma tutto il resto.
+                    <br />
                     <br />
                     Un passaggio chiave per muoverti con più chiarezza, coerenza
                     e consapevolezza nella tua direzione personale.
