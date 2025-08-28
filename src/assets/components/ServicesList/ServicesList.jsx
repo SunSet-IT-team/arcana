@@ -27,18 +27,22 @@ function ServicesList({services}) {
                         <h2 className="services-list__name">{service.name}</h2>
 
                         <div className="services-list__box">
-                            <span className="services-list__time">
-                                {service.time}
-                            </span>
-                            <span className="services-list__line services-list__line--empty">
-                                ⠀
-                            </span>
-                            <span className="services-list__line services-list__line--empty">
-                                ⠀
-                            </span>
-                            <span className="services-list__price">
-                                {service.price} euro
-                            </span>
+                            {service.price && (
+                                <>
+                                    <span className="services-list__time">
+                                        {service.time}
+                                    </span>
+                                    <span className="services-list__line services-list__line--empty">
+                                        ⠀
+                                    </span>
+                                    <span className="services-list__line services-list__line--empty">
+                                        ⠀
+                                    </span>
+                                    <span className="services-list__price">
+                                        {service.price} euro
+                                    </span>
+                                </>
+                            )}
                         </div>
 
                         <div className="services-list__info">

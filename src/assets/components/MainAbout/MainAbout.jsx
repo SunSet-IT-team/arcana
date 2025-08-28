@@ -131,10 +131,8 @@ function MainAbout() {
                             </ElementAnimation>
 
                             <p className="about__info-subtext">
-                                DOTT.SSA OLGA VEDA, ANTROPOLOGA CULTURALE,
-                                ANALISTA DI PATTERN ARCHETIPICI, PSICOLOGA DELLA
-                                DATA <br />
-                                DI NASCITA
+                                DOTT.SSA OLGA VEDA, PSICOLOGA, ANTROPOLOGA
+                                CULTURALE, ANALISTA DI PATTERN ARCHETIPICI
                             </p>
                         </div>
 
@@ -155,13 +153,12 @@ function MainAbout() {
                                 tag="p"
                                 className="about__author-text1 text-split"
                             >
-                                Olga Veda, antropologa culturale, studiosa e
-                                ricercatrice del Metodo del Profilo Archetipico:
-                                un sistema integrato che favorisce una
-                                comprensione profonda di sé e accompagna i
-                                processi di trasformazione interiore ed
-                                esteriore in ambito esistenziale, personale,
-                                relazionale e professionale.
+                                Psicologa e antropologa culturale, specializzata
+                                nel Metodo del Profilo Archetipico — strumento
+                                pratico per l’auto-conoscenza profonda e il
+                                supporto nei processi di trasformazione
+                                interiore in ambito personale, relazionale,
+                                professionale ed esistenziale.
                             </ElementAnimation>
 
                             <div className="about__author-linkbox">

@@ -1681,43 +1681,31 @@ function ArchetypeArchetype() {
                             </div>
                             <div className="archetype__sub-text">
                                 <p>
-                                    Gli archetipi sono energie profonde che
-                                    influenzano il nostro carattere e il nostro
-                                    destino in modi sottili, agendo sia sui
-                                    grandi temi della vita che su abitudini
-                                    comportamentali apparentemente
-                                    insignificanti. Anche le azioni più
-                                    automatiche e inconsce, infatti, possono
-                                    avere un impatto significativo sul nostro
+                                    Gli archetipi sono energie profonde e
+                                    sottili che plasmano il nostro carattere e
+                                    influenzano il nostro percorso, agendo sia
+                                    sui grandi temi dell’esistenza che sulle
+                                    abitudini quotidiane — spesso all’apparenza
+                                    insignificanti, ma decisive nel dirigere il
+                                    cammino.
+                                </p>
+                                <p>
+                                    Ogni archetipo è multiforme: si manifesta in
+                                    modi diversi a seconda della posizione nella
+                                    mappa e della storia personale.
+                                </p>
+                                <p>
+                                    Analizzo l’insieme degli archetipi e le loro
+                                    interazioni per offrire una visione completa
+                                    delle dinamiche interiori e del contesto che
+                                    influisce sul presente, aiutando a trovare
+                                    risposte chiare alle domande profonde.
+                                </p>
+                                <p>
+                                    Le risposte si trovano già nelle energie
+                                    presenti nella tua mappa: una guida fedele
+                                    per orientare consapevolmente il tuo
                                     percorso.
-                                </p>
-                                <p>
-                                    Gli archetipi vivono dentro di noi,
-                                    indipendentemente dal fatto che li studiamo
-                                    o meno. Più una persona ignora queste
-                                    energie interiori, più esse prendono il
-                                    controllo della sua coscienza e della sua
-                                    volontà. Possono rappresentare una forza
-                                    vitale creativa e nutriente per lo sviluppo
-                                    personale e sociale, ma, se non integrate,
-                                    possono anche diventare distruttive e
-                                    portare al degrado.
-                                </p>
-                                <p>
-                                    Nel mio lavoro utilizzo una combinazione di
-                                    tecniche che mi permettono di analizzare a
-                                    fondo la personalità e gli scenari di vita
-                                    individuali, aiutando a trovare risposte
-                                    alle sfide che ognuno di noi incontra lungo
-                                    il proprio cammino.
-                                </p>
-                                <p>
-                                    Tutte le risposte risiedono già nelle
-                                    energie archetipiche racchiuse nella tua
-                                    data di nascita, proprio come il percorso
-                                    verso la vita che desideri è già scritto nel
-                                    tuo destino. Non resta che aprirlo e
-                                    percorrerlo.
                                 </p>
                             </div>
                         </div>
