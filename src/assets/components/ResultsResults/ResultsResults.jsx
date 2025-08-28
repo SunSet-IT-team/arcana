@@ -55,8 +55,8 @@ function ResultsResults() {
     const posE = fixDay(pos4 + pos6);
     const posF = fixDay(pos5 + pos6);
     const posH = fixDay(posA + posE);
-    const posG1 = fixDay(posC + posD);
-    const posG2 = fixDay(posB + posF);
+    const posG1 = fixDay(posB + posF);
+    const posG2 = fixDay(posC + posD);
 
     // const resultsData = [
     //     {
