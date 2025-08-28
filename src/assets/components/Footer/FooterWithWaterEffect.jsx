@@ -192,14 +192,14 @@ function FooterWithWaterEffect() {
                         <span className="footer__copyright">
                             Copyright © 2023 Olga Veda. All Rights Reserved
                         </span>
-                        <div className="footer__ingria">
-                            <span className="footer__ingria-text">
+                        <div className="footer__sunset">
+                            <span className="footer__sunset-text">
                                 Sviluppo del sito web
                             </span>
                             <img
-                                src="/images/icons/ingria-logo.svg"
-                                alt="ingria logo"
-                                className="footer__ingria-img"
+                                src="/images/icons/sunset-logo.svg"
+                                alt="sunset logo"
+                                className="footer__sunset-img"
                             />
                         </div>
                     </div>
