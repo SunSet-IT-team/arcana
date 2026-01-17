@@ -33,6 +33,7 @@ blockquote,
 dl,
 dd {
     margin: 0;
+    pointer-events: all;
 }
 
 li {
@@ -64,6 +65,7 @@ button {
     outline: transparent;
     z-index: 1;
     position: relative;
+    pointer-events: all;
 }
 
 a {

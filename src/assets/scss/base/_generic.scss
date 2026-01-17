@@ -1,6 +1,6 @@
 body {
     @include light;
-    user-select: none;
+    // user-select: none;
     font-size: clamp(10px, size-desktop($fz-default), 18px);
     line-height: 1.5;
     display: flex;

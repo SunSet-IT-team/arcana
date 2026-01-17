@@ -47,7 +47,7 @@ function App() {
     const isHomePage = location.pathname === '/';
 
     return (
-        <div className="App" style={{position: 'relative', zIndex: 1}}>
+        <div className="App" style={{position: 'relative', zIndex: 0}}>
             {isHomePage && <FullPageRippleBackground />}
             {/* {!isNotDesktop && <AnimatedCursor />} */}
 

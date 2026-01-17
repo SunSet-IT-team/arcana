@@ -98,9 +98,12 @@ export const servicesData = [
                     il tuo rapporto, restituendoti centratura e lucidità anche
                     nei momenti di crisi, per ritrovare coerenza e orientamento
                     rispetto a ciò che è davvero importante per te in una
-                    relazione. Spesso le difficoltà nel presente sono legate a
-                    relazioni passate non risolte, che restano aperte dentro di
-                    te e influenzano il modo in cui ti rapporti oggi. Possiamo
+                    relazione.
+                    <br />
+                    <br />
+                    Spesso le difficoltà nel presente sono legate a relazioni
+                    passate non risolte, che restano aperte dentro di te e
+                    influenzano il modo in cui ti rapporti oggi. Possiamo
                     lavorare insieme per comprendere questi legami, sciogliere
                     nodi nascosti e chiarire come il passato incida sulle tue
                     scelte e sul tuo presente.
@@ -132,10 +135,13 @@ export const servicesData = [
                     <br />
                     Ti aiuta a proteggerti da scenari negativi e a prendere
                     decisioni chiare su come gestire o trasformare questi
-                    legami. Sapere con chi stai costruendo un rapporto è la base
-                    per evitare tensioni inutili, liberarti da situazioni
-                    ricorrenti e creare relazioni autentiche, solide, fondate su
-                    rispetto e consapevolezza.
+                    legami.
+                    <br />
+                    <br />
+                    Sapere con chi stai costruendo un rapporto è la base per
+                    evitare tensioni inutili, liberarti da situazioni ricorrenti
+                    e creare relazioni autentiche, solide, fondate su rispetto e
+                    consapevolezza.
                 </p>
             </>
         ),
