@@ -60,19 +60,19 @@ function CalculatorCalculator() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
 
                     <h1 className="calculator__title title-1">
-                        CALCOLA LA MAPPA ARCHETIPICA
+                        РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ
                     </h1>
                     <div className="calculator__content">
                         <span className="calculator__span">
-                            Inserire la data di nascita
+                            Введите дату рождения
                         </span>
                         <div className="calculator__body">
                             <h2 className="calculator__body-title">
-                                Decifra la tua mappa archetipica
+                                Расшифруй свою архетипическую карту
                             </h2>
                             <SelectDate
                                 selectedDay={selectedDay}
@@ -93,7 +93,7 @@ function CalculatorCalculator() {
                                 }
                             >
                                 <LinkTo
-                                    text="CALCOLARE"
+                                    text="РАССЧИТАТЬ"
                                     path="results"
                                     className="calculator__body-link"
                                     // className="partner-calculator__body-link"

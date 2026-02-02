@@ -22,15 +22,15 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 // ];
 
 const text = [
-    `Non siamo nati come fogli bianchi, ma già predisposti a vivere <b class="about__b">determinati ruoli, esperienze, battaglie</b> e <b class="about__b">trasformazioni</b>. Il Profilo Archetipico è uno <b class="about__b">strumento</b> che ci aiuta a comprendere <b class="about__b">chi siamo</b>, quali <b class="about__b">sfide</b> incontriamo e come <b class="about__b">affrontarle in modo consapevole</b>.`,
+    `Мы рождаемся не как чистые листы, а уже предрасположенными к определённым <b class="about__b">ролям, опытам, битвам</b> и <b class="about__b">трансформациям</b>. Архетипический Профиль — это <b class="about__b">инструмент</b>, который помогает понять <b class="about__b">, кто мы есть</b>, какие <b class="about__b">вызовы</b> встречаем и как <b class="about__b">осознанно с ними справляться</b>.`,
 
-    `La <b class="about__b">mappa archetipica</b> funziona come una <b class="about__b">bussola</b> che <b class="about__b">orienta il nostro cammino</b>.`,
+    `<b class="about__b">Архетипическая карта</b> работает как <b class="about__b">компас</b>, который <b class="about__b">направляет наш путь</b>.`,
 
-    `Attraverso <b class="about__b">l'analisi archetipica</b>, possiamo comprendere gli <b class="about__b">eventi che attiriamo</b>, le <b class="about__b">transazioni interiori</b> e le <b class="about__b">dinamiche che si ripetono</b> nella nostra vita, dai <b class="about__b">blocchi personali</b> a quelli <b class="about__b">professionali</b>.`,
+    `Через <b class="about__b">архетипический анализ</b> мы можем понять <b class="about__b">события, которые притягиваем</b>, <b class="about__b">внутренние транзакции</b> и <b class="about__b">повторяющиеся динамики</b> в нашей жизни: от <b class="about__b">личных блоков</b> до <b class="about__b">профессиональных</b>.`,
 
-    `Ci permette di individuare i <b class="about__b">punti di forza</b>, le <b class="about__b">risorse nascoste</b>, le <b class="about__b">influenze esterne</b>, le nostre <b class="about__b">convinzioni</b> e i <b class="about__b">comportamenti che ci limitano</b>, aiutandoci a <b class="about__b">prendere decisioni consapevoli</b>, anche nei <b class="about__b">momenti di crisi</b>.`,
+    `Она позволяет выявить <b class="about__b">сильные стороны</b>, <b class="about__b">скрытые ресурсы</b>, <b class="about__b">внешние влияния</b>, наши <b class="about__b">убеждения</b> и <b class="about__b">поведения, которые нас ограничивают</b>, помогая <b class="about__b">принимать осознанные решения</b>, даже в <b class="about__b">моменты кризиса</b>.`,
 
-    `Il Profilo Archetipico è uno <b class="about__b">strumento rapido ed efficace</b> per <b class="about__b">superare crisi personali e professionali, migliorare le relazioni</b>, e <b class="about__b">raggiungere obiettivi</b> con <b class="about__b">determinazione</b>, riscoprendo il <b class="about__b">senso di questo viaggio</b>.`,
+    `Архетипический Профиль — это <b class="about__b">быстрый и эффективный инструмент</b> для <b class="about__b">преодоления личных и профессиональных кризисов, улучшения отношений</b> и <b class="about__b">достижения целей</b> с <b class="about__b">решимостью</b>, открывая <b class="about__b">смысл этого путешествия</b>.`,
 ];
 
 function MainAbout() {
@@ -113,7 +113,7 @@ function MainAbout() {
                         tag="h2"
                         className="about__title title title-2 title-animation"
                     >
-                        <span>SU DI ME</span>
+                        <span>ОБО МНЕ</span>
                     </TitleAnimation>
 
                     <div className="about__content">
@@ -123,16 +123,15 @@ function MainAbout() {
                                 className="about__info-text text-split"
                             >
                                 <span className="about__text-span text-span">
-                                    LA PRIMA ESPERTA
+                                    ПЕРВЫЙ ЭКСПЕРТ
                                 </span>
                                 <br />
-                                DEL PROFILO ARCHETIPICO DELLA PERSONALITÀ IN
-                                ITALIA.
+                                ПО АРХЕТИПИЧЕСКОМУ ПРОФИЛЮ ЛИЧНОСТИ В ИТАЛИИ.
                             </ElementAnimation>
 
                             <p className="about__info-subtext">
-                                DOTT.SSA OLGA VEDA, PSICOLOGA, ANTROPOLOGA
-                                CULTURALE, ANALISTA DI PATTERN ARCHETIPICI
+                                Д-Р ОЛЬГА ВЕДА, ПСИХОЛОГ, КУЛЬТУРНЫЙ АНТРОПОЛОГ,
+                                АНАЛИТИК АРХЕТИПИЧЕСКИХ ПАТТЕРНОВ
                             </p>
                         </div>
 
@@ -142,7 +141,7 @@ function MainAbout() {
                                     <img
                                         className="about__author-img"
                                         src="/images/author.jpg"
-                                        alt="author photo"
+                                        alt="фото автора"
                                         loading="lazy"
                                     />
                                 </div>
@@ -153,12 +152,12 @@ function MainAbout() {
                                 tag="p"
                                 className="about__author-text1 text-split"
                             >
-                                Psicologa e antropologa culturale, specializzata
-                                nel Metodo del Profilo Archetipico — strumento
-                                pratico per l’auto-conoscenza profonda e il
-                                supporto nei processi di trasformazione
-                                interiore in ambito personale, relazionale,
-                                professionale ed esistenziale.
+                                Психолог и культурный антрополог,
+                                специализируюсь на Методе Архетипического
+                                Профиля — практическом инструменте для
+                                глубинного самопознания и поддержки процессов
+                                внутренней трансформации в личной, реляционной,
+                                профессиональной и экзистенциальной сферах.
                             </ElementAnimation>
 
                             <div className="about__author-linkbox">
@@ -170,7 +169,7 @@ function MainAbout() {
                                     }
                                 >
                                     <span className="underline">
-                                        Descrizione metodo
+                                        Описание метода
                                     </span>
                                     <svg
                                         width="21"

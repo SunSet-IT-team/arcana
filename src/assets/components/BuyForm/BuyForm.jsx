@@ -103,7 +103,7 @@ function BuyForm() {
             alert(result.message);
         } catch (error) {
             console.error('Error:', error);
-            alert("Errore durante l'invio del modulo.");
+            alert('Ошибка при отправке формы.');
         }
     };
 
@@ -137,36 +137,35 @@ function BuyForm() {
                     <div className="buy-form__content">
                         <div className="buy-form__text">
                             <p>
-                                Per ottenere una descrizione dettagliata
-                                dell’archetipo, è necessario effettuare un
-                                pagamento di 22 euro.
+                                Чтобы получить подробное описание архетипа,
+                                необходимо произвести оплату в размере 22 евро.
                             </p>
                             <p>
-                                Puoi effettuare il versamento tramite uno dei
-                                seguenti metodi:
+                                Вы можете осуществить перевод одним из следующих
+                                способов:
                             </p>
                             <p>
-                                Carta HYPE: 4021 7002 7941 1187 (Titolare: Olga
+                                Карта HYPE: 4021 7002 7941 1187 (Владелец: Olga
                                 Kuzmenko)
                             </p>
                             <p>IBAN: IT78F36772223000EM002431825</p>
                             <p>BIC: HYEEIT22XXX</p>
                             <p>PayPal: 22archetypes@gmail.com</p>
                             <p>
-                                Dopo aver completato il pagamento, ti invito a
-                                inviarmi un messaggio di conferma con una copia
-                                della ricevuta bancaria o uno screenshot della
-                                transazione effettuata tramite mobile banking.
+                                После завершения платежа я приглашаю вас
+                                отправить мне подтверждающее сообщение с копией
+                                квитанции или скриншотом транзакции, выполненной
+                                через мобильный банкинг.
                             </p>
                             <p>
-                                Per qualsiasi domanda o assistenza, non esitare
-                                a contattarmi.
+                                Если у вас возникли вопросы или нужна помощь, не
+                                стесняйтесь связаться со мной.
                             </p>
                         </div>
                         <div className="buy-form__form-box">
                             <div className="buy-form__title-wrapper">
                                 <h2 className="buy-form__title form-title">
-                                    CIAO, PIACERE DI CONOSCERTI
+                                    ПРИВЕТ, РАД(А) ПОЗНАКОМИТЬСЯ
                                 </h2>
                                 <img
                                     className="buy-form__title-img"
@@ -176,8 +175,7 @@ function BuyForm() {
                             </div>
 
                             <h3 className="buy-form__subtitle form-subtitle">
-                                Inserisci i tuoi dati e ti contatterò al più
-                                presto!
+                                Введите ваши данные, и я свяжусь с вами!
                             </h3>
                             <form
                                 className="buy-form__form"
@@ -187,7 +185,7 @@ function BuyForm() {
                                     name="name"
                                     type="text"
                                     className="buy-form__input"
-                                    placeholder="Nome"
+                                    placeholder="Имя"
                                     required
                                 />
                                 <input
@@ -201,14 +199,14 @@ function BuyForm() {
                                     name="phone"
                                     type="tel"
                                     className="buy-form__input"
-                                    placeholder="Telefono"
+                                    placeholder="Телефон"
                                     required
                                 />
                                 <div className="buy-form__message-box">
                                     <textarea
                                         name="message"
                                         className="buy-form__input buy-form__input--text"
-                                        placeholder="Il tuo messaggio"
+                                        placeholder="Ваше сообщение"
                                         required
                                     ></textarea>
                                     <label className="buy-form__label">
@@ -221,20 +219,19 @@ function BuyForm() {
                                 </div>
                                 <div className="buy-form__form-bottom">
                                     <p className="buy-form__form-text">
-                                        Le vostre informazioni personali saranno
-                                        mantenute{' '}
+                                        Ваша личная информация будет храниться{' '}
                                         <span
                                             className="underline"
                                             onClick={() =>
                                                 dispatch(setOpenPrivacy(true))
                                             }
                                         >
-                                            private
+                                            конфиденциальной
                                         </span>{' '}
-                                        e sicure*.
+                                        и защищённой*.
                                     </p>
                                     <Button
-                                        text="INVIARE"
+                                        text="ОТПРАВИТЬ"
                                         className="buy-form__form-button button--black"
                                         type="submit"
                                     />

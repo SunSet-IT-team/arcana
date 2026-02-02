@@ -87,16 +87,15 @@ function MonthCalculatorCalculator() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
                     <h1 className="month-calculator__title title-1">
-                        CALCOLARE LE PREVISIONI PER ANNO E PER MESE
+                        РАССЧИТАТЬ ПРОГНОЗЫ НА ГОД И МЕСЯЦ
                     </h1>
                     <div className="month-calculator__content">
                         <span className="month-calculator__span">
-                            Scopri quali Energie Archetipiche influenzano la tua
-                            vita inserendo la tua data di nascita e il periodo
-                            interessato.
+                            Узнайте, какие архетипические энергии влияют на вашу
+                            жизнь, введя дату рождения и интересующий период.
                         </span>
                         <div className="month-calculator__body">
                             <div className="month-calculator__select-wrapper">
@@ -130,9 +129,8 @@ function MonthCalculatorCalculator() {
                                 }
                             >
                                 <LinkTo
-                                    text="CALCOLARE"
+                                    text="РАССЧИТАТЬ"
                                     path="month-results"
-                                    // className="month-calculator__body-link"
                                     className="partner-calculator__body-link"
                                 ></LinkTo>
                             </div>

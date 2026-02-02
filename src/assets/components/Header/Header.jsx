@@ -58,14 +58,14 @@ function Header() {
             <div className="container">
                 <div className="header__wrapper">
                     <Link className="header__logo" to="/">
-                        <img src="/images/icons/logo.svg" alt="logo" />
+                        <img src="/images/icons/logo.svg" alt="логотип" />
                     </Link>
 
                     <button
                         className="header__link underline"
                         onClick={() => dispatch(setOpenContactForm(true))}
                     >
-                        Contatti
+                        Контакты
                     </button>
 
                     <button className="header__button" onClick={openMenu}>

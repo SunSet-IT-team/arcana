@@ -8,36 +8,35 @@ import ServicesList from '../ServicesList/ServicesList';
 
 export const servicesData = [
     {
-        name: 'Consulenza su misura',
+        name: 'Индивидуальная консультация',
         time: null,
         info: (
             <>
                 <p className="text-split">
-                    Non sempre un percorso inizia con una struttura predefinita.
+                    Не каждый путь начинается с заранее заданной структуры.
                     <br />
                     <br />
-                    A volte c’è solo una domanda da tempo attesa, un momento di
-                    crisi, un nodo che si ripresenta, un’urgenza di chiarezza.
-                    In questi casi è possibile concordare insieme un percorso
-                    personalizzato: partire da una richiesta specifica per un
-                    singolo incontro, oppure costruire passo dopo passo un ciclo
-                    di sessioni calibrato sulle tue esigenze.
+                    Бывает, что есть лишь один давний вопрос, момент кризиса,
+                    повторяющийся узел или острая потребность в ясности. В таких
+                    случаях мы можем вместе согласовать индивидуальный формат:
+                    от разовой встречи по конкретному запросу до поэтапного
+                    цикла сессий, настроенного под твои задачи.
                     <br />
                     <br />
-                    Può trattarsi di una decisione da prendere, di un passaggio
-                    complesso nella vita o nel lavoro, di un momento in cui
-                    senti il bisogno di ritrovare una direzione.
+                    Это может быть решение, которое нужно принять, сложный
+                    переход в жизни или работе, момент, когда хочется вернуть
+                    чувство направления.
                     <br />
                     <br />
-                    Ciò che serve è uno spazio di confronto autentico, libero da
-                    formule standard, in cui dare forma a ciò che stai
-                    attraversando e orientarti con più lucidità.
+                    Здесь важно иметь пространство для подлинного диалога,
+                    свободного от шаблонов, чтобы придать форму тому, что ты
+                    переживаешь, и с большей ясностью ориентироваться в
+                    происходящем.
                     <br />
                     <br />
-                    Se senti che è il momento di guardare le cose con più
-                    profondità e chiarezza oppure di avere bisogno di un
-                    supporto, scrivimi. Insieme troviamo il formato giusto per
-                    te.
+                    Если чувствуешь, что пришло время смотреть глубже и яснее
+                    или нужна поддержка — напиши мне. Вместе подберём правильный
+                    формат именно для тебя.
                 </p>
             </>
         ),
@@ -45,30 +44,30 @@ export const servicesData = [
         price: null,
     },
     {
-        name: 'Personalità',
-        time: '60 – 90 min',
+        name: 'Личность',
+        time: '60–90 мин',
         info: (
             <>
                 <p className="text-split">
-                    Se stai dando il massimo, ma dentro senti ancora una
-                    distanza da te stesso — non riesci a capirti, a sentire cosa
-                    ti guida, o ti percepisci confuso o bloccato — questa
-                    consulenza è pensata per te.
+                    Если ты делаешь всё возможное, но внутри остаётся дистанция
+                    с самим собой — сложно понять себя, услышать, что тобой
+                    движет, чувствуешь растерянность или блок — эта консультация
+                    для тебя.
                     <br />
                     <br />
-                    Non si tratta di cambiare chi sei, ma di riconoscere ciò che
-                    è già presente dentro di te, sotto le aspettative, i ruoli e
-                    le idee su come dovresti essere.
+                    Речь не о том, чтобы менять тебя, а о признании того, что
+                    уже есть внутри — под ожиданиями, ролями и представлениями о
+                    том, каким «нужно быть».
                     <br />
                     <br />
-                    Ti aiuterò a vedere e riconoscere la tua natura unica: le
-                    qualità e le risorse che spesso non metti a fuoco, così come
-                    i limiti e il potenziale.
+                    Я помогу увидеть и признать твою уникальную природу:
+                    качества и ресурсы, которые часто остаются вне фокуса, а
+                    также ограничения и потенциал.
                     <br />
                     <br />
-                    Partiamo da dove sei ora, con rispetto per il tuo percorso e
-                    per l’identità che oggi abiti, per riportare chiarezza,
-                    coerenza e senso di direzione dentro di te.
+                    Мы начнём с того места, где ты сейчас, с уважением к твоему
+                    пути и идентичности, чтобы вернуть ясность, целостность и
+                    чувство направления внутри.
                 </p>
             </>
         ),
@@ -76,37 +75,36 @@ export const servicesData = [
         price: 90,
     },
     {
-        name: 'Relazioni di coppia',
-        time: '90 – 120 min',
+        name: 'Партнёрские отношения',
+        time: '90–120 мин',
         info: (
             <>
                 <p className="text-split">
-                    Uno spazio sicuro per osservare da vicino ciò che accade
-                    nella tua relazione, sia essa attuale o passata.
+                    Безопасное пространство, чтобы внимательно посмотреть, что
+                    происходит в твоих отношениях — нынешних или прошедших.
                     <br />
                     <br />
-                    Se senti fatica a capirvi, confusione, distanza o mancanza
-                    di equilibrio, questa consulenza ti aiuta a fare ordine.
+                    Если трудно понимать друг друга, много путаницы, дистанции
+                    или дисбаланса — эта консультация помогает навести порядок.
                     <br />
                     <br />
-                    Approfondiamo la dinamica che muove il legame, i bisogni che
-                    cercano spazio, e i nodi ricorrenti che lo rendono faticoso
-                    o lo bloccano.
+                    Мы разберём динамику, которая движет связью, потребности,
+                    которым нужно пространство, и повторяющиеся узлы, которые
+                    утяжеляют отношения или блокируют их.
                     <br />
                     <br />
-                    Esploriamo insieme gli scenari possibili e come influenzano
-                    il tuo rapporto, restituendoti centratura e lucidità anche
-                    nei momenti di crisi, per ritrovare coerenza e orientamento
-                    rispetto a ciò che è davvero importante per te in una
-                    relazione.
+                    Вместе исследуем возможные сценарии и их влияние на ваш
+                    союз, возвращая тебе центрированность и ясность даже в
+                    моменты кризиса, чтобы найти согласованность и ориентиры
+                    относительно того, что действительно важно для тебя в
+                    отношениях.
                     <br />
                     <br />
-                    Spesso le difficoltà nel presente sono legate a relazioni
-                    passate non risolte, che restano aperte dentro di te e
-                    influenzano il modo in cui ti rapporti oggi. Possiamo
-                    lavorare insieme per comprendere questi legami, sciogliere
-                    nodi nascosti e chiarire come il passato incida sulle tue
-                    scelte e sul tuo presente.
+                    Часто трудности настоящего связаны с нерешёнными прошлыми
+                    отношениями, которые остаются открытыми внутри и влияют на
+                    то, как ты взаимодействуешь сегодня. Мы можем поработать,
+                    чтобы понять эти связи, распутать скрытые узлы и прояснить,
+                    как прошлое влияет на твои выборы и настоящее.
                 </p>
             </>
         ),
@@ -114,34 +112,33 @@ export const servicesData = [
         price: 120,
     },
     {
-        name: 'Rapporti Sociali',
-        time: '60 – 90 min',
+        name: 'Социальные отношения',
+        time: '60–90 мин',
         info: (
             <>
                 <p className="text-split">
-                    Un percorso di chiarezza per comprendere a fondo le
-                    dinamiche che si giocano nei tuoi rapporti sociali.
+                    Путь к ясности, чтобы глубже понять динамики в твоих
+                    социальных отношениях.
                     <br />
                     <br />
-                    Se fatichi a leggere l’altro, riconoscere segnali importanti
-                    o capire davvero chi hai davanti — che sia un socio, un
-                    collaboratore, un collega, un amico o un familiare — questa
-                    consulenza ti offre strumenti concreti per valutare il
-                    potenziale del rapporto, individuare la trama che guida le
-                    vostre interazioni e riconoscere le dinamiche che possono
-                    favorire prosperità o, al contrario, generare tensioni e
-                    blocchi.
+                    Если сложно «читать» другого, замечать важные сигналы или
+                    по‑настоящему понимать, кто перед тобой — партнёр,
+                    сотрудник, коллега, друг или родственник — эта консультация
+                    даёт конкретные инструменты для оценки потенциала связи,
+                    распознавания сюжетной линии ваших взаимодействий и тех
+                    динамик, которые могут способствовать развитию или,
+                    наоборот, создавать напряжение и блоки.
                     <br />
                     <br />
-                    Ti aiuta a proteggerti da scenari negativi e a prendere
-                    decisioni chiare su come gestire o trasformare questi
-                    legami.
+                    Она помогает защититься от неблагоприятных сценариев и
+                    принимать ясные решения о том, как управлять или
+                    трансформировать эти связи.
                     <br />
                     <br />
-                    Sapere con chi stai costruendo un rapporto è la base per
-                    evitare tensioni inutili, liberarti da situazioni ricorrenti
-                    e creare relazioni autentiche, solide, fondate su rispetto e
-                    consapevolezza.
+                    Понимание, с кем ты выстраиваешь отношения, — основа, чтобы
+                    избегать лишних напряжений, выйти из повторяющихся ситуаций
+                    и создавать подлинные, устойчивые связи, основанные на
+                    уважении и осознанности.
                 </p>
             </>
         ),
@@ -149,35 +146,35 @@ export const servicesData = [
         price: 110,
     },
     {
-        name: 'Maturazione Psicologica e Sociale',
-        time: '60 – 120 min',
+        name: 'Психологическое и социальное созревание',
+        time: '60–120 мин',
         info: (
             <>
                 <p className="text-split">
-                    Se ti senti bloccato in schemi ripetitivi o fatichi a
-                    trovare il tuo posto nel mondo, questa consulenza ti offre
-                    uno spazio sicuro per riconoscere e superare quei
-                    condizionamenti familiari che limitano la tua libertà di
-                    scelta e la tua forza interiore.
+                    Если ты чувствуешь застревание в повторяющихся сценариях или
+                    сложно найти своё место в мире, эта консультация предлагает
+                    безопасное пространство, чтобы распознать и преодолеть
+                    семейные условности, ограничивающие твою свободу выбора и
+                    внутреннюю силу.
                     <br />
                     <br />
-                    Insieme esploreremo le tue qualità innate, le dinamiche
-                    familiari che ti hanno formato e i blocchi emotivi che
-                    ostacolano la tua realizzazione, per tracciare un percorso
-                    chiaro e coerente con le tue reali aspirazioni.
+                    Мы вместе исследуем твои врождённые качества, семейные
+                    динамики, которые тебя сформировали, и эмоциональные блоки,
+                    мешающие реализации — чтобы наметить ясный путь,
+                    согласованный с твоими истинными устремлениями.
                     <br />
                     <br />
-                    Questo percorso ti invita a prendere la responsabilità della
-                    tua vita, separandoti consapevolmente da programmi familiari
-                    e schemi che non ti servono più, per costruire un nuovo
-                    sguardo su te stesso e far emergere un’identità più
-                    autonoma, centrata e autentica.
+                    Этот путь приглашает взять ответственность за свою жизнь,
+                    осознанно отделившись от семейных программ и схем, которые
+                    больше не служат тебе, чтобы выстроить новый взгляд на себя
+                    и позволить проявиться более автономной, центрированной и
+                    подлинной идентичности.
                     <br />
                     <br />
-                    Il lavoro è concreto e orientato a sbloccare il tuo
-                    potenziale, affrontare le sfide interiori e guidarti verso
-                    una realizzazione personale e sociale piena, equilibrata e
-                    significativa — qualunque sia il punto da cui parti.
+                    Работа конкретна и ориентирована на раскрытие потенциала,
+                    преодоление внутренних вызовов и движение к личной и
+                    социальной реализации — полной, сбалансированной и значимой
+                    — независимо от точки старта.
                 </p>
             </>
         ),
@@ -185,38 +182,36 @@ export const servicesData = [
         price: 90,
     },
     {
-        name: '“Mappa del Viaggio”',
-        time: '60 – 90 min',
+        name: '«Карта пути»',
+        time: '60–90 мин',
         info: (
             <>
                 <p className="text-split">
-                    Un incontro pensato per chi desidera vedere la propria vita
-                    come un percorso consapevole e coerente, e non come una
-                    semplice sequenza casuale di eventi.
+                    Встреча для тех, кто хочет видеть свою жизнь как осознанный
+                    и цельный путь, а не случайную последовательность событий.
                     <br />
                     <br />
-                    Se ti trovi a un bivio, hai già raggiunto molto ma non
-                    riesci a vedere il quadro generale, senti un blocco
-                    interiore, una perdita di senso o di direzione — questo
-                    strumento ti aiuterà a riconoscere con chiarezza la tua vera
-                    traiettoria, quella che forse hai solo intuito.
+                    Если ты на распутье, достиг многого, но не видишь общей
+                    картины, чувствуешь внутренний блок, потерю смысла или
+                    направления — этот инструмент помогает ясно распознать твою
+                    истинную траекторию, ту, которую ты, возможно, лишь
+                    интуитивно ощущал.
                     <br />
                     <br />
-                    Insieme esamineremo la tua mappa archetipica come un
-                    movimento vivo: con tappe chiave, zone di rischio, risorse e
-                    l’obiettivo finale del cammino.
+                    Вместе рассмотрим твою архетипическую карту как живое
+                    движение: с ключевыми этапами, зонами риска, ресурсами и
+                    финальной целью пути.
                     <br />
                     <br />
-                    Si tratta di ritrovare il senso profondo del tuo viaggio e
-                    di poter scegliere consapevolmente dove andare, seguendo ciò
-                    che davvero ti appartiene.
+                    Речь о возвращении глубокого смысла твоему путешествию и
+                    возможности осознанно выбирать направление, следуя тому, что
+                    действительно твоё.
                     <br />
                     <br />
-                    Questa consulenza può diventare un punto di svolta: apre a
-                    una comprensione più matura della propria vita ed è pensata
-                    per chi è stanco di vagare e pronto a ricevere risposte alle
-                    domande più profonde, dotandosi di uno strumento preciso di
-                    orientamento.
+                    Эта консультация может стать точкой поворота: она открывает
+                    более зрелое понимание собственной жизни и подходит тем, кто
+                    устал блуждать и готов получить ответы на самые глубокие
+                    вопросы, вооружившись точным инструментом ориентации.
                 </p>
             </>
         ),
@@ -224,34 +219,32 @@ export const servicesData = [
         price: 90,
     },
     {
-        name: 'Attività Professionale',
-        time: '60 – 90 min',
+        name: 'Профессиональная деятельность',
+        time: '60–90 мин',
         info: (
             <>
                 <p className="text-split">
-                    Se sei in un momento in cui il tuo lavoro non ti rappresenta
-                    più — o se non hai ancora trovato una direzione chiara —
-                    questa consulenza ti aiuta a fare ordine e ad aprirti a una
-                    visione più ampia della tua personalità nel contesto
-                    professionale.
+                    Если сейчас твоя работа больше не отражает тебя — или ты ещё
+                    не нашёл ясного направления — эта консультация поможет
+                    навести порядок и открыть более широкое видение твоей
+                    личности в профессиональном контексте.
                     <br />
                     <br />
-                    Che tu sia un professionista con esperienza o stia cercando
-                    il tuo primo passo solido, il punto è riconoscere cosa ti
-                    muove davvero, dove si trovano le tue vere competenze e
-                    quale direzione può trasformarsi in una costruzione solida e
-                    duratura.
+                    Неважно, опытный ты специалист или ищешь первый уверенный
+                    шаг — важно распознать, что тобой действительно движет, где
+                    находятся твои настоящие компетенции и какое направление
+                    способно вырасти в устойчивую долгосрочную конструкцию.
                     <br />
                     <br />
-                    Analizzeremo le tue risorse interne, il tuo potenziale reale
-                    e i punti di forza che spesso restano nascosti dietro
-                    l’adattamento o il compromesso.
+                    Мы проанализируем твои внутренние ресурсы, реальный
+                    потенциал и сильные стороны, которые часто скрываются за
+                    адаптацией или компромиссом.
                     <br />
                     <br />
-                    L’obiettivo non è solo “cambiare lavoro”, ma impostare un
-                    vettore chiaro che ti permetta di scegliere con più
-                    consapevolezza e agire con coerenza. È un lavoro per chi
-                    vuole guidare il proprio percorso, non subirlo.
+                    Цель — не просто «сменить работу», а задать ясный вектор,
+                    который позволит выбирать осознанно и действовать
+                    согласованно. Это работа для тех, кто хочет вести свой путь,
+                    а не плыть по течению.
                 </p>
             </>
         ),
@@ -259,38 +252,39 @@ export const servicesData = [
         price: 90,
     },
     {
-        name: "Il Profilo dell'Ombra – Subconscio",
-        time: '60 – 90 min',
+        name: 'Профиль Тени — Подсознание',
+        time: '60–90 мин',
         info: (
             <>
                 <p className="text-split">
-                    Se senti che qualcosa dentro di te agisce senza il tuo
-                    consenso — reazioni che non controlli, tensioni che non si
-                    spiegano, comportamenti che ti allontanano da ciò che
-                    desideri — questa consulenza ti offre uno spazio protetto
-                    per esplorare ciò che si muove sotto la superficie.
+                    Если ощущаешь, что внутри что‑то действует как бы помимо
+                    тебя — неконтролируемые реакции, необъяснимые напряжения,
+                    поведения, отдаляющие от желаемого — эта консультация даёт
+                    защищённое пространство, чтобы исследовать то, что движется
+                    под поверхностью.
                     <br />
                     <br />
-                    Non è un’analisi fine a sé stessa: è un confronto sincero
-                    con ciò che la tua psiche ha dovuto mettere da parte per
-                    sopravvivere, adattarsi, essere accettato. Ma ciò che un
-                    tempo ti ha protetto, oggi può frenarti.
+                    Это не анализ ради анализа: это честная встреча с тем, что
+                    твоя психика однажды отложила, чтобы выжить, адаптироваться,
+                    быть принятым. Но то, что когда‑то защищало, сегодня может
+                    сдерживать.
                     <br />
                     <br />
-                    Attraverso l’ombra — le tue parti rimosse, istintive, negate
-                    — possiamo ritrovare integrità e stabilità interiore. Solo
-                    così puoi trasformare blocchi e reazioni automatiche in
-                    risorse vitali, in energia che <i>ti alimenta</i>.
+                    Через работу с Тенью — вытесненными, инстинктивными,
+                    negированными частями — можно вернуть целостность и
+                    внутреннюю устойчивость. Только так блоки и автоматические
+                    реакции превращаются в живые ресурсы, в энергию, которая{' '}
+                    <i>тебя питает</i>.
                     <br />
                     <br />
-                    È da lì che si ricostruisce un’identità solida: non quella
-                    reattiva, ma quella che finalmente puoi scegliere.
+                    Именно отсюда собирается цельная идентичность: не
+                    реактивная, а та, которую ты наконец можешь выбрать.
                     <br />
                     <br />
-                    Per chi è pronto a trasformare la tensione in chiarezza, la
-                    rabbia in forza interiore, il caos in ordine — e riconoscere
-                    anche quella parte innocente e dimenticata di sé, che ancora
-                    attende di essere vista e accolta.
+                    Для тех, кто готов преобразовать напряжение в ясность,
+                    злость — во внутреннюю силу, хаос — в порядок, и признать ту
+                    невинную, забытую часть себя, которая всё ещё ждёт, чтобы её
+                    увидели и приняли.
                 </p>
             </>
         ),
@@ -298,32 +292,32 @@ export const servicesData = [
         price: 90,
     },
     {
-        name: 'Guida all’Archetipo di Base',
-        time: 'PDF - file',
+        name: 'Руководство по базовому архетипу',
+        time: 'PDF‑файл',
         info: (
             <>
                 <p className="text-split">
-                    Questa guida ti aiuta a riconoscere la struttura originaria
-                    della tua personalità — ciò che ti definisce fin dalla
-                    nascita, prima di ogni ruolo o scelta.
+                    Это руководство помогает распознать изначальную структуру
+                    твоей личности — то, что определяет тебя с рождения, ещё до
+                    любых ролей и выборов.
                     <br />
                     <br />
-                    È come un’impronta profonda: presente e attiva anche quando
-                    non la conosci, ma solo prendendone coscienza puoi davvero
-                    usarla.
+                    Это как глубокий отпечаток: он присутствует и активен даже
+                    когда ты его не осознаёшь, и только приняв его, можно
+                    действительно использовать.
                     <br />
                     <br />
-                    Non si tratta di cambiarla, ma di riconoscerla, valorizzarla
-                    e nutrirla nel tempo.
+                    Речь не о том, чтобы её менять, а о признании, раскрытии и
+                    бережном «питании» со временем.
                     <br />
                     <br />
-                    Ti riconnette alle qualità innate e alle inclinazioni
-                    profonde che costituiscono il tuo punto di partenza — la
-                    matrice su cui si forma tutto il resto.
+                    Она заново соединяет с врождёнными качествами и глубинными
+                    склонностями — с той матрицей, на которой формируется всё
+                    остальное.
                     <br />
                     <br />
-                    Un passaggio chiave per muoverti con più chiarezza, coerenza
-                    e consapevolezza nella tua direzione personale.
+                    Это ключевой шаг, чтобы двигаться в своей личной траектории
+                    с большей ясностью, согласованностью и осознанностью.
                 </p>
             </>
         ),
@@ -350,47 +344,44 @@ function ServicesServices() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
-                    <h1 className="services__title title-1">CONSULENZE</h1>
+                    <h1 className="services__title title-1">КОНСУЛЬТАЦИИ</h1>
                     <ServicesList services={servicesData} />
                 </div>
                 <div className="services__subtext">
-                    <p className="services__text">
-                        Come si svolge la consulenza
-                    </p>
+                    <p className="services__text">Как проходит консультация</p>
 
                     <p className="services__text">
-                        Dopo il nostro primo contatto, avrò bisogno della tua
-                        data di nascita e della tua richiesta specifica
-                        (inclusi, se necessario, anche le date di nascita di
-                        altre persone che considererò importanti). Ti chiederò
-                        ulteriori informazioni in base alla tua richiesta o alla
-                        situazione che desideri affrontare.
+                        После первого контакта мне понадобятся ваша дата
+                        рождения и конкретный запрос (при необходимости — также
+                        даты рождения других людей, которые могут быть важны). Я
+                        попрошу дополнительную информацию в зависимости от
+                        вашего запроса или ситуации, которую вы хотите
+                        разобрать.
                     </p>
                     <p className="services__text">
-                        Nel giorno della consulenza, è fondamentale che tu abbia
-                        una buona connessione Internet e un ambiente tranquillo
-                        dove poter rimanere senza interruzioni, per permetterti
-                        di concentrarti completamente su questo lavoro profondo
-                        con il tuo profilo archetipico.
+                        В день консультации важно иметь стабильное
+                        интернет‑соединение и спокойное пространство без
+                        отвлекающих факторов — так вы сможете полностью
+                        сосредоточиться на глубокой работе с вашим
+                        архетипическим профилем.
                     </p>
                     <p className="services__text">
-                        La consulenza si svolgerà online sul mio canale Telegram
-                        privato, dove saremo solo io e te. Utilizzerò il formato
-                        video per mostrarti i file e i materiali che
-                        accompagneranno la consulenza.
+                        Консультация проходит онлайн в моём приватном канале
+                        Telegram — только вы и я. Я использую видео‑формат,
+                        чтобы показывать файлы и материалы, сопровождающие
+                        консультацию.
                     </p>
                     <p className="services__text">
-                        La consulenza si terrà sotto forma di dialogo attivo, in
-                        modo da ottenere i migliori risultati e benefici dal
-                        processo.
+                        Консультация проходит в формате активного диалога, чтобы
+                        получить наилучшие результаты и максимальную пользу от
+                        процесса.
                     </p>
                     <p className="services__text">
-                        Come risultato della consulenza avrai una comprensione
-                        approfondita in base alla tua richiesta e una settimana
-                        di supporto da parte mia con risposte alle tue domande
-                        relative alla consulenza svolta.
+                        По итогам консультации вы получите глубокое понимание в
+                        рамках вашего запроса и неделю поддержки с ответами на
+                        вопросы по проведённой консультации.
                     </p>
                 </div>
             </div>

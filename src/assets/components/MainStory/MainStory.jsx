@@ -39,7 +39,7 @@ function MainStory() {
                         tag="h2"
                         className="storys-demo__title title title-2 title-animation"
                     >
-                        <span>STORIE DEI CLIENTI</span>
+                        <span>ИСТОРИИ КЛИЕНТОВ</span>
                     </TitleAnimation>
 
                     {isMobile ? (
@@ -92,7 +92,7 @@ function MainStory() {
                                                     </div>
 
                                                     <LinkTo
-                                                        text="LEGGERE"
+                                                        text="ЧИТАТЬ"
                                                         className="storys-demo__item-link link--black"
                                                         path={`story/${story.slug}`}
                                                     />
@@ -106,7 +106,7 @@ function MainStory() {
                                     className="storys-demo__link arrow"
                                 >
                                     <span className="underline">
-                                        Leggi tutte le storie
+                                        Читать все истории
                                     </span>
                                     <svg
                                         width="21"
@@ -130,7 +130,7 @@ function MainStory() {
                             {!(isPostPending || isFetchingNextPage) &&
                                 !allPosts.length && (
                                     <h3 style={{textAlign: 'center'}}>
-                                        Nessun record
+                                        Нет записей
                                     </h3>
                                 )}
                         </>

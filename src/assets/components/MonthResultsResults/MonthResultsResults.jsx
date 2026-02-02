@@ -21,7 +21,7 @@ function MonthResultsResults() {
     }, []);
 
     if (!results) {
-        return <p>Loading...</p>;
+        return <p>Загрузка...</p>;
     }
 
     const birthDay = Number(results.day);
@@ -68,23 +68,22 @@ function MonthResultsResults() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
                     <h1 className="month-results__title title-1">
-                        Risultato del calcolo per il mese selezionato
+                        РЕЗУЛЬТАТ РАСЧЁТА НА ВЫБРАННЫЙ МЕСЯЦ
                     </h1>
                     <div className="month-results__content">
                         <span className="month-results__span">
                             <p>
-                                Congratulazioni! Ecco la tabella dettagliata
-                                delle energie archetipiche per il periodo
-                                richiesto.
+                                Поздравляем! Ниже представлена подробная таблица
+                                архетипических энергий на запрашиваемый период.
                             </p>
                             <p>
-                                Essere consapevoli delle energie su cui
-                                concentrarsi ci offre l’opportunità di vivere
-                                ogni fase della nostra vita nel modo più
-                                armonioso ed efficace possibile.
+                                Осознание энергий, на которых следует
+                                сосредоточиться, даёт нам возможность проживать
+                                каждый этап нашей жизни наиболее гармонично и
+                                эффективно.
                             </p>
                         </span>
                         <div className="month-results__body">
@@ -92,15 +91,14 @@ function MonthResultsResults() {
                                 <div class="month-results__table month-results__table-top">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            SENTIMENTO <br /> INTERIORE <br />{' '}
-                                            DEL MESE
+                                            ВНУТРЕННЕЕ <br /> ЧУВСТВО <br />
+                                            МЕСЯЦА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos12)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            FОCUS <br /> PERSONALE <br /> DEL
-                                            MESE
+                                            ЛИЧНЫЙ <br /> ФОКУС <br /> МЕСЯЦА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos13)}
@@ -108,38 +106,38 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            CRESCITA <br /> DELL’ANNO
+                                            РОСТ <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos1)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONE <br /> EMOTIVA
+                                            ЭМОЦИОНАЛЬНОЕ <br /> НАПРЯЖЕНИЕ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos4)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            LEZIONI <br /> DELL’ANNO
+                                            УРОКИ <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TENSIONE NEL <br /> CAMBIAMENTO{' '}
-                                            <br /> DI COSCIENZA
+                                            НАПРЯЖЕНИЕ В <br /> ИЗМЕНЕНИИ <br />{' '}
+                                            СОЗНАНИЯ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos5)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ESAME <br /> DELL’ANNO
+                                            ЭКЗАМЕН <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            TEMA <br /> PRINCIPALE
+                                            ОСНОВНАЯ <br /> ТЕМА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
@@ -149,7 +147,7 @@ function MonthResultsResults() {
                                 <div class="month-results__table month-results__table-bottom">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            GUIDA PERSONALE
+                                            ЛИЧНОЕ РУКОВОДСТВО
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos11)}
@@ -157,26 +155,25 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            INSTABILITA’ <br /> EMOTIVA
+                                            ЭМОЦИОНАЛЬНАЯ <br /> НЕСТАБИЛЬНОСТЬ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ESPANSIONE <br /> DELLA <br />{' '}
-                                            COSCIENZA
+                                            РАСШИРЕНИЕ <br /> СОЗНАНИЯ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos9)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            RISCHI
+                                            РИСКИ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos8)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            OPPORTUNITA’
+                                            ВОЗМОЖНОСТИ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos10)}
@@ -185,15 +182,15 @@ function MonthResultsResults() {
                                 </div>
                             </div>
                             <p className="month-results__body-text">
-                                Se vuoi applicare questa previsione alla tua
-                                vita per comprendere quale periodo si sta
-                                avvicinando, quale percorso intraprendere e come
-                                pianificare al meglio i tuoi obiettivi, richiedi
-                                una consulenza cliccando sul pulsante qui sotto.
+                                Если вы хотите применить этот прогноз в своей
+                                жизни, чтобы понять, какой период приближается,
+                                какой путь выбрать и как лучше спланировать свои
+                                цели, запишитесь на консультацию, нажав на
+                                кнопку ниже.
                             </p>
 
                             <Button
-                                text="RICHIEDI UNA CONSULENZA"
+                                text="ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ"
                                 className="month-results__body-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

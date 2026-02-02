@@ -74,7 +74,7 @@ function ProfileMethod() {
                         <Link className="profile-method__logo" to="/">
                             <img
                                 src="./images/icons/logo-black.svg"
-                                alt="logo"
+                                alt="логотип"
                             />
                         </Link>
                         <div className="profile-method__close">
@@ -97,71 +97,31 @@ function ProfileMethod() {
                     </div>
                     <div className="profile-method__content">
                         <h2 className="profile-method__title form-title">
-                            ARCHETYPAL PSY PROFILE
+                            АРХЕТИПИЧЕСКИЙ ПСИ-ПРОФИЛЬ
                         </h2>
                         <div className="profile-method__text-box">
                             {[
-                                'Il Metodo di Profilo Archetipico è un sistema \
-                                strutturato che integra diverse tecniche di analisi \
-                                personale. Si distingue come uno degli strumenti più \
-                                trasformativi, rapidi ed efficaci nei processi di \
-                                crescita personale e professionale.',
+                                'Метод Архетипического Профиля — это структурированная система, которая объединяет разные техники личностного анализа. Он выделяется как один из самых трансформирующих, быстрых и эффективных инструментов в процессах личного и профессионального роста.',
 
-                                'Alla base del metodo c’è la mappa archetipica: uno \
-                                schema costruito a partire dalla data di nascita, che \
-                                rivela le dinamiche interiori e i pattern ricorrenti \
-                                della persona. Al centro è il concetto di archetipo, \
-                                introdotto da Carl Gustav Jung come immagine primordiale, \
-                                simbolo universale inscritto nell’inconscio collettivo. \
-                                Non nasciamo come fogli bianchi, ma con una predisposizione \
-                                verso determinati ruoli, esperienze e sfide. La data di \
-                                nascita diventa così una chiave per esplorare questi \
-                                “programmi interiori” rappresentati dagli archetipi.',
+                                'В основе метода лежит архетипическая карта — схема, построенная на основе даты рождения, которая раскрывает внутренние динамики и повторяющиеся паттерны человека. В центре — понятие архетипа, введённое Карлом Густавом Юнгом как первообраз, универсальный символ, вписанный в коллективное бессознательное. Мы не рождаемся «чистыми листами», а имеем предрасположенность к определённым ролям, опытам и вызовам. Дата рождения становится ключом к исследованию этих «внутренних программ», представленных архетипами.',
 
-                                'Il metodo è composto da due parti: diagnostica e prognostica.',
+                                'Метод состоит из двух частей: диагностической и прогностической.',
 
-                                'La parte diagnostica aiuta a comprendere come gli archetipi \
-                                influenzano il modo in cui pensiamo, comunichiamo, agiamo e \
-                                ci relazioniamo. Rileva con precisione le strutture profonde \
-                                della psiche che condizionano carattere, scelte, paure e \
-                                conflitti. Rende visibile ciò che spesso opera in automatico. \
-                                Una volta portati alla luce, questi schemi possono essere \
-                                trasformati in modo consapevole.',
+                                'Диагностическая часть помогает понять, как архетипы влияют на то, как мы думаем, общаемся, действуем и выстраиваем отношения. Она точно выявляет глубинные структуры психики, которые обусловливают характер, выборы, страхи и конфликты. Делает видимым то, что часто действует автоматически. Обнаруженные схемы можно осознанно трансформировать.',
 
-                                'La parte prognostica restituisce una visione chiara del \
-                                percorso fatto, del contesto presente e delle dinamiche future. \
-                                È uno strumento strategico, utile in momenti di crisi, \
-                                cambiamento o ridefinizione, ma anche solo per comprendere gli \
-                                eventi accaduti in infanzia. Aiuta a orientarti con più \
-                                coerenza, a prendere decisioni più solide, a muoverti avanti \
-                                con lucidità.',
+                                'Прогностическая часть возвращает ясное видение пройденного пути, текущего контекста и будущих динамик. Это стратегический инструмент — полезен в периоды кризиса, изменений или переопределения, а также для понимания событий детства. Помогает двигаться дальше с большей согласованностью, принимать более крепкие решения и сохранять ясность.',
 
-                                'Il metodo si fonda su 22 archetipi degli Arcani Maggiori dei \
-                                Tarocchi, utilizzati come sistema di rappresentazione \
-                                psichica — lo stesso Jung li definiva un linguaggio simbolico \
-                                universale. Questi archetipi rappresentano strutture mentali, \
-                                tratti di personalità, dinamiche comportamentali, fasi di \
-                                trasformazione ed eventi che riscontriamo.',
+                                'Метод опирается на 22 архетипа Старших Арканов Таро, используемых как система психической репрезентации — сам Юнг называл их универсальным символическим языком. Эти архетипы представляют ментальные структуры, черты личности, поведенческие динамики, фазы трансформации и события, с которыми мы сталкиваемся.',
 
-                                'Il Profilo Archetipico è uno strumento chiaro, profondo, \
-                                concreto. La sua forza sta nella capacità di portare alla luce \
-                                i meccanismi invisibili che guidano le nostre decisioni, i \
-                                comportamenti e, di conseguenza, i risultati. È pensato per \
-                                chi cerca spiegazioni chiare, risposte pratiche e una \
-                                comprensione profonda di sé, dei propri punti di forza e delle \
-                                dinamiche che attraversa.',
+                                'Архетипический Профиль — инструмент ясный, глубокий, конкретный. Его сила — в способности выявлять невидимые механизмы, которые направляют наши решения, поведение и, как следствие, результаты. Он создан для тех, кто ищет понятные объяснения, практические ответы и глубокое понимание себя, своих сильных сторон и проходящих динамик.',
 
-                                'Grazie alla sua flessibilità, il metodo si applica in ambiti \
-                                diversi: psicologia applicata, educazione, mentoring, coaching, \
-                                psicoanalisi del business. Gli archetipi agiscono dentro di noi, \
-                                anche quando non li vediamo. Conoscerli significa renderli visibili \
-                                e trasformarli in alleati strategici.',
+                                'Благодаря гибкости метод применяется в разных областях: прикладная психология, образование, менторство, коучинг, психоанализ бизнеса. Архетипы действуют в нас, даже когда мы их не видим. Узнавать их — значит делать их видимыми и превращать в стратегических союзников.',
 
-                                'Per prendere decisioni più mature.',
+                                'Чтобы принимать более зрелые решения.',
 
-                                'Per ritrovare una direzione.',
+                                'Чтобы вернуть направление.',
 
-                                'Per costruire una vita coerente con ciò che sei davvero.',
+                                'Чтобы построить жизнь, согласованную с тем, кто ты есть на самом деле.',
                             ].map((text, i) => (
                                 <p className="profile-method__text" key={i}>
                                     {text}
@@ -170,7 +130,7 @@ function ProfileMethod() {
 
                             <div className="profile-method__form-bottom">
                                 <Button
-                                    text="CONTATTAMI"
+                                    text="СВЯЗАТЬСЯ"
                                     className="profile-method__form-button button--black"
                                     onClick={() =>
                                         dispatch(setOpenContactForm(true))

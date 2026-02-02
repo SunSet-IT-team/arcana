@@ -42,7 +42,7 @@ function StoryStory() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </button>
                     <h1 className="story__title title-1">{post.name}</h1>
                     <div className="story__info">
@@ -66,7 +66,7 @@ function StoryStory() {
                         ></div>
                     </div>
                     <button className="story__up arrow" onClick={scrollToTop}>
-                        <span className="underline">Sopra</span>
+                        <span className="underline">Вверх</span>
                         <svg
                             width="21"
                             height="21"

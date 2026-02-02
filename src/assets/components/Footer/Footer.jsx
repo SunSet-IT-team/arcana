@@ -34,7 +34,7 @@ function Footer() {
                                         dispatch(setOpenPrivacy(true))
                                     }
                                 >
-                                    POLITICA SULLA RISERVATEZZA
+                                    ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
                                 </button>
                             </span>
                         </div>
@@ -43,7 +43,7 @@ function Footer() {
                                 tag="h3"
                                 className="footer__menu-title title-animation"
                             >
-                                <span>MENÙ</span>
+                                <span>МЕНЮ</span>
                             </TitleAnimation>
 
                             <nav className="footer__menu">
@@ -54,7 +54,7 @@ function Footer() {
                                                 to="/calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. PERSONALE
+                                                КАЛЬКУЛЯТОР ЛИЧНЫЙ
                                             </Link>
                                         </li>
 
@@ -63,8 +63,7 @@ function Footer() {
                                                 to="/partner-calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. DELRAPPORTO TRA DUE
-                                                PARTNER
+                                                КАЛЬКУЛЯТОР ОТНОШЕНИЙ
                                             </Link>
                                         </li>
                                         <li className="footer__menu-item">
@@ -72,7 +71,7 @@ function Footer() {
                                                 to="/month-calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. DIPREVISIONI ANNO/MESE
+                                                ПРОГНОЗ ГОД/МЕСЯЦ
                                             </Link>
                                         </li>
 
@@ -81,7 +80,7 @@ function Footer() {
                                                 to="/#about"
                                                 className="footer__menu-link"
                                             >
-                                                SU DI ME
+                                                ОБО МНЕ
                                             </Link>
                                         </li>
                                     </div>
@@ -92,7 +91,7 @@ function Footer() {
                                                 to="/services"
                                                 className="footer__menu-link"
                                             >
-                                                CONSULENZE
+                                                КОНСУЛЬТАЦИИ
                                             </Link>
                                         </li>
 
@@ -101,7 +100,7 @@ function Footer() {
                                                 to="/storys"
                                                 className="footer__menu-link"
                                             >
-                                                STORIE DEI CLIENTI
+                                                ИСТОРИИ КЛИЕНТОВ
                                             </Link>
                                         </li>
 
@@ -110,7 +109,7 @@ function Footer() {
                                                 to="/archetypes"
                                                 className="footer__menu-link"
                                             >
-                                                22 ARCHETYPES
+                                                22 АРХЕТИПА
                                             </Link>
                                         </li>
 
@@ -131,7 +130,7 @@ function Footer() {
                                 tag="h3"
                                 className="footer__menu-title title-animation"
                             >
-                                <span>CONTATTI</span>
+                                <span>КОНТАКТЫ</span>
                             </TitleAnimation>
 
                             <ul className="footer__contact-list">
@@ -186,11 +185,11 @@ function Footer() {
                     </div>
                     <div className="footer__bottom">
                         <span className="footer__copyright">
-                            Copyright © 2023 Olga Veda. All Rights Reserved
+                            Copyright © 2023 Olga Veda. Все права защищены
                         </span>
                         <div className="footer__sunset">
                             <span className="footer__sunset-text">
-                                Sviluppo del sito web
+                                Разработка сайта
                             </span>
                             <img
                                 src="/images/icons/sunset-logo.svg"

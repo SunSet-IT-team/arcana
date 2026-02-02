@@ -17,12 +17,12 @@ function MainServices() {
                         tag="h2"
                         className="services-demo__title title title-2 title-animation"
                     >
-                        <span>CONSULENZE</span>
+                        <span>КОНСУЛЬТАЦИИ</span>
                     </TitleAnimation>
 
                     <ServicesList services={servicesData.slice(0, 3)} />
                     <Link
-                        text="ELENCO COMPLETO DELLE CONSULENZE"
+                        text="ПОЛНЫЙ СПИСОК УСЛУГ"
                         className="services-demo__link link--black"
                         path="services"
                     />

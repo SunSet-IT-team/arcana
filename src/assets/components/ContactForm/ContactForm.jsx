@@ -136,15 +136,15 @@ function ContactForm() {
 
                     <div className="contact-form__content">
                         <p className="contact-form__text">
-                            Se desideri prenotare una consulenza, lascia i tuoi
-                            dati e ti contatterò al più presto per un
-                            approfondimento.
+                            Если вы хотите записаться на консультацию, оставьте
+                            свои контактные данные, и я свяжусь с вами в
+                            ближайшее время для уточнения.
                         </p>
 
                         <div className="contact-form__form-box">
                             <div className="contact-form__title-wrapper">
                                 <h2 className="contact-form__title form-title owl">
-                                    CIAO, PIACERE DI CONOSCERTI
+                                    ПРИВЕТ, РАД(А) ПОЗНАКОМИТЬСЯ
                                 </h2>
                                 <img
                                     className="contact-form__title-img"
@@ -154,16 +154,14 @@ function ContactForm() {
                             </div>
 
                             <h3 className="contact-form__subtitle form-subtitle">
-                                Inserisci i tuoi dati e ti contatterò al più
-                                presto!
+                                Введите ваши данные, и я свяжусь с вами!
                             </h3>
 
                             <p className="contact-form__text-mb">
-                                Per acquistare una descrizione dettagliata degli
-                                archetipi, è necessario effettuare un
-                                trasferimento di 100 euro sulla carta: 1234 5678
-                                8910 1112 e allegare una copia dell'ordine o
-                                screenshot del pagamento.
+                                Для приобретения подробного описания архетипов
+                                необходимо осуществить перевод 100 евро на
+                                карту: 1234 5678 8910 1112 и приложить копию
+                                чека или скриншот платежа.
                             </p>
 
                             <form
@@ -173,7 +171,7 @@ function ContactForm() {
                                 <input
                                     type="text"
                                     className="contact-form__input"
-                                    placeholder="Nome"
+                                    placeholder="Имя"
                                     {...register('name', {required: true})}
                                 />
                                 <input
@@ -185,31 +183,30 @@ function ContactForm() {
                                 <input
                                     type="text"
                                     className="contact-form__input"
-                                    placeholder="Telefono"
+                                    placeholder="Телефон"
                                     {...register('phone', {required: true})}
                                 />
                                 <textarea
                                     className="contact-form__input contact-form__input--text"
-                                    placeholder="Il tuo messaggio"
+                                    placeholder="Ваше сообщение"
                                     {...register('message', {required: true})}
                                 />
 
                                 <div className="contact-form__form-bottom">
                                     <p className="contact-form__form-text">
-                                        Le vostre informazioni personali saranno
-                                        mantenute{' '}
+                                        Ваша личная информация будет храниться{' '}
                                         <span
                                             className="underline"
                                             onClick={() =>
                                                 dispatch(setOpenPrivacy(true))
                                             }
                                         >
-                                            private
+                                            конфиденциальной
                                         </span>{' '}
-                                        e sicure*.
+                                        и защищённой*.
                                     </p>
                                     <Button
-                                        text="INVIARE"
+                                        text="ОТПРАВИТЬ"
                                         className="contact-form__form-button button--black"
                                     />
                                 </div>

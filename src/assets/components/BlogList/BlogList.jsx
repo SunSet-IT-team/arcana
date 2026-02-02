@@ -223,7 +223,7 @@ function BlogList({data, isShowClipPath = true}) {
                                     className="blog-list__link arrow"
                                 >
                                     <span className="underline">
-                                        Per saperne di più
+                                        Читать далее
                                     </span>
                                     <svg
                                         width="21"

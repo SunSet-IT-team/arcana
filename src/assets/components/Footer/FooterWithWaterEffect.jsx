@@ -37,7 +37,7 @@ function FooterWithWaterEffect() {
                                         dispatch(setOpenPrivacy(true))
                                     }
                                 >
-                                    POLITICA SULLA RISERVATEZZA
+                                    ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
                                 </button>
                             </span>
                         </div>
@@ -46,7 +46,7 @@ function FooterWithWaterEffect() {
                                 tag="h3"
                                 className="footer__menu-title title-animation"
                             >
-                                <span>MENÙ</span>
+                                <span>МЕНЮ</span>
                             </TitleAnimation>
 
                             <nav className="footer__menu">
@@ -57,7 +57,7 @@ function FooterWithWaterEffect() {
                                                 to="/calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. PERSONALE
+                                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
                                             </Link>
                                         </li>
 
@@ -66,8 +66,7 @@ function FooterWithWaterEffect() {
                                                 to="/partner-calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. DELRAPPORTO TRA DUE
-                                                PARTNER
+                                                КАЛЬКУЛЯТОР ОТНОШЕНИЙ
                                             </Link>
                                         </li>
                                         <li className="footer__menu-item">
@@ -75,7 +74,7 @@ function FooterWithWaterEffect() {
                                                 to="/month-calculator"
                                                 className="footer__menu-link"
                                             >
-                                                CALC. DIPREVISIONI ANNO/MESE
+                                                ПРОГНОЗ ГОД/МЕСЯЦ
                                             </Link>
                                         </li>
 
@@ -84,7 +83,7 @@ function FooterWithWaterEffect() {
                                                 to="/#about"
                                                 className="footer__menu-link"
                                             >
-                                                SU DI ME
+                                                ОБО МНЕ
                                             </Link>
                                         </li>
                                     </div>
@@ -94,7 +93,7 @@ function FooterWithWaterEffect() {
                                                 to="/services"
                                                 className="footer__menu-link"
                                             >
-                                                CONSULENZE
+                                                КОНСУЛЬТАЦИИ
                                             </Link>
                                         </li>
 
@@ -103,7 +102,7 @@ function FooterWithWaterEffect() {
                                                 to="/storys"
                                                 className="footer__menu-link"
                                             >
-                                                STORIE DEI CLIENTI
+                                                ИСТОРИИ КЛИЕНТОВ
                                             </Link>
                                         </li>
 
@@ -112,7 +111,7 @@ function FooterWithWaterEffect() {
                                                 to="/archetypes"
                                                 className="footer__menu-link"
                                             >
-                                                22 ARCHETYPES
+                                                22 АРХЕТИПА
                                             </Link>
                                         </li>
 
@@ -121,7 +120,7 @@ function FooterWithWaterEffect() {
                                                 to="/blog"
                                                 className="footer__menu-link"
                                             >
-                                                BLOG
+                                                БЛОГ
                                             </Link>
                                         </li>
                                     </div>
@@ -133,7 +132,7 @@ function FooterWithWaterEffect() {
                                 tag="h3"
                                 className="footer__menu-title title-animation"
                             >
-                                <span>CONTATTI</span>
+                                <span>КОНТАКТЫ</span>
                             </TitleAnimation>
 
                             <ul className="footer__contact-list">
@@ -194,7 +193,7 @@ function FooterWithWaterEffect() {
                         </span>
                         <div className="footer__sunset">
                             <span className="footer__sunset-text">
-                                Sviluppo del sito web
+                                Разработка сайта
                             </span>
                             <img
                                 src="/images/icons/sunset-logo.svg"

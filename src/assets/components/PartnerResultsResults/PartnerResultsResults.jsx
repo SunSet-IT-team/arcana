@@ -25,7 +25,7 @@ function PartnerResultsResults() {
     }, []);
 
     if (!results) {
-        return <p>Loading...</p>;
+        return <p>Загрузка...</p>;
     }
 
     const newDay = Number(results.day);
@@ -84,9 +84,6 @@ function PartnerResultsResults() {
             posD,
             posE,
             posF,
-            // posH,
-            // posG1,
-            // posG2,
         };
     };
 
@@ -142,9 +139,6 @@ function PartnerResultsResults() {
             jointPosD,
             jointPosE,
             jointPosF,
-            // jointPosH,
-            // jointPosG1,
-            // jointPosG2,
         };
     };
     const jointResults = calculateJointPositions(results1, results2);
@@ -152,128 +146,72 @@ function PartnerResultsResults() {
     const resultsData = [
         {
             num: '1',
-            name: 'Incontro',
+            name: 'Встреча',
             archetypeNum: toRim(jointResults.jointPos1),
         },
         {
             num: '2',
-            name: 'Trama',
+            name: 'Сюжет отношений',
             archetypeNum: toRim(jointResults.jointPos2),
         },
         {
             num: '3',
-            name: 'Campo del rapporto maturo o della rottura del rapporto',
+            name: 'Зрелость отношений или разрыв',
             archetypeNum: toRim(jointResults.jointPos3),
         },
         {
             num: '4',
-            name: 'Crisi',
+            name: 'Кризис',
             archetypeNum: toRim(jointResults.jointPos4),
         },
         {
             num: '5',
-            name: 'Aspettative',
+            name: 'Ожидания',
             archetypeNum: toRim(jointResults.jointPos5),
         },
         {
             num: '6',
-            name: 'Tema principale',
+            name: 'Основная тема',
             archetypeNum: toRim(jointResults.jointPos6),
         },
         {
             num: '7',
-            name: 'Missione',
+            name: 'Миссия',
             archetypeNum: toRim(jointResults.jointPos7),
         },
         {
             num: '8',
-            name: 'Superpotenziale',
+            name: 'Суперпотенциал',
             archetypeNum: toRim(jointResults.jointPos8),
         },
-        // {
-        //     num: '9',
-        //     name: 'Conforto psicologico',
-        //     archetypeNum: toRim(jointResults.jointPos9),
-        // },
-        // {
-        //     num: '10',
-        //     name: 'Disagio psicologico',
-        //     archetypeNum: toRim(jointResults.jointPos10),
-        // },
-        // {
-        //     num: '11',
-        //     name: 'Percezione di “noi”',
-        //     archetypeNum: toRim(jointResults.jointPos11),
-        // }, //////////////////////////////////////////////
-        // {
-        //     num: '12',
-        //     name: 'Percezione “noi” dagli altri',
-        //     archetypeNum: toRim(jointResults.jointPos12),
-        // },
-        // {
-        //     num: '13',
-        //     name: 'Cosa pensi di te stesso',
-        //     archetypeNum: toRim(jointResults.jointPos13),
-        // },
-        // {
-        //     num: '14',
-        //     name: 'Cosa pensano gli altri di voi',
-        //     archetypeNum: toRim(jointResults.jointPos14),
-        // },
-        // {
-        //     num: '15',
-        //     name: "L'archetipo del disagio psicologico",
-        //     archetypeNum: toRim(jointResults.jointPos15),
-        // },
-        //////////////////////////////////////////////
-        // {
-        //     num: ' ',
-        //     name: ' ',
-        //     archetypeNum: ' ',
-        // },
-        // {
-        //     num: ' ',
-        //     name: ' ',
-        //     archetypeNum: ' ',
-        // },
-        // {
-        //     num: ' ',
-        //     name: ' ',
-        //     archetypeNum: ' ',
-        // },
-        // {
-        //     num: ' ',
-        //     name: ' ',
-        //     archetypeNum: ' ',
-        // }, //////////
         {
             num: 'A',
-            name: 'Conflitto',
+            name: 'Конфликт',
             archetypeNum: toRim(jointResults.jointPosA),
         },
         {
             num: 'B',
-            name: 'Distruzione', //???
+            name: 'Разрушение',
             archetypeNum: toRim(jointResults.jointPosB),
         },
         {
             num: 'C',
-            name: 'Fusione',
+            name: 'Слияние',
             archetypeNum: toRim(jointResults.jointPosC),
         },
         {
             num: 'D',
-            name: 'Stress', //???
+            name: 'Стресс',
             archetypeNum: toRim(jointResults.jointPosD),
         },
         {
             num: 'E',
-            name: 'Difensore',
+            name: 'Защитник',
             archetypeNum: toRim(jointResults.jointPosE),
         },
         {
             num: 'F',
-            name: 'Forza',
+            name: 'Сила',
             archetypeNum: toRim(jointResults.jointPosF),
         },
     ];
@@ -299,12 +237,11 @@ function PartnerResultsResults() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
 
                     <h1 className="partner-results__title title-1">
-                        Risultato del calcolo della mappa archetipica del
-                        rapporto
+                        РЕЗУЛЬТАТ РАСЧЁТА АРХЕТИПИЧЕСКОЙ КАРТЫ ОТНОШЕНИЙ
                     </h1>
                     <div className="partner-results__content">
                         <div className="partner-results__body-list">
@@ -312,7 +249,7 @@ function PartnerResultsResults() {
                                 {results.day} / {results.month} / {results.year}
                             </span>
                             <span className="partner-results__name-item-mobile">
-                                LA MAPPA ARCHETIPICA DEL SECONDO PARTNER
+                                АРХЕТИПИЧЕСКАЯ КАРТА ВТОРОГО ПАРТНЁРА
                             </span>
                             <ResultsList {...results1}></ResultsList>
                         </div>
@@ -322,67 +259,65 @@ function PartnerResultsResults() {
                                 {results.year2}
                             </span>
                             <span className="partner-results__name-item-mobile">
-                                LA MAPPA ARCHETIPICA DEL PRIMO PARTNER
+                                АРХЕТИПИЧЕСКАЯ КАРТА ПЕРВОГО ПАРТНЁРА
                             </span>
                             <ResultsList {...results2}></ResultsList>
                         </div>
 
                         <div className="partner-results__text-wrapper">
                             <p className="partner-results__text">
-                                Nell’analisi del rapporto di coppia, un ruolo
-                                centrale è svolto dalla Posizione "Trama del
-                                rapporto".
+                                В анализе отношений центральную роль играет
+                                позиция "Сюжет отношений".
                             </p>
                             <p className="partner-results__text">
-                                All'interno di una relazione, ogni partner segue
-                                la propria lezione personale, che è determinata
-                                dalla propria mappa archetipica, e una lezione
-                                congiunta, che rappresenta il percorso di
-                                crescita psicologica della coppia.
-                            </p>
-
-                            <p className="partner-results__text">
-                                Mentre la lezione personale rimane costante
-                                durante tutta la vita, quella congiunta può
-                                variare da una relazione all’altra.
+                                Внутри отношений каждый партнёр следует своему
+                                личному уроку, который определяется его
+                                архетипической картой, и совместному уроку,
+                                представляющему путь психологического роста
+                                пары.
                             </p>
 
                             <p className="partner-results__text">
-                                L’archetipo che occupa la posizione della “Trama
-                                del rapporto” attiva sempre sia scenari positivi
-                                che negativi. I partner si trovano ad affrontare
-                                sfide specifiche che richiedono di imparare ciò
-                                che risulta particolarmente difficile proprio in
-                                quella relazione. Se queste lezioni non vengono
-                                comprese e integrate, si innesca uno scenario
-                                negativo nel percorso del rapporto, che può
-                                portare a conflitti profondi, difficoltà nelle
-                                dinamiche relazionali e, nei casi più estremi,
-                                alla rottura della relazione o alla sua
-                                conclusione tragica.
+                                В то время как личный урок остаётся постоянным
+                                на протяжении всей жизни, совместный урок может
+                                варьироваться от одних отношений к другим.
+                            </p>
+
+                            <p className="partner-results__text">
+                                Архетип, занимающий позицию "Сюжет отношений",
+                                всегда активирует как позитивные, так и
+                                негативные сценарии. Партнёры сталкиваются с
+                                конкретными вызовами, которые требуют научиться
+                                тому, что особенно трудно именно в этих
+                                отношениях. Если эти уроки не поняты и не
+                                интегрированы, запускается негативный сценарий в
+                                развитии отношений, который может привести к
+                                глубоким конфликтам, трудностям в реляционных
+                                динамиках и, в крайних случаях, к разрыву
+                                отношений или их трагическому завершению.
                             </p>
                         </div>
 
                         <ul className="partner-results__name-list">
                             <li className="partner-results__name-item">
-                                LA MAPPA ARCHETIPICA DEL SECONDO PARTNER
+                                АРХЕТИПИЧЕСКАЯ КАРТА ВТОРОГО ПАРТНЁРА
                             </li>
                             <li className="partner-results__name-item">
-                                LA MAPPA ARCHETIPICA DEL PRIMO PARTNER
+                                АРХЕТИПИЧЕСКАЯ КАРТА ПЕРВОГО ПАРТНЁРА
                             </li>
 
                             <li className="partner-results__name-item">
-                                LA MAPPA ARCHETIPICA DEL RAPPORTO
+                                АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
                             </li>
                         </ul>
                         <div className="partner-results__body-list">
                             <span className="partner-results__body-date">
                                 {results.day} / {results.month} / {results.year}{' '}
-                                E {results.day2} / {results.month2} /{' '}
+                                И {results.day2} / {results.month2} /{' '}
                                 {results.year2}
                             </span>
                             <span className="partner-results__name-item-mobile">
-                                LA MAPPA ARCHETIPICA DEL RAPPORTO
+                                АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
                             </span>
                             <PartnerResultsList
                                 {...jointResults}
@@ -392,17 +327,17 @@ function PartnerResultsResults() {
                             <ul className="partner-results__info-list">
                                 <li className="partner-results__info-item">
                                     <span className="partner-results__info-number underline">
-                                        NUMERO
+                                        НОМЕР
                                     </span>
                                     <p className="partner-results__info-name underline">
-                                        POSIZIONE
+                                        ПОЗИЦИЯ
                                     </p>
                                     <span className="partner-results__info-archetype">
                                         <span
                                             className="underline"
                                             style={{paddingBottom: 1}}
                                         >
-                                            ARCHETIPO
+                                            АРХЕТИП
                                         </span>
                                     </span>
                                 </li>
@@ -428,7 +363,7 @@ function PartnerResultsResults() {
                             </ul>
 
                             <Button
-                                text="RICHIEDI UNA CONSULENZA"
+                                text="ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ"
                                 className="partner-results__info-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

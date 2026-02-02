@@ -28,9 +28,7 @@ export default function ArchetypesSlider() {
     return (
         <div className="archetypes-demo__slider-wrapper">
             <div className="archetypes-demo__buttons">
-                <h3 className="archetypes-demo__buttons-title">
-                    (SCORRIMENTO)
-                </h3>
+                <h3 className="archetypes-demo__buttons-title">(ПРОКРУТКА)</h3>
                 <button
                     className="archetypes-demo__button archetypes-demo__button--prev"
                     onClick={() => swiperRef.current.swiper.slidePrev()}
@@ -97,7 +95,7 @@ export default function ArchetypesSlider() {
                                         className="archetypes-demo__item-link arrow"
                                     >
                                         <span className="underline">
-                                            Per saperne di più
+                                            Подробнее
                                         </span>
                                         <svg
                                             width="21"

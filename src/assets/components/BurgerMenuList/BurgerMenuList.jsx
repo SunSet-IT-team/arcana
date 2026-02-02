@@ -34,7 +34,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                CALCOLATRICE PERSONALE
+                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
                             </span>
                             <svg
                                 className="menu-list__link-svg"
@@ -61,7 +61,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                CALCOLATRICE DEL RAPPORTO TRA DUE PARTNER
+                                КАЛЬКУЛЯТОР ОТНОШЕНИЙ
                             </span>
                             <svg
                                 className="menu-list__link-svg"
@@ -87,7 +87,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                CALCOLATRICE DI PREVISIONI ANNO/MESE
+                                ПРОГНОЗ ГОД/МЕСЯЦ
                             </span>
                             <svg
                                 className="menu-list__link-svg"
@@ -116,7 +116,7 @@ function BurgerMenuList({menuClose}) {
                                 onClick={() => menuClose()}
                             >
                                 <span className="menu-list__link-span">
-                                    SU DI ME
+                                    ОБО МНЕ
                                 </span>
                                 <svg
                                     className="menu-list__link-svg"
@@ -141,7 +141,7 @@ function BurgerMenuList({menuClose}) {
                                 }
                             >
                                 <span className="menu-list__link-span">
-                                    SU DI ME
+                                    ОБО МНЕ
                                 </span>
                                 <svg
                                     className="menu-list__link-svg"
@@ -168,7 +168,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                CONSULENZE
+                                КОНСУЛЬТАЦИИ
                             </span>
 
                             <svg
@@ -195,7 +195,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                STORIE DEI CLIENTI
+                                ИСТОРИИ КЛИЕНТОВ
                             </span>
 
                             <svg
@@ -222,7 +222,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                22 ARCHETYPES
+                                22 АРХЕТИПА
                             </span>
                             <svg
                                 className="menu-list__link-svg"

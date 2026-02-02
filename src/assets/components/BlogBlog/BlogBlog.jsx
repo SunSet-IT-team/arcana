@@ -11,91 +11,80 @@ import {useTags} from '../../api/tags/useTags';
 import {useInfinitePosts} from '../../api/posts/usePosts';
 import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
-// const blogOptions = [
-//     {value: 'TUTTI', label: 'TUTTI'},
-//     {value: 'ENERGIE BASE', label: 'ENERGIE BASE'},
-//     {value: 'ARHCETIPI', label: 'ARHCETIPI'},
-//     {value: 'PERSONE', label: 'PERSONE'},
-//     {value: 'VITA', label: 'VITA'},
-//     {value: 'PREVISIONI', label: 'PREVISIONI'},
-//     {value: 'EVENTI', label: 'EVENTI'},
-//     {value: 'MITI E FIABE', label: 'MITI E FIABE'},
-// ];
-
 const blogData = [
     {
-        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-        tags: ['ENERGIE BASE', 'PREVISIONI'],
-        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+        name: 'ИСТОРИЯ БОЛЬШОГО УСПЕХА ДЛЯ МАЛОГО БИЗНЕСА',
+        tags: ['БАЗОВЫЕ ЭНЕРГИИ', 'ПРОГНОЗЫ'],
+        text: 'По своей сути, текст о рыбе — это альтернатива традиционному lorem ipsum. В отличие от lorem ipsum, русский текст заполнит любое пустое пространство.',
         imgSrc: './images/storys/1.jpg',
         date: '05.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '05.04.2024',
     },
     {
-        name: 'UNA STORIA DI GRANDE SUCCESSO PER UNA PICCOLA AZIENDA',
-        tags: ['ENERGIE BASE', 'ARHCETIPI'],
-        text: "Nella sua essenza, il testo ittico è un'alternativa al tradizionale lorem ipsum. A differenza del lorem ipsum, il testo in russo riempirà qualsiasi spazio vuoto.",
+        name: 'ИСТОРИЯ БОЛЬШОГО УСПЕХА ДЛЯ МАЛОГО БИЗНЕСА',
+        tags: ['БАЗОВЫЕ ЭНЕРГИИ', 'АРХЕТИПЫ'],
+        text: 'По своей сути, текст о рыбе — это альтернатива традиционному lorem ipsum. В отличие от lorem ipsum, русский текст заполнит любое пустое пространство.',
         imgSrc: './images/storys/1.jpg',
         date: '04.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '04.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'VITA'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'ЖИЗНЬ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '04.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '03.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '03.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '02.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '02.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '01.04.2024',
     },
     {
-        name: "UN'ALTRA STORIA DI SUCCESSO",
-        tags: ['TECNOLOGIA', 'SVILUPPO'],
+        name: 'ЕЩЁ ОДНА ИСТОРИЯ УСПЕХА',
+        tags: ['ТЕХНОЛОГИИ', 'РАЗВИТИЕ'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nisi nec lacinia luctus, metus nunc ultrices velit, at tincidunt mauris risus eget justo. Nulla sit amet scelerisque orci.',
         imgSrc: './images/storys/2.jpg',
         date: '01.04.2024',
@@ -105,7 +94,7 @@ const blogData = [
 function BlogBlog() {
     const [isShowClipPath, setIsShowClipPath] = useState(false);
     const [selectedBlogFilter, setSelectedBlogFilter] = useState({
-        label: 'TUTTI',
+        label: 'ВСЕ',
         value: 0,
     });
 
@@ -185,9 +174,9 @@ function BlogBlog() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
-                    <h1 className="blog__title title-1">BLOG</h1>
+                    <h1 className="blog__title title-1">БЛОГ</h1>
 
                     {tags && tags.length && (
                         <div className="blog__filter">
@@ -203,7 +192,7 @@ function BlogBlog() {
                             <SelectLabel
                                 className="blog__filter-select"
                                 options={tags}
-                                placeholder="TUTTI"
+                                placeholder="ВСЕ"
                                 onChange={handleBlogFilterChange}
                                 value={selectedBlogFilter.value}
                             />
@@ -216,12 +205,12 @@ function BlogBlog() {
                     )}
 
                     {!(isPostPending || isFetchingNextPage) &&
-                        !allPosts.length && <h3>Nessun record</h3>}
+                        !allPosts.length && <h3>Нет записей</h3>}
 
                     {hasNextPage && (
                         <div className="blog__bottom" onClick={handleShowMore}>
                             <Button
-                                text="VEDI ARTICOLI PRECEDENTI"
+                                text="ПОКАЗАТЬ БОЛЬШЕ"
                                 className="blog__button button--black blog__bottom-button"
                             ></Button>
                         </div>

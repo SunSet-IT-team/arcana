@@ -80,7 +80,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                CALCOLATRICE PERSONALE
+                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
                             </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
@@ -108,7 +108,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                CALCOLATRICE DEL RAPPORTO TRA DUE PARTNER
+                                КАЛЬКУЛЯТОР ОТНОШЕНИЙ
                             </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
@@ -136,7 +136,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                CALCOLATRICE DI PREVISIONI ANNO/MESE
+                                ПРОГНОЗ ГОД/МЕСЯЦ
                             </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
@@ -167,7 +167,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                SU DI ME
+                                ОБО МНЕ
                             </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
@@ -192,7 +192,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                CONSULENZE
+                                КОНСУЛЬТАЦИИ
                             </ElementAnimation>
 
                             <svg
@@ -219,7 +219,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                STORIE DEI CLIENTI
+                                ИСТОРИИ КЛИЕНТОВ
                             </ElementAnimation>
 
                             <svg
@@ -248,7 +248,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                22 ARCHETYPES
+                                22 АРХЕТИПА
                             </ElementAnimation>
 
                             <svg

@@ -10,1550 +10,1465 @@ import Button from '../../components/Button/Button';
 
 export const archetypesContent = {
     I: {
-        title: 'Il Mago',
-        energy: 'MASCHILE',
-        positive: 'PAROLA',
-        negative: 'CHIACCHERE INUTILI',
+        title: 'МАГ',
+        energy: 'МУЖСКАЯ',
+        positive: 'СЛОВО',
+        negative: 'ПУСТЫЕ РАЗГОВОРЫ',
         content: (
             <>
                 <p>
-                    L'Archetipo I il Mago incarna il potere della parola, dello
-                    studio e della comunicazione. È l'energia giovanile che
-                    spinge a esplorare, imparare e sperimentare, ma spesso senza
-                    una chiara direzione o consapevolezza del "perché".
+                    Архетип I МАГ воплощает силу слова, обучения и коммуникации.
+                    Это молодая энергия, которая побуждает исследовать, учиться
+                    и экспериментировать, но часто без чёткого направления или
+                    понимания «зачем».
                 </p>
                 <p>
-                    I Il Mago è colui che riconosce l'importanza di apprendere
-                    qualcosa di nuovo, ma non ha ancora compreso appieno il
-                    significato profondo dietro le sue azioni. È un maestro
-                    delle parole, capace di affascinare e coinvolgere, ma può
-                    cadere nella trappola di contraddirsi, senza rendersi conto
-                    del divario tra i suoi pensieri, le sue parole e i risultati
-                    delle sue azioni.
+                    I МАГ — это тот, кто признаёт важность изучения чего-то
+                    нового, но ещё не полностью осознал глубокий смысл своих
+                    действий. Это мастер слов, способный увлекать и вовлекать,
+                    но может попасть в ловушку противоречий, не замечая разрыва
+                    между своими мыслями, словами и результатами действий.
                 </p>
                 <p>
-                    Per chi incarna questo Archetipo, è fondamentale sviluppare
-                    l'abitudine di osservare sé stesso: riflettere su ciò che
-                    pensa, su ciò che dice e su ciò che fa. Solo così può
-                    evitare di creare malintesi, sia con sé stesso che con gli
-                    altri.
+                    Для того, кто воплощает этот Архетип, важно развить привычку
+                    наблюдать за собой: размышлять о том, что он думает, что
+                    говорит и что делает. Только так можно избежать
+                    недопонимания как с собой, так и с другими.
                 </p>
                 <p>
-                    I Il Mago è un abile giocatore di parole, capace di
-                    intrattenere e persuadere. Tuttavia, rischia di disperdere
-                    la propria energia vitale in chiacchiere senza scopo,
-                    perdendosi in discorsi che non portano a nessun obiettivo
-                    concreto. La sua sfida è trasformare il potenziale della
-                    parola in azioni significative, imparando a canalizzare la
-                    sua energia verso risultati tangibili.
+                    I МАГ — искусный игрок слов, способный развлекать и
+                    убеждать. Однако он рискует растратить свою жизненную
+                    энергию в пустых разговорах, теряясь в речах, которые не
+                    ведут к конкретной цели. Его вызов — превратить потенциал
+                    слова в значимые действия, научившись направлять свою
+                    энергию к ощутимым результатам.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/I.webp',
         advantages: [
-            'Alfabetizzazione naturale nel discorso orale e scritto.',
-            'Curiosità verso le nuove informazioni.',
-            'Capacità di trovare le informazioni facilmente.',
-            'Generatore di idee.',
-            'Autorealizzazione.',
-            'Comprensione chiara del proprio potenziale.',
-            'Dono di “uscire indenne”.',
-            'Grandi ambizioni.',
-            'Dono di materializzare i desideri.',
-            'Dono di predicare ed ispirare con la parola.',
+            'Естественная грамотность в устной и письменной речи.',
+            'Любопытство к новой информации.',
+            'Способность легко находить информацию.',
+            'Генератор идей.',
+            'Самореализация.',
+            'Чёткое понимание своего потенциала.',
+            'Дар «выхода сухим из воды».',
+            'Большие амбиции.',
+            'Дар материализовывать желания.',
+            'Дар вдохновлять словом.',
         ],
         disadvantages: [
-            'Paura di parlare in pubblico.',
-            'Manipolatore.',
-            'Egocentrico.',
-            'Immaturo.',
-            'Conflittuale.',
-            'Eterno studente senza scopo.',
-            'Problematico nei rapporti con fratelli/sorelle.',
-            'Difficoltà di formulare i pensieri ed esprimerli.',
-            'Amore per le scaramucce, chiacchere ed i pettegolezzi. ',
-            // 'Linguaggio volgare.',
+            'Страх говорить публично.',
+            'Манипулятор.',
+            'Эгоцентричный.',
+            'Незрелый.',
+            'Конфликтный.',
+            'Вечный студент без цели.',
+            'Проблемные отношения с братьями/сёстрами.',
+            'Трудности в формулировании мыслей и их выражении.',
+            'Любовь к пререканиям, сплетням и пересудам.',
         ],
     },
     II: {
-        title: 'La Papessa',
-        energy: 'FEMMINILE',
-        positive: 'TUTELA',
-        negative: 'IPERPROTEZIONE',
+        title: 'ПАПЕССА',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'ЗАЩИТА',
+        negative: 'ГИПЕРЗАЩИТА',
         content: (
             <>
                 <p>
-                    II La{' '}
-                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
-                    Papessa rappresenta il primo Archetipo femminile chiave. È
-                    una delle personificazioni della femminilità e dei segreti,
-                    di tutto ciò di cui non si parla nella società.
+                    II ПАПЕССА представляет первый ключевой женский Архетип. Это
+                    одна из персонификаций женственности и секретов, всего того,
+                    о чём не говорят в обществе.
                 </p>
                 <p>
-                    II La{' '}
-                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
-                    Papessa riceve la conoscenza attraverso l'intuizione e a
-                    volte non le può spiegare neanche a sé stessa. Se una
-                    persona si fida delle proprie sensazioni, allora II La
-                    Papessa è in grado di guidarla attraverso tutte le
-                    difficoltà, le follie e le paure.
+                    II ПАПЕССА получает знания через интуицию, и иногда не может
+                    объяснить их даже себе. Если человек доверяет своим
+                    ощущениям, то II ПАПЕССА способна провести его через все
+                    трудности, безумства и страхи.
                 </p>
                 <p>
-                    II La{' '}
-                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
-                    Papessa indossa una “maschera” ed è emotivamente chiusa.
-                    Vive in due mondi allo stesso tempo, contemporaneamente si
-                    trova qui e oltre. Questa è una persona che può separare
-                    perfettamente lavoro e famiglia, famiglia e il proprio mondo
-                    interiore.
+                    II ПАПЕССА носит «маску» и эмоционально закрыта. Она живёт в
+                    двух мирах одновременно, находясь здесь и за гранью. Это
+                    человек, который может идеально отделить работу от семьи,
+                    семью от своего внутреннего мира.
                 </p>
                 <p>
-                    II La{' '}
-                    <span style={{width: 1, display: 'inline-block'}}> </span>{' '}
-                    Papessa protegge tutto ciò che ha bisogno di cure, ciò che è
-                    nascosto, ciò che non è stato ancora rivelato. Questa è
-                    l'energia della madre, della natura e del mistero.
+                    II ПАПЕССА защищает всё, что нуждается в заботе, что скрыто,
+                    что ещё не раскрыто. Это энергия матери, природы и тайны.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/II.webp',
         advantages: [
-            'Dono di prendere cura e dare protezione.',
-            'Protezione dei segreti.',
-            'Intuito sopranormale.',
-            'Profondo mondo interiore.',
-            'Conoscenza delle leggi universali.',
-            'Sentimento della presenza delle forzi superiori.',
-            'Rapporto speciale con la natura.',
-            'Capacità di trovare la via d’uscita dove altri non vedono.',
-            'Riservatezza.',
-            'Talento genitoriale.',
+            'Дар заботиться и давать защиту.',
+            'Хранение секретов.',
+            'Сверхъестественная интуиция.',
+            'Глубокий внутренний мир.',
+            'Знание универсальных законов.',
+            'Чувство присутствия высших сил.',
+            'Особые отношения с природой.',
+            'Способность находить выход там, где другие не видят.',
+            'Сдержанность.',
+            'Родительский талант.',
         ],
         disadvantages: [
-            'Mancanza di comprensione delle leggi della natura.',
-            'Amore per i pettegolezzi.',
-            'Risultato attraverso gli intrighi.',
-            'Un’esistenza miserabile e povertà finanziaria.',
-            'Protezione e cura di chi non ha bisogno.',
-            'Mancanza della separazione psicologica con genitori/figli.',
-            'Paura delle relazioni amorose.',
-            'Comportamento distruttivo verso gli esseri viventi.',
-            'Madre tossica.',
-            // "Magia nera (incantesimi d'amore, turnaround, ecc.).",
+            'Непонимание законов природы.',
+            'Любовь к сплетням.',
+            'Результат через интриги.',
+            'Жалкое существование и финансовая бедность.',
+            'Защита и забота тех, кто в этом не нуждается.',
+            'Отсутствие психологической separации с родителями/детьми.',
+            'Страх романтических отношений.',
+            'Деструктивное поведение по отношению к живым существам.',
+            'Токсичная мать.',
         ],
     },
     III: {
-        title: "L'Imperatrice",
-        energy: 'FEMMINILE',
-        positive: 'BELLEZZA',
-        negative: 'INFERTILITA’',
+        title: 'ИМПЕРАТРИЦА',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'КРАСОТА',
+        negative: 'БЕСПЛОДИЕ',
         content: (
             <>
                 <p>
-                    L'Archetipo III l'Imperatrice rappresenta il secondo
-                    Archetipo femminile chiave. È la personificazione della
-                    materia, della sessualità e della padronanza del mondo
-                    materiale.
+                    Архетип III ИМПЕРАТРИЦА представляет второй ключевой женский
+                    Архетип. Это персонификация материи, сексуальности и
+                    владения материальным миром.
                 </p>
                 <p>
-                    III L’Imperatrice è l'incarnazione del desiderio inconscio
-                    di fecondazione, dell'energia della bellezza, della
-                    creazione e dell'abbondanza.
+                    III ИМПЕРАТРИЦА — это воплощение бессознательного желания
+                    плодородия, энергии красоты, создания и изобилия.
                 </p>
                 <p>
-                    III L'Imperatrice è il corpo stesso, che ama e celebra la
-                    propria fisicità, considerandolo come un vaso capace di
-                    accogliere e nutrire, sia un bambino che un progetto, una
-                    famiglia o un'impresa. Il suo desiderio di realizzare i
-                    propri desideri, che altri potrebbero considerare egoistici,
-                    nasce dal bisogno di ottenere il massimo comfort e
-                    abbondanza nella vita.
+                    III ИМПЕРАТРИЦА — это само тело, которое любит и празднует
+                    свою физичность, считая себя сосудом, способным принять и
+                    вскормить: ребёнка, проект, семью или предприятие. Её
+                    желание реализовать свои желания, которые другие могут
+                    считать эгоистичными, рождается из потребности получить
+                    максимальный комфорт и изобилие в жизни.
                 </p>
                 <p>
-                    La dualità dell'Imperatrice risiede nella sua capacità di
-                    dare vita ma anche di toglierla. Quando è prepotente, il suo
-                    amore può diventare soffocante, poiché prevale il desiderio
-                    di dominare.
+                    Двойственность ИМПЕРАТРИЦЫ заключается в её способности
+                    давать жизнь, но и отнимать её. Когда она властна, её любовь
+                    может стать удушливой, поскольку преобладает желание
+                    доминировать.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/III.webp',
         advantages: [
-            'Amor proprio, la capacità di scegliere sé stessi.',
-            'Capacità di essere prolifici (in tutti gli aspetti: figli, arte, progetti, idee).',
-            'Capacità di comprendere chiaramente i propri desideri.',
-            'Esercizio del proprio diritto di nascita al benessere fisico e al comfort corporeo.',
-            'Sana dose di egoismo.',
-            'Dono di attrarre o creare abbondanza.',
-            'Bellezza, grazia e attrattività personali.',
-            'Scelta naturale di alta qualità in tutto.',
-            'Capacità di creare bellezza attorno a sé.',
-            'Talento creativo nella vita di tutti i giorni.',
+            'Любовь к себе, способность выбирать себя.',
+            'Способность быть плодовитым (во всех аспектах: дети, искусство, проекты, идеи).',
+            'Способность чётко понимать свои желания.',
+            'Реализация своего права на физическое благополучие и телесный комфорт.',
+            'Здоровая доля эгоизма.',
+            'Дар привлекать или создавать изобилие.',
+            'Красота, грация и привлекательность.',
+            'Естественный выбор высокого качества во всём.',
+            'Способность создавать красоту вокруг себя.',
+            'Творческий талант в повседневной жизни.',
         ],
         disadvantages: [
-            'Impossibilità di sentire il mondo materiale e regalarsi la sensazione del comfort.',
-            'Paura della vecchiaia.',
-            'Immaturità e capricci.',
-            'Cattivo gusto estetico, kitsch.',
-            'Volgarità e maleducazione.',
-            'Mercantilismo (si misura tutto e tutti solo con il denaro).',
-            'Incapacità di gestire il denaro in modo adeguato.',
-            'Madre dispotica.',
-            'Business sulla bellezza del proprio corpo.',
-            // 'Prostituzione.',
+            'Невозможность чувствовать материальный мир и дарить себе ощущение комфорта.',
+            'Страх старости.',
+            'Незрелость и капризы.',
+            'Плохой эстетический вкус, безвкусица.',
+            'Вульгарность и невоспитанность.',
+            'Меркантилизм (всё и всех измеряет только деньгами).',
+            'Неспособность адекватно управлять деньгами.',
+            'Властная мать.',
+            'Бизнес на красоте своего тела.',
         ],
     },
 
     IV: {
-        title: "L'Imperatore",
-        energy: 'MASCHILE',
-        positive: 'POTERE',
-        negative: 'DISPOTISMO',
+        title: 'ИМПЕРАТОР',
+        energy: 'МУЖСКАЯ',
+        positive: 'ВЛАСТЬ',
+        negative: 'ДЕСПОТИЗМ',
         content: (
             <>
                 <p>
-                    IV L'Imperatore è il primo Archetipo maschile chiave. È la
-                    personificazione del Re, del padrone, di un professionista.
+                    IV ИМПЕРАТОР — первый ключевой мужской Архетип. Это
+                    персонификация Короля, хозяина, профессионала.
                 </p>
-                <p>È il Padre archetipico in termini di potere e controllo.</p>
+                <p>Это архетипический Отец с точки зрения власти и контроля.</p>
                 <p>
-                    L'Archetipo IV l'Imperatore è caratterizzato dal desiderio
-                    di esercitare il controllo, di avere potere su ciò che lo
-                    circonda. Il suo potere si fonda sulla libertà di punire, un
-                    potere che è strettamente legato all'autorità e alla
-                    disciplina. L'Imperatore spesso si circonda di strumenti
-                    simbolici, come il bastone o l'arma, che rappresentano la
-                    sua capacità di fare rispettare le regole e mantenere
-                    l'ordine.
-                </p>
-                <p>
-                    Il suo controllo, tuttavia, è paterno, perché sempre
-                    finalizzato al bene, alla stabilità e alla sicurezza di chi
-                    gli sta intorno: i membri della sua famiglia, della sua
-                    squadra, della società e del Paese che governa.
+                    Архетип IV ИМПЕРАТОР характеризуется желанием осуществлять
+                    контроль, иметь власть над тем, что его окружает. Его власть
+                    основана на свободе наказывать, власть, которая тесно
+                    связана с авторитетом и дисциплиной. Император часто
+                    окружает себя символическими инструментами, как посох или
+                    оружие, которые представляют его способность обеспечивать
+                    соблюдение правил и поддерживать порядок.
                 </p>
                 <p>
-                    IV L'Imperatore è la personificazione della struttura, di un
-                    territorio, dei confini di questo territorio con il
-                    desiderio constante di espanderli.
+                    Однако его контроль отцовский, потому что всегда направлен
+                    на благо, стабильность и безопасность тех, кто вокруг него:
+                    членов его семьи, его команды, общества и страны, которой он
+                    правит.
                 </p>
                 <p>
-                    Per l'Archetipo IV l'Imperatore, l'espansione dei confini
-                    dipende dalla capacità di combattere e conquistare.
-                    Tuttavia, il vero potere risiede in una forza interna che
-                    gli consente di riconoscere il nemico prima che la stabilità
-                    del suo potere venga minacciata. Le alleanze e i conflitti
-                    per l’Imperatore sono dinamici e in costante evoluzione: un
-                    amico può diventare un nemico se non è più allineato agli
-                    obiettivi, mentre un nemico può trasformarsi in alleato
-                    quando le circostanze lo rendono vantaggioso. L'Imperatore,
-                    grazie alla sua mente strategica, è in grado di preservare e
-                    rafforzare il suo potere sul "territorio", espandendo
-                    continuamente il suo dominio.
+                    IV ИМПЕРАТОР — это персонификация структуры, территории,
+                    границ этой территории с постоянным желанием их расширить.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Для Архетипа IV ИМПЕРАТОР расширение границ зависит от
+                    способности сражаться и завоёвывать. Однако настоящая власть
+                    заключается во внутренней силе, которая позволяет ему
+                    распознать врага до того, как стабильность его власти будет
+                    под угрозой. Альянсы и конфликты для Императора динамичны и
+                    постоянно развиваются: друг может стать врагом, если он
+                    больше не соответствует целям, а враг может превратиться в
+                    союзника, когда обстоятельства делают это выгодным.
+                    Император, благодаря своему стратегическому мышлению,
+                    способен сохранять и укреплять свою власть на «территории»,
+                    постоянно расширяя своё господство.
+                </p>
+                <p>
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/IV.webp',
         advantages: [
-            'Responsabilità e serietà.',
-            'Stabilità.',
-            'Struttura e ordine nella mente e nella vita.',
-            'Prontezza per difendere il proprio ordine.',
-            'Posizioni di leadership.',
-            'Capacità di lavorare unica.',
-            'Desiderio di potere.',
-            'Indulgenza.',
-            'Capacità di organizzare gli altri a proprio favore.',
-            // "Talento genitoriale nell'insegnare attraverso la disciplina e le regole.",
+            'Ответственность и серьёзность.',
+            'Стабильность.',
+            'Структура и порядок в уме и в жизни.',
+            'Готовность защищать свой порядок.',
+            'Позиции лидерства.',
+            'Способность работать в одиночку.',
+            'Желание власти.',
+            'Снисходительность.',
+            'Способность организовывать других в свою пользу.',
         ],
         disadvantages: [
-            'Violazione i confini degli altri.',
-            'Autocrazia.',
-            'Ossessione per il lavoro.',
-            'Incapacità di riposare.',
-            'Assenza del tempo libero.',
-            'Genitore prepotente.',
-            'Mancanza di un nucleo interiore.',
-            'Irresponsabilità.',
-            'Volontà debole.',
-            // 'Mancanza di realizzazione professionale.',
+            'Нарушение чужих границ.',
+            'Автократия.',
+            'Одержимость работой.',
+            'Неспособность отдыхать.',
+            'Отсутствие свободного времени.',
+            'Властный родитель.',
+            'Отсутствие внутреннего ядра.',
+            'Безответственность.',
+            'Слабая воля.',
         ],
     },
 
     V: {
-        title: 'Il Papa',
-        energy: 'MASCHILE',
-        positive: 'AUTORITA’',
-        negative: 'STUPIDITÀ',
+        title: 'ПАПА',
+        energy: 'МУЖСКАЯ',
+        positive: 'АВТОРИТЕТ',
+        negative: 'ГЛУПОСТЬ',
         content: (
             <>
                 <p>
-                    V Il Papa è il secondo Archetipo maschile chiave. È il Padre
-                    archetipico in termini di tutoraggio, potere genitoriale e
-                    autorità.
+                    V ПАПА — второй ключевой мужской Архетип. Это архетипический
+                    Отец с точки зрения наставничества, родительской власти и
+                    авторитета.
                 </p>
                 <p>
-                    L'Archetipo V il Papa è la personificazione di un
-                    insegnante, di un mentore, delle tradizioni, della
-                    conoscenza tradizionale e dell’autorità della conoscenza.
+                    Архетип V ПАПА — это персонификация учителя, ментора,
+                    традиций, традиционных знаний и авторитета знания.
                 </p>
                 <p>
-                    V Il Papa porta avanti il tema del potere. E il significato
-                    della sua conoscenza non è nell'accumulazione, ma nella
-                    trasmissione e nel dominio grazie alle proprie conoscenze. V
-                    il Papa raggiunge alta posizione sociale tramite il
-                    riconoscimento della sua autorità da parte del potere
-                    ufficiale.
+                    V ПАПА продолжает тему власти. И смысл его знания не в
+                    накоплении, а в передаче и доминировании благодаря своим
+                    знаниям. V ПАПА достигает высокой социальной позиции через
+                    признание его авторитета официальной властью.
                 </p>
                 <p>
-                    È importante che V il Papa abbia seguaci ed è consigliabile
-                    che siano un po' più in basso nella gerarchia.
+                    Важно, чтобы у V ПАПЫ были последователи, и желательно,
+                    чтобы они были немного ниже в иерархии.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/V.webp',
         advantages: [
-            'Studi fondamentali.',
-            'Forza interiore.',
-            'Serietà verso sé stessi e gli altri.',
-            'Alta intelligenza.',
-            'Onestà.',
-            'Decenza.',
-            'Mente analitica.',
-            'Capacità di insegnare.',
-            'Il talento di apparire come un genitore ideale.',
-            'Tradizionalista.',
+            'Фундаментальные исследования.',
+            'Внутренняя сила.',
+            'Серьёзность к себе и другим.',
+            'Высокий интеллект.',
+            'Честность.',
+            'Порядочность.',
+            'Аналитический ум.',
+            'Способность учить.',
+            'Таллант выглядеть как идеальный родитель.',
+            'Традиционалист.',
         ],
         disadvantages: [
-            'Doppi standard.',
-            'Negazione ogni autorità.',
-            "Disprezzo per l'istruzione.",
-            'Mentalità chiusa e ristretta.',
-            'Autoritarismo.',
-            'Orgoglio intellettuale.',
-            'Arroganza.',
-            'Norme imponenti.',
-            'Mancanza di autorità personale.',
-            // 'Genitore tossico.',
+            'Двойные стандарты.',
+            'Отрицание любого авторитета.',
+            'Презрение к образованию.',
+            'Закрытый и ограниченный менталитет.',
+            'Авторитаризм.',
+            'Интеллектуальная гордость.',
+            'Высокомерие.',
+            'Навязывание норм.',
+            'Отсутствие личного авторитета.',
         ],
     },
 
     VI: {
-        title: "L'Innamorato",
-        energy: 'NEUTRALE',
-        positive: 'SCELTA',
-        negative: 'DISTRUZIONE DELLA RELAZIONE',
+        title: 'ВЛЮБЛЁННЫЙ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'ВЫБОР',
+        negative: 'РАЗРУШЕНИЕ ОТНОШЕНИЙ',
         content: (
             <>
                 <p>
-                    VI L'Innamorato è la personificazione della scelta, della
-                    partnership e del triangolo della scelta. L’essenza di
-                    questo Archetipo è proprio la Scelta.
+                    VI ВЛЮБЛЁННЫЙ — это персонификация выбора, партнёрства и
+                    треугольника выбора. Суть этого Архетипа — именно Выбор.
                 </p>
                 <p>
-                    Quando corpo, cuore e mente sono allineati in una decisione
-                    comune. La cosa più importante è desiderare quella
-                    decisione, amare la propria scelta e godere appieno del
-                    momento in cui si prende la decisione.
+                    Когда тело, сердце и разум согласованы в общем решении.
+                    Самое важное — желать этого решения, любить свой выбор и
+                    полностью наслаждаться моментом, когда принимаешь решение.
                 </p>
                 <p>
-                    L'Archetipo VI l'Innamorato ci insegna a costruire relazioni
-                    d'amore non solo con noi stessi e gli altri, ma anche con
-                    ogni cosa che scegliamo. È nell’intensità di questi piccoli
-                    atti quotidiani che impariamo ad amare: quella tazzina di
-                    caffè mattutina, quel cucchiaino di zucchero, lo zucchero
-                    nel cucchiaino, il caffè in cui aggiungiamo lo zucchero.
-                    Ogni scelta è una forma di connessione, una dichiarazione di
-                    affetto.
+                    Архетип VI ВЛЮБЛЁННЫЙ учит нас выстраивать отношения любви
+                    не только с собой и другими, но и с каждой вещью, которую мы
+                    выбираем. Именно в интенсивности этих маленьких ежедневных
+                    актов мы учимся любить: эту чашку утреннего кофе, эту
+                    ложечку сахара, сахар в ложечке, кофе, в который мы
+                    добавляем сахар. Каждый выбор — это форма связи, декларация
+                    привязанности.
                 </p>
                 <p>
-                    La scelta è l'iniziazione della crescita. La scelta è
-                    azione. L'Archetipo VI l'Innamorato rappresenta la scelta
-                    giusta, una decisione che spesso può essere difficile da
-                    prendere. Incarnando l'energia dei sentimenti più profondi,
-                    insegna a vivere in armonia con sé stessi e con gli altri. È
-                    l'energia che guida verso la scoperta dell'unione ideale,
-                    quella che porta a trovare l'equilibrio tra il proprio mondo
-                    interiore e la connessione con il mondo esterno.
+                    Выбор — это инициация роста. Выбор — действие. Архетип VI
+                    ВЛЮБЛЁННЫЙ представляет правильный выбор, решение, которое
+                    часто может быть трудным для принятия. Воплощая энергию
+                    самых глубоких чувств, он учит жить в гармонии с собой и с
+                    другими. Это энергия, которая ведёт к открытию идеального
+                    союза, того, который приводит к равновесию между собственным
+                    внутренним миром и связью с внешним миром.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/VI.webp',
         advantages: [
-            'Scelta con amore per sé stesso e per gli altri.',
-            'Capacità di amare veramente.',
-            'Profondo senso della bellezza.',
-            'Talento di sperimentare ed esprimere i propri sentimenti.',
-            'Costruzione facile delle connessioni personali e sociali.',
-            'Sensibilità e sensualità.',
-            'Premurosità.',
-            'Disponibilità.',
-            'Amicizia profonda.',
-            'Simpatia.',
+            'Выбор с любовью к себе и другим.',
+            'Способность по-настоящему любить.',
+            'Глубокое чувство красоты.',
+            'Таллант переживать и выражать свои чувства.',
+            'Лёгкость выстраивания личных и социальных связей.',
+            'Чувственность и сенсуальность.',
+            'Заботливость.',
+            'Отзывчивость.',
+            'Глубокая дружба.',
+            'Симпатия.',
         ],
         disadvantages: [
-            'Incapacità di scegliere.',
-            'Scelta multipla.',
-            'Innamoramento facile sempre e ovunque.',
-            "Difficoltà a comprendere l'amore.",
-            'Infedeltà.',
-            'Ricerca di un ideale immaginario.',
-            'Socializzazione difficile.',
-            'Problemi di comunicazione.',
-            'Sentimenti bloccati.',
-            'Antipatia.',
-            "Scelta consapevole che danneggia un'altra persona.",
-            'Relazione codipendente.',
-            // 'Amore con condizioni.',
+            'Неспособность выбирать.',
+            'Множественный выбор.',
+            'Лёгкое влюбление всегда и везде.',
+            'Трудности в понимании любви.',
+            'Неверность.',
+            'Поиск воображаемого идеала.',
+            'Трудная социализация.',
+            'Проблемы коммуникации.',
+            'Заблокированные чувства.',
+            'Антипатия.',
+            'Осознанный выбор, который вредит другому человеку.',
+            'Кодependиентные отношения.',
         ],
     },
 
     VII: {
-        title: 'Il Carro',
-        energy: 'MASCHILE',
-        positive: 'BERSAGLIO',
-        negative: 'ASSENZA DI SCOPO',
+        title: 'КОЛЕСНИЦА',
+        energy: 'МУЖСКАЯ',
+        positive: 'ЦЕЛЬ',
+        negative: 'ОТСУТСТВИЕ ЦЕЛИ',
         content: (
             <>
                 <p>
-                    “Chi trattiene l’ira risvegliata, come un carro che si è
-                    smarrito, lo chiamo auriga; gli altri tengono semplicemente
-                    le briglia.” – Buddha.
+                    «Кто удерживает пробуждённый гнев, как колесница, которая
+                    заблудилась, я называю возничим; другие просто держат
+                    поводья». — Будда.
                 </p>
                 <p>
-                    L’Archetipo VII il Carro rappresenta l'energia
-                    pionieristica. È la personificazione del bersaglio,
-                    dell’impostazione degli obiettivi, della concorrenza, del
-                    leader e dell'attività.
+                    Архетип VII КОЛЕСНИЦА представляет пионерскую энергию. Это
+                    персонификация цели, постановки задач, конкуренции, лидера и
+                    активности.
                 </p>
                 <p>
-                    Il Carro è attratto dal desiderio di essere il primo e di
-                    vincere. Ma la vittoria, a che prezzo?
+                    КОЛЕСНИЦУ привлекает желание быть первым и побеждать. Но
+                    победа, какой ценой?
                 </p>
                 <p>
-                    Il Carro dispone di armi e cavalli. Questi non sono più
-                    istinti naturali, come quelli dell’Archetipo XXII il Matto,
-                    ma sono potenti cavalli da combattimento. La difficoltà sta
-                    nell’imparare a controllare questi cavalli. L’obiettivo è
-                    stabilire una meta e raggiungerla senza disperdersi.
-                    Pertanto, l’auriga non deve solo comprendere cosa vuole, ma
-                    deve anche essere fermamente fiducioso, equilibrato e
-                    composto.
+                    КОЛЕСНИЦА располагает оружием и конями. Это уже не
+                    естественные инстинкты, как у Архетипа XXII ГЛУПЦА, а мощные
+                    боевые кони. Сложность в том, чтобы научиться контролировать
+                    этих коней. Цель — установить цель и достичь её, не
+                    рассеиваясь. Поэтому возничий должен не только понимать,
+                    чего хочет, но и быть твёрдо уверенным, уравновешенным и
+                    собранным.
                 </p>
-                <p>Il Carro è l’Archetipo del primo trionfo.</p>
+                <p>КОЛЕСНИЦА — это Архетип первого триумфа.</p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/VII.webp',
         advantages: [
-            'Interesse per nuovi orizzonti.',
-            'Capacità di essere primi.',
-            'Capacità di fissare un obiettivo e raggiungerlo.',
-            'Capacità di controllarsi.',
-            'Competizione sana.',
-            'Ambizione.',
-            'Determinazione negli obiettivi.',
-            'Coraggio in ogni situazione.',
-            'Controllo sul corpo e sui trasporti.',
-            'Amore per il movimento ed i viaggi.',
+            'Интерес к новым горизонтам.',
+            'Способность быть первым.',
+            'Способность ставить цель и достигать её.',
+            'Способность контролировать себя.',
+            'Здоровая конкуренция.',
+            'Амбиции.',
+            'Целеустремлённость.',
+            'Мужество в любой ситуации.',
+            'Контроль над телом и транспортом.',
+            'Любовь к движению и путешествиям.',
         ],
         disadvantages: [
-            'Passività.',
-            'Paura di andare avanti.',
-            'Assenza di ambizioni.',
-            'Meschinità.',
-            'Viltà.',
-            'Troppa sicurezza di sé.',
-            'Camminare sui "cadaveri" per ottenere la vittoria ad ogni costo.',
-            'Critica di coloro che si stanno muovendo verso i propri obiettivi.',
-            'Carrierismo.',
-            // 'Alto rischio di lesioni e dei problemi con il veicolo.',
+            'Пассивность.',
+            'Страх двигаться вперёд.',
+            'Отсутствие амбиций.',
+            'Мизерность.',
+            'Трусость.',
+            'Слишком большая уверенность в себе.',
+            'Хождение по «трупам» для достижения победы любой ценой.',
+            'Критика тех, кто движется к своим целям.',
+            'Карьеризм.',
         ],
     },
 
     VIII: {
-        title: 'La Giustizia',
-        energy: 'FEMMINILE',
-        positive: 'REGOLE',
-        negative: 'INIQUITÀ',
+        title: 'СПРАВЕДЛИВОСТЬ',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'ПРАВИЛА',
+        negative: 'НЕСПРАВЕДЛИВОСТЬ',
         content: (
             <>
                 <p>
-                    L’Archetipo VIII la Giustizia è la personificazione di
-                    società, regole, istruzioni, algoritmi e legge. L'essenza
-                    dell'Archetipo VIII è l'equilibrio. Si tratta
-                    dell’equilibrio tra il mondo interiore e le regole sociali.
+                    Архетип VIII СПРАВЕДЛИВОСТЬ — это персонификация общества,
+                    правил, инструкций, алгоритмов и закона. Суть Архетипа VIII
+                    — равновесие. Это равновесие между внутренним миром и
+                    социальными правилами.
                 </p>
                 <p>
-                    L’equilibrio tra interno ed esterno: ognuno ha il proprio
-                    interno, quindi ognuno ha il proprio equilibrio tra ciò che
-                    è dentro di sé e ciò che è esterno. In altre parole, ognuno
-                    ha il proprio algoritmo e le proprie regole.
+                    Равновесие между внутренним и внешним: у каждого есть своё
+                    внутреннее, поэтому у каждого есть своё равновесие между
+                    тем, что внутри него, и тем, что внешне. Другими словами, у
+                    каждого есть свой алгоритм и свои правила.
                 </p>
                 <p>
-                    Il secondo significato dell'Archetipo VIII la Giustizia
-                    riguarda la causa ed effetto, la legge del Karma. Non esiste
-                    il caso: ogni cosa ha una ragione e una conseguenza.
+                    Второе значение Архетипа VIII СПРАВЕДЛИВОСТЬ касается
+                    причины и следствия, закона Кармы. Случая не существует: у
+                    каждой вещи есть причина и следствие.
                 </p>
                 <p>
-                    L’Archetipo VIII la Giustizia ha lo scopo di bilanciare il
-                    rapporto tra il bene e il male. Ecco perché, ad esempio, i
-                    monaci si equilibrano con il duro lavoro piuttosto che con
-                    la contemplazione del cielo.
+                    Архетип VIII СПРАВЕДЛИВОСТЬ предназначен для балансировки
+                    отношений между добром и злом. Вот почему, например, монахи
+                    уравновешивают себя тяжёлым трудом, а не созерцанием неба.
                 </p>
                 <p>
-                    In nessuna mitologia esiste una figura di Giustizia come una
-                    figura maschile. L’Archetipo VIII possiede una bilancia
-                    (attributo femminile) e una spada (attributo maschile),
-                    creando così una combinazione riuscita di principi maschili
-                    e femminili: prima peseremo – poi taglieremo, peseremo –
-                    taglieremo e così via. Questo lavoro scrupoloso, che
-                    richiede equilibrio e attenzione, da non essere addato a un
-                    uomo, perché la logica maschile funziona diversamente.
+                    Ни в одной мифологии нет фигуры Справедливости как мужской
+                    фигуры. Архетип VIII обладает весами (женский атрибут) и
+                    мечом (мужской атрибут), создавая таким образом удачное
+                    сочетание мужских и женских принципов: сначала взвесим —
+                    потом отрежем, взвесим — отрежем и так далее. Эта
+                    скрупулёзная работа, требующая равновесия и внимания, не
+                    должна быть доверена мужчине, потому что мужская логика
+                    работает иначе.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/VIII.webp',
         advantages: [
-            'Vita secondo le regole.',
-            'Sani principi morali.',
-            'Affidamento ai fatti.',
-            'Armonia interiore.',
-            'Ordine nella vita e nella mente.',
-            'Prontezza a proteggere le altre persone.',
-            "Comprensione delle leggi dell'Universo.",
-            'Rispetto verse le leggi e le norme sociali.',
-            'Imparzialità.',
-            'Logica.',
+            'Жизнь по правилам.',
+            'Здоровые моральные принципы.',
+            'Опора на факты.',
+            'Внутренняя гармония.',
+            'Порядок в жизни и в уме.',
+            'Готовность защищать других.',
+            'Понимание законов Вселенной.',
+            'Уважение к законам и социальным нормам.',
+            'Беспристрастность.',
+            'Логика.',
         ],
         disadvantages: [
-            'Permalosità.',
-            'Indisciplina.',
-            'Pensiero superficiale.',
-            'Paura di commettere errori.',
-            'Tendenza a valutare le situazioni in base alle emozioni.',
-            'Giudizi categorici.',
-            'Mancanza di flessibilità di pensiero.',
-            'Grandi idealizzazioni.',
-            'Conflittualità.',
-            // 'Formalità nelle relazioni.',
+            'Обидчивость.',
+            'Недисциплинированность.',
+            'Поверхностное мышление.',
+            'Страх совершать ошибки.',
+            'Тенденция оценивать ситуации по эмоциям.',
+            'Категоричные суждения.',
+            'Отсутствие гибкости мышления.',
+            'Большие идеализации.',
+            'Конфликтность.',
         ],
     },
 
     IX: {
-        title: 'L’Eremita',
-        energy: 'NEUTRALE',
-        positive: 'SAGGEZZA',
-        negative: 'IL CAMMINO DI QUALCUN ALTRO',
+        title: 'ОТШЕЛЬНИК',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'МУДРОСТЬ',
+        negative: 'ПУТЬ ДРУГОГО',
         content: (
             <>
                 <p>
-                    L'Archetipo IX l'Eremita è la personificazione di concetti
-                    come saggezza, esperienza, solitudine, connessioni tra
-                    generazioni e il cammino personale. IX l'Eremita è la Guida,
-                    il più alto livello di conoscenza.
+                    Архетип IX ОТШЕЛЬНИК — это персонификация таких понятий, как
+                    мудрость, опыт, одиночество, связи между поколениями и
+                    личный путь. IX ОТШЕЛЬНИК — это Гид, высший уровень знания.
                 </p>
                 <p>
-                    L'Eremita rappresenta la solitudine come una scelta
-                    consapevole. Da questa scelta deriva l'enorme importanza di
-                    chi siano i suoi compagni di viaggio, se ci sono.
+                    ОТШЕЛЬНИК представляет одиночество как осознанный выбор. Из
+                    этогоChoice происходит огромная важность того, кто его
+                    попутчики, если они есть.
                 </p>
                 <p>
-                    L'Archetipo IX l’Eremita è responsabile di tutta
-                    l'esperienza umana: di tutto ciò che l'umanità ha
-                    accumulato, di tutta la conoscenza, di tutta l'esperienza
-                    (archivi, archeologia, memorie).
+                    Архетип IX ОТШЕЛЬНИК отвечает за весь человеческий опыт: за
+                    всё, что человечество накопило, за все знания, за весь опыт
+                    (архивы, археология, память).
                 </p>
                 <p>
-                    Essendo una guida, IX l'Eremita è sempre in movimento.
-                    Attraversa il tempo e raccoglie continuamente le esperienze
-                    umane. Queste esperienze non sono divise in femminile e
-                    maschile, ma sono universali, al di là del genere.
+                    Будучи гидом, IX ОТШЕЛЬНИК всегда в движении. Он проходит
+                    время и постоянно собирает человеческий опыт. Этот опыт не
+                    делится на женский и мужской, но универсален, вне
+                    зависимости от пола.
                 </p>
-                <p>Questa è l'ultima figura umana negli Archetipi.</p>
+                <p>Это последняя человеческая фигура в Архетипах.</p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/IX.webp',
         advantages: [
-            'Autosufficienza.',
-            'Maturità psicologica.',
-            'Grande saggezza.',
-            'Riservatezza.',
-            'Semplicità.',
-            'Dono di osservazione.',
-            'Attenzione ai piccoli dettagli.',
-            'La capacità di ammettere i propri errori e imparare da essi.',
-            'Ricerca costante della spiritualità.',
-            'Equilibrio tra il sociale e il personale.',
+            'Самостоятельность.',
+            'Психологическая зрелость.',
+            'Большая мудрость.',
+            'Сдержанность.',
+            'Простота.',
+            'Дар наблюдения.',
+            'Внимание к мелким деталям.',
+            'Способность признавать свои ошибки и учиться на них.',
+            'Постоянный поиск духовности.',
+            'Раовновесие между социальным и личным.',
         ],
         disadvantages: [
-            'Svalutazione della propria conoscenza.',
-            'Paura della solitudine.',
-            'Sensazione di non essere abbastanza.',
-            'Intolleranza verso le altre persone.',
-            'Paura della vecchiaia.',
-            'Socializzazione difficile.',
-            'Conservatorismo rigido (quando si nega ogni cosa nuova).',
-            'Uno stile di vita non sano.',
-            'Ascetismo eccessivo.',
-            // 'Povertà.',
+            'Обесценивание своих знаний.',
+            'Страх одиночества.',
+            'Ощущение недостаточности.',
+            'Нетолерантность к другим.',
+            'Страх старости.',
+            'Трудная социализация.',
+            'Жёсткий консерватизм (когда отрицается всё новое).',
+            'Не здоровый образ жизни.',
+            'Чрезмерный аскетизм.',
         ],
     },
 
     X: {
-        title: 'La Ruota della Fortuna',
-        energy: 'NEUTRALE',
-        positive: 'PROPRI BISOGNI',
-        negative: 'DEBITI',
+        title: 'КОЛЕСО ФОРТУНЫ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'СВОИ ПОТРЕБНОСТИ',
+        negative: 'ДОЛГИ',
         content: (
             <>
                 <p>
-                    L’Archetipo X la Ruota della Fortuna è la personificazione
-                    dei propri bisogni, delle occasioni, delle finanze che
-                    circolano tra le persone e tra persone ed enti finanziari.
+                    Архетип X КОЛЕСО ФОРТУНЫ — это персонификация собственных
+                    потребностей, возможностей, финансов, которые циркулируют
+                    между людьми и между людьми и финансовыми учреждениями.
                 </p>
                 <p>
-                    X La Ruota della Fortuna rappresenta la fortuna personale.
-                    Chi incarna questo Archetipo è visto come "baciato dal
-                    destino", a condizione che comprenda chiaramente come
-                    funziona questa energia e riesca a entrare in questo
-                    “cerchio fortunato”, che in realtà rappresenta una spirale.
+                    X КОЛЕСО ФОРТУНЫ представляет личную удачу. Тот, кто
+                    воплощает этот Архетип, воспринимается как «поцелованный
+                    судьбой», при условии, что он чётко понимает, как работает
+                    эта энергия, и может войти в этот «счастливый круг», который
+                    на самом деле представляет спираль.
                 </p>
                 <p>
-                    Il concetto principale dell'Archetipo X la Ruota della
-                    Fortuna, è la fiducia nella vita, un flusso continuo di
-                    cambiamenti tra alti e bassi, che conducono ad un nuovo
-                    livello. Se il cerchio si chiude, la Ruota si ferma.
+                    Главная концепция Архетипа X КОЛЕСО ФОРТУНЫ — это доверие к
+                    жизни, непрерывный поток изменений между взлётами и
+                    падениями, которые ведут к новому уровню. Если круг
+                    замыкается, Колесо останавливается.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/X.webp',
         advantages: [
-            'Persone super fortunate.',
-            'Capacità di vedere la natura ciclica della vita.',
-            'Senso intuitivo della giusta direzione.',
-            'Dono di attrare le finanze.',
-            'Adeguatezza.',
-            'Capacità di vedere e cogliere le opportunità.',
-            'Capacità di ottenere qualcosa senza troppi sforzi.',
-            'Comprensione la legge del karma.',
-            'Facile ingresso in nuove esperienze.',
-            'Adattabilità elevata.',
+            'Сверхудачливые люди.',
+            'Способность видеть циклическую природу жизни.',
+            'Интуитивное чувство правильного направления.',
+            'Дар привлекать финансы.',
+            'Адекватность.',
+            'Способность видеть и использовать возможности.',
+            'Способность получить что-то без особых усилий.',
+            'Понимание закона кармы.',
+            'Лёгкий вход в новый опыт.',
+            'Высокая адаптивность.',
         ],
         disadvantages: [
-            'Incertezza nel processo decisionale.',
-            'Vita senza cambiamento, stagnazione.',
-            'Nessuna fiducia nel mondo.',
-            'Mancanza di sensazione di sicurezza.',
-            'Difficoltà finanziarie.',
-            'Avidità patologica.',
-            'Il denaro è l’unica misura.',
-            "Dipendenza dal gioco d'azzardo.",
-            'Bancarotta.',
-            // 'Sfortuna patologica.',
+            'Неуверенность в процессе принятия решений.',
+            'Жизнь без изменений, застой.',
+            'Отсутствие доверия к миру.',
+            'Отсутствие чувства безопасности.',
+            'Финансовые трудности.',
+            'Патологическая жадность.',
+            'Деньги — единственная мера.',
+            'Зависимость от азартных игр.',
+            'Банкротство.',
         ],
     },
 
     XI: {
-        title: 'La Forza',
-        energy: 'MASCHILE',
-        positive: 'GESTA EROICHE',
-        negative: 'VIOLENZA',
+        title: 'СИЛА',
+        energy: 'МУЖСКАЯ',
+        positive: 'ГЕРОИЧЕСКИЕ ПОСТУПКИ',
+        negative: 'НАСИЛИЕ',
         content: (
             <>
                 <p>
-                    L’Archetipo XI la Forza rappresenta la personificazione
-                    della Forza in tutte le sue manifestazioni, simboleggiando
-                    il dominio sull'Ego regale attraverso la forza di volontà.
+                    Архетип XI СИЛА представляет персонификацию Силы во всех её
+                    проявлениях, символизируя господство над царским Эго через
+                    силу воли.
                 </p>
                 <p>
-                    XI La Forza è energia ardente e incontrollabile. Rappresenta
-                    il processo in cui una persona deve “crescere” per
-                    rivendicare i veri attributi del potere.
+                    XI СИЛА — это пылающая и неконтролируемая энергия. Она
+                    представляет процесс, в котором человек должен «вырасти»,
+                    чтобы претендовать на истинные атрибуты власти.
                 </p>
                 <p>
-                    Secondo l’Archetipo XI la Forza, una persona deve imparare a
-                    interagire con la propria “bestia” interiore, che
-                    rappresenta l'egocentrismo animale, e dimostrare il diritto
-                    di essere “forte”. Tuttavia, per fare ciò, è necessario un
-                    intenso allenamento, sia del corpo che dell'anima. Se una
-                    persona non è in grado di controllare il proprio potere
-                    istintivo, la sua "bestia" lo divorerà, e i suoi desideri
-                    finiranno per diventare più forti di lui stesso.
+                    Согласно Архетипу XI СИЛА, человек должен научиться
+                    взаимодействовать со своим «внутренним зверем», который
+                    представляет животный эгоцентризм, и продемонстрировать
+                    право быть «сильным». Однако для этого необходима
+                    интенсивная тренировка как тела, так и души. Если человек не
+                    способен контролировать свой инстинктивный потенциал, его
+                    «зверь» его поглотит, и его желания в конечном итоге станут
+                    сильнее него самого.
                 </p>
                 <p>
-                    XI La Forza è anche l'Archetipo delle gesta eroiche, della
-                    resistenza, dello sport, del vivere "al massimo" e di
-                    prendere il tutto possibile dalla vita.
+                    XI СИЛА — это также Архетип героических подвигов,
+                    выносливости, спорта, жизни «на полную» и взятия всего
+                    возможного от жизни.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XI.webp',
         advantages: [
-            'Resilienza psicologica e fisica.',
-            'Forte nucleo interiore.',
-            'Perseveranza.',
-            'Forza di volontà.',
-            'Vivacità.',
-            'Dono di ottenere facilmente ciò che si vuole.',
-            'Capacità di fare più degli altri.',
-            'Ricerca di adrenalina “sicura”.',
-            'Attenzione e cura del corpo.',
-            'Sessualità.',
+            'Психологическая и физическая устойчивость.',
+            'Сильное внутреннее ядро.',
+            'Настойчивость.',
+            'Сила воли.',
+            'Жизнерадостность.',
+            'Дар легко получать то, что хочешь.',
+            'Способность делать больше других.',
+            'Поиск «безопасной» адреналины.',
+            'Внимание и забота о теле.',
+            'Сексуальность.',
         ],
         disadvantages: [
-            'Crudeltà.',
-            'Aggressività inappropriata.',
-            'Violenza fisica e psicologica.',
-            'Pressione sugli altri.',
-            'Megalomania.',
-            'Negligenza fisica e disattenzione alla salute.',
-            'Mancanza di volontà.',
-            'Viltà.',
-            'La vita in uno stato estremo ("muoio di fame - mi abbuffo").',
-            // 'Blocchi nella sfera sessuale.',
+            'Жестокость.',
+            'Неуместная агрессия.',
+            'Физическое и психологическое насилие.',
+            'Давление на других.',
+            'Мегаломания.',
+            'Физическая халатность и невнимание к здоровью.',
+            'Отсутствие воли.',
+            'Трусость.',
+            'Жизнь в крайнем состоянии («умираю от голода — объедаюсь»).',
         ],
     },
 
     XII: {
-        title: 'L’Appeso',
-        energy: 'NEUTRALE',
-        positive: 'SACRIFICIO VOLONTARIO',
-        negative: 'VITTIMA',
+        title: 'ПОВЕШЕННЫЙ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'ДОБРОВОЛЬНЫЙ ЖЕРТВА',
+        negative: 'ЖЕРТВА',
         content: (
             <>
                 <p>
-                    L’Archetipo XII l’Appeso rappresenta la personificazione del
-                    sacrificio volontario in nome di un grande obiettivo.
+                    Архетип XII ПОВЕШЕННЫЙ представляет персонификацию
+                    добровольной жертвы ради великой цели.
                 </p>
                 <p>
-                    XII l’Appeso è il simbolo di transizione. Questo stato
-                    riflette un momento di cambiamento profondo: si cerca il
-                    significato spirituale, si vagabonda nel mondo interiore. A
-                    volte può sembrare una fase di blocco, di coscienza
-                    invertita o di vuoto, in cui manca un chiaro scopo.
+                    XII ПОВЕШЕННЫЙ — это символ перехода. Это состояние отражает
+                    момент глубокого изменения: ищется духовный смысл, блуждание
+                    во внутреннем мире. Иногда это может казаться фазой блока,
+                    инвертированного сознания или пустоты, где нет чёткой цели.
                 </p>
                 <p>
-                    L’Appeso è anche simbolo di una crisi di mezza età: quando
-                    non si trova più un senso a continuare il proprio viaggio
-                    terrestre, l'unica direzione possibile è quella indicata
-                    dalla testa dell'Appeso, ossia “andare via”.
+                    ПОВЕШЕННЫЙ также символ кризиса среднего возраста: когда уже
+                    не находится смысла продолжать своё земное путешествие,
+                    единственное возможное направление — то, которое указывает
+                    голова ПОВЕШЕННОГО, то есть «уйти».
                 </p>
                 <p>
-                    La parola che meglio rispecchia l’essenza dell’Archetipo XII
-                    l’Appeso è alterità, che permette di vedere le cose
-                    ordinarie sotto una prospettiva diversa.
+                    Слово, которое лучше всего отражает суть Архетипа XII
+                    ПОВЕШЕННЫЙ — это инаковость, которая позволяет видеть
+                    обычные вещи под другим углом.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XII.webp',
         advantages: [
-            'Profondità del mondo interiore.',
-            'Intuito sopranormale.',
-            'Alterità nell’essere.',
-            'Compassione.',
-            'Empatia elevata.',
-            'Dedizione totale e completa.',
-            'Indizi dal subconscio.',
-            'Capacità di lungimiranza.',
-            'Autoanalisi e autoriflessione.',
-            'Volontariato.',
-            'Connessione speciale con Dio ed i poteri superiori.',
+            'Глубина внутреннего мира.',
+            'Сверхъестественная интуиция.',
+            'Инаковость в бытии.',
+            'Сострадание.',
+            'Высокая эмпатия.',
+            'Полная и абсолютная преданность.',
+            'Подсказки из подсознания.',
+            'Способность предвидеть.',
+            'Самоанализ и саморефлексия.',
+            'Волонтёрство.',
+            'Особая связь с Богом и высшими силами.',
         ],
         disadvantages: [
-            'Pigrizia.',
-            'Apatia senza causa.',
-            'Stagnazione.',
-            'Permalosità.',
-            'Lamentele infinite.',
-            'Pessimismo disperato.',
-            'Sacrificio inutile.',
-            'La posizione della “vittima”.',
-            'Insensibilità verso le sofferenze altrui.',
-            'Emotività instabile e/o eccessiva.',
-            'Dipendenze.',
-            // 'Fanatismo.',
+            'Лень.',
+            'Беспричинная апатия.',
+            'Застой.',
+            'Обидчивость.',
+            'Бесконечные жалобы.',
+            'Отчаянный пессимизм.',
+            'Бесполезная жертва.',
+            'Позиция «жертвы».',
+            'Нечувствительность к страданиям других.',
+            'Нестабильная и/или чрезмерная эмоциональность.',
+            'Зависимости.',
         ],
     },
 
     XIII: {
-        title: 'La Morte',
-        energy: 'FEMMINILE',
-        positive: 'CAMBIAMENTI',
-        negative: 'STAGNAZIONE',
+        title: 'СМЕРТЬ',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'ИЗМЕНЕНИЯ',
+        negative: 'ЗАСТОЙ',
         content: (
             <>
                 <p>
-                    L’Archetipo XIII La Morte è la personificazione della
-                    Trasformazione e del cambiamento irrevocabile.
+                    Архетип XIII СМЕРТЬ — это персонификация Трансформации и
+                    необратимого изменения.
                 </p>
                 <p>
-                    XIII è l’unione di X (La Ruota della Fortuna) e III
-                    (L'Imperatrice), simboleggiando che nascita e morte sono due
-                    facce inseparabili dell'esistenza. III L'Imperatrice dà alla
-                    luce un bambino, ma sa che un giorno morirà, mentre X La
-                    Ruota della Fortuna rappresenta l'eterna ciclicità del
-                    Samsara, che non si ferma mai.
+                    XIII — это союз X (КОЛЕСО ФОРТУНЫ) и III (ИМПЕРАТРИЦА),
+                    символизируя, что рождение и смерть — две неразделимые
+                    стороны существования. III ИМПЕРАТРИЦА даёт жизнь ребёнку,
+                    но знает, что однажды умрёт, а X КОЛЕСО ФОРТУНЫ представляет
+                    вечную цикличность Сансары, которая никогда не
+                    останавливается.
                 </p>
                 <p>
-                    L’Archetipo XIII La Morte è il più nudo di tutti: non solo i
-                    vestiti, ma anche la pelle è stata rimossa. La sua gamba di
-                    un colore diverso simboleggia il fatto che una parte di essa
-                    appartiene già a un altro mondo (vedi: Arcano Maggiore XIII
-                    La Morte di Tarocchi Marsigliesi di A. Jodorowsky).
+                    Архетип XIII СМЕРТЬ — самый обнажённый из всех: не только
+                    одежда, но и кожа была снята. Его нога другого цвета
+                    символизирует тот факт, что часть его уже принадлежит
+                    другому миру.
                 </p>
                 <p>
-                    La Morte trasforma in modo irreversibile: una volta che il
-                    cambiamento è avvenuto, non è possibile tornare indietro. È
-                    una trasformazione che non ammette ritorni.
+                    СМЕРТЬ трансформирует необратимо: после того, как изменение
+                    произошло, невозможно вернуться назад. Это трансформация, не
+                    допускающая возвратов.
                 </p>
                 <p>
-                    L’essenza dell’Archetipo XIII La Morte risiede nella vita,
-                    nella massima saturazione di essa, arricchita da esperienze
-                    intense. Una vita priva della consapevolezza della morte
-                    diventa grigia e noiosa.
+                    Суть Архетипа XIII СМЕРТЬ заключается в жизни, в
+                    максимальной насыщенности ею, обогащённой интенсивным
+                    опытом. Жизнь без осознания смерти становится серой и
+                    скучной.
                 </p>
                 <p>
-                    XIII La Morte è rappresentata da brividi, sensazioni forti,
-                    un respiro profondo e la capacità di creare una nuova vita,
-                    “tagliando” via le parti morte per rinascere in una forma
-                    nuova.
+                    XIII СМЕРТЬ представлена дрожью, сильными ощущениями,
+                    глубоким дыханием и способностью создавать новую жизнь,
+                    «отрезая» мёртвые части, чтобы возродиться в новой форме.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XIII.webp',
         advantages: [
-            'Sete di vita in tutte le sue forme.',
-            'Resilienza alla vita.',
-            'Rispetto verso la vita (i vegani).',
-            'Capacità di vivere al massimo sentimenti ed emozioni.',
-            'Rifiuto tempestivo del vecchio, del superfluo.',
-            'Cambiamenti qualitativi intorno sé.',
-            'Capacità di sopportare facilmente situazioni difficili.',
-            'Buona salute.',
-            'Sessualità.',
-            'Longevità.',
+            'Жажда жизни во всех её формах.',
+            'Устойчивость к жизни.',
+            'Уважение к жизни (веганы).',
+            'Способность жить на полную чувствами и эмоциями.',
+            'Своевременный отказ от старого, лишнего.',
+            'Качественные изменения вокруг себя.',
+            'Способность легко переносить трудные ситуации.',
+            'Хорошее здоровье.',
+            'Сексуальность.',
+            'Долголетие.',
         ],
         disadvantages: [
-            'Paura di qualsiasi cambiamento.',
-            'Intensa paura della morte.',
-            'Disprezzo verso la vita e tutti gli esseri viventi.',
-            'Disordine e ingombro (dello spazio, del corpo o della mente).',
-            'Esperimenti sulla salute.',
-            'Crudeltà.',
-            'Emotività eccessiva.',
-            'Ansia dovuta alla paura di non riuscire a fare qualcosa in tempo.',
-            'Esposizione deliberata e ingiustificata al pericolo.',
-            // 'Desiderio maniacale di pulizia.',
+            'Страх любого изменения.',
+            'Интенсивный страх смерти.',
+            'Презрение к жизни и всем живым существам.',
+            'Беспорядок и захламление (пространства, тела или ума).',
+            'Эксперименты со здоровьем.',
+            'Жестокость.',
+            'Чрезмерная эмоциональность.',
+            'Тревога из-за страха не успеть что-то сделать.',
+            'Преднамеренное и неоправданное подвержение опасности.',
         ],
     },
 
     XIV: {
-        title: 'La Temperanza',
-        energy: 'NEUTRALE',
-        positive: 'EQUILIBRIO',
-        negative: 'ESTREMI',
+        title: 'УМЕРЕННОСТЬ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'РАВНОВЕСИЕ',
+        negative: 'КРАЙНОСТИ',
         content: (
             <>
                 <p>
-                    L'Archetipo XIV La Temperanza è la personificazione della
-                    “sezione aurea” di Michelangelo, simboleggiando l'equilibrio
-                    e l'armonia tra il mondo terreno e quello spirituale.
+                    Архетип XIV УМЕРЕННОСТЬ — это персонификация «золотого
+                    сечения» Микеланджело, символизируя равновесие и гармонию
+                    между земным и духовным мирами.
                 </p>
                 <p>
-                    Immagina di avere due ali: una radicata nella terra e
-                    l'altra proiettata verso il cielo. Le ali ti permettono di
-                    volare, di esprimerti nella musica, nella danza, ma sai
-                    anche quando è il momento di atterrare. Luogo e tempo sono
-                    in perfetta armonia.
+                    Представь, что у тебя два крыла: одно укоренено в земле,
+                    другое устремлено к небу. Крылья позволяют тебе летать,
+                    выражать себя в музыке, танце, но ты также знаешь, когда
+                    пришло время приземлиться. Место и время в полной гармонии.
                 </p>
                 <p>
-                    Con XIV La Temperanza, sarai ricompensato secondo la tua
-                    capacità di mantenere quest'armonia. Devi esplorare questa
-                    armonia, misurando il tuo mondo interiore. Come gestisci le
-                    tue emozioni? Qual è la tua misura dell'armonia?
+                    С XIV УМЕРЕННОСТЬЮ ты будешь вознаграждён в соответствии со
+                    своей способностью сохранять эту гармонию. Ты должен
+                    исследовать эту гармонию, измеряя свой внутренний мир. Как
+                    ты управляешь своими эмоциями? Какова твоя мера гармонии?
                 </p>
                 <p>
-                    L'armonia interiore si raggiunge quando una persona è capace
-                    di ripristinare il proprio equilibrio emotivo, grazie alla
-                    forza interna e alle attività esterne che favoriscono la
-                    stabilità.
+                    Внутренняя гармония достигается, когда человек способен
+                    восстановить своё эмоциональное равновесие благодаря
+                    внутренней силе и внешним действиям, способствующим
+                    стабильности.
                 </p>
                 <p>
-                    L'Archetipo XIV insegna che gli opposti interni si uniscono
-                    e si riconciliano nell'immagine di un nuovo “io”. Siamo
-                    liberi di passare da una “sponda” all’altra, trapassare
-                    molteplici stati diversi, ma mantenendo sempre un equilibrio
-                    interiore.
+                    Архетип XIV учит, что внутренние противоположности
+                    соединяются и примиряются в образе нового «я». Мы свободны
+                    переходить от одного «берега» к другому, проходить множество
+                    различных состояний, но всегда сохраняя внутреннее
+                    равновесие.
                 </p>
                 <p>
-                    Ogni persona è un alchimista della propria vita. L'essenza
-                    di XIV La Temperanza è creare il proprio “profumo” ideale,
-                    che rispecchia l’io profondo.
+                    Каждый человек — алхимик своей жизни. Суть XIV УМЕРЕННОСТИ —
+                    создать свой идеальный «аромат», который отражает глубокое
+                    «я».
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XIV.webp',
         advantages: [
-            'Sobrietà.',
-            'Pacifismo.',
-            'Precisione.',
-            'Percezione della “sezione aurea”.',
-            'Trasformazione morbida.',
-            'Trasmissione dell’armonia.',
-            'Moderazione nei bisogni.',
-            'Capacità di mantenere in equilibrio tutti gli ambiti della vita.',
-            'Capacità di adattamento e di equilibrio.',
-            'Capacità di essere puntuale.',
+            'Трезвость.',
+            'Пацифизм.',
+            'Точность.',
+            'Восприятие «золотого сечения».',
+            'Мягкая трансформация.',
+            'Передача гармонии.',
+            'Умеренность в потребностях.',
+            'Способность сохранять равновесие во всех сферах жизни.',
+            'Способность к адаптации и равновесию.',
+            'Способность быть пунктуальным.',
         ],
         disadvantages: [
-            'Mantenimento di stabilità a tutti i costi.',
-            'Passività.',
-            'Perfezione nauseante.',
-            "Tendenza all'eccesso.",
-            'Intemperanza.',
-            'Ogni giorno è “il giorno della marmotta”.',
-            'Distorsioni negli ambiti della vita.',
-            'Provocazione delle emozioni negative.',
-            'Intolleranza verso gli altri.',
-            // 'Impossibilità di accettare sé stesso.',
+            'Сохранение стабильности любой ценой.',
+            'Пассивность.',
+            'Тошнотворный перфекционизм.',
+            'Тенденция к избытку.',
+            'Нетрезвость.',
+            'Каждый день — «день сурка».',
+            'Искажения в сферах жизни.',
+            'Провоцирование негативных эмоций.',
+            'Нетолерантность к другим.',
         ],
     },
 
     XV: {
-        title: 'Il Diavolo',
-        energy: 'MASCHILE',
-        positive: 'PIACERE',
-        negative: 'DIPENDENZE',
+        title: 'ДЬЯВОЛ',
+        energy: 'МУЖСКАЯ',
+        positive: 'УДОВОЛЬСТВИЕ',
+        negative: 'ЗАВИСИМОСТИ',
         content: (
             <>
                 <p>
-                    L'Archetipo XV, Il Diavolo, rappresenta la personificazione
-                    del piacere e simboleggia la libido.
+                    Архетип XV, ДЬЯВОЛ, представляет персонификацию удовольствия
+                    и символизирует либидо.
                 </p>
                 <p>
-                    È il Principe delle tenebre, il dio dei piaceri, il dio Pan,
-                    uno dei più antichi e potenti della mitologia. Pan incarna
-                    il potere fertilizzante della natura selvaggia, che può
-                    essere sia creatore che distruttore.
+                    Это Князь тьмы, бог удовольствий, бог Пан, один из самых
+                    древних и могущественных в мифологии. Пан воплощает
+                    оплодотворяющую силу дикой природы, которая может быть как
+                    созидательной, так и разрушительной.
                 </p>
                 <p>
-                    Il Diavolo è energia fallica, un fallo è come una Torcia:
-                    qualcosa che può accendere, eccitare, affascinare e indurre
-                    in tentazione. Questa è una prova: una prova di resistenza,
-                    per verificare la capacità di fermarsi di fronte alla
-                    tentazione. Qui, il piacere può facilmente trasformarsi in
-                    perversione.
+                    ДЬЯВОЛ — энергия фаллическая, фалл как факел: что-то, что
+                    может зажечь, возбудить, заворожить и соблазнить. Это
+                    испытание: испытание на выносливость, чтобы проверить
+                    способность остановиться перед искушением. Здесь
+                    удовольствие может легко превратиться в перверсию.
                 </p>
                 <p>
-                    Come una radiografia, l'Archetipo XV rivela a cosa è
-                    agganciata la persona, portando in luce i lati d'ombra della
-                    sua anima. È un'energia ardente, passionale, che può
-                    spingere a bruciare tutto nel fuoco dei propri desideri.
-                    Quando una persona vuole ottenere qualcosa, qualsiasi cosa,
-                    questa energia la rende capace di realizzarlo, a qualunque
-                    costo.
+                    Как рентген, Архетип XV показывает, к чему привязан человек,
+                    выводя на свет теневые стороны его души. Это пылкая,
+                    страстная энергия, которая может заставить сжечь всё в огне
+                    своих желаний. Когда человек хочет получить что-то, что
+                    угодно, эта энергия делает его способным реализовать это,
+                    любой ценой.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XV.webp',
         advantages: [
-            'Enorme energia vitale.',
-            'Sessualità irresistibile.',
-            'Carisma.',
-            'Insolenza.',
-            'Magnetismo innato.',
-            'Realizzazione personale.',
-            'Autocontrollo.',
-            'Naturalezza nelle proprie manifestazioni.',
-            'Conoscenza delle debolezze degli altri.',
-            'Sensibilità e comprensione delle altre persone a livello emotivo.',
+            'Огромная жизненная энергия.',
+            'Неотразимая сексуальность.',
+            'Харизма.',
+            'Дерзость.',
+            'Врождённый магнетизм.',
+            'Самореализация.',
+            'Самоконтроль.',
+            'Естественность в своих проявлениях.',
+            'Знание слабостей других.',
+            'Чувствительность и понимание других на эмоциональном уровне.',
         ],
         disadvantages: [
-            'Eccessi.',
-            'Abuso del piacere.',
-            'Inganni ben congegnati e preparati.',
-            'Avidità.',
-            'Falsità nel comportamento.',
-            'Desiderio di controllare e possedere gli altri.',
-            'Provocazione a vizi e debolezze.',
-            'Completa incapacità di godersi la vita.',
-            'Perversione.',
-            // 'Criminalità (filosofia di "Pecunia non olet" (i soldi non puzzano).',
+            'Избытки.',
+            'Злоупотребление удовольствием.',
+            'Тщательно спланированные обманы.',
+            'Жадность.',
+            'Фальшивость в поведении.',
+            'Желание контролировать и обладать другими.',
+            'Провоцирование пороков и слабостей.',
+            'Полная неспособность наслаждаться жизнью.',
+            'Перверсия.',
         ],
     },
 
     XVI: {
-        title: 'La Torre',
-        energy: 'NEUTRALE',
-        positive: 'COSTRUZIONE',
-        negative: 'DISTRUZIONE',
+        title: 'БАШНЯ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'СТРОИТЕЛЬСТВО',
+        negative: 'РАЗРУШЕНИЕ',
         content: (
             <>
                 <p>
-                    L’Archetipo XVI La Torre rappresenta la personificazione
-                    della struttura, della costruzione e della distruzione. Fino
-                    a un certo punto, XVI La Torre è una struttura difensiva
-                    molto potente (una fortezza, una casa, anche una pirogua può
-                    essere una piccola Torre).
+                    Архетип XVI БАШНЯ представляет персонификацию структуры,
+                    строительства и разрушения. До определённого момента XVI
+                    БАШНЯ — очень мощная оборонительная структура (крепость,
+                    дом, даже челнок может быть маленькой Башней).
                 </p>
                 <p>
-                    Ma perché c'è una corona cadente sulla XVI Torre?
-                    Rappresenta il fatto che qualcosa nella mente è già così
-                    annebbiato che è necessario colpire questa "torretta"
-                    affinché la persona riprenda i sensi o le sue convinzioni
-                    ferree vengano completamente distrutte (vedi: Arcano
-                    Maggiore XVI La Torre di Tarocchi Marsigliesi di A.
-                    Jodorowsky).
+                    Но почему на XVI БАШНЕ есть падающая корона? Это
+                    представляет тот факт, что что-то в уме уже настолько
+                    затуманено, что необходимо ударить эту «башенку», чтобы
+                    человек пришёл в себя или его твёрдые убеждения были
+                    полностью разрушены.
                 </p>
                 <p>
-                    Nel momento in cui una persona comincia ad avere molta
-                    sicurezza in qualcosa, viene rapidamente riportata sulla
-                    terra. Vengono distrutte le sue convinzioni nella fermezza
-                    di qualcosa, dimostrando che l’uomo non è Dio.
+                    В момент, когда человек начинает слишком сильно верить во
+                    что-то, его быстро возвращают на землю. Его убеждения в
+                    твёрдости чего-то разрушаются, демонстрируя, что человек не
+                    Бог.
                 </p>
                 <p>
-                    XVI La Torre è uno degli Archetipi di trasformazione e di
-                    transizione più forti. La trasformazione della Torre è
-                    improvvisa. È uno stato in cui qualcosa di stabile diventa
-                    instabile, un edificio crolla, una convinzione cade a pezzi,
-                    l’ordine diventa disordine. Così, dopo aver scoperto una
-                    enorme forza interiore, la persona può ricostruirsi mattone
-                    dopo mattone, partendo da fondamenta più solide, ovvero da
-                    una base di maggiore consapevolezza, e ricominciando ogni
-                    volta da un livello spirituale più alto.
+                    XVI БАШНЯ — один из самых сильных Архетипов трансформации и
+                    перехода. Трансформация Башни внезапна. Это состояние, в
+                    котором что-то стабильное становится нестабильным, здание
+                    рушится, убеждение рассыпается, порядок становится хаосом.
+                    Так, после открытия огромной внутренней силы, человек может
+                    перестраиваться кирпичик за кирпичиком, начиная с более
+                    прочных оснований, то есть с базы большей осознанности, и
+                    каждый раз начиная с более высокого духовного уровня.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XVI.webp',
         advantages: [
-            'Dono di creare e costruire strutture.',
-            'Capacità di creare qualcosa dal nulla.',
-            'Intolleranza alla ambiguità.',
-            'Capacità di affrontare facilmente le difficoltà.',
-            '“Indistruttibile”.',
-            'Capacità di adattarsi alla struttura nuova.',
-            'Forza spirituale e fisica, quindi le difficoltà non spezzano.',
-            'Semplicità.',
-            'Riservatezza.',
-            'Pazienza.',
+            'Дар создавать и строить структуры.',
+            'Способность создавать что-то из ничего.',
+            'Нетерпимость к двусмысленности.',
+            'Способность легко справляться с трудностями.',
+            '"Несокрушимый".',
+            'Способность адаптироваться к новой структуре.',
+            'Духовная и физическая сила, поэтому трудности не ломают.',
+            'Простота.',
+            'Сдержанность.',
+            'Терпение.',
         ],
         disadvantages: [
-            'Mancanza di fiducia in sé stesso.',
-            'Incapacità di costruire e creare.',
-            'Blocco nella palude della stabilità.',
-            'Distruzione e autodistruzione.',
-            'Anarchismo.',
-            'Sabotaggio dello sviluppo.',
-            'Chiusura dal mondo nelle proprie convinzioni.',
-            'Posizione dello “struzzo”.',
-            'Molti segreti.',
-            // 'Ostinazione.',
+            'Отсутствие веры в себя.',
+            'Неспособность строить и создавать.',
+            'Блок в болоте стабильности.',
+            'Разрушение и саморазрушение.',
+            'Анархизм.',
+            'Саботаж развития.',
+            'Закрытие от мира в своих убеждениях.',
+            'Позиция «страуса».',
+            'Много секретов.',
         ],
     },
 
     XVII: {
-        title: 'La Stella',
-        energy: 'FEMMINILE',
-        positive: 'AMICIZIA',
-        negative: 'TRADIMENTO',
+        title: 'ЗВЕЗДА',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'ДРУЖБА',
+        negative: 'ПРЕДАТЕЛЬСТВО',
         content: (
             <>
                 <p>
-                    L’Archetipo XVII La Stella rappresenta la personificazione
-                    dell'unicità, della creatività, della speranza e dei sogni.
-                    È l'Archetipo più complesso perché spesso viene divinizzato.
+                    Архетип XVII ЗВЕЗДА представляет персонификацию
+                    уникальности, креативности, надежды и снов. Это самый
+                    сложный Архетип, потому что часто его обожествляют.
                 </p>
                 <p>
-                    La completa nudità della Stella XVII simboleggia l'apertura
-                    dei sentimenti e dei pensieri con massima fiducia in
-                    un'altra persona, la prontezza di mostrarsi davanti
-                    all’altro metaforicamente “nudi” e di versare—versare acqua,
-                    cioè aprirsi e raccontare (vedi: Arcano Maggiore XVII La
-                    Stella di Tarocchi Marsigliesi di A. Jodorowsky).
+                    Полная нагота XVII ЗВЕЗДЫ символизирует открытие чувств и
+                    мыслей с максимальным доверием к другому человеку,
+                    готовность показаться перед другим метафорически «голым» и
+                    лить—лить воду, то есть открыться и рассказать.
                 </p>
                 <p>
-                    Ma quale sarà il prezzo da pagare? Amicizia e Tradimento
-                    sono i due poli della Stella XVII.
+                    Но какой будет цена? Дружба и Предательство — два полюса
+                    XVII ЗВЕЗДЫ.
                 </p>
                 <p>
-                    XVII La Stella è un dono eccezionale. Un dono in qualsiasi
-                    cosa: qualcuno crea, qualcuno sputa il più lontano, qualcuno
-                    ha un aspetto insolito e unico.
+                    XVII ЗВЕЗДА — исключительный дар. Дар в любом деле: кто-то
+                    создаёт, кто-то плюёт подальше, у кого-то необычный и
+                    уникальный внешний вид.
                 </p>
                 <p>
-                    XVII La Stella incoraggia a trovare il vero «sé» e credere
-                    nel proprio talento divino. Liberazione da tutti coloro che
-                    non sono veri amici, purificazione attraverso la creatività
-                    e riconciliazione con i propri sentimenti e sogni, portando
-                    così all'assoluta libertà di espressione.
+                    XVII ЗВЕЗДА побуждает найти истинное «я» и верить в свой
+                    божественный талант. Освобождение от всех, кто не настоящие
+                    друзья, очищение через креативность и примирение со своими
+                    чувствами и мечтами, что приводит к абсолютной свободе
+                    самовыражения.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XVII.webp',
         advantages: [
-            'Ricco mondo interiore.',
-            'Sensibilità e sensualità.',
-            'Creatività.',
-            'Profondo senso della bellezza.',
-            'Sensibilità energetica, energia esoterica.',
-            'Organizzazione mentale sottile e quindi vulnerabile.',
-            'Connessioni sociali.',
-            'Accendere la speranza negli altri, diventando una luce guida.',
-            'Sentimenti sublimi.',
-            'Eccezionalità.',
+            'Богатый внутренний мир.',
+            'Чувственность и сенсуальность.',
+            'Креативность.',
+            'Глубокое чувство красоты.',
+            'Энергетическая чувствительность, эзотерическая энергия.',
+            'Тонкая и поэтому уязвимая ментальная организация.',
+            'Социальные связи.',
+            'Внушать надежду другим, становясь путеводным светом.',
+            'Возвышенные чувства.',
+            'Исключительность.',
         ],
         disadvantages: [
-            'Paura del successo.',
-            'Mancanza di fiducia in sé stesso, nelle altre persone e nei propri talenti.',
-            'Creatività bloccata.',
-            'Sentimenti ed emozioni bloccati.',
-            'Situazioni di infedeltà e di tradimento.',
-            'Dipendenza dalla compagnia degli amici.',
-            'Arroganza.',
-            'Apparenza.',
-            'Insensibilità, freddezza.',
-            // 'La "febbre delle stelle".',
+            'Страх успеха.',
+            'Отсутствие веры в себя, в других и в свои таланты.',
+            'Заблокированная креативность.',
+            'Заблокированные чувства и эмоции.',
+            'Ситуации неверности и предательства.',
+            'Зависимость от компании друзей.',
+            'Высокомерие.',
+            'Внешность.',
+            'Нечувствительность, холодность.',
         ],
     },
 
     XVIII: {
-        title: 'La Luna',
-        energy: 'FEMMINILE',
-        positive: 'INCONSCIO',
-        negative: 'PAURE',
+        title: 'ЛУНА',
+        energy: 'ЖЕНСКАЯ',
+        positive: 'БЕССОЗНАТЕЛЬНОЕ',
+        negative: 'СТРАХИ',
         content: (
             <>
                 <p>
-                    L'Archetipo XVIII La Luna rappresenta la personificazione
-                    dell'Anima, della psicologia e delle connessioni con
-                    l'inconscio. XVIII La Luna è la notte, e sotto la coltre
-                    dell'oscurità molte cose sono nascoste. Questo è il dominio
-                    della psiche, un campo misterioso e ancora poco esplorato.
+                    Архетип XVIII ЛУНА представляет персонификацию Души,
+                    психологии и связей с бессознательным. XVIII ЛУНА — это
+                    ночь, и под покровом темноты многое скрыто. Это царство
+                    психики, таинственное и ещё мало исследованное поле.
                 </p>
                 <p>
-                    Ci sono molti opposti nell'immagine dell'Archetipo XVIII La
-                    Luna: Sole e Luna, acqua e terra. Una torre è luminosa,
-                    l'altra è oscura. L’animale selvatico e l’animale domestico
-                    simboleggiano le parti addomesticate e le parti selvagge
-                    della psiche. Ci troviamo in un mondo mutevole, in continua
-                    evoluzione (vedi: Arcano Maggiore XVIII La Luna di Tarocchi
-                    Marsigliesi di A. Jodorowsky).
+                    В образе Архетипа XVIII ЛУНЫ много противоположностей:
+                    Солнце и Луна, вода и земля. Одна башня светлая, другая
+                    тёмная. Дикое и домашнее животное символизируют одомашненные
+                    и дикие части психики. Мы находимся в меняющемся мире,
+                    постоянно развивающемся.
                 </p>
                 <p>
-                    XVIII La Luna è innanzitutto un corpo celeste: luce alta,
-                    fredda e distante. Per questo motivo, chi possiede questo
-                    Archetipo può apparire strano, reticente, incomprensibile, e
-                    talvolta molto profondo, immerso nelle profondità
-                    dell'inconscio.
+                    XVIII ЛУНА — прежде всего небесное тело: высокий, холодный и
+                    далёкий свет. Поэтому тот, кто обладает этим Архетипом,
+                    может казаться странным, сдержанным, непонятным, а иногда
+                    очень глубоким, погружённым в глубины бессознательного.
                 </p>
                 <p>
-                    L'essenza dell'Archetipo XVIII La Luna è l'illusione, la
-                    tentazione di confondere l'illusione con la realtà e la
-                    realtà con l'illusione.
+                    Суть Архетипа XVIII ЛУНА — это иллюзия, соблазн перепутать
+                    иллюзию с реальностью и реальность с иллюзией.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XVIII.webp',
         advantages: [
-            'Conforto psicologico.',
-            'Empatia.',
-            'Comunicazione con il subconscio (spesso attraverso sogni, sogni profetici, sogni lucidi).',
-            'Intuizione sviluppata.',
-            'Esperienze mistiche.',
-            'Ricca immaginazione.',
-            'Percezione poetica.',
-            'Romanticismo.',
-            'Buone competenze in psicologia.',
-            'Talento culinario.',
+            'Психологический комфорт.',
+            'Эмпатия.',
+            'Коммуникация с подсознанием (часто через сны, пророческие сны, осознанные сны).',
+            'Развитая интуиция.',
+            'Мистический опыт.',
+            'Богатое воображение.',
+            'Поэтическое восприятие.',
+            'Романтизм.',
+            'Хорошие навыки в психологии.',
+            'Кулинарный талант.',
         ],
         disadvantages: [
-            'Emotività (energia mentale travolgente).',
-            'Confusione mentale.',
-            'Esaltazione esagerata dei sentimenti.',
-            'Difficoltà a distinguere la realtà dalla fantasia.',
-            'Esperienze mistiche illusorie.',
-            'Proiezioni inconsci.',
-            'Ansia.',
-            'Sospettosità.',
-            'Paure irrazionali.',
-            // 'Depressione.',
+            'Эмоциональность (подавляющая ментальная энергия).',
+            'Ментальная путаница.',
+            'Преувеличенное преувеличение чувств.',
+            'Трудности в различении реальности от фантазии.',
+            'Иллюзорный мистический опыт.',
+            'Бессознательные проекции.',
+            'Тревога.',
+            'Подозрительность.',
+            'Иррациональные страхи.',
         ],
     },
 
     XIX: {
-        title: 'Il Sole',
-        energy: 'MASCHILE',
-        positive: 'COSCENZA',
-        negative: 'INCENERIMENTO',
+        title: 'СОЛНЦЕ',
+        energy: 'МУЖСКАЯ',
+        positive: 'СОВЕСТЬ',
+        negative: 'ИСПЕПЕЛЕНИЕ',
         content: (
             <>
                 <p>
-                    L'Archetipo XIX Il Sole rappresenta la personificazione
-                    dell'Ego e della coscienza, che si rafforzano grazie alla
-                    conoscenza. XIX Il Sole illumina ciò che prima era nascosto,
-                    e le conoscenze acquisite espandono la coscienza umana.
+                    Архетип XIX СОЛНЦЕ представляет персонификацию Эго и
+                    совести, которые укрепляются благодаря знанию. XIX СОЛНЦЕ
+                    освещает то, что было скрыто, и приобретённые знания
+                    расширяют человеческое сознание.
                 </p>
                 <p>
-                    XIX Il Sole è il simbolo più potente del Divino di tutti i
-                    tempi. Rappresenta la crescita del Divino e il rafforzamento
-                    dell'Ego.
+                    XIX СОЛНЦЕ — самый мощный символ Божественного за всё время.
+                    Оно представляет рост Божественного и укрепление Эго.
                 </p>
                 <p>
-                    Questa è l'energia reale: mentre nell'Archetipo XI La Forza
-                    l'energia è interna (una persona dice: "Io" e "voglio"), qui
-                    essa è in alto. Una persona ha il diritto di volere, ma
-                    quanto è pronta la sua coscienza a ricevere lo status che
-                    XIX Il Sole può concedere? È necessaria un'espansione della
-                    coscienza per raggiungere quel status e far parte dell'alta
-                    società.
+                    Это реальная энергия: тогда как в Архетипе XI СИЛА энергия
+                    внутренняя (человек говорит: «Я» и «хочу»), здесь она
+                    наверху. Человек имеет право хотеть, но насколько его
+                    сознание готово получить статус, который может предоставить
+                    XIX СОЛНЦЕ? Необходимо расширение сознания для достижения
+                    этого статуса и принадлежности к высшему обществу.
                 </p>
                 <p>
-                    XIX Il Sole è l'Archetipo della leadership e del carisma.
-                    Ma, come il sole illumina tutto, anche le ombre verranno
-                    alla luce. Le ombre dell'anima emergono, e questo può essere
-                    pericoloso. XIX Il Sole può "bruciare" una persona che si
-                    lamenta: "Dovrei essere già tra gli Dei, ma sono ancora qui
-                    tra i mortali maledetti!".
+                    XIX СОЛНЦЕ — это Архетип лидерства и харизмы. Но, как солнце
+                    освещает всё, также тени выйдут на свет. Тени души
+                    проявляются, и это может быть опасно. XIX СОЛНЦЕ может
+                    «сжечь» человека, который жалуется: «Я должен быть уже среди
+                    богов, но я всё ещё здесь среди проклятых смертных!».
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XIX.webp',
         advantages: [
-            'Leadership.',
-            'Carisma irresistibile.',
-            'Autostima alta.',
-            'Allegria.',
-            'Buon senso di umorismo.',
-            'Buona istruzione ed educazione.',
-            'Gentilezza.',
-            'Generosità verso il mondo intero.',
-            'Motivazione.',
-            'Energia vitale.',
+            'Лидерство.',
+            'Неотразимая харизма.',
+            'Высокая самооценка.',
+            'Весёлость.',
+            'Хорошее чувство юмора.',
+            'Хорошее образование и воспитание.',
+            'Доброта.',
+            'Щедрость ко всему миру.',
+            'Мотивация.',
+            'Жизненная энергия.',
         ],
         disadvantages: [
-            'Sete di fama insaziabile.',
-            'Megalomania.',
-            'Enorme ego.',
-            'Orgoglio smisurato.',
-            'Bassa autostima.',
-            'Pessimismo.',
-            'Cinismo.',
-            'Mancanza di iniziativa.',
-            "Dipendenza dall'opinione pubblica.",
-            // 'Infantilismo.',
+            'Ненасытная жажда славы.',
+            'Мегаломания.',
+            'Огромное Эго.',
+            'Чрезмерная гордость.',
+            'Низкая самооценка.',
+            'Пессимизм.',
+            'Цинизм.',
+            'Отсутствие инициативы.',
+            'Зависимость от общественного мнения.',
         ],
     },
 
     XX: {
-        title: 'Il Giudizio',
-        energy: 'NEUTRALE',
-        positive: 'UNIONE SU VALORI COMUNI',
-        negative: 'MANCANZA DI VALORI PROPRI',
+        title: 'СУД',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'СОЮЗ НА ОБЩИХ ЦЕННОСТЯХ',
+        negative: 'ОТСУТСТВИЕ СОБСТВЕННЫХ ЦЕННОСТЕЙ',
         content: (
             <>
                 <p>
-                    L'Archetipo XX Il Giudizio rappresenta la personificazione
-                    di un Egregor, cioè di un'entità collettiva che riflette i
-                    valori di un gruppo o di un sistema. Questo Archetipo
-                    incarna il concetto di sistema strutturato, in cui esiste
-                    una gerarchia e una condivisione di valori comuni tra i
-                    membri. Può essere applicato a qualsiasi sistema, da una
-                    comunità religiosa o politica, fino a gruppi sociali o
-                    professionali o una famiglia.
+                    Архетип XX СУД представляет персонификацию Эгрегора, то есть
+                    коллективной сущности, которая отражает ценности группы или
+                    системы. Этот Архетип воплощает концепцию структурированной
+                    системы, в которой существует иерархия и разделение общих
+                    ценностей между членами. Он может быть применён к любой
+                    системе: от религиозного или политического сообщества до
+                    социальных или профессиональных групп или семьи.
                 </p>
                 <p>
-                    L'Archetipo XX parla di un sistema organizzato sotto forma
-                    di "piramide", dove al vertice c'è una figura fondatrice
-                    (come un leader o un fondatore), seguita da aderenti più
-                    stretti, i collaboratori e, infine, i membri di base del
-                    gruppo. Ogni livello di questa piramide è unito dalla
-                    condivisione di valori comuni, che vengono diffusi dal
-                    gruppo in modo più ampio.
+                    Архетип XX говорит об организованной системе в форме
+                    «пирамиды», где на вершине находится основатель (как лидер
+                    или основатель), за которым следуют более близкие
+                    последователи, сотрудники и, наконец, рядовые члены группы.
+                    Каждый уровень этой пирамиды объединён разделением общих
+                    ценностей, которые распространяются группой более широко.
                 </p>
                 <p>
-                    L'Archetipo XX ci invita a riflettere sulla coerenza tra i
-                    propri valori personali e quelli del gruppo. Se un individuo
-                    si unisce a un gruppo ma poi inizia a criticarsi o rigettare
-                    i valori condivisi, la domanda fondamentale da porsi è: qual
-                    è il motivo di questa contraddizione?
+                    Архетип XX приглашает нас размышлять о согласованности между
+                    личными ценностями человека и ценностями группы. Если
+                    индивид присоединяется к группе, но затем начинает
+                    критиковать или отвергать общие ценности, фундаментальный
+                    вопрос, который следует задать: какова причина этого
+                    противоречия?
                 </p>
                 <p>
-                    Se una persona ha una buona comprensione dell'essenza
-                    dell'Archetipo XX, sarà in grado di riconoscere chiaramente
-                    i propri bisogni e quindi capire a quale gruppo appartenere,
-                    e quale evitare.
+                    Если человек имеет хорошее понимание сущности Архетипа XX,
+                    он будет способен чётко распознать свои потребности и,
+                    следовательно, понять, к какой группе принадлежать, а какой
+                    избегать.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XX.webp',
         advantages: [
-            'Maturità psicologica.',
-            "Forza d'animo.",
-            'Un sano sistema di valori personali.',
-            'Pensiero filosofico.',
-            'Ragionamento globale.',
-            'Fondamentalismo.',
-            'Impatto trasformativo sugli altri.',
-            'Capacità di unire le persone.',
-            'Forte legame con gli antenati.',
-            'Conoscenza del passato e cambiamento del futuro.',
+            'Психологическая зрелость.',
+            'Сила духа.',
+            'Здоровая система личных ценностей.',
+            'Философское мышление.',
+            'Глобальное рассуждение.',
+            'Фундаментализм.',
+            'Трансформационное влияние на других.',
+            'Способность объединять людей.',
+            'Сильная связь с предками.',
+            'Знание прошлого и изменение будущего.',
         ],
         disadvantages: [
-            "Suscettibilità all'influenza degli altri.",
-            'Assenza dei propri valori.',
-            'Conservatorismo.',
-            'Pensiero ristretto.',
-            'Irresponsabilità verso la propria vita.',
-            'Mentalità comunitaria.',
-            'Mancanza di comprensione del concetto "famiglia".',
-            'Mancanza di venerazione degli antenati.',
-            'Difficoltà nel creare una famiglia.',
-            // 'Programmi familiari negativi.',
+            'Восприимчивость к влиянию других.',
+            'Отсутствие собственных ценностей.',
+            'Консерватизм.',
+            'Ограниченное мышление.',
+            'Безответственность к собственной жизни.',
+            'Менталитет сообщества.',
+            'Непонимание концепции «семья».',
+            'Отсутствие почитания предков.',
+            'Трудности в создании семьи.',
         ],
     },
 
     XXI: {
-        title: 'Il Mondo',
-        energy: 'NEUTRALE',
-        positive: 'ILLIMITATEZZA',
-        negative: 'INVASIONE DEI CONFINI',
+        title: 'МИР',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'БЕЗГРАНИЧНОСТЬ',
+        negative: 'НАРУШЕНИЕ ГРАНИЦ',
         content: (
             <>
                 <p>
-                    L'Archetipo XXI Il Mondo rappresenta la personificazione dei
-                    confini e della capacità di costruirli. Questo archetipo
-                    riguarda l'espansione e l'evoluzione dei propri limiti, sia
-                    fisici che mentali, e il modo in cui una persona si
-                    relaziona con il mondo e la propria consapevolezza.
+                    Архетип XXI МИР представляет персонификацию границ и
+                    способности их строить. Этот архетип касается расширения и
+                    эволюции собственных пределов, как физических, так и
+                    ментальных, и того, как человек относится к миру и своему
+                    осознанию.
                 </p>
                 <p>
-                    Pensiamo al mito del Paradiso con suo piccolo mondo ideale:
-                    un uomo e una donna vivono in armonia, tenendosi per mano,
-                    circondati da animali selvatici e le piante che crescono
-                    liberalmente. Perché questo scenario perfetto non ci
-                    soddisfa? - Perché non c’è sviluppo, c'è stagnazione. Il
-                    cambiamento avviene quando l'uomo e la donna decidono di
-                    mordere la mela, simbolo di conoscenza e consapevolezza.
-                    Questo atto rappresenta un'espansione dei confini, che, pur
-                    comportando dei rischi (come "avvelenarsi" con la
-                    conoscenza), è essenziale per il progresso.
+                    Рассмотрим миф о Рае с его маленьким идеальным миром:
+                    мужчина и женщина живут в гармонии, держась за руки,
+                    окружённые дикими животными и растениями, которые растут
+                    свободно. Почему этот идеальный сценарий нас не
+                    удовлетворяет? — Потому что нет развития, есть застой.
+                    Изменение происходит, когда мужчина и женщина решают укусить
+                    яблоко, символ знания и осознанности. Этот акт представляет
+                    расширение границ, которое, хотя и сопряжено с рисками (как
+                    «отравиться» знанием), необходимо для прогресса.
                 </p>
                 <p>
-                    Un morso alla mela ci insegna qualcosa di nuovo. Il momento
-                    in cui acquisisci conoscenza è anche quello in cui espandi i
-                    tuoi confini. Ci "avveleniamo" con la conoscenza per
-                    allargare i nostri limiti, ignorando il saggio detto: “Molta
-                    sapienza, molto affanno; chi accresce il sapere aumenta il
-                    dolore” (Qoèlet 1,18).
+                    Укус яблока учит нас чему-то новому. Момент, когда ты
+                    приобретаешь знания, — это также момент расширения твоих
+                    границ. Мы «отравляемся» знанием, чтобы расширить свои
+                    пределы, игнорируя мудрую поговорку: «Много мудрости — много
+                    горя; кто приумножает знание, приумножает скорбь»
+                    (Екклесиаст 1,18).
                 </p>
                 <p>
-                    L'Archetipo XXI insegna l'espansione volontaria dei confini
-                    attraverso l'acquisizione di nuove conoscenze, e ci invita a
-                    riflettere sulla nostra prontezza ad affrontare questo
-                    processo. Quando sei davvero pronto per uscire dalla tua
-                    zona di comfort? È possibile che tu non sia ancora pronto
-                    per affrontare una nuova espansione. Per fare il salto fuori
-                    dalla zona di comfort, spesso è necessario essere molto
-                    annoiati e insoddisfatti della situazione attuale,
-                    altrimenti l’espansione non avverrà in modo volontario e
-                    naturale.
+                    Архетип XXI учит добровольному расширению границ через
+                    приобретение новых знаний и приглашает нас размышлять о
+                    нашей готовности столкнуться с этим процессом. Когда ты
+                    действительно готов выйти из своей зоны комфорта? Возможно,
+                    ты ещё не готов столкнуться с новым расширением. Чтобы
+                    совершить прыжок из зоны комфорта, часто нужно быть очень
+                    скучающим и неудовлетворённым текущей ситуацией, иначе
+                    расширение не произойдёт добровольно и естественно.
                 </p>
                 <p>
-                    L'Archetipo XXI è anche responsabile dei confini del corpo e
-                    della coscienza: riguarda la nostra percezione del nostro
-                    posto nel mondo, la nostra consapevolezza e l'equilibrio tra
-                    ciò che siamo e ciò che vogliamo diventare. In un certo
-                    senso, l’Archetipo XXI Il Mondo parla della capacità di
-                    esistere fuori dal tempo e dalla struttura, vivendo nel
-                    mondo ma anche al di fuori delle sue limitazioni.
+                    Архетип XXI также отвечает за границы тела и сознания: это
+                    касается нашего восприятия нашего места в мире, нашей
+                    осознанности и равновесия между тем, кто мы есть, и тем, кем
+                    хотим стать. В определённом смысле, Архетип XXI МИР говорит
+                    о способности существовать вне времени и структуры, живя в
+                    мире, но также и за пределами его ограничений.
                 </p>
                 <p>
-                    Infine, l’Archetipo XXI invita a svegliarsi e vivere
-                    pienamente la propria vita. È il momento di espandere la
-                    nostra consapevolezza, di affrontare la conoscenza e di
-                    costruire, volontariamente, nuovi confini per una crescita
-                    continua.
+                    Наконец, Архетип XXI приглашает проснуться и полноценно
+                    прожить свою жизнь. Пришло время расширить нашу
+                    осознанность, столкнуться со знанием и построить,
+                    добровольно, новые границы для непрерывного роста.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XXI.webp',
         advantages: [
-            'Dono di diplomazia.',
-            'Estroversione.',
-            'Larghe vedute.',
-            'Ampia area di interessi.',
-            'Pensiero globale e progressista a beneficio di un gran numero di persone.',
-            'Mancanza di modelli e strutture di pensiero.',
-            'Impegno sociale.',
-            'Allargamento constante delle proprie conoscenze, competenze e abilità.',
-            'Interazione multiculturale.',
-            'Tolleranza.',
+            'Дар дипломатии.',
+            'Экстраверсия.',
+            'Широкий кругозор.',
+            'Широкая область интересов.',
+            'Глобальное и прогрессивное мышление на благо большого количества людей.',
+            'Отсутствие моделей и структур мышления.',
+            'Социальная вовлечённость.',
+            'Постоянное расширение своих знаний, навыков и умений.',
+            'Мультикультурное взаимодействие.',
+            'Толерантность.',
         ],
         disadvantages: [
-            'Dipendenze.',
-            'Violazione i confini degli altri.',
-            'Mancanza dei confini propri.',
-            'Introversione.',
-            'Ostilità verso le cose nuove.',
-            'Intolleranza.',
-            'Istigazione alle guerre.',
-            'Paura del cambiamento.',
-            'Fobie.',
-            // 'Codipendenza.',
+            'Зависимости.',
+            'Нарушение чужих границ.',
+            'Отсутствие собственных границ.',
+            'Интроверсия.',
+            'Враждебность к новым вещам.',
+            'Нетолерантность.',
+            'Подстрекательство к войнам.',
+            'Страх изменения.',
+            'Фобии.',
         ],
     },
 
     XXII: {
-        title: 'Il Matto',
-        energy: 'NEUTRALE',
-        positive: 'GIOCO',
-        negative: 'IRRESPONSABILITÀ',
+        title: 'ГЛУПЕЦ',
+        energy: 'НЕЙТРАЛЬНАЯ',
+        positive: 'ИГРА',
+        negative: 'БЕЗОТВЕТСТВЕННОСТЬ',
         content: (
             <>
                 <p>
-                    L'Archetipo XXII, Il Matto, rappresenta l'improvvisazione,
-                    la purezza dell'inizio e l'energia del bambino curioso. È
-                    l’essenza di una creatura che sta iniziando il proprio
-                    cammino, come Pinocchio, completamente ignara di ciò che lo
-                    aspetta.
+                    Архетип XXII, ГЛУПЕЦ, представляет импровизацию, чистоту
+                    начала и энергию любопытного ребёнка. Это суть существа,
+                    которое начинает свой путь, как Пиноккио, полностью не
+                    осознавая, что его ждёт.
                 </p>
                 <p>
-                    Nel suo zaino, simbolo delle esperienze passate, portiamo
-                    con noi la memoria di vite precedenti, un effetto di déjà vu
-                    che ci accompagna nel nostro viaggio. Lo zaino appoggiato su
-                    un bastone, simile a un cucchiaio, ci nutre con questa
-                    esperienza passata (vedi: Arcano Maggiore XXII Il Matto di
-                    Tarocchi Marsigliesi di A. Jodorowsky), ma ciò che conta ora
-                    sono le nuove esperienze che stiamo per vivere.
+                    В его рюкзаке, символе прошлого опыта, мы несём с собой
+                    память о предыдущих жизнях, эффект дежа вю, который
+                    сопровождает нас в нашем путешествии. Рюкзак, опирающийся на
+                    палку, похожую на ложку, питает нас этим прошлым опытом, но
+                    сейчас имеют значение новые переживания, которые мы готовы
+                    прожить.
                 </p>
                 <p>
-                    L'istinto di autoconservazione, tipico degli esseri viventi,
-                    è presente in noi, ma ciò che prevale è la curiosità verso
-                    il nuovo. L’Archetipo XXII è il simbolo della libertà
-                    assoluta, un momento di impulso creativo dove l’impossibile
-                    non esiste. In questo nuovo ciclo della vita, non esistono
-                    ancora atteggiamenti mentali come “non funziona”, “non so
-                    come fare” o “non posso”.
+                    Инстинкт самосохранения, типичный для живых существ,
+                    присутствует в нас, но преобладает любопытство к новому.
+                    Архетип XXII — символ абсолютной свободы, момент творческого
+                    импульса, где невозможное не существует. В этом новом цикле
+                    жизни ещё не существует ментальных установок «не работает»,
+                    «не знаю как сделать» или «не могу».
                 </p>
                 <p>
-                    Tuttavia, l’altro lato di questo archetipo è la tentazione
-                    di non crescere mai, rimanendo un eterno Peter Pan.
+                    Однако другая сторона этого архетипа — соблазн никогда не
+                    расти, оставаясь вечным Питером Пэном.
                 </p>
                 <p>
-                    Ecco alcune caratteristiche di questo Archetipo che potresti
-                    riconoscere.
+                    Вот некоторые характеристики этого Архетипа, которые ты
+                    можешь узнать.
                 </p>
             </>
         ),
         image: '/images/archetypes/XXII.webp',
         advantages: [
-            'Libertà da convenzioni e pregiudizi.',
-            'Curiosità instancabile.',
-            'Animazione come stile di vita.',
-            'Leggerezza.',
-            'Spontaneità nelle azioni e nel comportamento.',
-            'Sentimento di libertà assoluta.',
-            'Capacità di trovare nuove strade.',
-            'Sentimento del sostegno divino.',
-            'Capacità di apparire al momento giusto e nel posto giusto.',
-            'Multipotenziale.',
+            'Свобода от условностей и предубеждений.',
+            'Неутомимое любопытство.',
+            'Анимация как стиль жизни.',
+            'Лёгкость.',
+            'Спонтанность в действиях и поведении.',
+            'Чувство абсолютной свободы.',
+            'Способность находить новые пути.',
+            'Чувство божественной поддержки.',
+            'Способность появиться в нужное время и в нужном месте.',
+            'Мультипотенциальность.',
         ],
         disadvantages: [
-            'Creazione del caos.',
-            'Irresponsabilità in questioni importanti.',
-            'Infantilismo.',
-            'Impulsività.',
-            'Immaturità nel pensiero e nelle reazioni.',
-            'Ingenuità eccessiva, che si avvicina alla stupidità.',
-            'Creatività soppressa.',
-            'Mancanza di autenticità.',
-            'Paura di sbagliare.',
-            'Serietà eccessiva.',
-            // 'Mancanza di interessi e hobby.',
+            'Создание хаоса.',
+            'Безответственность в важных вопросах.',
+            'Инфантилизм.',
+            'Импульсивность.',
+            'Незрелость в мышлении и реакциях.',
+            'Чрезмерная наивность, граничащая со глупостью.',
+            'Подавленная креативность.',
+            'Отсутствие аутентичности.',
+            'Страх ошибиться.',
+            'Чрезмерная серьёзность.',
         ],
     },
 };
@@ -1587,7 +1502,7 @@ function ArchetypeArchetype() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </button>
                     <h1 className="archetype__title title-1">
                         {id} {currentArchetype.title.toUpperCase()}
@@ -1595,21 +1510,20 @@ function ArchetypeArchetype() {
                     <div className="archetype__text-box">
                         <div className="archetype__text">
                             <p className="">
-                                Se hai trovato il numero {id} nella tua mappa
-                                archetipica, allora queste informazioni sono
-                                dedicate a te.
+                                Если вы нашли номер {id} в своей архетипической
+                                карте, то эта информация посвящена вам.
                             </p>
                             <ul className="archetype__short-description">
                                 <li>
-                                    <span>Energia:</span>
+                                    <span>Энергия:</span>
                                     <span>{currentArchetype.energy}</span>
                                 </li>
                                 <li>
-                                    <span>Manifestazione positiva:</span>
+                                    <span>Положительная проявление:</span>
                                     <span>{currentArchetype.positive}</span>
                                 </li>
                                 <li>
-                                    <span>Manifestazione negativa:</span>
+                                    <span>Отрицательная проявление:</span>
                                     <span>{currentArchetype.negative}</span>
                                 </li>
                             </ul>
@@ -1628,7 +1542,7 @@ function ArchetypeArchetype() {
                         </div>
                         <div className="archetype__info-box">
                             <h2 className="archetype__info-title underline">
-                                10 vantaggi:
+                                10 преимуществ:
                             </h2>
                             <ul className="archetype__positive-list">
                                 {currentArchetype.advantages.map(
@@ -1643,7 +1557,7 @@ function ArchetypeArchetype() {
                                 )}
                             </ul>
                             <h2 className="archetype__info-title underline">
-                                10 svantaggi:
+                                10 недостатков:
                             </h2>
                             <ul className="archetype__negative-list">
                                 {currentArchetype.disadvantages.map(
@@ -1657,22 +1571,16 @@ function ArchetypeArchetype() {
                                     )
                                 )}
                             </ul>
-                            {/* <p className="archetype__info-text">
-                                Per una persona con questo archetipo è
-                                importante essere attenti ai dettagli,
-                                sviluppare la capacità di parlare, esprimere i
-                                pensieri con competenza.
-                            </p> */}
                             <div className="archetype__button-box">
                                 <Button
-                                    text="RICHIEDI UNA CONSULENZA"
+                                    text="ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ"
                                     className="archetype__info-btn "
                                     onClick={() =>
                                         dispatch(setOpenContactForm(true))
                                     }
                                 />
                                 <Button
-                                    text="ACQUISTA LA DISCREZIONE COMPLETA DELL’ARCHETIPO"
+                                    text="КУПИТЬ ПОЛНОЕ ОПИСАНИЕ АРХЕТИПА"
                                     className="archetype__info-btn button--black"
                                     onClick={() => {
                                         // dispatch(setOpenBuyForm(true));
@@ -1681,31 +1589,31 @@ function ArchetypeArchetype() {
                             </div>
                             <div className="archetype__sub-text">
                                 <p>
-                                    Gli archetipi sono energie profonde e
-                                    sottili che plasmano il nostro carattere e
-                                    influenzano il nostro percorso, agendo sia
-                                    sui grandi temi dell’esistenza che sulle
-                                    abitudini quotidiane — spesso all’apparenza
-                                    insignificanti, ma decisive nel dirigere il
-                                    cammino.
+                                    Архетипы — это глубокие и тонкие энергии,
+                                    которые формируют наш характер и влияют на
+                                    наш путь, воздействуя как на большие темы
+                                    существования, так и на повседневные
+                                    привычки — часто на первый взгляд
+                                    незначительные, но решающие в направлении
+                                    пути.
                                 </p>
                                 <p>
-                                    Ogni archetipo è multiforme: si manifesta in
-                                    modi diversi a seconda della posizione nella
-                                    mappa e della storia personale.
+                                    Каждый архетип многолик: он проявляется
+                                    по-разному в зависимости от позиции в карте
+                                    и личной истории.
                                 </p>
                                 <p>
-                                    Analizzo l’insieme degli archetipi e le loro
-                                    interazioni per offrire una visione completa
-                                    delle dinamiche interiori e del contesto che
-                                    influisce sul presente, aiutando a trovare
-                                    risposte chiare alle domande profonde.
+                                    Я анализирую совокупность архетипов и их
+                                    взаимодействия, чтобы предложить полную
+                                    картину внутренних динамик и контекста,
+                                    влияющего на настоящее, помогая найти чёткие
+                                    ответы на глубокие вопросы.
                                 </p>
                                 <p>
-                                    Le risposte si trovano già nelle energie
-                                    presenti nella tua mappa: una guida fedele
-                                    per orientare consapevolmente il tuo
-                                    percorso.
+                                    Ответы уже находятся в энергиях,
+                                    присутствующих в вашей карте: верный
+                                    проводник для осознанной навигации вашего
+                                    пути.
                                 </p>
                             </div>
                         </div>

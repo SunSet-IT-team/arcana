@@ -16,7 +16,7 @@ function MainMenu() {
                         tag="h2"
                         className="menu__title title title-2 title-animation"
                     >
-                        <span>MENU</span>
+                        <span>МЕНЮ</span>
                     </TitleAnimation>
                     <div className="menu__box">
                         <Menu />

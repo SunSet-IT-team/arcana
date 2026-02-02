@@ -10,206 +10,206 @@ import {useSelector} from 'react-redux';
 
 export const archetypesData = [
     {
-        title: 'Il Mago',
+        title: 'МАГ',
         number: 'I',
-        positive: 'PAROLA',
-        negative: 'CHIACCHERE INUTILI',
+        positive: 'СЛОВО',
+        negative: 'ПУСТЫЕ РАЗГОВОРЫ',
         imgSrc: './images/archetypes/1.webp',
         linkTo: '/archetypes/I',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'La Papessa',
+        title: 'ПАПЕССА',
         number: 'II',
-        positive: 'TUTELA',
-        negative: 'IPERPROTEZIONE',
+        positive: 'ЗАЩИТА',
+        negative: 'ГИПЕРЗАЩИТА',
         imgSrc: './images/archetypes/2.webp',
         linkTo: '/archetypes/II',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: "L'Imperatrice",
+        title: 'ИМПЕРАТРИЦА',
         number: 'III',
-        positive: 'BELLEZZA',
-        negative: 'INFERTILITA’',
+        positive: 'КРАСОТА',
+        negative: 'БЕСПЛОДИЕ',
         imgSrc: './images/archetypes/3.webp',
         linkTo: '/archetypes/III',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: "L'Imperatore",
+        title: 'ИМПЕРАТОР',
         number: 'IV',
-        positive: 'POTERE',
-        negative: 'DISPOTISMO',
+        positive: 'ВЛАСТЬ',
+        negative: 'ДЕСПОТИЗМ',
         imgSrc: './images/archetypes/4.webp',
         linkTo: '/archetypes/IV',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'Il Papa',
+        title: 'ПАПА',
         number: 'V',
-        positive: 'AUTORITA’',
-        negative: 'STUPIDITÀ',
+        positive: 'АВТОРИТЕТ',
+        negative: 'ГЛУПОСТЬ',
         imgSrc: './images/archetypes/5.webp',
         linkTo: '/archetypes/V',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: "L'Innamorato",
+        title: 'ВЛЮБЛЁННЫЙ',
         number: 'VI',
-        positive: 'SCELTA',
-        negative: 'DISTRUZIONE DELLA RELAZIONE',
+        positive: 'ВЫБОР',
+        negative: 'РАЗРУШЕНИЕ ОТНОШЕНИЙ',
         imgSrc: './images/archetypes/6.webp',
         linkTo: '/archetypes/VI',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'Il Carro',
+        title: 'КОЛЕСНИЦА',
         number: 'VII',
-        positive: 'BERSAGLIO',
-        negative: 'ASSENZA DI SCOPO',
+        positive: 'ЦЕЛЬ',
+        negative: 'ОТСУТСТВИЕ ЦЕЛИ',
         imgSrc: './images/archetypes/7.webp',
         linkTo: '/archetypes/VII',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'La Giustizia',
+        title: 'СПРАВЕДЛИВОСТЬ',
         number: 'VIII',
-        positive: 'REGOLE',
-        negative: 'INIQUITÀ',
+        positive: 'ПРАВИЛА',
+        negative: 'НЕСПРАВЕДЛИВОСТЬ',
         imgSrc: './images/archetypes/8.webp',
         linkTo: '/archetypes/VIII',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: 'L’Eremita',
+        title: 'ОТШЕЛЬНИК',
         number: 'IX',
-        positive: 'SAGGEZZA',
-        negative: 'IL CAMMINO DI QUALCUN ALTRO',
+        positive: 'МУДРОСТЬ',
+        negative: 'ПУТЬ ДРУГОГО',
         imgSrc: './images/archetypes/9.webp',
         linkTo: '/archetypes/IX',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'La Ruota della Fortuna',
+        title: 'КОЛЕСО ФОРТУНЫ',
         number: 'X',
-        positive: 'PROPRI BISOGNI',
-        negative: 'DEBITI',
+        positive: 'СВОИ ПОТРЕБНОСТИ',
+        negative: 'ДОЛГИ',
         imgSrc: './images/archetypes/10.webp',
         linkTo: '/archetypes/X',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'La Forza',
+        title: 'СИЛА',
         number: 'XI',
-        positive: 'GESTA EROICHE',
-        negative: 'VIOLENZA',
+        positive: 'ГЕРОИЧЕСКИЕ ПОСТУПКИ',
+        negative: 'НАСИЛИЕ',
         imgSrc: './images/archetypes/11.webp',
         linkTo: '/archetypes/XI',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'L’Appeso',
+        title: 'ПОВЕШЕННЫЙ',
         number: 'XII',
-        positive: 'SACRIFICIO VOLONTARIO',
-        negative: 'VITTIMA',
+        positive: 'ДОБРОВОЛЬНЫЙ ЖЕРТВА',
+        negative: 'ЖЕРТВА',
         imgSrc: './images/archetypes/12.webp',
         linkTo: '/archetypes/XII',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'La Morte',
+        title: 'СМЕРТЬ',
         number: 'XIII',
-        positive: 'CAMBIAMENTI',
-        negative: 'STAGNAZIONE',
+        positive: 'ИЗМЕНЕНИЯ',
+        negative: 'ЗАСТОЙ',
         imgSrc: './images/archetypes/13.webp',
         linkTo: '/archetypes/XIII',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: 'La Temperanza',
+        title: 'УМЕРЕННОСТЬ',
         number: 'XIV',
-        positive: 'EQUILIBRIO',
-        negative: 'ESTREMI',
+        positive: 'РАВНОВЕСИЕ',
+        negative: 'КРАЙНОСТИ',
         imgSrc: './images/archetypes/14.webp',
         linkTo: '/archetypes/XIV',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'Il Diavolo',
+        title: 'ДЬЯВОЛ',
         number: 'XV',
-        positive: 'PIACERE',
-        negative: 'DIPENDENZE',
+        positive: 'УДОВОЛЬСТВИЕ',
+        negative: 'ЗАВИСИМОСТИ',
         imgSrc: './images/archetypes/15.webp',
         linkTo: '/archetypes/XV',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'La Torre',
+        title: 'БАШНЯ',
         number: 'XVI',
-        positive: 'COSTRUZIONE',
-        negative: 'DISTRUZIONE',
+        positive: 'СТРОИТЕЛЬСТВО',
+        negative: 'РАЗРУШЕНИЕ',
         imgSrc: './images/archetypes/16.webp',
         linkTo: '/archetypes/XVI',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'La Stella',
+        title: 'ЗВЕЗДА',
         number: 'XVII',
-        positive: 'AMICIZIA',
-        negative: 'TRADIMENTO',
+        positive: 'ДРУЖБА',
+        negative: 'ПРЕДАТЕЛЬСТВО',
         imgSrc: './images/archetypes/17.webp',
         linkTo: '/archetypes/XVII',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: 'La Luna',
+        title: 'ЛУНА',
         number: 'XVIII',
-        positive: 'INCONSCIO',
-        negative: 'PAURE',
+        positive: 'БЕССОЗНАТЕЛЬНОЕ',
+        negative: 'СТРАХИ',
         imgSrc: './images/archetypes/18.webp',
         linkTo: '/archetypes/XVIII',
-        energy: 'FEMMINILE',
+        energy: 'ЖЕНСКАЯ',
     },
     {
-        title: 'Il Sole',
+        title: 'СОЛНЦЕ',
         number: 'XIX',
-        positive: 'COSCENZA',
-        negative: 'INCENERIMENTO',
+        positive: 'СОВЕСТЬ',
+        negative: 'ИСПЕПЕЛЕНИЕ',
         imgSrc: './images/archetypes/19.webp',
         linkTo: '/archetypes/XIX',
-        energy: 'MASCHILE',
+        energy: 'МУЖСКАЯ',
     },
     {
-        title: 'Il Giudizio',
+        title: 'СУД',
         number: 'XX',
-        positive: 'UNIONE SU VALORI COMUNI',
-        negative: 'MANCANZA DI VALORI PROPRI',
+        positive: 'СОЮЗ НА ОБЩИХ ЦЕННОСТЯХ',
+        negative: 'ОТСУТСТВИЕ СОБСТВЕННЫХ ЦЕННОСТЕЙ',
         imgSrc: './images/archetypes/20.webp',
         linkTo: '/archetypes/XX',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'Il Mondo',
+        title: 'МИР',
         number: 'XXI',
-        positive: 'ILLIMITATEZZA',
-        negative: 'INVASIONE DEI CONFINI',
+        positive: 'БЕЗГРАНИЧНОСТЬ',
+        negative: 'НАРУШЕНИЕ ГРАНИЦ',
         imgSrc: './images/archetypes/21.webp',
         linkTo: '/archetypes/XXI',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'Il Matto',
+        title: 'ГЛУПЕЦ',
         number: 'XXII',
-        positive: 'GIOCO',
-        negative: 'IRRESPONSABILITÀ',
+        positive: 'ИГРА',
+        negative: 'БЕЗОТВЕТСТВЕННОСТЬ',
         imgSrc: './images/archetypes/22.webp',
         linkTo: '/archetypes/XXII',
-        energy: 'NEUTRALE',
+        energy: 'НЕЙТРАЛЬНАЯ',
     },
 ];
 const archetypesOptions = [
-    {value: 'TUTTI', label: 'TUTTI'},
+    {value: 'ВСЕ', label: 'ВСЕ'},
     {value: 'I', label: 'I'},
     {value: 'II', label: 'II'},
     {value: 'III', label: 'III'},
@@ -225,9 +225,9 @@ const archetypesOptions = [
     {value: 'XIII', label: 'XIII'},
     {value: 'XIV', label: 'XIV'},
     {value: 'XV', label: 'XV'},
-    {value: 'VI', label: 'VI'},
-    {value: 'VII', label: 'VII'},
-    {value: 'VIII', label: 'VIII'},
+    {value: 'XVI', label: 'XVI'},
+    {value: 'XVII', label: 'XVII'},
+    {value: 'XVIII', label: 'XVIII'},
     {value: 'XIX', label: 'XIX'},
     {value: 'XX', label: 'XX'},
     {value: 'XXI', label: 'XXI'},
@@ -239,14 +239,14 @@ function ArchetypesArchetypes() {
 
     const [archetypes, setArchetypes] = useState(archetypesData);
     const [selectedArchetypesFilter, setSelectedArchetypesFilter] =
-        useState('TUTTI');
+        useState('ВСЕ');
 
     const handleArchetypesFilterChange = (selectedArchetypesFilter) => {
         setSelectedArchetypesFilter(selectedArchetypesFilter);
     };
 
     const filteredArchetypes = useMemo(() => {
-        return selectedArchetypesFilter === 'TUTTI'
+        return selectedArchetypesFilter === 'ВСЕ'
             ? archetypesData
             : archetypesData.filter(
                   (item) => item.number === selectedArchetypesFilter
@@ -310,9 +310,9 @@ function ArchetypesArchetypes() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
-                    <h1 className="archetypes__title title-1">22 ARCHETYPES</h1>
+                    <h1 className="archetypes__title title-1">22 АРХЕТИПА</h1>
 
                     <div className="archetypes__filter">
                         <ul className="archetypes__filter-list">
@@ -333,7 +333,7 @@ function ArchetypesArchetypes() {
                         <SelectLabel
                             className="archetypes__filter-select"
                             options={archetypesOptions}
-                            placeholder="TUTTI"
+                            placeholder="ВСЕ"
                             onChange={handleArchetypesFilterChange}
                             value={selectedArchetypesFilter}
                         />
@@ -361,19 +361,19 @@ function ArchetypesArchetypes() {
                                                 {archetype.number}
                                             </span>
                                             <p className="archetypes__item-energy">
-                                                Energia:
+                                                Энергия:
                                                 <span className="archetypes__item-span">
                                                     {archetype.energy}
                                                 </span>
                                             </p>
                                             <p className="archetypes__item-positive">
-                                                Manifestazione positiva:
+                                                Положительная проявление:
                                                 <span className="archetypes__item-span">
                                                     {archetype.positive}
                                                 </span>
                                             </p>
                                             <p className="archetypes__item-negative">
-                                                Manifestazione negativa:
+                                                Отрицательная проявление:
                                                 <span className="archetypes__item-span">
                                                     {archetype.negative}
                                                 </span>
@@ -385,7 +385,7 @@ function ArchetypesArchetypes() {
                                                 href="#"
                                             >
                                                 <span className="underline">
-                                                    Più dettagli
+                                                    Подробнее
                                                 </span>
                                                 <svg
                                                     width="21"

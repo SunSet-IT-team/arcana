@@ -90,19 +90,18 @@ function PartnerCalculatorCalculator() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
                     <h1 className="partner-calculator__title title-1">
-                        CALCOLA LA MAPPA ARCHETIPICA DEL RAPPORTO TRA DUE
-                        PARTNER
+                        РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ ОТНОШЕНИЙ
                     </h1>
                     <div className="partner-calculator__content">
                         <span className="partner-calculator__span">
-                            Inserire le date di nascita dei partner
+                            Введите даты рождения обоих партнёров
                         </span>
                         <div className="partner-calculator__body">
                             <h2 className="partner-calculator__body-title">
-                                CALCOLA LA MAPPA ARCHETIPICA DEL RAPPORTO
+                                РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ ОТНОШЕНИЙ
                             </h2>
                             <div className="partner-calculator__select-wrapper">
                                 <SelectDate
@@ -135,7 +134,7 @@ function PartnerCalculatorCalculator() {
                                 }
                             >
                                 <LinkTo
-                                    text="CALCOLARE"
+                                    text="РАССЧИТАТЬ"
                                     path="partner-results"
                                     className="partner-calculator__body-link"
                                 ></LinkTo>

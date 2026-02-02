@@ -14,7 +14,7 @@ import {LoadingSpinner} from '../LoadingSpinner/LoadingSpinner';
 
 function StorysStory() {
     const [selectedStoryFilter, setSelectedStoryFilter] = useState({
-        label: 'TUTTI',
+        label: 'ВСЕ',
         value: 0,
     });
 
@@ -94,11 +94,9 @@ function StorysStory() {
                                 fill="currentColor"
                             />
                         </svg>
-                        <span className="underline">Torna indietro</span>
+                        <span className="underline">Назад</span>
                     </Link>
-                    <h1 className="storys__title title-1">
-                        STORIE DEI CLIENTI
-                    </h1>
+                    <h1 className="storys__title title-1">ИСТОРИИ КЛИЕНТОВ</h1>
 
                     {tags && tags.length && (
                         <div className="storys__filter">
@@ -122,7 +120,7 @@ function StorysStory() {
                             <SelectLabel
                                 className="storys__filter-select"
                                 options={tags}
-                                placeholder="TUTTI"
+                                placeholder="ВСЕ"
                                 onChange={handleStoryFilterChange}
                                 value={selectedStoryFilter.value}
                             />
@@ -166,7 +164,7 @@ function StorysStory() {
                                                 </div>
 
                                                 <LinkTo
-                                                    text="LEGGERE"
+                                                    text="ЧИТАТЬ"
                                                     path={`story/${story.slug}`}
                                                     className="storys__item-link link--black"
                                                 />
@@ -181,7 +179,7 @@ function StorysStory() {
                     )}
 
                     {!(isPostPending || isFetchingNextPage) &&
-                        !allPosts.length > 0 && <h3>Nessun record</h3>}
+                        !allPosts.length > 0 && <h3>Нет записей</h3>}
                 </div>
             </div>
         </section>

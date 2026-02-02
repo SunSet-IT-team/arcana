@@ -59,7 +59,7 @@ function MainBlog() {
                             <BlogList data={allPosts} isShowMore={false} />
                             <div className="blog-demo__link-wrapper">
                                 <Link
-                                    text="TUTTI GLI ARTICOLI DEL BLOG"
+                                    text="ВСЕ СТАТЬИ"
                                     className="blog-demo__link link--black"
                                     path="blog"
                                 />
@@ -67,7 +67,7 @@ function MainBlog() {
                         </>
                     )}
                     {!allPosts.length && (
-                        <h3 style={{textAlign: 'center'}}>Nessun record</h3>
+                        <h3 style={{textAlign: 'center'}}>Нет записей</h3>
                     )}
                 </div>
             </div>

@@ -30,11 +30,11 @@ function SuccessSend() {
                                     fill="currentColor"
                                 />
                             </svg>
-                            <span className="underline">Torna indietro</span>
+                            <span className="underline">Назад</span>
                         </Link>
 
                         <h1 className="success-send__title title-1">
-                            Grazie per la tua richiesta!
+                            Спасибо за вашу заявку!
                         </h1>
                     </div>
                 </div>

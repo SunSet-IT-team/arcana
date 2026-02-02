@@ -61,18 +61,18 @@ function SelectDate({
     }));
 
     const monthOptions = [
-        {value: '1', label: 'GENNAIO'},
-        {value: '2', label: 'FEBBRAIO'},
-        {value: '3', label: 'MARZO'},
-        {value: '4', label: 'APRILE'},
-        {value: '5', label: 'MAGGIO'},
-        {value: '6', label: 'GIUGNO'},
-        {value: '7', label: 'LUGLIO'},
-        {value: '8', label: 'AGOSTO'},
-        {value: '9', label: 'SETTEMBRE'},
-        {value: '10', label: 'OTTOBRE'},
-        {value: '11', label: 'NOVEMBRE'},
-        {value: '12', label: 'DICEMBRE'},
+        {value: '1', label: 'ЯНВАРЬ'},
+        {value: '2', label: 'ФЕВРАЛЬ'},
+        {value: '3', label: 'МАРТ'},
+        {value: '4', label: 'АПРЕЛЬ'},
+        {value: '5', label: 'МАЙ'},
+        {value: '6', label: 'ИЮНЬ'},
+        {value: '7', label: 'ИЮЛЬ'},
+        {value: '8', label: 'АВГУСТ'},
+        {value: '9', label: 'СЕНТЯБРЬ'},
+        {value: '10', label: 'ОКТЯБРЬ'},
+        {value: '11', label: 'НОЯБРЬ'},
+        {value: '12', label: 'ДЕКАБРЬ'},
     ];
 
     const yearOptions = Array.from({length: 121}, (_, index) => {
@@ -108,7 +108,7 @@ function SelectDate({
             <li className="select-date__item">
                 <SelectLabel
                     options={monthOptions}
-                    placeholder="GENNAIO"
+                    placeholder="ЯНВАРЬ"
                     onChange={handleMonthChange}
                     value={selectedMonth}
                 />

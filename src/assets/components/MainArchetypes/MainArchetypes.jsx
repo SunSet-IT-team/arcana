@@ -16,7 +16,7 @@ function MainArchetypes() {
                         tag="h2"
                         className="archetypes-demo__title title title-animation"
                     >
-                        <span>22 ARCHETYPES</span>
+                        <span>22 АРХЕТИПА</span>
                     </TitleAnimation>
                     <Slider />
                 </div>

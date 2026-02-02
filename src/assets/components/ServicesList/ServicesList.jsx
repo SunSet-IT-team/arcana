@@ -39,7 +39,7 @@ function ServicesList({services}) {
                                         ⠀
                                     </span>
                                     <span className="services-list__price">
-                                        {service.price} euro
+                                        {service.price} евро
                                     </span>
                                 </>
                             )}
@@ -51,7 +51,7 @@ function ServicesList({services}) {
                                 <img
                                     className="services-list__info-img"
                                     src={`./images/services/${service.img}.jpg`}
-                                    alt="services-photo"
+                                    alt="фото услуги"
                                     loading="lazy"
                                 />
                             </div>
@@ -61,7 +61,7 @@ function ServicesList({services}) {
                                     className="services-list__button underline"
                                     onClick={() => handleOpenCard(index)}
                                 >
-                                    Leggi tutto
+                                    Читать полностью
                                 </button>
                             )}
 
@@ -70,12 +70,12 @@ function ServicesList({services}) {
                                     className="services-list__button underline"
                                     onClick={() => handleOpenCard(index)}
                                 >
-                                    Chiudi
+                                    Свернуть
                                 </button>
                             )}
 
                             <Button
-                                text="Iscriviti"
+                                text="Записаться"
                                 className="services-list__info-button"
                                 onClick={() => {
                                     // dispatch(setOpenContactForm(true))

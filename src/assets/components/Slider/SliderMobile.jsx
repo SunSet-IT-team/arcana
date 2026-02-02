@@ -85,7 +85,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                         <div className="archetypes-demo__item-info">
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Energia:
+                                    Энергия:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.energy}
@@ -93,7 +93,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Manifestazione positiva:
+                                    Положительная проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.positive}
@@ -101,7 +101,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Manifestazione negativa:
+                                    Отрицательная проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.negative}
@@ -111,9 +111,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                                 to={archetype.linkTo}
                                 className="archetypes-demo__item-link arrow"
                             >
-                                <span className="underline">
-                                    Per saperne di più
-                                </span>
+                                <span className="underline">Подробнее</span>
                                 <svg
                                     width="21"
                                     height="21"

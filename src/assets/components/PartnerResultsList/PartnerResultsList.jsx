@@ -29,7 +29,7 @@ function ResultsList({
     return (
         <ul className="results-list" style={{marginTop: '-120px'}}>
             {/* <li className="results-list__item">
-                <span className="results-list__name">11 pos.</span>
+                <span className="results-list__name">11 поз.</span>
                 <span className="results-list__number">
                     {toRim(jointPos11)}
                 </span>
@@ -41,7 +41,7 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
-                <span className="results-list__name">13 pos.</span>
+                <span className="results-list__name">13 поз.</span>
                 <span className="results-list__number">
                     {toRim(jointPos13)}
                 </span>
@@ -53,7 +53,7 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
-                <span className="results-list__name">9 pos.</span>
+                <span className="results-list__name">9 поз.</span>
                 <span className="results-list__number">{toRim(jointPos9)}</span>
             </li> */}
             {/* --------------------------------------------------- */}
@@ -63,7 +63,7 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
-                <span className="results-list__name">10 pos.</span>
+                <span className="results-list__name">10 поз.</span>
                 <span className="results-list__number">
                     {toRim(jointPos10)}
                 </span>
@@ -75,7 +75,7 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             {/* <li className="results-list__item">
-                <span className="results-list__name">14 pos.</span>
+                <span className="results-list__name">14 поз.</span>
                 <span className="results-list__number">
                     {toRim(jointPos14)}
                 </span>
@@ -87,35 +87,35 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             <li className="results-list__item">
-                <span className="results-list__name">1 pos.</span>
+                <span className="results-list__name">1 поз.</span>
                 <span className="results-list__number">{toRim(jointPos1)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">2 pos.</span>
+                <span className="results-list__name">2 поз.</span>
                 <span className="results-list__number">{toRim(jointPos2)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">3 pos.</span>
+                <span className="results-list__name">3 поз.</span>
                 <span className="results-list__number">{toRim(jointPos3)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">4 pos.</span>
+                <span className="results-list__name">4 поз.</span>
                 <span className="results-list__number">{toRim(jointPos4)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">5 pos.</span>
+                <span className="results-list__name">5 поз.</span>
                 <span className="results-list__number">{toRim(jointPos5)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">7 pos.</span>
+                <span className="results-list__name">7 поз.</span>
                 <span className="results-list__number">{toRim(jointPos7)}</span>
             </li>
             <li className="results-list__item">
-                <span className="results-list__name">6 pos.</span>
+                <span className="results-list__name">6 поз.</span>
                 <span className="results-list__number">{toRim(jointPos6)}</span>
             </li>
             {/* <li className="results-list__item">
-                <span className="results-list__name">12 pos.</span>
+                <span className="results-list__name">12 поз.</span>
                 <span className="results-list__number">
                     {toRim(jointPos12)}
                 </span>
@@ -127,7 +127,7 @@ function ResultsList({
             </li>
             {/* --------------------------------------------------- */}
             <li className="results-list__item">
-                <span className="results-list__name">8 pos.</span>
+                <span className="results-list__name">8 поз.</span>
                 <span className="results-list__number">{toRim(jointPos8)}</span>
             </li>
             <li className="results-list__item">
