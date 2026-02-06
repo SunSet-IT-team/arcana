@@ -17,7 +17,7 @@ function MainServices() {
                         tag="h2"
                         className="services-demo__title title title-2 title-animation"
                     >
-                        <span>КОНСУЛЬТАЦИИ</span>
+                        <span>УСЛУГИ</span>
                     </TitleAnimation>
 
                     <ServicesList services={servicesData.slice(0, 3)} />

@@ -76,13 +76,13 @@ function MonthResultsResults() {
                     <div className="month-results__content">
                         <span className="month-results__span">
                             <p>
-                                Поздравляем! Ниже представлена подробная таблица
-                                архетипических энергий на запрашиваемый период.
+                                Поздравляю! Вот подробная таблица архетипических
+                                энергий на заданный период.
                             </p>
                             <p>
-                                Осознание энергий, на которых следует
-                                сосредоточиться, даёт нам возможность проживать
-                                каждый этап нашей жизни наиболее гармонично и
+                                Осознание энергий, на которые стоит обратить
+                                внимание, даёт нам возможность проживать каждый
+                                этап нашей жизни максимально гармонично и
                                 эффективно.
                             </p>
                         </span>
@@ -91,14 +91,17 @@ function MonthResultsResults() {
                                 <div class="month-results__table month-results__table-top">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            ВНУТРЕННЕЕ <br /> ЧУВСТВО <br />
+                                            ВНУТРЕННЕЕ
+                                            <br />
+                                            СОСТЯНИЕ
+                                            <br />
                                             МЕСЯЦА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos12)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ЛИЧНЫЙ <br /> ФОКУС <br /> МЕСЯЦА
+                                            ЛИЧНАЯ <br /> ЗАДАЧА <br /> МЕСЯЦА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos13)}
@@ -106,13 +109,14 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            РОСТ <br /> ГОДА
+                                            ОСНОВНОЙ
+                                            <br /> СЦЕНАРИЙ <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos1)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ЭМОЦИОНАЛЬНОЕ <br /> НАПРЯЖЕНИЕ
+                                            НАПРЯЖЕНИЕ <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos4)}
@@ -124,8 +128,7 @@ function MonthResultsResults() {
                                             {toRim(pos2)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            НАПРЯЖЕНИЕ В <br /> ИЗМЕНЕНИИ <br />{' '}
-                                            СОЗНАНИЯ
+                                            РЕСУРС <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos5)}
@@ -137,7 +140,7 @@ function MonthResultsResults() {
                                             {toRim(pos3)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            ОСНОВНАЯ <br /> ТЕМА
+                                            ОСНОВНАЯ <br /> ТЕМА <br /> ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos6)}
@@ -147,7 +150,7 @@ function MonthResultsResults() {
                                 <div class="month-results__table month-results__table-bottom">
                                     <div class="month-results__table-left">
                                         <div className="month-results__table-item">
-                                            ЛИЧНОЕ РУКОВОДСТВО
+                                            ПОМОЩНИК ГОДА
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos11)}
@@ -155,13 +158,13 @@ function MonthResultsResults() {
                                     </div>
                                     <div class="month-results__table-right">
                                         <div className="month-results__table-item">
-                                            ЭМОЦИОНАЛЬНАЯ <br /> НЕСТАБИЛЬНОСТЬ
+                                            ЗАБИРАЕТ <br /> ЭНЕРГИЮ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos7)}
                                         </div>
                                         <div className="month-results__table-item">
-                                            РАСШИРЕНИЕ <br /> СОЗНАНИЯ
+                                            ДАЕТ <br /> ЭНЕРГИЮ
                                         </div>
                                         <div className="month-results__table-item">
                                             {toRim(pos9)}
@@ -182,11 +185,11 @@ function MonthResultsResults() {
                                 </div>
                             </div>
                             <p className="month-results__body-text">
-                                Если вы хотите применить этот прогноз в своей
+                                Если вы хотите применить этот прогноз к своей
                                 жизни, чтобы понять, какой период приближается,
                                 какой путь выбрать и как лучше спланировать свои
-                                цели, запишитесь на консультацию, нажав на
-                                кнопку ниже.
+                                цели, закажите консультацию, нажав на кнопку
+                                ниже.
                             </p>
 
                             <Button

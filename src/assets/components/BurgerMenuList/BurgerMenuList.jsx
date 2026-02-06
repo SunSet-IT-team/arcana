@@ -34,7 +34,7 @@ function BurgerMenuList({menuClose}) {
                             onClick={() => menuClose()}
                         >
                             <span className="menu-list__link-span">
-                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
+                                ПЕРСОНАЛЬНЫЙ КАЛЬКУЛЯТОР
                             </span>
                             <svg
                                 className="menu-list__link-svg"
@@ -167,9 +167,7 @@ function BurgerMenuList({menuClose}) {
                             className="menu-list__link arrow"
                             onClick={() => menuClose()}
                         >
-                            <span className="menu-list__link-span">
-                                КОНСУЛЬТАЦИИ
-                            </span>
+                            <span className="menu-list__link-span">УСЛУГИ</span>
 
                             <svg
                                 className="menu-list__link-svg"

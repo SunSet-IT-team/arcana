@@ -80,7 +80,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
+                                ПЕРСОНАЛЬНЫЙ КАЛЬКУЛЯТОР
                             </ElementAnimation>
                             <svg
                                 className="menu-list__link-svg"
@@ -192,7 +192,7 @@ function MenuList() {
                                 tag="span"
                                 className="menu-list__link-span text-split"
                             >
-                                КОНСУЛЬТАЦИИ
+                                УСЛУГИ
                             </ElementAnimation>
 
                             <svg

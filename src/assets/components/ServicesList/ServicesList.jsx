@@ -39,7 +39,7 @@ function ServicesList({services}) {
                                         ⠀
                                     </span>
                                     <span className="services-list__price">
-                                        {service.price} евро
+                                        {service.price} рублей
                                     </span>
                                 </>
                             )}

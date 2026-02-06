@@ -57,7 +57,7 @@ function FooterWithWaterEffect() {
                                                 to="/calculator"
                                                 className="footer__menu-link"
                                             >
-                                                ЛИЧНЫЙ КАЛЬКУЛЯТОР
+                                                ПЕРСОНАЛЬНЫЙ КАЛЬКУЛЯТОР
                                             </Link>
                                         </li>
 
@@ -93,7 +93,7 @@ function FooterWithWaterEffect() {
                                                 to="/services"
                                                 className="footer__menu-link"
                                             >
-                                                КОНСУЛЬТАЦИИ
+                                                УСЛУГИ
                                             </Link>
                                         </li>
 
@@ -139,49 +139,28 @@ function FooterWithWaterEffect() {
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link"
-                                        href="https://www.instagram.com/"
+                                        href="https://www.instagram.com/pro_22archetypes/"
                                         target="_blank"
                                     >
                                         INSTAGRAM
                                     </a>
                                 </li>
-
                                 <li className="footer__contact-item">
                                     <a
-                                        className="footer__contact-link line"
-                                        href="https://www.facebook.com/"
+                                        className="footer__contact-link"
+                                        href="https://t.me/pro_22archetypes"
                                         target="_blank"
                                     >
-                                        FACEBOOK
+                                        Телеграмм-канал
                                     </a>
                                 </li>
 
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link line"
-                                        href="https://www.youtube.com/"
-                                        target="_blank"
+                                        href="mailto:pro22archetypes@yandex.ru"
                                     >
-                                        YOUTUBE
-                                    </a>
-                                </li>
-
-                                <li className="footer__contact-item">
-                                    <a
-                                        className="footer__contact-link line"
-                                        href="https://www.tiktok.com/"
-                                        target="_blank"
-                                    >
-                                        TIKTOK
-                                    </a>
-                                </li>
-
-                                <li className="footer__contact-item">
-                                    <a
-                                        className="footer__contact-link line"
-                                        href="mailto:22archetypes@gmail.com"
-                                    >
-                                        22archetypes@gmail.com
+                                        pro22archetypes@yandex.ru
                                     </a>
                                 </li>
                             </ul>
@@ -189,7 +168,8 @@ function FooterWithWaterEffect() {
                     </div>
                     <div className="footer__bottom">
                         <span className="footer__copyright">
-                            Copyright © 2023 Olga Veda. All Rights Reserved
+                            Copyright © 2026 Кристина Заваруева. Все права
+                            защищены
                         </span>
                         <div className="footer__sunset">
                             <span className="footer__sunset-text">

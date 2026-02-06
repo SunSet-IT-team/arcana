@@ -54,7 +54,7 @@ function Footer() {
                                                 to="/calculator"
                                                 className="footer__menu-link"
                                             >
-                                                КАЛЬКУЛЯТОР ЛИЧНЫЙ
+                                                ПЕРСОНАЛЬНЫЙ КАЛЬКУЛЯТОР
                                             </Link>
                                         </li>
 
@@ -91,7 +91,7 @@ function Footer() {
                                                 to="/services"
                                                 className="footer__menu-link"
                                             >
-                                                КОНСУЛЬТАЦИИ
+                                                УСЛУГИ
                                             </Link>
                                         </li>
 
@@ -137,47 +137,28 @@ function Footer() {
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link"
-                                        href="https://www.instagram.com/22archetypes/"
+                                        href="https://www.instagram.com/pro_22archetypes/"
                                         target="_blank"
                                     >
                                         INSTAGRAM
                                     </a>
                                 </li>
-
                                 <li className="footer__contact-item">
                                     <a
-                                        className="footer__contact-link line"
-                                        href="https://www.facebook.com/"
+                                        className="footer__contact-link"
+                                        href="https://t.me/pro_22archetypes"
                                         target="_blank"
                                     >
-                                        FACEBOOK
+                                        Телеграмм-канал
                                     </a>
                                 </li>
 
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link line"
-                                        href="https://www.youtube.com/"
-                                        target="_blank"
+                                        href="mailto:pro22archetypes@yandex.ru"
                                     >
-                                        YOUTUBE
-                                    </a>
-                                </li>
-                                <li className="footer__contact-item">
-                                    <a
-                                        className="footer__contact-link line"
-                                        href="https://www.tiktok.com/@22archetypes"
-                                        target="_blank"
-                                    >
-                                        TIKTOK
-                                    </a>
-                                </li>
-                                <li className="footer__contact-item">
-                                    <a
-                                        className="footer__contact-link line"
-                                        href="mailto:22archetypes@gmail.com"
-                                    >
-                                        22archetypes@gmail.com
+                                        pro22archetypes@yandex.ru
                                     </a>
                                 </li>
                             </ul>
