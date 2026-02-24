@@ -82,7 +82,7 @@ function ContactForm() {
     const onSubmit = async (data) => {
         try {
             const response = await fetch(
-                'https://www.22archetypes.com/wp/wp-json/custom/v1/contact',
+                'https://xn--22-8kcays3cft2a.xn--p1ai/wp/wp-json/custom/v1/contact',
                 {
                     method: 'POST',
                     headers: {

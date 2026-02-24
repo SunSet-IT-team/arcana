@@ -199,7 +199,7 @@ export const archetypesData = [
         energy: 'НЕЙТРАЛЬНАЯ',
     },
     {
-        title: 'ГЛУПЕЦ',
+        title: 'ШУТ',
         number: 'XXII',
         positive: 'ИГРА',
         negative: 'БЕЗОТВЕТСТВЕННОСТЬ',

@@ -1403,7 +1403,7 @@ export const archetypesContent = {
     },
 
     XXII: {
-        title: 'ГЛУПЕЦ',
+        title: 'ШУТ',
         energy: 'НЕЙТРАЛЬНАЯ',
         positive: 'игра, начало нового, ребенок',
         negative: 'безответственность, инфантилизм',
@@ -1581,7 +1581,7 @@ function ArchetypeArchetype() {
                                     text="КУПИТЬ ПОЛНОЕ ОПИСАНИЕ АРХЕТИПА"
                                     className="archetype__info-btn button--black"
                                     onClick={() => {
-                                        // dispatch(setOpenBuyForm(true));
+                                        dispatch(setOpenBuyForm(true));
                                     }}
                                 />
                             </div>

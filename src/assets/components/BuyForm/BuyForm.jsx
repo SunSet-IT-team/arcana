@@ -86,13 +86,13 @@ function BuyForm() {
         const form = e.target;
         const formData = new FormData(form);
 
-        if (form.file.files[0]) {
-            formData.append('file', form.file.files[0]);
-        }
+        // if (form.file.files[0]) {
+        //     formData.append('file', form.file.files[0]);
+        // }
 
         try {
             const response = await fetch(
-                'https://tuo-sito.it/wp-json/custom/v1/buy',
+                'https://xn--22-8kcays3cft2a.xn--p1ai/wp/wp-json/custom/v1/buy',
                 {
                     method: 'POST',
                     body: formData,
@@ -101,6 +101,7 @@ function BuyForm() {
 
             const result = await response.json();
             alert(result.message);
+            dispatch(setOpenBuyForm(false));
         } catch (error) {
             console.error('Error:', error);
             alert('Ошибка при отправке формы.');
@@ -136,7 +137,7 @@ function BuyForm() {
                     </div>
                     <div className="buy-form__content">
                         <div className="buy-form__text">
-                            <p>
+                            {/* <p>
                                 Чтобы получить подробное описание архетипа,
                                 необходимо произвести оплату в размере 22 евро.
                             </p>
@@ -156,7 +157,7 @@ function BuyForm() {
                                 отправить мне подтверждающее сообщение с копией
                                 квитанции или скриншотом транзакции, выполненной
                                 через мобильный банкинг.
-                            </p>
+                            </p> */}
                             <p>
                                 Если у вас возникли вопросы или нужна помощь, не
                                 стесняйтесь связаться со мной.
