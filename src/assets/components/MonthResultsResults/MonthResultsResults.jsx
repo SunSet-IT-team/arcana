@@ -93,7 +93,7 @@ function MonthResultsResults() {
                                         <div className="month-results__table-item">
                                             ВНУТРЕННЕЕ
                                             <br />
-                                            СОСТЯНИЕ
+                                            СОСТОЯНИЕ
                                             <br />
                                             МЕСЯЦА
                                         </div>
