@@ -39,7 +39,17 @@ function ServicesList({services}) {
                                         ⠀
                                     </span>
                                     <span className="services-list__price">
-                                        {service.price} рублей
+                                        {service.price.map((item, index) => (
+                                            <>
+                                                <span
+                                                    className="services-list__price-item"
+                                                    key={index}
+                                                >
+                                                    {item}
+                                                </span>
+                                                <br />
+                                            </>
+                                        ))}
                                     </span>
                                 </>
                             )}

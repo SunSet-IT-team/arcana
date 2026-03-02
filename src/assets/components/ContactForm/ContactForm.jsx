@@ -206,7 +206,7 @@ function ContactForm() {
                                         и защищённой*.
                                     </p>
                                     <Button
-                                        text="ОТПРАВИТЬ"
+                                        text="ОНЛАЙН ЗАПИСЬ"
                                         className="contact-form__form-button button--black"
                                     />
                                 </div>

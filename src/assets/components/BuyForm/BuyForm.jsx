@@ -232,7 +232,7 @@ function BuyForm() {
                                         и защищённой*.
                                     </p>
                                     <Button
-                                        text="ОТПРАВИТЬ"
+                                        text="ОНЛАЙН ЗАПИСЬ"
                                         className="buy-form__form-button button--black"
                                         type="submit"
                                     />

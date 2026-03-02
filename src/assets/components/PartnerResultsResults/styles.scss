@@ -22,7 +22,7 @@
     &__content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
     &__body-list {
         position: relative;
@@ -47,9 +47,10 @@
     }
 
     &__text-wrapper {
-        padding-left: 15px;
-        margin-left: auto;
-        max-width: 20%;
+        // padding-left: 15px;
+        // margin-left: auto;
+        flex: 1;
+        // max-width: 20%;
         height: clamp(10px, size-desktop(804px), 900px);
         display: flex;
         flex-direction: column;
@@ -59,7 +60,7 @@
         line-height: 1.4;
         font-size: clamp(13px, size-desktop(18px), 18px);
         &:not(:last-child) {
-            margin-bottom: clamp(15px, size-desktop(50px), 50px);
+            margin-bottom: clamp(5px, size-desktop(10px), 10px);
         }
 
         span {

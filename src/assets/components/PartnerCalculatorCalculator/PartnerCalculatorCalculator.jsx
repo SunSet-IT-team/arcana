@@ -96,12 +96,10 @@ function PartnerCalculatorCalculator() {
                         РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ ОТНОШЕНИЙ
                     </h1>
                     <div className="partner-calculator__content">
-                        <span className="partner-calculator__span">
-                            Введите даты рождения обоих партнёров
-                        </span>
+                        <span className="partner-calculator__span"></span>
                         <div className="partner-calculator__body">
                             <h2 className="partner-calculator__body-title">
-                                РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ ОТНОШЕНИЙ
+                                ВВЕДИТЕ ДАТЫ РОЖДЕНИЯ ОБОИХ ПАРТНËРОВ
                             </h2>
                             <div className="partner-calculator__select-wrapper">
                                 <SelectDate

@@ -154,13 +154,22 @@ function FooterWithWaterEffect() {
                                         Телеграмм-канал
                                     </a>
                                 </li>
+                                <li className="footer__contact-item">
+                                    <a
+                                        className="footer__contact-link"
+                                        href="https://dikidi.ru/2012707"
+                                        target="_blank"
+                                    >
+                                        Dikidi
+                                    </a>
+                                </li>
 
                                 <li className="footer__contact-item">
                                     <a
                                         className="footer__contact-link line"
-                                        href="mailto:pro22archetypes@yandex.ru"
+                                        href="mailto:pro@22archetypes.ru"
                                     >
-                                        pro22archetypes@yandex.ru
+                                        pro@22archetypes.ru
                                     </a>
                                 </li>
                             </ul>

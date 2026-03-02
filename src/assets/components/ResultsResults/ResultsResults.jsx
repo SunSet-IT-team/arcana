@@ -199,7 +199,7 @@ function ResultsResults() {
                         <span className="underline">Назад</span>
                     </Link>
                     <h1 className="results__title title-1">
-                        АРХЕТИПИЧЕСКАЯ КАРТА РОЖДЕНИЯ
+                        ПЕРСОНАЛЬНАЯ АРХЕТИПИЧЕСКАЯ КАРТА
                     </h1>
                     <div className="results__content">
                         <div className="results__body">

@@ -67,12 +67,10 @@ function CalculatorCalculator() {
                         РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ
                     </h1>
                     <div className="calculator__content">
-                        <span className="calculator__span">
-                            Введите дату рождения
-                        </span>
+                        <span className="calculator__span"></span>
                         <div className="calculator__body">
                             <h2 className="calculator__body-title">
-                                Расшифруй свою архетипическую карту
+                                Введите дату рождения
                             </h2>
                             <SelectDate
                                 selectedDay={selectedDay}

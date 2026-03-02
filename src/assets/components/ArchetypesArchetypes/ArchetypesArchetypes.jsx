@@ -19,7 +19,7 @@ export const archetypesData = [
         energy: 'МУЖСКАЯ',
     },
     {
-        title: 'ПАПЕССА',
+        title: 'ЖРИЦА',
         number: 'II',
         positive: 'ЗАЩИТА',
         negative: 'ГИПЕРЗАЩИТА',
@@ -46,7 +46,7 @@ export const archetypesData = [
         energy: 'МУЖСКАЯ',
     },
     {
-        title: 'ПАПА',
+        title: 'ЖРЕЦ',
         number: 'V',
         positive: 'АВТОРИТЕТ',
         negative: 'ГЛУПОСТЬ',
