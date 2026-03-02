@@ -111,7 +111,7 @@ export const archetypesData = [
     {
         title: 'ПОВЕШЕННЫЙ',
         number: 'XII',
-        positive: 'ДОБРОВОЛЬНЫЙ ЖЕРТВА',
+        positive: 'ДОБРОВОЛЬНАЯ ЖЕРТВА',
         negative: 'ЖЕРТВА',
         imgSrc: './images/archetypes/12.webp',
         linkTo: '/archetypes/XII',
@@ -367,13 +367,13 @@ function ArchetypesArchetypes() {
                                                 </span>
                                             </p>
                                             <p className="archetypes__item-positive">
-                                                Положительная проявление:
+                                                Положительное проявление:
                                                 <span className="archetypes__item-span">
                                                     {archetype.positive}
                                                 </span>
                                             </p>
                                             <p className="archetypes__item-negative">
-                                                Отрицательная проявление:
+                                                Отрицательное проявление:
                                                 <span className="archetypes__item-span">
                                                     {archetype.negative}
                                                 </span>

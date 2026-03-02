@@ -93,7 +93,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Положительная проявление:
+                                    Положительное проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.positive}
@@ -101,7 +101,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Отрицательная проявление:
+                                    Отрицательное проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.negative}
