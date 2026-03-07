@@ -166,7 +166,7 @@ function BuyForm() {
                         <div className="buy-form__form-box">
                             <div className="buy-form__title-wrapper">
                                 <h2 className="buy-form__title form-title">
-                                    ПРИВЕТ, РАД(А) ПОЗНАКОМИТЬСЯ
+                                    ПРИВЕТ, РАДА ПОЗНАКОМИТЬСЯ
                                 </h2>
                                 <img
                                     className="buy-form__title-img"

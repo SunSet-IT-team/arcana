@@ -144,7 +144,7 @@ function ContactForm() {
                         <div className="contact-form__form-box">
                             <div className="contact-form__title-wrapper">
                                 <h2 className="contact-form__title form-title owl">
-                                    ПРИВЕТ, РАД(А) ПОЗНАКОМИТЬСЯ
+                                    ПРИВЕТ, РАДА ПОЗНАКОМИТЬСЯ
                                 </h2>
                                 <img
                                     className="contact-form__title-img"

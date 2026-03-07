@@ -36,7 +36,7 @@ function PartnerResultsResults() {
     const newYear2 = fixYear(Number(results.year2));
 
     const calculatePositions = (day, month, year) => {
-        const pos1 = day;
+        const pos1 = fixDay(day);
         const pos2 = month;
         const pos3 = year;
 
