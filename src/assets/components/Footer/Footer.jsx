@@ -176,7 +176,8 @@ function Footer() {
                     </div>
                     <div className="footer__bottom">
                         <span className="footer__copyright">
-                            Copyright © 2023 Olga Veda. Все права защищены
+                            Copyright © 2023 Кристина Заваруева. Все права
+                            защищены
                         </span>
                         <div className="footer__sunset">
                             <span className="footer__sunset-text">
