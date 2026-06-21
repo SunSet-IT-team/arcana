@@ -14,7 +14,17 @@
     }
     &__title {
         line-height: 1.2;
-        margin-bottom: clamp(10px, size-desktop(200px), 200px);
+        margin-bottom: clamp(30px, size-desktop(80px), 80px);
+    }
+    &__intro {
+        max-width: clamp(10px, size-desktop(980px), 980px);
+        margin-bottom: clamp(40px, size-desktop(120px), 120px);
+        font-size: clamp(13px, size-desktop(18px), 18px);
+        line-height: 1.4;
+
+        p:not(:last-child) {
+            margin-bottom: 18px;
+        }
     }
     &__content {
         display: flex;

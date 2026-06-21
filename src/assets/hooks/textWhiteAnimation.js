@@ -1,22 +1,43 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {useEffect} from 'react';
 
 export function useTextAnimation(textElement) {
-    setTimeout(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.fromTo(
-            '.about__box .about__box-text .word',
-            {color: '#717171'},
-            {
-                color: '#ffffff',
-                stagger: 0.4,
-                scrollTrigger: {
-                    trigger: '.about__box .word',
-                    scrub: 5,
-                },
-            }
-        );
-    }, 500);
+    useEffect(() => {
+        if (!textElement) return undefined;
 
-    return;
+        gsap.registerPlugin(ScrollTrigger);
+        const words = [...textElement.querySelectorAll('.word')];
+
+        if (!words.length) return undefined;
+
+        const applyProgress = (progress) => {
+            const activeCount = Math.round(progress * words.length);
+
+            words.forEach((word, index) => {
+                word.style.color =
+                    index < activeCount ? '#ffffff' : '#717171';
+            });
+        };
+
+        const trigger = ScrollTrigger.create({
+            trigger: textElement,
+            start: 'top center',
+            end: 'bottom center',
+            invalidateOnRefresh: true,
+            onRefresh: ({progress}) => applyProgress(progress),
+            onUpdate: ({progress}) => applyProgress(progress),
+        });
+
+        applyProgress(trigger.progress);
+
+        requestAnimationFrame(() => {
+            ScrollTrigger.refresh();
+            applyProgress(trigger.progress);
+        });
+
+        return () => {
+            trigger.kill();
+        };
+    }, [textElement]);
 }

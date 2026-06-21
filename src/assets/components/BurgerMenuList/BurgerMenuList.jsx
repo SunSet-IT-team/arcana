@@ -81,32 +81,6 @@ function BurgerMenuList({menuClose}) {
                 </li>
                 <li className="menu-list__item">
                     <div className="menu-list__link-wrapper">
-                        <Link
-                            to="/month-calculator"
-                            className="menu-list__link arrow"
-                            onClick={() => menuClose()}
-                        >
-                            <span className="menu-list__link-span">
-                                ПРОГНОЗ ГОД/МЕСЯЦ
-                            </span>
-                            <svg
-                                className="menu-list__link-svg"
-                                width="21"
-                                height="21"
-                                viewBox="0 0 21 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                    fill="currentColor"
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                </li>
-                <li className="menu-list__item">
-                    <div className="menu-list__link-wrapper">
                         {location.pathname === '/' ? (
                             <ScrollLink
                                 to="about"
@@ -222,30 +196,6 @@ function BurgerMenuList({menuClose}) {
                             <span className="menu-list__link-span">
                                 22 АРХЕТИПА
                             </span>
-                            <svg
-                                className="menu-list__link-svg"
-                                width="21"
-                                height="21"
-                                viewBox="0 0 21 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M21 0H0V1H19.29L0 20.29V21H0.71L1 20.71L1.71 20L20 1.71V21H21V0Z"
-                                    fill="currentColor"
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                </li>
-                <li className="menu-list__item">
-                    <div className="menu-list__link-wrapper">
-                        <Link
-                            to="/blog"
-                            className="menu-list__link arrow"
-                            onClick={() => menuClose()}
-                        >
-                            <span className="menu-list__link-span">BLOG</span>
                             <svg
                                 className="menu-list__link-svg"
                                 width="21"

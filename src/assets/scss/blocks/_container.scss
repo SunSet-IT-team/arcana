@@ -2,7 +2,8 @@
     margin: 0 auto;
     max-width: 1920px;
 
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
 
     padding-left: calc(4.95vw); // Боковые отступы
 

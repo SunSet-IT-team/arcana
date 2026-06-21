@@ -87,9 +87,9 @@ function MonthResultsResults() {
                             </p>
                         </span>
                         <div className="month-results__body">
-                            <div class="month-results__tables">
-                                <div class="month-results__table month-results__table-top">
-                                    <div class="month-results__table-left">
+                            <div className="month-results__tables">
+                                <div className="month-results__table month-results__table-top">
+                                    <div className="month-results__table-left">
                                         <div className="month-results__table-item">
                                             ВНУТРЕННЕЕ
                                             <br />
@@ -107,7 +107,7 @@ function MonthResultsResults() {
                                             {toRim(pos13)}
                                         </div>
                                     </div>
-                                    <div class="month-results__table-right">
+                                    <div className="month-results__table-right">
                                         <div className="month-results__table-item">
                                             ОСНОВНОЙ
                                             <br /> СЦЕНАРИЙ <br /> ГОДА
@@ -147,8 +147,8 @@ function MonthResultsResults() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="month-results__table month-results__table-bottom">
-                                    <div class="month-results__table-left">
+                                <div className="month-results__table month-results__table-bottom">
+                                    <div className="month-results__table-left">
                                         <div className="month-results__table-item">
                                             ПОМОЩНИК ГОДА
                                         </div>
@@ -156,7 +156,7 @@ function MonthResultsResults() {
                                             {toRim(pos11)}
                                         </div>
                                     </div>
-                                    <div class="month-results__table-right">
+                                    <div className="month-results__table-right">
                                         <div className="month-results__table-item">
                                             ЗАБИРАЕТ <br /> ЭНЕРГИЮ
                                         </div>
@@ -193,7 +193,7 @@ function MonthResultsResults() {
                             </p>
 
                             <Button
-                                text="ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ"
+                                text="СВЯЖИСЬ СО МНОЙ"
                                 className="month-results__body-link"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

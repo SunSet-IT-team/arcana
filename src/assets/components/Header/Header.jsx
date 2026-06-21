@@ -65,7 +65,7 @@ function Header() {
                         className="header__link underline"
                         onClick={() => dispatch(setOpenContactForm(true))}
                     >
-                        Контакты
+                        Свяжись со мной
                     </button>
 
                     <button className="header__button" onClick={openMenu}>

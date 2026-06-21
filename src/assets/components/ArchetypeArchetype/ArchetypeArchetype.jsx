@@ -1571,7 +1571,7 @@ function ArchetypeArchetype() {
                             </ul>
                             <div className="archetype__button-box">
                                 <Button
-                                    text="ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ"
+                                    text="СВЯЖИСЬ СО МНОЙ"
                                     className="archetype__info-btn "
                                     onClick={() =>
                                         dispatch(setOpenContactForm(true))

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './styles.scss';
 
-const Button = ({text, className, onClick}) => {
+const Button = ({text, className, onClick, type = 'button'}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = (event) => {
@@ -41,6 +41,7 @@ const Button = ({text, className, onClick}) => {
 
     return (
         <button
+            type={type}
             className={`button ${isHovered ? 'animate' : ''} ${className}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

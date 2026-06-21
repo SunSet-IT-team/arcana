@@ -93,10 +93,26 @@ function PartnerCalculatorCalculator() {
                         <span className="underline">Назад</span>
                     </Link>
                     <h1 className="partner-calculator__title title-1">
-                        РАССЧИТАЙ АРХЕТИПИЧЕСКУЮ КАРТУ ОТНОШЕНИЙ
+                        АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
                     </h1>
                     <div className="partner-calculator__content">
-                        <span className="partner-calculator__span"></span>
+                        <p className="partner-calculator__span">
+                            На протяжении всей жизни мы взаимодействуем с кем-то
+                            еще. Романтические отношения, партнерство на работе,
+                            в семье, дружеские отношения, и даже с питомцами мы
+                            так или иначе строим отношения.
+                            <br />
+                            <br />
+                            Запомни, нет несовместимых пар!
+                            <br />
+                            Нам не подходят только м*даки!
+                            <br />
+                            Во всех остальных случаях сложности в отношениях –
+                            это всего лишь теневые взаимодействия архетипов.
+                            <br />
+                            <br />
+                            Но есть и хорошая новость: это можно исправить!
+                        </p>
                         <div className="partner-calculator__body">
                             <h2 className="partner-calculator__body-title">
                                 ВВЕДИТЕ ДАТЫ РОЖДЕНИЯ ОБОИХ ПАРТНËРОВ

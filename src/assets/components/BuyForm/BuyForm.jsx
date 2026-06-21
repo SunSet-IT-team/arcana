@@ -113,7 +113,11 @@ function BuyForm() {
             <div className="buy-form__wrapper">
                 <div className="container">
                     <div className="buy-form__top">
-                        <Link className="buy-form__logo" to="/">
+                        <Link
+                            className="buy-form__logo"
+                            to="/"
+                            onClick={() => dispatch(setOpenBuyForm(false))}
+                        >
                             <img
                                 src="/images/icons/logo-black.svg"
                                 alt="logo"
@@ -220,7 +224,7 @@ function BuyForm() {
                                 </div>
                                 <div className="buy-form__form-bottom">
                                     <p className="buy-form__form-text">
-                                        Ваша личная информация будет храниться{' '}
+                                        Твоя личная информация будет храниться{' '}
                                         <span
                                             className="underline"
                                             onClick={() =>
@@ -232,7 +236,7 @@ function BuyForm() {
                                         и защищённой*.
                                     </p>
                                     <Button
-                                        text="ОНЛАЙН ЗАПИСЬ"
+                                        text="ОТПРАВЛЯЙ"
                                         className="buy-form__form-button button--black"
                                         type="submit"
                                     />

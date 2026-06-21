@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import './styles-mobile.scss';
 import {FreeMode, Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -32,7 +30,7 @@ function MainStoryMobile({storiesProp = []}) {
                 }}
             >
                 {storiesProp.length <= 0 && (
-                    <h3 style={{textAlign: 'center'}}>Nessun record</h3>
+                    <h3 style={{textAlign: 'center'}}>Нет записей</h3>
                 )}
                 {storiesProp.map((story) => (
                     <SwiperSlide key={story.id} className="storys-demo__slide">
@@ -66,7 +64,7 @@ function MainStoryMobile({storiesProp = []}) {
                                         </p>
                                     </div>
                                     <LinkTo
-                                        text="LEGGERE"
+                                        text="ЧИТАТЬ"
                                         className="storys-demo__item-link link--black"
                                         path={`story/${story.slug}`}
                                     />
@@ -80,7 +78,7 @@ function MainStoryMobile({storiesProp = []}) {
                 to={activeLink}
                 className="about__author-link storys-demo__bottom-link arrow"
             >
-                <span className="underline">Leggi tutte le storie</span>
+                <span className="underline">Читать все истории</span>
                 <svg
                     width="21"
                     height="21"

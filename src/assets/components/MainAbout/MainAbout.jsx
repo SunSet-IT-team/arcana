@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
 import {Link} from 'react-router-dom';
 
@@ -8,7 +8,6 @@ import {setOpenProfileMethod} from '../../../redux/slices/profileMethodSlice';
 import ElementAnimation from '../../hooks/elementAnimation';
 import {useTextAnimation} from '../../hooks/textWhiteAnimation';
 import TitleAnimation from '../../hooks/titleAnimation';
-import parse from 'html-react-parser';
 
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -22,25 +21,20 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 // ];
 
 const text = [
-    `Мы рождаемся не «чистым листом». С самого начала в нас заложены определённые внутренние сценарии: роли, через которые мы проявляемся, опыты, которые проживаем, испытания, с которыми сталкиваемся, и трансформации, к которым приходим.`,
-    // `Мы рождаемся не как чистые листы, а уже предрасположенными к определённым <b class="about__b">ролям, опытам, битвам</b> и <b class="about__b">трансформациям</b>. Архетипический Профиль — это <b class="about__b">инструмент</b>, который помогает понять <b class="about__b">, кто мы есть</b>, какие <b class="about__b">вызовы</b> встречаем и как <b class="about__b">осознанно с ними справляться</b>.`,
-
-    `Работа со своими архетипами помогает лучше понять, кто мы есть, с какими жизненными вызовами сталкиваемся и как проходить их более осознанно.`,
-    `Архетипическая карта работает как внутренний компас, направляющий наш путь.`,
-    // `<b class="about__b">Архетипическая карта</b> работает как <b class="about__b">компас</b>, который <b class="about__b">направляет наш путь</b>.`,
-
-    `Через архетипический анализ становится понятнее, какие события мы склонны притягивать, какие внутренние процессы в нас происходят и почему одни и те же ситуации повторяются в жизни — как в личной сфере, так и в профессиональной.`,
-    // `Через <b class="about__b">архетипический анализ</b> мы можем понять <b class="about__b">события, которые притягиваем</b>, <b class="about__b">внутренние транзакции</b> и <b class="about__b">повторяющиеся динамики</b> в нашей жизни: от <b class="about__b">личных блоков</b> до <b class="about__b">профессиональных</b>.`,
-
-    `Этот подход помогает увидеть свои сильные стороны, скрытые ресурсы, влияние внешней среды, а также убеждения и модели поведения, которые нас ограничивают. Осознание этих факторов поддерживает принятие взвешенных решений, особенно в периоды неопределённости и кризиса.`,
-    // `Она позволяет выявить <b class="about__b">сильные стороны</b>, <b class="about__b">скрытые ресурсы</b>, <b class="about__b">внешние влияния</b>, наши <b class="about__b">убеждения</b> и <b class="about__b">поведения, которые нас ограничивают</b>, помогая <b class="about__b">принимать осознанные решения</b>, даже в <b class="about__b">моменты кризиса</b>.`,
-
-    `Архетипический профиль — это быстрый и эффективный инструмент для преодоления личных и профессиональных кризисов, улучшения отношений и достижения целей с большей ясностью и внутренней опорой, помогая заново почувствовать смысл собственного пути.`,
-    // `Архетипический Профиль — это <b class="about__b">быстрый и эффективный инструмент</b> для <b class="about__b">преодоления личных и профессиональных кризисов, улучшения отношений</b> и <b class="about__b">достижения целей</b> с <b class="about__b">решимостью</b>, открывая <b class="about__b">смысл этого путешествия</b>.`,
+    `Мне немного за 40.`,
+    `Я мама, жена, садовод и отличный друг.`,
+    `Я работаю в найме в одной из крупных фармацевтических компаний, что приносит мне удовольствие и неплохой доход.`,
+    `И примерно 2 года назад я открыла для себя метод работы с архетипами личности. Получила профессиональное образование в этой сфере и сделала его своим хобби. Я могу часами рассказывать об этом.`,
+    `При знакомстве меня в первую очередь интересует дата рождения человека, а уже потом все остальные подробности.`,
+    `Я слышу, как люди говорят своими архетипами. И после определенного времени, проведенного в обществе человека, не зная даты его рождения, могу предположить, какие именно архетипы «захватили власть» в нем.`,
+    `Однако я никогда не работаю без запроса и не лезу с фразами «а у тебя тут неправильно уроки проходят». Я не буду рассказывать ничего человеку, говорящему: «Ну-ка скажи, что там у меня?!» на ходу и бегло.`,
+    `Я уже знаю много, но ежедневно продолжаю изучать эту тему.`,
+    `Если тебе интересно узнать себя поближе, я с огромной радостью помогу тебе в этом.`,
 ];
 
 function MainAbout() {
     const [width, setWidth] = React.useState(window.innerWidth);
+    const [textWhiteElement, setTextWhiteElement] = React.useState(null);
     useEffect(() => {
         const handleResize = () => {
             setWidth(window.innerWidth);
@@ -54,8 +48,7 @@ function MainAbout() {
 
     const dispatch = useDispatch();
 
-    // const textWhiteRef = useRef(null);
-    // useTextAnimation(textWhiteRef.current);
+    useTextAnimation(textWhiteElement);
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -136,7 +129,7 @@ function MainAbout() {
 
                             <p className="about__info-subtext">
                                 КРИСТИНА ЗАВАРУЕВА, ПСИХОЛОГ, КОНСУЛЬТАНТ МЕТОДА
-                                «АРХЕТИПИЧСКИЙ ПОРТРЕТ ЛИЧНОСТИ»
+                                «АРХЕТИПИЧСКИЙ ПОРТРЕТ ЛИЧНОСТИ» С ДИПЛОМОМ
                             </p>
                         </div>
 
@@ -160,9 +153,10 @@ function MainAbout() {
                                 Специализируюсь на работе с архетипами личности
                                 — практическом инструменте для глубокого
                                 самопознания и ориентирования в процессах
-                                внутренней трансформации. Метод применим в
-                                личной, межличностной, профессиональной и
-                                экзистенциальной сферах.
+                                внутренней трансформации.
+                                <br />
+                                <br />
+                                Та самая «подружка с картами».
                             </ElementAnimation>
 
                             <div className="about__author-linkbox">
@@ -192,74 +186,24 @@ function MainAbout() {
                             </div>
                         </div>
 
-                        {/* <div className="about__box" ref={textWhiteRef}> */}
-                        <div className="about__box">
+                        <div
+                            className="about__box"
+                            ref={setTextWhiteElement}
+                        >
                             {text.map((paragraph, idx) => (
                                 <p
                                     className="about__box-text text-white"
                                     key={idx}
                                     style={{textTransform: 'uppercase'}}
                                 >
-                                    {parse(paragraph, {
-                                        replace: (domNode) => {
-                                            if (domNode.type === 'text') {
-                                                return [...domNode.data].map(
-                                                    (char, charIdx) => (
-                                                        <span
-                                                            key={`char-${idx}-${charIdx}`}
-                                                            className="word"
-                                                        >
-                                                            {char}
-                                                        </span>
-                                                    )
-                                                );
-                                            }
-
-                                            if (
-                                                domNode instanceof Element &&
-                                                domNode.name === 'b'
-                                            ) {
-                                                return (
-                                                    <b
-                                                        className="info__b"
-                                                        key={`b-${idx}`}
-                                                    >
-                                                        {domToReact(
-                                                            domNode.children,
-                                                            {
-                                                                replace: (
-                                                                    inner
-                                                                ) => {
-                                                                    if (
-                                                                        inner.type ===
-                                                                        'text'
-                                                                    ) {
-                                                                        return [
-                                                                            ...inner.data,
-                                                                        ].map(
-                                                                            (
-                                                                                char,
-                                                                                charIdx
-                                                                            ) => (
-                                                                                <span
-                                                                                    key={`b-${idx}-${charIdx}`}
-                                                                                    className="word"
-                                                                                >
-                                                                                    {
-                                                                                        char
-                                                                                    }
-                                                                                </span>
-                                                                            )
-                                                                        );
-                                                                    }
-                                                                },
-                                                            }
-                                                        )}
-                                                    </b>
-                                                );
-                                            }
-                                        },
-                                    })}
+                                    {[...paragraph].map((char, charIdx) => (
+                                        <span
+                                            key={`char-${idx}-${charIdx}`}
+                                            className="word"
+                                        >
+                                            {char}
+                                        </span>
+                                    ))}
                                 </p>
                             ))}
                         </div>

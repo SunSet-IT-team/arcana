@@ -1,7 +1,11 @@
-import React, {useRef, useState, useLayoutEffect, useEffect} from 'react';
+import React, {
+    useRef,
+    useState,
+    useLayoutEffect,
+    useEffect,
+    useMemo,
+} from 'react';
 import Marquee from 'react-fast-marquee';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {FreeMode, Navigation} from 'swiper/modules';
 import {Link} from 'react-router-dom';
 
 import './styles.scss';
@@ -9,14 +13,69 @@ import {archetypesData} from '../ArchetypesArchetypes/ArchetypesArchetypes';
 
 const SliderMobile = ({archetypesProp = []}) => {
     const data = archetypesProp.length > 0 ? archetypesProp : archetypesData;
+    const displayData = useMemo(
+        () => (data.length > 1 ? [...data, ...data, ...data] : data),
+        [data]
+    );
 
+    const sliderRef = useRef(null);
     const titleRefs = useRef([]);
     const [marqueeStates, setMarqueeStates] = useState([]);
 
     // Сбрасываем лишние refs при смене data
     useEffect(() => {
-        titleRefs.current = titleRefs.current.slice(0, data.length);
-    }, [data]);
+        titleRefs.current = titleRefs.current.slice(0, displayData.length);
+    }, [displayData]);
+
+    const scrollToChildCenter = (child, behavior = 'auto') => {
+        const slider = sliderRef.current;
+        if (!slider || !child) return;
+
+        slider.scrollTo({
+            left:
+                child.offsetLeft -
+                (slider.clientWidth - child.clientWidth) / 2,
+            behavior,
+        });
+    };
+
+    useLayoutEffect(() => {
+        const slider = sliderRef.current;
+        if (!slider || data.length <= 1) return;
+
+        const target = slider.children[data.length];
+        if (!target) return;
+
+        requestAnimationFrame(() => {
+            scrollToChildCenter(target);
+        });
+    }, [data.length, displayData]);
+
+    const handleScroll = () => {
+        const slider = sliderRef.current;
+        if (!slider || data.length <= 1) return;
+
+        const firstSetStart = slider.children[0];
+        const secondSetStart = slider.children[data.length];
+        const thirdSetStart = slider.children[data.length * 2];
+        if (!firstSetStart || !secondSetStart || !thirdSetStart) return;
+
+        const segmentWidth = secondSetStart.offsetLeft - firstSetStart.offsetLeft;
+        const middleStart =
+            secondSetStart.offsetLeft -
+            (slider.clientWidth - secondSetStart.clientWidth) / 2;
+        const middleEnd =
+            thirdSetStart.offsetLeft -
+            (slider.clientWidth - thirdSetStart.clientWidth) / 2;
+
+        if (slider.scrollLeft < middleStart) {
+            slider.scrollLeft += segmentWidth;
+        }
+
+        if (slider.scrollLeft > middleEnd) {
+            slider.scrollLeft -= segmentWidth;
+        }
+    };
 
     // После рендера проверяем ширину заголовков
     useLayoutEffect(() => {
@@ -25,20 +84,19 @@ const SliderMobile = ({archetypesProp = []}) => {
             return ref.scrollWidth > ref.parentElement.offsetWidth;
         });
         setMarqueeStates(newStates);
-    }, [data]);
+    }, [displayData]);
 
     return (
-        <Swiper
-            modules={[FreeMode, Navigation]}
-            spaceBetween={15}
-            slidesPerView={1.65}
-            slidesOffsetBefore={1}
-            slidesOffsetAfter={1}
-            loop={data.length >= 4}
-            centeredSlides
+        <div
+            className="archetypes-demo__mobile-swiper"
+            ref={sliderRef}
+            onScroll={handleScroll}
         >
-            {data.map((archetype, index) => (
-                <SwiperSlide key={index}>
+            {displayData.map((archetype, index) => (
+                <div
+                    className="archetypes-demo__mobile-slide"
+                    key={`${archetype.number}-${index}`}
+                >
                     <div className="archetypes-demo__item-wrapper">
                         <div className="archetypes-demo__item-body">
                             {marqueeStates[index] ? (
@@ -76,6 +134,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                                             className="archetypes-demo__item-img"
                                             src={`/images/archetypes/${archetype.number}.webp`}
                                             alt={archetype.title}
+                                            draggable="false"
                                         />
                                     </div>
                                 </div>
@@ -127,9 +186,9 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </Link>
                         </div>
                     </div>
-                </SwiperSlide>
+                </div>
             ))}
-        </Swiper>
+        </div>
     );
 };
 

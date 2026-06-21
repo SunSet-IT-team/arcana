@@ -85,7 +85,7 @@ function ServicesList({services}) {
                             )}
 
                             <Button
-                                text="Записаться"
+                                text="Свяжись со мной"
                                 className="services-list__info-button"
                                 onClick={() =>
                                     dispatch(setOpenContactForm(true))

@@ -3,7 +3,6 @@ import {useEffect} from 'react';
 import GoToPage from '../../components/GoToPage/GoToPage';
 import MainAbout from '../../components/MainAbout/MainAbout';
 import MainArchetypes from '../../components/MainArchetypes/MainArchetypes';
-import MainBlog from '../../components/MainBlog/MainBlog';
 import MainInfo from '../../components/MainInfo/MainInfo';
 import MainMenu from '../../components/MainMenu/MainMenu';
 import MainServices from '../../components/MainServices/MainServices';
@@ -38,7 +37,6 @@ const Home = () => {
             <MainServices />
             <MainStory />
             <MainArchetypes />
-            <MainBlog />
         </>
     );
 };

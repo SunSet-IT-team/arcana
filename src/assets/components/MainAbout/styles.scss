@@ -113,6 +113,12 @@
         line-height: 1.4;
         max-width: 60%;
         color: #aaa;
+
+        .word {
+            color: #717171;
+            transition: none;
+        }
+
         &:nth-child(even) {
             margin-left: 40%;
         }

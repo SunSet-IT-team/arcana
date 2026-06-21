@@ -1,6 +1,5 @@
 import gsap from 'gsap';
 import {useEffect, useRef} from 'react';
-import {useDevice} from '../../hooks/useDevice'; // хук, который ты уже используешь
 
 import './styles.scss';
 
@@ -17,18 +16,18 @@ function GoToPage() {
         tl.current = gsap.timeline({paused: true});
 
         tl.current.to(loading, {
-            duration: 0.9,
+            duration: 0.35,
             y: '-100%',
         });
 
         tl.current.to(wrapper, {
-            duration: 2.5,
+            duration: 0.45,
             x: '100%',
         });
 
         timeoutRef.current = setTimeout(() => {
             tl.current?.play();
-        }, 1500);
+        }, 150);
 
         return () => {
             clearTimeout(timeoutRef.current);

@@ -109,7 +109,11 @@ function ContactForm() {
             <div className="contact-form__wrapper">
                 <div className="container">
                     <div className="contact-form__top">
-                        <Link className="contact-form__logo" to="/">
+                        <Link
+                            className="contact-form__logo"
+                            to="/"
+                            onClick={() => dispatch(setOpenContactForm(false))}
+                        >
                             <img
                                 src="/images/icons/logo-black.svg"
                                 alt="logo"
@@ -135,12 +139,6 @@ function ContactForm() {
                     </div>
 
                     <div className="contact-form__content">
-                        <p className="contact-form__text">
-                            Если вы хотите записаться на консультацию, оставьте
-                            свои контактные данные, и я свяжусь с вами в
-                            ближайшее время для уточнения.
-                        </p>
-
                         <div className="contact-form__form-box">
                             <div className="contact-form__title-wrapper">
                                 <h2 className="contact-form__title form-title owl">
@@ -153,16 +151,20 @@ function ContactForm() {
                                 />
                             </div>
 
-                            <h3 className="contact-form__subtitle form-subtitle">
-                                Введите ваши данные, и я свяжусь с вами!
-                            </h3>
-
-                            <p className="contact-form__text-mb">
-                                Для приобретения подробного описания архетипов
-                                необходимо осуществить перевод 100 евро на
-                                карту: 1234 5678 8910 1112 и приложить копию
-                                чека или скриншот платежа.
+                            <p className="contact-form__text">
+                                Если хочешь записаться на консультацию, оставь
+                                свои данные, и я максимально быстро свяжусь с
+                                тобой.
+                                <br />
+                                <br />
+                                Жду с нетерпением,
+                                <br />
+                                твоя Крис!
                             </p>
+
+                            <h3 className="contact-form__subtitle form-subtitle">
+                                Введи свои данные, и я свяжусь с тобой!
+                            </h3>
 
                             <form
                                 className="contact-form__form"
@@ -194,7 +196,7 @@ function ContactForm() {
 
                                 <div className="contact-form__form-bottom">
                                     <p className="contact-form__form-text">
-                                        Ваша личная информация будет храниться{' '}
+                                        Твоя личная информация будет храниться{' '}
                                         <span
                                             className="underline"
                                             onClick={() =>
@@ -206,7 +208,7 @@ function ContactForm() {
                                         и защищённой*.
                                     </p>
                                     <Button
-                                        text="ОНЛАЙН ЗАПИСЬ"
+                                        text="ОТПРАВЛЯЙ"
                                         className="contact-form__form-button button--black"
                                     />
                                 </div>
