@@ -142,7 +142,9 @@ export default function ArchetypesSlider() {
         setIsDragActive(false);
         resetDragCssOffset();
         if (capturedPointerId.current !== null) {
-            event.currentTarget.releasePointerCapture?.(capturedPointerId.current);
+            event.currentTarget.releasePointerCapture?.(
+                capturedPointerId.current
+            );
             capturedPointerId.current = null;
         }
 
@@ -158,7 +160,9 @@ export default function ArchetypesSlider() {
         setIsDragActive(false);
         resetDragCssOffset();
         if (capturedPointerId.current !== null) {
-            event.currentTarget.releasePointerCapture?.(capturedPointerId.current);
+            event.currentTarget.releasePointerCapture?.(
+                capturedPointerId.current
+            );
             capturedPointerId.current = null;
         }
     };
@@ -290,10 +294,13 @@ export default function ArchetypesSlider() {
 
                                     <div className="archetypes-demo__item-info">
                                         <div className="archetypes-demo__item-text">
-                                            {
-                                                archetypesContent[data.number]
-                                                    ?.content
-                                            }
+                                            {archetypesContent[
+                                                data.number
+                                            ]?.intro.map((paragraph) => (
+                                                <p key={paragraph}>
+                                                    {paragraph}
+                                                </p>
+                                            ))}
                                         </div>
                                         <Link
                                             to={data.linkTo}
@@ -326,9 +333,11 @@ export default function ArchetypesSlider() {
                             className={className}
                         >
                             <div className="archetypes-demo__item-text">
-                                {
-                                    archetypesContent[data.number]?.content
-                                }
+                                {archetypesContent[data.number]?.intro.map(
+                                    (paragraph) => (
+                                        <p key={paragraph}>{paragraph}</p>
+                                    )
+                                )}
                             </div>
                             <Link
                                 to={data.linkTo}

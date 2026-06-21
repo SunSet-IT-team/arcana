@@ -243,8 +243,94 @@ function PartnerResultsResults() {
                     <h1 className="partner-results__title title-1">
                         КАРТА ОТНОШЕНИЙ В ВАШЕЙ ПАРЕ
                     </h1>
+                    <div className="partner-results__lead">
+                        <p className="partner-results__text">
+                            Ниже ты увидишь уже знакомые тебе образы
+                            архетипических портретов. Здесь их 3: твой, партнера
+                            и ваш общий.
+                        </p>
+
+                        <p className="partner-results__text">
+                            В общем портрете, он же «Архетипическая карта
+                            отношений», в первую очередь обрати внимание на
+                            первые 3 позиции.
+                        </p>
+                    </div>
                     <div className="partner-results__content">
-                        <div className="partner-results__body-list">
+                        <div className="partner-results__top-row">
+                            <div className="partner-results__body-list partner-results__body-list--joint">
+                                <span className="partner-results__name-item-mobile">
+                                    АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
+                                </span>
+                                <PartnerResultsList
+                                    {...jointResults}
+                                ></PartnerResultsList>
+                                <span className="partner-results__body-date partner-results__body-date--joint">
+                                    {results.day} / {results.month} /{' '}
+                                    {results.year} И {results.day2} /{' '}
+                                    {results.month2} / {results.year2}
+                                </span>
+                            </div>
+                            <div className="partner-results__info">
+                                <ul className="partner-results__info-list">
+                                    <li className="partner-results__info-item">
+                                        <span className="partner-results__info-number underline">
+                                            НОМЕР
+                                        </span>
+                                        <p className="partner-results__info-name underline">
+                                            ПОЗИЦИЯ
+                                        </p>
+                                        <span className="partner-results__info-archetype">
+                                            <span
+                                                className="underline"
+                                                style={{paddingBottom: 1}}
+                                            >
+                                                АРХЕТИП
+                                            </span>
+                                        </span>
+                                    </li>
+                                    {resultsData.map((result, index) => (
+                                        <li
+                                            className="partner-results__info-item"
+                                            key={index}
+                                        >
+                                            <span className="partner-results__info-number">
+                                                {result.num}
+                                            </span>
+                                            <p className="partner-results__info-name">
+                                                {result.name}
+                                            </p>
+                                            <Link
+                                                className="partner-results__info-archetype"
+                                                to={`/archetypes/${result.archetypeNum}`}
+                                            >
+                                                {result.archetypeNum}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <Button
+                                    text="СВЯЖИСЬ СО МНОЙ"
+                                    className="partner-results__info-link"
+                                    onClick={() =>
+                                        dispatch(setOpenContactForm(true))
+                                    }
+                                ></Button>
+                            </div>
+                        </div>
+                        <ul className="partner-results__name-list partner-results__name-list--reversed">
+                            <li className="partner-results__name-item">
+                                АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
+                            </li>
+                            <li className="partner-results__name-item">
+                                АРХЕТИПИЧЕСКАЯ КАРТА ПЕРВОГО ПАРТНЁРА
+                            </li>
+                            <li className="partner-results__name-item">
+                                АРХЕТИПИЧЕСКАЯ КАРТА ВТОРОГО ПАРТНЁРА
+                            </li>
+                        </ul>
+                        <div className="partner-results__body-list partner-results__body-list--first-partner">
                             <span className="partner-results__body-date">
                                 {results.day} / {results.month} / {results.year}
                             </span>
@@ -265,18 +351,6 @@ function PartnerResultsResults() {
                         </div>
 
                         <div className="partner-results__text-wrapper">
-                            <p className="partner-results__text">
-                                Ниже ты увидишь уже знакомые тебе образы
-                                архетипических портретов. Здесь их 3: твой,
-                                партнера и ваш общий.
-                            </p>
-
-                            <p className="partner-results__text">
-                                В общем портрете, он же «Архетипическая карта
-                                отношений», в первую очередь обрати внимание на
-                                первые 3 позиции.
-                            </p>
-
                             <p className="partner-results__text">
                                 Позиция №1 – начало отношений. Первым делом наши
                                 базовые энергии встречаются друг с другом и
@@ -303,79 +377,6 @@ function PartnerResultsResults() {
                                 работе, да и в любых других парных отношениях,
                                 свяжись со мной.
                             </p>
-                        </div>
-
-                        <ul className="partner-results__name-list">
-                            <li className="partner-results__name-item">
-                                АРХЕТИПИЧЕСКАЯ КАРТА ВТОРОГО ПАРТНЁРА
-                            </li>
-                            <li className="partner-results__name-item">
-                                АРХЕТИПИЧЕСКАЯ КАРТА ПЕРВОГО ПАРТНЁРА
-                            </li>
-
-                            <li className="partner-results__name-item">
-                                АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
-                            </li>
-                        </ul>
-                        <div className="partner-results__body-list">
-                            <span className="partner-results__body-date">
-                                {results.day} / {results.month} / {results.year}{' '}
-                                И {results.day2} / {results.month2} /{' '}
-                                {results.year2}
-                            </span>
-                            <span className="partner-results__name-item-mobile">
-                                АРХЕТИПИЧЕСКАЯ КАРТА ОТНОШЕНИЙ
-                            </span>
-                            <PartnerResultsList
-                                {...jointResults}
-                            ></PartnerResultsList>
-                        </div>
-                        <div className="partner-results__info">
-                            <ul className="partner-results__info-list">
-                                <li className="partner-results__info-item">
-                                    <span className="partner-results__info-number underline">
-                                        НОМЕР
-                                    </span>
-                                    <p className="partner-results__info-name underline">
-                                        ПОЗИЦИЯ
-                                    </p>
-                                    <span className="partner-results__info-archetype">
-                                        <span
-                                            className="underline"
-                                            style={{paddingBottom: 1}}
-                                        >
-                                            АРХЕТИП
-                                        </span>
-                                    </span>
-                                </li>
-                                {resultsData.map((result, index) => (
-                                    <li
-                                        className="partner-results__info-item"
-                                        key={index}
-                                    >
-                                        <span className="partner-results__info-number">
-                                            {result.num}
-                                        </span>
-                                        <p className="partner-results__info-name">
-                                            {result.name}
-                                        </p>
-                                        <Link
-                                            className="partner-results__info-archetype"
-                                            to={`/archetypes/${result.archetypeNum}`}
-                                        >
-                                            {result.archetypeNum}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <Button
-                                text="СВЯЖИСЬ СО МНОЙ"
-                                className="partner-results__info-link"
-                                onClick={() =>
-                                    dispatch(setOpenContactForm(true))
-                                }
-                            ></Button>
                         </div>
                     </div>
                 </div>

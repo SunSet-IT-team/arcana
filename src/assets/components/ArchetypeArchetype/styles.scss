@@ -38,6 +38,17 @@
             }
         }
     }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: size-desktop(20px);
+    }
+    &__section-title {
+        font-size: clamp(13px, size-desktop(18px), 18px);
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: size-desktop(10px);
+    }
     &__text {
         display: flex;
         flex-direction: column;
@@ -96,6 +107,18 @@
         line-height: 1.4;
         margin-bottom: size-desktop(45px);
     }
+    &__practices {
+        font-size: clamp(13px, size-desktop(18px), 18px);
+        line-height: 1.4;
+        margin-bottom: size-desktop(45px);
+
+        p {
+            margin-bottom: size-desktop(20px);
+        }
+    }
+    &__practice-list {
+        margin-bottom: size-desktop(20px);
+    }
     &__positive-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
@@ -103,7 +126,8 @@
             margin-bottom: size-desktop(20px);
         }
     }
-    &__negative-item {
+    &__negative-item,
+    &__practice-item {
         font-size: clamp(13px, size-desktop(18px), 18px);
 
         &:not(:last-child) {

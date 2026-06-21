@@ -33,8 +33,7 @@ const SliderMobile = ({archetypesProp = []}) => {
 
         slider.scrollTo({
             left:
-                child.offsetLeft -
-                (slider.clientWidth - child.clientWidth) / 2,
+                child.offsetLeft - (slider.clientWidth - child.clientWidth) / 2,
             behavior,
         });
     };
@@ -60,7 +59,8 @@ const SliderMobile = ({archetypesProp = []}) => {
         const thirdSetStart = slider.children[data.length * 2];
         if (!firstSetStart || !secondSetStart || !thirdSetStart) return;
 
-        const segmentWidth = secondSetStart.offsetLeft - firstSetStart.offsetLeft;
+        const segmentWidth =
+            secondSetStart.offsetLeft - firstSetStart.offsetLeft;
         const middleStart =
             secondSetStart.offsetLeft -
             (slider.clientWidth - secondSetStart.clientWidth) / 2;
@@ -143,16 +143,13 @@ const SliderMobile = ({archetypesProp = []}) => {
 
                         <div className="archetypes-demo__item-info">
                             <p className="archetypes-demo__item-text">
-                                <span className="archetypes-demo__item-text-1">
-                                    Энергия:
-                                </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.energy}
                                 </span>
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Положительное проявление:
+                                    Позитивное проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.positive}
@@ -160,7 +157,7 @@ const SliderMobile = ({archetypesProp = []}) => {
                             </p>
                             <p className="archetypes-demo__item-text">
                                 <span className="archetypes-demo__item-text-1">
-                                    Отрицательное проявление:
+                                    Негативное проявление:
                                 </span>{' '}
                                 <span className="archetypes-demo__item-text-2">
                                     {archetype.negative}

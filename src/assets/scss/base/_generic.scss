@@ -3,6 +3,7 @@ body {
     // user-select: none;
     font-size: clamp(10px, size-desktop($fz-default), 18px);
     line-height: 1.5;
+    word-spacing: 0.24em;
     display: flex;
     flex-direction: column;
     margin-right: 10px;
